@@ -1,0 +1,72 @@
+{
+    "_comment": "Egg: Hermes On-Demand Listener (Telegram polling). Installs deps and runs bot.py. Fill vars in panel: TELEGRAM_BOT_TOKEN, TELEGRAM_ALLOWED_USERS, GH_PAT, GH_REPO.",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "name": "Hermes On-Demand Listener",
+    "author": "azascloud-cell",
+    "description": "Lightweight Telegram polling bot that triggers the Hermes on-demand GitHub Actions workflow. Runs in low-RAM (125MB) environments.",
+    "features": null,
+    "docker_images": {
+        "ghcr.io/parkervcp/yolks:python_3.11": "ghcr.io/parkervcp/yolks:python_3.11"
+    },
+    "file_denylist": [],
+    "startup": "python bot.py",
+    "config": {
+        "files": "{}",
+        "startup": {
+            "done": "Listener started"
+        },
+        "logs": {
+            "custom": false,
+            "location": "logs/latest.log"
+        },
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "# @author azascloud-cell\n# @description Hermes On-Demand Listener egg installer\n\napt update\napt install -y curl\n\nmkdir -p /mnt/server\ncd /mnt/server\n\necho \"Installing Python dependencies...\"\npip install --no-cache-dir -r listener/requirements.txt 2>/dev/null || pip install --no-cache-dir requests\n\necho \"Installation complete.\"",
+            "container": "python:3.11-slim",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Telegram Bot Token",
+            "description": "Bot token from @BotFather",
+            "env_variable": "TELEGRAM_BOT_TOKEN",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:100"
+        },
+        {
+            "name": "Allowed Telegram Users",
+            "description": "Comma-separated numeric Telegram user IDs allowed to use the bot",
+            "env_variable": "TELEGRAM_ALLOWED_USERS",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:255"
+        },
+        {
+            "name": "GitHub PAT",
+            "description": "GitHub Personal Access Token with repo scope (for repository_dispatch)",
+            "env_variable": "GH_PAT",
+            "default_value": "",
+            "user_viewable": false,
+            "user_editable": true,
+            "rules": "required|string|max:100"
+        },
+        {
+            "name": "GitHub Repo",
+            "description": "Repo in form owner/repo, e.g. azascloud-cell/hermes-ondemand",
+            "env_variable": "GH_REPO",
+            "default_value": "azascloud-cell/hermes-ondemand",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:255"
+        }
+    ]
+}
