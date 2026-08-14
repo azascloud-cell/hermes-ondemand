@@ -1,0 +1,82 @@
+name: Hermes On-Demand
+
+on:
+  repository_dispatch:
+    types: [hermes-on-demand]
+
+jobs:
+  hermes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Hermes Agent
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/install.sh | bash
+          export PATH="$HOME/.local/bin:$PATH"
+          hermes --version || hermes setup --help || true
+
+      - name: Configure Hermes (Ollama Cloud)
+        env:
+          OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          mkdir -p ~/.hermes
+          cat > ~/.hermes/.env <<EOF
+          OLLAMA_API_KEY=${OLLAMA_API_KEY}
+          EOF
+          cat > ~/.hermes/config.yaml <<EOF
+          model:
+            provider: "ollama-cloud"
+            default: "gemma4:31b-cloud"
+            base_url: "https://ollama.com/v1"
+          EOF
+
+      - name: Run Hermes on question
+        id: hermes
+        env:
+          QUESTION: ${{ github.event.client_payload.question }}
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          # Save answer
+          hermes chat -q "$QUESTION" > answer.txt 2>&1 || true
+          echo "Answer length: $(wc -c < answer.txt)"
+          # Export as base64-safe content for the reply step
+          python - <<'PY'
+          import base64, json
+          with open("answer.txt", "r", errors="replace") as f:
+              content = f.read()
+          with open("answer_b64.txt", "w") as f:
+              f.write(base64.b64encode(content.encode("utf-8")).decode())
+          PY
+
+      - name: Reply to Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          CHAT_ID: ${{ github.event.client_payload.chat_id }}
+        run: |
+          python - <<'PY'
+          import os, base64, urllib.request, urllib.parse, json
+          token = os.environ["TELEGRAM_BOT_TOKEN"]
+          chat_id = os.environ["CHAT_ID"]
+          with open("answer_b64.txt") as f:
+              text = base64.b64decode(f.read()).decode("utf-8", "replace")
+          # Telegram caps messages at 4096 chars; trim
+          text = text[:4000]
+          url = f"https://api.telegram.org/bot{token}/sendMessage"
+          payload = urllib.parse.urlencode({"chat_id": chat_id, "text": text}).encode()
+          req = urllib.request.Request(url, data=payload)
+          try:
+              resp = urllib.request.urlopen(req)
+              print("Sent:", resp.status)
+          except Exception as e:
+              print("Failed to send:", e)
+              raise
+          PY
