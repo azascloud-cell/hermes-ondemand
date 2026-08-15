@@ -424,3 +424,34 @@
 2026-08-15 10:43:59,053 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38372: model=gemma4:31b provider=ollama-cloud
 2026-08-15 10:44:03,540 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.6s api_calls=1 response=295 chars
 2026-08-15 10:44:03,552 INFO gateway.platforms.base: [Telegram] Sending response (295 chars) to 6874843931
+2026-08-15 10:56:12,873 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=11077, started_at=2026-08-15T10:43:21.313040+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-15T10:50:32.469682+00:00 last_mem={'rss_kib': 230332, 'mem_total_kib': 16373452, 'mem_available_kib': 15126376, 'swap_used_kib': 0} suspected_oom=False
+2026-08-15 10:56:12,910 INFO gateway.run: Starting Hermes Gateway...
+2026-08-15 10:56:12,911 INFO gateway.run: Session storage: /home/runner/.hermes/sessions
+2026-08-15 10:56:12,919 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-15 10:56:12,920 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-15 10:56:12,957 INFO gateway.run: Connecting to telegram...
+2026-08-15 10:56:12,959 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-15 10:56:13,135 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-15 10:56:13,135 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-15 10:56:13,147 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-15 10:56:24,462 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-15 10:56:24,754 INFO gateway.run: ✓ telegram connected
+2026-08-15 10:56:24,795 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-15 10:56:24,806 INFO gateway.run: Channel directory built: 3 target(s)
+2026-08-15 10:56:25,462 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-15 10:56:25,781 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-15 10:56:25,813 INFO gateway.run: Press Ctrl+C to stop
+2026-08-15 10:56:25,820 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/runner/.hermes/kanban/.dispatcher.lock)
+2026-08-15 10:56:25,828 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-15 10:56:26,125 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-15 10:56:26,125 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 82 hidden (over 60 limit). Use /commands for full list.
+2026-08-15 10:56:30,822 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-15 10:56:43,619 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (1 chars)
+2026-08-15 10:56:43,666 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='😉' reply_to_id=2237 reply_to_text=''
+2026-08-15 10:56:43,753 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38372: model=gemma4:31b provider=ollama-cloud
+2026-08-15 10:56:48,322 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.7s api_calls=1 response=2 chars
+2026-08-15 10:56:48,334 INFO gateway.platforms.base: [Telegram] Sending response (2 chars) to 6874843931
+2026-08-15 10:57:24,492 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (39 chars)
+2026-08-15 10:57:24,497 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Apa kamu bisa lihat rate limit sisanya?' reply_to_id=2237 reply_to_text=''
+2026-08-15 10:57:26,049 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.6s api_calls=1 response=723 chars
+2026-08-15 10:57:26,057 INFO gateway.platforms.base: [Telegram] Sending response (723 chars) to 6874843931
