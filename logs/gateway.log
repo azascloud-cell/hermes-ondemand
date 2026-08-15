@@ -197,3 +197,17 @@
 2026-08-15 02:26:19,384 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Buat prompt icon nya ya neng!' reply_to_id=2237 reply_to_text=''
 2026-08-15 02:26:31,262 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.9s api_calls=1 response=2927 chars
 2026-08-15 02:26:31,271 INFO gateway.platforms.base: [Telegram] Sending response (2927 chars) to 6874843931
+2026-08-15 02:35:12,502 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_4474084fffbf.jpg
+2026-08-15 02:35:13,305 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_6d58257857de.jpg
+2026-08-15 02:35:13,984 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_ba31a0b6f72a.jpg
+2026-08-15 02:35:14,645 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_53f2e9f3cc96.jpg
+2026-08-15 02:35:15,450 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='' reply_to_id=2237 reply_to_text=''
+2026-08-15 02:35:15,462 INFO gateway.run: Image routing: native (model supports vision). 3 image(s) will be attached inline.
+2026-08-15 02:35:22,697 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.2s api_calls=1 response=1598 chars
+2026-08-15 02:35:22,739 INFO gateway.platforms.base: [Telegram] Sending response (1598 chars) to 6874843931
+2026-08-15 02:37:14,970 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached replied-to image at /home/runner/.hermes/cache/images/img_3c32014d1270.jpg
+2026-08-15 02:37:15,151 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (122 chars)
+2026-08-15 02:37:15,154 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg="Ini saja ya,neng Lidya!  [Replied-to image 'file_64.jpg' saved at: /home/runner/" reply_to_id=2331 reply_to_text=''
+2026-08-15 02:37:15,166 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-15 02:37:22,095 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.9s api_calls=1 response=1651 chars
+2026-08-15 02:37:22,103 INFO gateway.platforms.base: [Telegram] Sending response (1651 chars) to 6874843931

@@ -719,3 +719,30 @@ openai.NotFoundError: Error code: 404 - {'error': {'message': 'model "" not foun
 2026-08-15 02:30:20,307 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=263976->263664 rss_anon_kib=228412->228100 threads=15 duration_ms=95.1
 2026-08-15 02:31:20,479 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264288->263744 rss_anon_kib=228724->228180 threads=15 duration_ms=85.0
 2026-08-15 02:32:20,557 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264220->263720 rss_anon_kib=228656->228156 threads=15 duration_ms=77.1
+2026-08-15 02:33:20,646 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=267860->263708 rss_anon_kib=232296->228144 threads=15 duration_ms=88.3
+2026-08-15 02:34:20,748 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=279368->263716 rss_anon_kib=243804->228152 threads=15 duration_ms=101.5
+2026-08-15 02:35:12,502 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_4474084fffbf.jpg
+2026-08-15 02:35:13,305 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_6d58257857de.jpg
+2026-08-15 02:35:13,984 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_ba31a0b6f72a.jpg
+2026-08-15 02:35:14,645 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_53f2e9f3cc96.jpg
+2026-08-15 02:35:15,450 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='' reply_to_id=2237 reply_to_text=''
+2026-08-15 02:35:15,462 INFO gateway.run: Image routing: native (model supports vision). 3 image(s) will be attached inline.
+2026-08-15 02:35:15,476 INFO [20260815_012724_e3d012b4] agent.turn_context: conversation turn: session=20260815_012724_e3d012b4 model=gemma4:31b provider=ollama-cloud platform=telegram history=91 msg='[3 images] What do you see in this image?  [Image attached at: /home/runner/.her...'
+2026-08-15 02:35:15,481 INFO [20260815_012724_e3d012b4] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_012724_e3d012b4)
+2026-08-15 02:35:20,839 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=272876->263816 rss_anon_kib=237312->228252 threads=18 duration_ms=90.0
+2026-08-15 02:35:22,520 INFO [20260815_012724_e3d012b4] agent.conversation_loop: API call #46: model=gemma4:31b provider=ollama-cloud in=57469 out=418 total=57887 latency=7.0s
+2026-08-15 02:35:22,662 INFO [20260815_012724_e3d012b4] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=12 last_msg_role=assistant response_len=1598 session=20260815_012724_e3d012b4
+2026-08-15 02:35:22,697 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.2s api_calls=1 response=1598 chars
+2026-08-15 02:35:22,739 INFO gateway.platforms.base: [Telegram] Sending response (1598 chars) to 6874843931
+2026-08-15 02:36:20,929 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264904->263596 rss_anon_kib=229340->228032 threads=15 duration_ms=82.8
+2026-08-15 02:37:14,970 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached replied-to image at /home/runner/.hermes/cache/images/img_3c32014d1270.jpg
+2026-08-15 02:37:15,151 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (122 chars)
+2026-08-15 02:37:15,154 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg="Ini saja ya,neng Lidya!  [Replied-to image 'file_64.jpg' saved at: /home/runner/" reply_to_id=2331 reply_to_text=''
+2026-08-15 02:37:15,166 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-15 02:37:15,178 INFO [20260815_012724_e3d012b4] agent.turn_context: conversation turn: session=20260815_012724_e3d012b4 model=gemma4:31b provider=ollama-cloud platform=telegram history=93 msg="[1 image] Ini saja ya,neng Lidya!  [Replied-to image 'file_64.jpg' saved at: /ho..."
+2026-08-15 02:37:15,185 INFO [20260815_012724_e3d012b4] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_012724_e3d012b4)
+2026-08-15 02:37:21,039 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=271004->265740 rss_anon_kib=235440->230176 threads=18 duration_ms=109.3
+2026-08-15 02:37:22,067 INFO [20260815_012724_e3d012b4] agent.conversation_loop: API call #47: model=gemma4:31b provider=ollama-cloud in=57473 out=436 total=57909 latency=6.9s
+2026-08-15 02:37:22,072 INFO [20260815_012724_e3d012b4] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=12 last_msg_role=assistant response_len=1651 session=20260815_012724_e3d012b4
+2026-08-15 02:37:22,095 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.9s api_calls=1 response=1651 chars
+2026-08-15 02:37:22,103 INFO gateway.platforms.base: [Telegram] Sending response (1651 chars) to 6874843931
