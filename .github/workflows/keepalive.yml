@@ -59,6 +59,15 @@ jobs:
             provider: "opencode-zen"
             default: "deepseek-v4-flash-free"
             base_url: "https://opencode.ai/zen/v1"
+          compression:
+            enabled: true
+            threshold: 0.50
+            threshold_tokens: 30000
+            target_ratio: 0.15
+            protect_last_n: 12
+            proactive_prune_tokens: 20000
+            proactive_prune_min_result_chars: 2000
+            proactive_prune_min_reclaim_tokens: 2000
           EOF
 
       - name: Pin python-telegram-bot 22.6 (fix Any cannot be instantiated)
