@@ -1,0 +1,1 @@
+User is interested in automation scripts, web scraping, and cybersecurity, specifically related to Termux and Pterodactyl panels.

@@ -94,3 +94,11 @@
 2026-08-15 01:41:10,642 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Web scrapping otp Ivasms untuk forward ke telegram' reply_to_id=2237 reply_to_text=''
 2026-08-15 01:41:17,174 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.5s api_calls=1 response=4306 chars
 2026-08-15 01:41:17,182 INFO gateway.platforms.base: [Telegram] Sending response (4281 chars) to 6874843931
+2026-08-15 01:42:36,247 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (80 chars)
+2026-08-15 01:42:36,294 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau pakai Panel Pterodactyl python generic ram 125mb 500mb disk bisa jalankan?' reply_to_id=2237 reply_to_text=''
+2026-08-15 01:42:40,236 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.9s api_calls=1 response=2441 chars
+2026-08-15 01:42:40,243 INFO gateway.platforms.base: [Telegram] Sending response (2441 chars) to 6874843931
+2026-08-15 01:43:34,933 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (48 chars)
+2026-08-15 01:43:34,936 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Tolong bantu install otomatis pakai api panel ya' reply_to_id=2237 reply_to_text=''
+2026-08-15 01:43:42,403 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.5s api_calls=1 response=5009 chars
+2026-08-15 01:43:42,413 INFO gateway.platforms.base: [Telegram] Sending response (4974 chars) to 6874843931
