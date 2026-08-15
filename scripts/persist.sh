@@ -16,12 +16,21 @@ GH_REPO="${GH_REPO:-}"
 GH_REF="${GH_REF:-main}"
 WORK="${WORK:-/tmp/hermes-data}"
 # exclude heavy tooling/code that we reinstall fresh every run
-EXCLUDES="hermes-agent bin node uv uvx uv-cache __pycache__ .cache venv"
+EXCLUDES="hermes-agent bin node uv uvx uv-cache __pycache__ .cache venv .git"
 
-copy_in() {  # $1=src $2=dst
-  rm -rf "$2"; mkdir -p "$2"
-  # use tar for excludes
-  tar --exclude-from=<(printf '%s\n' $EXCLUDES) -C "$1" -cf - . | tar -C "$2" -xf -
+copy_in() {  # $1=src $2=dst (copy contents of $1 into $2)
+  # Never delete the destination root (it may be the cwd); just sync contents.
+  mkdir -p "$2"
+  if command -v rsync >/dev/null 2>&1; then
+    rsync -a --delete \
+      $(printf -- '--exclude=%q ' $EXCLUDES) \
+      "$1/" "$2/"
+  else
+    # fallback: tar (exclude via repeated flags), extracting into dst
+    local tar_args=()
+    for ex in $EXCLUDES; do tar_args+=(--exclude="$ex"); done
+    tar "${tar_args[@]}" -C "$1" -cf - . | tar -C "$2" -xf -
+  fi
 }
 
 restore() {
@@ -35,6 +44,7 @@ restore() {
 
 backup() {
   [ -n "$GH_PAT" ] && [ -n "$GH_REPO" ] || { echo "backup: missing GH_PAT/GH_REPO"; return 1; }
+  cd /tmp  # ensure we never delete our own cwd
   rm -rf "$WORK"; mkdir -p "$WORK"
   if git clone -q -b "$DATA_BRANCH" "https://x-access-token:${GH_PAT}@github.com/${GH_REPO}.git" "$WORK" 2>/dev/null; then
     copy_in "$HERMES_HOME" "$WORK"
