@@ -519,3 +519,11 @@
 2026-08-15 15:18:19,890 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ouh,wait gak faham,aku bertanya. Apakah disana ada makhluk hidup? Dan apa tempat' reply_to_id=2237 reply_to_text=''
 2026-08-15 15:18:26,864 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.0s api_calls=1 response=1644 chars
 2026-08-15 15:18:26,873 INFO gateway.platforms.base: [Telegram] Sending response (1644 chars) to 6874843931
+2026-08-15 15:20:22,070 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (8 chars)
+2026-08-15 15:20:22,074 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ya,keren' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:20:25,415 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.3s api_calls=1 response=414 chars
+2026-08-15 15:20:25,422 INFO gateway.platforms.base: [Telegram] Sending response (414 chars) to 6874843931
+2026-08-15 15:21:42,391 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (79 chars)
+2026-08-15 15:21:42,398 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bisakah kamu rekomendasi link YouTube terkait fakta ini pakai bahasa Indonesia!' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:21:46,597 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.2s api_calls=1 response=1416 chars
+2026-08-15 15:21:46,605 INFO gateway.platforms.base: [Telegram] Sending response (1416 chars) to 6874843931
