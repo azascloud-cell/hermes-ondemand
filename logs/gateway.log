@@ -495,3 +495,15 @@
 2026-08-15 15:07:53,428 INFO gateway.platforms.base: [Telegram] Sending response (281 chars) to 6874843931
 2026-08-15 15:08:10,102 INFO gateway.platforms.base: [Telegram] Sending response (291 chars) to 6874843931
 2026-08-15 15:08:25,258 INFO gateway.platforms.base: [Telegram] Sending response (125 chars) to 6874843931
+2026-08-15 15:09:12,910 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user voice at /home/runner/.hermes/cache/audio/audio_2f500bf9745f.ogg
+2026-08-15 15:09:12,916 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:09:17,147 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.2s api_calls=1 response=231 chars
+2026-08-15 15:10:08,303 INFO gateway.platforms.base: [Telegram] Sending response (39 chars) to 6874843931
+2026-08-15 15:12:04,408 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (24 chars)
+2026-08-15 15:12:04,415 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Siapa yang membuat kamu?' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:12:06,398 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.0s api_calls=1 response=438 chars
+2026-08-15 15:12:06,407 INFO gateway.platforms.base: [Telegram] Sending response (438 chars) to 6874843931
+2026-08-15 15:12:51,431 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (34 chars)
+2026-08-15 15:12:51,435 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ceritakan aku sebuah fakta menarik' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:12:58,450 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.0s api_calls=1 response=1093 chars
+2026-08-15 15:12:58,458 INFO gateway.platforms.base: [Telegram] Sending response (1093 chars) to 6874843931
