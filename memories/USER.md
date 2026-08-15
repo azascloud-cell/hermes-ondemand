@@ -9,3 +9,5 @@ User is an ultra-scalper in XAUUSD with very tight SL (40 points) and TP (60-125
 User is interested in making money from selling personal Gmail accounts using virtual numbers (nokos).
 §
 User prefers to be addressed as 'Mas Azza' and refers to the agent as 'Neng Lidya'.
+§
+User appreciates being called 'Mas Azza' and refers to the agent as 'Neng Lidya'.

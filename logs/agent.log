@@ -3250,3 +3250,47 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-15 15:12:58,433 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1093 session=20260815_102333_b288b938
 2026-08-15 15:12:58,450 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.0s api_calls=1 response=1093 chars
 2026-08-15 15:12:58,458 INFO gateway.platforms.base: [Telegram] Sending response (1093 chars) to 6874843931
+2026-08-15 15:13:56,975 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=458744->457824 rss_anon_kib=360772->359852 threads=15 duration_ms=138.1
+2026-08-15 15:14:36,769 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (51 chars)
+2026-08-15 15:14:36,773 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Apa kamu bisa memberikan gambaran dari Dry Valleys?' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:14:36,777 INFO hermes_state: Repaired 1 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-15 15:14:36,787 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=gemma4:31b provider=ollama-cloud platform=telegram history=37 msg='Apa kamu bisa memberikan gambaran dari Dry Valleys?'
+2026-08-15 15:14:36,792 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-15 15:14:40,444 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #13: model=gemma4:31b provider=ollama-cloud in=22778 out=413 total=23191 latency=3.7s
+2026-08-15 15:14:40,450 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1616 session=20260815_102333_b288b938
+2026-08-15 15:14:40,472 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.7s api_calls=1 response=1616 chars
+2026-08-15 15:14:40,480 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=bg-review:139634856154816 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 15:14:40,484 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=gemma4:31b provider=ollama-cloud platform=telegram history=38 msg='Review the conversation above and consider saving to memory if appropriate.  Foc...'
+2026-08-15 15:14:40,492 INFO gateway.platforms.base: [Telegram] Sending response (1616 chars) to 6874843931
+2026-08-15 15:14:40,625 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-35 (<lambda>):139634889717440 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 15:14:46,211 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=23319 out=54 total=23373 latency=5.7s
+2026-08-15 15:14:46,217 INFO [20260815_102333_b288b938] agent.tool_executor: tool memory completed (0.00s, 207 chars)
+2026-08-15 15:14:47,106 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #2: model=gemma4:31b provider=ollama-cloud in=23453 out=10 total=23463 latency=0.9s
+2026-08-15 15:14:47,107 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=2/16 budget=2/16 tool_turns=1 last_msg_role=assistant response_len=21 session=20260815_102333_b288b938
+2026-08-15 15:14:47,111 INFO [20260815_102333_b288b938] run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=bg-review:139634856154816 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 15:14:47,111 INFO [20260815_102333_b288b938] run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=0) thread=bg-review:139634856154816 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 15:14:47,254 INFO [20260815_102333_b288b938] hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=470044->458680 rss_anon_kib=372072->360708 threads=16 duration_ms=142.1
+2026-08-15 15:15:57,117 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=472928->457484 rss_anon_kib=374956->359512 threads=15 duration_ms=133.8
+2026-08-15 15:16:57,253 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=458232->457332 rss_anon_kib=360260->359360 threads=15 duration_ms=134.5
+2026-08-15 15:17:19,095 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user voice at /home/runner/.hermes/cache/audio/audio_53927ba99cc5.ogg
+2026-08-15 15:17:19,099 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:17:19,103 INFO hermes_state: Repaired 1 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-15 15:17:19,254 INFO faster_whisper: Processing audio with duration 00:02.834
+2026-08-15 15:17:19,261 INFO faster_whisper: VAD filter removed 00:00.000 of audio
+2026-08-15 15:17:21,410 INFO tools.transcription_tools: Transcribed audio_53927ba99cc5.ogg via local whisper (base, lang=en, 2.8s audio)
+2026-08-15 15:17:22,269 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=gemma4:31b provider=ollama-cloud platform=telegram history=39 msg='"In the desert, there is a house."'
+2026-08-15 15:17:22,274 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-15 15:17:24,431 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #14: model=gemma4:31b provider=ollama-cloud in=23210 out=118 total=23328 latency=2.2s
+2026-08-15 15:17:24,561 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=466 session=20260815_102333_b288b938
+2026-08-15 15:17:24,588 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.5s api_calls=1 response=466 chars
+2026-08-15 15:17:24,596 INFO gateway.platforms.base: [Telegram] Sending response (466 chars) to 6874843931
+2026-08-15 15:17:57,389 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=636096->461324 rss_anon_kib=538124->363352 threads=15 duration_ms=136.0
+2026-08-15 15:18:19,886 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (104 chars)
+2026-08-15 15:18:19,890 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ouh,wait gak faham,aku bertanya. Apakah disana ada makhluk hidup? Dan apa tempat' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:18:19,895 INFO hermes_state: Repaired 1 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-15 15:18:19,905 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=gemma4:31b provider=ollama-cloud platform=telegram history=41 msg='Ouh,wait gak faham,aku bertanya. Apakah disana ada makhluk hidup? Dan apa tempat...'
+2026-08-15 15:18:19,909 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-15 15:18:26,827 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #15: model=gemma4:31b provider=ollama-cloud in=23364 out=404 total=23768 latency=6.9s
+2026-08-15 15:18:26,832 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1644 session=20260815_102333_b288b938
+2026-08-15 15:18:26,864 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.0s api_calls=1 response=1644 chars
+2026-08-15 15:18:26,873 INFO gateway.platforms.base: [Telegram] Sending response (1644 chars) to 6874843931
