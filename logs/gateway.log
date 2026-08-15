@@ -336,3 +336,5 @@
 2026-08-15 05:16:59,643 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.5s api_calls=1 response=118 chars
 2026-08-15 05:16:59,644 INFO gateway.run: Transient agent failure in session 20260815_012724_e3d012b4 — persisting user message so conversation context is preserved on retry.
 2026-08-15 05:16:59,650 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 6874843931
+2026-08-15 06:19:02,709 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38372 (idle=3723s)
+2026-08-15 06:19:02,710 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
