@@ -583,3 +583,5 @@
 2026-08-15 22:17:57,244 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38372: model=gemma4:31b provider=ollama-cloud
 2026-08-15 22:18:04,375 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.2s api_calls=1 response=442 chars
 2026-08-15 22:18:04,388 INFO gateway.platforms.base: [Telegram] Sending response (442 chars) to 6874843931
+2026-08-15 22:19:14,221 INFO gateway.platforms.base: [Telegram] Sending response (259 chars) to 6874843931
+2026-08-15 22:21:20,677 INFO gateway.platforms.base: [Telegram] Sending response (2327 chars) to 6874843931

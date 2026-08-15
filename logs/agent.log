@@ -3948,3 +3948,10 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-15 22:18:06,793 INFO [20260815_102333_b288b938] run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=bg-review:139641130841792 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
 2026-08-15 22:18:06,793 INFO [20260815_102333_b288b938] run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=0) thread=bg-review:139641130841792 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
 2026-08-15 22:18:06,938 INFO [20260815_102333_b288b938] hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=248828->224404 rss_anon_kib=213712->189288 threads=15 duration_ms=144.4
+2026-08-15 22:19:14,221 INFO gateway.platforms.base: [Telegram] Sending response (259 chars) to 6874843931
+2026-08-15 22:19:44,175 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=234756->223388 rss_anon_kib=199640->188272 threads=14 duration_ms=139.0
+2026-08-15 22:20:44,311 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=241728->224188 rss_anon_kib=206612->189072 threads=14 duration_ms=135.4
+2026-08-15 22:21:20,677 INFO gateway.platforms.base: [Telegram] Sending response (2327 chars) to 6874843931
+2026-08-15 22:21:44,449 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=226320->224220 rss_anon_kib=191204->189104 threads=14 duration_ms=137.2
+2026-08-15 22:22:44,586 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=225016->224216 rss_anon_kib=189900->189100 threads=14 duration_ms=136.8
+2026-08-15 22:23:44,725 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=225100->224216 rss_anon_kib=189984->189100 threads=14 duration_ms=138.3
