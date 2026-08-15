@@ -149,3 +149,19 @@
 2026-08-15 02:05:46,077 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Sebelum mulai,apa kamu bisa akses bot telegram yang telah aku buat?' reply_to_id=2237 reply_to_text=''
 2026-08-15 02:05:52,788 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.7s api_calls=1 response=1732 chars
 2026-08-15 02:05:52,795 INFO gateway.platforms.base: [Telegram] Sending response (1732 chars) to 6874843931
+2026-08-15 02:07:47,293 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (58 chars)
+2026-08-15 02:07:47,297 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Tapi bot itu tidak ada backend dan sedang off alias kosong' reply_to_id=2237 reply_to_text=''
+2026-08-15 02:07:53,209 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.9s api_calls=1 response=1854 chars
+2026-08-15 02:07:53,216 INFO gateway.platforms.base: [Telegram] Sending response (1854 chars) to 6874843931
+2026-08-15 02:08:45,284 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (31 chars)
+2026-08-15 02:08:45,306 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Tidak,aku gak minat project ini' reply_to_id=2237 reply_to_text=''
+2026-08-15 02:08:48,087 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.8s api_calls=1 response=316 chars
+2026-08-15 02:08:48,096 INFO gateway.platforms.base: [Telegram] Sending response (316 chars) to 6874843931
+2026-08-15 02:09:18,222 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (46 chars)
+2026-08-15 02:09:18,227 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Apa kamu bisa analisis market forex tanpa api?' reply_to_id=2237 reply_to_text=''
+2026-08-15 02:09:24,533 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.3s api_calls=1 response=2460 chars
+2026-08-15 02:09:24,573 INFO gateway.platforms.base: [Telegram] Sending response (2460 chars) to 6874843931
+2026-08-15 02:11:07,845 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (19 chars)
+2026-08-15 02:11:07,849 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Aku fokus di xauusd' reply_to_id=2237 reply_to_text=''
+2026-08-15 02:11:15,545 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.7s api_calls=1 response=2999 chars
+2026-08-15 02:11:15,554 INFO gateway.platforms.base: [Telegram] Sending response (2999 chars) to 6874843931
