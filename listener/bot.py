@@ -3,11 +3,28 @@ import json
 import time
 import logging
 import urllib.request
-
-import requests
+import urllib.parse
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger("listener")
+
+
+def load_dotenv(path=".env"):
+    if not os.path.exists(path):
+        return
+    with open(path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#") or "=" not in line:
+                continue
+            k, v = line.split("=", 1)
+            k = k.strip()
+            v = v.strip()
+            if k and os.environ.get(k, "") == "":
+                os.environ[k] = v
+
+
+load_dotenv()
 
 TELEGRAM_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
 ALLOWED_USERS = {
@@ -22,34 +39,54 @@ LAST_OFFSET = 0
 PROCESSING = set()
 
 
-def tg(method, **params):
+def http_post_json(url, body=None, headers=None, timeout=60):
+    data = None
+    hdrs = {"User-Agent": "hermes-listener"}
+    if headers:
+        hdrs.update(headers)
+    if body is not None:
+        data = json.dumps(body).encode("utf-8")
+        hdrs["Content-Type"] = "application/json"
+    req = urllib.request.Request(url, data=data, headers=hdrs)
     try:
-        r = requests.post(f"{TG_API}/{method}", json=params, timeout=60)
-        return r.json()
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            raw = resp.read()
+            try:
+                return resp.status, json.loads(raw.decode("utf-8"))
+            except Exception:
+                return resp.status, raw.decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        raw = e.read()
+        try:
+            return e.code, json.loads(raw.decode("utf-8"))
+        except Exception:
+            return e.code, raw.decode("utf-8", "replace")
     except Exception as e:
-        log.warning("telegram %s error: %s", method, e)
-        return None
+        log.warning("http error: %s", e)
+        return None, None
+
+
+def tg(method, **params):
+    code, data = http_post_json(f"{TG_API}/{method}", body=params)
+    return data
 
 
 def send(chat_id, text, parse_mode=None):
-    kwargs = {"chat_id": chat_id, "text": text}
+    params = {"chat_id": chat_id, "text": text}
     if parse_mode:
-        kwargs["parse_mode"] = parse_mode
-    tg("sendMessage", **kwargs)
+        params["parse_mode"] = parse_mode
+    tg("sendMessage", **params)
 
 
 def trigger_workflow(payload):
-    """Trigger the hermes.yml workflow via repository_dispatch."""
     url = f"https://api.github.com/repos/{GH_REPO}/dispatches"
     headers = {
         "Authorization": f"Bearer {GH_PAT}",
         "Accept": "application/vnd.github+json",
-        "User-Agent": "hermes-listener",
     }
-    body = {"event_type": "hermes-on-demand", "client_payload": payload}
-    r = requests.post(url, headers=headers, json=body, timeout=60)
-    log.info("dispatch status=%s body=%s", r.status_code, r.text[:300])
-    return r.status_code in (204, 202, 201)
+    code, body = http_post_json(url, body=payload, headers=headers)
+    log.info("dispatch status=%s body=%s", code, str(body)[:300])
+    return code in (204, 202, 201)
 
 
 def handle(chat_id, text, message_id):
