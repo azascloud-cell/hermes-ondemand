@@ -2714,3 +2714,39 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-15 10:44:58,917 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
 2026-08-15 10:45:09,398 WARNING hermes_cli.gateway: Gateway (re)started 7 times in 120s — backing off 20s to break a respawn storm.
 2026-08-15 10:45:29,410 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:45:32,384 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:45:35,528 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=234076->214452 rss_anon_kib=199180->179556 threads=13 duration_ms=103.2
+2026-08-15 10:45:42,393 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:45:52,959 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:46:02,969 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:46:13,444 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:46:23,454 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:46:33,969 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:46:35,629 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=215556->214912 rss_anon_kib=180660->180016 threads=13 duration_ms=99.9
+2026-08-15 10:46:43,978 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:46:54,460 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:47:04,469 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:47:15,011 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:47:25,021 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:47:35,488 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:47:35,739 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=215732->214908 rss_anon_kib=180836->180012 threads=13 duration_ms=100.9
+2026-08-15 10:47:45,498 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:47:55,974 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:48:05,983 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:48:16,457 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:48:26,466 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:48:35,839 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=215620->214860 rss_anon_kib=180724->179964 threads=13 duration_ms=99.5
+2026-08-15 10:48:37,006 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:48:47,016 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:48:57,482 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:49:07,491 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:49:17,977 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:49:27,986 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:49:35,938 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=215524->214884 rss_anon_kib=180628->179988 threads=13 duration_ms=98.5
+2026-08-15 10:49:38,479 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:49:48,489 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:49:58,980 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:50:08,990 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:50:19,485 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:50:29,494 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:50:36,039 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=230348->215008 rss_anon_kib=195452->180112 threads=13 duration_ms=100.1
