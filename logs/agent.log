@@ -2168,3 +2168,11 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-15 08:37:19,697 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257380->256364 rss_anon_kib=222236->221220 threads=15 duration_ms=131.0
 2026-08-15 08:38:19,817 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257140->256296 rss_anon_kib=221996->221152 threads=15 duration_ms=119.4
 2026-08-15 08:39:19,935 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=277896->256304 rss_anon_kib=242752->221160 threads=15 duration_ms=117.8
+2026-08-15 08:40:20,053 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=261412->256428 rss_anon_kib=226268->221284 threads=15 duration_ms=117.5
+2026-08-15 08:41:20,170 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257128->256424 rss_anon_kib=221984->221280 threads=15 duration_ms=116.7
+2026-08-15 08:42:20,295 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257420->256420 rss_anon_kib=222276->221276 threads=15 duration_ms=118.4
+2026-08-15 08:43:20,430 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257160->256468 rss_anon_kib=222016->221324 threads=15 duration_ms=134.3
+2026-08-15 08:44:20,551 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38372 (idle=3812s)
+2026-08-15 08:44:20,551 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:6:140599042766528 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 08:44:20,552 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-15 08:44:20,553 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=270332->256340 rss_anon_kib=235188->221196 threads=15 duration_ms=122.8
