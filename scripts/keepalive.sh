@@ -37,8 +37,8 @@ trigger_next() {
 
 run_gateway() {
   # Foreground gateway (no systemd service needed) running in background so the
-  # keep-alive loop can keep ticking. `gateway start` needs a user service, which
-  # doesn't work on ephemeral CI runners.
+  # keep-alive loop can keep ticking. `hermes gateway start` needs a user service,
+  # which doesn't work on ephemeral CI runners.
   hermes gateway >/tmp/gateway.log 2>&1 &
   GW_PID=$!
 }
