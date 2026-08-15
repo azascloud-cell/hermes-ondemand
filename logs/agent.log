@@ -1857,3 +1857,9 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-15 05:16:59,643 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.5s api_calls=1 response=118 chars
 2026-08-15 05:16:59,644 INFO gateway.run: Transient agent failure in session 20260815_012724_e3d012b4 — persisting user message so conversation context is preserved on retry.
 2026-08-15 05:16:59,650 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 6874843931
+2026-08-15 05:17:54,628 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=260208->253096 rss_anon_kib=225064->217952 threads=14 duration_ms=148.2
+2026-08-15 05:18:54,761 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=253636->253144 rss_anon_kib=218492->218000 threads=14 duration_ms=132.5
+2026-08-15 05:19:54,890 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=274644->254980 rss_anon_kib=239500->219836 threads=14 duration_ms=128.3
+2026-08-15 05:20:55,019 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=260276->255288 rss_anon_kib=225132->220112 threads=14 duration_ms=128.3
+2026-08-15 05:20:57,018 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
+2026-08-15 05:21:55,168 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256008->255296 rss_anon_kib=220864->220152 threads=14 duration_ms=142.8
