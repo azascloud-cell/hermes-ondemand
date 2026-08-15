@@ -1349,3 +1349,5 @@ Traceback (most recent call last):
 RuntimeError: HTTP 401: Model gemma4:31b is not supported
 2026-08-15 22:28:54,936 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool terminal returned error (0.42s): {"output": "Config key not set: model.provider", "exit_code": 1, "error": null}
 2026-08-15 22:28:55,864 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool cronjob returned error (0.00s): {"error": "No updates provided.", "success": false}
+2026-08-15 22:29:36,874 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Description is 71 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript
+2026-08-15 22:32:06,603 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool memory returned error (0.00s): {"success": false, "error": "After applying all 1 operations, memory would be at 1,538/1,375 chars -- over the limit. Remove or shorten more entries in the same batch (see current_entries below), then

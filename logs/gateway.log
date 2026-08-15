@@ -620,3 +620,11 @@
 2026-08-15 22:28:53,460 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='[ASYNC DELEGATION COMPLETE — deleg_14d25d1e] A background subagent you dispatche' reply_to_id=None reply_to_text=''
 2026-08-15 22:29:01,440 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.0s api_calls=5 response=538 chars
 2026-08-15 22:29:01,447 INFO gateway.platforms.base: [Telegram] Sending response (538 chars) to 6874843931
+2026-08-15 22:29:23,484 INFO gateway.run: Watch pattern notification — injecting for telegram chat=6874843931 thread=38922
+2026-08-15 22:29:23,488 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='[ASYNC DELEGATION BATCH COMPLETE — deleg_17f97d27] A background fan-out of 1 sub' reply_to_id=None reply_to_text=''
+2026-08-15 22:29:26,578 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.1s api_calls=1 response=1013 chars
+2026-08-15 22:29:26,585 INFO gateway.platforms.base: [Telegram] Sending response (1013 chars) to 6874843931
+2026-08-15 22:32:00,919 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (1 chars)
+2026-08-15 22:32:00,922 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='🤔' reply_to_id=2642 reply_to_text=''
+2026-08-15 22:32:04,265 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.3s api_calls=1 response=530 chars
+2026-08-15 22:32:04,272 INFO gateway.platforms.base: [Telegram] Sending response (530 chars) to 6874843931

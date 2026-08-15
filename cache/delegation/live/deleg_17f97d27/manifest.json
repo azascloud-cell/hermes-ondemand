@@ -7,7 +7,9 @@
       "index": 0,
       "goal": "Perform a real-time market analysis for XAUUSD. \n1. Search for the latest economic news and global market sentiment affecting Gold.\n2. Determine if today's trend is BULLISH, BEARISH, or SIDEWAYS.\n3. Format the output exactly as:\n   - 🚩 **SENTIMEN HARI INI**: [BULLISH/BEARISH/SIDEWAYS]\n   - 📰 **BERITA KUNCI**: (1-2 main news items)\n   - 🎯 **AREA PANTAUAN**: (Key support/resistance or entry areas)\n   - 💡 **CATATAN NENG**: (Short reminder for Mas Azza to stick to his 40 point SL)\n\nRespond in Indone",
       "log": "/home/runner/.hermes/cache/delegation/live/deleg_17f97d27/task-0.log",
-      "status": "running"
+      "status": "completed",
+      "exit_reason": "completed"
     }
-  ]
+  ],
+  "completed": "2026-08-15 22:29:22"
 }
