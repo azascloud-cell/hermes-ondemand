@@ -102,3 +102,12 @@
 2026-08-15 01:43:34,936 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Tolong bantu install otomatis pakai api panel ya' reply_to_id=2237 reply_to_text=''
 2026-08-15 01:43:42,403 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.5s api_calls=1 response=5009 chars
 2026-08-15 01:43:42,413 INFO gateway.platforms.base: [Telegram] Sending response (4974 chars) to 6874843931
+2026-08-15 01:47:58,013 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (137 chars)
+2026-08-15 01:47:58,017 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Url:https://ctrl.lunes.host/   api panel: ptlc_SwUGKshE7OBRJRF7X0B7P1FW63FLZmwNL' reply_to_id=2237 reply_to_text=''
+2026-08-15 01:48:09,282 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 1 approval(s) for session agent:main:telegram:dm:6874843931:38372 (choice=once, user=Azas)
+2026-08-15 01:48:15,751 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=17.7s api_calls=2 response=3195 chars
+2026-08-15 01:48:15,786 INFO gateway.platforms.base: [Telegram] Sending response (3178 chars) to 6874843931
+2026-08-15 01:49:09,564 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (29 chars)
+2026-08-15 01:49:09,568 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bisakah aku kirim disini saja' reply_to_id=2237 reply_to_text=''
+2026-08-15 01:49:13,434 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.9s api_calls=1 response=716 chars
+2026-08-15 01:49:13,439 INFO gateway.platforms.base: [Telegram] Sending response (716 chars) to 6874843931
