@@ -535,3 +535,11 @@
 2026-08-15 15:37:30,796 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Maksudnya Hermes, bukan provider ai nya neng...' reply_to_id=2237 reply_to_text=''
 2026-08-15 15:37:36,965 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.2s api_calls=1 response=2504 chars
 2026-08-15 15:37:36,974 INFO gateway.platforms.base: [Telegram] Sending response (2504 chars) to 6874843931
+2026-08-15 15:39:51,541 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (9 chars)
+2026-08-15 15:39:51,545 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='OpenClaw?' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:39:56,606 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.1s api_calls=1 response=2360 chars
+2026-08-15 15:39:56,628 INFO gateway.platforms.base: [Telegram] Sending response (2360 chars) to 6874843931
+2026-08-15 15:43:00,744 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (62 chars)
+2026-08-15 15:43:00,750 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Males keluar rumah,aku kalau nyaman ngapain cari yang lain...🫢' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:43:04,043 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.3s api_calls=1 response=685 chars
+2026-08-15 15:43:04,053 INFO gateway.platforms.base: [Telegram] Sending response (685 chars) to 6874843931

@@ -11,3 +11,5 @@ User is interested in making money from selling personal Gmail accounts using vi
 User prefers to be addressed as 'Mas Azza' and refers to the agent as 'Neng Lidya'.
 §
 User appreciates being called 'Mas Azza' and refers to the agent as 'Neng Lidya'.
+§
+User refers to the agent as 'Neng Lidya' and prefers a friendly, warm, and supportive tone (e.g., using 'Mas Azza', emojis, and polite Indonesian).
