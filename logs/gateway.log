@@ -687,3 +687,15 @@
 2026-08-15 22:47:59,223 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Apa ini akan mempengaruhi rate limit?' reply_to_id=2642 reply_to_text=''
 2026-08-15 22:48:02,913 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.7s api_calls=1 response=1408 chars
 2026-08-15 22:48:02,921 INFO gateway.platforms.base: [Telegram] Sending response (1408 chars) to 6874843931
+2026-08-15 22:49:42,335 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (29 chars)
+2026-08-15 22:49:42,340 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Buatkan job setupnya sekarang' reply_to_id=2691 reply_to_text='Pertanyaan yang cerdas, Mas Azza! Neng hargai Mas sangat teliti soal teknis. 😉  '
+2026-08-15 22:49:50,669 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.3s api_calls=2 response=775 chars
+2026-08-15 22:49:50,678 INFO gateway.platforms.base: [Telegram] Sending response (775 chars) to 6874843931
+2026-08-15 22:52:39,155 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (100 chars)
+2026-08-15 22:52:39,159 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg="😱serasa nunggu notif dari do'i ini mah,cuman ini lebih ngeri-ngeri sedap,karena " reply_to_id=2693 reply_to_text='Selesai, Mas Azza! "Radar" Neng sudah aktif! 🚀🚩  Neng sudah buatkan job setup "X'
+2026-08-15 22:52:42,696 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.5s api_calls=1 response=702 chars
+2026-08-15 22:52:42,703 INFO gateway.platforms.base: [Telegram] Sending response (702 chars) to 6874843931
+2026-08-15 22:53:53,772 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (11 chars)
+2026-08-15 22:53:53,776 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ini kenapa?' reply_to_id=2695 reply_to_text='Cronjob Response: XAUUSD Price Radar - Mas Azza (job_id: 27772c4137ec) ---------'
+2026-08-15 22:53:55,802 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.0s api_calls=1 response=858 chars
+2026-08-15 22:53:55,809 INFO gateway.platforms.base: [Telegram] Sending response (858 chars) to 6874843931

@@ -1374,3 +1374,14 @@ RuntimeError: HTTP 401: Model gemma4:31b is not supported
 2026-08-15 22:34:08,726 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
 2026-08-15 22:34:08,726 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
 2026-08-15 22:34:08,737 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-15 22:49:56,236 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool memory returned error (0.01s): {"success": false, "error": "After applying all 1 operations, memory would be at 1,435/1,375 chars -- over the limit. Remove or shorten more entries in the same batch (see current_entries below), then
+2026-08-15 22:49:56,240 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Description is 83 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript
+2026-08-15 22:52:06,905 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-15 22:52:07,003 WARNING [cron_27772c4137ec_20260815_225206] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=ThreadPoolExecutor-5_0:140190047786688 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b summary=HTTP 401: Model gemma4:31b is not supported
+2026-08-15 22:52:07,017 ERROR [cron_27772c4137ec_20260815_225206] agent.conversation_loop: Non-retryable client error: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
+2026-08-15 22:52:07,019 ERROR cron.scheduler: Job 'XAUUSD Price Radar - Mas Azza' failed: RuntimeError: HTTP 401: Model gemma4:31b is not supported
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/cron/scheduler.py", line 5338, in run_job
+    raise RuntimeError(_err_text)
+RuntimeError: HTTP 401: Model gemma4:31b is not supported
+2026-08-15 22:52:43,996 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool memory returned error (0.00s): {"success": false, "error": "After applying all 2 operations, memory would be at 1,628/1,375 chars -- over the limit. Remove or shorten more entries in the same batch (see current_entries below), then
