@@ -55,7 +55,7 @@ jobs:
           cat > ~/.hermes/config.yaml <<EOF
           model:
             provider: "ollama-cloud"
-            default: "gemma4:31b-cloud"
+            default: "gemma4:31b"
             base_url: "https://ollama.com/v1"
           EOF
 
