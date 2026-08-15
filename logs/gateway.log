@@ -576,3 +576,5 @@
 2026-08-15 16:45:22,109 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
 2026-08-15 16:45:22,109 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 82 hidden (over 60 limit). Use /commands for full list.
 2026-08-15 16:45:26,997 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-15 19:55:42,970 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8120929966 in chat 8120929966
+2026-08-15 19:56:04,014 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8120929966 in chat 8120929966
