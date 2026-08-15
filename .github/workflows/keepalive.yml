@@ -68,12 +68,51 @@ jobs:
           VENV_PY="$(ls -d $HOME/.hermes/hermes-agent/venv/bin/python 2>/dev/null || echo '')"
           echo "uv: $UV | venv python: $VENV_PY"
           if [ -n "$VENV_PY" ] && [ -x "$UV" ]; then
-            "$UV" pip install --python "$VENV_PY" -q "python-telegram-bot[webhooks]==22.6"
-            "$VENV_PY" -c "import python_telegram_bot; print('PTB pinned:', python_telegram_bot.__version__)"
+            "$UV" pip install --python "$VENV_PY" --reinstall "python-telegram-bot[webhooks]==22.6"
+            echo "=== pinned PTB version ==="
+            "$UV" pip list --python "$VENV_PY" | grep -i python-telegram
+            "$VENV_PY" -c "import python_telegram_bot as p; print('PTB import ok:', p.__version__)" || true
           else
             echo "venv or uv not found; cannot pin"
             exit 1
           fi
+
+      - name: Patch Telegram TypeHandler restoration (fix Any cannot be instantiated)
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          ADAPTER="$HOME/.hermes/hermes-agent/plugins/platforms/telegram/adapter.py"
+          echo "patching: $ADAPTER"
+          # Fix from NousResearch/hermes-agent#85421: check_telegram_requirements()
+          # never re-imports/restores TypeHandler, leaving it as typing.Any and
+          # crashing at startup ("Any cannot be instantiated").
+          python3 - <<'PY'
+          import pathlib
+          p = pathlib.Path("$HOME/.hermes/hermes-agent/plugins/platforms/telegram/adapter.py").expanduser()
+          src = p.read_text()
+          if "TypeHandler as _TH" in src:
+              print("already patched")
+              raise SystemExit(0)
+          old = "            MessageHandler as _MH,\n            ContextTypes as _CT, filters as _filters,\n        )"
+          new = "            MessageHandler as _MH,\n            ContextTypes as _CT, TypeHandler as _TH, filters as _filters,\n        )"
+          if old not in src:
+              print("pattern not found; aborting")
+              raise SystemExit(1)
+          src = src.replace(old, new)
+          old2 = "    TelegramMessageHandler = _MH\n    ContextTypes = _CT\n    filters = _filters"
+          new2 = "    TelegramMessageHandler = _MH\n    TypeHandler = _TH\n    ContextTypes = _CT\n    filters = _filters"
+          if old2 not in src:
+              print("restoration pattern not found; aborting")
+              raise SystemExit(1)
+          src = src.replace(old2, new2)
+          old3 = "    global CommandHandler, CallbackQueryHandler, TelegramMessageHandler\n    global ContextTypes, filters, ParseMode, ChatType, HTTPXRequest"
+          new3 = "    global CommandHandler, CallbackQueryHandler, TelegramMessageHandler, TypeHandler\n    global ContextTypes, filters, ParseMode, ChatType, HTTPXRequest"
+          if old3 in src:
+              src = src.replace(old3, new3)
+          p.write_text(src)
+          print("patched TypeHandler restoration")
+          PY
+          # sanity: confirm edit
+          grep -n "TypeHandler as _TH\|TypeHandler = _TH" "$ADAPTER" | head
 
       - name: Run Keep-Alive Gateway
         env:
