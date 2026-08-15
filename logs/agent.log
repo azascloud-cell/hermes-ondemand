@@ -4380,3 +4380,32 @@ RuntimeError: HTTP 401: Model gemma4:31b is not supported
 2026-08-15 22:43:54,710 INFO [20260815_222456_41a4950e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=14 last_msg_role=assistant response_len=1278 session=20260815_222456_41a4950e
 2026-08-15 22:43:54,729 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.2s api_calls=1 response=1278 chars
 2026-08-15 22:43:54,736 INFO gateway.platforms.base: [Telegram] Sending response (1278 chars) to 6874843931
+2026-08-15 22:44:07,563 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235536->233404 rss_anon_kib=200328->198196 threads=14 duration_ms=107.5
+2026-08-15 22:45:07,675 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=234268->233436 rss_anon_kib=199060->198228 threads=14 duration_ms=111.2
+2026-08-15 22:45:16,024 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (45 chars)
+2026-08-15 22:45:16,028 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Katanya yahoofinance bisa buat cek harga kan?' reply_to_id=2642 reply_to_text=''
+2026-08-15 22:45:16,043 INFO [20260815_222456_41a4950e] agent.turn_context: conversation turn: session=20260815_222456_41a4950e model=gemma4:31b provider=ollama-cloud platform=telegram history=56 msg='Katanya yahoofinance bisa buat cek harga kan?'
+2026-08-15 22:45:16,048 INFO [20260815_222456_41a4950e] agent.conversation_loop: Repaired 2 message-alternation violations before request (session=20260815_222456_41a4950e)
+2026-08-15 22:45:18,152 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #6: model=gemma4:31b provider=ollama-cloud in=28665 out=331 total=28996 latency=2.1s
+2026-08-15 22:45:18,157 INFO [20260815_222456_41a4950e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=14 last_msg_role=assistant response_len=1314 session=20260815_222456_41a4950e
+2026-08-15 22:45:18,207 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.2s api_calls=1 response=1314 chars
+2026-08-15 22:45:18,214 INFO gateway.platforms.base: [Telegram] Sending response (1314 chars) to 6874843931
+2026-08-15 22:46:07,786 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235928->233832 rss_anon_kib=200720->198624 threads=14 duration_ms=109.8
+2026-08-15 22:46:55,337 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (74 chars)
+2026-08-15 22:46:55,342 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Standar dunia sama cent sama aja harganya kocak,yang beda cuma lot sizenya' reply_to_id=2642 reply_to_text=''
+2026-08-15 22:46:55,355 INFO [20260815_222456_41a4950e] agent.turn_context: conversation turn: session=20260815_222456_41a4950e model=gemma4:31b provider=ollama-cloud platform=telegram history=58 msg='Standar dunia sama cent sama aja harganya kocak,yang beda cuma lot sizenya'
+2026-08-15 22:46:55,361 INFO [20260815_222456_41a4950e] agent.conversation_loop: Repaired 2 message-alternation violations before request (session=20260815_222456_41a4950e)
+2026-08-15 22:46:56,933 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #7: model=gemma4:31b provider=ollama-cloud in=29025 out=195 total=29220 latency=1.6s
+2026-08-15 22:46:56,938 INFO [20260815_222456_41a4950e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=14 last_msg_role=assistant response_len=675 session=20260815_222456_41a4950e
+2026-08-15 22:46:56,965 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.6s api_calls=1 response=675 chars
+2026-08-15 22:46:56,972 INFO gateway.platforms.base: [Telegram] Sending response (675 chars) to 6874843931
+2026-08-15 22:47:07,895 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244792->234248 rss_anon_kib=209584->199040 threads=14 duration_ms=108.2
+2026-08-15 22:47:59,219 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (37 chars)
+2026-08-15 22:47:59,223 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Apa ini akan mempengaruhi rate limit?' reply_to_id=2642 reply_to_text=''
+2026-08-15 22:47:59,238 INFO [20260815_222456_41a4950e] agent.turn_context: conversation turn: session=20260815_222456_41a4950e model=gemma4:31b provider=ollama-cloud platform=telegram history=60 msg='Apa ini akan mempengaruhi rate limit?'
+2026-08-15 22:47:59,242 INFO [20260815_222456_41a4950e] agent.conversation_loop: Repaired 2 message-alternation violations before request (session=20260815_222456_41a4950e)
+2026-08-15 22:48:02,903 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #8: model=gemma4:31b provider=ollama-cloud in=29236 out=353 total=29589 latency=3.7s
+2026-08-15 22:48:02,908 INFO [20260815_222456_41a4950e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=14 last_msg_role=assistant response_len=1408 session=20260815_222456_41a4950e
+2026-08-15 22:48:02,913 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.7s api_calls=1 response=1408 chars
+2026-08-15 22:48:02,921 INFO gateway.platforms.base: [Telegram] Sending response (1408 chars) to 6874843931
+2026-08-15 22:48:08,013 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244536->234936 rss_anon_kib=209328->199728 threads=14 duration_ms=111.0
