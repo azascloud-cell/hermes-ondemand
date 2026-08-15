@@ -287,3 +287,8 @@
 2026-08-15 04:54:29,835 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.0s api_calls=1 response=118 chars
 2026-08-15 04:54:29,836 INFO gateway.run: Transient agent failure in session 20260815_012724_e3d012b4 — persisting user message so conversation context is preserved on retry.
 2026-08-15 04:54:29,842 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 6874843931
+2026-08-15 05:06:02,072 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (5 chars)
+2026-08-15 05:06:02,078 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='hallo' reply_to_id=2237 reply_to_text=''
+2026-08-15 05:06:10,687 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.6s api_calls=1 response=118 chars
+2026-08-15 05:06:10,688 INFO gateway.run: Transient agent failure in session 20260815_012724_e3d012b4 — persisting user message so conversation context is preserved on retry.
+2026-08-15 05:06:10,694 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 6874843931
