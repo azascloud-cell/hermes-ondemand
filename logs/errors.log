@@ -1417,3 +1417,5 @@ RuntimeError: HTTP 401: Model gemma4:31b is not supported
 2026-08-15 22:59:15,029 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
 2026-08-15 22:59:15,043 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
 2026-08-15 22:59:51,392 WARNING [20260815_225915_d41b6d] agent.tool_executor: Tool terminal returned error (0.18s): {"output": "", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-08-15 23:50:29,619 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: httpx.ReadError: 
+2026-08-15 23:50:29,619 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ReadError: 

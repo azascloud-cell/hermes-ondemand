@@ -723,3 +723,6 @@
 2026-08-15 22:59:54,987 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='[ASYNC DELEGATION BATCH COMPLETE — deleg_00000fb8] A background fan-out of 1 sub' reply_to_id=None reply_to_text=''
 2026-08-15 22:59:57,364 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.4s api_calls=1 response=826 chars
 2026-08-15 22:59:57,371 INFO gateway.platforms.base: [Telegram] Sending response (826 chars) to 6874843931
+2026-08-15 23:50:29,619 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: httpx.ReadError: 
+2026-08-15 23:50:29,619 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ReadError: 
+2026-08-15 23:50:35,147 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress

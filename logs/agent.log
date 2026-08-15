@@ -4710,3 +4710,11 @@ RuntimeError: HTTP 401: Model gemma4:31b is not supported
 2026-08-15 23:47:14,463 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=252772->250636 rss_anon_kib=217564->215428 threads=17 duration_ms=109.6
 2026-08-15 23:48:14,582 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=278744->250676 rss_anon_kib=243536->215468 threads=17 duration_ms=112.7
 2026-08-15 23:49:14,704 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251484->250644 rss_anon_kib=216276->215436 threads=17 duration_ms=120.7
+2026-08-15 23:50:14,814 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251460->250648 rss_anon_kib=216252->215440 threads=17 duration_ms=109.6
+2026-08-15 23:50:29,619 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: httpx.ReadError: 
+2026-08-15 23:50:29,619 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ReadError: 
+2026-08-15 23:50:35,147 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress
+2026-08-15 23:51:14,927 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251488->250644 rss_anon_kib=216280->215436 threads=17 duration_ms=112.2
+2026-08-15 23:52:15,039 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=252768->250644 rss_anon_kib=217560->215436 threads=17 duration_ms=111.7
+2026-08-15 23:53:15,163 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=278288->250696 rss_anon_kib=243080->215488 threads=17 duration_ms=117.4
+2026-08-15 23:54:15,273 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251688->250672 rss_anon_kib=216480->215464 threads=17 duration_ms=110.1
