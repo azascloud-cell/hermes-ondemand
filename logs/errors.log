@@ -1385,3 +1385,26 @@ Traceback (most recent call last):
     raise RuntimeError(_err_text)
 RuntimeError: HTTP 401: Model gemma4:31b is not supported
 2026-08-15 22:52:43,996 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool memory returned error (0.00s): {"success": false, "error": "After applying all 2 operations, memory would be at 1,628/1,375 chars -- over the limit. Remove or shorten more entries in the same batch (see current_entries below), then
+2026-08-15 22:56:22,139 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool cronjob returned error (0.00s): {"error": "No updates provided.", "success": false}
+2026-08-15 22:56:24,562 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool cronjob returned error (0.01s): {"error": "No updates provided.", "success": false}
+
+[Tool loop warning: repeated_exact_failure_warning; count=2; cronjob has failed 2 times with identical arguments. This looks like a loop; inspect t
+2026-08-15 22:56:26,858 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool cronjob returned error (0.00s): {"error": "Cannot resume: one-shot time 2026-08-15T22:51:47.589761+00:00 is in the past (grace window: 120s) and will never fire.", "success": false}
+2026-08-15 22:56:29,971 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-15 22:56:30,052 WARNING [cron_0cda8f60b1ec_20260815_225629] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=ThreadPoolExecutor-19_0:140189443806912 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b summary=HTTP 401: Model gemma4:31b is not supported
+2026-08-15 22:56:30,066 ERROR [cron_0cda8f60b1ec_20260815_225629] agent.conversation_loop: Non-retryable client error: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
+2026-08-15 22:56:30,068 ERROR cron.scheduler: Job 'XAUUSD Price Radar - Mas Azza V2' failed: RuntimeError: HTTP 401: Model gemma4:31b is not supported
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/cron/scheduler.py", line 5338, in run_job
+    raise RuntimeError(_err_text)
+RuntimeError: HTTP 401: Model gemma4:31b is not supported
+2026-08-15 22:56:31,905 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:56:31,906 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:56:31,907 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-15 22:56:31,909 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-15 22:56:31,912 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:56:31,913 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:56:31,916 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:56:31,917 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-15 22:56:31,918 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-15 22:56:32,753 WARNING [20260815_222456_41a4950e] agent.relay_runtime: Skipping Relay instrumentation for concurrent Hermes turn 20260815_222456_41a4950e:20260815_222456_41a4950e:aaa05565 in session 20260815_222456_41a4950e

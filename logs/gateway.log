@@ -699,3 +699,21 @@
 2026-08-15 22:53:53,776 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ini kenapa?' reply_to_id=2695 reply_to_text='Cronjob Response: XAUUSD Price Radar - Mas Azza (job_id: 27772c4137ec) ---------'
 2026-08-15 22:53:55,802 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.0s api_calls=1 response=858 chars
 2026-08-15 22:53:55,809 INFO gateway.platforms.base: [Telegram] Sending response (858 chars) to 6874843931
+2026-08-15 22:55:00,979 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (22 chars)
+2026-08-15 22:55:00,983 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='😇 kamu baik-baik saja?' reply_to_id=2642 reply_to_text=''
+2026-08-15 22:55:02,758 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.8s api_calls=1 response=656 chars
+2026-08-15 22:55:02,765 INFO gateway.platforms.base: [Telegram] Sending response (656 chars) to 6874843931
+2026-08-15 22:55:53,779 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (32 chars)
+2026-08-15 22:55:53,783 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Jadi,udah normal nih cronjobnya?' reply_to_id=2642 reply_to_text=''
+2026-08-15 22:55:55,705 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.9s api_calls=1 response=718 chars
+2026-08-15 22:55:55,712 INFO gateway.platforms.base: [Telegram] Sending response (718 chars) to 6874843931
+2026-08-15 22:56:21,228 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (2 chars)
+2026-08-15 22:56:21,231 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ok' reply_to_id=2642 reply_to_text=''
+2026-08-15 22:56:31,887 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.7s api_calls=6 response=798 chars
+2026-08-15 22:56:31,897 INFO gateway.platforms.base: [Telegram] Sending response (798 chars) to 6874843931
+2026-08-15 22:56:32,733 INFO gateway.run: Watch pattern notification — injecting for telegram chat=6874843931 thread=38922
+2026-08-15 22:56:32,737 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='[ASYNC DELEGATION COMPLETE — deleg_97811627] A background subagent you dispatche' reply_to_id=None reply_to_text=''
+2026-08-15 22:56:36,327 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.6s api_calls=1 response=1347 chars
+2026-08-15 22:56:36,334 INFO gateway.platforms.base: [Telegram] Sending response (1347 chars) to 6874843931
+2026-08-15 22:59:12,356 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (47 chars)
+2026-08-15 22:59:12,362 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kasih example aja!  Neng, bagaimana harga gold?' reply_to_id=2642 reply_to_text=''
