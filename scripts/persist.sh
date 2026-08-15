@@ -15,10 +15,10 @@ GH_PAT="${GH_PAT:-}"
 GH_REPO="${GH_REPO:-}"
 GH_REF="${GH_REF:-main}"
 WORK="${WORK:-/tmp/hermes-data}"
-# exclude heavy tooling/code that we reinstall fresh every run, plus config/env
-# (regenerated each run from secrets by the workflow — restoring stale ones would
-# override the fresh provider/model config)
-EXCLUDES="hermes-agent bin node uv uvx uv-cache __pycache__ .cache venv .git config.yaml .env"
+# exclude heavy tooling/code that we reinstall fresh every run. config.yaml is
+# INCLUDED so the user's /model provider selection survives restarts; .env is
+# excluded (regenerated each run from secrets by the workflow).
+EXCLUDES="hermes-agent bin node uv uvx uv-cache __pycache__ .cache venv .git .env"
 
 copy_in() {  # $1=src $2=dst (copy contents of $1 into $2)
   # Never delete the destination root (it may be the cwd); just sync contents.
