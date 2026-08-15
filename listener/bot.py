@@ -86,7 +86,7 @@ def trigger_workflow(payload):
     }
     code, body = http_post_json(url, body=payload, headers=headers)
     log.info("dispatch status=%s body=%s", code, str(body)[:300])
-    return code in (204, 202, 201)
+    return code in (204, 202, 201), code, str(body)[:300]
 
 
 def handle(chat_id, text, message_id):
@@ -109,13 +109,13 @@ def handle(chat_id, text, message_id):
     PROCESSING.add(chat_id)
 
     try:
-        reply_ok = trigger_workflow(
+        ok, code, detail = trigger_workflow(
             {"question": question, "chat_id": chat_id, "message_id": message_id}
         )
-        if reply_ok:
+        if ok:
             send(chat_id, "Menjalankan Hermes on-demand di GitHub Actions...")
         else:
-            send(chat_id, "Gagal trigger workflow. Cek GH_PAT/GH_REPO.")
+            send(chat_id, f"Gagal trigger (HTTP {code}). Detail: {detail}")
     finally:
         PROCESSING.discard(chat_id)
 
