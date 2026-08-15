@@ -3462,3 +3462,8 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-15 15:47:53,227 INFO [20260815_102333_b288b938] run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=bg-review:139634872936128 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
 2026-08-15 15:47:53,227 INFO [20260815_102333_b288b938] run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=0) thread=bg-review:139634872936128 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
 2026-08-15 15:47:53,367 INFO [20260815_102333_b288b938] hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=494080->487356 rss_anon_kib=396044->389320 threads=16 duration_ms=139.7
+2026-08-15 15:49:01,441 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=487960->485964 rss_anon_kib=389924->387928 threads=15 duration_ms=140.9
+2026-08-15 15:50:01,584 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=486588->485964 rss_anon_kib=388552->387928 threads=15 duration_ms=142.3
+2026-08-15 15:51:01,731 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=497580->486136 rss_anon_kib=399544->388068 threads=15 duration_ms=140.2
+2026-08-15 15:52:01,872 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=488852->485960 rss_anon_kib=390816->387924 threads=15 duration_ms=140.2
+2026-08-15 15:53:02,012 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=503704->487432 rss_anon_kib=405668->389396 threads=15 duration_ms=138.9
