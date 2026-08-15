@@ -62,16 +62,18 @@ jobs:
       - name: Pin python-telegram-bot 22.6 (fix Any cannot be instantiated)
         run: |
           export PATH="$HOME/.local/bin:$PATH"
-          # Hermes installs into ~/.hermes/hermes-agent with a managed uv venv
-          VENV_PY="$(ls -d $HOME/.hermes/hermes-agent/.venv/bin/python 2>/dev/null || ls -d $HOME/.hermes/hermes-agent/venv/bin/python 2>/dev/null || echo '')"
-          echo "venv python: $VENV_PY"
-          if [ -n "$VENV_PY" ]; then
-            "$VENV_PY" -m pip install -q "python-telegram-bot[webhooks]==22.6" 2>&1 | tail -5 || true
+          # Hermes installs into ~/.hermes/hermes-agent with venv + managed uv.
+          # MUST use `uv pip` (the venv's pip is forced to --user and fails).
+          UV="$HOME/.hermes/bin/uv"
+          VENV_PY="$(ls -d $HOME/.hermes/hermes-agent/venv/bin/python 2>/dev/null || echo '')"
+          echo "uv: $UV | venv python: $VENV_PY"
+          if [ -n "$VENV_PY" ] && [ -x "$UV" ]; then
+            "$UV" pip install --python "$VENV_PY" -q "python-telegram-bot[webhooks]==22.6"
+            "$VENV_PY" -c "import python_telegram_bot; print('PTB pinned:', python_telegram_bot.__version__)"
           else
-            echo "venv not found; trying hermes gateway install path"
-            hermes gateway install --help >/dev/null 2>&1 || true
+            echo "venv or uv not found; cannot pin"
+            exit 1
           fi
-          echo "pin done"
 
       - name: Run Keep-Alive Gateway
         env:
