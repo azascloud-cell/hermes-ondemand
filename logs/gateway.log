@@ -368,3 +368,15 @@
 2026-08-15 10:24:47,504 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=0.3s api_calls=1 response=124 chars
 2026-08-15 10:24:47,505 INFO gateway.run: Transient agent failure in session 20260815_102333_b288b938 — persisting user message so conversation context is preserved on retry.
 2026-08-15 10:24:47,511 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 6874843931
+2026-08-15 10:35:47,258 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (66 chars)
+2026-08-15 10:35:47,261 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bisa kamu cek kesehatan kamu neng? soalnya ada yang salah denganmu' reply_to_id=2237 reply_to_text=''
+2026-08-15 10:35:49,789 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.5s api_calls=1 response=371 chars
+2026-08-15 10:35:49,795 INFO gateway.platforms.base: [Telegram] Sending response (371 chars) to 6874843931
+2026-08-15 10:36:44,108 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (32 chars)
+2026-08-15 10:36:44,111 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kamu dikit-dikit kena rate limit' reply_to_id=2237 reply_to_text=''
+2026-08-15 10:36:48,059 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.9s api_calls=1 response=1113 chars
+2026-08-15 10:36:48,065 INFO gateway.platforms.base: [Telegram] Sending response (1113 chars) to 6874843931
+2026-08-15 10:39:15,167 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (61 chars)
+2026-08-15 10:39:15,171 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Aku tunggu dari pagi tadi,baru kamu konek kembali Maghrib ini' reply_to_id=2237 reply_to_text=''
+2026-08-15 10:39:17,150 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.0s api_calls=1 response=666 chars
+2026-08-15 10:39:17,157 INFO gateway.platforms.base: [Telegram] Sending response (666 chars) to 6874843931
