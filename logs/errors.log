@@ -4,3 +4,7 @@
 2026-08-15 00:58:08,156 WARNING gateway.run: Unauthorized user: 6874843931 (Azas Crack) on telegram
 2026-08-15 00:58:53,202 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (1/5) — previous session still held open on Telegram's servers. Waiting 20s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
 2026-08-15 01:00:37,495 WARNING gateway.run: Unauthorized user: 6874843931 (Azas Crack) on telegram
+2026-08-15 01:17:01,216 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=3948, started_at=2026-08-15T00:57:24.839263+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-15T01:02:06.778670+00:00 last_mem={'rss_kib': 145460, 'mem_total_kib': 16373448, 'mem_available_kib': 15209848, 'swap_used_kib': 0} suspected_oom=False
+2026-08-15 01:17:01,299 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-15 01:17:01,489 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-15 01:17:14,493 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (1/5) — previous session still held open on Telegram's servers. Waiting 20s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running

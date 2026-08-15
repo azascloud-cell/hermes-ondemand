@@ -26,3 +26,27 @@
 2026-08-15 00:59:14,785 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 1/5; health pending getUpdates progress
 2026-08-15 01:00:37,494 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38341 (40 chars)
 2026-08-15 01:00:37,495 WARNING gateway.run: Unauthorized user: 6874843931 (Azas Crack) on telegram
+2026-08-15 01:17:01,216 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=3948, started_at=2026-08-15T00:57:24.839263+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-15T01:02:06.778670+00:00 last_mem={'rss_kib': 145460, 'mem_total_kib': 16373448, 'mem_available_kib': 15209848, 'swap_used_kib': 0} suspected_oom=False
+2026-08-15 01:17:01,254 INFO gateway.run: Starting Hermes Gateway...
+2026-08-15 01:17:01,255 INFO gateway.run: Session storage: /home/runner/.hermes/sessions
+2026-08-15 01:17:01,262 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-15 01:17:01,263 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-15 01:17:01,296 INFO gateway.run: Connecting to telegram...
+2026-08-15 01:17:01,299 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-15 01:17:01,478 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-15 01:17:01,478 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-15 01:17:01,489 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-15 01:17:12,599 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-15 01:17:12,868 INFO gateway.run: ✓ telegram connected
+2026-08-15 01:17:12,902 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-15 01:17:12,914 INFO gateway.run: Channel directory built: 0 target(s)
+2026-08-15 01:17:13,649 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-15 01:17:13,923 INFO gateway.run: Press Ctrl+C to stop
+2026-08-15 01:17:13,931 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/runner/.hermes/kanban/.dispatcher.lock)
+2026-08-15 01:17:13,938 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-15 01:17:14,493 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (1/5) — previous session still held open on Telegram's servers. Waiting 20s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-15 01:17:14,986 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-15 01:17:15,295 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-15 01:17:15,296 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 78 hidden (over 60 limit). Use /commands for full list.
+2026-08-15 01:17:18,932 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-15 01:17:39,118 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 1/5; health pending getUpdates progress
