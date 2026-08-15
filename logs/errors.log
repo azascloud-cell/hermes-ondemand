@@ -1131,3 +1131,33 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-15 10:24:47,389 WARNING [20260815_102333_b288b938] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=hermes-gateway_0:140599025985216 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=kimi-k2.5 summary=HTTP 401: No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing
 2026-08-15 10:24:47,455 ERROR [20260815_102333_b288b938] agent.conversation_loop: Non-retryable client error: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
 2026-08-15 10:35:47,303 WARNING [20260815_102333_b288b938] agent.conversation_loop: Stored system prompt for session 20260815_102333_b288b938 is null; rebuilding from scratch this turn. Prefix cache will miss until the rebuild persists. Investigate the previous turn's update_system_prompt write path.
+2026-08-15 10:43:21,394 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-15 10:43:21,594 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-15 10:43:26,989 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:43:47,488 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:43:59,890 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,891 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,891 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,892 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,898 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,919 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,922 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,923 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,924 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,937 WARNING agent.auxiliary_client: Auxiliary client: PAID lane engaged for auxiliary task — OpenRouter fallback model 'google/gemini-3.6-flash' is not a :free SKU and may incur real spend. Set auxiliary.free_only: true to restrict auxiliary fallbacks to free models, or auxiliary.openrouter_model to a :free model.
+2026-08-15 10:43:59,938 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:44:59.
+2026-08-15 10:43:59,941 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-15 10:43:59,941 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:44:59.
+2026-08-15 10:43:59,942 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-15 10:43:59,943 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:44:59.
+2026-08-15 10:43:59,945 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-15 10:43:59,945 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:44:59.
+2026-08-15 10:43:59,945 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-15 10:43:59,945 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,954 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-15 10:44:07,951 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:44:28,432 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:44:48,907 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:44:58,917 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:45:09,398 WARNING hermes_cli.gateway: Gateway (re)started 7 times in 120s — backing off 20s to break a respawn storm.
+2026-08-15 10:45:29,410 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.

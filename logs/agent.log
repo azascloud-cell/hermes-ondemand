@@ -2571,3 +2571,146 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-15 10:39:17,150 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.0s api_calls=1 response=666 chars
 2026-08-15 10:39:17,157 INFO gateway.platforms.base: [Telegram] Sending response (666 chars) to 6874843931
 2026-08-15 10:39:35,240 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=306684->292820 rss_anon_kib=271540->257676 threads=15 duration_ms=139.2
+2026-08-15 10:40:35,379 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=305900->292892 rss_anon_kib=270756->257716 threads=15 duration_ms=138.3
+2026-08-15 10:41:35,517 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=293584->292944 rss_anon_kib=258440->257800 threads=15 duration_ms=137.6
+2026-08-15 10:42:30,829 INFO gateway.platforms.base: [Telegram] Sending response (52 chars) to 6874843931
+2026-08-15 10:42:31,341 INFO hermes_cli.backup: quick snapshot phase=copy status=started id=20260815-104231-pre-update
+2026-08-15 10:42:31,350 INFO hermes_cli.backup: quick snapshot phase=copy status=complete id=20260815-104231-pre-update files=11 bytes=1205338
+2026-08-15 10:42:35,675 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=293848->292968 rss_anon_kib=258704->257824 threads=15 duration_ms=148.3
+2026-08-15 10:42:35,976 INFO gateway.run: Forwarded update prompt to agent:main:telegram:dm:6874843931:38372: Restore local changes now? [Y/n]
+2026-08-15 10:42:40,678 INFO gateway.run: kanban dispatcher: reaped 1 zombie worker(s), pids=[10523]
+2026-08-15 10:42:41,267 INFO hermes_plugins.telegram_platform.adapter: Telegram update prompt answered 'y' by user 6874843931
+2026-08-15 10:42:43,931 INFO tools.lazy_deps: Lazy-installing python-telegram-bot[webhooks]==22.8 for feature 'platform.telegram'
+2026-08-15 10:42:44,281 INFO tools.lazy_deps: Lazy install complete for feature 'platform.telegram'
+2026-08-15 10:42:44,643 INFO run_agent: Loaded environment variables from /home/runner/.hermes/.env
+2026-08-15 10:42:45,383 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-08-15 10:42:45,383 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-08-15 10:42:45,384 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-08-15 10:42:45,445 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-08-15 10:42:45,447 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-08-15 10:42:45,451 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-08-15 10:42:45,453 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-08-15 10:42:45,456 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-08-15 10:42:45,459 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-08-15 10:42:45,459 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-08-15 10:42:45,461 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-08-15 10:42:45,470 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-08-15 10:42:45,474 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-08-15 10:42:45,475 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-08-15 10:42:45,478 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-08-15 10:42:45,481 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-08-15 10:42:45,481 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-08-15 10:42:45,481 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-08-15 10:42:45,482 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-08-15 10:42:45,483 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-08-15 10:42:45,483 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-08-15 10:42:45,487 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-08-15 10:42:45,503 INFO hermes_cli.plugins: Plugin discovery complete: 55 found, 48 enabled
+2026-08-15 10:43:18,054 INFO gateway.run: Stopping gateway for restart...
+2026-08-15 10:43:18,791 INFO gateway.run: Sent shutdown notification to home channel telegram:6874843931
+2026-08-15 10:43:18,791 INFO gateway.run: Shutdown phase: notify_active_sessions done at +0.74s
+2026-08-15 10:43:18,793 INFO gateway.run: Shutdown phase: drain done at +0.74s (drain took 0.00s, timed_out=False, active_at_start=0, active_now=0, cron_at_start=0, cron_now=0, api_at_start=0, api_now=0)
+2026-08-15 10:43:18,794 INFO [20260815_102333_b288b938] run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=hermes-gateway_0:140599025985216 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 10:43:18,794 INFO [20260815_102333_b288b938] run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=0) thread=hermes-gateway_0:140599025985216 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 10:43:18,941 INFO [20260815_102333_b288b938] hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=293876->292456 rss_anon_kib=258732->257312 threads=15 duration_ms=145.4
+2026-08-15 10:43:19,223 INFO telegram.ext.Application: Application is stopping. This might take a moment.
+2026-08-15 10:43:19,223 INFO telegram.ext.Application: Application.stop() complete
+2026-08-15 10:43:19,224 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Disconnected from Telegram
+2026-08-15 10:43:19,224 INFO gateway.run: ✓ telegram disconnected (0.28s)
+2026-08-15 10:43:19,224 INFO gateway.run: Shutdown phase: all adapters disconnected at +1.17s
+2026-08-15 10:43:19,226 INFO gateway.run: Shutdown phase: final-cleanup tool kill done at +1.17s
+2026-08-15 10:43:19,228 INFO gateway.run: Shutdown phase: SessionDB close done at +1.17s
+2026-08-15 10:43:19,243 INFO gateway.run: Gateway stopped (total teardown 1.19s)
+2026-08-15 10:43:19,244 INFO gateway.run: Gateway housekeeping stopped
+2026-08-15 10:43:19,870 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-08-15 10:43:19,871 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-08-15 10:43:19,872 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-08-15 10:43:19,999 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-08-15 10:43:20,001 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-08-15 10:43:20,002 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-08-15 10:43:20,004 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-08-15 10:43:20,005 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-08-15 10:43:20,006 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-08-15 10:43:20,006 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-08-15 10:43:20,011 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-08-15 10:43:20,022 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-08-15 10:43:20,023 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-08-15 10:43:20,024 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-08-15 10:43:20,026 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-08-15 10:43:20,176 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-08-15 10:43:20,178 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-08-15 10:43:20,207 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-08-15 10:43:20,214 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-08-15 10:43:20,224 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-08-15 10:43:20,228 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-08-15 10:43:20,232 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-08-15 10:43:20,243 INFO hermes_cli.plugins: Plugin discovery complete: 55 found, 48 enabled
+2026-08-15 10:43:21,350 INFO gateway.run: Starting Hermes Gateway...
+2026-08-15 10:43:21,350 INFO gateway.run: Session storage: /home/runner/.hermes/sessions
+2026-08-15 10:43:21,360 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-15 10:43:21,360 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-15 10:43:21,385 INFO gateway.run: Previous gateway exited cleanly — skipping session suspension
+2026-08-15 10:43:21,391 INFO gateway.run: Connecting to telegram...
+2026-08-15 10:43:21,394 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-15 10:43:21,583 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-15 10:43:21,583 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-15 10:43:21,594 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-15 10:43:21,872 INFO telegram.ext.Application: Application started
+2026-08-15 10:43:26,989 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:43:32,347 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-15 10:43:32,427 INFO gateway.run: ✓ telegram connected
+2026-08-15 10:43:32,433 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-15 10:43:32,444 INFO gateway.run: Channel directory built: 3 target(s)
+2026-08-15 10:43:33,109 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-15 10:43:33,369 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-15 10:43:33,634 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-15 10:43:33,634 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 82 hidden (over 60 limit). Use /commands for full list.
+2026-08-15 10:43:33,659 INFO gateway.run: Sent post-update notification to telegram:6874843931 (exit=0)
+2026-08-15 10:43:35,228 INFO gateway.run: Sent home-channel startup notification to telegram:6874843931
+2026-08-15 10:43:35,235 INFO gateway.run: Press Ctrl+C to stop
+2026-08-15 10:43:35,240 INFO cron.scheduler_provider: In-process cron scheduler started (interval=60s)
+2026-08-15 10:43:35,242 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/runner/.hermes/kanban/.dispatcher.lock)
+2026-08-15 10:43:35,250 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-15 10:43:35,314 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=154372->135604 rss_anon_kib=129120->110352 threads=9 duration_ms=61.7
+2026-08-15 10:43:40,243 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-15 10:43:47,488 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:43:58,939 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (38 chars)
+2026-08-15 10:43:58,966 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Oke, terimakasih atas bantuannya neng!' reply_to_id=2237 reply_to_text=''
+2026-08-15 10:43:58,992 INFO hermes_state: Repaired 1 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-15 10:43:59,053 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38372: model=gemma4:31b provider=ollama-cloud
+2026-08-15 10:43:59,061 INFO run_agent: Loaded environment variables from /home/runner/.hermes/.env
+2026-08-15 10:43:59,888 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140454523819712 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 10:43:59,890 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,891 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,891 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,892 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,898 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,919 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,922 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,923 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,924 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,937 WARNING agent.auxiliary_client: Auxiliary client: PAID lane engaged for auxiliary task — OpenRouter fallback model 'google/gemini-3.6-flash' is not a :free SKU and may incur real spend. Set auxiliary.free_only: true to restrict auxiliary fallbacks to free models, or auxiliary.openrouter_model to a :free model.
+2026-08-15 10:43:59,938 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:44:59.
+2026-08-15 10:43:59,941 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-15 10:43:59,941 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:44:59.
+2026-08-15 10:43:59,942 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-15 10:43:59,943 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:44:59.
+2026-08-15 10:43:59,945 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-15 10:43:59,945 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:44:59.
+2026-08-15 10:43:59,945 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-15 10:43:59,945 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 10:43:59,954 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-15 10:44:00,010 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=gemma4:31b provider=ollama-cloud platform=telegram history=7 msg='Oke, terimakasih atas bantuannya neng!'
+2026-08-15 10:44:00,023 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-15 10:44:00,228 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-14 (<lambda>):140454137947840 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 10:44:03,374 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=17947 out=80 total=18027 latency=3.3s
+2026-08-15 10:44:03,521 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=295 session=20260815_102333_b288b938
+2026-08-15 10:44:03,540 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.6s api_calls=1 response=295 chars
+2026-08-15 10:44:03,552 INFO gateway.platforms.base: [Telegram] Sending response (295 chars) to 6874843931
+2026-08-15 10:44:07,951 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:44:28,432 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:44:35,424 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=243840->214036 rss_anon_kib=208944->179140 threads=13 duration_ms=109.7
+2026-08-15 10:44:48,907 WARNING hermes_cli.gateway: Gateway (re)started 6 times in 120s — backing off 10s to break a respawn storm.
+2026-08-15 10:44:58,917 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
+2026-08-15 10:45:09,398 WARNING hermes_cli.gateway: Gateway (re)started 7 times in 120s — backing off 20s to break a respawn storm.
+2026-08-15 10:45:29,410 ERROR gateway.run: Another gateway instance is already running (PID 11077, HERMES_HOME=/home/runner/.hermes). Use 'hermes gateway restart' to replace it, or 'hermes gateway stop' first.
