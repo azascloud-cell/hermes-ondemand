@@ -84,7 +84,8 @@ def trigger_workflow(payload):
         "Authorization": f"Bearer {GH_PAT}",
         "Accept": "application/vnd.github+json",
     }
-    code, body = http_post_json(url, body=payload, headers=headers)
+    body = {"event_type": "hermes-on-demand", "client_payload": payload}
+    code, body = http_post_json(url, body=body, headers=headers)
     log.info("dispatch status=%s body=%s", code, str(body)[:300])
     return code in (204, 202, 201), code, str(body)[:300]
 
