@@ -36,8 +36,10 @@ trigger_next() {
 }
 
 run_gateway() {
-  # start gateway in background so the keep-alive loop can keep ticking
-  hermes gateway start &
+  # Foreground gateway (no systemd service needed) running in background so the
+  # keep-alive loop can keep ticking. `gateway start` needs a user service, which
+  # doesn't work on ephemeral CI runners.
+  hermes gateway >/tmp/gateway.log 2>&1 &
   GW_PID=$!
 }
 
@@ -47,6 +49,17 @@ main() {
 
   echo "Starting hermes gateway..."
   run_gateway
+
+  # give the gateway a moment to come online before the keep-alive loop checks it
+  sleep 8
+  if ! kill -0 "$GW_PID" 2>/dev/null; then
+    echo "Gateway exited immediately. Log:"
+    cat /tmp/gateway.log 2>/dev/null || true
+    notify "⚠️ Hermes gateway gagal start, cek log"
+    exit 1
+  fi
+  echo "Gateway up (pid $GW_PID). Log tail:"
+  tail -n 20 /tmp/gateway.log 2>/dev/null || true
 
   local start_sec run_sec limit_sec restart_at_sec
   start_sec=$(date +%s)
