@@ -345,3 +345,26 @@
 2026-08-15 07:40:48,539 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 6874843931
 2026-08-15 08:44:20,551 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38372 (idle=3812s)
 2026-08-15 08:44:20,552 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-15 10:20:30,343 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (2 chars)
+2026-08-15 10:20:30,347 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Oy' reply_to_id=2237 reply_to_text=''
+2026-08-15 10:20:40,393 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.0s api_calls=1 response=118 chars
+2026-08-15 10:20:40,393 INFO gateway.run: Transient agent failure in session 20260815_012724_e3d012b4 — persisting user message so conversation context is preserved on retry.
+2026-08-15 10:20:40,399 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 6874843931
+2026-08-15 10:21:53,624 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (2 chars)
+2026-08-15 10:21:53,628 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Oy' reply_to_id=2237 reply_to_text=''
+2026-08-15 10:21:59,144 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.5s api_calls=1 response=839 chars
+2026-08-15 10:21:59,150 INFO gateway.platforms.base: [Telegram] Sending response (839 chars) to 6874843931
+2026-08-15 10:23:33,443 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:6874843931:38372 → 9 (session_reset)
+2026-08-15 10:24:28,487 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (24 chars)
+2026-08-15 10:24:28,490 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kamu pakai model ai apa?' reply_to_id=2237 reply_to_text=''
+2026-08-15 10:24:29,466 INFO [20260815_012724_e3d012b4] gateway.run: No model configured — defaulting to kimi-k2.5 for provider opencode-zen
+2026-08-15 10:24:29,777 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.3s api_calls=1 response=124 chars
+2026-08-15 10:24:29,778 INFO gateway.run: Transient agent failure in session 20260815_102333_b288b938 — persisting user message so conversation context is preserved on retry.
+2026-08-15 10:24:29,785 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 6874843931
+2026-08-15 10:24:36,423 INFO gateway.platforms.base: [Telegram] Sending response (116 chars) to 6874843931
+2026-08-15 10:24:47,178 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (24 chars)
+2026-08-15 10:24:47,181 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kamu pakai model ai apa?' reply_to_id=2237 reply_to_text=''
+2026-08-15 10:24:47,201 INFO [20260815_102333_b288b938] gateway.run: No model configured — defaulting to kimi-k2.5 for provider opencode-zen
+2026-08-15 10:24:47,504 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=0.3s api_calls=1 response=124 chars
+2026-08-15 10:24:47,505 INFO gateway.run: Transient agent failure in session 20260815_102333_b288b938 — persisting user message so conversation context is preserved on retry.
+2026-08-15 10:24:47,511 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 6874843931
