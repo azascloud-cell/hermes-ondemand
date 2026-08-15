@@ -527,3 +527,11 @@
 2026-08-15 15:21:42,398 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bisakah kamu rekomendasi link YouTube terkait fakta ini pakai bahasa Indonesia!' reply_to_id=2237 reply_to_text=''
 2026-08-15 15:21:46,597 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.2s api_calls=1 response=1416 chars
 2026-08-15 15:21:46,605 INFO gateway.platforms.base: [Telegram] Sending response (1416 chars) to 6874843931
+2026-08-15 15:35:57,947 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (65 chars)
+2026-08-15 15:35:57,952 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Hmm,ada nggak ai yang gratis open source dan gak kalah sama kamu?' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:36:05,837 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.9s api_calls=1 response=2654 chars
+2026-08-15 15:36:05,846 INFO gateway.platforms.base: [Telegram] Sending response (2654 chars) to 6874843931
+2026-08-15 15:37:30,792 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (47 chars)
+2026-08-15 15:37:30,796 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Maksudnya Hermes, bukan provider ai nya neng...' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:37:36,965 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.2s api_calls=1 response=2504 chars
+2026-08-15 15:37:36,974 INFO gateway.platforms.base: [Telegram] Sending response (2504 chars) to 6874843931
