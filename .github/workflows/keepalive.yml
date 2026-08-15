@@ -86,8 +86,8 @@ jobs:
           # never re-imports/restores TypeHandler, leaving it as typing.Any and
           # crashing at startup ("Any cannot be instantiated").
           python3 - <<'PY'
-          import pathlib
-          p = pathlib.Path("$HOME/.hermes/hermes-agent/plugins/platforms/telegram/adapter.py").expanduser()
+          import os, pathlib
+          p = pathlib.Path(os.environ["HOME"]) / ".hermes/hermes-agent/plugins/platforms/telegram/adapter.py"
           src = p.read_text()
           if "TypeHandler as _TH" in src:
               print("already patched")
