@@ -669,3 +669,9 @@
 2026-08-15 22:38:57,733 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_3e7576a3ffa7.jpg
 2026-08-15 22:38:58,538 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Sekarang masih hari Minggu,jadi market close, sementara kamu bantu analisis' reply_to_id=2642 reply_to_text=''
 2026-08-15 22:38:58,544 INFO gateway.run: Image routing: native (model supports vision). 3 image(s) will be attached inline.
+2026-08-15 22:39:08,763 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.2s api_calls=1 response=2630 chars
+2026-08-15 22:39:08,771 INFO gateway.platforms.base: [Telegram] Sending response (2630 chars) to 6874843931
+2026-08-15 22:43:51,486 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (109 chars)
+2026-08-15 22:43:51,490 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bisa kamu buatkan alert price dan auto signal saat ada setup moment? Jangan lang' reply_to_id=2642 reply_to_text=''
+2026-08-15 22:43:54,729 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.2s api_calls=1 response=1278 chars
+2026-08-15 22:43:54,736 INFO gateway.platforms.base: [Telegram] Sending response (1278 chars) to 6874843931
