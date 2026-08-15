@@ -465,3 +465,7 @@
 2026-08-15 14:37:40,529 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Cara cuan maksimal dari jualan Gmail personal bagaimana neng?' reply_to_id=2237 reply_to_text=''
 2026-08-15 14:37:50,989 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.5s api_calls=1 response=3248 chars
 2026-08-15 14:37:50,997 INFO gateway.platforms.base: [Telegram] Sending response (3248 chars) to 6874843931
+2026-08-15 14:40:12,594 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (47 chars)
+2026-08-15 14:40:12,599 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Aku pakai nokos sih daftarnya cuma kadang kenon' reply_to_id=2237 reply_to_text=''
+2026-08-15 14:40:20,994 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.4s api_calls=1 response=2934 chars
+2026-08-15 14:40:21,021 INFO gateway.platforms.base: [Telegram] Sending response (2934 chars) to 6874843931

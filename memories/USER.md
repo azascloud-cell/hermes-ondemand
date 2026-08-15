@@ -5,3 +5,5 @@ User is interested in Android app development, web automation/scraping (specific
 User prefers to be called 'Mas Azza' and refers to the agent as 'Neng Lidya'.
 §
 User is an ultra-scalper in XAUUSD with very tight SL (40 points) and TP (60-125 points).
+§
+User is interested in making money from selling personal Gmail accounts using virtual numbers (nokos).
