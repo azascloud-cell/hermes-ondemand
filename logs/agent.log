@@ -3695,3 +3695,8 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-15 18:49:29,822 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=154916->145916 rss_anon_kib=129380->120380 threads=10 duration_ms=61.6
 2026-08-15 18:50:29,874 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=146552->145896 rss_anon_kib=121016->120360 threads=10 duration_ms=51.1
 2026-08-15 18:51:29,925 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=146516->145892 rss_anon_kib=120980->120356 threads=10 duration_ms=50.0
+2026-08-15 18:52:29,983 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=146536->145892 rss_anon_kib=121000->120356 threads=10 duration_ms=57.3
+2026-08-15 18:53:30,048 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=146488->145888 rss_anon_kib=120952->120352 threads=10 duration_ms=65.2
+2026-08-15 18:54:30,128 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=155096->145888 rss_anon_kib=129560->120352 threads=10 duration_ms=74.0
+2026-08-15 18:55:30,198 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=146576->145876 rss_anon_kib=121040->120340 threads=10 duration_ms=69.5
+2026-08-15 18:56:30,274 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=146464->145872 rss_anon_kib=120928->120336 threads=10 duration_ms=74.5
