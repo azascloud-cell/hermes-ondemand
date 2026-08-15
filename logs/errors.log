@@ -1214,3 +1214,4 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-15 10:56:46,022 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
 2026-08-15 10:56:46,022 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
 2026-08-15 10:56:46,033 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-15 15:07:45,056 WARNING huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.

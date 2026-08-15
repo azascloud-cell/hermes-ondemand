@@ -477,3 +477,21 @@
 2026-08-15 15:00:57,623 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Pakai groq tetap bisa koding?' reply_to_id=2237 reply_to_text=''
 2026-08-15 15:01:13,892 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=16.3s api_calls=1 response=1675 chars
 2026-08-15 15:01:13,900 INFO gateway.platforms.base: [Telegram] Sending response (1675 chars) to 6874843931
+2026-08-15 15:04:56,960 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (69 chars)
+2026-08-15 15:04:56,964 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau sekedar ngobrol seperti ini, request limit aman ya buat ollama?' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:05:00,312 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.3s api_calls=1 response=840 chars
+2026-08-15 15:05:00,322 INFO gateway.platforms.base: [Telegram] Sending response (840 chars) to 6874843931
+2026-08-15 15:05:52,660 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (37 chars)
+2026-08-15 15:05:52,664 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Jadi,bisa dibilang unlimited ya neng?' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:05:57,100 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.4s api_calls=1 response=908 chars
+2026-08-15 15:05:57,108 INFO gateway.platforms.base: [Telegram] Sending response (908 chars) to 6874843931
+2026-08-15 15:06:52,569 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (30 chars)
+2026-08-15 15:06:52,573 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bisa pakai voice buat ngobrol?' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:06:58,852 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.3s api_calls=1 response=804 chars
+2026-08-15 15:06:58,860 INFO gateway.platforms.base: [Telegram] Sending response (804 chars) to 6874843931
+2026-08-15 15:07:42,627 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user voice at /home/runner/.hermes/cache/audio/audio_32ba05baabc5.ogg
+2026-08-15 15:07:42,631 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='' reply_to_id=2237 reply_to_text=''
+2026-08-15 15:07:53,419 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.8s api_calls=1 response=281 chars
+2026-08-15 15:07:53,428 INFO gateway.platforms.base: [Telegram] Sending response (281 chars) to 6874843931
+2026-08-15 15:08:10,102 INFO gateway.platforms.base: [Telegram] Sending response (291 chars) to 6874843931
+2026-08-15 15:08:25,258 INFO gateway.platforms.base: [Telegram] Sending response (125 chars) to 6874843931
