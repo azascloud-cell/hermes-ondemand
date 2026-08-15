@@ -165,3 +165,15 @@
 2026-08-15 02:11:07,849 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Aku fokus di xauusd' reply_to_id=2237 reply_to_text=''
 2026-08-15 02:11:15,545 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.7s api_calls=1 response=2999 chars
 2026-08-15 02:11:15,554 INFO gateway.platforms.base: [Telegram] Sending response (2999 chars) to 6874843931
+2026-08-15 02:13:11,368 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (56 chars)
+2026-08-15 02:13:11,372 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Aku bisa dikategorikan scalper SL 40poin tp1 60 tp2 12,5' reply_to_id=2237 reply_to_text=''
+2026-08-15 02:13:19,373 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.0s api_calls=1 response=2480 chars
+2026-08-15 02:13:19,381 INFO gateway.platforms.base: [Telegram] Sending response (2480 chars) to 6874843931
+2026-08-15 02:14:32,924 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (46 chars)
+2026-08-15 02:14:32,928 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bisa kamu bangun bot ini atau apk flutter nya?' reply_to_id=2237 reply_to_text=''
+2026-08-15 02:14:42,107 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=9.2s api_calls=1 response=2427 chars
+2026-08-15 02:14:42,116 INFO gateway.platforms.base: [Telegram] Sending response (2427 chars) to 6874843931
+2026-08-15 02:16:33,587 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (119 chars)
+2026-08-15 02:16:33,591 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Sebelum mulai,kita kenalan dulu biar makin dekat.  Aku akan panggil kamu neng Li' reply_to_id=2237 reply_to_text=''
+2026-08-15 02:16:37,187 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.6s api_calls=1 response=727 chars
+2026-08-15 02:16:37,194 INFO gateway.platforms.base: [Telegram] Sending response (727 chars) to 6874843931
