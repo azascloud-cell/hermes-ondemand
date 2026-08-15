@@ -123,6 +123,8 @@ jobs:
           GH_REF: ${{ github.ref_name }}
           RUN_MINUTES: ${{ inputs.minutes || 350 }}
           KEEPALIVE_WORKFLOW: "keepalive.yml"
+          DATA_BRANCH: "data"
+          BACKUP_EVERY_SEC: "300"
         run: |
-          chmod +x scripts/keepalive.sh
+          chmod +x scripts/keepalive.sh scripts/persist.sh
           ./scripts/keepalive.sh

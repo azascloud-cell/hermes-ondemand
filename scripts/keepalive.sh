@@ -45,6 +45,11 @@ run_gateway() {
 
 main() {
   local wf="${KEEPALIVE_WORKFLOW:-keepalive.yml}"
+
+  # restore persisted data before starting the gateway (survives ephemeral runners)
+  echo "Restoring ~/.hermes data..."
+  "$(dirname "$0")/persist.sh" restore 2>&1 | tail -5 || true
+
   notify "🟢 Hermes online (keep-alive start)"
 
   echo "Starting hermes gateway..."
@@ -66,6 +71,8 @@ main() {
   run_sec=$((RUN_MINUTES * 60))
   limit_sec=$((360 * 60))
   restart_at_sec=$((start_sec + (RUN_MINUTES - RESTART_BUFFER_MIN) * 60))
+  BACKUP_EVERY_SEC="${BACKUP_EVERY_SEC:-300}"
+  local last_backup=$start_sec
 
   while true; do
     local now_sec elapsed
@@ -74,6 +81,8 @@ main() {
 
     if [ $now_sec -ge $restart_at_sec ]; then
       echo "Keep-alive: triggering next run at ${elapsed}s"
+      # final backup before handing over to the next run
+      "$(dirname "$0")/persist.sh" backup 2>&1 | tail -3 || true
       notify "🔄 Hermes restarting (keep-alive), bot akan offline sebentar..."
       trigger_next "$wf"
       # give the new run time to boot; the next run sends the online notification
@@ -81,6 +90,12 @@ main() {
       kill "$GW_PID" 2>/dev/null || true
       wait "$GW_PID" 2>/dev/null || true
       exit 0
+    fi
+
+    # periodic backup so recent sessions/memory are never lost
+    if [ $((now_sec - last_backup)) -ge $BACKUP_EVERY_SEC ]; then
+      last_backup=$now_sec
+      "$(dirname "$0")/persist.sh" backup 2>&1 | tail -2 || true
     fi
 
     # if the gateway process died unexpectedly, restart it
