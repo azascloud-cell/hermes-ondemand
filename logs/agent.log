@@ -1533,3 +1533,327 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-15 05:06:10,688 INFO gateway.run: Transient agent failure in session 20260815_012724_e3d012b4 — persisting user message so conversation context is preserved on retry.
 2026-08-15 05:06:10,694 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 6874843931
 2026-08-15 05:06:38,383 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=229940->225436 rss_anon_kib=194864->190360 threads=14 duration_ms=100.9
+2026-08-15 05:12:38,619 INFO hermes_cli.main: Checkout changed since last launch (unknown -> git:refs/heads/main:0cbc4ce83bc75b82d9decb40ec5e4006c1c3cff3): cleared 41 stale __pycache__ directories
+2026-08-15 05:12:40,096 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-08-15 05:12:40,098 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-08-15 05:12:40,100 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-08-15 05:12:40,165 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-08-15 05:12:40,167 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-08-15 05:12:40,171 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-08-15 05:12:40,173 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-08-15 05:12:40,176 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-08-15 05:12:40,178 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-08-15 05:12:40,178 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-08-15 05:12:40,183 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-08-15 05:12:40,194 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-08-15 05:12:40,198 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-08-15 05:12:40,201 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-08-15 05:12:40,205 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-08-15 05:12:40,208 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-08-15 05:12:40,210 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-08-15 05:12:40,218 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-08-15 05:12:40,220 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-08-15 05:12:40,221 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-08-15 05:12:40,223 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-08-15 05:12:40,227 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-08-15 05:12:40,244 INFO hermes_cli.plugins: Plugin discovery complete: 55 found, 48 enabled
+2026-08-15 05:12:41,489 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-08-15 05:12:41,513 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=3943, started_at=2026-08-15T04:52:23.627249+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-15T05:07:36.038305+00:00 last_mem={'rss_kib': 225836, 'mem_total_kib': 16373448, 'mem_available_kib': 15095956, 'swap_used_kib': 0} suspected_oom=False
+2026-08-15 05:12:41,552 INFO gateway.run: Starting Hermes Gateway...
+2026-08-15 05:12:41,553 INFO gateway.run: Session storage: /home/runner/.hermes/sessions
+2026-08-15 05:12:41,564 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-15 05:12:41,564 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-15 05:12:41,603 INFO gateway.run: Connecting to telegram...
+2026-08-15 05:12:41,607 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-15 05:12:41,782 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-15 05:12:41,782 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-15 05:12:41,793 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-15 05:12:41,857 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-08-15 05:12:42,070 INFO telegram.ext.Application: Application started
+2026-08-15 05:12:42,114 INFO tools.tirith_security: tirith installed to /home/runner/.hermes/bin/tirith (SHA-256 only)
+2026-08-15 05:12:52,537 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-15 05:12:52,835 INFO gateway.run: ✓ telegram connected
+2026-08-15 05:12:52,880 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-15 05:12:52,890 INFO gateway.run: Channel directory built: 2 target(s)
+2026-08-15 05:12:53,340 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-15 05:12:53,606 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-15 05:12:53,877 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-15 05:12:53,877 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 81 hidden (over 60 limit). Use /commands for full list.
+2026-08-15 05:12:53,897 INFO gateway.run: Press Ctrl+C to stop
+2026-08-15 05:12:53,902 INFO cron.scheduler_provider: In-process cron scheduler started (interval=60s)
+2026-08-15 05:12:53,904 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/runner/.hermes/kanban/.dispatcher.lock)
+2026-08-15 05:12:53,912 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-15 05:12:53,978 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=152644->142960 rss_anon_kib=127120->117468 threads=9 duration_ms=63.3
+2026-08-15 05:12:58,906 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-15 05:13:54,047 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=147968->144252 rss_anon_kib=122444->118760 threads=10 duration_ms=67.9
+2026-08-15 05:14:45,105 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (5 chars)
+2026-08-15 05:14:45,113 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='hallo' reply_to_id=2237 reply_to_text=''
+2026-08-15 05:14:45,137 INFO hermes_state: Repaired 4 message-alternation violation(s) while restoring session 20260815_012724_e3d012b4 — durable transcript kept them, see repair_message_sequence
+2026-08-15 05:14:45,142 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38372: model=deepseek-v4-flash-free provider=opencode
+2026-08-15 05:14:45,290 INFO run_agent: Loaded environment variables from /home/runner/.hermes/.env
+2026-08-15 05:14:47,217 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140599025985216 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:14:47,219 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 05:14:47,220 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 05:14:47,221 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-15 05:14:47,222 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-15 05:14:47,228 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 05:14:47,250 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 05:14:47,253 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 05:14:47,254 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-15 05:14:47,254 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-15 05:14:47,257 INFO tools.lazy_deps: Lazy-installing edge-tts==7.2.7 for feature 'tts.edge'
+2026-08-15 05:14:47,370 INFO tools.lazy_deps: Lazy install complete for feature 'tts.edge'
+2026-08-15 05:14:47,387 WARNING agent.auxiliary_client: Auxiliary client: PAID lane engaged for auxiliary task — OpenRouter fallback model 'google/gemini-3.6-flash' is not a :free SKU and may incur real spend. Set auxiliary.free_only: true to restrict auxiliary fallbacks to free models, or auxiliary.openrouter_model to a :free model.
+2026-08-15 05:14:47,388 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 05:15:47.
+2026-08-15 05:14:47,392 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-15 05:14:47,392 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 05:15:47.
+2026-08-15 05:14:47,392 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-15 05:14:47,394 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 05:15:47.
+2026-08-15 05:14:47,396 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-15 05:14:47,396 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 05:15:47.
+2026-08-15 05:14:47,396 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-15 05:14:47,396 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 05:14:47,405 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-15 05:14:47,479 INFO [20260815_012724_e3d012b4] agent.turn_context: conversation turn: session=20260815_012724_e3d012b4 model=deepseek-v4-flash-free provider=opencode platform=telegram history=107 msg='hallo'
+2026-08-15 05:14:47,495 INFO [20260815_012724_e3d012b4] agent.conversation_loop: Repaired 2 message-alternation violations before request (session=20260815_012724_e3d012b4)
+2026-08-15 05:14:47,597 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-15 (<lambda>):140598707222208 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:14:54,194 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256300->233108 rss_anon_kib=221156->197964 threads=15 duration_ms=146.4
+2026-08-15 05:14:56,539 INFO [20260815_012724_e3d012b4] agent.conversation_loop: API call #1: model=deepseek-v4-flash-free provider=opencode in=61042 out=790 total=61832 latency=9.0s
+2026-08-15 05:14:56,660 INFO tools.terminal_tool: Creating new local environment for task default...
+2026-08-15 05:14:56,913 INFO tools.environments.base: Session snapshot created (session=6ac4cceaafae, cwd=/home/runner)
+2026-08-15 05:14:56,913 INFO tools.terminal_tool: local environment ready for task default
+2026-08-15 05:14:57,024 INFO [20260815_012724_e3d012b4] agent.tool_executor: tool terminal completed (0.37s, 147 chars)
+2026-08-15 05:14:59,990 INFO [20260815_012724_e3d012b4] agent.conversation_loop: API call #2: model=deepseek-v4-flash-free provider=opencode in=61893 out=316 total=62209 latency=3.0s cache=61440/61893 (99%)
+2026-08-15 05:15:00,090 INFO [20260815_012724_e3d012b4] agent.tool_executor: tool terminal completed (0.09s, 115 chars)
+2026-08-15 05:15:06,370 INFO [20260815_012724_e3d012b4] agent.conversation_loop: API call #3: model=deepseek-v4-flash-free provider=opencode in=62266 out=201 total=62467 latency=6.3s cache=62208/62266 (100%)
+2026-08-15 05:15:06,388 INFO [20260815_012724_e3d012b4] agent.tool_executor: tool process completed (0.00s, 377 chars)
+2026-08-15 05:15:09,201 INFO [20260815_012724_e3d012b4] agent.conversation_loop: API call #4: model=deepseek-v4-flash-free provider=opencode in=62606 out=283 total=62889 latency=2.8s cache=62464/62606 (100%)
+2026-08-15 05:15:23,156 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:6874843931:38372 → 2 (stop_command)
+2026-08-15 05:15:23,158 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-evict-agent:main:telegram:dm:6:140598354896576 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:15:23,158 INFO run_agent: OpenAI client closed (cache_evict, shared=False, tcp_force_closed=0) thread=agent-evict-agent:main:telegram:dm:6:140598354896576 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:15:23,158 INFO gateway.run: STOP for session agent:main:telegram:dm:6874843931:38372 — agent interrupted, session lock released
+2026-08-15 05:15:23,158 INFO gateway.platforms.base: [Telegram] Sending command '/stop' response (41 chars) to 6874843931
+2026-08-15 05:15:23,210 INFO [20260815_012724_e3d012b4] agent.tool_executor: tool process completed (14.00s, 441 chars)
+2026-08-15 05:15:23,214 INFO [20260815_012724_e3d012b4] agent.conversation_loop: Turn ended: reason=interrupted_by_user model=deepseek-v4-flash-free api_calls=4/500 budget=4/500 tool_turns=21 last_msg_role=assistant response_len=0 session=20260815_012724_e3d012b4
+2026-08-15 05:15:23,218 INFO gateway.run: Ignoring control interrupt message for session agent:main:telegram:dm:6874843931:38372: Stop requested
+2026-08-15 05:15:23,218 INFO gateway.run: Discarding stale agent result for agent:main:telegram:dm:6874843931:38372 — generation 1 is no longer current
+2026-08-15 05:15:54,328 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=243020->237056 rss_anon_kib=207876->201912 threads=14 duration_ms=133.4
+2026-08-15 05:15:58,110 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (101 chars)
+2026-08-15 05:15:58,114 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='udah cukup neng,aku mau nanya tadi kenapa kena rate limit padahal harusnya belum' reply_to_id=2237 reply_to_text=''
+2026-08-15 05:15:58,120 INFO hermes_state: Repaired 5 message-alternation violation(s) while restoring session 20260815_012724_e3d012b4 — durable transcript kept them, see repair_message_sequence
+2026-08-15 05:15:58,152 INFO [20260815_012724_e3d012b4] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140599025985216 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:15:58,159 INFO [20260815_012724_e3d012b4] agent.turn_context: conversation turn: session=20260815_012724_e3d012b4 model=deepseek-v4-flash-free provider=opencode platform=telegram history=116 msg='udah cukup neng,aku mau nanya tadi kenapa kena rate limit padahal harusnya belum...'
+2026-08-15 05:15:58,167 INFO [20260815_012724_e3d012b4] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_012724_e3d012b4)
+2026-08-15 05:15:58,185 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-22 (<lambda>):140599009203904 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:16:13,149 INFO [20260815_012724_e3d012b4] agent.conversation_loop: API call #1: model=deepseek-v4-flash-free provider=opencode in=63069 out=1016 total=64085 latency=15.0s cache=62720/63069 (99%)
+2026-08-15 05:16:13,160 INFO [20260815_012724_e3d012b4] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=deepseek-v4-flash-free api_calls=1/500 budget=1/500 tool_turns=21 last_msg_role=assistant response_len=1905 session=20260815_012724_e3d012b4
+2026-08-15 05:16:13,206 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=15.1s api_calls=1 response=1905 chars
+2026-08-15 05:16:13,220 INFO gateway.platforms.base: [Telegram] Sending response (1905 chars) to 6874843931
+2026-08-15 05:16:18,312 INFO gateway.run: Watch pattern notification — injecting for telegram chat=6874843931 thread=38372
+2026-08-15 05:16:18,315 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='[IMPORTANT: Background process proc_fb05ff3b70d0 completed normally (exit code 0' reply_to_id=None reply_to_text=''
+2026-08-15 05:16:18,321 INFO hermes_state: Repaired 5 message-alternation violation(s) while restoring session 20260815_012724_e3d012b4 — durable transcript kept them, see repair_message_sequence
+2026-08-15 05:16:18,333 INFO [20260815_012724_e3d012b4] agent.turn_context: conversation turn: session=20260815_012724_e3d012b4 model=deepseek-v4-flash-free provider=opencode platform=telegram history=118 msg='[IMPORTANT: Background process proc_fb05ff3b70d0 completed normally (exit code 0...'
+2026-08-15 05:16:18,339 INFO [20260815_012724_e3d012b4] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_012724_e3d012b4)
+2026-08-15 05:16:18,631 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4624, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3904, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3841, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-15 05:16:18,646 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-23 (<lambda>):140599009203904 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:16:18,648 WARNING [20260815_012724_e3d012b4] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140599025985216 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-15 05:16:18,648 WARNING [20260815_012724_e3d012b4] agent.conversation_loop: Retrying API call in 2.2559726199669754s (attempt 1/3) thread=hermes-gateway_0:140599025985216 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free policy=default error=Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-15 05:16:21,061 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-24 (<lambda>):140599009203904 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:16:21,339 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4624, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3904, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3841, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-15 05:16:21,345 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-24 (<lambda>):140599009203904 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:16:21,349 WARNING [20260815_012724_e3d012b4] agent.conversation_loop: API call failed (attempt 2/3) error_type=RateLimitError thread=hermes-gateway_0:140599025985216 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-15 05:16:21,350 WARNING [20260815_012724_e3d012b4] agent.conversation_loop: Retrying API call in 5.656644159492076s (attempt 2/3) thread=hermes-gateway_0:140599025985216 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free policy=default error=Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-15 05:16:27,165 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-25 (<lambda>):140599009203904 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:16:27,433 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4624, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3904, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3841, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-15 05:16:27,439 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-25 (<lambda>):140599009203904 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:16:27,443 WARNING [20260815_012724_e3d012b4] agent.conversation_loop: API call failed (attempt 3/3) error_type=RateLimitError thread=hermes-gateway_0:140599025985216 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-15 05:16:27,446 ERROR [20260815_012724_e3d012b4] agent.conversation_loop: API call failed after 3 retries. HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later. | provider=opencode model=deepseek-v4-flash-free msgs=119 tokens=~49,725
+2026-08-15 05:16:27,686 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=9.4s api_calls=1 response=118 chars
+2026-08-15 05:16:27,686 INFO gateway.run: Transient agent failure in session 20260815_012724_e3d012b4 — persisting user message so conversation context is preserved on retry.
+2026-08-15 05:16:27,692 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 6874843931
+2026-08-15 05:16:51,121 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (4 chars)
+2026-08-15 05:16:51,124 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='aduh' reply_to_id=2237 reply_to_text=''
+2026-08-15 05:16:51,130 INFO hermes_state: Repaired 5 message-alternation violation(s) while restoring session 20260815_012724_e3d012b4 — durable transcript kept them, see repair_message_sequence
+2026-08-15 05:16:51,142 INFO [20260815_012724_e3d012b4] agent.turn_context: conversation turn: session=20260815_012724_e3d012b4 model=deepseek-v4-flash-free provider=opencode platform=telegram history=119 msg='aduh'
+2026-08-15 05:16:51,148 INFO [20260815_012724_e3d012b4] agent.conversation_loop: Repaired 2 message-alternation violations before request (session=20260815_012724_e3d012b4)
+2026-08-15 05:16:51,164 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-26 (<lambda>):140599009203904 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:16:51,375 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4624, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3904, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3841, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-15 05:16:51,385 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-26 (<lambda>):140599009203904 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:16:51,386 WARNING [20260815_012724_e3d012b4] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140599025985216 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-15 05:16:51,386 WARNING [20260815_012724_e3d012b4] agent.conversation_loop: Retrying API call in 2.2195408861118135s (attempt 1/3) thread=hermes-gateway_0:140599025985216 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free policy=default error=Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-15 05:16:53,799 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-27 (<lambda>):140599009203904 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:16:54,076 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4624, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3904, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3841, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-15 05:16:54,085 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-27 (<lambda>):140599009203904 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:16:54,086 WARNING [20260815_012724_e3d012b4] agent.conversation_loop: API call failed (attempt 2/3) error_type=RateLimitError thread=hermes-gateway_0:140599025985216 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-15 05:16:54,086 WARNING [20260815_012724_e3d012b4] agent.conversation_loop: Retrying API call in 4.9753493006166405s (attempt 2/3) thread=hermes-gateway_0:140599025985216 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free policy=default error=Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-15 05:16:54,479 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=261628->251856 rss_anon_kib=226484->216712 threads=16 duration_ms=141.4
+2026-08-15 05:16:59,102 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-28 (<lambda>):140599009203904 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:16:59,399 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4624, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3904, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3841, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-15 05:16:59,402 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-28 (<lambda>):140599009203904 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-15 05:16:59,409 WARNING [20260815_012724_e3d012b4] agent.conversation_loop: API call failed (attempt 3/3) error_type=RateLimitError thread=hermes-gateway_0:140599025985216 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-15 05:16:59,411 ERROR [20260815_012724_e3d012b4] agent.conversation_loop: API call failed after 3 retries. HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later. | provider=opencode model=deepseek-v4-flash-free msgs=119 tokens=~49,735
+2026-08-15 05:16:59,643 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.5s api_calls=1 response=118 chars
+2026-08-15 05:16:59,644 INFO gateway.run: Transient agent failure in session 20260815_012724_e3d012b4 — persisting user message so conversation context is preserved on retry.
+2026-08-15 05:16:59,650 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 6874843931
