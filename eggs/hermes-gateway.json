@@ -1,0 +1,99 @@
+{
+    "_comment": "Egg: Hermes Agent Gateway (full agent, 24/7). Installs Hermes into the server dir so it persists across Pterodactyl containers, writes .env/config at runtime, and runs `hermes gateway` in the foreground. Uses cloud inference (Ollama Cloud / OpenCode Zen) so no local GPU/RAM for the model is needed.",
+    "meta": {
+        "version": "PTDL_v2",
+        "update_url": null
+    },
+    "name": "Hermes Agent Gateway",
+    "author": "azascloud-cell",
+    "description": "Runs the full Hermes Agent gateway (Telegram) persistently on a Pterodactyl server. Cloud inference via Ollama Cloud / OpenCode Zen. Allocate ~512MB-1GB RAM.",
+    "features": null,
+    "docker_images": {
+        "ghcr.io/parkervcp/yolks:python_3.11": "ghcr.io/parkervcp/yolks:python_3.11"
+    },
+    "file_denylist": [],
+    "startup": "bash start.sh",
+    "config": {
+        "files": "{}",
+        "startup": {
+            "done": "Hermes gateway started"
+        },
+        "logs": {
+            "custom": false,
+            "location": "logs/latest.log"
+        },
+        "stop": "^C"
+    },
+    "scripts": {
+        "installation": {
+            "script": "# @author azascloud-cell\n# @description Hermes Agent Gateway egg installer\n\napt-get update\napt-get install -y curl git\n\n# Install into /mnt/server (becomes /home/container at runtime) so\n# ~/.hermes persists across the separate install/runtime containers.\nmkdir -p /mnt/server\nexport HOME=/mnt/server\ncd /mnt/server\n\n# Ensure PATH for the install\n\nexport PATH=\"$HOME/.local/bin:$HOME/.hermes/bin:$PATH\"\n\necho \"Installing Hermes Agent...\"\ncurl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash -s -- --skip-setup --skip-browser --skip-computer-use || true\n\nexport PATH=\"$HOME/.local/bin:$HOME/.hermes/bin:$PATH\"\nUV=\"$HOME/.hermes/bin/uv\"\nVENV_PY=\"$(ls -d $HOME/.hermes/hermes-agent/venv/bin/python 2>/dev/null || echo '')\"\nif [ -n \"$VENV_PY\" ] && [ -x \"$UV\" ]; then\n  echo \"Pinning python-telegram-bot 22.6...\"\n  \"$UV\" pip install --python \"$VENV_PY\" --reinstall \"python-telegram-bot[webhooks]==22.6\" || true\nfi\n\n# Patch Telegram TypeHandler restoration (hermes-agent#85421)\nADAPTER=\"$HOME/.hermes/hermes-agent/plugins/platforms/telegram/adapter.py\"\nif [ -f \"$ADAPTER\" ]; then\n  python3 - <<'PY'\nimport os, pathlib\np = pathlib.Path(os.environ[\"HOME\"]) / \".hermes/hermes-agent/plugins/platforms/telegram/adapter.py\"\nif not p.exists():\n    raise SystemExit(0)\nsrc = p.read_text()\nif \"TypeHandler as _TH\" in src:\n    print(\"already patched\")\n    raise SystemExit(0)\nold = \"            MessageHandler as _MH,\\n            ContextTypes as _CT, filters as _filters,\\n        )\"\nnew = \"            MessageHandler as _MH,\\n            ContextTypes as _CT, TypeHandler as _TH, filters as _filters,\\n        )\"\nif old in src:\n    src = src.replace(old, new)\nold2 = \"    TelegramMessageHandler = _MH\\n    ContextTypes = _CT\\n    filters = _filters\"\nnew2 = \"    TelegramMessageHandler = _MH\\n    TypeHandler = _TH\\n    ContextTypes = _CT\\n    filters = _filters\"\nif old2 in src:\n    src = src.replace(old2, new2)\nold3 = \"    global CommandHandler, CallbackQueryHandler, TelegramMessageHandler\\n    global ContextTypes, filters, ParseMode, ChatType, HTTPXRequest\"\nnew3 = \"    global CommandHandler, CallbackQueryHandler, TelegramMessageHandler, TypeHandler\\n    global ContextTypes, filters, ParseMode, ChatType, HTTPXRequest\"\nif old3 in src:\n    src = src.replace(old3, new3)\np.write_text(src)\nprint(\"patched TypeHandler restoration\")\nPY\nfi\n\n# Runtime start script: writes .env + config.yaml from panel vars, then runs gateway.\ncat > /mnt/server/start.sh <<'SH'\n#!/usr/bin/env bash\nset -e\n\nexport PATH=\"$HOME/.local/bin:$HOME/.hermes/bin:$PATH\"\nexport HERMES_HOME=\"$HOME/.hermes\"\n\nmkdir -p \"$HOME/.hermes\"\ncat > \"$HOME/.hermes/.env\" <<EOF\nOLLAMA_API_KEY=${OLLAMA_API_KEY}\nOPENCODE_ZEN_API_KEY=${OPENCODE_ZEN_API_KEY}\nTELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}\nTELEGRAM_ALLOWED_USERS=${TELEGRAM_ALLOWED_USERS}\nEOF\n\ncat > \"$HOME/.hermes/config.yaml\" <<EOF\nmodel:\n  provider: \"${MODEL_PROVIDER}\"\n  default: \"${DEFAULT_MODEL}\"\n  base_url: \"${BASE_URL}\"\nEOF\n\necho \"Starting Hermes gateway...\"\nexec hermes gateway\nSH\nchmod +x /mnt/server/start.sh\n\necho \"Hermes Agent Gateway installed.\"",
+            "container": "python:3.11-slim",
+            "entrypoint": "bash"
+        }
+    },
+    "variables": [
+        {
+            "name": "Telegram Bot Token",
+            "description": "Bot token from @BotFather",
+            "env_variable": "TELEGRAM_BOT_TOKEN",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:100"
+        },
+        {
+            "name": "Allowed Telegram Users",
+            "description": "Comma-separated numeric Telegram user IDs allowed to use the bot",
+            "env_variable": "TELEGRAM_ALLOWED_USERS",
+            "default_value": "",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:255"
+        },
+        {
+            "name": "Ollama Cloud API Key",
+            "description": "API key from https://ollama.com/settings/keys",
+            "env_variable": "OLLAMA_API_KEY",
+            "default_value": "",
+            "user_viewable": false,
+            "user_editable": true,
+            "rules": "nullable|string|max:255"
+        },
+        {
+            "name": "OpenCode Zen API Key",
+            "description": "API key from https://opencode.ai/auth (env var OPENCODE_ZEN_API_KEY)",
+            "env_variable": "OPENCODE_ZEN_API_KEY",
+            "default_value": "",
+            "user_viewable": false,
+            "user_editable": true,
+            "rules": "nullable|string|max:255"
+        },
+        {
+            "name": "Model Provider",
+            "description": "Provider id: ollama-cloud or opencode-zen",
+            "env_variable": "MODEL_PROVIDER",
+            "default_value": "ollama-cloud",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|in:ollama-cloud,opencode-zen"
+        },
+        {
+            "name": "Default Model",
+            "description": "Default model id for the chosen provider",
+            "env_variable": "DEFAULT_MODEL",
+            "default_value": "gemma4:31b",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:255"
+        },
+        {
+            "name": "Base URL",
+            "description": "Provider base URL",
+            "env_variable": "BASE_URL",
+            "default_value": "https://ollama.com/v1",
+            "user_viewable": true,
+            "user_editable": true,
+            "rules": "required|string|max:255"
+        }
+    ]
+}
