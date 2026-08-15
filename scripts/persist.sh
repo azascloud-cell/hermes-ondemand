@@ -15,14 +15,16 @@ GH_PAT="${GH_PAT:-}"
 GH_REPO="${GH_REPO:-}"
 GH_REF="${GH_REF:-main}"
 WORK="${WORK:-/tmp/hermes-data}"
-# exclude heavy tooling/code that we reinstall fresh every run
-EXCLUDES="hermes-agent bin node uv uvx uv-cache __pycache__ .cache venv .git"
+# exclude heavy tooling/code that we reinstall fresh every run, plus config/env
+# (regenerated each run from secrets by the workflow — restoring stale ones would
+# override the fresh provider/model config)
+EXCLUDES="hermes-agent bin node uv uvx uv-cache __pycache__ .cache venv .git config.yaml .env"
 
 copy_in() {  # $1=src $2=dst (copy contents of $1 into $2)
   # Never delete the destination root (it may be the cwd); just sync contents.
   mkdir -p "$2"
   if command -v rsync >/dev/null 2>&1; then
-    rsync -a --delete \
+    rsync -a \
       $(printf -- '--exclude=%q ' $EXCLUDES) \
       "$1/" "$2/"
   else
