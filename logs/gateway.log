@@ -578,3 +578,8 @@
 2026-08-15 16:45:26,997 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
 2026-08-15 19:55:42,970 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8120929966 in chat 8120929966
 2026-08-15 19:56:04,014 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8120929966 in chat 8120929966
+2026-08-15 22:17:57,107 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (30 chars)
+2026-08-15 22:17:57,155 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Hey,selamat pagi neng Lidya!!!' reply_to_id=2237 reply_to_text=''
+2026-08-15 22:17:57,244 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38372: model=gemma4:31b provider=ollama-cloud
+2026-08-15 22:18:04,375 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.2s api_calls=1 response=442 chars
+2026-08-15 22:18:04,388 INFO gateway.platforms.base: [Telegram] Sending response (442 chars) to 6874843931

@@ -15,3 +15,5 @@ User appreciates being called 'Mas Azza' and refers to the agent as 'Neng Lidya'
 User refers to the agent as 'Neng Lidya' and prefers a friendly, warm, and supportive tone (e.g., using 'Mas Azza', emojis, and polite Indonesian).
 §
 User is interested in maximizing profit from selling personal Gmail accounts, using virtual numbers (nokos), and is aware of 'kenon' (account disablement) risks.
+§
+User prefers a friendly, supportive, and affectionate relationship with the agent (refers to her as 'Neng Lidya', appreciates a warm tone).

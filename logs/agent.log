@@ -3899,3 +3899,52 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-15 22:11:43,588 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=155588->146368 rss_anon_kib=130052->120832 threads=11 duration_ms=68.7
 2026-08-15 22:12:43,660 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=147208->146364 rss_anon_kib=121672->120828 threads=11 duration_ms=71.1
 2026-08-15 22:13:43,729 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=147148->146360 rss_anon_kib=121612->120824 threads=11 duration_ms=68.2
+2026-08-15 22:14:43,807 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=147456->146596 rss_anon_kib=121920->121060 threads=11 duration_ms=72.2
+2026-08-15 22:15:43,885 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=155856->146580 rss_anon_kib=130320->121044 threads=11 duration_ms=77.2
+2026-08-15 22:16:43,957 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=147356->146576 rss_anon_kib=121820->121040 threads=11 duration_ms=71.4
+2026-08-15 22:17:44,029 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=147412->146580 rss_anon_kib=121876->121044 threads=11 duration_ms=70.8
+2026-08-15 22:17:57,107 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (30 chars)
+2026-08-15 22:17:57,155 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Hey,selamat pagi neng Lidya!!!' reply_to_id=2237 reply_to_text=''
+2026-08-15 22:17:57,182 INFO hermes_state: Repaired 2 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-15 22:17:57,244 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38372: model=gemma4:31b provider=ollama-cloud
+2026-08-15 22:17:57,291 INFO run_agent: Loaded environment variables from /home/runner/.hermes/.env
+2026-08-15 22:17:59,778 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:139641097279168 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:17:59,779 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:17:59,780 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:17:59,781 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-15 22:17:59,782 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-15 22:17:59,788 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:17:59,807 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:17:59,811 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:17:59,812 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-15 22:17:59,812 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-15 22:17:59,815 INFO tools.lazy_deps: Lazy-installing edge-tts==7.2.7 for feature 'tts.edge'
+2026-08-15 22:18:00,121 INFO tools.lazy_deps: Lazy install complete for feature 'tts.edge'
+2026-08-15 22:18:00,137 WARNING agent.auxiliary_client: Auxiliary client: PAID lane engaged for auxiliary task — OpenRouter fallback model 'google/gemini-3.6-flash' is not a :free SKU and may incur real spend. Set auxiliary.free_only: true to restrict auxiliary fallbacks to free models, or auxiliary.openrouter_model to a :free model.
+2026-08-15 22:18:00,138 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:19:00.
+2026-08-15 22:18:00,141 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-15 22:18:00,141 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:19:00.
+2026-08-15 22:18:00,141 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-15 22:18:00,143 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:19:00.
+2026-08-15 22:18:00,145 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-15 22:18:00,145 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:19:00.
+2026-08-15 22:18:00,145 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-15 22:18:00,145 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:18:00,155 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-15 22:18:00,228 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=gemma4:31b provider=ollama-cloud platform=telegram history=57 msg='Hey,selamat pagi neng Lidya!!!'
+2026-08-15 22:18:00,242 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-15 22:18:00,656 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-15 (<lambda>):139640795297472 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:18:04,216 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=26803 out=122 total=26925 latency=4.0s
+2026-08-15 22:18:04,334 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=442 session=20260815_102333_b288b938
+2026-08-15 22:18:04,359 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=bg-review:139641130841792 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:18:04,365 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=gemma4:31b provider=ollama-cloud platform=telegram history=58 msg='Review the conversation above and consider saving to memory if appropriate.  Foc...'
+2026-08-15 22:18:04,375 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.2s api_calls=1 response=442 chars
+2026-08-15 22:18:04,388 INFO gateway.platforms.base: [Telegram] Sending response (442 chars) to 6874843931
+2026-08-15 22:18:04,524 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-16 (<lambda>):139641114060480 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:18:05,977 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=27053 out=63 total=27116 latency=1.6s
+2026-08-15 22:18:06,004 INFO [20260815_102333_b288b938] agent.tool_executor: tool memory completed (0.01s, 210 chars)
+2026-08-15 22:18:06,789 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #2: model=gemma4:31b provider=ollama-cloud in=27199 out=9 total=27208 latency=0.8s
+2026-08-15 22:18:06,791 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=2/16 budget=2/16 tool_turns=1 last_msg_role=assistant response_len=16 session=20260815_102333_b288b938
+2026-08-15 22:18:06,793 INFO [20260815_102333_b288b938] run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=bg-review:139641130841792 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:18:06,793 INFO [20260815_102333_b288b938] run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=0) thread=bg-review:139641130841792 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:18:06,938 INFO [20260815_102333_b288b938] hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=248828->224404 rss_anon_kib=213712->189288 threads=15 duration_ms=144.4
