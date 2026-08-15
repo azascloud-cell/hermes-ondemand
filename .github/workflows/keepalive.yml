@@ -1,0 +1,72 @@
+name: Hermes Keep-Alive 24/7
+
+on:
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: "Job runtime in minutes (max 355)"
+        required: false
+        default: "350"
+        type: number
+  schedule:
+    # Fallback cron: triggers a fresh run roughly every 6h so the bot never
+    # stays down if a keep-alive dispatch fails.
+    - cron: "0 */6 * * *"
+
+concurrency:
+  group: hermes-gateway
+  cancel-in-progress: false
+
+jobs:
+  hermes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 356
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Hermes Agent
+        run: |
+          curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/install.sh | bash
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          echo "installed; checking:"
+          ls -la "$HOME/.local/bin" 2>/dev/null || true
+          which hermes || echo "hermes binary path:"; ls "$HOME/.local/bin"
+
+      - name: Configure Hermes (Ollama Cloud)
+        env:
+          OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_ALLOWED_USERS: ${{ secrets.TELEGRAM_ALLOWED_USERS }}
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          mkdir -p ~/.hermes
+          cat > ~/.hermes/.env <<EOF
+          OLLAMA_API_KEY=${OLLAMA_API_KEY}
+          TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+          TELEGRAM_ALLOWED_USERS=${TELEGRAM_ALLOWED_USERS}
+          EOF
+          cat > ~/.hermes/config.yaml <<EOF
+          model:
+            provider: "ollama-cloud"
+            default: "gemma4:31b-cloud"
+            base_url: "https://ollama.com/v1"
+          EOF
+
+      - name: Run Keep-Alive Gateway
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_REPO: ${{ github.repository }}
+          GH_REF: ${{ github.ref_name }}
+          RUN_MINUTES: ${{ inputs.minutes || 350 }}
+          KEEPALIVE_WORKFLOW: "keepalive.yml"
+        run: |
+          chmod +x scripts/keepalive.sh
+          ./scripts/keepalive.sh

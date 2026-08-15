@@ -1,75 +1,73 @@
-# Hermes On-Demand via GitHub Actions + Pterodactyl listener
+# Hermes 24/7 via GitHub Actions Keep-Alive
 
-Jalankan **Hermes Agent AI** (Nous Research) secara on-demand. Panel Pterodactyl
-berkapasitas kecil hanya menjadi **pendengar (listener)**, workload berat dijalankan
-di GitHub Actions hosted runner (gratis, ~7GB RAM) yang hanya menyala saat ada pertanyaan.
+Jalankan **Hermes Agent AI** (Nous Research) secara terus-menerus (24 jam) memakai
+**GitHub Actions hosted runner** dengan mekanisme **keep-alive**. Tidak perlu panel
+Pterodactyl.
+
+GitHub Actions hosted runner punya limit **6 jam per job**, jadi job dijalankan
+~5 jam 50 menit, lalu **auto-trigger run baru** sebelum limit habis. Bot Telegram
+memberi notifikasi saat **online** dan **offline sementara** saat restart.
 
 ## Arsitektur
 
 ```
-Pterodactyl server (125MB RAM / 500MB disk)
-  └─ listener/bot.py  → polling Telegram, tetap online (~60MB)
-      │  terima pesanmu → trigger GitHub Actions (repository_dispatch)
-GitHub Actions runner (ubuntu-latest, on-demand)
-  └─ install Hermes → proses pertanyaan → balas ke Telegram
+GitHub Actions runner (ubuntu-latest, ~7GB RAM)
+  └─ scripts/keepalive.sh
+      ├─ jalankan `hermes gateway` (bot Telegram online)
+      ├─ notif "🟢 online" saat mulai
+      ├─ ~5j50m → notif "🔄 restarting" + trigger run baru (workflow_dispatch)
+      ├─ kill gateway → notif "🔴 offline sementara" → exit
+      └─ run baru mulai → notif "🟢 online" lagi  → loop 24/7
 ```
 
 ## File
 
 | Path | Fungsi |
 |------|--------|
-| `listener/bot.py` | Bot polling Telegram ringan untuk server Pterodactyl |
-| `listener/requirements.txt` | Dependency bot (`requests`) |
-| `listener/.env.example` | Template env |
-| `.github/workflows/hermes.yml` | Workflow on-demand yang menjalankan Hermes |
+| `.github/workflows/keepalive.yml` | Workflow utama 24/7 (dispatch + cron fallback) |
+| `scripts/keepalive.sh` | Menjalankan gateway + keep-alive + notifikasi |
+| `.github/workflows/hermes.yml` | (opsional) Workflow on-demand lama |
+| `listener/bot.py` | (opsional) Listener Pterodactyl lama |
 
 ## Setup
 
-### 1. GitHub repo & Secrets
+### 1. GitHub Secrets
 
-Buat repo di GitHub, lalu tambahkan **Actions secrets** (Settings → Secrets and variables → Actions):
+Tambahkan di Settings → Secrets and variables → Actions:
 
 | Secret | Isi |
 |--------|-----|
 | `OLLAMA_API_KEY` | API key Ollama Cloud dari [ollama.com/settings/keys](https://ollama.com/settings/keys) |
 | `TELEGRAM_BOT_TOKEN` | Token bot dari @BotFather |
+| `TELEGRAM_CHAT_ID` | Numeric chat/user ID Telegram (contoh `6874843931`) |
+| `TELEGRAM_ALLOWED_USERS` | ID Telegram yang diizinkan (koma untuk banyak) |
+| `GH_PAT` | GitHub PAT (scope: `repo` + `workflow`) untuk auto re-trigger |
 
-Upload kode ini ke repo tersebut.
+### 2. Jalankan
 
-### 2. Server Pterodactyl (listener)
+- **Manual sekali**: Actions → `Hermes Keep-Alive 24/7` → Run workflow (input `minutes`, default 350).
+- **Otomatis**: workflow sudah punya `schedule` cron tiap 6 jam sebagai fallback, dan
+  keep-alive meng-dispatch run baru sebelum limit — jadi berjalan terus.
 
-Buat egg Python di panel, lalu pasang file:
-- `listener/bot.py`
-- `listener/requirements.txt`
+### Model
 
-Isi environment variables server Pterodactyl:
-- `TELEGRAM_BOT_TOKEN` = token bot
-- `TELEGRAM_ALLOWED_USERS` = ID Telegram kamu (dari @userinfobot), e.g. `123456789`
-- `GH_PAT` = GitHub PAT (scope: `repo`, cukup untuk `dispatches`)
-- `GH_REPO` = `owner/repo`
+`gemma4:31b-cloud` via **Ollama Cloud** (provider `ollama-cloud`, base URL `https://ollama.com/v1`).
+Cloud → tidak butuh GPU/RAM besar di runner.
 
-Model yang dipakai: **`gemma4:31b-cloud`** via **Ollama Cloud** (provider `ollama-cloud`, base URL `https://ollama.com/v1`) — cloud sehingga tidak butuh GPU/RAM besar di runner. Butuh akun Ollama + API key dari [ollama.com/settings/keys](https://ollama.com/settings/keys).
+## Catatan penting
 
-Instal dependency: `pip install -r listener/requirements.txt`
-Jalankan: `python bot.py`
-
-### 3. Alur kerja
-
-1. Kamu DM bot di Telegram → listener trigger workflow
-2. GitHub Actions menjalankan Hermes
-3. Jawaban dikirim balik ke Telegram
-
-## Catatan
-
-- **Workflow harus bisa di-trigger via `repository_dispatch`** — PAT yang dipakai `GH_PAT`
-  perlu scope `repo` dan harus punya akses ke repo.
-- `repository_dispatch` **tidak memerlukan** file workflow dengan `on: workflow_dispatch`;
-  event `repository_dispatch` sudah di-listening oleh `hermes.yml`.
-- Limit runner free: ~2000 menit/bulan (menyala hanya beberapa menit per pertanyaan → sangat cukup).
-- Sesuaikan provider/model di `.github/workflows/hermes.yml` sesuai key yang kamu punya.
+- **6 jam limit**: `keepalive.sh` default `RUN_MINUTES=350` (5j50m) dan memicu run baru
+  ~3 menit sebelum limit. Jangan set >355.
+- **Concurrency**: grup `hermes-gateway` mencegah dua run bertabrakan (dua gateway polling
+  token bot yang sama). `cancel-in-progress: false` agar run lama tidak dibatalkan mendadak.
+- **Cron fallback**: jika dispatch keep-alive gagal, cron tiap 6 jam memastikan bot tetap
+  aktif.
+- **Runner free limit**: ~2000 menit/bulan. 24/7 = ~1440 menit/bulan, masih muat untuk
+  pemakaian pribadi (jika pakai repo privat, pakai plan apa pun; hosted runner gratis
+  untuk repo publik, dan menit juga berlaku untuk privat sesuai kuota akun).
 
 ## Keamanan
 
-- **Rotasi semua token yang pernah dibagikan** (GitHub PAT, panel key) jika pernah bocor.
-- Jangan pernah hardcode secret di file yang masuk repo. Pakai Actions secrets + env panel.
+- **Rotasi semua token yang pernah dibagikan** (GitHub PAT, panel key, token bot, Ollama key).
+- Jangan pernah hardcode secret di file yang masuk repo. Pakai Actions secrets.
 - `TELEGRAM_ALLOWED_USERS` wajib diisi untuk mencegah orang lain memakai bot.
