@@ -5,6 +5,16 @@ set -euo pipefail
 
 export PATH="$HOME/.local/bin:$PATH"
 
+# Ensure any config written to ~/.hermes/.env is applied to the gateway process,
+# even if a workflow step set the env var to empty (which would otherwise
+# override the real value). Only set vars not already explicitly provided.
+if [ -f "$HOME/.hermes/.env" ]; then
+  set -a
+  # shellcheck disable=SC1091
+  . "$HOME/.hermes/.env"
+  set +a
+fi
+
 RUN_MINUTES="${RUN_MINUTES:-350}"        # job length (5h50m) — must be < 360
 RESTART_BUFFER_MIN="${RESTART_BUFFER_MIN:-3}"  # trigger new run this many min before limit
 TOKEN="${TELEGRAM_BOT_TOKEN:-}"
