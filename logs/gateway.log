@@ -50,3 +50,18 @@
 2026-08-15 01:17:15,296 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 78 hidden (over 60 limit). Use /commands for full list.
 2026-08-15 01:17:18,932 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
 2026-08-15 01:17:39,118 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 1/5; health pending getUpdates progress
+2026-08-15 01:27:24,431 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (5 chars)
+2026-08-15 01:27:24,472 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Hallo' reply_to_id=2237 reply_to_text=''
+2026-08-15 01:27:36,866 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=12.4s api_calls=1 response=61 chars
+2026-08-15 01:27:36,868 INFO gateway.run: Transient agent failure in session 20260815_012724_e3d012b4 — persisting user message so conversation context is preserved on retry.
+2026-08-15 01:27:36,880 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 6874843931
+2026-08-15 01:28:25,449 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (5 chars)
+2026-08-15 01:28:25,453 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Hallo' reply_to_id=2237 reply_to_text=''
+2026-08-15 01:28:27,188 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.7s api_calls=1 response=32 chars
+2026-08-15 01:28:27,222 INFO gateway.platforms.base: [Telegram] Sending response (32 chars) to 6874843931
+2026-08-15 01:31:14,261 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_488de7772983.jpg
+2026-08-15 01:31:15,062 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:6874843931:38372:photo-burst with 1 image(s)
+2026-08-15 01:31:15,066 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Hapus semua topik ini!' reply_to_id=2237 reply_to_text=''
+2026-08-15 01:31:15,077 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-15 01:31:17,905 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.8s api_calls=1 response=513 chars
+2026-08-15 01:31:17,912 INFO gateway.platforms.base: [Telegram] Sending response (513 chars) to 6874843931
