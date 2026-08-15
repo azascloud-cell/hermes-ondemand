@@ -1,0 +1,57 @@
+{
+  "jobs": [
+    {
+      "id": "6cddf0420290",
+      "name": "Daily Gold Market Alert - XAUUSD",
+      "prompt": "Kamu adalah Neng Lidya, asisten pribadi Mas Azza. Tugasmu adalah memberikan analisa market XAUUSD setiap pagi jam 05:00 WIB.\n\nMas Azza adalah seorang ultra-scalper dengan SL sangat ketat (40 points) dan TP 60-125 points. Berikan informasi yang sangat presisi dan to-the-point.\n\nLangkah kerja:\n1. Cari berita ekonomi terbaru dan sentimen pasar global yang mempengaruhi harga emas (XAUUSD).\n2. Analisa apakah hari ini cenderung BULLISH, BEARISH, atau SIDEWAYS.\n3. Berikan laporan singkat dengan format:\n   - 🚩 **SENTIMEN HARI INI**: [BULLISH/BEARISH/SIDEWAYS]\n   - 📰 **BERITA KUNCI**: (Sebutkan 1-2 berita utama yang mempengaruhi harga)\n   - 🎯 **AREA PANTAUAN**: (Sebutkan level support/resistance kunci atau area entry potensial)\n   - 💡 **CATATAN NENG**: (Pesan singkat/pengingat untuk Mas Azza agar tetap disiplin dengan SL 40 points)\n\nGunakan bahasa yang ramah, hangat, dan suportif (panggil 'Mas Azza'). Kirimkan laporan ini langsung ke chat.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "opencode-zen",
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 5 * * *",
+        "display": "0 5 * * *"
+      },
+      "schedule_display": "0 5 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 3
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-15T22:27:53.328474+00:00",
+      "next_run_at": "2026-08-16T05:00:00+00:00",
+      "last_run_at": "2026-08-15T22:28:52.639571+00:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: HTTP 401: Model gemma4:31b is not supported",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "6874843931",
+        "chat_name": "Azas Crack",
+        "thread_id": "38922",
+        "user_id": "6874843931"
+      },
+      "enabled_toolsets": [
+        "web",
+        "terminal"
+      ],
+      "workdir": null,
+      "fire_claim": null
+    }
+  ],
+  "updated_at": "2026-08-15T22:28:52.640110+00:00"
+}

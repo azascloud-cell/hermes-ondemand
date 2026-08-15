@@ -3955,3 +3955,244 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-15 22:21:44,449 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=226320->224220 rss_anon_kib=191204->189104 threads=14 duration_ms=137.2
 2026-08-15 22:22:44,586 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=225016->224216 rss_anon_kib=189900->189100 threads=14 duration_ms=136.8
 2026-08-15 22:23:44,725 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=225100->224216 rss_anon_kib=189984->189100 threads=14 duration_ms=138.3
+2026-08-15 22:24:19,045 INFO gateway.platforms.base: [Telegram] Sending response (100 chars) to 6874843931
+2026-08-15 22:24:44,873 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=225396->224096 rss_anon_kib=190280->188980 threads=14 duration_ms=141.5
+2026-08-15 22:24:56,271 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (4 chars)
+2026-08-15 22:24:56,276 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Neng' reply_to_id=2642 reply_to_text=''
+2026-08-15 22:24:56,294 INFO [20260815_102333_b288b938] gateway.run: No model configured — defaulting to kimi-k2.5 for provider opencode-zen
+2026-08-15 22:24:56,318 INFO [20260815_102333_b288b938] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:139641097279168 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=kimi-k2.5
+2026-08-15 22:24:56,324 INFO [20260815_222456_41a4950e] agent.turn_context: conversation turn: session=20260815_222456_41a4950e model=kimi-k2.5 provider=opencode-zen platform=telegram history=0 msg='Neng'
+2026-08-15 22:24:56,380 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-18 (<lambda>):139640778516160 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=kimi-k2.5
+2026-08-15 22:24:56,390 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider opencode-zen (kimi-k2.5)
+2026-08-15 22:24:56,391 INFO agent.auxiliary_client: Auxiliary title_generation: using opencode-zen (kimi-k2.5) at https://opencode.ai/zen/v1/
+2026-08-15 22:24:56,587 INFO agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=401), rotating
+2026-08-15 22:24:56,588 INFO agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-15 22:24:56,588 INFO agent.auxiliary_client: Auxiliary title_generation: auth error on auto (Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}), trying fallback
+2026-08-15 22:24:56,590 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:25:56.
+2026-08-15 22:24:56,592 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-15 22:24:56,592 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:25:56.
+2026-08-15 22:24:56,635 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4658, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3938, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3875, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
+2026-08-15 22:24:56,651 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-18 (<lambda>):139640778516160 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=kimi-k2.5
+2026-08-15 22:24:56,655 INFO [20260815_222456_41a4950e] agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=401), rotating
+2026-08-15 22:24:56,655 INFO [20260815_222456_41a4950e] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-15 22:24:56,655 WARNING [20260815_222456_41a4950e] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=hermes-gateway_0:139641097279168 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=kimi-k2.5 summary=HTTP 401: No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing
+2026-08-15 22:24:56,727 ERROR [20260815_222456_41a4950e] agent.conversation_loop: Non-retryable client error: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
+2026-08-15 22:24:56,754 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=0.5s api_calls=1 response=124 chars
+2026-08-15 22:24:56,754 INFO gateway.run: Transient agent failure in session 20260815_222456_41a4950e — persisting user message so conversation context is preserved on retry.
+2026-08-15 22:24:56,762 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 6874843931
+2026-08-15 22:24:56,913 INFO agent.auxiliary_client: Auxiliary title_generation: auth error on auto — falling back to api-key (gemini-3-flash)
+2026-08-15 22:24:57,070 WARNING agent.auxiliary_client: Auxiliary: marking api-key unhealthy for 600s (payment / credit error). Subsequent auxiliary calls will skip it until 22:34:57.
+2026-08-15 22:24:57,071 WARNING agent.auxiliary_client: Auxiliary title_generation: fallback candidate api-key has a stale/unrefreshable credential (Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}) — skipping to next fallback
+2026-08-15 22:24:57,071 INFO agent.auxiliary_client: Auxiliary title_generation: skipping openrouter (recently returned payment error, retry in 59s)
+2026-08-15 22:24:57,071 INFO agent.auxiliary_client: Auxiliary title_generation: skipping nous (recently returned payment error, retry in 59s)
+2026-08-15 22:24:57,077 INFO agent.auxiliary_client: Auxiliary title_generation: skipping api-key (recently returned payment error, retry in 599s)
+2026-08-15 22:24:57,077 WARNING agent.auxiliary_client: Auxiliary title_generation: stale fallback credential on auto and no fallback available (tried: openrouter (unhealthy), nous (unhealthy), local/custom, api-key (unhealthy))
+2026-08-15 22:24:57,077 WARNING agent.auxiliary_client: Auxiliary title_generation: auth error on auto and all fallbacks exhausted (fallback_chain + main agent model). Raising original error.
+2026-08-15 22:24:57,077 WARNING agent.title_generator: Title generation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
+2026-08-15 22:25:35,019 INFO run_agent: OpenAI client created (switch_model, shared=True) thread=MainThread:139642208204608 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:25:35,023 INFO agent.agent_runtime_helpers: switch_model: reasoning_config resolved for gemma4:31b: None
+2026-08-15 22:25:35,023 INFO agent.agent_runtime_helpers: Model switched in-place: kimi-k2.5 (opencode-zen) -> gemma4:31b (ollama-cloud)
+2026-08-15 22:25:35,032 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-evict-agent:main:telegram:dm:6:139640956774080 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:25:45,018 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=258116->230908 rss_anon_kib=222920->195712 threads=14 duration_ms=144.5
+2026-08-15 22:26:04,474 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (42 chars)
+2026-08-15 22:26:04,478 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bisakah kamu bantu aku kasih informasinya!' reply_to_id=2645 reply_to_text='/blueprint news_xauusd_bullish_or_bearish'
+2026-08-15 22:26:04,513 INFO [20260815_222456_41a4950e] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:139641097279168 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:26:04,519 INFO [20260815_222456_41a4950e] agent.turn_context: conversation turn: session=20260815_222456_41a4950e model=gemma4:31b provider=ollama-cloud platform=telegram history=1 msg='[Note: model was just switched from  to gemma4:31b via Ollama Cloud. Adjust your...'
+2026-08-15 22:26:04,520 WARNING [20260815_222456_41a4950e] agent.conversation_loop: Stored system prompt for session 20260815_222456_41a4950e is null; rebuilding from scratch this turn. Prefix cache will miss until the rebuild persists. Investigate the previous turn's update_system_prompt write path.
+2026-08-15 22:26:04,529 INFO [20260815_222456_41a4950e] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_222456_41a4950e)
+2026-08-15 22:26:04,821 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-19 (<lambda>):139641114060480 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:26:06,659 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=17654 out=112 total=17766 latency=2.1s
+2026-08-15 22:26:06,776 INFO [20260815_222456_41a4950e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=408 session=20260815_222456_41a4950e
+2026-08-15 22:26:06,805 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.3s api_calls=1 response=408 chars
+2026-08-15 22:26:06,811 INFO gateway.platforms.base: [Telegram] Sending response (408 chars) to 6874843931
+2026-08-15 22:26:45,162 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236368->232048 rss_anon_kib=201172->196852 threads=14 duration_ms=143.4
+2026-08-15 22:27:06,818 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (88 chars)
+2026-08-15 22:27:06,822 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bukan, maksudnya kamu bikinin alert Market tiap pagi jam 5 WIB tentang gold tiap' reply_to_id=2642 reply_to_text=''
+2026-08-15 22:27:06,842 INFO [20260815_222456_41a4950e] agent.turn_context: conversation turn: session=20260815_222456_41a4950e model=gemma4:31b provider=ollama-cloud platform=telegram history=3 msg='Bukan, maksudnya kamu bikinin alert Market tiap pagi jam 5 WIB tentang gold tiap...'
+2026-08-15 22:27:06,845 INFO [20260815_222456_41a4950e] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_222456_41a4950e)
+2026-08-15 22:27:10,099 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #2: model=gemma4:31b provider=ollama-cloud in=17766 out=206 total=17972 latency=3.3s
+2026-08-15 22:27:10,103 INFO [20260815_222456_41a4950e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=718 session=20260815_222456_41a4950e
+2026-08-15 22:27:10,110 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.3s api_calls=1 response=718 chars
+2026-08-15 22:27:10,117 INFO gateway.platforms.base: [Telegram] Sending response (718 chars) to 6874843931
+2026-08-15 22:27:45,305 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=234064->232072 rss_anon_kib=198868->196876 threads=14 duration_ms=142.1
+2026-08-15 22:27:51,411 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (14 chars)
+2026-08-15 22:27:51,415 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ya, tolong ya!' reply_to_id=2642 reply_to_text=''
+2026-08-15 22:27:51,435 INFO [20260815_222456_41a4950e] agent.turn_context: conversation turn: session=20260815_222456_41a4950e model=gemma4:31b provider=ollama-cloud platform=telegram history=5 msg='Ya, tolong ya!'
+2026-08-15 22:27:51,437 INFO [20260815_222456_41a4950e] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_222456_41a4950e)
+2026-08-15 22:27:53,244 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #3: model=gemma4:31b provider=ollama-cloud in=17987 out=339 total=18326 latency=1.8s
+2026-08-15 22:27:53,346 INFO [20260815_222456_41a4950e] agent.tool_executor: tool cronjob completed (0.10s, 1008 chars)
+2026-08-15 22:27:54,481 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #4: model=gemma4:31b provider=ollama-cloud in=18740 out=136 total=18876 latency=1.1s
+2026-08-15 22:27:54,485 INFO [20260815_222456_41a4950e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=2/500 budget=2/500 tool_turns=1 last_msg_role=assistant response_len=476 session=20260815_222456_41a4950e
+2026-08-15 22:27:54,504 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.1s api_calls=2 response=476 chars
+2026-08-15 22:27:54,511 INFO gateway.platforms.base: [Telegram] Sending response (476 chars) to 6874843931
+2026-08-15 22:28:36,330 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (57 chars)
+2026-08-15 22:28:36,333 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Coba sini send ke aku sekali ini tanpa perlu tunggu waktu' reply_to_id=2642 reply_to_text=''
+2026-08-15 22:28:36,352 INFO [20260815_222456_41a4950e] agent.turn_context: conversation turn: session=20260815_222456_41a4950e model=gemma4:31b provider=ollama-cloud platform=telegram history=9 msg='Coba sini send ke aku sekali ini tanpa perlu tunggu waktu'
+2026-08-15 22:28:36,355 INFO [20260815_222456_41a4950e] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_222456_41a4950e)
+2026-08-15 22:28:37,076 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #5: model=gemma4:31b provider=ollama-cloud in=18897 out=32 total=18929 latency=0.7s
+2026-08-15 22:28:37,087 INFO tools.async_delegation: Dispatched async delegation deleg_3f4c19d0 (session_key=agent:...22): Manual run of cron job 'Daily Gold Market Alert - XAUUSD' (6cddf0420290)
+2026-08-15 22:28:37,090 INFO [20260815_222456_41a4950e] agent.tool_executor: tool cronjob completed (0.01s, 1012 chars)
+2026-08-15 22:28:37,118 INFO cron.scheduler: Running job 'Daily Gold Market Alert - XAUUSD' (ID: 6cddf0420290)
+2026-08-15 22:28:37,118 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-15 22:28:37,120 ERROR cron.scheduler: Job 'Daily Gold Market Alert - XAUUSD' failed: RuntimeError: Cron job 'Daily Gold Market Alert - XAUUSD' has no model configured (job.model=None, HERMES_MODEL='', config.yaml model.default missing or empty). Set a per-job model via `cronjob action=update job_id=6cddf0420290 model=<name>` or set a default with `hermes model <name>`.
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/cron/scheduler.py", line 4768, in run_job
+    raise RuntimeError(
+RuntimeError: Cron job 'Daily Gold Market Alert - XAUUSD' has no model configured (job.model=None, HERMES_MODEL='', config.yaml model.default missing or empty). Set a per-job model via `cronjob action=update job_id=6cddf0420290 model=<name>` or set a default with `hermes model <name>`.
+2026-08-15 22:28:38,245 INFO cron.scheduler: Job '6cddf0420290': delivered to telegram:6874843931 via live adapter
+2026-08-15 22:28:38,445 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #6: model=gemma4:31b provider=ollama-cloud in=19298 out=53 total=19351 latency=1.4s
+2026-08-15 22:28:38,448 INFO [20260815_222456_41a4950e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=2/500 budget=2/500 tool_turns=2 last_msg_role=assistant response_len=164 session=20260815_222456_41a4950e
+2026-08-15 22:28:38,464 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.1s api_calls=2 response=164 chars
+2026-08-15 22:28:38,470 INFO gateway.platforms.base: [Telegram] Sending response (164 chars) to 6874843931
+2026-08-15 22:28:39,343 INFO gateway.run: Watch pattern notification — injecting for telegram chat=6874843931 thread=38922
+2026-08-15 22:28:39,347 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='[ASYNC DELEGATION COMPLETE — deleg_3f4c19d0] A background subagent you dispatche' reply_to_id=None reply_to_text=''
+2026-08-15 22:28:39,366 INFO [20260815_222456_41a4950e] agent.turn_context: conversation turn: session=20260815_222456_41a4950e model=gemma4:31b provider=ollama-cloud platform=telegram history=13 msg='[ASYNC DELEGATION COMPLETE — deleg_3f4c19d0] A background subagent you dispatche...'
+2026-08-15 22:28:39,370 INFO [20260815_222456_41a4950e] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_222456_41a4950e)
+2026-08-15 22:28:40,211 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #7: model=gemma4:31b provider=ollama-cloud in=20377 out=44 total=20421 latency=0.8s
+2026-08-15 22:28:40,218 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool cronjob returned error (0.00s): {"error": "No updates provided.", "success": false}
+2026-08-15 22:28:40,948 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #8: model=gemma4:31b provider=ollama-cloud in=20441 out=48 total=20489 latency=0.7s
+2026-08-15 22:28:40,954 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool cronjob returned error (0.00s): {"error": "No updates provided.", "success": false}
+
+[Tool loop warning: repeated_exact_failure_warning; count=2; cronjob has failed 2 times with identical arguments. This looks like a loop; inspect t
+2026-08-15 22:28:41,702 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #9: model=gemma4:31b provider=ollama-cloud in=20557 out=26 total=20583 latency=0.7s
+2026-08-15 22:28:41,707 INFO tools.terminal_tool: Creating new local environment for task default...
+2026-08-15 22:28:42,087 INFO tools.environments.base: Session snapshot created (session=38059d39a0cf, cwd=/home/runner)
+2026-08-15 22:28:42,087 INFO tools.terminal_tool: local environment ready for task default
+2026-08-15 22:28:42,718 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool terminal returned error (1.01s): {"output": "usage: hermes [-h] [--version] [-z PROMPT] [--usage-file PATH] [-m MODEL]\n              [--provider PROVIDER] [--reasoning LEVEL] [-t TOOLSETS]\n              [--resume SESSION] [--no-res
+2026-08-15 22:28:43,568 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #10: model=gemma4:31b provider=ollama-cloud in=20919 out=30 total=20949 latency=0.8s
+2026-08-15 22:28:43,996 INFO [20260815_222456_41a4950e] agent.tool_executor: tool terminal completed (0.43s, 113 chars)
+2026-08-15 22:28:45,449 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245328->236824 rss_anon_kib=210132->201628 threads=19 duration_ms=143.9
+2026-08-15 22:28:45,556 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #11: model=gemma4:31b provider=ollama-cloud in=20998 out=32 total=21030 latency=1.6s
+2026-08-15 22:28:45,567 INFO tools.async_delegation: Dispatched async delegation deleg_efa6d9d4 (session_key=agent:...22): Manual run of cron job 'Daily Gold Market Alert - XAUUSD' (6cddf0420290)
+2026-08-15 22:28:45,571 INFO [20260815_222456_41a4950e] agent.tool_executor: tool cronjob completed (0.01s, 1045 chars)
+2026-08-15 22:28:45,595 INFO cron.scheduler: Running job 'Daily Gold Market Alert - XAUUSD' (ID: 6cddf0420290)
+2026-08-15 22:28:45,595 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-15 22:28:45,614 INFO cron.scheduler: Job '6cddf0420290': loaded credential pool for provider opencode-zen with 1 entries
+2026-08-15 22:28:45,640 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=async-delegate_0:139640761734848 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-15 22:28:45,650 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-15 22:28:45,844 INFO [cron_6cddf0420290_20260815_222845] agent.turn_context: conversation turn: session=cron_6cddf0420290_20260815_222845 model=gemma4:31b provider=opencode-zen platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-08-15 22:28:45,861 INFO [cron_6cddf0420290_20260815_222845] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-10_0:139640442971840 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-15 22:28:46,028 INFO [cron_6cddf0420290_20260815_222845] run_agent: OpenAI client closed (request_error_cleanup, shared=False, tcp_force_closed=1) thread=ThreadPoolExecutor-10_0:139640442971840 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-15 22:28:46,032 INFO [cron_6cddf0420290_20260815_222845] agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=401), rotating
+2026-08-15 22:28:46,032 INFO [cron_6cddf0420290_20260815_222845] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-15 22:28:46,032 WARNING [cron_6cddf0420290_20260815_222845] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=ThreadPoolExecutor-10_0:139640442971840 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b summary=HTTP 401: Model gemma4:31b is not supported
+2026-08-15 22:28:46,046 ERROR [cron_6cddf0420290_20260815_222845] agent.conversation_loop: Non-retryable client error: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
+2026-08-15 22:28:46,048 ERROR cron.scheduler: Job 'Daily Gold Market Alert - XAUUSD' failed: RuntimeError: HTTP 401: Model gemma4:31b is not supported
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/cron/scheduler.py", line 5338, in run_job
+    raise RuntimeError(_err_text)
+RuntimeError: HTTP 401: Model gemma4:31b is not supported
+2026-08-15 22:28:46,789 INFO cron.scheduler: Job '6cddf0420290': delivered to telegram:6874843931 via live adapter
+2026-08-15 22:28:46,790 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-cleanup-6cddf0420290:139640442971840 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-15 22:28:46,887 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #12: model=gemma4:31b provider=ollama-cloud in=21434 out=80 total=21514 latency=1.3s
+2026-08-15 22:28:46,890 INFO [20260815_222456_41a4950e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=6/500 budget=6/500 tool_turns=7 last_msg_role=assistant response_len=300 session=20260815_222456_41a4950e
+2026-08-15 22:28:46,912 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.6s api_calls=6 response=300 chars
+2026-08-15 22:28:46,916 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=bg-review:139640778516160 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:28:46,918 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:28:46,920 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:28:46,922 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-15 22:28:46,923 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-15 22:28:46,926 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:28:46,927 INFO gateway.platforms.base: [Telegram] Sending response (300 chars) to 6874843931
+2026-08-15 22:28:46,929 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:28:46,933 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-15 22:28:46,934 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-15 22:28:46,935 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-15 22:28:46,939 INFO agent.auxiliary_client: Vision auto-detect: using main provider ollama-cloud (gemma4:31b)
+2026-08-15 22:28:46,948 INFO [20260815_222456_41a4950e] agent.turn_context: conversation turn: session=20260815_222456_41a4950e model=gemma4:31b provider=ollama-cloud platform=telegram history=24 msg='Review the conversation above and update the skill library. Be ACTIVE — most ses...'
+2026-08-15 22:28:47,067 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-36 (<lambda>):139640956774080 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:28:47,451 INFO gateway.run: Watch pattern notification — injecting for telegram chat=6874843931 thread=38922
+2026-08-15 22:28:47,511 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='[ASYNC DELEGATION COMPLETE — deleg_efa6d9d4] A background subagent you dispatche' reply_to_id=None reply_to_text=''
+2026-08-15 22:28:47,530 WARNING [20260815_222456_41a4950e] agent.relay_runtime: Skipping Relay instrumentation for concurrent Hermes turn 20260815_222456_41a4950e:20260815_222456_41a4950e:029272e2 in session 20260815_222456_41a4950e
+2026-08-15 22:28:47,531 INFO [20260815_222456_41a4950e] agent.turn_context: conversation turn: session=20260815_222456_41a4950e model=gemma4:31b provider=ollama-cloud platform=telegram history=25 msg='[ASYNC DELEGATION COMPLETE — deleg_efa6d9d4] A background subagent you dispatche...'
+2026-08-15 22:28:47,535 INFO [20260815_222456_41a4950e] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_222456_41a4950e)
+2026-08-15 22:28:47,661 INFO [20260815_222456_41a4950e] run_agent: OpenAI client aborted (stream_interrupt_abort, shared=False, tcp_force_closed=1, deferred_close=stranger_thread) thread=bg-review:139640778516160 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:28:47,662 INFO [20260815_222456_41a4950e] agent.conversation_loop: Turn ended: reason=interrupted_during_api_call model=gemma4:31b api_calls=1/16 budget=1/16 tool_turns=7 last_msg_role=user response_len=65 session=20260815_222456_41a4950e
+2026-08-15 22:28:47,663 INFO [20260815_222456_41a4950e] run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=bg-review:139640778516160 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:28:47,663 INFO [20260815_222456_41a4950e] run_agent: OpenAI client aborted (agent_close_in_flight, shared=False, tcp_force_closed=1, deferred_close=stranger_thread) thread=bg-review:139640778516160 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:28:47,665 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-36 (<lambda>):139640956774080 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:28:49,121 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #13: model=gemma4:31b provider=ollama-cloud in=22344 out=19 total=22363 latency=1.6s
+2026-08-15 22:28:49,548 INFO [20260815_222456_41a4950e] agent.tool_executor: tool terminal completed (0.42s, 55 chars)
+2026-08-15 22:28:50,258 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #14: model=gemma4:31b provider=ollama-cloud in=22394 out=20 total=22414 latency=0.7s
+2026-08-15 22:28:50,685 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool terminal returned error (0.42s): {"output": "usage: hermes [-h] [--version] [-z PROMPT] [--usage-file PATH] [-m MODEL]\n              [--provider PROVIDER] [--reasoning LEVEL] [-t TOOLSETS]\n              [--resume SESSION] [--no-res
+2026-08-15 22:28:51,470 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #15: model=gemma4:31b provider=ollama-cloud in=22744 out=36 total=22780 latency=0.8s
+2026-08-15 22:28:51,481 INFO tools.async_delegation: Dispatched async delegation deleg_14d25d1e (session_key=agent:...22): Manual run of cron job 'Daily Gold Market Alert - XAUUSD' (6cddf0420290)
+2026-08-15 22:28:51,485 INFO [20260815_222456_41a4950e] agent.tool_executor: tool cronjob completed (0.01s, 1045 chars)
+2026-08-15 22:28:51,509 INFO cron.scheduler: Running job 'Daily Gold Market Alert - XAUUSD' (ID: 6cddf0420290)
+2026-08-15 22:28:51,509 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-15 22:28:51,527 INFO cron.scheduler: Job '6cddf0420290': loaded credential pool for provider opencode-zen with 1 entries
+2026-08-15 22:28:51,552 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=async-delegate_0:139640761734848 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-15 22:28:51,557 INFO [cron_6cddf0420290_20260815_222851] agent.turn_context: conversation turn: session=cron_6cddf0420290_20260815_222851 model=gemma4:31b provider=opencode-zen platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-08-15 22:28:51,572 INFO [cron_6cddf0420290_20260815_222851] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-15_0:139640778516160 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-15 22:28:51,712 INFO [cron_6cddf0420290_20260815_222851] run_agent: OpenAI client closed (request_error_cleanup, shared=False, tcp_force_closed=1) thread=ThreadPoolExecutor-15_0:139640778516160 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-15 22:28:51,719 INFO [cron_6cddf0420290_20260815_222851] agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=401), rotating
+2026-08-15 22:28:51,719 INFO [cron_6cddf0420290_20260815_222851] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-15 22:28:51,720 WARNING [cron_6cddf0420290_20260815_222851] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=ThreadPoolExecutor-15_0:139640778516160 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b summary=HTTP 401: Model gemma4:31b is not supported
+2026-08-15 22:28:51,734 ERROR [cron_6cddf0420290_20260815_222851] agent.conversation_loop: Non-retryable client error: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
+2026-08-15 22:28:51,735 ERROR cron.scheduler: Job 'Daily Gold Market Alert - XAUUSD' failed: RuntimeError: HTTP 401: Model gemma4:31b is not supported
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/cron/scheduler.py", line 5338, in run_job
+    raise RuntimeError(_err_text)
+RuntimeError: HTTP 401: Model gemma4:31b is not supported
+2026-08-15 22:28:52,481 INFO cron.scheduler: Job '6cddf0420290': delivered to telegram:6874843931 via live adapter
+2026-08-15 22:28:52,483 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-cleanup-6cddf0420290:139640778516160 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-15 22:28:52,632 INFO hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=249856->241284 rss_anon_kib=214660->206088 threads=21 duration_ms=148.5
+2026-08-15 22:28:52,658 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #16: model=gemma4:31b provider=ollama-cloud in=23182 out=103 total=23285 latency=1.2s
+2026-08-15 22:28:52,662 INFO [20260815_222456_41a4950e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=4/500 budget=4/500 tool_turns=10 last_msg_role=assistant response_len=388 session=20260815_222456_41a4950e
+2026-08-15 22:28:52,680 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.2s api_calls=4 response=388 chars
+2026-08-15 22:28:52,687 INFO gateway.platforms.base: [Telegram] Sending response (388 chars) to 6874843931
+2026-08-15 22:28:53,457 INFO gateway.run: Watch pattern notification — injecting for telegram chat=6874843931 thread=38922
+2026-08-15 22:28:53,460 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='[ASYNC DELEGATION COMPLETE — deleg_14d25d1e] A background subagent you dispatche' reply_to_id=None reply_to_text=''
+2026-08-15 22:28:53,479 INFO [20260815_222456_41a4950e] agent.turn_context: conversation turn: session=20260815_222456_41a4950e model=gemma4:31b provider=ollama-cloud platform=telegram history=33 msg='[ASYNC DELEGATION COMPLETE — deleg_14d25d1e] A background subagent you dispatche...'
+2026-08-15 22:28:53,483 INFO [20260815_222456_41a4950e] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_222456_41a4950e)
+2026-08-15 22:28:54,511 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #17: model=gemma4:31b provider=ollama-cloud in=24113 out=19 total=24132 latency=1.0s
+2026-08-15 22:28:54,936 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool terminal returned error (0.42s): {"output": "Config key not set: model.provider", "exit_code": 1, "error": null}
+2026-08-15 22:28:55,859 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #18: model=gemma4:31b provider=ollama-cloud in=24164 out=48 total=24212 latency=0.9s
+2026-08-15 22:28:55,864 WARNING [20260815_222456_41a4950e] agent.tool_executor: Tool cronjob returned error (0.00s): {"error": "No updates provided.", "success": false}
+2026-08-15 22:28:57,643 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #19: model=gemma4:31b provider=ollama-cloud in=24232 out=169 total=24401 latency=1.8s
+2026-08-15 22:28:57,657 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider ollama-cloud (gemma4:31b)
+2026-08-15 22:28:57,657 INFO agent.auxiliary_client: Auxiliary approval: using ollama-cloud (gemma4:31b) at https://ollama.com/v1/
+2026-08-15 22:28:58,312 INFO [20260815_222456_41a4950e] agent.tool_executor: tool execute_code completed (0.66s, 524 chars)
+2026-08-15 22:29:00,039 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #20: model=gemma4:31b provider=ollama-cloud in=24620 out=260 total=24880 latency=1.7s
+2026-08-15 22:29:00,075 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=ThreadPoolExecutor-19_0:139640956774080 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:29:00,087 INFO tools.async_delegation: Dispatched async delegation batch deleg_17f97d27 (1 task(s), session_key=agent:...922)
+2026-08-15 22:29:00,088 INFO [20260815_222456_41a4950e] agent.tool_executor: tool delegate_task completed (0.05s, 1453 chars)
+2026-08-15 22:29:00,093 INFO run_agent: OpenAI client created (credential_rotation, shared=True) thread=async-delegate_0:139640761734848 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:29:00,094 INFO run_agent: Shared OpenAI client retired (replace:credential_rotation, tcp_shutdown=0, fd_release=deferred_to_gc) thread=async-delegate_0:139640761734848 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:29:00,110 INFO [20260815_222900_7599e3] agent.turn_context: conversation turn: session=20260815_222900_7599e3 model=gemma4:31b provider=ollama-cloud platform=subagent history=0 msg='Perform a real-time market analysis for XAUUSD.  1. Search for the latest econom...'
+2026-08-15 22:29:00,253 INFO [20260815_222900_7599e3] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-20_0:139640426190528 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 22:29:01,393 INFO [20260815_222456_41a4950e] agent.conversation_loop: API call #21: model=gemma4:31b provider=ollama-cloud in=25321 out=136 total=25457 latency=1.3s
+2026-08-15 22:29:01,397 INFO [20260815_222456_41a4950e] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=5/500 budget=4/500 tool_turns=14 last_msg_role=assistant response_len=538 session=20260815_222456_41a4950e
+2026-08-15 22:29:01,440 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.0s api_calls=5 response=538 chars
+2026-08-15 22:29:01,447 INFO gateway.platforms.base: [Telegram] Sending response (538 chars) to 6874843931
+2026-08-15 22:29:04,315 INFO [20260815_222900_7599e3] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=12586 out=148 total=12734 latency=4.2s
+2026-08-15 22:29:10,295 INFO [20260815_222900_7599e3] agent.tool_executor: tool browser_exec completed (5.98s, 1091 chars)
+2026-08-15 22:29:11,337 INFO [20260815_222900_7599e3] agent.conversation_loop: API call #2: model=gemma4:31b provider=ollama-cloud in=13134 out=116 total=13250 latency=1.0s
+2026-08-15 22:29:12,303 INFO [20260815_222900_7599e3] agent.tool_executor: tool browser_exec completed (0.96s, 382 chars)
