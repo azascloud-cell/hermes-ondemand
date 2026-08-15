@@ -2528,3 +2528,12 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-15 10:27:33,656 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=293128->292344 rss_anon_kib=257984->257168 threads=15 duration_ms=131.3
 2026-08-15 10:28:33,781 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=312684->292180 rss_anon_kib=277540->257036 threads=15 duration_ms=124.1
 2026-08-15 10:29:33,921 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=298640->292176 rss_anon_kib=263496->257032 threads=15 duration_ms=139.4
+2026-08-15 10:30:34,037 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=292700->292180 rss_anon_kib=257556->257036 threads=15 duration_ms=115.4
+2026-08-15 10:31:34,159 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=292832->292312 rss_anon_kib=257688->257168 threads=15 duration_ms=121.1
+2026-08-15 10:32:34,299 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=293144->292348 rss_anon_kib=258000->257172 threads=15 duration_ms=134.6
+2026-08-15 10:33:34,438 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=298472->292304 rss_anon_kib=263328->257160 threads=15 duration_ms=137.7
+2026-08-15 10:34:34,577 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=311200->292300 rss_anon_kib=276056->257156 threads=15 duration_ms=138.9
+2026-08-15 10:35:10,633 INFO run_agent: OpenAI client created (switch_model, shared=True) thread=MainThread:140600024782656 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-15 10:35:10,635 INFO agent.agent_runtime_helpers: switch_model: reasoning_config resolved for gemma4:31b: None
+2026-08-15 10:35:10,635 INFO agent.agent_runtime_helpers: Model switched in-place: kimi-k2.5 (opencode-zen) -> gemma4:31b (ollama-cloud)
+2026-08-15 10:35:10,639 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-evict-agent:main:telegram:dm:6:140598868698816 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
