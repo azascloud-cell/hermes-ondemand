@@ -942,3 +942,5 @@
 2026-08-16 11:02:07,578 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Mending garap rollercoin atau ini?' reply_to_id=2813 reply_to_text='Tahu dong, Mas Azza! Sunflower Land itu game simulasi pertanian (farming) yang s'
 2026-08-16 11:02:14,321 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.7s api_calls=1 response=2583 chars
 2026-08-16 11:02:14,426 INFO gateway.platforms.base: [Telegram] Sending response (2583 chars) to 6874843931
+2026-08-16 11:37:56,406 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38922 (idle=3718s)
+2026-08-16 11:37:56,408 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
