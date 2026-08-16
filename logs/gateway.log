@@ -734,3 +734,7 @@
 2026-08-16 01:12:48,014 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling reconnect failed: Timed out
 2026-08-16 01:12:48,014 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 2/10), reconnecting in 10s. Error: Timed out
 2026-08-16 01:13:01,500 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 2); health pending getUpdates progress
+2026-08-16 02:53:00,404 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (20 chars)
+2026-08-16 02:53:00,408 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Contohnya yang mana?' reply_to_id=2711 reply_to_text='Nah, jadi contohnya seperti itu, Mas Azza! 🤗  Kalau Mas tanya "Neng, gimana harg'
+2026-08-16 02:53:03,742 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.3s api_calls=1 response=895 chars
+2026-08-16 02:53:03,748 INFO gateway.platforms.base: [Telegram] Sending response (895 chars) to 6874843931
