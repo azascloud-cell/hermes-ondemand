@@ -738,3 +738,17 @@
 2026-08-16 02:53:00,408 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Contohnya yang mana?' reply_to_id=2711 reply_to_text='Nah, jadi contohnya seperti itu, Mas Azza! 🤗  Kalau Mas tanya "Neng, gimana harg'
 2026-08-16 02:53:03,742 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.3s api_calls=1 response=895 chars
 2026-08-16 02:53:03,748 INFO gateway.platforms.base: [Telegram] Sending response (895 chars) to 6874843931
+2026-08-16 02:57:35,359 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:6874843931:38922 → 19 (session_reset)
+2026-08-16 02:58:57,100 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39025 (45 chars)
+2026-08-16 02:58:57,105 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Hey, ceritakan lagi fakta menarik neng Lidya!' reply_to_id=2720 reply_to_text=''
+2026-08-16 02:58:57,382 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=0.3s api_calls=1 response=43 chars
+2026-08-16 02:58:57,383 INFO gateway.run: Transient agent failure in session 20260816_025857_aaf70de7 — persisting user message so conversation context is preserved on retry.
+2026-08-16 02:58:57,391 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 6874843931
+2026-08-16 02:59:31,996 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39025 (3 chars)
+2026-08-16 02:59:32,000 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Hey' reply_to_id=2720 reply_to_text=''
+2026-08-16 02:59:35,383 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.4s api_calls=1 response=881 chars
+2026-08-16 02:59:35,390 INFO gateway.platforms.base: [Telegram] Sending response (881 chars) to 6874843931
+2026-08-16 03:01:24,289 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39025 (35 chars)
+2026-08-16 03:01:24,293 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Apa kamu bisa kirim sebuah 🗃️ file?' reply_to_id=2720 reply_to_text=''
+2026-08-16 03:01:26,220 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.9s api_calls=1 response=606 chars
+2026-08-16 03:01:26,227 INFO gateway.platforms.base: [Telegram] Sending response (606 chars) to 6874843931
