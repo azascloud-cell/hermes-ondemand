@@ -6237,3 +6237,8 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-16 11:37:56,407 INFO run_agent: OpenAI client closed (cache_evict, shared=False, tcp_force_closed=0) thread=agent-cache-idle-agent:main:telegram:dm:6:140119919023808 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
 2026-08-16 11:37:56,408 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
 2026-08-16 11:37:57,448 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232692->231624 rss_anon_kib=197040->195972 threads=13 duration_ms=115.4
+2026-08-16 11:38:57,554 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232268->231624 rss_anon_kib=196616->195972 threads=13 duration_ms=105.4
+2026-08-16 11:39:57,674 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=249404->231624 rss_anon_kib=213752->195972 threads=13 duration_ms=119.3
+2026-08-16 11:40:57,795 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236124->231636 rss_anon_kib=200472->195984 threads=13 duration_ms=114.9
+2026-08-16 11:41:57,893 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232292->231612 rss_anon_kib=196640->195960 threads=13 duration_ms=97.5
+2026-08-16 11:42:58,014 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232320->231628 rss_anon_kib=196668->195976 threads=13 duration_ms=120.0
