@@ -1142,3 +1142,14 @@
 2026-08-16 22:49:18,209 INFO gateway.platforms.base: [Telegram] Sending response (500 chars) to 6874843931
 2026-08-16 22:50:06,792 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (73 chars)
 2026-08-16 22:50:06,798 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau ada notif apa aja dari channel,kamu otomatis trigger dan jawab gak?' reply_to_id=2642 reply_to_text=''
+2026-08-16 22:50:10,085 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.3s api_calls=1 response=2026 chars
+2026-08-16 22:50:10,093 INFO gateway.platforms.base: [Telegram] Sending response (2026 chars) to 6874843931
+2026-08-16 22:52:11,220 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 22:52:17,645 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (41 chars)
+2026-08-16 22:52:17,649 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kamu respon saat ada 3 notif itu gak papa' reply_to_id=2642 reply_to_text=''
+2026-08-16 22:52:22,148 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.5s api_calls=1 response=1346 chars
+2026-08-16 22:52:22,155 INFO gateway.platforms.base: [Telegram] Sending response (1346 chars) to 6874843931
+2026-08-16 22:53:13,815 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (34 chars)
+2026-08-16 22:53:13,819 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Tuh tp1 hit dari sinyal sebelumnya' reply_to_id=2642 reply_to_text=''
+2026-08-16 22:53:18,067 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.2s api_calls=2 response=362 chars
+2026-08-16 22:53:18,073 INFO gateway.platforms.base: [Telegram] Sending response (362 chars) to 6874843931

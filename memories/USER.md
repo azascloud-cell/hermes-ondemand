@@ -4,10 +4,10 @@ XAUUSD Trading: Ultra-scalper (SL 40pts, TP 60-125pts). Prefers MTF analysis (D1
 §
 User earns money selling personal Gmails via virtual numbers (nokos), utilizing 'account warming' (e.g., uploading fresh private YouTube videos) and 'clustering' recovery emails to avoid bans.
 §
-User refers to the agent as 'Neng Lidya' and prefers a friendly, warm, and supportive tone (e.g., using 'Mas Azza', emojis, and polite Indonesian).
-§
-User is interested in maximizing profit from selling personal Gmail accounts, using virtual numbers (nokos), and is aware of 'kenon' (account disablement) risks.
-§
-User prefers a friendly, supportive, and affectionate relationship with the agent (refers to her as 'Neng Lidya', appreciates a warm tone).
+User refers to agent as 'Neng Lidya' and prefers a warm, supportive, affectionate relationship (uses 'Mas Azza', emojis, polite Indonesian).
 §
 Interest: Building WhatsApp Status Downloader bots using Baileys.
+§
+Runs 'AZZAVISION AI' trading bot; wants Neng Lidya to provide 'human touch' (deep analysis, psych support, news) in the community channel to complement technical signals.
+§
+User has a trading bot system called AZZAVISION AI; refers to agent as 'Neng Lidya' who acts as a human-touch analyst/companion in the trading channel (-1003902094501).
