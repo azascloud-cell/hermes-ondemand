@@ -5705,3 +5705,8 @@ RuntimeError: HTTP 401: Model gemma4:31b is not supported
 2026-08-16 06:54:09,483 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:6:140185903818432 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
 2026-08-16 06:54:09,483 INFO run_agent: OpenAI client closed (cache_evict, shared=False, tcp_force_closed=0) thread=agent-cache-idle-agent:main:telegram:dm:6:140185903818432 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
 2026-08-16 06:54:09,484 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-16 06:55:09,578 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246348->244704 rss_anon_kib=211120->209476 threads=15 duration_ms=95.4
+2026-08-16 06:56:09,687 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245580->244644 rss_anon_kib=210352->209416 threads=15 duration_ms=108.3
+2026-08-16 06:57:09,789 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=261504->245140 rss_anon_kib=226276->209912 threads=15 duration_ms=95.7
+2026-08-16 06:58:09,885 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=255176->245156 rss_anon_kib=219948->209896 threads=15 duration_ms=95.4
+2026-08-16 06:59:09,981 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245848->245148 rss_anon_kib=210620->209888 threads=15 duration_ms=95.8
