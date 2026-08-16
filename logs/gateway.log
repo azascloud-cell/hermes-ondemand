@@ -1187,3 +1187,9 @@
 2026-08-16 23:14:56,084 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.8s api_calls=1 response=385 chars
 2026-08-16 23:14:56,090 INFO gateway.platforms.base: [Telegram] Sending response (385 chars) to 6874843931
 2026-08-16 23:18:29,258 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 23:32:05,361 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (73 chars)
+2026-08-16 23:32:05,365 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Cek lagi neng asadsalsariang59170@gmail.com asadkiranaceria7171@gmail.com' reply_to_id=2237 reply_to_text=''
+2026-08-16 23:32:09,720 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.4s api_calls=1 response=1057 chars
+2026-08-16 23:32:09,728 INFO gateway.platforms.base: [Telegram] Sending response (1057 chars) to 6874843931
+2026-08-16 23:34:36,979 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 23:34:39,867 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
