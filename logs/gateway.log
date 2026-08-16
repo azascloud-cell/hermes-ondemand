@@ -933,3 +933,12 @@
 2026-08-16 10:35:58,045 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.1s api_calls=1 response=2638 chars
 2026-08-16 10:35:58,065 INFO gateway.platforms.base: [Telegram] Sending response (2638 chars) to 6874843931
 2026-08-16 10:38:31,864 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 10:57:57,410 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (25 chars)
+2026-08-16 10:57:57,414 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kamu tahu sunflower land?' reply_to_id=2237 reply_to_text=''
+2026-08-16 10:57:57,423 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38372: model=gemma4:31b provider=ollama-cloud
+2026-08-16 10:58:01,515 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.1s api_calls=1 response=1301 chars
+2026-08-16 10:58:01,523 INFO gateway.platforms.base: [Telegram] Sending response (1301 chars) to 6874843931
+2026-08-16 11:02:07,575 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (34 chars)
+2026-08-16 11:02:07,578 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Mending garap rollercoin atau ini?' reply_to_id=2813 reply_to_text='Tahu dong, Mas Azza! Sunflower Land itu game simulasi pertanian (farming) yang s'
+2026-08-16 11:02:14,321 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.7s api_calls=1 response=2583 chars
+2026-08-16 11:02:14,426 INFO gateway.platforms.base: [Telegram] Sending response (2583 chars) to 6874843931
