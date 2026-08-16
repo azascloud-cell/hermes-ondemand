@@ -1081,3 +1081,9 @@
 2026-08-16 21:57:22,077 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Apa anonymous juga bisa buat login app juga?' reply_to_id=2237 reply_to_text=''
 2026-08-16 21:57:26,365 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.3s api_calls=1 response=1961 chars
 2026-08-16 21:57:26,373 INFO gateway.platforms.base: [Telegram] Sending response (1961 chars) to 6874843931
+2026-08-16 22:00:25,244 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 22:01:06,936 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 22:02:01,250 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 22:02:04,759 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 22:03:24,848 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 22:03:27,515 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
