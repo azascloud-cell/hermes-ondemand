@@ -1162,3 +1162,7 @@
 2026-08-16 22:58:08,925 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.8s api_calls=2 response=356 chars
 2026-08-16 22:58:08,931 INFO gateway.platforms.base: [Telegram] Sending response (356 chars) to 6874843931
 2026-08-16 22:58:39,781 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 23:02:18,322 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (69 chars)
+2026-08-16 23:02:18,327 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Apa kamu bisa cari dan list repo publik yang keren buat jalan di GHA?' reply_to_id=2237 reply_to_text=''
+2026-08-16 23:02:26,202 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.9s api_calls=1 response=3655 chars
+2026-08-16 23:02:26,210 INFO gateway.platforms.base: [Telegram] Sending response (3655 chars) to 6874843931
