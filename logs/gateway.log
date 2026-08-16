@@ -1010,3 +1010,11 @@
 2026-08-16 20:12:12,848 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Itu dia,akunnya gak bisa login kena robot' reply_to_id=2237 reply_to_text=''
 2026-08-16 20:12:19,307 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.5s api_calls=1 response=2040 chars
 2026-08-16 20:12:19,316 INFO gateway.platforms.base: [Telegram] Sending response (2040 chars) to 6874843931
+2026-08-16 20:15:22,278 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (80 chars)
+2026-08-16 20:15:22,282 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Belum pasang recovery email,soalny baru bikin udah belum bisa set recovery email' reply_to_id=2237 reply_to_text=''
+2026-08-16 20:15:29,193 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.9s api_calls=1 response=2195 chars
+2026-08-16 20:15:29,201 INFO gateway.platforms.base: [Telegram] Sending response (2195 chars) to 6874843931
+2026-08-16 20:18:04,748 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (3 chars)
+2026-08-16 20:18:04,752 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Gas' reply_to_id=2237 reply_to_text=''
+2026-08-16 20:18:13,975 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=9.2s api_calls=1 response=2945 chars
+2026-08-16 20:18:13,985 INFO gateway.platforms.base: [Telegram] Sending response (2945 chars) to 6874843931
