@@ -7499,3 +7499,87 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-16 22:43:05,432 INFO gateway.platforms.base: [Telegram] Sending response (2416 chars) to 6874843931
 2026-08-16 22:43:30,545 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=241660->235012 rss_anon_kib=206708->200060 threads=14 duration_ms=102.6
 2026-08-16 22:44:30,657 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=252628->234988 rss_anon_kib=217676->200004 threads=14 duration_ms=110.8
+2026-08-16 22:45:30,779 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235576->234992 rss_anon_kib=200624->200008 threads=14 duration_ms=121.1
+2026-08-16 22:46:30,904 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235608->234832 rss_anon_kib=200656->199880 threads=14 duration_ms=124.8
+2026-08-16 22:47:05,022 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 7699507804 in chat -2073902094501
+2026-08-16 22:47:27,182 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 136817688 in chat -2073902094501
+2026-08-16 22:47:31,014 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235664->234828 rss_anon_kib=200712->199876 threads=14 duration_ms=109.3
+2026-08-16 22:48:03,778 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (28 chars)
+2026-08-16 22:48:03,782 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Coba kamu interak di channel' reply_to_id=2642 reply_to_text=''
+2026-08-16 22:48:03,795 INFO [20260816_025735_6984b064] agent.turn_context: conversation turn: session=20260816_025735_6984b064 model=gemma4:31b provider=ollama-cloud platform=telegram history=14 msg='Coba kamu interak di channel'
+2026-08-16 22:48:05,592 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #2: model=gemma4:31b provider=ollama-cloud in=21442 out=148 total=21590 latency=1.8s
+2026-08-16 22:48:05,673 INFO [20260816_025735_6984b064] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=514 session=20260816_025735_6984b064
+2026-08-16 22:48:05,708 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.9s api_calls=1 response=514 chars
+2026-08-16 22:48:05,714 INFO gateway.platforms.base: [Telegram] Sending response (514 chars) to 6874843931
+2026-08-16 22:48:23,236 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 22:48:31,164 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=242028->236072 rss_anon_kib=207076->201120 threads=14 duration_ms=118.7
+2026-08-16 22:48:54,699 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (14 chars)
+2026-08-16 22:48:54,703 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='-1003902094501' reply_to_id=2642 reply_to_text=''
+2026-08-16 22:48:54,716 INFO [20260816_025735_6984b064] agent.turn_context: conversation turn: session=20260816_025735_6984b064 model=gemma4:31b provider=ollama-cloud platform=telegram history=16 msg='-1003902094501'
+2026-08-16 22:49:01,567 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #3: model=gemma4:31b provider=ollama-cloud in=21613 out=176 total=21789 latency=6.8s
+2026-08-16 22:49:01,572 INFO tools.terminal_tool: Creating new local environment for task default...
+2026-08-16 22:49:01,824 INFO tools.environments.base: Session snapshot created (session=eab25efa19ae, cwd=/home/runner)
+2026-08-16 22:49:01,824 INFO tools.terminal_tool: local environment ready for task default
+2026-08-16 22:49:02,447 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-08-16 22:49:02,448 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-08-16 22:49:02,449 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-08-16 22:49:02,521 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-08-16 22:49:02,522 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-08-16 22:49:02,522 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-08-16 22:49:02,523 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-08-16 22:49:02,524 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-08-16 22:49:02,525 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-08-16 22:49:02,525 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-08-16 22:49:02,526 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-08-16 22:49:02,531 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-08-16 22:49:02,532 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-08-16 22:49:02,532 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-08-16 22:49:02,534 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-08-16 22:49:02,534 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-08-16 22:49:02,535 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-08-16 22:49:02,537 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-08-16 22:49:02,537 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-08-16 22:49:02,538 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-08-16 22:49:02,539 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-08-16 22:49:02,540 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-08-16 22:49:02,567 INFO hermes_cli.plugins: Plugin discovery complete: 55 found, 48 enabled
+2026-08-16 22:49:02,905 WARNING [20260816_025735_6984b064] agent.tool_executor: Tool terminal returned error (1.34s): {"output": "usage: hermes [-h] [--version] [-z PROMPT] [--usage-file PATH] [-m MODEL]\n              [--provider PROVIDER] [--reasoning LEVEL] [-t TOOLSETS]\n              [--resume SESSION] [--no-res
+2026-08-16 22:49:05,060 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #4: model=gemma4:31b provider=ollama-cloud in=22354 out=179 total=22533 latency=2.2s
+2026-08-16 22:49:05,524 WARNING [20260816_025735_6984b064] agent.tool_executor: Tool terminal returned error (0.46s): {"output": "usage: hermes [-h] [--version] [-z PROMPT] [--usage-file PATH] [-m MODEL]\n              [--provider PROVIDER] [--reasoning LEVEL] [-t TOOLSETS]\n              [--resume SESSION] [--no-res
+2026-08-16 22:49:06,685 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #5: model=gemma4:31b provider=ollama-cloud in=23018 out=177 total=23195 latency=1.2s
+2026-08-16 22:49:07,148 WARNING [20260816_025735_6984b064] agent.tool_executor: Tool terminal returned error (0.46s): {"output": "usage: hermes [-h] [--version] [-z PROMPT] [--usage-file PATH] [-m MODEL]\n              [--provider PROVIDER] [--reasoning LEVEL] [-t TOOLSETS]\n              [--resume SESSION] [--no-res
+2026-08-16 22:49:08,310 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #6: model=gemma4:31b provider=ollama-cloud in=23795 out=21 total=23816 latency=1.2s
+2026-08-16 22:49:08,734 INFO [20260816_025735_6984b064] agent.tool_executor: tool terminal completed (0.42s, 2148 chars)
+2026-08-16 22:49:10,345 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #7: model=gemma4:31b provider=ollama-cloud in=24397 out=176 total=24573 latency=1.6s
+2026-08-16 22:49:10,774 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-08-16 22:49:10,775 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-08-16 22:49:10,776 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-08-16 22:49:10,846 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-08-16 22:49:10,846 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-08-16 22:49:10,847 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-08-16 22:49:10,848 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-08-16 22:49:10,848 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-08-16 22:49:10,849 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-08-16 22:49:10,849 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-08-16 22:49:10,850 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-08-16 22:49:10,855 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-08-16 22:49:10,856 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-08-16 22:49:10,857 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-08-16 22:49:10,858 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-08-16 22:49:10,858 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-08-16 22:49:10,859 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-08-16 22:49:10,861 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-08-16 22:49:10,861 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-08-16 22:49:10,862 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-08-16 22:49:10,863 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-08-16 22:49:10,864 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-08-16 22:49:10,890 INFO hermes_cli.plugins: Plugin discovery complete: 55 found, 48 enabled
+2026-08-16 22:49:12,000 INFO [20260816_025735_6984b064] agent.tool_executor: tool terminal completed (1.65s, 49 chars)
+2026-08-16 22:49:18,161 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #8: model=gemma4:31b provider=ollama-cloud in=24602 out=152 total=24754 latency=6.2s
+2026-08-16 22:49:18,164 INFO [20260816_025735_6984b064] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=6/500 budget=6/500 tool_turns=5 last_msg_role=assistant response_len=500 session=20260816_025735_6984b064
+2026-08-16 22:49:18,201 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=23.5s api_calls=6 response=500 chars
+2026-08-16 22:49:18,209 INFO gateway.platforms.base: [Telegram] Sending response (500 chars) to 6874843931
+2026-08-16 22:49:31,274 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=260672->237648 rss_anon_kib=225720->202696 threads=15 duration_ms=109.5
+2026-08-16 22:50:06,792 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (73 chars)
+2026-08-16 22:50:06,798 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau ada notif apa aja dari channel,kamu otomatis trigger dan jawab gak?' reply_to_id=2642 reply_to_text=''
+2026-08-16 22:50:06,819 INFO [20260816_025735_6984b064] agent.turn_context: conversation turn: session=20260816_025735_6984b064 model=gemma4:31b provider=ollama-cloud platform=telegram history=28 msg='Kalau ada notif apa aja dari channel,kamu otomatis trigger dan jawab gak?'

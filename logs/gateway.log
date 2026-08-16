@@ -1129,3 +1129,16 @@
 2026-08-16 22:43:00,118 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38922: model=gemma4:31b provider=ollama-cloud
 2026-08-16 22:43:05,425 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.3s api_calls=1 response=2416 chars
 2026-08-16 22:43:05,432 INFO gateway.platforms.base: [Telegram] Sending response (2416 chars) to 6874843931
+2026-08-16 22:47:05,022 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 7699507804 in chat -2073902094501
+2026-08-16 22:47:27,182 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 136817688 in chat -2073902094501
+2026-08-16 22:48:03,778 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (28 chars)
+2026-08-16 22:48:03,782 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Coba kamu interak di channel' reply_to_id=2642 reply_to_text=''
+2026-08-16 22:48:05,708 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.9s api_calls=1 response=514 chars
+2026-08-16 22:48:05,714 INFO gateway.platforms.base: [Telegram] Sending response (514 chars) to 6874843931
+2026-08-16 22:48:23,236 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 22:48:54,699 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (14 chars)
+2026-08-16 22:48:54,703 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='-1003902094501' reply_to_id=2642 reply_to_text=''
+2026-08-16 22:49:18,201 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=23.5s api_calls=6 response=500 chars
+2026-08-16 22:49:18,209 INFO gateway.platforms.base: [Telegram] Sending response (500 chars) to 6874843931
+2026-08-16 22:50:06,792 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (73 chars)
+2026-08-16 22:50:06,798 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau ada notif apa aja dari channel,kamu otomatis trigger dan jawab gak?' reply_to_id=2642 reply_to_text=''
