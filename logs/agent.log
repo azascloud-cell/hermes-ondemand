@@ -7483,3 +7483,19 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-16 22:37:29,847 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235760->233312 rss_anon_kib=200808->198360 threads=14 duration_ms=108.2
 2026-08-16 22:38:29,955 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=238420->233484 rss_anon_kib=203468->198532 threads=14 duration_ms=100.2
 2026-08-16 22:39:30,079 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=252284->233472 rss_anon_kib=217332->198488 threads=14 duration_ms=122.7
+2026-08-16 22:40:09,343 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 22:40:30,222 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=234176->233360 rss_anon_kib=199224->198408 threads=14 duration_ms=142.2
+2026-08-16 22:41:30,331 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=234156->233328 rss_anon_kib=199204->198376 threads=14 duration_ms=108.8
+2026-08-16 22:42:30,435 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=234232->233324 rss_anon_kib=199280->198372 threads=14 duration_ms=103.4
+2026-08-16 22:43:00,106 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (1557 chars)
+2026-08-16 22:43:00,110 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Liat nih, running  Azas Crack: 🟢 Force BUY  AzzA Trader: ✅ Sinyal BUY berhasil! ' reply_to_id=2642 reply_to_text=''
+2026-08-16 22:43:00,118 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38922: model=gemma4:31b provider=ollama-cloud
+2026-08-16 22:43:00,159 INFO [20260815_102333_b288b938] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140625315878592 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-16 22:43:00,164 INFO [20260816_025735_6984b064] agent.turn_context: conversation turn: session=20260816_025735_6984b064 model=gemma4:31b provider=ollama-cloud platform=telegram history=12 msg='Liat nih, running  Azas Crack: 🟢 Force BUY  AzzA Trader: ✅ Sinyal BUY berhasil! ...'
+2026-08-16 22:43:00,230 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-36 (<lambda>):140625215223488 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-16 22:43:05,341 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=20734 out=692 total=21426 latency=5.2s
+2026-08-16 22:43:05,395 INFO [20260816_025735_6984b064] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=2416 session=20260816_025735_6984b064
+2026-08-16 22:43:05,425 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.3s api_calls=1 response=2416 chars
+2026-08-16 22:43:05,432 INFO gateway.platforms.base: [Telegram] Sending response (2416 chars) to 6874843931
+2026-08-16 22:43:30,545 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=241660->235012 rss_anon_kib=206708->200060 threads=14 duration_ms=102.6
+2026-08-16 22:44:30,657 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=252628->234988 rss_anon_kib=217676->200004 threads=14 duration_ms=110.8

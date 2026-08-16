@@ -1123,3 +1123,9 @@
 2026-08-16 22:36:49,588 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Menurut kamu project apa yang bermanfaat buat sekali pakai untuk github action i' reply_to_id=2237 reply_to_text=''
 2026-08-16 22:36:57,821 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.2s api_calls=1 response=3750 chars
 2026-08-16 22:36:57,829 INFO gateway.platforms.base: [Telegram] Sending response (3750 chars) to 6874843931
+2026-08-16 22:40:09,343 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 22:43:00,106 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (1557 chars)
+2026-08-16 22:43:00,110 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Liat nih, running  Azas Crack: 🟢 Force BUY  AzzA Trader: ✅ Sinyal BUY berhasil! ' reply_to_id=2642 reply_to_text=''
+2026-08-16 22:43:00,118 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38922: model=gemma4:31b provider=ollama-cloud
+2026-08-16 22:43:05,425 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.3s api_calls=1 response=2416 chars
+2026-08-16 22:43:05,432 INFO gateway.platforms.base: [Telegram] Sending response (2416 chars) to 6874843931
