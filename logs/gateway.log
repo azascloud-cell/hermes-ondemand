@@ -818,3 +818,14 @@
 2026-08-16 04:22:55,942 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
 2026-08-16 04:22:55,942 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 84 hidden (over 60 limit). Use /commands for full list.
 2026-08-16 04:23:00,699 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-16 05:36:22,077 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39056 (4 chars)
+2026-08-16 05:36:22,088 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Neng' reply_to_id=2736 reply_to_text=''
+2026-08-16 05:36:22,096 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:39056: model=gemma4:31b provider=ollama-cloud
+2026-08-16 05:36:26,008 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.9s api_calls=1 response=141 chars
+2026-08-16 05:36:26,023 INFO gateway.platforms.base: [Telegram] Sending response (141 chars) to 6874843931
+2026-08-16 05:37:01,947 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39056 (60 chars)
+2026-08-16 05:37:01,951 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Apa bot telegram baileys bisa buat bot wa status downloader?' reply_to_id=2736 reply_to_text=''
+2026-08-16 05:37:10,226 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.3s api_calls=1 response=2552 chars
+2026-08-16 05:37:10,234 INFO gateway.platforms.base: [Telegram] Sending response (2552 chars) to 6874843931
+2026-08-16 05:38:37,775 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39056 (57 chars)
+2026-08-16 05:38:37,779 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Auto delete ini cuma hapus di vpsnya bukan di botnya kan?' reply_to_id=2736 reply_to_text=''
