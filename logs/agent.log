@@ -5475,3 +5475,8 @@ RuntimeError: HTTP 401: Model gemma4:31b is not supported
 2026-08-16 05:01:00,970 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-cleanup-6cddf0420290:140186222581440 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
 2026-08-16 05:01:57,885 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=234160->226424 rss_anon_kib=199188->191452 threads=12 duration_ms=111.0
 2026-08-16 05:02:57,985 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244756->228076 rss_anon_kib=209784->193104 threads=12 duration_ms=99.5
+2026-08-16 05:03:58,083 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=228828->228148 rss_anon_kib=193856->193176 threads=12 duration_ms=97.0
+2026-08-16 05:04:58,184 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=228768->228140 rss_anon_kib=193796->193168 threads=12 duration_ms=100.6
+2026-08-16 05:05:58,281 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=228804->228156 rss_anon_kib=193832->193184 threads=12 duration_ms=96.0
+2026-08-16 05:06:58,382 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=229344->228312 rss_anon_kib=194372->193340 threads=12 duration_ms=94.5
+2026-08-16 05:07:58,481 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244880->228280 rss_anon_kib=209908->193308 threads=12 duration_ms=99.1
