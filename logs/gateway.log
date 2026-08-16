@@ -865,3 +865,27 @@
 2026-08-16 07:44:51,435 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=0.3s api_calls=1 response=43 chars
 2026-08-16 07:44:51,435 INFO gateway.run: Transient agent failure in session 20260816_074451_f62bdeb1 — persisting user message so conversation context is preserved on retry.
 2026-08-16 07:44:51,444 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 6874843931
+2026-08-16 07:45:25,282 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39131 (10 chars)
+2026-08-16 07:45:25,286 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Tau nggak?' reply_to_id=2782 reply_to_text=''
+2026-08-16 07:45:27,457 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.2s api_calls=1 response=531 chars
+2026-08-16 07:45:27,465 INFO gateway.platforms.base: [Telegram] Sending response (531 chars) to 6874843931
+2026-08-16 07:46:09,794 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39131 (51 chars)
+2026-08-16 07:46:09,798 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Lah,ini aku nonton kok animenya masih ongoing eps 7' reply_to_id=2782 reply_to_text=''
+2026-08-16 07:46:11,071 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.3s api_calls=1 response=450 chars
+2026-08-16 07:46:11,078 INFO gateway.platforms.base: [Telegram] Sending response (450 chars) to 6874843931
+2026-08-16 07:46:58,243 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39131 (43 chars)
+2026-08-16 07:46:58,249 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Seru,aku suka visual sama karakter ceweknya' reply_to_id=2782 reply_to_text=''
+2026-08-16 07:47:01,130 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.9s api_calls=1 response=527 chars
+2026-08-16 07:47:01,137 INFO gateway.platforms.base: [Telegram] Sending response (527 chars) to 6874843931
+2026-08-16 07:47:50,119 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39131 (23 chars)
+2026-08-16 07:47:50,123 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Dia tergolong ecchi sih' reply_to_id=2782 reply_to_text=''
+2026-08-16 07:47:52,199 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.1s api_calls=1 response=483 chars
+2026-08-16 07:47:52,206 INFO gateway.platforms.base: [Telegram] Sending response (483 chars) to 6874843931
+2026-08-16 07:48:49,533 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39131 (35 chars)
+2026-08-16 07:48:49,537 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau hentai,bisa kamu rekomendasi?' reply_to_id=2782 reply_to_text=''
+2026-08-16 07:48:51,213 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.7s api_calls=1 response=506 chars
+2026-08-16 07:48:51,220 INFO gateway.platforms.base: [Telegram] Sending response (506 chars) to 6874843931
+2026-08-16 07:49:13,025 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39131 (2 chars)
+2026-08-16 07:49:13,029 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ya' reply_to_id=2782 reply_to_text=''
+2026-08-16 07:49:17,392 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.4s api_calls=1 response=1698 chars
+2026-08-16 07:49:17,401 INFO gateway.platforms.base: [Telegram] Sending response (1698 chars) to 6874843931
