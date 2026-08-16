@@ -1,4 +1,4 @@
-User is interested in automation scripts, web scraping, and cybersecurity, specifically related to Termux and Pterodactyl panels.
+User is interested in automation scripts, web scraping, and cybersecurity (Termux, Pterodactyl, Baileys WA bots).
 §
 User is interested in Android app development, web automation/scraping (specifically for OTP forwarding), and using Pterodactyl panels. Prefers automated "one-click" installations and expects the agent to handle the technical execution (deploying to panels, etc.) rather than just providing code. Experienced with Termux.
 §
@@ -13,3 +13,5 @@ User refers to the agent as 'Neng Lidya' and prefers a friendly, warm, and suppo
 User is interested in maximizing profit from selling personal Gmail accounts, using virtual numbers (nokos), and is aware of 'kenon' (account disablement) risks.
 §
 User prefers a friendly, supportive, and affectionate relationship with the agent (refers to her as 'Neng Lidya', appreciates a warm tone).
+§
+Interest: Building WhatsApp Status Downloader bots using Baileys.

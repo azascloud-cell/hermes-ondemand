@@ -1633,3 +1633,4 @@ RuntimeError: HTTP 401: Model gemma4:31b is not supported
 2026-08-16 05:36:22,360 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
 2026-08-16 05:36:22,360 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
 2026-08-16 05:36:22,371 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-16 05:38:43,233 WARNING [20260816_040800_ce5e3fa2] agent.tool_executor: Tool memory returned error (0.01s): {"success": false, "error": "After applying all 1 operations, memory would be at 1,394/1,375 chars -- over the limit. Remove or shorten more entries in the same batch (see current_entries below), then

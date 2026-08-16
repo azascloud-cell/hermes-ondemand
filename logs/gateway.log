@@ -829,3 +829,17 @@
 2026-08-16 05:37:10,234 INFO gateway.platforms.base: [Telegram] Sending response (2552 chars) to 6874843931
 2026-08-16 05:38:37,775 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39056 (57 chars)
 2026-08-16 05:38:37,779 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Auto delete ini cuma hapus di vpsnya bukan di botnya kan?' reply_to_id=2736 reply_to_text=''
+2026-08-16 05:38:41,517 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.7s api_calls=1 response=1370 chars
+2026-08-16 05:38:41,526 INFO gateway.platforms.base: [Telegram] Sending response (1370 chars) to 6874843931
+2026-08-16 05:39:44,497 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39056 (88 chars)
+2026-08-16 05:39:44,501 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau panel pterodactyl 125mb ram 500mb disk cuma buat projek status wa doang cu' reply_to_id=2736 reply_to_text=''
+2026-08-16 05:39:50,208 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.7s api_calls=1 response=2338 chars
+2026-08-16 05:39:50,216 INFO gateway.platforms.base: [Telegram] Sending response (2338 chars) to 6874843931
+2026-08-16 05:41:36,368 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39056 (99 chars)
+2026-08-16 05:41:36,372 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Stream, berarti gak simpan file kan ya? Videonya bisa langsung diputar dan diund' reply_to_id=2736 reply_to_text=''
+2026-08-16 05:41:42,426 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.1s api_calls=1 response=2191 chars
+2026-08-16 05:41:42,435 INFO gateway.platforms.base: [Telegram] Sending response (2191 chars) to 6874843931
+2026-08-16 05:43:27,418 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39056 (64 chars)
+2026-08-16 05:43:27,421 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Buatkan zipnya bisa?lalu aku tinggal deploy ke panel pterodactyl' reply_to_id=2736 reply_to_text=''
+2026-08-16 05:43:37,769 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.3s api_calls=1 response=5672 chars
+2026-08-16 05:43:37,782 INFO gateway.platforms.base: [Telegram] Sending response (5652 chars) to 6874843931
