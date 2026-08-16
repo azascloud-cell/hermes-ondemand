@@ -5450,3 +5450,28 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-16 04:55:57,513 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=146092->145484 rss_anon_kib=120444->119836 threads=10 duration_ms=47.0
 2026-08-16 04:56:57,566 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=146644->145532 rss_anon_kib=120996->119884 threads=10 duration_ms=46.5
 2026-08-16 04:57:57,620 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=146232->145512 rss_anon_kib=120584->119864 threads=10 duration_ms=52.8
+2026-08-16 04:58:57,662 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=152676->145512 rss_anon_kib=127028->119864 threads=10 duration_ms=42.1
+2026-08-16 04:59:57,706 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=146220->145520 rss_anon_kib=120572->119872 threads=10 duration_ms=43.0
+2026-08-16 05:00:56,476 INFO run_agent: Loaded environment variables from /home/runner/.hermes/.env
+2026-08-16 05:00:57,276 INFO cron.scheduler: Running job 'Daily Gold Market Alert - XAUUSD' (ID: 6cddf0420290)
+2026-08-16 05:00:57,276 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-16 05:00:57,478 INFO cron.scheduler: Job '6cddf0420290': loaded credential pool for provider opencode-zen with 1 entries
+2026-08-16 05:00:57,768 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=191612->183364 rss_anon_kib=164236->155988 threads=12 duration_ms=57.1
+2026-08-16 05:00:58,182 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=cron-parallel_0:140186491016896 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-16 05:00:58,193 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-16 05:00:58,401 INFO [cron_6cddf0420290_20260816_050057] agent.turn_context: conversation turn: session=cron_6cddf0420290_20260816_050057 model=gemma4:31b provider=opencode-zen platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-08-16 05:00:58,951 INFO [cron_6cddf0420290_20260816_050057] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-1_0:140186222581440 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-16 05:00:59,437 INFO [cron_6cddf0420290_20260816_050057] run_agent: OpenAI client closed (request_error_cleanup, shared=False, tcp_force_closed=1) thread=ThreadPoolExecutor-1_0:140186222581440 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-16 05:00:59,443 INFO [cron_6cddf0420290_20260816_050057] agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=401), rotating
+2026-08-16 05:00:59,444 INFO [cron_6cddf0420290_20260816_050057] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-16 05:00:59,444 WARNING [cron_6cddf0420290_20260816_050057] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=ThreadPoolExecutor-1_0:140186222581440 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b summary=HTTP 401: Model gemma4:31b is not supported
+2026-08-16 05:00:59,457 ERROR [cron_6cddf0420290_20260816_050057] agent.conversation_loop: Non-retryable client error: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
+2026-08-16 05:00:59,459 ERROR cron.scheduler: Job 'Daily Gold Market Alert - XAUUSD' failed: RuntimeError: HTTP 401: Model gemma4:31b is not supported
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/cron/scheduler.py", line 5338, in run_job
+    raise RuntimeError(_err_text)
+RuntimeError: HTTP 401: Model gemma4:31b is not supported
+2026-08-16 05:01:00,968 INFO cron.scheduler: Job '6cddf0420290': delivered to telegram:6874843931 via live adapter
+2026-08-16 05:01:00,970 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-cleanup-6cddf0420290:140186222581440 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-16 05:01:57,885 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=234160->226424 rss_anon_kib=199188->191452 threads=12 duration_ms=111.0
+2026-08-16 05:02:57,985 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244756->228076 rss_anon_kib=209784->193104 threads=12 duration_ms=99.5
