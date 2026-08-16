@@ -726,3 +726,5 @@
 2026-08-15 23:50:29,619 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: httpx.ReadError: 
 2026-08-15 23:50:29,619 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ReadError: 
 2026-08-15 23:50:35,147 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress
+2026-08-16 00:00:14,938 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38922 (idle=3618s)
+2026-08-16 00:00:14,939 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)

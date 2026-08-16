@@ -4723,3 +4723,12 @@ RuntimeError: HTTP 401: Model gemma4:31b is not supported
 2026-08-15 23:57:15,621 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251488->250664 rss_anon_kib=216280->215456 threads=17 duration_ms=116.8
 2026-08-15 23:58:15,745 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280060->250724 rss_anon_kib=244852->215516 threads=17 duration_ms=117.2
 2026-08-15 23:59:15,860 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251588->250704 rss_anon_kib=216380->215496 threads=17 duration_ms=115.1
+2026-08-16 00:00:14,938 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38922 (idle=3618s)
+2026-08-16 00:00:14,938 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:6:140189175371456 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-16 00:00:14,938 INFO run_agent: OpenAI client closed (cache_evict, shared=False, tcp_force_closed=0) thread=agent-cache-idle-agent:main:telegram:dm:6:140189175371456 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-16 00:00:14,939 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-16 00:00:15,978 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251608->250188 rss_anon_kib=216400->214980 threads=17 duration_ms=116.4
+2026-08-16 00:01:16,096 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=250948->250188 rss_anon_kib=215740->214980 threads=17 duration_ms=117.6
+2026-08-16 00:02:16,212 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251080->250184 rss_anon_kib=215872->214976 threads=17 duration_ms=115.9
+2026-08-16 00:03:16,334 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=276628->250264 rss_anon_kib=241420->215056 threads=17 duration_ms=115.1
+2026-08-16 00:04:16,447 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=254660->250244 rss_anon_kib=219452->215036 threads=17 duration_ms=112.6
