@@ -1193,3 +1193,7 @@
 2026-08-16 23:32:09,728 INFO gateway.platforms.base: [Telegram] Sending response (1057 chars) to 6874843931
 2026-08-16 23:34:36,979 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
 2026-08-16 23:34:39,867 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 23:50:15,372 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (121 chars)
+2026-08-16 23:50:15,376 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau ada job nokos otp yang dibayar saat ada sms,app apa yang menurut kamu pali' reply_to_id=2237 reply_to_text=''
+2026-08-16 23:50:22,797 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.4s api_calls=1 response=3323 chars
+2026-08-16 23:50:22,805 INFO gateway.platforms.base: [Telegram] Sending response (3323 chars) to 6874843931

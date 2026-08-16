@@ -7859,3 +7859,17 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-16 23:43:37,094 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248728->247444 rss_anon_kib=213776->212492 threads=15 duration_ms=105.8
 2026-08-16 23:44:37,196 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248360->247428 rss_anon_kib=213408->212476 threads=15 duration_ms=101.7
 2026-08-16 23:45:37,300 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248348->247596 rss_anon_kib=213396->212612 threads=15 duration_ms=103.8
+2026-08-16 23:46:37,427 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248344->247428 rss_anon_kib=213392->212476 threads=15 duration_ms=125.6
+2026-08-16 23:47:37,533 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=267988->247572 rss_anon_kib=233036->212620 threads=15 duration_ms=105.5
+2026-08-16 23:48:37,646 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=250480->247232 rss_anon_kib=215528->212280 threads=15 duration_ms=103.7
+2026-08-16 23:49:37,749 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247984->247112 rss_anon_kib=213032->212160 threads=15 duration_ms=102.0
+2026-08-16 23:50:15,372 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (121 chars)
+2026-08-16 23:50:15,376 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau ada job nokos otp yang dibayar saat ada sms,app apa yang menurut kamu pali' reply_to_id=2237 reply_to_text=''
+2026-08-16 23:50:15,381 INFO hermes_state: Repaired 2 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-16 23:50:15,391 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=gemma4:31b provider=ollama-cloud platform=telegram history=123 msg='Kalau ada job nokos otp yang dibayar saat ada sms,app apa yang menurut kamu pali...'
+2026-08-16 23:50:15,397 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-16 23:50:22,701 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #21: model=gemma4:31b provider=ollama-cloud in=45300 out=826 total=46126 latency=7.3s
+2026-08-16 23:50:22,775 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=3323 session=20260815_102333_b288b938
+2026-08-16 23:50:22,797 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.4s api_calls=1 response=3323 chars
+2026-08-16 23:50:22,805 INFO gateway.platforms.base: [Telegram] Sending response (3323 chars) to 6874843931
+2026-08-16 23:50:37,858 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=250356->247384 rss_anon_kib=215404->212432 threads=15 duration_ms=108.8
