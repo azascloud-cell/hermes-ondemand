@@ -7790,3 +7790,10 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-16 23:14:56,074 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=385 session=20260815_102333_b288b938
 2026-08-16 23:14:56,084 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.8s api_calls=1 response=385 chars
 2026-08-16 23:14:56,090 INFO gateway.platforms.base: [Telegram] Sending response (385 chars) to 6874843931
+2026-08-16 23:15:34,096 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=267096->246044 rss_anon_kib=232144->211092 threads=15 duration_ms=103.7
+2026-08-16 23:16:34,209 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246692->246036 rss_anon_kib=211740->211084 threads=15 duration_ms=111.6
+2026-08-16 23:17:34,308 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246732->246032 rss_anon_kib=211780->211080 threads=15 duration_ms=99.0
+2026-08-16 23:18:29,258 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 23:18:34,429 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247328->245876 rss_anon_kib=212376->210924 threads=15 duration_ms=113.4
+2026-08-16 23:19:34,535 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246740->245840 rss_anon_kib=211788->210888 threads=15 duration_ms=105.0
+2026-08-16 23:20:34,678 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264448->246008 rss_anon_kib=229496->211024 threads=15 duration_ms=142.1

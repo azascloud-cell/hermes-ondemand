@@ -1186,3 +1186,4 @@
 2026-08-16 23:14:52,297 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Gak usah' reply_to_id=2237 reply_to_text=''
 2026-08-16 23:14:56,084 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.8s api_calls=1 response=385 chars
 2026-08-16 23:14:56,090 INFO gateway.platforms.base: [Telegram] Sending response (385 chars) to 6874843931
+2026-08-16 23:18:29,258 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
