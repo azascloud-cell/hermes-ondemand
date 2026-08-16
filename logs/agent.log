@@ -4757,3 +4757,8 @@ RuntimeError: HTTP 401: Model gemma4:31b is not supported
 2026-08-16 00:27:19,115 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251188->250384 rss_anon_kib=215980->215176 threads=17 duration_ms=116.3
 2026-08-16 00:28:19,245 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=258628->250420 rss_anon_kib=223420->215212 threads=17 duration_ms=122.8
 2026-08-16 00:29:19,359 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=272956->250388 rss_anon_kib=237748->215180 threads=17 duration_ms=113.2
+2026-08-16 00:30:19,479 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251080->250392 rss_anon_kib=215872->215184 threads=17 duration_ms=119.4
+2026-08-16 00:31:19,599 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251140->250392 rss_anon_kib=215932->215184 threads=17 duration_ms=118.9
+2026-08-16 00:32:19,716 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251188->250388 rss_anon_kib=215980->215180 threads=17 duration_ms=116.5
+2026-08-16 00:33:19,839 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=252952->250424 rss_anon_kib=217744->215216 threads=17 duration_ms=113.3
+2026-08-16 00:34:19,954 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=278596->250392 rss_anon_kib=243388->215184 threads=17 duration_ms=114.1
