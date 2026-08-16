@@ -5347,3 +5347,19 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-16 04:15:46,046 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=284204->283516 rss_anon_kib=248932->248244 threads=17 duration_ms=115.3
 2026-08-16 04:16:30,245 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
 2026-08-16 04:16:46,162 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=284292->283520 rss_anon_kib=249020->248248 threads=17 duration_ms=115.2
+2026-08-16 04:17:46,276 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=284288->283524 rss_anon_kib=249016->248252 threads=17 duration_ms=113.5
+2026-08-16 04:18:46,400 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=302516->283724 rss_anon_kib=267244->248452 threads=17 duration_ms=116.7
+2026-08-16 04:19:17,263 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39056 (40 chars)
+2026-08-16 04:19:17,266 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Info job selain blast wa,dan Gmail neng!' reply_to_id=2736 reply_to_text=''
+2026-08-16 04:19:17,286 INFO [20260816_040800_ce5e3fa2] agent.turn_context: conversation turn: session=20260816_040800_ce5e3fa2 model=gemma4:31b provider=ollama-cloud platform=telegram history=33 msg='Info job selain blast wa,dan Gmail neng!'
+2026-08-16 04:19:17,290 INFO [20260816_040800_ce5e3fa2] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260816_040800_ce5e3fa2)
+2026-08-16 04:19:27,545 INFO [20260816_040800_ce5e3fa2] agent.conversation_loop: API call #17: model=gemma4:31b provider=ollama-cloud in=33828 out=682 total=34510 latency=10.3s
+2026-08-16 04:19:27,599 INFO [20260816_040800_ce5e3fa2] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=11 last_msg_role=assistant response_len=2601 session=20260816_040800_ce5e3fa2
+2026-08-16 04:19:27,608 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.3s api_calls=1 response=2601 chars
+2026-08-16 04:19:27,616 INFO gateway.platforms.base: [Telegram] Sending response (2601 chars) to 6874843931
+2026-08-16 04:19:46,513 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=293080->283896 rss_anon_kib=257808->248624 threads=17 duration_ms=113.0
+2026-08-16 04:20:45,582 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:39025 (idle=3835s)
+2026-08-16 04:20:45,582 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:6:140189443806912 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-16 04:20:45,582 INFO run_agent: OpenAI client closed (cache_evict, shared=False, tcp_force_closed=0) thread=agent-cache-idle-agent:main:telegram:dm:6:140189443806912 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-16 04:20:45,583 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-16 04:20:46,630 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=284736->283524 rss_anon_kib=249464->248252 threads=17 duration_ms=116.2
