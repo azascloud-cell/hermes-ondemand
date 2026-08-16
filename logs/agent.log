@@ -6428,3 +6428,142 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-16 14:43:18,944 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=233776->231388 rss_anon_kib=198124->195736 threads=14 duration_ms=117.9
 2026-08-16 14:44:19,055 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251248->231388 rss_anon_kib=215596->195736 threads=14 duration_ms=110.6
 2026-08-16 14:45:19,168 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232244->231392 rss_anon_kib=196592->195740 threads=14 duration_ms=112.0
+2026-08-16 14:46:19,293 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232744->231512 rss_anon_kib=197092->195860 threads=14 duration_ms=118.5
+2026-08-16 14:46:50,968 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_10c387aad724.jpg
+2026-08-16 14:46:51,770 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:6874843931:39214:photo-burst with 1 image(s)
+2026-08-16 14:46:51,774 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Infokan cara cepat kirim file neng!' reply_to_id=2816 reply_to_text=''
+2026-08-16 14:46:51,832 INFO gateway.run: Image routing: text (mode=text). Pre-analyzing 1 image(s) via vision_analyze.
+2026-08-16 14:46:51,840 INFO tools.vision_tools: Analyzing image: /home/runner/.hermes/cache/images/img_10c387aad724.jpg
+2026-08-16 14:46:51,840 INFO tools.vision_tools: User prompt: Concisely describe this image in 2-4 sentences (~200 Chinese characters or ~150 English words). Cove
+2026-08-16 14:46:51,845 INFO tools.vision_tools: Image ready (102.1 KB)
+2026-08-16 14:46:51,846 INFO tools.vision_tools: Converting image to base64...
+2026-08-16 14:46:51,847 INFO tools.vision_tools: Image converted to base64 (136.2 KB)
+2026-08-16 14:46:51,847 INFO tools.vision_tools: Processing image with vision model...
+2026-08-16 14:46:52,507 INFO agent.auxiliary_client: Vision auto-detect: using main provider opencode-zen (gemma4:31b)
+2026-08-16 14:46:52,664 INFO agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=401), rotating
+2026-08-16 14:46:52,664 INFO agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-16 14:46:52,664 ERROR tools.vision_tools: Error analyzing image: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/tools/vision_tools.py", line 1511, in vision_analyze_tool
+    response = await async_call_llm(**call_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/auxiliary_client.py", line 3212, in wrapped
+    return await callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/auxiliary_client.py", line 9964, in async_call_llm
+    return await _async_call_llm_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/auxiliary_client.py", line 10138, in _async_call_llm_impl
+    await _relay_async_completion(
+  File "/home/runner/.hermes/hermes-agent/agent/auxiliary_client.py", line 3311, in _relay_async_completion
+    return await relay_llm.execute_current_async(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 248, in execute_current_async
+    return await callback(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/auxiliary_client.py", line 10134, in _acreate
+    return await client.chat.completions.create(**_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 2700, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1884, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1669, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
+2026-08-16 14:46:52,725 INFO [20260815_102333_b288b938] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140119818368704 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-16 14:46:52,731 INFO [20260816_144651_e9eda331] agent.turn_context: conversation turn: session=20260816_144651_e9eda331 model=gemma4:31b provider=opencode-zen platform=telegram history=0 msg="[The user sent an image but I couldn't quite see it this time (>_<) You can try ..."
+2026-08-16 14:46:52,794 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-21 (<lambda>):140119247935168 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-16 14:46:52,798 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider opencode-zen (gemma4:31b)
+2026-08-16 14:46:52,798 INFO agent.auxiliary_client: Auxiliary title_generation: using opencode-zen (gemma4:31b) at https://opencode.ai/zen/v1/
+2026-08-16 14:46:52,917 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
+2026-08-16 14:46:52,928 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-21 (<lambda>):140119247935168 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-16 14:46:52,991 INFO agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=401), rotating
+2026-08-16 14:46:52,991 INFO agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-16 14:46:52,991 INFO agent.auxiliary_client: Auxiliary title_generation: auth error on auto (Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}), trying fallback
+2026-08-16 14:46:52,994 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:47:52.
+2026-08-16 14:46:52,996 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-16 14:46:52,996 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 14:47:52.
+2026-08-16 14:46:53,058 INFO [20260816_144651_e9eda331] agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=401), rotating
+2026-08-16 14:46:53,058 INFO [20260816_144651_e9eda331] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-16 14:46:53,059 WARNING [20260816_144651_e9eda331] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=hermes-gateway_0:140119818368704 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b summary=HTTP 401: Model gemma4:31b is not supported
+2026-08-16 14:46:53,140 ERROR [20260816_144651_e9eda331] agent.conversation_loop: Non-retryable client error: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
+2026-08-16 14:46:53,155 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.4s api_calls=1 response=43 chars
+2026-08-16 14:46:53,156 INFO gateway.run: Transient agent failure in session 20260816_144651_e9eda331 — persisting user message so conversation context is preserved on retry.
+2026-08-16 14:46:53,222 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 6874843931
+2026-08-16 14:46:53,338 INFO agent.auxiliary_client: Auxiliary title_generation: auth error on auto — falling back to api-key (gemini-3-flash)
+2026-08-16 14:46:53,500 WARNING agent.auxiliary_client: Auxiliary: marking api-key unhealthy for 600s (payment / credit error). Subsequent auxiliary calls will skip it until 14:56:53.
+2026-08-16 14:46:53,501 WARNING agent.auxiliary_client: Auxiliary title_generation: fallback candidate api-key has a stale/unrefreshable credential (Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}) — skipping to next fallback
+2026-08-16 14:46:53,501 INFO agent.auxiliary_client: Auxiliary title_generation: skipping openrouter (recently returned payment error, retry in 59s)
+2026-08-16 14:46:53,501 INFO agent.auxiliary_client: Auxiliary title_generation: skipping nous (recently returned payment error, retry in 59s)
+2026-08-16 14:46:53,506 INFO agent.auxiliary_client: Auxiliary title_generation: skipping api-key (recently returned payment error, retry in 599s)
+2026-08-16 14:46:53,506 WARNING agent.auxiliary_client: Auxiliary title_generation: stale fallback credential on auto and no fallback available (tried: openrouter (unhealthy), nous (unhealthy), local/custom, api-key (unhealthy))
+2026-08-16 14:46:53,506 WARNING agent.auxiliary_client: Auxiliary title_generation: auth error on auto and all fallbacks exhausted (fallback_chain + main agent model). Raising original error.
+2026-08-16 14:46:53,506 WARNING agent.title_generator: Title generation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
+2026-08-16 14:47:19,415 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=273852->260176 rss_anon_kib=238136->224460 threads=15 duration_ms=121.6
+2026-08-16 14:47:44,183 INFO run_agent: OpenAI client created (switch_model, shared=True) thread=MainThread:140120763139904 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-16 14:47:44,186 INFO agent.agent_runtime_helpers: switch_model: reasoning_config resolved for gemma4:31b: None
+2026-08-16 14:47:44,186 INFO agent.agent_runtime_helpers: Model switched in-place: gemma4:31b (opencode-zen) -> gemma4:31b (ollama-cloud)
+2026-08-16 14:47:44,199 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-evict-agent:main:telegram:dm:6:140119264716480 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-16 14:47:49,701 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39214 (4 chars)
+2026-08-16 14:47:49,705 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Neng' reply_to_id=2816 reply_to_text=''
+2026-08-16 14:47:49,739 INFO [20260816_144651_e9eda331] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140119818368704 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-16 14:47:49,745 INFO [20260816_144651_e9eda331] agent.turn_context: conversation turn: session=20260816_144651_e9eda331 model=gemma4:31b provider=ollama-cloud platform=telegram history=1 msg='[Note: model was just switched from gemma4:31b to gemma4:31b via Ollama Cloud. A...'
+2026-08-16 14:47:49,745 WARNING [20260816_144651_e9eda331] agent.conversation_loop: Stored system prompt for session 20260816_144651_e9eda331 is null; rebuilding from scratch this turn. Prefix cache will miss until the rebuild persists. Investigate the previous turn's update_system_prompt write path.
+2026-08-16 14:47:49,753 INFO [20260816_144651_e9eda331] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260816_144651_e9eda331)
+2026-08-16 14:47:49,859 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-22 (<lambda>):140119281497792 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-16 14:47:51,159 INFO [20260816_144651_e9eda331] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=17859 out=42 total=17901 latency=1.4s
+2026-08-16 14:47:53,130 INFO [20260816_144651_e9eda331] agent.conversation_loop: API call #2: model=gemma4:31b provider=ollama-cloud in=17982 out=187 total=18169 latency=1.9s
+2026-08-16 14:47:53,136 INFO [20260816_144651_e9eda331] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=2/500 budget=2/500 tool_turns=1 last_msg_role=assistant response_len=684 session=20260816_144651_e9eda331
+2026-08-16 14:47:53,144 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.4s api_calls=2 response=684 chars
+2026-08-16 14:47:53,151 INFO gateway.platforms.base: [Telegram] Sending response (684 chars) to 6874843931
+2026-08-16 14:48:12,396 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_cd8504dfe85d.jpg
+2026-08-16 14:48:13,199 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:6874843931:39214:photo-burst with 1 image(s)
+2026-08-16 14:48:13,203 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='' reply_to_id=2816 reply_to_text=''
+2026-08-16 14:48:13,215 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-16 14:48:13,226 INFO [20260816_144651_e9eda331] agent.turn_context: conversation turn: session=20260816_144651_e9eda331 model=gemma4:31b provider=ollama-cloud platform=telegram history=5 msg='[1 image] What do you see in this image?  [Image attached at: /home/runner/.herm...'
+2026-08-16 14:48:13,229 INFO [20260816_144651_e9eda331] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260816_144651_e9eda331)
+2026-08-16 14:48:16,046 INFO [20260816_144651_e9eda331] agent.conversation_loop: API call #3: model=gemma4:31b provider=ollama-cloud in=18454 out=270 total=18724 latency=2.8s
+2026-08-16 14:48:16,051 INFO [20260816_144651_e9eda331] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=1 last_msg_role=assistant response_len=919 session=20260816_144651_e9eda331
+2026-08-16 14:48:16,098 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.9s api_calls=1 response=919 chars
+2026-08-16 14:48:16,108 INFO gateway.platforms.base: [Telegram] Sending response (919 chars) to 6874843931
+2026-08-16 14:48:19,536 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=267084->262856 rss_anon_kib=231368->227140 threads=15 duration_ms=120.2
+2026-08-16 14:48:35,001 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39214 (10 chars)
+2026-08-16 14:48:35,005 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bagaimana?' reply_to_id=2816 reply_to_text=''
+2026-08-16 14:48:35,025 INFO [20260816_144651_e9eda331] agent.turn_context: conversation turn: session=20260816_144651_e9eda331 model=gemma4:31b provider=ollama-cloud platform=telegram history=7 msg='Bagaimana?'
+2026-08-16 14:48:35,028 INFO [20260816_144651_e9eda331] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260816_144651_e9eda331)
+2026-08-16 14:48:38,383 INFO [20260816_144651_e9eda331] agent.conversation_loop: API call #4: model=gemma4:31b provider=ollama-cloud in=18468 out=251 total=18719 latency=3.4s
+2026-08-16 14:48:38,391 INFO [20260816_144651_e9eda331] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=1 last_msg_role=assistant response_len=968 session=20260816_144651_e9eda331
+2026-08-16 14:48:38,400 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.4s api_calls=1 response=968 chars
+2026-08-16 14:48:38,409 INFO gateway.platforms.base: [Telegram] Sending response (968 chars) to 6874843931
+2026-08-16 14:49:19,655 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=272608->262840 rss_anon_kib=236892->227124 threads=15 duration_ms=118.4
+2026-08-16 14:50:19,775 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280404->266532 rss_anon_kib=244688->230816 threads=15 duration_ms=118.8

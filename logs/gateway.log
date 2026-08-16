@@ -946,3 +946,24 @@
 2026-08-16 11:37:56,408 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
 2026-08-16 12:02:59,322 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38372 (idle=3645s)
 2026-08-16 12:02:59,324 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-16 14:46:50,968 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_10c387aad724.jpg
+2026-08-16 14:46:51,770 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:6874843931:39214:photo-burst with 1 image(s)
+2026-08-16 14:46:51,774 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Infokan cara cepat kirim file neng!' reply_to_id=2816 reply_to_text=''
+2026-08-16 14:46:51,832 INFO gateway.run: Image routing: text (mode=text). Pre-analyzing 1 image(s) via vision_analyze.
+2026-08-16 14:46:53,155 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.4s api_calls=1 response=43 chars
+2026-08-16 14:46:53,156 INFO gateway.run: Transient agent failure in session 20260816_144651_e9eda331 — persisting user message so conversation context is preserved on retry.
+2026-08-16 14:46:53,222 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 6874843931
+2026-08-16 14:47:49,701 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39214 (4 chars)
+2026-08-16 14:47:49,705 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Neng' reply_to_id=2816 reply_to_text=''
+2026-08-16 14:47:53,144 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.4s api_calls=2 response=684 chars
+2026-08-16 14:47:53,151 INFO gateway.platforms.base: [Telegram] Sending response (684 chars) to 6874843931
+2026-08-16 14:48:12,396 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_cd8504dfe85d.jpg
+2026-08-16 14:48:13,199 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:6874843931:39214:photo-burst with 1 image(s)
+2026-08-16 14:48:13,203 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='' reply_to_id=2816 reply_to_text=''
+2026-08-16 14:48:13,215 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-16 14:48:16,098 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.9s api_calls=1 response=919 chars
+2026-08-16 14:48:16,108 INFO gateway.platforms.base: [Telegram] Sending response (919 chars) to 6874843931
+2026-08-16 14:48:35,001 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39214 (10 chars)
+2026-08-16 14:48:35,005 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bagaimana?' reply_to_id=2816 reply_to_text=''
+2026-08-16 14:48:38,400 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.4s api_calls=1 response=968 chars
+2026-08-16 14:48:38,409 INFO gateway.platforms.base: [Telegram] Sending response (968 chars) to 6874843931
