@@ -5612,3 +5612,27 @@ RuntimeError: HTTP 401: Model gemma4:31b is not supported
 2026-08-16 05:46:02,288 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256572->243920 rss_anon_kib=221344->208692 threads=15 duration_ms=99.8
 2026-08-16 05:47:02,392 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257416->243992 rss_anon_kib=222188->208764 threads=15 duration_ms=96.3
 2026-08-16 05:48:02,493 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244876->243940 rss_anon_kib=209648->208712 threads=15 duration_ms=100.0
+2026-08-16 05:49:02,591 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244552->243952 rss_anon_kib=209324->208724 threads=15 duration_ms=96.9
+2026-08-16 05:50:02,690 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244500->243948 rss_anon_kib=209272->208720 threads=15 duration_ms=98.8
+2026-08-16 05:51:02,789 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=250868->244072 rss_anon_kib=215640->208844 threads=15 duration_ms=98.0
+2026-08-16 05:52:00,248 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (10 chars)
+2026-08-16 05:52:00,252 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ini kenapa' reply_to_id=2759 reply_to_text='Cronjob Response: Daily Gold Market Alert - XAUUSD (job_id: 6cddf0420290) ------'
+2026-08-16 05:52:00,264 INFO [20260816_040800_ce5e3fa2] gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38922: model=gemma4:31b provider=ollama-cloud
+2026-08-16 05:52:00,287 INFO [20260816_040800_ce5e3fa2] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140186239362752 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-16 05:52:00,292 INFO [20260816_025735_6984b064] agent.turn_context: conversation turn: session=20260816_025735_6984b064 model=gemma4:31b provider=ollama-cloud platform=telegram history=0 msg='[Replying to: "Cronjob Response: Daily Gold Market Alert - XAUUSD (job_id: 6cddf...'
+2026-08-16 05:52:00,346 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider ollama-cloud (gemma4:31b)
+2026-08-16 05:52:00,347 INFO agent.auxiliary_client: Auxiliary title_generation: using ollama-cloud (gemma4:31b) at https://ollama.com/v1/
+2026-08-16 05:52:00,541 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-26 (<lambda>):140185887037120 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-16 05:52:02,739 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=17740 out=131 total=17871 latency=2.4s
+2026-08-16 05:52:02,742 INFO [20260816_025735_6984b064] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=478 session=20260816_025735_6984b064
+2026-08-16 05:52:02,776 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.5s api_calls=1 response=478 chars
+2026-08-16 05:52:02,784 INFO gateway.platforms.base: [Telegram] Sending response (478 chars) to 6874843931
+2026-08-16 05:52:02,901 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264888->246024 rss_anon_kib=229660->210796 threads=15 duration_ms=104.5
+2026-08-16 05:52:58,923 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (117 chars)
+2026-08-16 05:52:58,927 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau menurut aku,tiap kali aku buat sesi baru,kamu pakai provider yang invalid,' reply_to_id=2642 reply_to_text=''
+2026-08-16 05:52:58,940 INFO [20260816_025735_6984b064] agent.turn_context: conversation turn: session=20260816_025735_6984b064 model=gemma4:31b provider=ollama-cloud platform=telegram history=2 msg='Kalau menurut aku,tiap kali aku buat sesi baru,kamu pakai provider yang invalid,...'
+2026-08-16 05:53:02,311 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #2: model=gemma4:31b provider=ollama-cloud in=17906 out=154 total=18060 latency=3.4s
+2026-08-16 05:53:02,314 INFO [20260816_025735_6984b064] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=622 session=20260816_025735_6984b064
+2026-08-16 05:53:02,364 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.4s api_calls=1 response=622 chars
+2026-08-16 05:53:02,371 INFO gateway.platforms.base: [Telegram] Sending response (622 chars) to 6874843931
+2026-08-16 05:53:03,007 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247992->246320 rss_anon_kib=212764->211092 threads=15 duration_ms=105.8

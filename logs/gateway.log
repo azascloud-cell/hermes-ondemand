@@ -847,3 +847,12 @@
 2026-08-16 05:45:18,090 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Jangan pakai qrcode,pakai kode pairing aja' reply_to_id=2736 reply_to_text=''
 2026-08-16 05:45:29,188 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.1s api_calls=1 response=5246 chars
 2026-08-16 05:45:29,201 INFO gateway.platforms.base: [Telegram] Sending response (5230 chars) to 6874843931
+2026-08-16 05:52:00,248 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (10 chars)
+2026-08-16 05:52:00,252 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ini kenapa' reply_to_id=2759 reply_to_text='Cronjob Response: Daily Gold Market Alert - XAUUSD (job_id: 6cddf0420290) ------'
+2026-08-16 05:52:00,264 INFO [20260816_040800_ce5e3fa2] gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38922: model=gemma4:31b provider=ollama-cloud
+2026-08-16 05:52:02,776 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.5s api_calls=1 response=478 chars
+2026-08-16 05:52:02,784 INFO gateway.platforms.base: [Telegram] Sending response (478 chars) to 6874843931
+2026-08-16 05:52:58,923 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (117 chars)
+2026-08-16 05:52:58,927 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau menurut aku,tiap kali aku buat sesi baru,kamu pakai provider yang invalid,' reply_to_id=2642 reply_to_text=''
+2026-08-16 05:53:02,364 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.4s api_calls=1 response=622 chars
+2026-08-16 05:53:02,371 INFO gateway.platforms.base: [Telegram] Sending response (622 chars) to 6874843931
