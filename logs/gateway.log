@@ -858,3 +858,5 @@
 2026-08-16 05:53:02,371 INFO gateway.platforms.base: [Telegram] Sending response (622 chars) to 6874843931
 2026-08-16 06:49:08,971 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:39056 (idle=3820s)
 2026-08-16 06:49:08,972 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-16 06:54:09,483 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38922 (idle=3667s)
+2026-08-16 06:54:09,484 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
