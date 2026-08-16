@@ -1825,3 +1825,4 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-16 22:02:04,759 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
 2026-08-16 22:03:24,848 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
 2026-08-16 22:03:27,515 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 22:20:36,661 WARNING [20260815_102333_b288b938] agent.tool_executor: Tool memory returned error (0.01s): {"success": false, "error": "After applying all 3 operations, memory would be at 1,711/1,375 chars -- over the limit. Remove or shorten more entries in the same batch (see current_entries below), then
