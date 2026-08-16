@@ -188,7 +188,53 @@
     "session_key": "agent:main:telegram:dm:6874843931:39025",
     "session_id": "20260816_025857_aaf70de7",
     "created_at": "2026-08-16T02:58:57.105969",
-    "updated_at": "2026-08-16T02:59:24.371113",
+    "updated_at": "2026-08-16T03:16:50.527531",
+    "display_name": "Azas Crack",
+    "platform": "telegram",
+    "chat_type": "dm",
+    "metadata": {},
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "total_tokens": 0,
+    "last_prompt_tokens": 18987,
+    "estimated_cost_usd": 0.0,
+    "cost_status": "unknown",
+    "expiry_finalized": false,
+    "suspended": false,
+    "resume_pending": false,
+    "resume_reason": null,
+    "last_resume_marked_at": null,
+    "active_turn_token": null,
+    "active_turn_started_at": null,
+    "is_fresh_reset": false,
+    "was_auto_reset": false,
+    "auto_reset_reason": null,
+    "reset_had_activity": false,
+    "prev_session_id": null,
+    "model_override": {
+      "model": "gemma4:31b",
+      "provider": "ollama-cloud",
+      "base_url": "https://ollama.com/v1"
+    },
+    "origin": {
+      "platform": "telegram",
+      "chat_id": "6874843931",
+      "chat_name": "Azas Crack",
+      "chat_type": "dm",
+      "user_id": "6874843931",
+      "user_name": "Azas Crack",
+      "thread_id": "39025",
+      "chat_topic": null,
+      "message_id": "2721"
+    }
+  },
+  "agent:main:telegram:dm:6874843931:39056": {
+    "session_key": "agent:main:telegram:dm:6874843931:39056",
+    "session_id": "20260816_040800_ce5e3fa2",
+    "created_at": "2026-08-16T04:08:00.133106",
+    "updated_at": "2026-08-16T04:08:36.587894",
     "display_name": "Azas Crack",
     "platform": "telegram",
     "chat_type": "dm",
@@ -225,9 +271,9 @@
       "chat_type": "dm",
       "user_id": "6874843931",
       "user_name": "Azas Crack",
-      "thread_id": "39025",
+      "thread_id": "39056",
       "chat_topic": null,
-      "message_id": "2721"
+      "message_id": "2737"
     }
   }
 }
