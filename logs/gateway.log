@@ -967,3 +967,5 @@
 2026-08-16 14:48:35,005 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bagaimana?' reply_to_id=2816 reply_to_text=''
 2026-08-16 14:48:38,400 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.4s api_calls=1 response=968 chars
 2026-08-16 14:48:38,409 INFO gateway.platforms.base: [Telegram] Sending response (968 chars) to 6874843931
+2026-08-16 15:11:11,576 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39214 (105 chars)
+2026-08-16 15:11:11,580 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Aplikasi clone yang dikombinasikan dengan proxy dan ati detect browser ada gak? ' reply_to_id=2816 reply_to_text=''
