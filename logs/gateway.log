@@ -760,3 +760,7 @@
 2026-08-16 03:15:20,216 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kamu tahu nggak tempat nonton drama turki terupdate subtitle Indonesia?' reply_to_id=2720 reply_to_text=''
 2026-08-16 03:15:26,175 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.0s api_calls=1 response=1444 chars
 2026-08-16 03:15:26,183 INFO gateway.platforms.base: [Telegram] Sending response (1444 chars) to 6874843931
+2026-08-16 03:16:42,595 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39025 (7 chars)
+2026-08-16 03:16:42,599 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Carikan' reply_to_id=2720 reply_to_text=''
+2026-08-16 03:16:50,522 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.9s api_calls=1 response=2006 chars
+2026-08-16 03:16:50,531 INFO gateway.platforms.base: [Telegram] Sending response (2006 chars) to 6874843931

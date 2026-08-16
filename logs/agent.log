@@ -5139,3 +5139,16 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-16 03:15:26,183 INFO gateway.platforms.base: [Telegram] Sending response (1444 chars) to 6874843931
 2026-08-16 03:15:38,894 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283156->281084 rss_anon_kib=247884->245812 threads=17 duration_ms=123.5
 2026-08-16 03:16:39,010 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=281692->281072 rss_anon_kib=246420->245800 threads=17 duration_ms=115.5
+2026-08-16 03:16:42,595 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39025 (7 chars)
+2026-08-16 03:16:42,599 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Carikan' reply_to_id=2720 reply_to_text=''
+2026-08-16 03:16:42,618 INFO [20260816_025857_aaf70de7] agent.turn_context: conversation turn: session=20260816_025857_aaf70de7 model=gemma4:31b provider=ollama-cloud platform=telegram history=9 msg='Carikan'
+2026-08-16 03:16:42,621 INFO [20260816_025857_aaf70de7] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260816_025857_aaf70de7)
+2026-08-16 03:16:50,489 INFO [20260816_025857_aaf70de7] agent.conversation_loop: API call #5: model=gemma4:31b provider=ollama-cloud in=18987 out=585 total=19572 latency=7.9s
+2026-08-16 03:16:50,494 INFO [20260816_025857_aaf70de7] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=2006 session=20260816_025857_aaf70de7
+2026-08-16 03:16:50,522 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.9s api_calls=1 response=2006 chars
+2026-08-16 03:16:50,531 INFO gateway.platforms.base: [Telegram] Sending response (2006 chars) to 6874843931
+2026-08-16 03:17:39,129 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283140->281128 rss_anon_kib=247868->245856 threads=17 duration_ms=118.1
+2026-08-16 03:18:39,252 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=293944->281136 rss_anon_kib=258672->245864 threads=17 duration_ms=115.7
+2026-08-16 03:19:39,369 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=297552->281096 rss_anon_kib=262280->245824 threads=17 duration_ms=116.7
+2026-08-16 03:20:39,485 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=281692->281088 rss_anon_kib=246420->245816 threads=17 duration_ms=114.8
+2026-08-16 03:21:39,599 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=281608->281088 rss_anon_kib=246336->245816 threads=17 duration_ms=113.7
