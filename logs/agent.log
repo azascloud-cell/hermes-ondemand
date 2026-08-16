@@ -5750,3 +5750,66 @@ RuntimeError: HTTP 401: Model gemma4:31b is not supported
 2026-08-16 07:37:13,908 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246752->245320 rss_anon_kib=211524->210092 threads=15 duration_ms=97.1
 2026-08-16 07:38:14,005 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=270088->245444 rss_anon_kib=234860->210184 threads=15 duration_ms=96.5
 2026-08-16 07:39:14,109 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246944->245444 rss_anon_kib=211716->210184 threads=15 duration_ms=104.1
+2026-08-16 07:40:14,206 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246064->245352 rss_anon_kib=210836->210124 threads=15 duration_ms=95.9
+2026-08-16 07:41:14,304 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246220->245324 rss_anon_kib=210992->210096 threads=15 duration_ms=97.5
+2026-08-16 07:42:14,405 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246756->245320 rss_anon_kib=211528->210092 threads=15 duration_ms=94.6
+2026-08-16 07:43:14,501 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=270088->245408 rss_anon_kib=234860->210180 threads=15 duration_ms=95.0
+2026-08-16 07:44:14,601 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247020->245284 rss_anon_kib=211792->210056 threads=15 duration_ms=99.8
+2026-08-16 07:44:51,089 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39131 (42 chars)
+2026-08-16 07:44:51,093 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ushiro no Shoumen Kamui-san  Tau anime in?' reply_to_id=2782 reply_to_text=''
+2026-08-16 07:44:51,136 INFO [20260816_025735_6984b064] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140186239362752 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-16 07:44:51,141 INFO [20260816_074451_f62bdeb1] agent.turn_context: conversation turn: session=20260816_074451_f62bdeb1 model=gemma4:31b provider=opencode-zen platform=telegram history=0 msg='Ushiro no Shoumen Kamui-san  Tau anime in?'
+2026-08-16 07:44:51,168 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-28 (<lambda>):140185887037120 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-16 07:44:51,171 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider opencode-zen (gemma4:31b)
+2026-08-16 07:44:51,172 INFO agent.auxiliary_client: Auxiliary title_generation: using opencode-zen (gemma4:31b) at https://opencode.ai/zen/v1/
+2026-08-16 07:44:51,310 INFO agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=401), rotating
+2026-08-16 07:44:51,310 INFO agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-16 07:44:51,311 INFO agent.auxiliary_client: Auxiliary title_generation: auth error on auto (Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}), trying fallback
+2026-08-16 07:44:51,312 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:45:51.
+2026-08-16 07:44:51,314 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-16 07:44:51,314 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:45:51.
+2026-08-16 07:44:51,330 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4658, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3938, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3875, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
+2026-08-16 07:44:51,337 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-28 (<lambda>):140185887037120 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b
+2026-08-16 07:44:51,352 INFO [20260816_074451_f62bdeb1] agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=401), rotating
+2026-08-16 07:44:51,352 INFO [20260816_074451_f62bdeb1] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-16 07:44:51,352 WARNING [20260816_074451_f62bdeb1] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=hermes-gateway_0:140186239362752 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=gemma4:31b summary=HTTP 401: Model gemma4:31b is not supported
+2026-08-16 07:44:51,421 ERROR [20260816_074451_f62bdeb1] agent.conversation_loop: Non-retryable client error: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
+2026-08-16 07:44:51,435 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=0.3s api_calls=1 response=43 chars
+2026-08-16 07:44:51,435 INFO gateway.run: Transient agent failure in session 20260816_074451_f62bdeb1 — persisting user message so conversation context is preserved on retry.
+2026-08-16 07:44:51,444 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 6874843931
+2026-08-16 07:44:53,180 INFO agent.auxiliary_client: Auxiliary title_generation: auth error on auto — falling back to api-key (gemini-3-flash)
+2026-08-16 07:44:53,312 WARNING agent.auxiliary_client: Auxiliary: marking api-key unhealthy for 600s (payment / credit error). Subsequent auxiliary calls will skip it until 07:54:53.
+2026-08-16 07:44:53,312 WARNING agent.auxiliary_client: Auxiliary title_generation: fallback candidate api-key has a stale/unrefreshable credential (Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}) — skipping to next fallback
+2026-08-16 07:44:53,313 INFO agent.auxiliary_client: Auxiliary title_generation: skipping openrouter (recently returned payment error, retry in 57s)
+2026-08-16 07:44:53,313 INFO agent.auxiliary_client: Auxiliary title_generation: skipping nous (recently returned payment error, retry in 58s)
+2026-08-16 07:44:53,319 INFO agent.auxiliary_client: Auxiliary title_generation: skipping api-key (recently returned payment error, retry in 599s)
+2026-08-16 07:44:53,319 WARNING agent.auxiliary_client: Auxiliary title_generation: stale fallback credential on auto and no fallback available (tried: openrouter (unhealthy), nous (unhealthy), local/custom, api-key (unhealthy))
+2026-08-16 07:44:53,319 WARNING agent.auxiliary_client: Auxiliary title_generation: auth error on auto and all fallbacks exhausted (fallback_chain + main agent model). Raising original error.
+2026-08-16 07:44:53,319 WARNING agent.title_generator: Title generation failed: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model gemma4:31b is not supported'}}
