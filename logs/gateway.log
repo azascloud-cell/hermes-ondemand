@@ -889,3 +889,5 @@
 2026-08-16 07:49:13,029 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ya' reply_to_id=2782 reply_to_text=''
 2026-08-16 07:49:17,392 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.4s api_calls=1 response=1698 chars
 2026-08-16 07:49:17,401 INFO gateway.platforms.base: [Telegram] Sending response (1698 chars) to 6874843931
+2026-08-16 08:49:21,570 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:39131 (idle=3604s)
+2026-08-16 08:49:21,571 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
