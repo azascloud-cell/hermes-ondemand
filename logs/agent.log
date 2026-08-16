@@ -6123,3 +6123,30 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-16 10:30:30,500 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
 2026-08-16 10:30:49,313 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=227612->226356 rss_anon_kib=191960->190704 threads=13 duration_ms=113.3
 2026-08-16 10:31:49,418 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=243016->227164 rss_anon_kib=207364->191512 threads=13 duration_ms=104.2
+2026-08-16 10:32:49,529 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=233408->228120 rss_anon_kib=197756->192468 threads=13 duration_ms=109.9
+2026-08-16 10:33:08,204 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 10:33:49,640 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=228844->228116 rss_anon_kib=193192->192464 threads=13 duration_ms=110.8
+2026-08-16 10:33:53,078 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (36 chars)
+2026-08-16 10:33:53,116 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Tapi ini aku masukan kamu ke channel' reply_to_id=2642 reply_to_text=''
+2026-08-16 10:33:53,138 INFO [20260816_025735_6984b064] agent.turn_context: conversation turn: session=20260816_025735_6984b064 model=gemma4:31b provider=ollama-cloud platform=telegram history=6 msg='Tapi ini aku masukan kamu ke channel'
+2026-08-16 10:33:55,881 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #2: model=gemma4:31b provider=ollama-cloud in=18475 out=316 total=18791 latency=2.6s
+2026-08-16 10:33:55,980 INFO [20260816_025735_6984b064] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1221 session=20260816_025735_6984b064
+2026-08-16 10:33:56,008 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.9s api_calls=1 response=1221 chars
+2026-08-16 10:33:56,016 INFO gateway.platforms.base: [Telegram] Sending response (1221 chars) to 6874843931
+2026-08-16 10:34:49,753 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=230688->228736 rss_anon_kib=195036->193084 threads=13 duration_ms=112.2
+2026-08-16 10:35:02,126 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (77 chars)
+2026-08-16 10:35:02,130 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Aku ada bot tradingnya yang kasih sinyal dan edukasi,kamu tinggal melengkapi,' reply_to_id=2642 reply_to_text=''
+2026-08-16 10:35:02,144 INFO [20260816_025735_6984b064] agent.turn_context: conversation turn: session=20260816_025735_6984b064 model=gemma4:31b provider=ollama-cloud platform=telegram history=8 msg='Aku ada bot tradingnya yang kasih sinyal dan edukasi,kamu tinggal melengkapi,'
+2026-08-16 10:35:04,720 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #3: model=gemma4:31b provider=ollama-cloud in=18819 out=446 total=19265 latency=2.6s
+2026-08-16 10:35:04,726 INFO [20260816_025735_6984b064] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1687 session=20260816_025735_6984b064
+2026-08-16 10:35:04,762 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.6s api_calls=1 response=1687 chars
+2026-08-16 10:35:04,770 INFO gateway.platforms.base: [Telegram] Sending response (1687 chars) to 6874843931
+2026-08-16 10:35:49,915 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=231164->228968 rss_anon_kib=195512->193316 threads=13 duration_ms=102.5
+2026-08-16 10:35:53,891 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (47 chars)
+2026-08-16 10:35:53,895 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bagaimana kamu respon dan mengisi chat channel?' reply_to_id=2642 reply_to_text=''
+2026-08-16 10:35:53,908 INFO [20260816_025735_6984b064] agent.turn_context: conversation turn: session=20260816_025735_6984b064 model=gemma4:31b provider=ollama-cloud platform=telegram history=10 msg='Bagaimana kamu respon dan mengisi chat channel?'
+2026-08-16 10:35:58,012 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #4: model=gemma4:31b provider=ollama-cloud in=19283 out=728 total=20011 latency=4.1s
+2026-08-16 10:35:58,018 INFO [20260816_025735_6984b064] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=2638 session=20260816_025735_6984b064
+2026-08-16 10:35:58,045 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.1s api_calls=1 response=2638 chars
+2026-08-16 10:35:58,065 INFO gateway.platforms.base: [Telegram] Sending response (2638 chars) to 6874843931
+2026-08-16 10:36:50,028 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=231816->229008 rss_anon_kib=196164->193356 threads=13 duration_ms=112.1
