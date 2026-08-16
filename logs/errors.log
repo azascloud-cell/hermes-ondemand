@@ -1796,3 +1796,26 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-16 20:50:02,366 WARNING [20260815_102333_b288b938] agent.tool_executor: Tool memory returned error (0.00s): {"success": false, "error": "After applying all 2 operations, memory would be at 1,444/1,375 chars -- over the limit. Remove or shorten more entries in the same batch (see current_entries below), then
 2026-08-16 20:53:31,294 WARNING [20260815_102333_b288b938] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Skill name is required."}
 2026-08-16 20:53:34,521 WARNING [20260815_102333_b288b938] agent.tool_executor: Tool skill_manage returned error (0.00s): {"success": false, "error": "Description is 96 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript
+2026-08-16 21:49:12,363 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=3854, started_at=2026-08-16T16:00:27.880781+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-16T21:47:19.010515+00:00 last_mem={'rss_kib': 245624, 'mem_total_kib': 16372436, 'mem_available_kib': 14983476, 'swap_used_kib': 0} suspected_oom=False
+2026-08-16 21:49:12,459 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-16 21:49:12,850 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-16 21:52:38,193 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-16 21:52:38,194 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-16 21:52:38,195 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-16 21:52:38,196 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-16 21:52:38,289 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-16 21:52:38,311 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-16 21:52:38,315 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-16 21:52:38,316 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-16 21:52:38,317 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-16 21:52:38,448 WARNING agent.auxiliary_client: Auxiliary client: PAID lane engaged for auxiliary task — OpenRouter fallback model 'google/gemini-3.6-flash' is not a :free SKU and may incur real spend. Set auxiliary.free_only: true to restrict auxiliary fallbacks to free models, or auxiliary.openrouter_model to a :free model.
+2026-08-16 21:52:38,449 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:53:38.
+2026-08-16 21:52:38,453 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-16 21:52:38,453 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:53:38.
+2026-08-16 21:52:38,453 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-16 21:52:38,456 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:53:38.
+2026-08-16 21:52:38,459 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-16 21:52:38,459 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 21:53:38.
+2026-08-16 21:52:38,459 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-16 21:52:38,459 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-16 21:52:38,470 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
