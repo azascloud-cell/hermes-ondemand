@@ -752,3 +752,7 @@
 2026-08-16 03:01:24,293 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Apa kamu bisa kirim sebuah 🗃️ file?' reply_to_id=2720 reply_to_text=''
 2026-08-16 03:01:26,220 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.9s api_calls=1 response=606 chars
 2026-08-16 03:01:26,227 INFO gateway.platforms.base: [Telegram] Sending response (606 chars) to 6874843931
+2026-08-16 03:03:45,976 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39025 (45 chars)
+2026-08-16 03:03:45,981 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau filenya di telegram, bukan di bot kamu?' reply_to_id=2720 reply_to_text=''
+2026-08-16 03:03:49,420 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.4s api_calls=1 response=819 chars
+2026-08-16 03:03:49,427 INFO gateway.platforms.base: [Telegram] Sending response (819 chars) to 6874843931
