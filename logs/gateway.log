@@ -1111,3 +1111,7 @@
 2026-08-16 22:28:44,618 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kan tiap repository bisa ada sesi 6jam max,nah kalau 2 repo jalan bersamaan bisa' reply_to_id=2237 reply_to_text=''
 2026-08-16 22:28:50,522 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.9s api_calls=1 response=2628 chars
 2026-08-16 22:28:50,531 INFO gateway.platforms.base: [Telegram] Sending response (2628 chars) to 6874843931
+2026-08-16 22:33:01,038 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (26 chars)
+2026-08-16 22:33:01,042 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau telegram jadi shell?' reply_to_id=2237 reply_to_text=''
+2026-08-16 22:33:06,949 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.9s api_calls=1 response=2940 chars
+2026-08-16 22:33:06,957 INFO gateway.platforms.base: [Telegram] Sending response (2940 chars) to 6874843931
