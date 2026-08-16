@@ -6084,3 +6084,42 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-16 10:24:48,756 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=145820->145264 rss_anon_kib=119748->119192 threads=10 duration_ms=52.2
 2026-08-16 10:25:48,812 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=146232->145408 rss_anon_kib=120160->119336 threads=10 duration_ms=46.5
 2026-08-16 10:26:48,864 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=149556->145380 rss_anon_kib=123484->119308 threads=10 duration_ms=51.4
+2026-08-16 10:27:47,576 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (86 chars)
+2026-08-16 10:27:47,619 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau aku masukan kamu ke channel atau grup dan jadikan admin,apa kamu bisa inte' reply_to_id=2642 reply_to_text=''
+2026-08-16 10:27:47,705 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38922: model=gemma4:31b provider=ollama-cloud
+2026-08-16 10:27:47,745 INFO run_agent: Loaded environment variables from /home/runner/.hermes/.env
+2026-08-16 10:27:48,959 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=225396->196572 rss_anon_kib=199312->170488 threads=12 duration_ms=68.3
+2026-08-16 10:27:49,553 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140119818368704 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-16 10:27:49,554 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-16 10:27:49,555 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-16 10:27:49,556 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-16 10:27:49,557 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-16 10:27:49,562 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-16 10:27:49,581 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-16 10:27:49,584 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-16 10:27:49,585 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-16 10:27:49,586 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-16 10:27:49,588 INFO tools.lazy_deps: Lazy-installing edge-tts==7.2.7 for feature 'tts.edge'
+2026-08-16 10:27:49,731 INFO tools.lazy_deps: Lazy install complete for feature 'tts.edge'
+2026-08-16 10:27:49,748 WARNING agent.auxiliary_client: Auxiliary client: PAID lane engaged for auxiliary task — OpenRouter fallback model 'google/gemini-3.6-flash' is not a :free SKU and may incur real spend. Set auxiliary.free_only: true to restrict auxiliary fallbacks to free models, or auxiliary.openrouter_model to a :free model.
+2026-08-16 10:27:49,749 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:28:49.
+2026-08-16 10:27:49,753 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-16 10:27:49,753 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:28:49.
+2026-08-16 10:27:49,753 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-16 10:27:49,754 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:28:49.
+2026-08-16 10:27:49,756 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-16 10:27:49,756 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:28:49.
+2026-08-16 10:27:49,756 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-16 10:27:49,756 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-16 10:27:49,765 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-16 10:27:49,866 INFO [20260816_025735_6984b064] agent.turn_context: conversation turn: session=20260816_025735_6984b064 model=gemma4:31b provider=ollama-cloud platform=telegram history=4 msg='Kalau aku masukan kamu ke channel atau grup dan jadikan admin,apa kamu bisa inte...'
+2026-08-16 10:27:50,100 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-15 (<lambda>):140119583479488 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-16 10:27:52,893 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=18184 out=274 total=18458 latency=3.0s
+2026-08-16 10:27:53,041 INFO [20260816_025735_6984b064] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1058 session=20260816_025735_6984b064
+2026-08-16 10:27:53,082 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.5s api_calls=1 response=1058 chars
+2026-08-16 10:27:53,097 INFO gateway.platforms.base: [Telegram] Sending response (1058 chars) to 6874843931
+2026-08-16 10:28:49,075 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=233852->226312 rss_anon_kib=198200->190660 threads=13 duration_ms=115.6
+2026-08-16 10:29:49,189 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=226908->226284 rss_anon_kib=191256->190632 threads=13 duration_ms=113.3
+2026-08-16 10:30:30,500 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-16 10:30:49,313 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=227612->226356 rss_anon_kib=191960->190704 threads=13 duration_ms=113.3
+2026-08-16 10:31:49,418 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=243016->227164 rss_anon_kib=207364->191512 threads=13 duration_ms=104.2

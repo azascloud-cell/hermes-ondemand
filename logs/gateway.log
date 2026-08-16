@@ -913,3 +913,9 @@
 2026-08-16 10:11:48,041 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
 2026-08-16 10:11:48,041 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 84 hidden (over 60 limit). Use /commands for full list.
 2026-08-16 10:11:52,970 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-16 10:27:47,576 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (86 chars)
+2026-08-16 10:27:47,619 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau aku masukan kamu ke channel atau grup dan jadikan admin,apa kamu bisa inte' reply_to_id=2642 reply_to_text=''
+2026-08-16 10:27:47,705 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38922: model=gemma4:31b provider=ollama-cloud
+2026-08-16 10:27:53,082 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.5s api_calls=1 response=1058 chars
+2026-08-16 10:27:53,097 INFO gateway.platforms.base: [Telegram] Sending response (1058 chars) to 6874843931
+2026-08-16 10:30:30,500 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
