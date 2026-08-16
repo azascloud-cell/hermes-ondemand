@@ -1069,3 +1069,15 @@
 2026-08-16 21:52:36,277 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38372: model=gemma4:31b provider=ollama-cloud
 2026-08-16 21:52:43,737 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.5s api_calls=1 response=1799 chars
 2026-08-16 21:52:43,750 INFO gateway.platforms.base: [Telegram] Sending response (1799 chars) to 6874843931
+2026-08-16 21:54:22,423 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (38 chars)
+2026-08-16 21:54:22,427 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Gak cocok buat sign up akun berarti ya' reply_to_id=2237 reply_to_text=''
+2026-08-16 21:54:28,504 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.1s api_calls=1 response=1399 chars
+2026-08-16 21:54:28,511 INFO gateway.platforms.base: [Telegram] Sending response (1399 chars) to 6874843931
+2026-08-16 21:55:16,370 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (31 chars)
+2026-08-16 21:55:16,375 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Emang apa aplikasi pendukungnya' reply_to_id=2237 reply_to_text=''
+2026-08-16 21:55:22,185 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.8s api_calls=1 response=2728 chars
+2026-08-16 21:55:22,193 INFO gateway.platforms.base: [Telegram] Sending response (2728 chars) to 6874843931
+2026-08-16 21:57:22,073 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (44 chars)
+2026-08-16 21:57:22,077 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Apa anonymous juga bisa buat login app juga?' reply_to_id=2237 reply_to_text=''
+2026-08-16 21:57:26,365 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.3s api_calls=1 response=1961 chars
+2026-08-16 21:57:26,373 INFO gateway.platforms.base: [Telegram] Sending response (1961 chars) to 6874843931
