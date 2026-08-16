@@ -1030,3 +1030,15 @@
 2026-08-16 20:48:15,151 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Aman' reply_to_id=2237 reply_to_text=''
 2026-08-16 20:48:17,423 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.3s api_calls=1 response=524 chars
 2026-08-16 20:48:17,430 INFO gateway.platforms.base: [Telegram] Sending response (524 chars) to 6874843931
+2026-08-16 20:49:51,060 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (241 chars)
+2026-08-16 20:49:51,065 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Tapi,pas login perlu verifikasi nomor atau verifikasi device,jadi aku pilih nomo' reply_to_id=2237 reply_to_text=''
+2026-08-16 20:49:58,151 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.1s api_calls=1 response=1854 chars
+2026-08-16 20:49:58,172 INFO gateway.platforms.base: [Telegram] Sending response (1854 chars) to 6874843931
+2026-08-16 20:51:43,799 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (45 chars)
+2026-08-16 20:51:43,804 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Like dan subscribe ya??? Hmm, 🤔 bagaimana ya?' reply_to_id=2237 reply_to_text=''
+2026-08-16 20:51:47,739 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.9s api_calls=1 response=1612 chars
+2026-08-16 20:51:47,748 INFO gateway.platforms.base: [Telegram] Sending response (1612 chars) to 6874843931
+2026-08-16 20:53:24,118 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (24 chars)
+2026-08-16 20:53:24,122 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Oke,aku coba sekali lagi' reply_to_id=2237 reply_to_text=''
+2026-08-16 20:53:26,649 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.5s api_calls=1 response=353 chars
+2026-08-16 20:53:26,657 INFO gateway.platforms.base: [Telegram] Sending response (353 chars) to 6874843931
