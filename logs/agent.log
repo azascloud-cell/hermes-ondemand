@@ -5599,3 +5599,16 @@ RuntimeError: HTTP 401: Model gemma4:31b is not supported
 2026-08-16 05:43:37,741 INFO [20260816_040800_ce5e3fa2] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=11 last_msg_role=assistant response_len=5672 session=20260816_040800_ce5e3fa2
 2026-08-16 05:43:37,769 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.3s api_calls=1 response=5672 chars
 2026-08-16 05:43:37,782 INFO gateway.platforms.base: [Telegram] Sending response (5652 chars) to 6874843931
+2026-08-16 05:44:02,084 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245484->243964 rss_anon_kib=210256->208736 threads=15 duration_ms=99.7
+2026-08-16 05:45:02,188 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244532->243800 rss_anon_kib=209304->208572 threads=15 duration_ms=103.2
+2026-08-16 05:45:18,086 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39056 (42 chars)
+2026-08-16 05:45:18,090 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Jangan pakai qrcode,pakai kode pairing aja' reply_to_id=2736 reply_to_text=''
+2026-08-16 05:45:18,103 INFO [20260816_040800_ce5e3fa2] agent.turn_context: conversation turn: session=20260816_040800_ce5e3fa2 model=gemma4:31b provider=ollama-cloud platform=telegram history=47 msg='Jangan pakai qrcode,pakai kode pairing aja'
+2026-08-16 05:45:18,109 INFO [20260816_040800_ce5e3fa2] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260816_040800_ce5e3fa2)
+2026-08-16 05:45:29,125 INFO [20260816_040800_ce5e3fa2] agent.conversation_loop: API call #7: model=gemma4:31b provider=ollama-cloud in=38240 out=1424 total=39664 latency=11.0s
+2026-08-16 05:45:29,137 INFO [20260816_040800_ce5e3fa2] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=11 last_msg_role=assistant response_len=5246 session=20260816_040800_ce5e3fa2
+2026-08-16 05:45:29,188 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.1s api_calls=1 response=5246 chars
+2026-08-16 05:45:29,201 INFO gateway.platforms.base: [Telegram] Sending response (5230 chars) to 6874843931
+2026-08-16 05:46:02,288 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256572->243920 rss_anon_kib=221344->208692 threads=15 duration_ms=99.8
+2026-08-16 05:47:02,392 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257416->243992 rss_anon_kib=222188->208764 threads=15 duration_ms=96.3
+2026-08-16 05:48:02,493 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244876->243940 rss_anon_kib=209648->208712 threads=15 duration_ms=100.0

@@ -843,3 +843,7 @@
 2026-08-16 05:43:27,421 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Buatkan zipnya bisa?lalu aku tinggal deploy ke panel pterodactyl' reply_to_id=2736 reply_to_text=''
 2026-08-16 05:43:37,769 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.3s api_calls=1 response=5672 chars
 2026-08-16 05:43:37,782 INFO gateway.platforms.base: [Telegram] Sending response (5652 chars) to 6874843931
+2026-08-16 05:45:18,086 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39056 (42 chars)
+2026-08-16 05:45:18,090 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Jangan pakai qrcode,pakai kode pairing aja' reply_to_id=2736 reply_to_text=''
+2026-08-16 05:45:29,188 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.1s api_calls=1 response=5246 chars
+2026-08-16 05:45:29,201 INFO gateway.platforms.base: [Telegram] Sending response (5230 chars) to 6874843931
