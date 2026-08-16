@@ -1001,3 +1001,12 @@
 2026-08-16 16:00:40,585 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
 2026-08-16 16:00:40,586 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 84 hidden (over 60 limit). Use /commands for full list.
 2026-08-16 16:00:45,502 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-16 20:11:05,818 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (54 chars)
+2026-08-16 20:11:05,853 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Coba cek email ini asaddikaceria64@gmail.com aktif gak' reply_to_id=2237 reply_to_text=''
+2026-08-16 20:11:05,920 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38372: model=gemma4:31b provider=ollama-cloud
+2026-08-16 20:11:13,397 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.5s api_calls=1 response=1278 chars
+2026-08-16 20:11:13,410 INFO gateway.platforms.base: [Telegram] Sending response (1278 chars) to 6874843931
+2026-08-16 20:12:12,842 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (41 chars)
+2026-08-16 20:12:12,848 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Itu dia,akunnya gak bisa login kena robot' reply_to_id=2237 reply_to_text=''
+2026-08-16 20:12:19,307 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.5s api_calls=1 response=2040 chars
+2026-08-16 20:12:19,316 INFO gateway.platforms.base: [Telegram] Sending response (2040 chars) to 6874843931
