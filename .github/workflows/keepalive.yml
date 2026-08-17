@@ -137,5 +137,5 @@ jobs:
           DATA_BRANCH: "data"
           BACKUP_EVERY_SEC: "300"
         run: |
-          chmod +x scripts/keepalive.sh scripts/persist.sh
+          chmod +x scripts/keepalive.sh scripts/persist.sh scripts/selfheal.sh
           ./scripts/keepalive.sh

@@ -42,7 +42,8 @@ Tambahkan di Settings → Secrets and variables → Actions:
 | `TELEGRAM_BOT_TOKEN` | Token bot dari @BotFather |
 | `TELEGRAM_CHAT_ID` | Numeric chat/user ID Telegram (contoh `6874843931`) |
 | `TELEGRAM_ALLOWED_USERS` | ID Telegram yang diizinkan (koma untuk banyak) |
-| `GH_PAT` | GitHub PAT (scope: `repo` + `workflow`) untuk auto re-trigger |
+| `SIGNAL_CHAT_ID` | chat_id channel/topic sinyal XAUUSD (contoh `-1004310936137`) untuk orchestrator AzzaVision |
+| `GH_PAT` | GitHub PAT (scope: `repo` + `workflow`) untuk auto re-trigger, self-heal, dan trigger repo Azza-Vision-AI |
 
 ### 2. Jalankan
 
@@ -71,6 +72,47 @@ base URL `https://api.groq.com/openai/v1`, key dari `${GROQ_API_KEY}`). Isi secr
 > Catatan: syntax `/model` Hermes memakai `provider:model` (titik dua), bukan garis miring.
 > Provider custom dipanggil `custom:<nama>:<model>`. Groq tidak dipakai sebagai default — itu
 > tetap Ollama Cloud `gemma4:31b-cloud`.
+
+## Self-Heal (Hermes memperbaiki diri sendiri)
+
+Hermes dapat memperbaiki dirinya sendiri dan memicu ulang workflow memakai **PAT**,
+via helper script `scripts/selfheal.sh` (guardrail aman):
+
+| Perintah | Fungsi |
+|----------|--------|
+| `selfheal.sh status` | Cek akses PAT & repo |
+| `selfheal.sh dispatch <event> [json]` | Self-trigger `repository_dispatch` (memicu `hermes-on-demand`) |
+| `selfheal.sh trigger <workflow> [ref]` | Trigger `workflow_dispatch` |
+| `selfheal.sh retry <workflow> <fp> [max]` | Trigger dengan **batas retry** per fingerprint (default 3) |
+| `selfheal.sh fix <branch> <title> [body]` | Commit + push ke **branch baru** & buka **PR** ke main |
+| `selfheal.sh merge <pr> [fp]` | Merge PR (dan reset retry counter) |
+
+### Guardrail (keamanan)
+- **`fix` selalu lewat branch + PR**, tidak pernah push langsung ke `main`.
+  Hermes tidak punya kunci untuk menyabotase produksi.
+- **`retry` punya max counter** per fingerprint → mencegah infinite-loop jika
+  Hermes mendeteksi "masalah" yang bukan bug asli.
+- Semua akses memakai `GH_PAT` (scope `repo` + `workflow`); token **tidak pernah
+  di-hardcode** di file — selalu dari Actions secret.
+
+### Contoh alur self-heal
+1. Hermes mendeteksi error di log (mis. provider timeout).
+2. Ia memanggil `selfheal.sh retry keepalive.yml "provider-timeout" 3` untuk memicu ulang run (dibatasi 3x).
+3. Kalau masalah butuh perbaikan kode, Hermes ubah file lalu
+   `selfheal.sh fix fix/provider-timeout "fix: ganti provider fallback"`.
+4. PR dibuka → (CI/manusia) review → `selfheal.sh merge <pr> "provider-timeout"` (reset counter).
+
+## Orkestrator AzzaVision-AI (`orchestrate-azzavision.yml`)
+
+Hermes-ondemand bertindak sebagai **orchestrator pusat** yang:
+
+- Men-trigger repo **`azascloud-cell/Azza-Vision-AI`** (workflow `deploy-pterodactyl.yml`,
+  Pterodactyl panel keep-alive) via `GH_PAT`.
+- Mengirim notifikasi ke channel sinyal (`SIGNAL_CHAT_ID`) bahwa panel & bot aktif.
+- Menjaga channel "hidup" — **tidak menggantikan** logika AzzaVision, hanya melengkapi.
+
+> Catatan: concurrency di repo Azza-Vision-AI (group `pterodactyl-panel`) memastikan
+> panel tidak berjalan dobel meski di-trigger dari sini maupun cron-nya sendiri.
 
 ## Catatan penting
 
