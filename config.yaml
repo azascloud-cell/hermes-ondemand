@@ -1,17 +1,19 @@
-onboarding:
-  seen:
-    profile_build_offered: true
-    busy_input_prompt: true
-_config_version: 37
-platforms:
-  telegram:
-    enabled: true
-    home_channel:
-      platform: telegram
-      chat_id: '6874843931'
-      name: Azas Crack
-      thread_id: '38372'
-      user_id: '6874843931'
-agent: {}
 model:
-  default: gemma4:31b
+  provider: "ollama-cloud"
+  default: "gemma4:31b-cloud"
+  base_url: "https://ollama.com/v1"
+providers:
+  groq:
+    api: "https://api.groq.com/openai/v1"
+    api_key: "${GROQ_API_KEY}"
+    models:
+      llama-3.3-70b-versatile:
+        context_length: 131072
+      llama-3.1-8b-instant:
+        context_length: 131072
+      qwen/qwen3-32b:
+        context_length: 131072
+      openai/gpt-oss-120b:
+        context_length: 131072
+      moonshotai/kimi-k2-instruct:
+        context_length: 131072

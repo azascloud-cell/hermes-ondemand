@@ -1538,3 +1538,28 @@
 2026-08-17 05:14:17,216 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 6874843931
 2026-08-17 05:15:55,916 INFO gateway.platforms.base: [Telegram] Sending response (67 chars) to 6874843931
 2026-08-17 05:16:57,811 INFO gateway.platforms.base: [Telegram] Sending response (91 chars) to 6874843931
+2026-08-17 05:29:21,513 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=3950, started_at=2026-08-17T05:02:57.734933+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-17T05:18:09.832363+00:00 last_mem={'rss_kib': 246444, 'mem_total_kib': 16373452, 'mem_available_kib': 15090304, 'swap_used_kib': 0} suspected_oom=False
+2026-08-17 05:29:21,552 INFO gateway.run: Starting Hermes Gateway...
+2026-08-17 05:29:21,553 INFO gateway.run: Session storage: /home/runner/.hermes/sessions
+2026-08-17 05:29:21,563 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-17 05:29:21,563 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-17 05:29:21,606 INFO gateway.run: Connecting to telegram...
+2026-08-17 05:29:21,609 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-17 05:29:21,788 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-17 05:29:21,788 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-17 05:29:21,799 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-17 05:29:32,587 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-17 05:29:32,884 INFO gateway.run: ✓ telegram connected
+2026-08-17 05:29:32,927 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-17 05:29:32,939 INFO gateway.run: Channel directory built: 8 target(s)
+2026-08-17 05:29:33,424 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-17 05:29:33,700 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-17 05:29:33,948 INFO gateway.run: Press Ctrl+C to stop
+2026-08-17 05:29:33,960 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/runner/.hermes/kanban/.dispatcher.lock)
+2026-08-17 05:29:33,962 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-17 05:29:34,024 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-17 05:29:34,024 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 88 hidden (over 60 limit). Use /commands for full list.
+2026-08-17 05:29:38,960 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-17 05:30:41,420 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (1 chars)
+2026-08-17 05:30:41,427 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='P' reply_to_id=2237 reply_to_text=''
+2026-08-17 05:32:26,765 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501

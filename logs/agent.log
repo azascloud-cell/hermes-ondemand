@@ -9645,3 +9645,114 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) ha
 2026-08-17 05:16:57,811 INFO gateway.platforms.base: [Telegram] Sending response (91 chars) to 6874843931
 2026-08-17 05:17:12,318 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247304->245960 rss_anon_kib=212252->210908 threads=13 duration_ms=111.6
 2026-08-17 05:18:12,421 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246692->245816 rss_anon_kib=211640->210764 threads=13 duration_ms=102.2
+2026-08-17 05:29:18,635 INFO hermes_cli.main: Checkout changed since last launch (unknown -> git:refs/heads/main:93ed11379b6a7203f87ca8a9cb3e4e33dda4e6a7): cleared 41 stale __pycache__ directories
+2026-08-17 05:29:20,079 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-08-17 05:29:20,082 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-08-17 05:29:20,084 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-08-17 05:29:20,147 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-08-17 05:29:20,149 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-08-17 05:29:20,153 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-08-17 05:29:20,155 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-08-17 05:29:20,158 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-08-17 05:29:20,161 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-08-17 05:29:20,161 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-08-17 05:29:20,165 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-08-17 05:29:20,176 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-08-17 05:29:20,180 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-08-17 05:29:20,184 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-08-17 05:29:20,188 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-08-17 05:29:20,190 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-08-17 05:29:20,192 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-08-17 05:29:20,200 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-08-17 05:29:20,202 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-08-17 05:29:20,204 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-08-17 05:29:20,208 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-08-17 05:29:20,211 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-08-17 05:29:20,229 INFO hermes_cli.plugins: Plugin discovery complete: 55 found, 48 enabled
+2026-08-17 05:29:21,488 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-08-17 05:29:21,513 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=3950, started_at=2026-08-17T05:02:57.734933+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-17T05:18:09.832363+00:00 last_mem={'rss_kib': 246444, 'mem_total_kib': 16373452, 'mem_available_kib': 15090304, 'swap_used_kib': 0} suspected_oom=False
+2026-08-17 05:29:21,552 INFO gateway.run: Starting Hermes Gateway...
+2026-08-17 05:29:21,553 INFO gateway.run: Session storage: /home/runner/.hermes/sessions
+2026-08-17 05:29:21,563 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-17 05:29:21,563 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-17 05:29:21,606 INFO gateway.run: Connecting to telegram...
+2026-08-17 05:29:21,609 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-17 05:29:21,788 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-17 05:29:21,788 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-17 05:29:21,799 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-17 05:29:21,914 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-08-17 05:29:22,090 INFO telegram.ext.Application: Application started
+2026-08-17 05:29:22,172 INFO tools.tirith_security: tirith installed to /home/runner/.hermes/bin/tirith (SHA-256 only)
+2026-08-17 05:29:32,587 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-17 05:29:32,884 INFO gateway.run: ✓ telegram connected
+2026-08-17 05:29:32,927 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-17 05:29:32,939 INFO gateway.run: Channel directory built: 8 target(s)
+2026-08-17 05:29:33,424 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-17 05:29:33,700 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-17 05:29:33,948 INFO gateway.run: Press Ctrl+C to stop
+2026-08-17 05:29:33,953 INFO cron.scheduler_provider: In-process cron scheduler started (interval=60s)
+2026-08-17 05:29:33,960 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/runner/.hermes/kanban/.dispatcher.lock)
+2026-08-17 05:29:33,962 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-17 05:29:34,024 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-17 05:29:34,024 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 88 hidden (over 60 limit). Use /commands for full list.
+2026-08-17 05:29:34,025 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=152228->142540 rss_anon_kib=126968->117280 threads=9 duration_ms=59.6
+2026-08-17 05:29:38,960 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-17 05:30:34,112 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=198016->165164 rss_anon_kib=172684->139832 threads=10 duration_ms=86.1
+2026-08-17 05:30:41,420 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (1 chars)
+2026-08-17 05:30:41,427 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='P' reply_to_id=2237 reply_to_text=''
+2026-08-17 05:30:41,455 INFO hermes_state: Repaired 7 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-17 05:30:41,504 INFO run_agent: Loaded environment variables from /home/runner/.hermes/.env
+2026-08-17 05:30:43,269 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140102755935936 provider=groq base_url=https://api.groq.com/openai/v1 model=llama-3.3-70b-versatile
+2026-08-17 05:30:43,270 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-17 05:30:43,271 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-17 05:30:43,272 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-17 05:30:43,273 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-17 05:30:43,830 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-17 05:30:43,857 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-17 05:30:43,860 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-17 05:30:43,861 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-17 05:30:43,862 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-17 05:30:43,865 INFO tools.lazy_deps: Lazy-installing edge-tts==7.2.7 for feature 'tts.edge'
+2026-08-17 05:30:43,961 INFO tools.lazy_deps: Lazy install complete for feature 'tts.edge'
+2026-08-17 05:30:44,074 INFO agent.auxiliary_client: Vision auto-detect: using main provider ollama-cloud (gemma4:31b-cloud)
+2026-08-17 05:30:44,083 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-17 05:30:44,211 INFO agent.model_metadata: Cached context length gemma4:31b-cloud@https://ollama.com/v1 -> 262,144 tokens
+2026-08-17 05:30:44,269 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=llama-3.3-70b-versatile provider=groq platform=telegram history=235 msg='[Note: model was just switched from gemma4:31b-cloud to llama-3.3-70b-versatile ...'
+2026-08-17 05:30:44,270 WARNING [20260815_102333_b288b938] agent.conversation_loop: Stored system prompt for session 20260815_102333_b288b938 is null; rebuilding from scratch this turn. Prefix cache will miss until the rebuild persists. Investigate the previous turn's update_system_prompt write path.
+2026-08-17 05:30:44,727 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 3 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-17 05:30:44,823 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-15 (<lambda>):140102739154624 provider=groq base_url=https://api.groq.com/openai/v1 model=llama-3.3-70b-versatile
+2026-08-17 05:30:45,262 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 25655, Requested 75860. Please try again in 21m48.96s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 25655, Requested 75860. Please try again in 21m48.96s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 05:30:45,277 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-15 (<lambda>):140102739154624 provider=groq base_url=https://api.groq.com/openai/v1 model=llama-3.3-70b-versatile
+2026-08-17 05:30:45,278 WARNING [20260815_102333_b288b938] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140102755935936 provider=groq base_url=https://api.groq.com/openai/v1 model=llama-3.3-70b-versatile summary=HTTP 429: Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 25655, Requested 75860. Please try again in 21m48.96s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/
+2026-08-17 05:30:45,278 WARNING [20260815_102333_b288b938] agent.conversation_loop: Retrying API call in 600s (attempt 1/3) thread=hermes-gateway_0:140102755935936 provider=groq base_url=https://api.groq.com/openai/v1 model=llama-3.3-70b-versatile policy=default error=Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 25655, Requested 75860. Please try again in 21m48.96s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 05:31:34,243 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251268->223516 rss_anon_kib=216548->188796 threads=14 duration_ms=130.5
+2026-08-17 05:32:26,765 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 05:32:34,368 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=228904->224244 rss_anon_kib=194184->189524 threads=14 duration_ms=124.7
+2026-08-17 05:33:34,496 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=225804->224428 rss_anon_kib=191084->189708 threads=14 duration_ms=118.3
