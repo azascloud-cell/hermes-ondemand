@@ -10399,3 +10399,65 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) ha
 2026-08-17 07:49:14,886 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=238676->237836 rss_anon_kib=203804->202964 threads=13 duration_ms=128.5
 2026-08-17 07:50:15,011 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=238808->237848 rss_anon_kib=203936->202976 threads=13 duration_ms=124.5
 2026-08-17 07:51:15,135 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=259928->237844 rss_anon_kib=225056->202972 threads=13 duration_ms=122.8
+2026-08-17 07:52:15,268 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=238656->237844 rss_anon_kib=203784->202972 threads=13 duration_ms=132.0
+2026-08-17 07:53:15,394 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=239224->237840 rss_anon_kib=204352->202968 threads=13 duration_ms=119.4
+2026-08-17 07:54:15,538 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=238712->237820 rss_anon_kib=203840->202948 threads=13 duration_ms=143.3
+2026-08-17 07:55:02,413 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (1 chars)
+2026-08-17 07:55:02,417 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='P' reply_to_id=2237 reply_to_text=''
+2026-08-17 07:55:02,423 INFO hermes_state: Repaired 11 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-17 07:55:02,465 INFO [20260815_102333_b288b938] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140647797348032 provider=groq base_url=https://api.groq.com/openai/v1 model=llama-3.3-70b-versatile
+2026-08-17 07:55:02,471 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=llama-3.3-70b-versatile provider=groq platform=telegram history=235 msg='[Note: model was just switched from deepseek-v4-flash to llama-3.3-70b-versatile...'
+2026-08-17 07:55:02,472 WARNING [20260815_102333_b288b938] agent.conversation_loop: Stored system prompt for session 20260815_102333_b288b938 is null; rebuilding from scratch this turn. Prefix cache will miss until the rebuild persists. Investigate the previous turn's update_system_prompt write path.
+2026-08-17 07:55:02,485 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 3 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-17 07:55:02,505 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-27 (<lambda>):140647380014784 provider=groq base_url=https://api.groq.com/openai/v1 model=llama-3.3-70b-versatile
+2026-08-17 07:55:02,668 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 33082, Requested 75900. Please try again in 2h9m20.447999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 33082, Requested 75900. Please try again in 2h9m20.447999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-17 07:55:02,677 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-27 (<lambda>):140647380014784 provider=groq base_url=https://api.groq.com/openai/v1 model=llama-3.3-70b-versatile
+2026-08-17 07:55:02,678 WARNING [20260815_102333_b288b938] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140647797348032 provider=groq base_url=https://api.groq.com/openai/v1 model=llama-3.3-70b-versatile summary=HTTP 429: Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 33082, Requested 75900. Please try again in 2h9m20.447999999s. Need more tokens? Upgrade to Dev Tier today at https://console.g
+2026-08-17 07:55:02,679 INFO [20260815_102333_b288b938] root: Rate-limit backoff level 0: cooldown 60 s (1.0 min, backoff#1)
+2026-08-17 07:55:02,689 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback to ollama-cloud/gemma4:31b-cloud: attached fallback credential pool
+2026-08-17 07:55:02,693 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback gemma4:31b-cloud: reasoning_config resolved: None
+2026-08-17 07:55:02,693 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback activated: llama-3.3-70b-versatile → gemma4:31b-cloud (ollama-cloud)
+2026-08-17 07:55:02,816 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-28 (<lambda>):140647380014784 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud
+2026-08-17 07:55:13,374 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #1: model=gemma4:31b-cloud provider=ollama-cloud in=63022 out=338 total=63360 latency=10.7s
+2026-08-17 07:55:13,507 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1253 session=20260815_102333_b288b938
+2026-08-17 07:55:13,540 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.1s api_calls=1 response=1253 chars
+2026-08-17 07:55:13,550 INFO gateway.platforms.base: [Telegram] Sending response (1253 chars) to 6874843931
+2026-08-17 07:55:15,669 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246712->243284 rss_anon_kib=211584->208156 threads=14 duration_ms=130.5
+2026-08-17 07:56:15,805 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=259768->243300 rss_anon_kib=224640->208172 threads=13 duration_ms=135.3
+2026-08-17 07:56:22,596 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (2825 chars)
+2026-08-17 07:56:22,600 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Neng,tadi dapat sinyal terakhir tp 2 tuh AzzaVision AI: ━━━━━━━━━━━━━━━━━━ 🏆 AZZ' reply_to_id=2642 reply_to_text=''
+2026-08-17 07:56:22,609 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38922: model=gemma4:31b provider=ollama-cloud
+2026-08-17 07:56:22,641 INFO [20260815_102333_b288b938] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140647797348032 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-17 07:56:22,650 INFO [20260816_025735_6984b064] agent.turn_context: conversation turn: session=20260816_025735_6984b064 model=gemma4:31b provider=ollama-cloud platform=telegram history=54 msg='Neng,tadi dapat sinyal terakhir tp 2 tuh AzzaVision AI: ━━━━━━━━━━━━━━━━━━ 🏆 AZZ...'
+2026-08-17 07:56:22,772 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-29 (<lambda>):140647556183744 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-17 07:56:31,297 INFO [20260816_025735_6984b064] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=30131 out=332 total=30463 latency=8.6s
+2026-08-17 07:56:31,302 INFO [20260816_025735_6984b064] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=9 last_msg_role=assistant response_len=1191 session=20260816_025735_6984b064
+2026-08-17 07:56:31,342 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.7s api_calls=1 response=1191 chars
+2026-08-17 07:56:31,353 INFO gateway.platforms.base: [Telegram] Sending response (1191 chars) to 6874843931
