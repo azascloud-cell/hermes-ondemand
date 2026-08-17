@@ -1462,3 +1462,7 @@
 2026-08-17 03:43:15,491 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.0s api_calls=1 response=589 chars
 2026-08-17 03:43:15,509 INFO gateway.platforms.base: [Telegram] Sending response (589 chars) to 6874843931
 2026-08-17 03:45:29,190 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 03:51:39,006 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (31 chars)
+2026-08-17 03:51:39,030 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Keduluan si Uchi,dia yang benar' reply_to_id=3059 reply_to_text='1.Pide 2.Cig kofte 3.Lokum 4.Firin sutlac 5.Menemen'
+2026-08-17 03:51:46,242 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.2s api_calls=1 response=1197 chars
+2026-08-17 03:51:46,250 INFO gateway.platforms.base: [Telegram] Sending response (1197 chars) to 6874843931
