@@ -156,7 +156,57 @@
       ],
       "workdir": null,
       "fire_claim": null
+    },
+    {
+      "id": "0b896b6ac20e",
+      "name": "tes-berita-hari-ini",
+      "prompt": "Cari berita utama paling menarik hari ini (17 Agustus 2026) dari sumber terpercaya, lalu rangkum dalam 3-5 poin singkat dengan gaya bahasa yang asik. Kirimkan hasilnya kembali ke chat asal.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "ollama-cloud",
+      "model_snapshot": "gemma4:31b-cloud",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 0 1 1 *",
+        "display": "0 0 1 1 *"
+      },
+      "schedule_display": "0 0 1 1 *",
+      "repeat": {
+        "times": null,
+        "completed": 1
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-17T09:31:00.936870+00:00",
+      "next_run_at": "2027-01-01T00:00:00+00:00",
+      "last_run_at": "2026-08-17T09:31:39.659683+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "failure_streak": 0,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "6874843931",
+        "chat_name": "Azas Crack",
+        "thread_id": "38372",
+        "user_id": "6874843931"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
     }
   ],
-  "updated_at": "2026-08-17T05:03:16.151249+00:00"
+  "updated_at": "2026-08-17T09:31:39.660226+00:00"
 }

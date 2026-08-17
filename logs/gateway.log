@@ -1637,3 +1637,15 @@
 2026-08-17 09:23:28,181 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ini kamu log apa? ⚠️ Hermes error: 2026-08-17 08:04:18,083 WARNING hermes_plugin' reply_to_id=2237 reply_to_text=''
 2026-08-17 09:23:39,199 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.0s api_calls=1 response=1625 chars
 2026-08-17 09:23:39,225 INFO gateway.platforms.base: [Telegram] Sending response (1625 chars) to 6874843931
+2026-08-17 09:30:53,907 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (103 chars)
+2026-08-17 09:30:53,911 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Oh,iya coba tes conjob yang jalan neng,tapi gak ikut jadwal,cuma tes sebentar,bi' reply_to_id=2237 reply_to_text=''
+2026-08-17 09:31:08,469 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=14.6s api_calls=3 response=351 chars
+2026-08-17 09:31:08,477 INFO gateway.platforms.base: [Telegram] Sending response (351 chars) to 6874843931
+2026-08-17 09:31:41,206 INFO gateway.run: Watch pattern notification — injecting for telegram chat=6874843931 thread=38372
+2026-08-17 09:31:41,210 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='[ASYNC DELEGATION COMPLETE — deleg_aded8cce] A background subagent you dispatche' reply_to_id=None reply_to_text=''
+2026-08-17 09:31:52,861 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.7s api_calls=1 response=1047 chars
+2026-08-17 09:31:52,870 INFO gateway.platforms.base: [Telegram] Sending response (1047 chars) to 6874843931
+2026-08-17 09:33:25,661 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (19 chars)
+2026-08-17 09:33:25,665 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau AzzaVisionAI?' reply_to_id=2237 reply_to_text=''
+2026-08-17 09:33:44,640 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=19.0s api_calls=1 response=2959 chars
+2026-08-17 09:33:44,650 INFO gateway.platforms.base: [Telegram] Sending response (2959 chars) to 6874843931
