@@ -1865,3 +1865,7 @@
 2026-08-17 15:21:39,420 INFO gateway.run: Image routing: text (mode=text). Pre-analyzing 1 image(s) via vision_analyze.
 2026-08-17 15:21:58,810 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=19.5s api_calls=2 response=1148 chars
 2026-08-17 15:21:58,820 INFO gateway.platforms.base: [Telegram] Sending response (1148 chars) to 6874843931
+2026-08-17 15:39:44,476 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (101 chars)
+2026-08-17 15:39:44,480 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Sebenarnya kamu bisa konek dan deploy kode script ke panel pterodactyl kan? Juga' reply_to_id=2237 reply_to_text=''
+2026-08-17 15:39:58,749 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=14.3s api_calls=1 response=2268 chars
+2026-08-17 15:39:58,757 INFO gateway.platforms.base: [Telegram] Sending response (2268 chars) to 6874843931

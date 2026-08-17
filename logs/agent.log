@@ -13528,3 +13528,58 @@ RuntimeError: No LLM provider configured for task=vision provider=auto. Run: her
 2026-08-17 15:32:59,316 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=265432->250456 rss_anon_kib=230344->215368 threads=13 duration_ms=106.4
 2026-08-17 15:33:59,428 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256020->250636 rss_anon_kib=220932->215516 threads=13 duration_ms=106.0
 2026-08-17 15:34:59,556 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251328->250600 rss_anon_kib=216240->215512 threads=13 duration_ms=126.7
+2026-08-17 15:35:59,663 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251152->250492 rss_anon_kib=216064->215404 threads=13 duration_ms=107.0
+2026-08-17 15:36:59,776 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251212->250536 rss_anon_kib=216124->215448 threads=13 duration_ms=111.8
+2026-08-17 15:37:59,882 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=271544->250620 rss_anon_kib=236456->215532 threads=13 duration_ms=105.7
+2026-08-17 15:39:00,013 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256108->250640 rss_anon_kib=221020->215520 threads=13 duration_ms=124.0
+2026-08-17 15:39:44,476 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (101 chars)
+2026-08-17 15:39:44,480 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Sebenarnya kamu bisa konek dan deploy kode script ke panel pterodactyl kan? Juga' reply_to_id=2237 reply_to_text=''
+2026-08-17 15:39:44,487 INFO hermes_state: Repaired 16 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-17 15:39:44,506 INFO [20260815_102333_b288b938] run_agent: OpenAI client created (restore_primary, shared=True) thread=hermes-gateway_0:140553979156160 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:39:44,507 INFO [20260815_102333_b288b938] agent.agent_runtime_helpers: Primary runtime restored for new turn: deepseek-v4-flash (opencode)
+2026-08-17 15:39:44,508 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=deepseek-v4-flash provider=opencode platform=telegram history=306 msg='Sebenarnya kamu bisa konek dan deploy kode script ke panel pterodactyl kan? Juga...'
+2026-08-17 15:39:44,519 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 2 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-17 15:39:44,535 INFO run_agent: OpenAI client closed (reuse_evict:chat_completion_stream_request, shared=False, tcp_force_closed=0) thread=Thread-24 (<lambda>):140553878501056 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:39:44,542 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-24 (<lambda>):140553878501056 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:39:45,216 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
+2026-08-17 15:39:45,222 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-24 (<lambda>):140553878501056 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:39:45,225 INFO [20260815_102333_b288b938] agent.credential_pool: credential pool: failed credential identity matched no opencode entry; rotating without marking any credential exhausted
+2026-08-17 15:39:45,225 INFO [20260815_102333_b288b938] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-17 15:39:45,226 WARNING [20260815_102333_b288b938] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=hermes-gateway_0:140553979156160 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash summary=HTTP 401: No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing
+2026-08-17 15:39:45,234 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback to ollama-cloud/gemma4:31b-cloud: clearing primary credential pool (pool_provider=opencode) to prevent cross-provider contamination
+2026-08-17 15:39:45,235 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback to ollama-cloud/gemma4:31b-cloud: attached fallback credential pool
+2026-08-17 15:39:45,238 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback gemma4:31b-cloud: reasoning_config resolved: None
+2026-08-17 15:39:45,239 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback activated: deepseek-v4-flash → gemma4:31b-cloud (ollama-cloud)
+2026-08-17 15:39:45,260 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-25 (<lambda>):140553878501056 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud
+2026-08-17 15:39:58,392 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #4: model=gemma4:31b-cloud provider=ollama-cloud in=81719 out=590 total=82309 latency=13.1s
+2026-08-17 15:39:58,698 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=1/500 budget=1/500 tool_turns=3 last_msg_role=assistant response_len=2268 session=20260815_102333_b288b938
+2026-08-17 15:39:58,749 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=14.3s api_calls=1 response=2268 chars
+2026-08-17 15:39:58,757 INFO gateway.platforms.base: [Telegram] Sending response (2268 chars) to 6874843931
+2026-08-17 15:40:00,141 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=259608->255200 rss_anon_kib=224520->220112 threads=14 duration_ms=127.0
