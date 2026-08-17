@@ -4,7 +4,7 @@ XAUUSD Trading: Ultra-scalper (SL 40pts, TP 60-125pts). Prefers MTF analysis (D1
 §
 User sells personal Gmails and provides SMS OTP services via virtual numbers (nokos). Uses 'account warming' (e.g., uploading fresh private YouTube videos) and 'clustering' recovery emails to avoid bans.
 §
-User refers to agent as 'Neng Lidya' and prefers a warm, supportive, affectionate relationship (uses 'Mas Azza', emojis, polite Indonesian).
+User prefers a warm, supportive relationship; refers to agent as 'Neng Lidya' and himself as 'Mas Azza' (emojis, polite Indonesian).
 §
 Interest: Building WhatsApp Status Downloader bots using Baileys.
 §

@@ -1480,3 +1480,13 @@
 2026-08-17 03:59:52,383 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='3 member menjawab 1.Aspendos Theatre (Aspendos Antik Tiyatrosu) — Antalya 2.Sume' reply_to_id=2237 reply_to_text=''
 2026-08-17 04:00:01,632 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=9.2s api_calls=1 response=1805 chars
 2026-08-17 04:00:01,640 INFO gateway.platforms.base: [Telegram] Sending response (1805 chars) to 6874843931
+2026-08-17 04:06:21,272 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (53 chars)
+2026-08-17 04:06:21,277 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ayo, 90% udah banyak yang benar. Tinggal di rapihkan.' reply_to_id=2237 reply_to_text=''
+2026-08-17 04:06:38,160 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=16.9s api_calls=1 response=1692 chars
+2026-08-17 04:06:38,171 INFO gateway.platforms.base: [Telegram] Sending response (1692 chars) to 6874843931
+2026-08-17 04:07:19,542 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (20 chars)
+2026-08-17 04:07:19,546 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Emang boleh kirim 2x' reply_to_id=2237 reply_to_text=''
+2026-08-17 04:07:29,830 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.3s api_calls=1 response=1850 chars
+2026-08-17 04:07:29,851 INFO gateway.platforms.base: [Telegram] Sending response (1850 chars) to 6874843931
+2026-08-17 04:08:30,757 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (31 chars)
+2026-08-17 04:08:30,763 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Terus kenapa kamu ubah jawaban?' reply_to_id=2237 reply_to_text=''
