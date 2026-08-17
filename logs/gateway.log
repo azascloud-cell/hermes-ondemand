@@ -1887,3 +1887,7 @@
 2026-08-17 15:49:18,634 INFO gateway.run: Queued follow-up for session agent:main:telegram:dm:6874843931:38372: final stream delivery not confirmed; sending first response before continuing.
 2026-08-17 15:49:34,750 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=30.6s api_calls=1 response=2528 chars
 2026-08-17 15:49:34,758 INFO gateway.platforms.base: [Telegram] Sending response (2528 chars) to 6874843931
+2026-08-17 15:50:48,188 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (28 chars)
+2026-08-17 15:50:48,192 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Yah, terserah asal gak error' reply_to_id=2237 reply_to_text=''
+2026-08-17 15:51:00,118 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.9s api_calls=1 response=1254 chars
+2026-08-17 15:51:00,126 INFO gateway.platforms.base: [Telegram] Sending response (1254 chars) to 6874843931

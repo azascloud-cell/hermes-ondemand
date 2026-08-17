@@ -13853,3 +13853,58 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-17 15:49:34,750 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=30.6s api_calls=1 response=2528 chars
 2026-08-17 15:49:34,758 INFO gateway.platforms.base: [Telegram] Sending response (2528 chars) to 6874843931
 2026-08-17 15:50:01,232 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=277424->266992 rss_anon_kib=242336->231904 threads=14 duration_ms=112.9
+2026-08-17 15:50:48,188 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (28 chars)
+2026-08-17 15:50:48,192 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Yah, terserah asal gak error' reply_to_id=2237 reply_to_text=''
+2026-08-17 15:50:48,198 INFO hermes_state: Repaired 16 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-17 15:50:48,215 INFO [20260815_102333_b288b938] run_agent: OpenAI client created (restore_primary, shared=True) thread=hermes-gateway_0:140553979156160 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:50:48,217 INFO [20260815_102333_b288b938] agent.agent_runtime_helpers: Primary runtime restored for new turn: deepseek-v4-flash (opencode)
+2026-08-17 15:50:48,217 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=deepseek-v4-flash provider=opencode platform=telegram history=318 msg='Yah, terserah asal gak error'
+2026-08-17 15:50:48,228 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 2 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-17 15:50:48,244 INFO run_agent: OpenAI client closed (reuse_evict:chat_completion_stream_request, shared=False, tcp_force_closed=0) thread=Thread-39 (<lambda>):140553643611840 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:50:48,250 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-39 (<lambda>):140553643611840 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:50:48,688 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
+2026-08-17 15:50:48,697 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-39 (<lambda>):140553643611840 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:50:48,698 INFO [20260815_102333_b288b938] agent.credential_pool: credential pool: failed credential identity matched no opencode entry; rotating without marking any credential exhausted
+2026-08-17 15:50:48,698 INFO [20260815_102333_b288b938] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-17 15:50:48,698 WARNING [20260815_102333_b288b938] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=hermes-gateway_0:140553979156160 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash summary=HTTP 401: No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing
+2026-08-17 15:50:48,707 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback to ollama-cloud/gemma4:31b-cloud: clearing primary credential pool (pool_provider=opencode) to prevent cross-provider contamination
+2026-08-17 15:50:48,709 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback to ollama-cloud/gemma4:31b-cloud: attached fallback credential pool
+2026-08-17 15:50:48,712 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback gemma4:31b-cloud: reasoning_config resolved: None
+2026-08-17 15:50:48,713 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback activated: deepseek-v4-flash → gemma4:31b-cloud (ollama-cloud)
+2026-08-17 15:50:48,736 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-40 (<lambda>):140553643611840 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud
+2026-08-17 15:50:59,811 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #10: model=gemma4:31b-cloud provider=ollama-cloud in=85652 out=350 total=86002 latency=11.1s
+2026-08-17 15:51:00,072 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=1/500 budget=1/500 tool_turns=3 last_msg_role=assistant response_len=1254 session=20260815_102333_b288b938
+2026-08-17 15:51:00,118 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.9s api_calls=1 response=1254 chars
+2026-08-17 15:51:00,126 INFO gateway.platforms.base: [Telegram] Sending response (1254 chars) to 6874843931
+2026-08-17 15:51:01,352 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=271156->267016 rss_anon_kib=236068->231928 threads=14 duration_ms=118.6
+2026-08-17 15:52:01,470 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=267524->267136 rss_anon_kib=232436->232016 threads=13 duration_ms=118.2
+2026-08-17 15:53:01,599 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=267516->267020 rss_anon_kib=232428->231932 threads=13 duration_ms=128.4
+2026-08-17 15:54:01,742 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=288976->269872 rss_anon_kib=253888->234784 threads=13 duration_ms=133.1
+2026-08-17 15:55:01,857 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=278668->269848 rss_anon_kib=243580->234760 threads=13 duration_ms=113.7
