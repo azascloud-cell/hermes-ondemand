@@ -1922,3 +1922,15 @@
 2026-08-17 21:16:38,758 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ini artinya kenapa neng! ⚠️ Hermes error: 2026-08-17 21:11:29,899 WARNING gatewa' reply_to_id=2237 reply_to_text=''
 2026-08-17 21:16:56,374 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=17.6s api_calls=1 response=1556 chars
 2026-08-17 21:16:56,386 INFO gateway.platforms.base: [Telegram] Sending response (1556 chars) to 6874843931
+2026-08-17 21:24:57,266 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:40001 (111 chars)
+2026-08-17 21:24:57,270 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Cek 4 email ini neng! asadsalsariang59170@gmail.com asadsalsariang59170@gmail.co' reply_to_id=3345 reply_to_text=''
+2026-08-17 21:25:03,524 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.3s api_calls=3 response=644 chars
+2026-08-17 21:25:03,531 INFO gateway.platforms.base: [Telegram] Sending response (644 chars) to 6874843931
+2026-08-17 21:25:57,876 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:40001 (115 chars)
+2026-08-17 21:25:57,943 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='4 asadedoguerero12@gmail.com asadcelliceria22@gmail.com asadsalsariang59170@gmai' reply_to_id=3345 reply_to_text=''
+2026-08-17 21:26:01,334 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.4s api_calls=1 response=591 chars
+2026-08-17 21:26:01,341 INFO gateway.platforms.base: [Telegram] Sending response (591 chars) to 6874843931
+2026-08-17 21:26:31,275 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:40001 (54 chars)
+2026-08-17 21:26:31,279 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bukan, maksudnya cek email ini masih aktif atau kenon!' reply_to_id=3345 reply_to_text=''
+2026-08-17 21:26:34,781 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.5s api_calls=1 response=431 chars
+2026-08-17 21:26:34,787 INFO gateway.platforms.base: [Telegram] Sending response (431 chars) to 6874843931
