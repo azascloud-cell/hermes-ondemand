@@ -9237,3 +9237,8 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-17 04:22:27,578 INFO gateway.run: Transient agent failure in session 20260815_102333_b288b938 — persisting user message so conversation context is preserved on retry.
 2026-08-17 04:22:27,622 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 6874843931
 2026-08-17 04:23:19,117 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=267584->251268 rss_anon_kib=231996->215680 threads=12 duration_ms=83.7
+2026-08-17 04:24:19,199 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251768->251256 rss_anon_kib=216180->215668 threads=12 duration_ms=81.1
+2026-08-17 04:25:19,279 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251836->251256 rss_anon_kib=216248->215668 threads=12 duration_ms=80.0
+2026-08-17 04:26:19,360 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=260076->251256 rss_anon_kib=224488->215668 threads=12 duration_ms=80.1
+2026-08-17 04:27:20,216 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=267936->251256 rss_anon_kib=232348->215668 threads=12 duration_ms=80.6
+2026-08-17 04:28:20,295 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251852->251272 rss_anon_kib=216264->215684 threads=12 duration_ms=78.7
