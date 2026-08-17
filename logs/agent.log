@@ -13078,3 +13078,8 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) ha
 2026-08-17 12:44:12,278 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:6:140367074682560 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud
 2026-08-17 12:44:12,279 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
 2026-08-17 12:44:13,314 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=240304->239340 rss_anon_kib=205332->204368 threads=12 duration_ms=98.9
+2026-08-17 12:45:13,436 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=239904->239396 rss_anon_kib=204932->204424 threads=12 duration_ms=120.8
+2026-08-17 12:46:13,535 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=239988->239408 rss_anon_kib=205016->204436 threads=12 duration_ms=98.4
+2026-08-17 12:47:13,642 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=243800->239392 rss_anon_kib=208828->204420 threads=12 duration_ms=101.0
+2026-08-17 12:48:13,747 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=258952->239428 rss_anon_kib=223980->204428 threads=12 duration_ms=103.8
+2026-08-17 12:49:13,874 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=239992->239288 rss_anon_kib=205020->204316 threads=12 duration_ms=126.3
