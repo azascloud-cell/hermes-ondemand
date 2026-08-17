@@ -1704,3 +1704,15 @@
 2026-08-17 10:04:47,694 INFO gateway.platforms.base: [Telegram] Sending response (1782 chars) to 6874843931
 2026-08-17 10:07:14,705 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
 2026-08-17 10:17:10,858 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 10:21:42,795 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (1079 chars)
+2026-08-17 10:21:42,799 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Mana? AzzaVision AI: ━━━━━━━━━━━━━━━━━━ 📚 AZZAVISION AI — E-BOOK SIGNAL ━━━━━━━━' reply_to_id=2237 reply_to_text=''
+2026-08-17 10:21:52,955 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.2s api_calls=1 response=1616 chars
+2026-08-17 10:21:52,963 INFO gateway.platforms.base: [Telegram] Sending response (1616 chars) to 6874843931
+2026-08-17 10:22:20,665 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (11 chars)
+2026-08-17 10:22:20,668 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Cronjobnya?' reply_to_id=2237 reply_to_text=''
+2026-08-17 10:22:29,633 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=9.0s api_calls=1 response=1487 chars
+2026-08-17 10:22:29,642 INFO gateway.platforms.base: [Telegram] Sending response (1487 chars) to 6874843931
+2026-08-17 10:24:00,723 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39827 (24 chars)
+2026-08-17 10:24:00,727 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Belum mulai cronjobnya??' reply_to_id=3232 reply_to_text=''
+2026-08-17 10:24:06,406 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.7s api_calls=2 response=732 chars
+2026-08-17 10:24:06,414 INFO gateway.platforms.base: [Telegram] Sending response (732 chars) to 6874843931

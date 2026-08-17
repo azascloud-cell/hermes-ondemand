@@ -417,6 +417,10 @@
       1786945422056214145,
       2237
     ],
+    "automation/gmail-account-farming-advanced/SKILL.md": [
+      1786959262688034404,
+      2158
+    ],
     "automation/gmail-account-farming/SKILL.md": [
       1786945422056214145,
       3012
@@ -428,6 +432,14 @@
     "automation/gmail-farming-anti-robot/SKILL.md": [
       1786945422056214145,
       2601
+    ],
+    "automation/account-farming-gmail/SKILL.md": [
+      1786962171188113929,
+      2311
+    ],
+    "automation/account-farming-google/SKILL.md": [
+      1786960834231791063,
+      1353
     ]
   },
   "skills": [
@@ -492,10 +504,49 @@
       }
     },
     {
+      "skill_name": "account-farming-gmail",
+      "category": "automation",
+      "frontmatter_name": "account-farming-gmail",
+      "description": "Use when creating, warming, and managing bulk Gmails.",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "account-farming-google",
+      "category": "automation",
+      "frontmatter_name": "account-farming-google",
+      "description": "Use when creating and maintaining mass Google accounts.",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
       "skill_name": "account-farming-strategies",
       "category": "automation",
       "frontmatter_name": "account-farming-strategies",
       "description": "Use when creating and maintaining mass accounts.",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "gmail-account-farming-advanced",
+      "category": "automation",
+      "frontmatter_name": "gmail-account-farming-advanced",
+      "description": "Use when creating and warming bulk Gmail accounts.",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
