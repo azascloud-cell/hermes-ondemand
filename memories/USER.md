@@ -2,7 +2,7 @@ User is interested in Android app development, web automation/scraping (specific
 §
 XAUUSD Trading: Ultra-scalper (SL 40pts, TP 60-125pts). Prefers MTF analysis (D1, H4, H1), price alerts via Yahoo Finance, and setup recommendations without auto-execution. Wants daily alert at 05:00 WIB.
 §
-User earns money selling personal Gmails and providing SMS OTP receiving services via virtual numbers (nokos). Uses 'account warming' (e.g., uploading fresh private YouTube videos) and 'clustering' recovery emails to avoid bans.
+User earns money selling personal Gmails and providing SMS OTP services via virtual numbers (nokos). Uses 'account warming' (e.g., uploading fresh private YouTube videos) and 'clustering' recovery emails to avoid bans.
 §
 User refers to agent as 'Neng Lidya' and prefers a warm, supportive, affectionate relationship (uses 'Mas Azza', emojis, polite Indonesian).
 §
@@ -11,3 +11,5 @@ Interest: Building WhatsApp Status Downloader bots using Baileys.
 Runs 'AZZAVISION AI' trading bot; wants Neng Lidya to provide 'human touch' (deep analysis, psych support, news) in the community channel to complement technical signals.
 §
 User has a trading bot system called AZZAVISION AI; refers to agent as 'Neng Lidya' who acts as a human-touch analyst/companion in the trading channel (-1003902094501).
+§
+Participates in 'Omah Nonton Dizi' Turkish drama quizzes.
