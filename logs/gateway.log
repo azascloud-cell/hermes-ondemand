@@ -1920,3 +1920,5 @@
 2026-08-17 21:11:47,805 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
 2026-08-17 21:16:38,709 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (419 chars)
 2026-08-17 21:16:38,758 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ini artinya kenapa neng! ⚠️ Hermes error: 2026-08-17 21:11:29,899 WARNING gatewa' reply_to_id=2237 reply_to_text=''
+2026-08-17 21:16:56,374 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=17.6s api_calls=1 response=1556 chars
+2026-08-17 21:16:56,386 INFO gateway.platforms.base: [Telegram] Sending response (1556 chars) to 6874843931
