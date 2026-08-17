@@ -37,7 +37,8 @@ Tambahkan di Settings → Secrets and variables → Actions:
 
 | Secret | Isi |
 |--------|-----|
-| `OLLAMA_API_KEY` | API key Ollama Cloud dari [ollama.com/settings/keys](https://ollama.com/settings/keys) |
+| `OLLAMA_API_KEY` | API key Ollama Cloud dari [ollama.com/settings/keys](https://ollama.com/settings/keys) (dipakai untuk `OLLAMA_API_KEY` dan `OLLAMA_CLOUD_API_KEY`) |
+| `GROQ_API_KEY` | (opsional) API key Groq dari [console.groq.com/keys](https://console.groq.com/keys) untuk fallback, diawali `gsk_` |
 | `TELEGRAM_BOT_TOKEN` | Token bot dari @BotFather |
 | `TELEGRAM_CHAT_ID` | Numeric chat/user ID Telegram (contoh `6874843931`) |
 | `TELEGRAM_ALLOWED_USERS` | ID Telegram yang diizinkan (koma untuk banyak) |
@@ -53,6 +54,15 @@ Tambahkan di Settings → Secrets and variables → Actions:
 
 `gemma4:31b-cloud` via **Ollama Cloud** (provider `ollama-cloud`, base URL `https://ollama.com/v1`).
 Cloud → tidak butuh GPU/RAM besar di runner.
+
+> Catatan: provider `ollama-cloud` membaca API key dari env var `OLLAMA_CLOUD_API_KEY`
+> (bukan `OLLAMA_API_KEY`). Keduanya diset dari secret `OLLAMA_API_KEY` agar otentikasi selalu sukses.
+
+### Fallback Groq
+
+Jika ingin beralih ke Groq (cepat, ada free tier), isi secret `GROQ_API_KEY` lalu di chat
+Telegram gunakan `/model groq/llama-3.3-70b-versatile` (atau model Groq lain). Groq tidak
+dipakai sebagai default, hanya cadangan.
 
 ## Catatan penting
 

@@ -23,14 +23,18 @@ jobs:
           export PATH="$HOME/.local/bin:$PATH"
           hermes --version || hermes setup --help || true
 
-      - name: Configure Hermes (Ollama Cloud)
+      - name: Configure Hermes (Ollama Cloud + Groq fallback)
         env:
           OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+          OLLAMA_CLOUD_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
         run: |
           export PATH="$HOME/.local/bin:$PATH"
           mkdir -p ~/.hermes
           cat > ~/.hermes/.env <<EOF
           OLLAMA_API_KEY=${OLLAMA_API_KEY}
+          OLLAMA_CLOUD_API_KEY=${OLLAMA_CLOUD_API_KEY}
+          GROQ_API_KEY=${GROQ_API_KEY}
           EOF
           cat > ~/.hermes/config.yaml <<EOF
           model:
