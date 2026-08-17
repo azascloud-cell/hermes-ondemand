@@ -1297,3 +1297,7 @@
 2026-08-17 02:58:57,923 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Mana ada 50rb' reply_to_id=2237 reply_to_text=''
 2026-08-17 02:59:06,925 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=9.0s api_calls=1 response=1317 chars
 2026-08-17 02:59:06,932 INFO gateway.platforms.base: [Telegram] Sending response (1317 chars) to 6874843931
+2026-08-17 03:09:30,328 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (69 chars)
+2026-08-17 03:09:30,333 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Hmm, kayaknya salah deh jawabanku Gimana nih, udah 1 jam baru 2 soal🙈' reply_to_id=2237 reply_to_text=''
+2026-08-17 03:09:49,175 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=18.8s api_calls=1 response=2023 chars
+2026-08-17 03:09:49,183 INFO gateway.platforms.base: [Telegram] Sending response (2023 chars) to 6874843931
