@@ -13969,3 +13969,8 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-17 16:51:07,376 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
 2026-08-17 16:51:08,415 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=274912->269208 rss_anon_kib=239824->234120 threads=13 duration_ms=105.3
 2026-08-17 16:52:08,529 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=269768->269204 rss_anon_kib=234680->234116 threads=13 duration_ms=112.5
+2026-08-17 16:53:08,647 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=269812->269140 rss_anon_kib=234724->234052 threads=13 duration_ms=117.8
+2026-08-17 16:54:08,774 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=270484->269196 rss_anon_kib=235396->234108 threads=13 duration_ms=120.8
+2026-08-17 16:55:08,898 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=287816->270204 rss_anon_kib=252728->235116 threads=13 duration_ms=122.6
+2026-08-17 16:56:09,012 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=281728->270204 rss_anon_kib=246640->235116 threads=13 duration_ms=114.2
+2026-08-17 16:57:09,134 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=270756->270108 rss_anon_kib=235668->235020 threads=13 duration_ms=121.2
