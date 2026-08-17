@@ -13070,3 +13070,11 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) ha
 2026-08-17 12:37:12,569 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=255264->239656 rss_anon_kib=220292->204684 threads=12 duration_ms=113.3
 2026-08-17 12:38:12,668 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247804->239584 rss_anon_kib=212832->204612 threads=12 duration_ms=98.7
 2026-08-17 12:39:12,767 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=240228->239704 rss_anon_kib=205256->204732 threads=12 duration_ms=98.5
+2026-08-17 12:40:12,867 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=240308->239596 rss_anon_kib=205336->204624 threads=12 duration_ms=98.7
+2026-08-17 12:41:12,980 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=240308->239584 rss_anon_kib=205336->204612 threads=12 duration_ms=112.6
+2026-08-17 12:42:13,100 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=250192->239740 rss_anon_kib=215220->204740 threads=12 duration_ms=114.1
+2026-08-17 12:43:13,215 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=252836->239760 rss_anon_kib=217864->204760 threads=12 duration_ms=113.6
+2026-08-17 12:44:12,278 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38372 (idle=3868s)
+2026-08-17 12:44:12,278 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:6:140367074682560 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud
+2026-08-17 12:44:12,279 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-17 12:44:13,314 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=240304->239340 rss_anon_kib=205332->204368 threads=12 duration_ms=98.9

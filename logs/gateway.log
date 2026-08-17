@@ -1823,3 +1823,5 @@
 2026-08-17 12:27:21,479 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
 2026-08-17 12:27:21,785 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
 2026-08-17 12:27:21,969 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 12:44:12,278 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38372 (idle=3868s)
+2026-08-17 12:44:12,279 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
