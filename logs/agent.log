@@ -10629,3 +10629,15 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reach
 2026-08-17 08:55:22,860 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248728->247872 rss_anon_kib=213600->212744 threads=14 duration_ms=100.9
 2026-08-17 08:56:22,965 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248756->247864 rss_anon_kib=213628->212736 threads=14 duration_ms=104.2
 2026-08-17 08:57:23,075 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248732->247912 rss_anon_kib=213604->212784 threads=14 duration_ms=109.6
+2026-08-17 08:58:23,189 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264056->247920 rss_anon_kib=228928->212792 threads=14 duration_ms=107.8
+2026-08-17 08:59:23,318 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256656->247892 rss_anon_kib=221528->212764 threads=14 duration_ms=128.2
+2026-08-17 09:00:22,392 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38922 (idle=3796s)
+2026-08-17 09:00:22,392 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:6:140647428257472 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-17 09:00:22,392 INFO run_agent: OpenAI client closed (cache_evict, shared=False, tcp_force_closed=0) thread=agent-cache-idle-agent:main:telegram:dm:6:140647428257472 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-17 09:00:22,393 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38372 (idle=3640s)
+2026-08-17 09:00:22,393 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:6:140647428257472 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud
+2026-08-17 09:00:22,393 INFO run_agent: OpenAI client closed (cache_evict, shared=False, tcp_force_closed=0) thread=agent-cache-idle-agent:main:telegram:dm:6:140647428257472 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud
+2026-08-17 09:00:22,394 INFO gateway.run: Agent cache idle sweep: evicted 2 agent(s)
+2026-08-17 09:00:23,448 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248732->246200 rss_anon_kib=213604->211072 threads=14 duration_ms=128.8
+2026-08-17 09:01:23,567 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247092->246196 rss_anon_kib=211964->211068 threads=14 duration_ms=118.1
+2026-08-17 09:02:23,678 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247088->246196 rss_anon_kib=211960->211068 threads=14 duration_ms=111.2
