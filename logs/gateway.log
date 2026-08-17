@@ -1934,3 +1934,16 @@
 2026-08-17 21:26:31,279 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bukan, maksudnya cek email ini masih aktif atau kenon!' reply_to_id=3345 reply_to_text=''
 2026-08-17 21:26:34,781 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=3.5s api_calls=1 response=431 chars
 2026-08-17 21:26:34,787 INFO gateway.platforms.base: [Telegram] Sending response (431 chars) to 6874843931
+2026-08-17 21:57:51,145 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:40001 (9 chars)
+2026-08-17 21:57:51,155 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bagaimana' reply_to_id=3345 reply_to_text=''
+2026-08-17 21:57:57,904 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.7s api_calls=1 response=1427 chars
+2026-08-17 21:57:57,912 INFO gateway.platforms.base: [Telegram] Sending response (1427 chars) to 6874843931
+2026-08-17 21:58:35,433 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:40001 (2 chars)
+2026-08-17 21:58:35,515 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ya' reply_to_id=3345 reply_to_text=''
+2026-08-17 21:58:49,443 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 1 approval(s) for session agent:main:telegram:dm:6874843931:40001 (choice=once, user=Azas)
+2026-08-17 21:58:53,981 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=18.5s api_calls=2 response=484 chars
+2026-08-17 21:58:54,266 INFO gateway.platforms.base: [Telegram] Sending response (484 chars) to 6874843931
+2026-08-17 22:00:11,040 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:40001 (141 chars)
+2026-08-17 22:00:11,174 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Misalkan habis bikin email,tapi gak mau konekin ke device,tapi email tetap aktif' reply_to_id=3345 reply_to_text=''
+2026-08-17 22:00:21,958 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.8s api_calls=1 response=2495 chars
+2026-08-17 22:00:22,005 INFO gateway.platforms.base: [Telegram] Sending response (2495 chars) to 6874843931
