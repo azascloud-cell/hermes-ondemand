@@ -122,6 +122,8 @@ main() {
   restart_at_sec=$((start_sec + (RUN_MINUTES - RESTART_BUFFER_MIN) * 60))
   BACKUP_EVERY_SEC="${BACKUP_EVERY_SEC:-300}"
   local last_backup=$start_sec
+  local last_log_offset=0
+  local last_err_report=0
 
   while true; do
     local now_sec elapsed
@@ -152,6 +154,27 @@ main() {
       echo "Gateway died; restarting..."
       notify "⚠️ Hermes gateway crash, restarting..."
       run_gateway
+    fi
+
+    # surface real provider/gateway errors to Telegram so they're visible
+    # immediately instead of waiting for the run to finish
+    if [ -f /tmp/gateway.log ]; then
+      local size
+      size=$(wc -c < /tmp/gateway.log 2>/dev/null || echo 0)
+      if [ "$size" -gt "$last_log_offset" ]; then
+        local errlines
+        errlines=$(tail -c "+$last_log_offset" /tmp/gateway.log 2>/dev/null \
+          | grep -iE "backoff|401|403|404|429|5[0-9][0-9]|auth|provider|timeout|not found|error|fail" \
+          | tail -5 || true)
+        if [ -n "$errlines" ]; then
+          if [ $((now_sec - last_err_report)) -ge 30 ]; then
+            last_err_report=$now_sec
+            notify "⚠️ Hermes error:
+${errlines}"
+          fi
+        fi
+        last_log_offset=$size
+      fi
     fi
 
     sleep 20
