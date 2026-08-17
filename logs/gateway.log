@@ -1947,3 +1947,5 @@
 2026-08-17 22:00:11,174 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Misalkan habis bikin email,tapi gak mau konekin ke device,tapi email tetap aktif' reply_to_id=3345 reply_to_text=''
 2026-08-17 22:00:21,958 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.8s api_calls=1 response=2495 chars
 2026-08-17 22:00:22,005 INFO gateway.platforms.base: [Telegram] Sending response (2495 chars) to 6874843931
+2026-08-17 22:17:51,824 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38372 (idle=3656s)
+2026-08-17 22:17:51,826 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
