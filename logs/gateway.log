@@ -1227,3 +1227,4 @@
 2026-08-17 01:12:53,230 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling reconnect failed: Timed out
 2026-08-17 01:12:53,230 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 2/10), reconnecting in 10s. Error: Timed out
 2026-08-17 01:13:03,497 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 2); health pending getUpdates progress
+2026-08-17 01:38:11,336 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
