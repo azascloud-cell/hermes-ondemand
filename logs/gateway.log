@@ -1770,3 +1770,45 @@
 2026-08-17 11:30:39,920 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
 2026-08-17 11:30:41,114 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=13.5s api_calls=1 response=2852 chars
 2026-08-17 11:30:41,122 INFO gateway.platforms.base: [Telegram] Sending response (2852 chars) to 6874843931
+2026-08-17 11:32:52,192 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=3965, started_at=2026-08-17T05:43:46.476547+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-17T11:31:00.420236+00:00 last_mem={'rss_kib': 294712, 'mem_total_kib': 16373452, 'mem_available_kib': 14989604, 'swap_used_kib': 0} suspected_oom=False
+2026-08-17 11:32:52,232 INFO gateway.run: Starting Hermes Gateway...
+2026-08-17 11:32:52,233 INFO gateway.run: Session storage: /home/runner/.hermes/sessions
+2026-08-17 11:32:52,242 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-17 11:32:52,242 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-17 11:32:52,284 INFO gateway.run: Connecting to telegram...
+2026-08-17 11:32:52,287 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-17 11:32:52,537 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-17 11:32:52,537 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-17 11:32:52,549 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-17 11:32:53,042 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-17 11:33:04,257 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-17 11:33:04,262 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-17 11:33:04,549 INFO gateway.run: ✓ telegram connected
+2026-08-17 11:33:04,592 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-17 11:33:04,603 INFO gateway.run: Channel directory built: 10 target(s)
+2026-08-17 11:33:05,206 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-17 11:33:05,532 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-17 11:33:05,610 INFO gateway.run: Press Ctrl+C to stop
+2026-08-17 11:33:05,617 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/runner/.hermes/kanban/.dispatcher.lock)
+2026-08-17 11:33:05,623 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-08-17 11:33:05,624 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-17 11:33:05,862 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-17 11:33:05,862 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 92 hidden (over 60 limit). Use /commands for full list.
+2026-08-17 11:33:10,623 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-17 11:34:03,023 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (618 chars)
+2026-08-17 11:34:03,071 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='⚠️ Hermes error: 2026-08-17 11:32:52,192 WARNING gateway.lifecycle_ledger: Previ' reply_to_id=2237 reply_to_text=''
+2026-08-17 11:34:03,104 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38372: model=llama-3.3-70b-versatile provider=groq
+2026-08-17 11:34:16,379 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=13.3s api_calls=1 response=193 chars
+2026-08-17 11:34:16,382 INFO gateway.run: Transient agent failure in session 20260815_102333_b288b938 — persisting user message so conversation context is preserved on retry.
+2026-08-17 11:34:16,393 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 6874843931
+2026-08-17 11:35:00,513 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 11:35:14,247 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (8 chars)
+2026-08-17 11:35:14,251 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Mau gak?' reply_to_id=2237 reply_to_text=''
+2026-08-17 11:35:24,090 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=9.8s api_calls=1 response=193 chars
+2026-08-17 11:35:24,091 INFO gateway.run: Transient agent failure in session 20260815_102333_b288b938 — persisting user message so conversation context is preserved on retry.
+2026-08-17 11:35:24,097 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 6874843931
+2026-08-17 11:36:04,747 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (6 chars)
+2026-08-17 11:36:04,750 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Hallo?' reply_to_id=2237 reply_to_text=''
+2026-08-17 11:36:14,006 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=9.3s api_calls=1 response=193 chars
+2026-08-17 11:36:14,007 INFO gateway.run: Transient agent failure in session 20260815_102333_b288b938 — persisting user message so conversation context is preserved on retry.
+2026-08-17 11:36:14,014 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 6874843931
