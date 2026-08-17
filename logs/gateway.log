@@ -1825,3 +1825,7 @@
 2026-08-17 12:27:21,969 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
 2026-08-17 12:44:12,278 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38372 (idle=3868s)
 2026-08-17 12:44:12,279 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-17 15:01:37,644 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (13 chars)
+2026-08-17 15:01:37,647 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Selamat malam' reply_to_id=2237 reply_to_text=''
+2026-08-17 15:02:04,308 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=26.7s api_calls=1 response=2249 chars
+2026-08-17 15:02:04,317 INFO gateway.platforms.base: [Telegram] Sending response (2249 chars) to 6874843931
