@@ -1466,3 +1466,13 @@
 2026-08-17 03:51:39,030 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Keduluan si Uchi,dia yang benar' reply_to_id=3059 reply_to_text='1.Pide 2.Cig kofte 3.Lokum 4.Firin sutlac 5.Menemen'
 2026-08-17 03:51:46,242 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.2s api_calls=1 response=1197 chars
 2026-08-17 03:51:46,250 INFO gateway.platforms.base: [Telegram] Sending response (1197 chars) to 6874843931
+2026-08-17 03:56:30,806 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_4c91baafbdda.jpg
+2026-08-17 03:56:31,607 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:6874843931:38372:photo-burst with 1 image(s)
+2026-08-17 03:56:31,612 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Hadiah 1 Paket Khusus free 1 tahun. Jawab berurutan sesuai nomer ya' reply_to_id=2237 reply_to_text=''
+2026-08-17 03:56:31,635 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-17 03:56:38,689 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.1s api_calls=1 response=712 chars
+2026-08-17 03:56:38,741 INFO gateway.platforms.base: [Telegram] Sending response (712 chars) to 6874843931
+2026-08-17 03:57:50,381 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (25 chars)
+2026-08-17 03:57:50,386 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Oke, komentar pertama nih' reply_to_id=2237 reply_to_text=''
+2026-08-17 03:57:56,686 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.3s api_calls=1 response=708 chars
+2026-08-17 03:57:56,844 INFO gateway.platforms.base: [Telegram] Sending response (708 chars) to 6874843931
