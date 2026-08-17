@@ -1,14 +1,16 @@
 model:
-  provider: ollama-cloud
-  default: gemma4:31b-cloud
-  base_url: https://ollama.com/v1
+  provider: "ollama-cloud"
+  default: "gemma4:31b-cloud"
+  base_url: "https://ollama.com/v1"
 fallback_providers:
-  - provider: ollama-cloud
-    model: gemma4:31b-cloud
+  - provider: "ollama-cloud"
+    model: "gemma4:31b-cloud"
+  - provider: "groq"
+    model: "llama-3.3-70b-versatile"
 providers:
   groq:
-    api: https://api.groq.com/openai/v1
-    api_key: ${GROQ_API_KEY}
+    api: "https://api.groq.com/openai/v1"
+    api_key: "${GROQ_API_KEY}"
     models:
       llama-3.3-70b-versatile:
         context_length: 131072
@@ -20,6 +22,9 @@ providers:
         context_length: 131072
       moonshotai/kimi-k2-instruct:
         context_length: 131072
-onboarding:
-  seen:
-    busy_input_prompt: true
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+  memory_char_limit: 5000
+  user_char_limit: 4000
+  write_approval: false

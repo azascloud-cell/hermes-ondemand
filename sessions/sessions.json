@@ -29,11 +29,7 @@
     "auto_reset_reason": null,
     "reset_had_activity": false,
     "prev_session_id": null,
-    "model_override": {
-      "model": "deepseek-v4-flash",
-      "provider": "opencode",
-      "base_url": "https://opencode.ai/zen/v1"
-    },
+    "model_override": null,
     "origin": {
       "platform": "telegram",
       "chat_id": "6874843931",
@@ -75,11 +71,7 @@
     "auto_reset_reason": null,
     "reset_had_activity": false,
     "prev_session_id": null,
-    "model_override": {
-      "model": "deepseek-v4-flash",
-      "provider": "opencode",
-      "base_url": "https://opencode.ai/zen/v1"
-    },
+    "model_override": null,
     "origin": {
       "platform": "telegram",
       "chat_id": "6874843931",
