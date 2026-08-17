@@ -45,6 +45,17 @@ jobs:
             groq:
               api: "https://api.groq.com/openai/v1"
               api_key: "\${GROQ_API_KEY}"
+              models:
+                llama-3.3-70b-versatile:
+                  context_length: 131072
+                llama-3.1-8b-instant:
+                  context_length: 131072
+                qwen/qwen3-32b:
+                  context_length: 131072
+                openai/gpt-oss-120b:
+                  context_length: 131072
+                moonshotai/kimi-k2-instruct:
+                  context_length: 131072
           EOF
 
       - name: Run Hermes on question
