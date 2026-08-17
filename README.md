@@ -60,9 +60,17 @@ Cloud → tidak butuh GPU/RAM besar di runner.
 
 ### Fallback Groq
 
-Jika ingin beralih ke Groq (cepat, ada free tier), isi secret `GROQ_API_KEY` lalu di chat
-Telegram gunakan `/model groq/llama-3.3-70b-versatile` (atau model Groq lain). Groq tidak
-dipakai sebagai default, hanya cadangan.
+Groq didaftarkan sebagai **named custom provider** `groq` di `config.yaml` (`providers.groq`,
+base URL `https://api.groq.com/openai/v1`, key dari `${GROQ_API_KEY}`). Isi secret `GROQ_API_KEY`
+(awalan `gsk_`). Untuk beralih, gunakan **sintaks titik dua**:
+
+```
+/model custom:groq:llama-3.3-70b-versatile
+```
+
+> Catatan: syntax `/model` Hermes memakai `provider:model` (titik dua), bukan garis miring.
+> Provider custom dipanggil `custom:<nama>:<model>`. Groq tidak dipakai sebagai default — itu
+> tetap Ollama Cloud `gemma4:31b-cloud`.
 
 ## Catatan penting
 

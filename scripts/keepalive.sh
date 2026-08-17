@@ -53,12 +53,40 @@ run_gateway() {
   GW_PID=$!
 }
 
+write_config() {
+  # Write fresh secrets + provider config. Runs AFTER persist.sh restore so the
+  # freshly-generated config always wins over whatever was restored from the
+  # data branch (restore would otherwise overwrite config.yaml/.env).
+  mkdir -p "$HOME/.hermes"
+  cat > "$HOME/.hermes/.env" <<EOF
+OLLAMA_API_KEY=${OLLAMA_API_KEY}
+OLLAMA_CLOUD_API_KEY=${OLLAMA_CLOUD_API_KEY}
+GROQ_API_KEY=${GROQ_API_KEY}
+OPENCODE_ZEN_API_KEY=${OPENCODE_ZEN_API_KEY}
+TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+TELEGRAM_ALLOWED_USERS=${TELEGRAM_ALLOWED_USERS}
+EOF
+  cat > "$HOME/.hermes/config.yaml" <<EOF
+model:
+  provider: "ollama-cloud"
+  default: "gemma4:31b-cloud"
+  base_url: "https://ollama.com/v1"
+providers:
+  groq:
+    api: "https://api.groq.com/openai/v1"
+    api_key: "\${GROQ_API_KEY}"
+EOF
+}
+
 main() {
   local wf="${KEEPALIVE_WORKFLOW:-keepalive.yml}"
 
   # restore persisted data before starting the gateway (survives ephemeral runners)
   echo "Restoring ~/.hermes data..."
   "$(dirname "$0")/persist.sh" restore 2>&1 | tail -5 || true
+
+  # re-apply secrets + provider config so the fresh config always wins
+  write_config
 
   notify "🟢 Hermes online (keep-alive start)"
 
