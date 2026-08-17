@@ -8390,3 +8390,13 @@ telegram.error.TimedOut: Timed out
 2026-08-17 02:45:57,670 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=297040->277024 rss_anon_kib=262088->242040 threads=15 duration_ms=107.5
 2026-08-17 02:46:57,776 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280976->276864 rss_anon_kib=246024->241912 threads=15 duration_ms=105.8
 2026-08-17 02:47:57,900 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=277204->276860 rss_anon_kib=242252->241908 threads=15 duration_ms=122.7
+2026-08-17 02:48:58,015 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=277784->277324 rss_anon_kib=242832->242372 threads=15 duration_ms=104.6
+2026-08-17 02:49:58,121 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=277876->277320 rss_anon_kib=242924->242368 threads=15 duration_ms=105.4
+2026-08-17 02:50:58,230 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=295016->277328 rss_anon_kib=260064->242376 threads=15 duration_ms=108.6
+2026-08-17 02:51:58,335 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=285912->277448 rss_anon_kib=250960->242496 threads=15 duration_ms=104.4
+2026-08-17 02:52:58,446 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=277800->277452 rss_anon_kib=242848->242500 threads=15 duration_ms=110.0
+2026-08-17 02:53:26,222 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (211 chars)
+2026-08-17 02:53:26,226 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Nih admin komen di grub Ayo yg lainnya pada kemana niiih Cluenya ya...sebenernya' reply_to_id=2237 reply_to_text=''
+2026-08-17 02:53:26,232 INFO hermes_state: Repaired 3 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-17 02:53:26,244 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=gemma4:31b provider=ollama-cloud platform=telegram history=147 msg='Nih admin komen di grub Ayo yg lainnya pada kemana niiih Cluenya ya...sebenernya...'
+2026-08-17 02:53:26,252 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_102333_b288b938)
