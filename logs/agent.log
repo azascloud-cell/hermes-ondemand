@@ -14409,3 +14409,8 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-17 22:00:22,005 INFO gateway.platforms.base: [Telegram] Sending response (2495 chars) to 6874843931
 2026-08-17 22:00:49,663 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=249928->231524 rss_anon_kib=214408->196004 threads=13 duration_ms=120.0
 2026-08-17 22:01:49,806 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236032->231472 rss_anon_kib=200512->195952 threads=12 duration_ms=142.1
+2026-08-17 22:02:49,934 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232136->231472 rss_anon_kib=196616->195952 threads=12 duration_ms=127.7
+2026-08-17 22:03:50,075 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232176->231472 rss_anon_kib=196656->195952 threads=12 duration_ms=140.6
+2026-08-17 22:04:50,217 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232176->231472 rss_anon_kib=196656->195952 threads=12 duration_ms=140.9
+2026-08-17 22:05:50,360 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248144->231548 rss_anon_kib=212624->196028 threads=12 duration_ms=137.1
+2026-08-17 22:06:50,503 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232448->231520 rss_anon_kib=196928->196000 threads=12 duration_ms=142.5
