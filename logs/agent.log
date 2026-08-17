@@ -9138,3 +9138,45 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) ha
 2026-08-17 04:08:34,317 INFO [20260815_102333_b288b938] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
 2026-08-17 04:08:34,317 WARNING [20260815_102333_b288b938] agent.conversation_loop: API call failed (attempt 2/3) error_type=RateLimitError thread=hermes-gateway_0:140037945554624 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b summary=HTTP 429: you (zarofyd) have reached your session usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: c7b543e2-cb06-4875-87a4-65ce87e019bb)
 2026-08-17 04:08:34,319 WARNING [20260815_102333_b288b938] agent.conversation_loop: Retrying API call in 4.169360211627826s (attempt 2/3) thread=hermes-gateway_0:140037945554624 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b policy=default error=Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your session usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: c7b543e2-cb06-4875-87a4-65ce87e019bb)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-17 04:08:38,530 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-34 (<lambda>):140037777774272 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-17 04:08:39,072 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your session usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 2c96e9e7-0ce7-4c47-8701-7cf04a6aa5d3)', 'type': 'api_error', 'param': None, 'code': None}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your session usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 2c96e9e7-0ce7-4c47-8701-7cf04a6aa5d3)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-17 04:08:39,078 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-34 (<lambda>):140037777774272 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-17 04:08:39,079 INFO [20260815_102333_b288b938] run_agent: Credential already exhausted (last_status=exhausted) — rotating immediately instead of retrying
+2026-08-17 04:08:39,083 INFO [20260815_102333_b288b938] agent.credential_pool: credential pool: marking OLLAMA_API_KEY exhausted (status=429), rotating
+2026-08-17 04:08:39,084 WARNING [20260815_102333_b288b938] agent.conversation_loop: API call failed (attempt 3/3) error_type=RateLimitError thread=hermes-gateway_0:140037945554624 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b summary=HTTP 429: you (zarofyd) have reached your session usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 2c96e9e7-0ce7-4c47-8701-7cf04a6aa5d3)
+2026-08-17 04:08:39,087 ERROR [20260815_102333_b288b938] agent.conversation_loop: API call failed after 3 retries. HTTP 429: you (zarofyd) have reached your session usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 2c96e9e7-0ce7-4c47-8701-7cf04a6aa5d3) | provider=ollama-cloud model=gemma4:31b msgs=234 tokens=~51,208
+2026-08-17 04:08:39,258 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.5s api_calls=1 response=193 chars
+2026-08-17 04:08:39,259 INFO gateway.run: Transient agent failure in session 20260815_102333_b288b938 — persisting user message so conversation context is preserved on retry.
+2026-08-17 04:08:39,276 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 6874843931
+2026-08-17 04:09:17,946 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=272740->248136 rss_anon_kib=237216->212612 threads=12 duration_ms=82.2
+2026-08-17 04:10:18,025 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248624->248128 rss_anon_kib=213100->212604 threads=12 duration_ms=78.4
+2026-08-17 04:11:18,105 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248520->248208 rss_anon_kib=212996->212684 threads=12 duration_ms=79.3
+2026-08-17 04:12:18,223 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=249308->248204 rss_anon_kib=213784->212680 threads=12 duration_ms=78.8
+2026-08-17 04:13:18,303 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248648->248196 rss_anon_kib=213124->212672 threads=12 duration_ms=79.9
