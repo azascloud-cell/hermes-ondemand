@@ -74,6 +74,8 @@ model:
 fallback_providers:
   - provider: "ollama-cloud"
     model: "gemma4:31b-cloud"
+  - provider: "groq"
+    model: "llama-3.3-70b-versatile"
 providers:
   groq:
     api: "https://api.groq.com/openai/v1"
@@ -89,6 +91,12 @@ providers:
         context_length: 131072
       moonshotai/kimi-k2-instruct:
         context_length: 131072
+memory:
+  memory_enabled: true
+  user_profile_enabled: true
+  memory_char_limit: 5000
+  user_char_limit: 4000
+  write_approval: false
 EOF
 }
 
@@ -101,6 +109,71 @@ main() {
 
   # re-apply secrets + provider config so the fresh config always wins
   write_config
+
+  # Clear stale per-session model_override rows pointing at providers that need
+  # paid credentials (e.g. opencode/OpenCode Zen → HTTP 401) or at unavailable
+  # endpoints. The override lives in ~/.hermes/state.db (gateway_routing
+  # entry_json + sessions.model) and survives persist restore, rehydrating on
+  # every gateway start. We scrub it directly so the gateway falls back to the
+  # configured default (ollama-cloud, with groq as a real fallback).
+  if [ -f "$HOME/.hermes/state.db" ]; then
+    echo "Resetting stale model_overrides to paid/unavailable providers..."
+    python3 - <<'PY' || true
+import json, os, sqlite3, time
+db = os.path.expanduser("~/.hermes/state.db")
+BAD = {"opencode", "opencode-zen", "opencode-go"}
+con = sqlite3.connect(db)
+cur = con.cursor()
+# scrub gateway_routing entry_json model_override
+cur.execute("SELECT rowid, scope, session_key, entry_json FROM gateway_routing")
+rows = cur.fetchall()
+for rowid, scope, skey, entry in rows:
+    try:
+        obj = json.loads(entry)
+    except Exception:
+        continue
+    mo = obj.get("model_override")
+    if isinstance(mo, dict) and mo.get("provider") in BAD:
+        obj["model_override"] = None
+        cur.execute("UPDATE gateway_routing SET entry_json=?, updated_at=? WHERE rowid=?",
+                    (json.dumps(obj), time.time(), rowid))
+        print("cleared routing override:", skey)
+# scrub sessions.model / model_config pointing at bad providers
+cur.execute("SELECT id, model, model_config FROM sessions")
+for sid, model, mcfg in cur.fetchall():
+    try:
+        cfg = json.loads(mcfg) if mcfg else {}
+    except Exception:
+        cfg = {}
+    if cfg.get("provider") in BAD:
+        cfg = {"provider": None}
+        cur.execute("UPDATE sessions SET model=?, model_config=? WHERE id=?",
+                    ("gemma4:31b-cloud", json.dumps(cfg), sid))
+        print("cleared session model:", sid)
+con.commit()
+con.close()
+# scrub legacy sessions.json mirror (gateway_routing echo) if present
+sj = os.path.expanduser("~/.hermes/sessions/sessions.json")
+if os.path.exists(sj):
+    try:
+        with open(sj, "r") as f:
+            data = json.load(f)
+        changed = False
+        for key, obj in (data.items() if isinstance(data, dict) else []):
+            if not isinstance(obj, dict):
+                continue
+            mo = obj.get("model_override")
+            if isinstance(mo, dict) and mo.get("provider") in BAD:
+                obj["model_override"] = None
+                changed = True
+        if changed:
+            with open(sj, "w") as f:
+                json.dump(data, f, indent=2)
+            print("scrubbed sessions.json overrides")
+    except Exception as e:
+        print("sessions.json scrub skipped:", e)
+PY
+  fi
 
   notify "🟢 Hermes online (keep-alive start)"
 

@@ -44,6 +44,8 @@ jobs:
           fallback_providers:
             - provider: "ollama-cloud"
               model: "gemma4:31b-cloud"
+            - provider: "groq"
+              model: "llama-3.3-70b-versatile"
           providers:
             groq:
               api: "https://api.groq.com/openai/v1"
@@ -59,6 +61,12 @@ jobs:
                   context_length: 131072
                 moonshotai/kimi-k2-instruct:
                   context_length: 131072
+          memory:
+            memory_enabled: true
+            user_profile_enabled: true
+            memory_char_limit: 5000
+            user_char_limit: 4000
+            write_approval: false
           EOF
 
       - name: Run Hermes on question
