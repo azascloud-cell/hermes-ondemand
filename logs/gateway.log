@@ -1752,3 +1752,11 @@
 2026-08-17 11:17:35,813 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Fokus audit aja sana!' reply_to_id=2237 reply_to_text=''
 2026-08-17 11:17:45,765 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.0s api_calls=1 response=943 chars
 2026-08-17 11:17:45,772 INFO gateway.platforms.base: [Telegram] Sending response (943 chars) to 6874843931
+2026-08-17 11:22:10,564 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (10 chars)
+2026-08-17 11:22:10,568 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bagaimana?' reply_to_id=2237 reply_to_text=''
+2026-08-17 11:22:23,321 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=12.8s api_calls=1 response=1928 chars
+2026-08-17 11:22:23,328 INFO gateway.platforms.base: [Telegram] Sending response (1928 chars) to 6874843931
+2026-08-17 11:23:17,484 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (3 chars)
+2026-08-17 11:23:17,488 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Tes' reply_to_id=2237 reply_to_text=''
+2026-08-17 11:23:24,518 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.0s api_calls=1 response=716 chars
+2026-08-17 11:23:24,525 INFO gateway.platforms.base: [Telegram] Sending response (716 chars) to 6874843931
