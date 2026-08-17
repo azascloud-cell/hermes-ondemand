@@ -1891,3 +1891,5 @@
 2026-08-17 15:50:48,192 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Yah, terserah asal gak error' reply_to_id=2237 reply_to_text=''
 2026-08-17 15:51:00,118 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.9s api_calls=1 response=1254 chars
 2026-08-17 15:51:00,126 INFO gateway.platforms.base: [Telegram] Sending response (1254 chars) to 6874843931
+2026-08-17 16:51:07,374 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38372 (idle=3607s)
+2026-08-17 16:51:07,376 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
