@@ -25,15 +25,15 @@
       "schedule_display": "0 5 * * *",
       "repeat": {
         "times": null,
-        "completed": 4
+        "completed": 5
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-08-15T22:27:53.328474+00:00",
-      "next_run_at": "2026-08-17T05:00:00+00:00",
-      "last_run_at": "2026-08-16T05:01:00.974684+00:00",
+      "next_run_at": "2026-08-18T05:00:00+00:00",
+      "last_run_at": "2026-08-17T05:03:16.150652+00:00",
       "last_status": "error",
       "last_error": "RuntimeError: HTTP 401: Model gemma4:31b is not supported",
       "last_delivery_error": null,
@@ -158,5 +158,5 @@
       "fire_claim": null
     }
   ],
-  "updated_at": "2026-08-16T05:01:00.975265+00:00"
+  "updated_at": "2026-08-17T05:03:16.151249+00:00"
 }
