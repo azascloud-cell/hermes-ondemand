@@ -2804,3 +2804,5 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) ha
 2026-08-17 06:04:30,764 ERROR [20260815_102333_b288b938] agent.conversation_loop: API call failed after 3 retries. HTTP 429: you (zarofyd) have reached your session usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 5af92f55-5355-4149-8c47-6d076524681e) | provider=ollama-cloud model=gemma4:31b-cloud msgs=234 tokens=~51,311
 2026-08-17 06:11:05,232 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
 2026-08-17 06:30:15,572 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 06:50:29,837 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 06:52:15,130 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
