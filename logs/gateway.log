@@ -1221,3 +1221,9 @@
 2026-08-17 00:55:45,164 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
 2026-08-17 01:00:54,174 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
 2026-08-17 01:07:59,468 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 01:12:13,006 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: Bad Gateway
+2026-08-17 01:12:13,006 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: Bad Gateway
+2026-08-17 01:12:33,008 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] updater.stop() timed out during network-error reconnect (likely CLOSE-WAIT socket); forcing drain and restart without clean stop
+2026-08-17 01:12:53,230 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling reconnect failed: Timed out
+2026-08-17 01:12:53,230 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 2/10), reconnecting in 10s. Error: Timed out
+2026-08-17 01:13:03,497 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 2); health pending getUpdates progress
