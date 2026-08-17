@@ -8371,3 +8371,17 @@ telegram.error.TimedOut: Timed out
 2026-08-17 02:36:04,802 INFO gateway.platforms.base: [Telegram] Sending response (942 chars) to 6874843931
 2026-08-17 02:36:56,645 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=279156->276592 rss_anon_kib=244204->241640 threads=15 duration_ms=118.5
 2026-08-17 02:37:56,757 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=277204->276524 rss_anon_kib=242252->241572 threads=15 duration_ms=111.4
+2026-08-17 02:38:56,872 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=277788->276468 rss_anon_kib=242836->241516 threads=15 duration_ms=107.1
+2026-08-17 02:39:15,795 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (192 chars)
+2026-08-17 02:39:15,799 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Nih, saingan lain banyak. mahkum (the oath/prisoner) cagla simsek taş kağıt maka' reply_to_id=2237 reply_to_text=''
+2026-08-17 02:39:15,804 INFO hermes_state: Repaired 3 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-17 02:39:15,814 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=gemma4:31b provider=ollama-cloud platform=telegram history=145 msg='Nih, saingan lain banyak. mahkum (the oath/prisoner) cagla simsek taş kağıt maka...'
+2026-08-17 02:39:15,821 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-17 02:39:23,068 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #7: model=gemma4:31b provider=ollama-cloud in=51727 out=497 total=52224 latency=7.2s
+2026-08-17 02:39:23,127 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1863 session=20260815_102333_b288b938
+2026-08-17 02:39:23,163 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.4s api_calls=1 response=1863 chars
+2026-08-17 02:39:23,171 INFO gateway.platforms.base: [Telegram] Sending response (1863 chars) to 6874843931
+2026-08-17 02:39:57,000 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=295460->276508 rss_anon_kib=260508->241556 threads=15 duration_ms=127.4
+2026-08-17 02:40:57,118 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=285216->276468 rss_anon_kib=250264->241516 threads=15 duration_ms=117.1
+2026-08-17 02:41:57,232 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=276896->276460 rss_anon_kib=241944->241508 threads=15 duration_ms=113.4
+2026-08-17 02:42:57,336 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=277052->276336 rss_anon_kib=242100->241384 threads=15 duration_ms=103.7

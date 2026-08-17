@@ -1277,3 +1277,7 @@
 2026-08-17 02:35:58,484 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Belumada kemenangan nih,masak iya dirayakan dulu' reply_to_id=2237 reply_to_text=''
 2026-08-17 02:36:04,796 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.3s api_calls=1 response=942 chars
 2026-08-17 02:36:04,802 INFO gateway.platforms.base: [Telegram] Sending response (942 chars) to 6874843931
+2026-08-17 02:39:15,795 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (192 chars)
+2026-08-17 02:39:15,799 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Nih, saingan lain banyak. mahkum (the oath/prisoner) cagla simsek taş kağıt maka' reply_to_id=2237 reply_to_text=''
+2026-08-17 02:39:23,163 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.4s api_calls=1 response=1863 chars
+2026-08-17 02:39:23,171 INFO gateway.platforms.base: [Telegram] Sending response (1863 chars) to 6874843931
