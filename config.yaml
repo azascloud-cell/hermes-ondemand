@@ -2,6 +2,9 @@ model:
   provider: "ollama-cloud"
   default: "gemma4:31b-cloud"
   base_url: "https://ollama.com/v1"
+fallback_providers:
+  - provider: "ollama-cloud"
+    model: "gemma4:31b-cloud"
 providers:
   groq:
     api: "https://api.groq.com/openai/v1"
