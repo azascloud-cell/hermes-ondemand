@@ -11777,3 +11777,31 @@ openai.NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-
 2026-08-17 10:24:06,406 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.7s api_calls=2 response=732 chars
 2026-08-17 10:24:06,414 INFO gateway.platforms.base: [Telegram] Sending response (732 chars) to 6874843931
 2026-08-17 10:24:33,050 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=312028->285972 rss_anon_kib=276900->250844 threads=16 duration_ms=116.5
+2026-08-17 10:25:33,166 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=286860->285960 rss_anon_kib=251732->250832 threads=15 duration_ms=116.1
+2026-08-17 10:25:33,347 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39833 (36 chars)
+2026-08-17 10:25:33,351 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Pengingat sholat member AzzaVisionAI' reply_to_id=3238 reply_to_text=''
+2026-08-17 10:25:34,548 INFO [20260817_102400_3ab05ca0] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140647797348032 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-17 10:25:34,553 INFO [20260817_102533_5dd6d3fb] agent.turn_context: conversation turn: session=20260817_102533_5dd6d3fb model=gemma4:31b-cloud provider=ollama-cloud platform=telegram history=0 msg='Pengingat sholat member AzzaVisionAI'
+2026-08-17 10:25:34,567 INFO agent.auxiliary_client: Auxiliary title_generation: using ollama-cloud (gemma4:31b-cloud) at https://ollama.com/v1/
+2026-08-17 10:25:34,702 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-108 (<lambda>):140647428257472 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-17 10:25:36,396 INFO [20260817_102533_5dd6d3fb] agent.conversation_loop: API call #1: model=gemma4:31b-cloud provider=ollama-cloud in=18267 out=14 total=18281 latency=1.8s
+2026-08-17 10:25:36,405 INFO [20260817_102533_5dd6d3fb] agent.tool_executor: tool cronjob completed (0.00s, 2983 chars)
+2026-08-17 10:25:40,687 INFO [20260817_102533_5dd6d3fb] agent.conversation_loop: API call #2: model=gemma4:31b-cloud provider=ollama-cloud in=19436 out=202 total=19638 latency=4.3s
+2026-08-17 10:25:40,691 INFO [20260817_102533_5dd6d3fb] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=2/500 budget=2/500 tool_turns=1 last_msg_role=assistant response_len=675 session=20260817_102533_5dd6d3fb
+2026-08-17 10:25:40,707 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.4s api_calls=2 response=675 chars
+2026-08-17 10:25:40,716 INFO gateway.platforms.base: [Telegram] Sending response (675 chars) to 6874843931
+2026-08-17 10:26:33,288 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=290060->287312 rss_anon_kib=254932->252184 threads=15 duration_ms=120.8
+2026-08-17 10:26:55,842 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:39833 (23 chars)
+2026-08-17 10:26:55,846 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bukannya kamu udah buat' reply_to_id=3238 reply_to_text=''
+2026-08-17 10:26:55,868 INFO [20260817_102533_5dd6d3fb] agent.turn_context: conversation turn: session=20260817_102533_5dd6d3fb model=gemma4:31b-cloud provider=ollama-cloud platform=telegram history=4 msg='Bukannya kamu udah buat'
+2026-08-17 10:26:57,891 INFO [20260817_102533_5dd6d3fb] agent.conversation_loop: API call #3: model=gemma4:31b-cloud provider=ollama-cloud in=19652 out=23 total=19675 latency=2.0s
+2026-08-17 10:26:58,007 INFO [20260817_102533_5dd6d3fb] agent.tool_executor: tool session_search completed (0.00s, 152 chars)
+2026-08-17 10:26:59,202 INFO [20260817_102533_5dd6d3fb] agent.conversation_loop: API call #4: model=gemma4:31b-cloud provider=ollama-cloud in=19733 out=30 total=19763 latency=1.2s
+2026-08-17 10:26:59,220 INFO [20260817_102533_5dd6d3fb] agent.tool_executor: tool session_search completed (0.01s, 12191 chars)
+2026-08-17 10:27:04,179 INFO [20260817_102533_5dd6d3fb] agent.conversation_loop: API call #5: model=gemma4:31b-cloud provider=ollama-cloud in=24339 out=420 total=24759 latency=5.0s
+2026-08-17 10:27:04,187 INFO [20260817_102533_5dd6d3fb] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=3/500 budget=3/500 tool_turns=3 last_msg_role=assistant response_len=1299 session=20260817_102533_5dd6d3fb
+2026-08-17 10:27:04,223 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.4s api_calls=3 response=1299 chars
+2026-08-17 10:27:04,231 INFO gateway.platforms.base: [Telegram] Sending response (1299 chars) to 6874843931
+2026-08-17 10:27:33,404 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=290768->287752 rss_anon_kib=255640->252624 threads=16 duration_ms=115.5
+2026-08-17 10:28:33,523 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=291616->287732 rss_anon_kib=256488->252604 threads=15 duration_ms=110.6
+2026-08-17 10:29:33,666 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=302696->288960 rss_anon_kib=267568->253832 threads=15 duration_ms=142.3
