@@ -1649,3 +1649,12 @@
 2026-08-17 09:33:25,665 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kalau AzzaVisionAI?' reply_to_id=2237 reply_to_text=''
 2026-08-17 09:33:44,640 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=19.0s api_calls=1 response=2959 chars
 2026-08-17 09:33:44,650 INFO gateway.platforms.base: [Telegram] Sending response (2959 chars) to 6874843931
+2026-08-17 09:34:17,839 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 09:36:01,843 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (72 chars)
+2026-08-17 09:36:01,848 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Maksudnya channel telegram AzzaVisionAI yang pernah kita bahas,ingatkan?' reply_to_id=2237 reply_to_text=''
+2026-08-17 09:36:12,100 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.3s api_calls=1 response=2216 chars
+2026-08-17 09:36:12,108 INFO gateway.platforms.base: [Telegram] Sending response (2216 chars) to 6874843931
+2026-08-17 09:38:13,869 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (69 chars)
+2026-08-17 09:38:13,873 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Boleh-boleh,kalau bisa rangkuman 7 harinya juga! Bisa kan,neng Lidya?' reply_to_id=2237 reply_to_text=''
+2026-08-17 09:38:24,033 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.2s api_calls=1 response=2190 chars
+2026-08-17 09:38:24,041 INFO gateway.platforms.base: [Telegram] Sending response (2190 chars) to 6874843931

@@ -8,7 +8,7 @@ User prefers a warm, supportive relationship; refers to agent as 'Neng Lidya' an
 §
 Interest: Building WhatsApp Status Downloader bots using Baileys.
 §
-Runs 'AZZAVISION AI' trading bot; wants Neng Lidya to provide 'human touch' (deep analysis, psych support, news) in the community channel to complement technical signals.
+User runs 'AZZAVISION AI' trading bot; refers to agent as 'Neng Lidya' who provides human-touch analysis and psych support in the community channel (-1003902094501).
 §
 User has a trading bot system called AZZAVISION AI; refers to agent as 'Neng Lidya' who acts as a human-touch analyst/companion in the trading channel (-1003902094501).
 §
