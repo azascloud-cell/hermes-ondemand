@@ -1703,3 +1703,4 @@
 2026-08-17 10:04:47,686 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.2s api_calls=1 response=1782 chars
 2026-08-17 10:04:47,694 INFO gateway.platforms.base: [Telegram] Sending response (1782 chars) to 6874843931
 2026-08-17 10:07:14,705 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 10:17:10,858 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
