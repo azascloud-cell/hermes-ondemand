@@ -1,23 +1,23 @@
 name: Orchestrate AzzaVision-AI (Signal + Panel)
 
-# Orkestrator pusat: Hermes-ondemand men-trigger repo Azza-Vision-AI (Pterodactyl
-# panel keep-alive) dan menjaga channel sinyal tetap "hidup" (update/notifikasi).
+# Orkestrator pusat: Hermes-ondemand men-trigger repo Azza-Vision-AI (bot trading
+# 24/7 via azzavision.yml) dan menjaga channel sinyal tetap "hidup".
 #
-# Azza-Vision-AI punya logika & workflow-nya sendiri (deploy-pterodactyl.yml).
-# Hermes hanya MELENGKAPI channel sinyal agar rapi, pro, dan hidup — bukan
-# menggantikan logika panel.
+# Azza-Vision-AI punya logika & workflow-nya sendiri (azzavision.yml, keep-alive
+# 24/7). Hermes hanya MELENGKAPI channel sinyal agar rapi, pro, dan hidup — bukan
+# menggantikan logika bot.
 #
 # Design:
-#   - Schedule: 6 jam (sinkron dengan cron Azza-Vision-AI) sebagai cadangan.
+#   - Schedule: 6 jam sebagai cadangan (bot AzzaVision sudah self-trigger sendiri).
 #   - workflow_dispatch manual: trigger AzzaVision + kirim notif ke channel.
-#   - Concurrency di repo Azza-Vision-AI (group pterodactyl-panel) mencegah dua
-#     panel bertabrakan; di sini kita hanya "pastikan sudah aktif", bukan re-trigger
-#     yang bisa menumpuk.
+#   - Concurrency di repo Azza-Vision-AI (group azzavision-bot) mencegah dua bot
+#     bertabrakan; di sini kita hanya "pastikan sudah aktif", bukan re-trigger
+#     yang menumpuk.
 
 on:
   schedule:
-    # Cadangan: pastikan panel AzzaVision aktif setiap 6 jam
-    - cron: "0 */6 * * *"
+    # Cadangan: pastikan bot AzzaVision aktif setiap 6 jam
+    - cron: "20 */6 * * *"
   workflow_dispatch:
     inputs:
       chat_id:
@@ -25,7 +25,7 @@ on:
         required: false
         default: ""
       notify_only:
-        description: "Hanya kirim notif ke channel, tanpa trigger panel (true/false)"
+        description: "Hanya kirim notif ke channel, tanpa trigger bot (true/false)"
         required: false
         default: "false"
 
@@ -51,13 +51,13 @@ jobs:
           echo "chat_id=${CHAT}" >> "$GITHUB_OUTPUT"
           echo "Using channel chat_id: ${CHAT}"
 
-      - name: Trigger AzzaVision panel (deploy-pterodactyl.yml)
+      - name: Trigger AzzaVision bot (azzavision.yml)
         if: inputs.notify_only != 'true'
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           REPO="azascloud-cell/Azza-Vision-AI"
-          WF="deploy-pterodactyl.yml"
+          WF="azzavision.yml"
           echo "Triggering ${REPO}/${WF} ..."
           RESP=$(curl -s -w "\n%{http_code}" -X POST \
             -H "Authorization: Bearer $GH_PAT" \
@@ -69,13 +69,13 @@ jobs:
           echo "HTTP $CODE"
           if [ "$CODE" = "204" ]; then
             echo "TRIGGER=ok" >> "$GITHUB_ENV"
-            echo "✅ Panel AzzaVision di-trigger (idempotent via concurrency repo tujuan)."
+            echo "✅ Bot AzzaVision di-trigger (idempotent via concurrency repo tujuan)."
           else
             echo "TRIGGER=warn" >> "$GITHUB_ENV"
             echo "⚠️ Trigger tidak 204 (mungkin sudah ada run aktif / token scope). Non-fatal."
           fi
 
-      - name: Notify channel (panel status + jadwal sinyal)
+      - name: Notify channel (bot status + jadwal sinyal)
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           CHAT_ID: ${{ steps.chan.outputs.chat_id }}
@@ -86,7 +86,7 @@ jobs:
           fi
           NOW=$(date -u '+%Y-%m-%d %H:%M UTC')
           TRIGGER_STATE="${TRIGGER:-ok}"
-          MSG="🟢 **AzzaVision AI — Orchestrator aktif**%0A━━━━━━━━━━━━━━━━━━━━%0A📡 Panel: ${TRIGGER_STATE}%0A⏰ Waktu: ${NOW}%0A💬 Hermes mendampingi channel sinyal (XAUUSD alerts siap)."
+          MSG="🟢 **AzzaVision AI — Orchestrator aktif**%0A━━━━━━━━━━━━━━━━━━━━%0A📡 Bot: ${TRIGGER_STATE}%0A⏰ Waktu: ${NOW}%0A💬 Hermes mendampingi channel sinyal (XAUUSD alerts siap)."
           curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
             --data-urlencode "chat_id=${CHAT_ID}" \
             --data-urlencode "parse_mode=Markdown" \

@@ -106,13 +106,13 @@ via helper script `scripts/selfheal.sh` (guardrail aman):
 
 Hermes-ondemand bertindak sebagai **orchestrator pusat** yang:
 
-- Men-trigger repo **`azascloud-cell/Azza-Vision-AI`** (workflow `deploy-pterodactyl.yml`,
-  Pterodactyl panel keep-alive) via `GH_PAT`.
-- Mengirim notifikasi ke channel sinyal (`SIGNAL_CHAT_ID`) bahwa panel & bot aktif.
-- Menjaga channel "hidup" — **tidak menggantikan** logika AzzaVision, hanya melengkapi.
+- Men-trigger repo **`azascloud-cell/Azza-Vision-AI`** (workflow `azzavision.yml`,
+  bot trading signal 24/7) via `GH_PAT`.
+- Mengirim notifikasi ke channel sinyal (`SIGNAL_CHAT_ID`) bahwa bot & panel aktif.
+- Menjaga channel "hidup" — **tidak menggantikan** logika bot AzzaVision, hanya melengkapi.
 
-> Catatan: concurrency di repo Azza-Vision-AI (group `pterodactyl-panel`) memastikan
-> panel tidak berjalan dobel meski di-trigger dari sini maupun cron-nya sendiri.
+> Catatan: concurrency di repo Azza-Vision-AI (group `azzavision-bot`) memastikan
+> bot tidak berjalan dobel meski di-trigger dari sini maupun cron-nya sendiri.
 
 ## Catatan penting
 
