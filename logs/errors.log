@@ -2013,3 +2013,4 @@ telegram.error.TimedOut: Timed out
 2026-08-17 03:38:16,893 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
 2026-08-17 03:38:16,900 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
 2026-08-17 03:40:15,108 WARNING [20260815_102333_b288b938] agent.tool_executor: Tool memory returned error (0.01s): {"success": false, "error": "After applying all 2 operations, memory would be at 1,611/1,375 chars -- over the limit. Remove or shorten more entries in the same batch (see current_entries below), then
+2026-08-17 03:45:29,190 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501

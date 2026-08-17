@@ -8961,3 +8961,13 @@ telegram.error.TimedOut: Timed out
 2026-08-17 03:43:10,547 INFO hermes_state: Repaired 3 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
 2026-08-17 03:43:10,558 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=gemma4:31b provider=ollama-cloud platform=telegram history=220 msg='Itu urutkan?'
 2026-08-17 03:43:10,566 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 2 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-17 03:43:15,429 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #5: model=gemma4:31b provider=ollama-cloud in=59816 out=206 total=60022 latency=4.9s
+2026-08-17 03:43:15,436 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=589 session=20260815_102333_b288b938
+2026-08-17 03:43:15,491 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=5.0s api_calls=1 response=589 chars
+2026-08-17 03:43:15,509 INFO gateway.platforms.base: [Telegram] Sending response (589 chars) to 6874843931
+2026-08-17 03:43:15,703 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=233812->231476 rss_anon_kib=198288->195952 threads=13 duration_ms=80.5
+2026-08-17 03:44:15,780 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232252->231348 rss_anon_kib=196728->195824 threads=12 duration_ms=77.2
+2026-08-17 03:45:15,857 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247828->233884 rss_anon_kib=212304->198360 threads=12 duration_ms=76.7
+2026-08-17 03:45:29,190 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 03:46:15,934 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245512->234180 rss_anon_kib=209988->198656 threads=12 duration_ms=75.9
+2026-08-17 03:47:16,032 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235100->233936 rss_anon_kib=199576->198412 threads=12 duration_ms=74.9
