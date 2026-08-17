@@ -1257,3 +1257,15 @@
 2026-08-17 02:26:50,588 INFO gateway.run: Image routing: native (model supports vision). 3 image(s) will be attached inline.
 2026-08-17 02:26:58,546 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.1s api_calls=1 response=1261 chars
 2026-08-17 02:26:58,554 INFO gateway.platforms.base: [Telegram] Sending response (1261 chars) to 6874843931
+2026-08-17 02:29:28,295 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (95 chars)
+2026-08-17 02:29:28,299 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='1. Judul Drama: Yargi (Family Secrets) 2. Nama Artis: Pintar Deniz (Pemeran Ceyl' reply_to_id=2237 reply_to_text=''
+2026-08-17 02:29:32,897 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.6s api_calls=1 response=604 chars
+2026-08-17 02:29:32,912 INFO gateway.platforms.base: [Telegram] Sending response (604 chars) to 6874843931
+2026-08-17 02:30:57,878 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (127 chars)
+2026-08-17 02:30:57,882 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='2 member menjawab ini Fatimah Azzahra: Mahkum Ilayda alisan  \u200e _: judul drama : ' reply_to_id=2237 reply_to_text=''
+2026-08-17 02:31:05,098 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.2s api_calls=1 response=1833 chars
+2026-08-17 02:31:05,105 INFO gateway.platforms.base: [Telegram] Sending response (1833 chars) to 6874843931
+2026-08-17 02:32:19,638 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (19 chars)
+2026-08-17 02:32:19,642 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Yah terlanjur yargi' reply_to_id=2237 reply_to_text=''
+2026-08-17 02:32:29,635 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.0s api_calls=1 response=1541 chars
+2026-08-17 02:32:29,641 INFO gateway.platforms.base: [Telegram] Sending response (1541 chars) to 6874843931

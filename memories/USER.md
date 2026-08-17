@@ -2,7 +2,7 @@ User is interested in Android app development, web automation/scraping (specific
 §
 XAUUSD Trading: Ultra-scalper (SL 40pts, TP 60-125pts). Prefers MTF analysis (D1, H4, H1), price alerts via Yahoo Finance, and setup recommendations without auto-execution. Wants daily alert at 05:00 WIB.
 §
-User earns money selling personal Gmails via virtual numbers (nokos), utilizing 'account warming' (e.g., uploading fresh private YouTube videos) and 'clustering' recovery emails to avoid bans.
+User earns money selling personal Gmails and providing SMS OTP receiving services via virtual numbers (nokos). Uses 'account warming' (e.g., uploading fresh private YouTube videos) and 'clustering' recovery emails to avoid bans.
 §
 User refers to agent as 'Neng Lidya' and prefers a warm, supportive, affectionate relationship (uses 'Mas Azza', emojis, polite Indonesian).
 §
