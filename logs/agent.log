@@ -11855,3 +11855,8 @@ openai.NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-
 2026-08-17 11:04:37,945 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=301888->293876 rss_anon_kib=265260->257248 threads=16 duration_ms=134.3
 2026-08-17 11:04:57,758 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
 2026-08-17 11:05:38,079 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=294740->293872 rss_anon_kib=258112->257244 threads=16 duration_ms=132.8
+2026-08-17 11:06:38,212 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=294764->293872 rss_anon_kib=258136->257244 threads=16 duration_ms=132.7
+2026-08-17 11:07:38,344 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=294768->293872 rss_anon_kib=258140->257244 threads=16 duration_ms=130.8
+2026-08-17 11:08:38,482 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=311252->293872 rss_anon_kib=274624->257244 threads=16 duration_ms=131.2
+2026-08-17 11:09:38,618 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=303388->293872 rss_anon_kib=266760->257244 threads=16 duration_ms=136.0
+2026-08-17 11:10:38,748 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=296652->293868 rss_anon_kib=260024->257240 threads=16 duration_ms=129.0
