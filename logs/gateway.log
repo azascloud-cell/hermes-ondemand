@@ -1620,3 +1620,11 @@
 2026-08-17 07:56:22,609 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38922: model=gemma4:31b provider=ollama-cloud
 2026-08-17 07:56:31,342 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.7s api_calls=1 response=1191 chars
 2026-08-17 07:56:31,353 INFO gateway.platforms.base: [Telegram] Sending response (1191 chars) to 6874843931
+2026-08-17 07:56:52,517 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (2 chars)
+2026-08-17 07:56:52,521 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ok' reply_to_id=2642 reply_to_text=''
+2026-08-17 07:57:06,425 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=13.9s api_calls=2 response=327 chars
+2026-08-17 07:57:06,451 INFO gateway.platforms.base: [Telegram] Sending response (327 chars) to 6874843931
+2026-08-17 07:59:27,233 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (37 chars)
+2026-08-17 07:59:27,237 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Sudah,gak lolos aku,nanti isya lanjut' reply_to_id=2237 reply_to_text=''
+2026-08-17 07:59:42,634 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=15.4s api_calls=1 response=854 chars
+2026-08-17 07:59:42,643 INFO gateway.platforms.base: [Telegram] Sending response (854 chars) to 6874843931
