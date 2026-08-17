@@ -1213,3 +1213,5 @@
 2026-08-16 23:54:35,746 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Aku mau app yang agak asing seperti amurmur' reply_to_id=2237 reply_to_text=''
 2026-08-16 23:54:43,575 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.8s api_calls=1 response=3327 chars
 2026-08-16 23:54:43,584 INFO gateway.platforms.base: [Telegram] Sending response (3327 chars) to 6874843931
+2026-08-17 00:00:38,929 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38922 (idle=3750s)
+2026-08-17 00:00:38,930 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
