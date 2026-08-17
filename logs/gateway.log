@@ -1228,3 +1228,23 @@
 2026-08-17 01:12:53,230 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 2/10), reconnecting in 10s. Error: Timed out
 2026-08-17 01:13:03,497 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 2); health pending getUpdates progress
 2026-08-17 01:38:11,336 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 02:18:04,894 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_7ee28b76ce25.jpg
+2026-08-17 02:18:05,695 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:6874843931:38922:photo-burst with 1 image(s)
+2026-08-17 02:18:05,699 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='━━━━━━━━━━━━━━━━━━ 📚 AZZAVISION AI — E-BOOK SIGNAL ━━━━━━━━━━━━━━━━━━  🪙 Pair   ' reply_to_id=2642 reply_to_text=''
+2026-08-17 02:18:05,707 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-17 02:18:11,674 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.0s api_calls=1 response=1172 chars
+2026-08-17 02:18:11,681 INFO gateway.platforms.base: [Telegram] Sending response (1172 chars) to 6874843931
+2026-08-17 02:19:00,050 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (8 chars)
+2026-08-17 02:19:00,054 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Kirim aj' reply_to_id=2642 reply_to_text=''
+2026-08-17 02:19:07,021 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.0s api_calls=2 response=287 chars
+2026-08-17 02:19:07,028 INFO gateway.platforms.base: [Telegram] Sending response (287 chars) to 6874843931
+2026-08-17 02:22:07,456 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (6 chars)
+2026-08-17 02:22:07,460 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='SL hit' reply_to_id=2642 reply_to_text=''
+2026-08-17 02:22:07,528 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 02:22:10,682 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 02:22:11,702 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.2s api_calls=1 response=1214 chars
+2026-08-17 02:22:11,709 INFO gateway.platforms.base: [Telegram] Sending response (1214 chars) to 6874843931
+2026-08-17 02:22:28,054 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38922 (2 chars)
+2026-08-17 02:22:28,057 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ya' reply_to_id=2642 reply_to_text=''
+2026-08-17 02:22:32,751 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.7s api_calls=2 response=268 chars
+2026-08-17 02:22:32,758 INFO gateway.platforms.base: [Telegram] Sending response (268 chars) to 6874843931
