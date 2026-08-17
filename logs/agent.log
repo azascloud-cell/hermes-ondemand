@@ -14414,3 +14414,38 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-17 22:04:50,217 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232176->231472 rss_anon_kib=196656->195952 threads=12 duration_ms=140.9
 2026-08-17 22:05:50,360 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248144->231548 rss_anon_kib=212624->196028 threads=12 duration_ms=137.1
 2026-08-17 22:06:50,503 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232448->231520 rss_anon_kib=196928->196000 threads=12 duration_ms=142.5
+2026-08-17 22:07:50,646 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232208->231520 rss_anon_kib=196688->196000 threads=12 duration_ms=142.5
+2026-08-17 22:07:58,278 ERROR telegram.ext: Network Retry Loop (Polling Updates): Invalid token. Aborting retry loop.
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_utils/networkloop.py", line 161, in network_retry_loop
+    await do_action()
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_utils/networkloop.py", line 154, in do_action
+    action_cb_task.result()
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_updater.py", line 340, in polling_action_cb
+    updates = await self.bot.get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 671, in get_updates
+    updates = await super().get_updates(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 4860, in get_updates
+    await self._post(
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.InvalidToken: ***
+2026-08-17 22:08:50,788 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235424->233972 rss_anon_kib=199904->198452 threads=12 duration_ms=141.0
+2026-08-17 22:09:50,929 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=234668->233972 rss_anon_kib=199148->198452 threads=12 duration_ms=140.3
+2026-08-17 22:10:51,091 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=253592->234376 rss_anon_kib=218072->198856 threads=12 duration_ms=137.8
+2026-08-17 22:11:51,206 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=239928->234380 rss_anon_kib=204408->198860 threads=12 duration_ms=114.5
+2026-08-17 22:12:51,327 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235108->234384 rss_anon_kib=199588->198864 threads=12 duration_ms=120.7
