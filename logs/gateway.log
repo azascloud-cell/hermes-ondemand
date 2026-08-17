@@ -1760,3 +1760,13 @@
 2026-08-17 11:23:17,488 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Tes' reply_to_id=2237 reply_to_text=''
 2026-08-17 11:23:24,518 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.0s api_calls=1 response=716 chars
 2026-08-17 11:23:24,525 INFO gateway.platforms.base: [Telegram] Sending response (716 chars) to 6874843931
+2026-08-17 11:29:01,279 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (12 chars)
+2026-08-17 11:29:01,282 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Udh belom...' reply_to_id=2237 reply_to_text=''
+2026-08-17 11:29:08,256 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.0s api_calls=1 response=659 chars
+2026-08-17 11:29:08,263 INFO gateway.platforms.base: [Telegram] Sending response (659 chars) to 6874843931
+2026-08-17 11:30:27,606 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (85 chars)
+2026-08-17 11:30:27,610 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Yes.... akhirnya                                                 Belum muncul ju' reply_to_id=2237 reply_to_text=''
+2026-08-17 11:30:39,919 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:39833 (idle=3816s)
+2026-08-17 11:30:39,920 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-17 11:30:41,114 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=13.5s api_calls=1 response=2852 chars
+2026-08-17 11:30:41,122 INFO gateway.platforms.base: [Telegram] Sending response (2852 chars) to 6874843931
