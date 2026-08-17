@@ -1269,3 +1269,11 @@
 2026-08-17 02:32:19,642 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Yah terlanjur yargi' reply_to_id=2237 reply_to_text=''
 2026-08-17 02:32:29,635 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.0s api_calls=1 response=1541 chars
 2026-08-17 02:32:29,641 INFO gateway.platforms.base: [Telegram] Sending response (1541 chars) to 6874843931
+2026-08-17 02:34:31,526 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (111 chars)
+2026-08-17 02:34:31,530 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Nih,admin kayaknya yang respon Dramanya yang ada disini ya. Buat yg jawab Karada' reply_to_id=2237 reply_to_text=''
+2026-08-17 02:34:39,953 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.4s api_calls=1 response=1325 chars
+2026-08-17 02:34:39,961 INFO gateway.platforms.base: [Telegram] Sending response (1325 chars) to 6874843931
+2026-08-17 02:35:58,480 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (48 chars)
+2026-08-17 02:35:58,484 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Belumada kemenangan nih,masak iya dirayakan dulu' reply_to_id=2237 reply_to_text=''
+2026-08-17 02:36:04,796 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=6.3s api_calls=1 response=942 chars
+2026-08-17 02:36:04,802 INFO gateway.platforms.base: [Telegram] Sending response (942 chars) to 6874843931
