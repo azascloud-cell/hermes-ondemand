@@ -87,7 +87,11 @@ jobs:
           python - <<'PY'
           import os, base64, urllib.request, urllib.parse, json
           token = os.environ["TELEGRAM_BOT_TOKEN"]
-          chat_id = os.environ["CHAT_ID"]
+          chat_id = os.environ.get("CHAT_ID", "").strip()
+          # Skip silently when no valid chat id was supplied (e.g. test dispatch).
+          if not chat_id or chat_id == "0":
+              print("No valid chat_id; skipping reply")
+              raise SystemExit(0)
           with open("answer_b64.txt") as f:
               text = base64.b64decode(f.read()).decode("utf-8", "replace")
           # Telegram caps messages at 4096 chars; trim
@@ -100,5 +104,14 @@ jobs:
               print("Sent:", resp.status)
           except Exception as e:
               print("Failed to send:", e)
-              raise
+              # Reply failure is non-fatal: the answer already exists in logs/artifacts.
+              raise SystemExit(0)
           PY
+
+      - name: Upload answer artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hermes-answer
+          path: answer.txt
+          if-no-files-found: warn
