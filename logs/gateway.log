@@ -1399,3 +1399,19 @@
 2026-08-17 03:33:52,025 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Memang' reply_to_id=2237 reply_to_text=''
 2026-08-17 03:33:54,411 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.4s api_calls=1 response=412 chars
 2026-08-17 03:33:54,418 INFO gateway.platforms.base: [Telegram] Sending response (412 chars) to 6874843931
+2026-08-17 03:34:35,352 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (3 chars)
+2026-08-17 03:34:35,356 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Pro' reply_to_id=2237 reply_to_text=''
+2026-08-17 03:34:37,337 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.0s api_calls=1 response=442 chars
+2026-08-17 03:34:37,343 INFO gateway.platforms.base: [Telegram] Sending response (442 chars) to 6874843931
+2026-08-17 03:35:09,504 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (7 chars)
+2026-08-17 03:35:09,507 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Nipunya' reply_to_id=2237 reply_to_text=''
+2026-08-17 03:35:13,718 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.2s api_calls=1 response=482 chars
+2026-08-17 03:35:13,726 INFO gateway.platforms.base: [Telegram] Sending response (482 chars) to 6874843931
+2026-08-17 03:35:52,832 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (8 chars)
+2026-08-17 03:35:52,836 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Mahalpun' reply_to_id=2237 reply_to_text=''
+2026-08-17 03:35:55,070 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=2.2s api_calls=1 response=492 chars
+2026-08-17 03:35:55,077 INFO gateway.platforms.base: [Telegram] Sending response (492 chars) to 6874843931
+2026-08-17 03:36:29,106 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (5 chars)
+2026-08-17 03:36:29,110 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Pakai' reply_to_id=2237 reply_to_text=''
+2026-08-17 03:36:31,042 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=1.9s api_calls=1 response=515 chars
+2026-08-17 03:36:31,049 INFO gateway.platforms.base: [Telegram] Sending response (515 chars) to 6874843931
