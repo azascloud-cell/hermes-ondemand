@@ -11832,3 +11832,20 @@ openai.NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-
 2026-08-17 10:53:36,547 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=294932->289732 rss_anon_kib=259804->254604 threads=15 duration_ms=113.2
 2026-08-17 10:54:36,671 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=290624->289720 rss_anon_kib=255496->254592 threads=15 duration_ms=123.8
 2026-08-17 10:55:36,782 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=290620->289720 rss_anon_kib=255492->254592 threads=15 duration_ms=109.8
+2026-08-17 10:56:36,907 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=290624->289724 rss_anon_kib=255496->254596 threads=15 duration_ms=124.6
+2026-08-17 10:57:29,003 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_ae26d866430e.jpg
+2026-08-17 10:57:29,804 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:6874843931:39827:photo-burst with 1 image(s)
+2026-08-17 10:57:29,808 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Cek market,apa yang membuat M1 ganas!' reply_to_id=3232 reply_to_text=''
+2026-08-17 10:57:30,154 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-17 10:57:30,173 INFO [20260817_102400_3ab05ca0] agent.turn_context: conversation turn: session=20260817_102400_3ab05ca0 model=gemma4:31b-cloud provider=ollama-cloud platform=telegram history=4 msg='[1 image] Cek market,apa yang membuat M1 ganas!  [Image attached at: /home/runne...'
+2026-08-17 10:57:34,387 INFO [20260817_102400_3ab05ca0] agent.conversation_loop: API call #3: model=gemma4:31b-cloud provider=ollama-cloud in=19967 out=151 total=20118 latency=4.2s
+2026-08-17 10:57:34,930 INFO tools.vision_tools: vision_analyze: native fast path
+2026-08-17 10:57:35,012 INFO [20260817_102400_3ab05ca0] agent.tool_executor: tool vision_analyze completed (0.32s, 156586 chars)
+2026-08-17 10:57:37,042 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=316304->292640 rss_anon_kib=279676->256012 threads=20 duration_ms=134.6
+2026-08-17 10:57:41,086 INFO [20260817_102400_3ab05ca0] agent.conversation_loop: API call #4: model=gemma4:31b-cloud provider=ollama-cloud in=20533 out=554 total=21087 latency=5.9s
+2026-08-17 10:57:41,091 INFO [20260817_102400_3ab05ca0] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=2/500 budget=2/500 tool_turns=2 last_msg_role=assistant response_len=2064 session=20260817_102400_3ab05ca0
+2026-08-17 10:57:41,124 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.3s api_calls=2 response=2064 chars
+2026-08-17 10:57:41,133 INFO gateway.platforms.base: [Telegram] Sending response (2064 chars) to 6874843931
+2026-08-17 10:58:37,171 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=301336->292252 rss_anon_kib=264708->255624 threads=16 duration_ms=119.7
+2026-08-17 10:59:37,298 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=293128->292256 rss_anon_kib=256500->255628 threads=16 duration_ms=126.3
+2026-08-17 11:00:37,415 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=293156->292248 rss_anon_kib=256528->255620 threads=16 duration_ms=117.0

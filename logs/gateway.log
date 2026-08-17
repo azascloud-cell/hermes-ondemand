@@ -1725,3 +1725,9 @@
 2026-08-17 10:27:04,223 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=8.4s api_calls=3 response=1299 chars
 2026-08-17 10:27:04,231 INFO gateway.platforms.base: [Telegram] Sending response (1299 chars) to 6874843931
 2026-08-17 10:31:04,599 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 10:57:29,003 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_ae26d866430e.jpg
+2026-08-17 10:57:29,804 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:6874843931:39827:photo-burst with 1 image(s)
+2026-08-17 10:57:29,808 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Cek market,apa yang membuat M1 ganas!' reply_to_id=3232 reply_to_text=''
+2026-08-17 10:57:30,154 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-17 10:57:41,124 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.3s api_calls=2 response=2064 chars
+2026-08-17 10:57:41,133 INFO gateway.platforms.base: [Telegram] Sending response (2064 chars) to 6874843931
