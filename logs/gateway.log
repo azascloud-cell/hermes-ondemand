@@ -1678,3 +1678,7 @@
 2026-08-17 09:48:21,720 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Wait, 😭 ini kenapa  ⚠️ Hermes error: 2026-08-17 09:47:13,658 ERROR agent.chat_co' reply_to_id=2237 reply_to_text=''
 2026-08-17 09:48:32,188 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.5s api_calls=1 response=1716 chars
 2026-08-17 09:48:32,197 INFO gateway.platforms.base: [Telegram] Sending response (1716 chars) to 6874843931
+2026-08-17 09:49:58,983 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (25 chars)
+2026-08-17 09:49:58,987 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Udah kepasang cronjobnya?' reply_to_id=2237 reply_to_text=''
+2026-08-17 09:50:11,015 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=12.0s api_calls=1 response=1379 chars
+2026-08-17 09:50:11,022 INFO gateway.platforms.base: [Telegram] Sending response (1379 chars) to 6874843931
