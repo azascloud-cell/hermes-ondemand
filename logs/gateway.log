@@ -1666,3 +1666,15 @@
 2026-08-17 09:42:56,307 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Saran bagus itu jadwal pengingat sholat, tambahin juga kalau gitu' reply_to_id=2237 reply_to_text=''
 2026-08-17 09:43:16,084 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=19.8s api_calls=1 response=2644 chars
 2026-08-17 09:43:16,092 INFO gateway.platforms.base: [Telegram] Sending response (2644 chars) to 6874843931
+2026-08-17 09:45:10,892 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (115 chars)
+2026-08-17 09:45:10,896 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Aku tinggal di Pasuruan,jadi jangan sampai salah atau kota tidak terlihat ya!heh' reply_to_id=2237 reply_to_text=''
+2026-08-17 09:45:23,769 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=12.9s api_calls=1 response=1119 chars
+2026-08-17 09:45:23,788 INFO gateway.platforms.base: [Telegram] Sending response (1119 chars) to 6874843931
+2026-08-17 09:47:13,452 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (59 chars)
+2026-08-17 09:47:13,456 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Masyaallah keren,makin sayng sama asisten kayak begini nih🥰' reply_to_id=2237 reply_to_text=''
+2026-08-17 09:47:21,248 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=7.8s api_calls=1 response=887 chars
+2026-08-17 09:47:21,255 INFO gateway.platforms.base: [Telegram] Sending response (887 chars) to 6874843931
+2026-08-17 09:48:21,716 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (933 chars)
+2026-08-17 09:48:21,720 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Wait, 😭 ini kenapa  ⚠️ Hermes error: 2026-08-17 09:47:13,658 ERROR agent.chat_co' reply_to_id=2237 reply_to_text=''
+2026-08-17 09:48:32,188 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=10.5s api_calls=1 response=1716 chars
+2026-08-17 09:48:32,197 INFO gateway.platforms.base: [Telegram] Sending response (1716 chars) to 6874843931
