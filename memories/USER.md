@@ -8,6 +8,6 @@ User prefers a warm, supportive relationship; refers to agent as 'Neng Lidya' an
 §
 Interest: Building WhatsApp Status Downloader bots using Baileys.
 §
-User runs 'AZZAVISION AI' trading channel; refers to agent as 'Neng Lidya' (Human Touch Analyst) who provides analysis, psych support, and Islamic reminders (salam, prayer alerts for Pasuruan) in the community (-1003902094501).
+User runs 'AZZAVISION AI' trading channel; refers to agent as 'Neng Lidya' (Human Touch Analyst) who provides analysis, psych support, and Islamic reminders (salam, prayer alerts for Pasuruan) in the community.
 §
 Participates in 'Omah Nonton Dizi' Turkish drama quizzes.
