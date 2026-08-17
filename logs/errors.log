@@ -1964,3 +1964,4 @@ telegram.error.TimedOut: Timed out
 2026-08-17 01:38:11,336 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
 2026-08-17 02:22:07,528 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
 2026-08-17 02:22:10,682 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user None in chat -1003902094501
+2026-08-17 02:26:50,581 WARNING agent.chat_completion_helpers: Stream ended with no finish_reason after delivering text with no tool calls; treating as a mid-stream drop.

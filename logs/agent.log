@@ -8266,3 +8266,27 @@ telegram.error.TimedOut: Timed out
 2026-08-17 02:22:32,751 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.7s api_calls=2 response=268 chars
 2026-08-17 02:22:32,758 INFO gateway.platforms.base: [Telegram] Sending response (268 chars) to 6874843931
 2026-08-17 02:22:55,112 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=288652->272564 rss_anon_kib=253700->237612 threads=15 duration_ms=118.8
+2026-08-17 02:23:55,234 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=284696->274312 rss_anon_kib=249744->239360 threads=15 duration_ms=114.2
+2026-08-17 02:24:55,344 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=274952->274172 rss_anon_kib=240000->239220 threads=15 duration_ms=109.5
+2026-08-17 02:25:55,454 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=274896->274180 rss_anon_kib=239944->239228 threads=15 duration_ms=108.6
+2026-08-17 02:26:47,432 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (944 chars)
+2026-08-17 02:26:47,436 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bantu jawab neng 🔔PENGUMUMAN!🔔  Teruntuk para member Omah Nonton Dizi kesayangan' reply_to_id=2237 reply_to_text=''
+2026-08-17 02:26:47,441 INFO hermes_state: Repaired 2 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-17 02:26:47,471 INFO [20260816_025735_6984b064] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140625315878592 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-17 02:26:47,476 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=gemma4:31b provider=ollama-cloud platform=telegram history=133 msg='Bantu jawab neng 🔔PENGUMUMAN!🔔  Teruntuk para member Omah Nonton Dizi kesayangan...'
+2026-08-17 02:26:47,483 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-17 02:26:47,542 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-107 (<lambda>):140625215223488 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-17 02:26:48,515 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_516d8715e8e0.jpg
+2026-08-17 02:26:49,197 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_48f2e8800e26.jpg
+2026-08-17 02:26:49,772 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_1d4295f2b076.jpg
+2026-08-17 02:26:50,573 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:6874843931:38372:photo-burst with 3 image(s)
+2026-08-17 02:26:50,581 WARNING agent.chat_completion_helpers: Stream ended with no finish_reason after delivering text with no tool calls; treating as a mid-stream drop.
+2026-08-17 02:26:50,582 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=interrupted_during_api_call model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=user response_len=65 session=20260815_102333_b288b938
+2026-08-17 02:26:50,588 INFO gateway.run: Image routing: native (model supports vision). 3 image(s) will be attached inline.
+2026-08-17 02:26:50,868 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=gemma4:31b provider=ollama-cloud platform=telegram history=133 msg='[3 images] Hadiah 1 Paket Khusus free 1 tahun.  Jawaban soal 1  [Image attached ...'
+2026-08-17 02:26:55,567 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=282144->275300 rss_anon_kib=247192->240348 threads=18 duration_ms=113.3
+2026-08-17 02:26:58,467 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=50184 out=359 total=50543 latency=7.6s
+2026-08-17 02:26:58,515 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1261 session=20260815_102333_b288b938
+2026-08-17 02:26:58,546 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.1s api_calls=1 response=1261 chars
+2026-08-17 02:26:58,554 INFO gateway.platforms.base: [Telegram] Sending response (1261 chars) to 6874843931
+2026-08-17 02:27:55,681 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=278408->275120 rss_anon_kib=243456->240168 threads=15 duration_ms=113.0

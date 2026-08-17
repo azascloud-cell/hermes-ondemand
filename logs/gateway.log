@@ -1248,3 +1248,12 @@
 2026-08-17 02:22:28,057 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ya' reply_to_id=2642 reply_to_text=''
 2026-08-17 02:22:32,751 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=4.7s api_calls=2 response=268 chars
 2026-08-17 02:22:32,758 INFO gateway.platforms.base: [Telegram] Sending response (268 chars) to 6874843931
+2026-08-17 02:26:47,432 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (944 chars)
+2026-08-17 02:26:47,436 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Bantu jawab neng 🔔PENGUMUMAN!🔔  Teruntuk para member Omah Nonton Dizi kesayangan' reply_to_id=2237 reply_to_text=''
+2026-08-17 02:26:48,515 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_516d8715e8e0.jpg
+2026-08-17 02:26:49,197 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_48f2e8800e26.jpg
+2026-08-17 02:26:49,772 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_1d4295f2b076.jpg
+2026-08-17 02:26:50,573 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:6874843931:38372:photo-burst with 3 image(s)
+2026-08-17 02:26:50,588 INFO gateway.run: Image routing: native (model supports vision). 3 image(s) will be attached inline.
+2026-08-17 02:26:58,546 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=11.1s api_calls=1 response=1261 chars
+2026-08-17 02:26:58,554 INFO gateway.platforms.base: [Telegram] Sending response (1261 chars) to 6874843931
