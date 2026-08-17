@@ -13276,3 +13276,244 @@ openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type'
 2026-08-17 15:15:29,105 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244868->244416 rss_anon_kib=209640->209188 threads=12 duration_ms=96.6
 2026-08-17 15:16:29,204 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=259148->244492 rss_anon_kib=223920->209264 threads=12 duration_ms=98.5
 2026-08-17 15:17:29,310 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=253072->244348 rss_anon_kib=217844->209120 threads=12 duration_ms=99.3
+2026-08-17 15:19:42,329 INFO hermes_cli.main: Checkout changed since last launch (unknown -> git:refs/heads/main:4323c67dcc6048fc8e311cdff7600d3d6a17807f): cleared 42 stale __pycache__ directories
+2026-08-17 15:19:43,738 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-08-17 15:19:43,740 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-08-17 15:19:43,742 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-08-17 15:19:43,802 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-08-17 15:19:43,804 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-08-17 15:19:43,808 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-08-17 15:19:43,810 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-08-17 15:19:43,813 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-08-17 15:19:43,815 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-08-17 15:19:43,816 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-08-17 15:19:43,820 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-08-17 15:19:43,830 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-08-17 15:19:43,834 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-08-17 15:19:43,838 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-08-17 15:19:43,842 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-08-17 15:19:43,844 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-08-17 15:19:43,846 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-08-17 15:19:43,854 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-08-17 15:19:43,856 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-08-17 15:19:43,858 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-08-17 15:19:43,859 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-08-17 15:19:43,864 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-08-17 15:19:43,881 INFO hermes_cli.plugins: Plugin discovery complete: 55 found, 48 enabled
+2026-08-17 15:19:45,074 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-08-17 15:19:45,098 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=3969, started_at=2026-08-17T11:32:52.192367+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-17T15:17:35.760173+00:00 last_mem={'rss_kib': 244704, 'mem_total_kib': 16373452, 'mem_available_kib': 15060996, 'swap_used_kib': 0} suspected_oom=False
+2026-08-17 15:19:45,137 INFO gateway.run: Starting Hermes Gateway...
+2026-08-17 15:19:45,138 INFO gateway.run: Session storage: /home/runner/.hermes/sessions
+2026-08-17 15:19:45,147 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-17 15:19:45,147 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-17 15:19:45,184 INFO gateway.run: Connecting to telegram...
+2026-08-17 15:19:45,187 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-17 15:19:45,476 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-17 15:19:45,476 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-17 15:19:45,494 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-17 15:19:45,883 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-17 15:19:45,884 INFO telegram.ext.Application: Application started
+2026-08-17 15:19:46,176 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-08-17 15:19:46,406 INFO tools.tirith_security: tirith installed to /home/runner/.hermes/bin/tirith (SHA-256 only)
+2026-08-17 15:19:56,547 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-17 15:19:56,553 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-17 15:19:56,840 INFO gateway.run: ✓ telegram connected
+2026-08-17 15:19:56,883 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-17 15:19:56,894 INFO gateway.run: Channel directory built: 10 target(s)
+2026-08-17 15:19:57,464 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-17 15:19:57,780 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-17 15:19:57,901 INFO gateway.run: Press Ctrl+C to stop
+2026-08-17 15:19:57,906 INFO cron.scheduler_provider: In-process cron scheduler started (interval=60s)
+2026-08-17 15:19:57,908 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/runner/.hermes/kanban/.dispatcher.lock)
+2026-08-17 15:19:57,909 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-08-17 15:19:57,917 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-17 15:19:57,973 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=154632->144268 rss_anon_kib=129156->118824 threads=9 duration_ms=53.6
+2026-08-17 15:19:58,095 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-17 15:19:58,095 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 92 hidden (over 60 limit). Use /commands for full list.
+2026-08-17 15:20:02,910 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-17 15:20:04,116 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (18 chars)
+2026-08-17 15:20:04,165 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Harusnya sudah fix' reply_to_id=2237 reply_to_text=''
+2026-08-17 15:20:04,190 INFO hermes_state: Repaired 16 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-17 15:20:04,384 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:6874843931:38372: model=deepseek-v4-flash provider=opencode
+2026-08-17 15:20:04,422 INFO run_agent: Loaded environment variables from /home/runner/.hermes/.env
+2026-08-17 15:20:05,985 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140553979156160 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:20:05,987 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-17 15:20:05,989 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-17 15:20:05,990 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-17 15:20:05,991 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-17 15:20:06,839 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-17 15:20:06,862 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-17 15:20:06,866 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-17 15:20:06,867 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-17 15:20:06,868 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-17 15:20:06,871 INFO tools.lazy_deps: Lazy-installing edge-tts==7.2.7 for feature 'tts.edge'
+2026-08-17 15:20:07,060 INFO tools.lazy_deps: Lazy install complete for feature 'tts.edge'
+2026-08-17 15:20:07,369 INFO agent.auxiliary_client: Vision auto-detect: using main provider ollama-cloud (gemma4:31b-cloud)
+2026-08-17 15:20:07,379 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-17 15:20:07,458 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=deepseek-v4-flash provider=opencode platform=telegram history=300 msg='Harusnya sudah fix'
+2026-08-17 15:20:07,489 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 2 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-17 15:20:07,588 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-15 (<lambda>):140553660393152 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:20:08,973 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
+2026-08-17 15:20:08,989 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-15 (<lambda>):140553660393152 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:20:08,990 WARNING [20260815_102333_b288b938] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=hermes-gateway_0:140553979156160 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash summary=HTTP 401: No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing
+2026-08-17 15:20:09,008 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback to ollama-cloud/gemma4:31b-cloud: attached fallback credential pool
+2026-08-17 15:20:09,011 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback gemma4:31b-cloud: reasoning_config resolved: None
+2026-08-17 15:20:09,012 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback activated: deepseek-v4-flash → gemma4:31b-cloud (ollama-cloud)
+2026-08-17 15:20:09,155 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-16 (<lambda>):140553660393152 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud
+2026-08-17 15:20:19,205 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #1: model=gemma4:31b-cloud provider=ollama-cloud in=80812 out=336 total=81148 latency=10.2s
+2026-08-17 15:20:19,345 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=1/500 budget=1/500 tool_turns=2 last_msg_role=assistant response_len=1258 session=20260815_102333_b288b938
+2026-08-17 15:20:19,385 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=15.2s api_calls=1 response=1258 chars
+2026-08-17 15:20:19,398 INFO gateway.platforms.base: [Telegram] Sending response (1258 chars) to 6874843931
+2026-08-17 15:20:58,093 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=271312->234792 rss_anon_kib=236224->199704 threads=11 duration_ms=120.0
+2026-08-17 15:21:38,464 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_e912fe95340a.jpg
+2026-08-17 15:21:39,266 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:6874843931:38372:photo-burst with 1 image(s)
+2026-08-17 15:21:39,271 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Hasil hari ini' reply_to_id=2237 reply_to_text=''
+2026-08-17 15:21:39,278 INFO hermes_state: Repaired 16 message-alternation violation(s) while restoring session 20260815_102333_b288b938 — durable transcript kept them, see repair_message_sequence
+2026-08-17 15:21:39,420 INFO gateway.run: Image routing: text (mode=text). Pre-analyzing 1 image(s) via vision_analyze.
+2026-08-17 15:21:39,421 INFO tools.vision_tools: Analyzing image: /home/runner/.hermes/cache/images/img_e912fe95340a.jpg
+2026-08-17 15:21:39,421 INFO tools.vision_tools: User prompt: Concisely describe this image in 2-4 sentences (~200 Chinese characters or ~150 English words). Cove
+2026-08-17 15:21:39,427 INFO tools.vision_tools: Image ready (90.3 KB)
+2026-08-17 15:21:39,427 INFO tools.vision_tools: Converting image to base64...
+2026-08-17 15:21:39,428 INFO tools.vision_tools: Image converted to base64 (120.5 KB)
+2026-08-17 15:21:39,428 INFO tools.vision_tools: Processing image with vision model...
+2026-08-17 15:21:39,879 WARNING agent.auxiliary_client: Auxiliary client: PAID lane engaged for auxiliary task — OpenRouter fallback model 'google/gemini-3.6-flash' is not a :free SKU and may incur real spend. Set auxiliary.free_only: true to restrict auxiliary fallbacks to free models, or auxiliary.openrouter_model to a :free model.
+2026-08-17 15:21:39,881 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 15:22:39.
+2026-08-17 15:21:39,885 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-17 15:21:39,885 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 15:22:39.
+2026-08-17 15:21:39,885 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-17 15:21:39,885 ERROR tools.vision_tools: Error analyzing image: No LLM provider configured for task=vision provider=auto. Run: hermes setup
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/tools/vision_tools.py", line 1511, in vision_analyze_tool
+    response = await async_call_llm(**call_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/auxiliary_client.py", line 3212, in wrapped
+    return await callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/auxiliary_client.py", line 9964, in async_call_llm
+    return await _async_call_llm_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/auxiliary_client.py", line 10036, in _async_call_llm_impl
+    raise RuntimeError(
+RuntimeError: No LLM provider configured for task=vision provider=auto. Run: hermes setup
+2026-08-17 15:21:39,911 INFO [20260815_102333_b288b938] run_agent: OpenAI client created (restore_primary, shared=True) thread=hermes-gateway_0:140553979156160 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:21:39,913 INFO [20260815_102333_b288b938] agent.agent_runtime_helpers: Primary runtime restored for new turn: deepseek-v4-flash (opencode)
+2026-08-17 15:21:39,913 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=deepseek-v4-flash provider=opencode platform=telegram history=302 msg="[The user sent an image but I couldn't quite see it this time (>_<) You can try ..."
+2026-08-17 15:21:39,924 INFO [20260815_102333_b288b938] agent.conversation_loop: Repaired 2 message-alternation violations before request (session=20260815_102333_b288b938)
+2026-08-17 15:21:39,940 INFO run_agent: OpenAI client closed (reuse_evict:chat_completion_stream_request, shared=False, tcp_force_closed=0) thread=Thread-17 (<lambda>):140553677174464 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:21:39,947 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-17 (<lambda>):140553677174464 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:21:41,062 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 343, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 424, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
+2026-08-17 15:21:41,064 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-17 (<lambda>):140553677174464 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-17 15:21:41,065 INFO [20260815_102333_b288b938] agent.credential_pool: credential pool: failed credential identity matched no opencode entry; rotating without marking any credential exhausted
+2026-08-17 15:21:41,065 INFO [20260815_102333_b288b938] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-17 15:21:41,065 WARNING [20260815_102333_b288b938] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=hermes-gateway_0:140553979156160 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash summary=HTTP 401: No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing
+2026-08-17 15:21:41,080 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback to ollama-cloud/gemma4:31b-cloud: clearing primary credential pool (pool_provider=opencode) to prevent cross-provider contamination
+2026-08-17 15:21:41,081 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback to ollama-cloud/gemma4:31b-cloud: attached fallback credential pool
+2026-08-17 15:21:41,085 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback gemma4:31b-cloud: reasoning_config resolved: None
+2026-08-17 15:21:41,085 INFO [20260815_102333_b288b938] agent.chat_completion_helpers: Fallback activated: deepseek-v4-flash → gemma4:31b-cloud (ollama-cloud)
+2026-08-17 15:21:41,106 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-18 (<lambda>):140553677174464 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud
+2026-08-17 15:21:49,870 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #2: model=gemma4:31b-cloud provider=ollama-cloud in=81224 out=68 total=81292 latency=8.8s
+2026-08-17 15:21:50,417 INFO tools.vision_tools: Analyzing image: /home/runner/.hermes/cache/images/img_e912fe95340a.jpg
+2026-08-17 15:21:50,417 INFO tools.vision_tools: User prompt: Fully describe and explain everything about this image, then answer the following question:
+
+Apa isi
+2026-08-17 15:21:50,419 INFO tools.vision_tools: Image ready (90.3 KB)
+2026-08-17 15:21:50,419 INFO tools.vision_tools: Converting image to base64...
+2026-08-17 15:21:50,420 INFO tools.vision_tools: Image converted to base64 (120.5 KB)
+2026-08-17 15:21:50,420 INFO tools.vision_tools: Processing image with vision model...
+2026-08-17 15:21:50,831 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 15:22:50.
+2026-08-17 15:21:50,833 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-17 15:21:50,833 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 15:22:50.
+2026-08-17 15:21:50,833 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-17 15:21:50,833 ERROR tools.vision_tools: Error analyzing image: No LLM provider configured for task=vision provider=auto. Run: hermes setup
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/tools/vision_tools.py", line 1511, in vision_analyze_tool
+    response = await async_call_llm(**call_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/auxiliary_client.py", line 3212, in wrapped
+    return await callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/auxiliary_client.py", line 9964, in async_call_llm
+    return await _async_call_llm_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/auxiliary_client.py", line 10036, in _async_call_llm_impl
+    raise RuntimeError(
+RuntimeError: No LLM provider configured for task=vision provider=auto. Run: hermes setup
+2026-08-17 15:21:50,836 WARNING [20260815_102333_b288b938] agent.tool_executor: Tool vision_analyze returned error (0.95s): {
+  "success": false,
+  "error": "Error analyzing image: No LLM provider configured for task=vision provider=auto. Run: hermes setup",
+  "analysis": "There was a problem with the request and the image
+2026-08-17 15:21:58,210 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=266896->246476 rss_anon_kib=231808->211388 threads=16 duration_ms=116.1
+2026-08-17 15:21:58,760 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #3: model=gemma4:31b-cloud provider=ollama-cloud in=81381 out=304 total=81685 latency=7.9s
+2026-08-17 15:21:58,766 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=2/500 budget=2/500 tool_turns=3 last_msg_role=assistant response_len=1148 session=20260815_102333_b288b938
+2026-08-17 15:21:58,791 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=bg-review:140553643611840 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud
+2026-08-17 15:21:58,801 INFO [20260815_102333_b288b938] agent.turn_context: conversation turn: session=20260815_102333_b288b938 model=gemma4:31b-cloud provider=ollama-cloud platform=telegram history=304 msg='Review the conversation above and consider saving to memory if appropriate.  Foc...'
+2026-08-17 15:21:58,810 INFO gateway.run: response ready: platform=telegram chat=6874843931 time=19.5s api_calls=2 response=1148 chars
+2026-08-17 15:21:58,820 INFO gateway.platforms.base: [Telegram] Sending response (1148 chars) to 6874843931
+2026-08-17 15:21:58,928 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-20 (<lambda>):140553995937472 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud
+2026-08-17 15:22:04,955 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #1: model=gemma4:31b-cloud provider=ollama-cloud in=81813 out=275 total=82088 latency=6.1s
+2026-08-17 15:22:04,963 WARNING [20260815_102333_b288b938] agent.tool_executor: Tool memory returned error (0.01s): {"success": false, "error": "After applying all 4 operations, memory would be at 2,004/1,375 chars -- over the limit. Remove or shorten more entries in the same batch (see current_entries below), then
+2026-08-17 15:22:12,528 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #2: model=gemma4:31b-cloud provider=ollama-cloud in=82466 out=235 total=82701 latency=7.6s
+2026-08-17 15:22:12,533 WARNING [20260815_102333_b288b938] agent.tool_executor: Tool memory returned error (0.00s): {"success": false, "error": "Operation 1 (replace): no entry matched 'User runs 'AZZAVISION AI' trading channel; refers to agent as 'Neng Lidya' (Human Touch Analyst) who provides analysis, psych supp
+2026-08-17 15:22:19,046 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #3: model=gemma4:31b-cloud provider=ollama-cloud in=82809 out=129 total=82938 latency=6.5s
+2026-08-17 15:22:19,052 INFO [20260815_102333_b288b938] agent.tool_executor: tool memory completed (0.00s, 209 chars)
+2026-08-17 15:22:25,711 INFO [20260815_102333_b288b938] agent.conversation_loop: API call #4: model=gemma4:31b-cloud provider=ollama-cloud in=83018 out=38 total=83056 latency=6.7s
+2026-08-17 15:22:25,712 INFO [20260815_102333_b288b938] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=4/16 budget=4/16 tool_turns=6 last_msg_role=assistant response_len=157 session=20260815_102333_b288b938
+2026-08-17 15:22:25,717 INFO [20260815_102333_b288b938] run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=bg-review:140553643611840 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud
+2026-08-17 15:22:25,717 INFO [20260815_102333_b288b938] run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=0) thread=bg-review:140553643611840 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud
+2026-08-17 15:22:25,824 INFO [20260815_102333_b288b938] hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=257140->249416 rss_anon_kib=222052->214328 threads=14 duration_ms=105.9
+2026-08-17 15:22:25,825 INFO [20260815_102333_b288b938] agent.background_review: Background review complete: thread=bg-review calls=4 in=330106 out=677 cache_read=0 result=memory
+2026-08-17 15:23:58,325 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256632->249492 rss_anon_kib=221544->214404 threads=12 duration_ms=106.5
