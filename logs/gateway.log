@@ -1633,3 +1633,5 @@
 2026-08-17 09:00:22,392 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38922 (idle=3796s)
 2026-08-17 09:00:22,393 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:6874843931:38372 (idle=3640s)
 2026-08-17 09:00:22,394 INFO gateway.run: Agent cache idle sweep: evicted 2 agent(s)
+2026-08-17 09:23:28,177 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:6874843931:38372 (173 chars)
+2026-08-17 09:23:28,181 INFO gateway.run: inbound message: platform=telegram user=Azas Crack chat=6874843931 msg='Ini kamu log apa? ⚠️ Hermes error: 2026-08-17 08:04:18,083 WARNING hermes_plugin' reply_to_id=2237 reply_to_text=''
