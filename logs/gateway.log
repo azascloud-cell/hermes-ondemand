@@ -2445,3 +2445,6 @@
 2026-08-18 08:28:56,840 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='2' reply_to_id=133 reply_to_text=''
 2026-08-18 08:31:52,101 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=175.3s api_calls=16 response=2744 chars
 2026-08-18 08:31:52,136 INFO gateway.platforms.base: [Telegram] Sending response (2744 chars) to 7699507804
+2026-08-18 08:36:22,588 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 08:37:25,745 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (5 chars)
+2026-08-18 08:37:25,749 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='boleh' reply_to_id=133 reply_to_text=''
