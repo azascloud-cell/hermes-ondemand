@@ -2061,3 +2061,31 @@
 2026-08-18 01:20:56,904 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
 2026-08-18 01:20:56,904 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 93 hidden (over 60 limit). Use /commands for full list.
 2026-08-18 01:21:01,835 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-18 01:32:09,531 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=4080, started_at=2026-08-18T01:20:44.352661+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-18T01:25:25.833043+00:00 last_mem={'rss_kib': 147272, 'mem_total_kib': 16373452, 'mem_available_kib': 15191860, 'swap_used_kib': 0} suspected_oom=False
+2026-08-18 01:32:09,570 INFO gateway.run: Starting Hermes Gateway...
+2026-08-18 01:32:09,570 INFO gateway.run: Session storage: /home/runner/.hermes/sessions
+2026-08-18 01:32:09,579 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-18 01:32:09,580 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-18 01:32:09,619 INFO gateway.run: Connecting to telegram...
+2026-08-18 01:32:09,621 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-18 01:32:09,804 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-18 01:32:09,804 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-18 01:32:09,816 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-18 01:32:10,217 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-18 01:32:20,909 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-18 01:32:20,914 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-18 01:32:21,205 INFO gateway.run: ✓ telegram connected
+2026-08-18 01:32:21,250 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-18 01:32:21,261 INFO gateway.run: Channel directory built: 12 target(s)
+2026-08-18 01:32:21,851 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-18 01:32:22,158 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-18 01:32:22,268 INFO gateway.run: Press Ctrl+C to stop
+2026-08-18 01:32:22,275 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/runner/.hermes/kanban/.dispatcher.lock)
+2026-08-18 01:32:22,276 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-08-18 01:32:22,285 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-18 01:32:22,465 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-18 01:32:22,465 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 93 hidden (over 60 limit). Use /commands for full list.
+2026-08-18 01:32:27,277 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-18 01:35:50,821 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804 → 1 (session_reset)
+2026-08-18 01:36:09,716 INFO gateway.platforms.base: [Telegram] Sending response (256 chars) to 7699507804
+2026-08-18 01:37:07,598 INFO gateway.platforms.base: [Telegram] Sending response (238 chars) to 7699507804
