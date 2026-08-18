@@ -4749,3 +4749,23 @@ telegram.error.TimedOut: Timed out
 2026-08-18 01:32:09,531 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=4080, started_at=2026-08-18T01:20:44.352661+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-18T01:25:25.833043+00:00 last_mem={'rss_kib': 147272, 'mem_total_kib': 16373452, 'mem_available_kib': 15191860, 'swap_used_kib': 0} suspected_oom=False
 2026-08-18 01:32:09,621 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
 2026-08-18 01:32:09,816 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-18 01:39:00,717 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:00,718 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:00,719 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:00,720 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:01,054 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:01,080 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:01,083 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:01,084 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:01,085 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:01,350 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,796 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,797 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,798 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,800 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,981 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,982 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,986 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,987 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,988 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:42,080 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn

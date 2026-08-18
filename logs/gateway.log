@@ -2089,3 +2089,20 @@
 2026-08-18 01:35:50,821 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804 → 1 (session_reset)
 2026-08-18 01:36:09,716 INFO gateway.platforms.base: [Telegram] Sending response (256 chars) to 7699507804
 2026-08-18 01:37:07,598 INFO gateway.platforms.base: [Telegram] Sending response (238 chars) to 7699507804
+2026-08-18 01:38:57,624 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7388 (44 chars)
+2026-08-18 01:38:57,631 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='hey,coba anlisis sinyal terakhir di schannel' reply_to_id=47 reply_to_text=''
+2026-08-18 01:39:02,008 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
+2026-08-18 01:39:05,857 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7388 -> 'Analisis sinyal terakhir schannel'
+2026-08-18 01:39:16,581 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=19.0s api_calls=4 response=572 chars
+2026-08-18 01:39:16,597 INFO gateway.platforms.base: [Telegram] Sending response (572 chars) to 7699507804
+2026-08-18 01:39:41,743 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7388 (29 chars)
+2026-08-18 01:39:41,748 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='tapi kamu admin di channelnya' reply_to_id=47 reply_to_text=''
+2026-08-18 01:39:46,095 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=4.3s api_calls=1 response=693 chars
+2026-08-18 01:39:46,103 INFO gateway.platforms.base: [Telegram] Sending response (693 chars) to 7699507804
+2026-08-18 01:41:27,471 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_f768bc8a0051.jpg
+2026-08-18 01:41:27,713 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7388 (848 chars)
+2026-08-18 01:41:27,717 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='━━━━━━━━━━━━━━━━━━━━ ⚡ AZZAVISION AI — TRADE SCANNER ━━━━━━━━━━━━━━━━━━━━  🕐 Sel' reply_to_id=47 reply_to_text=''
+2026-08-18 01:41:28,273 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:7699507804:7388:photo-burst with 1 image(s)
+2026-08-18 01:41:28,475 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-18 01:41:34,250 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=6.5s api_calls=1 response=1840 chars
+2026-08-18 01:41:34,259 INFO gateway.platforms.base: [Telegram] Sending response (1840 chars) to 7699507804

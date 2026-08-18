@@ -15063,3 +15063,77 @@ telegram.error.TimedOut: Timed out
 2026-08-18 01:36:09,716 INFO gateway.platforms.base: [Telegram] Sending response (256 chars) to 7699507804
 2026-08-18 01:36:22,548 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=184900->177280 rss_anon_kib=159500->151880 threads=11 duration_ms=63.8
 2026-08-18 01:37:07,598 INFO gateway.platforms.base: [Telegram] Sending response (238 chars) to 7699507804
+2026-08-18 01:37:22,611 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=181180->177128 rss_anon_kib=155780->151728 threads=11 duration_ms=62.8
+2026-08-18 01:38:22,678 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=188808->180856 rss_anon_kib=163408->155456 threads=11 duration_ms=65.9
+2026-08-18 01:38:57,624 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7388 (44 chars)
+2026-08-18 01:38:57,631 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='hey,coba anlisis sinyal terakhir di schannel' reply_to_id=47 reply_to_text=''
+2026-08-18 01:38:58,793 INFO run_agent: Loaded environment variables from /home/runner/.hermes/.env
+2026-08-18 01:39:00,715 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:139820613490368 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-18 01:39:00,717 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:00,718 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:00,719 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:00,720 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:01,054 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:01,080 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:01,083 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:01,084 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:01,085 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:01,087 INFO tools.lazy_deps: Lazy-installing edge-tts==7.2.7 for feature 'tts.edge'
+2026-08-18 01:39:01,234 INFO tools.lazy_deps: Lazy install complete for feature 'tts.edge'
+2026-08-18 01:39:01,340 INFO agent.auxiliary_client: Vision auto-detect: using main provider ollama-cloud (gemma4:31b-cloud)
+2026-08-18 01:39:01,350 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:01,423 INFO [20260818_013857_99e8aea4] agent.turn_context: conversation turn: session=20260818_013857_99e8aea4 model=gemma4:31b-cloud provider=ollama-cloud platform=telegram history=0 msg='hey,coba anlisis sinyal terakhir di schannel'
+2026-08-18 01:39:01,970 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider ollama-cloud (gemma4:31b-cloud)
+2026-08-18 01:39:01,970 INFO agent.auxiliary_client: Auxiliary title_generation: using ollama-cloud (gemma4:31b-cloud) at https://ollama.com/v1/
+2026-08-18 01:39:02,008 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
+2026-08-18 01:39:02,147 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-15 (<lambda>):139820043073216 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-18 01:39:03,713 INFO [20260818_013857_99e8aea4] agent.conversation_loop: API call #1: model=gemma4:31b-cloud provider=ollama-cloud in=18432 out=18 total=18450 latency=1.8s
+2026-08-18 01:39:03,823 INFO [20260818_013857_99e8aea4] agent.tool_executor: tool session_search completed (0.01s, 147 chars)
+2026-08-18 01:39:04,584 INFO [20260818_013857_99e8aea4] agent.conversation_loop: API call #2: model=gemma4:31b-cloud provider=ollama-cloud in=18503 out=24 total=18527 latency=0.8s
+2026-08-18 01:39:04,591 INFO [20260818_013857_99e8aea4] agent.tool_executor: tool session_search completed (0.00s, 145 chars)
+2026-08-18 01:39:05,857 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7388 -> 'Analisis sinyal terakhir schannel'
+2026-08-18 01:39:06,926 INFO [20260818_013857_99e8aea4] agent.conversation_loop: API call #3: model=gemma4:31b-cloud provider=ollama-cloud in=18582 out=184 total=18766 latency=2.3s
+2026-08-18 01:39:14,101 INFO [20260818_013857_99e8aea4] agent.tool_executor: tool browser_exec completed (7.17s, 1002 chars)
+2026-08-18 01:39:16,531 INFO [20260818_013857_99e8aea4] agent.conversation_loop: API call #4: model=gemma4:31b-cloud provider=ollama-cloud in=19143 out=160 total=19303 latency=2.4s
+2026-08-18 01:39:16,538 INFO [20260818_013857_99e8aea4] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=4/500 budget=4/500 tool_turns=3 last_msg_role=assistant response_len=572 session=20260818_013857_99e8aea4
+2026-08-18 01:39:16,581 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=19.0s api_calls=4 response=572 chars
+2026-08-18 01:39:16,597 INFO gateway.platforms.base: [Telegram] Sending response (572 chars) to 7699507804
+2026-08-18 01:39:22,789 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=271944->239248 rss_anon_kib=236900->204204 threads=13 duration_ms=110.9
+2026-08-18 01:39:41,743 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7388 (29 chars)
+2026-08-18 01:39:41,748 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='tapi kamu admin di channelnya' reply_to_id=47 reply_to_text=''
+2026-08-18 01:39:41,794 INFO [20260818_013857_99e8aea4] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:139820613490368 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-18 01:39:41,796 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,797 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,798 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,800 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,981 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,982 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,986 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,987 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:41,988 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:42,069 INFO [20260818_013857_99e8aea4] agent.auxiliary_client: Vision auto-detect: using main provider ollama-cloud (gemma4:31b-cloud)
+2026-08-18 01:39:42,080 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-18 01:39:42,095 INFO [20260818_013857_99e8aea4] agent.turn_context: conversation turn: session=20260818_013857_99e8aea4 model=gemma4:31b-cloud provider=ollama-cloud platform=telegram history=8 msg='tapi kamu admin di channelnya'
+2026-08-18 01:39:42,252 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-19 (<lambda>):139820345054912 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-18 01:39:46,047 INFO [20260818_013857_99e8aea4] agent.conversation_loop: API call #1: model=gemma4:31b-cloud provider=ollama-cloud in=19370 out=178 total=19548 latency=3.9s
+2026-08-18 01:39:46,052 INFO [20260818_013857_99e8aea4] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=1/500 budget=1/500 tool_turns=3 last_msg_role=assistant response_len=693 session=20260818_013857_99e8aea4
+2026-08-18 01:39:46,095 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=4.3s api_calls=1 response=693 chars
+2026-08-18 01:39:46,103 INFO gateway.platforms.base: [Telegram] Sending response (693 chars) to 7699507804
+2026-08-18 01:40:22,893 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=243832->240376 rss_anon_kib=208788->205332 threads=12 duration_ms=102.8
+2026-08-18 01:41:23,003 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=241584->240140 rss_anon_kib=206540->205096 threads=12 duration_ms=101.1
+2026-08-18 01:41:27,471 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/runner/.hermes/cache/images/img_f768bc8a0051.jpg
+2026-08-18 01:41:27,713 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7388 (848 chars)
+2026-08-18 01:41:27,717 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='━━━━━━━━━━━━━━━━━━━━ ⚡ AZZAVISION AI — TRADE SCANNER ━━━━━━━━━━━━━━━━━━━━  🕐 Sel' reply_to_id=47 reply_to_text=''
+2026-08-18 01:41:27,742 INFO [20260818_013857_99e8aea4] agent.turn_context: conversation turn: session=20260818_013857_99e8aea4 model=gemma4:31b-cloud provider=ollama-cloud platform=telegram history=10 msg='━━━━━━━━━━━━━━━━━━━━ ⚡ AZZAVISION AI — TRADE SCANNER ━━━━━━━━━━━━━━━━━━━━  🕐 Sel...'
+2026-08-18 01:41:28,273 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:7699507804:7388:photo-burst with 1 image(s)
+2026-08-18 01:41:28,350 INFO [20260818_013857_99e8aea4] run_agent: OpenAI client aborted (stream_interrupt_abort, shared=False, tcp_force_closed=1, deferred_close=stranger_thread) thread=hermes-gateway_0:139820613490368 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-18 01:41:28,352 INFO [20260818_013857_99e8aea4] agent.conversation_loop: Turn ended: reason=interrupted_during_api_call model=gemma4:31b-cloud api_calls=1/500 budget=1/500 tool_turns=3 last_msg_role=user response_len=65 session=20260818_013857_99e8aea4
+2026-08-18 01:41:28,354 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-20 (<lambda>):139820345054912 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-18 01:41:28,475 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-18 01:41:29,062 INFO [20260818_013857_99e8aea4] agent.turn_context: conversation turn: session=20260818_013857_99e8aea4 model=gemma4:31b-cloud provider=ollama-cloud platform=telegram history=11 msg='[1 image] What do you see in this image?  [Image attached at: /home/runner/.herm...'
+2026-08-18 01:41:29,170 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-21 (<lambda>):139820361836224 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-18 01:41:34,207 INFO [20260818_013857_99e8aea4] agent.conversation_loop: API call #2: model=gemma4:31b-cloud provider=ollama-cloud in=20156 out=595 total=20751 latency=5.1s
+2026-08-18 01:41:34,212 INFO [20260818_013857_99e8aea4] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=1/500 budget=1/500 tool_turns=3 last_msg_role=assistant response_len=1840 session=20260818_013857_99e8aea4
+2026-08-18 01:41:34,250 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=6.5s api_calls=1 response=1840 chars
+2026-08-18 01:41:34,259 INFO gateway.platforms.base: [Telegram] Sending response (1840 chars) to 7699507804
+2026-08-18 01:42:23,117 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264240->244096 rss_anon_kib=229196->209020 threads=12 duration_ms=113.3
