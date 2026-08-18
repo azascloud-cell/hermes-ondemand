@@ -2658,3 +2658,6 @@ telegram.error.BadRequest: Chat not found
 2026-08-18 19:50:30,376 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 96 hidden (over 60 limit). Use /commands for full list.
 2026-08-18 19:50:35,026 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
 2026-08-18 20:13:09,951 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 20:22:19,030 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: httpx.ReadError: 
+2026-08-18 20:22:19,031 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: httpx.ReadError: 
+2026-08-18 20:22:24,995 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress
