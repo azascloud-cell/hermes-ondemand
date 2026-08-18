@@ -17803,3 +17803,189 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-18 08:47:50,509 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-274 (<lambda>):140374160963264 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
 2026-08-18 08:47:56,318 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #8: model=nemotron-3-ultra-free provider=opencode-zen in=108520 out=1065 total=109585 latency=80.7s cache=105200/108520 (97%)
 2026-08-18 08:47:56,335 WARNING [20260818_074952_04ef3f0b] agent.tool_executor: Tool skill_manage returned error (0.02s): {"success": false, "error": "Description is 81 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript
+2026-08-18 08:48:18,952 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=279116->272652 rss_anon_kib=243992->237528 threads=20 duration_ms=110.5
+2026-08-18 08:48:24,018 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #9: model=nemotron-3-ultra-free provider=opencode-zen in=109664 out=1067 total=110731 latency=27.7s cache=105200/109664 (96%)
+2026-08-18 08:48:24,028 WARNING [20260818_074952_04ef3f0b] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Description is 73 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript
+2026-08-18 08:48:38,074 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #1: model=nemotron-3-ultra-free provider=opencode-zen in=100658 out=1101 total=101759 latency=47.6s cache=88368/100658 (88%)
+2026-08-18 08:48:38,082 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=1/500 budget=1/500 tool_turns=53 last_msg_role=assistant response_len=3207 session=20260818_074952_04ef3f0b
+2026-08-18 08:48:38,097 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=48.2s api_calls=1 response=3207 chars
+2026-08-18 08:48:38,107 INFO gateway.platforms.base: [Telegram] Sending response (3207 chars) to 7699507804
+2026-08-18 08:49:15,842 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #10: model=nemotron-3-ultra-free provider=opencode-zen in=110807 out=1181 total=111988 latency=51.8s cache=105200/110807 (95%)
+2026-08-18 08:49:15,854 WARNING [20260818_074952_04ef3f0b] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Description is 64 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript
+2026-08-18 08:49:19,057 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=275740->269092 rss_anon_kib=240616->233968 threads=17 duration_ms=104.8
+2026-08-18 08:50:07,960 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #11: model=nemotron-3-ultra-free provider=opencode-zen in=112009 out=1060 total=113069 latency=52.1s cache=109408/112009 (98%)
+2026-08-18 08:50:08,148 WARNING [20260818_074952_04ef3f0b] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Description is 68 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript
+2026-08-18 08:50:12,565 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (13 chars)
+2026-08-18 08:50:12,569 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='hapus aja deh' reply_to_id=133 reply_to_text=''
+2026-08-18 08:50:12,620 INFO [20260818_074952_04ef3f0b] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:50:12,626 WARNING [20260818_074952_04ef3f0b] agent.relay_runtime: Skipping Relay instrumentation for concurrent Hermes turn 20260818_074952_04ef3f0b:20260818_074952_04ef3f0b:74bbc77f in session 20260818_074952_04ef3f0b
+2026-08-18 08:50:12,627 INFO [20260818_074952_04ef3f0b] agent.turn_context: conversation turn: session=20260818_074952_04ef3f0b model=deepseek-v4-flash-free provider=opencode-zen platform=telegram history=124 msg='hapus aja deh'
+2026-08-18 08:50:12,655 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-279 (<lambda>):140373607311040 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:50:13,072 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-18 08:50:13,078 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-279 (<lambda>):140373607311040 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:50:13,079 WARNING [20260818_074952_04ef3f0b] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-18 08:50:13,082 INFO [20260818_074952_04ef3f0b] root: Rate-limit backoff level 0: cooldown 60 s (1.0 min, backoff#1)
+2026-08-18 08:50:13,082 WARNING [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback skip: chain entry opencode-zen/deepseek-v4-flash-free resolves to the same backend as the current one (https://opencode.ai/zen/v1)
+2026-08-18 08:50:13,082 INFO [20260818_074952_04ef3f0b] root: Rate-limit backoff level 1: cooldown 120 s (2.0 min, backoff#2)
+2026-08-18 08:50:13,094 INFO [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback nemotron-3-ultra-free: reasoning_config resolved: None
+2026-08-18 08:50:13,094 INFO [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback activated: deepseek-v4-flash-free → nemotron-3-ultra-free (opencode-zen)
+2026-08-18 08:50:13,111 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-280 (<lambda>):140373607311040 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:50:14,529 INFO cron.scheduler: Running job 'Hermes Gateway Monitor (5 menit)' (ID: 3a44145b87ad)
+2026-08-18 08:50:14,529 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-18 08:50:14,529 INFO cron.scheduler: Job '3a44145b87ad': using workdir /home/runner
+2026-08-18 08:50:14,541 INFO cron.scheduler: Job '3a44145b87ad': loaded credential pool for provider opencode-zen with 1 entries
+2026-08-18 08:50:14,569 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=cron-seq_0:140373875746496 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:50:14,573 INFO [cron_3a44145b87ad_20260818_085014] agent.turn_context: conversation turn: session=cron_3a44145b87ad_20260818_085014 model=deepseek-v4-flash-free provider=opencode-zen platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-08-18 08:50:14,592 INFO [cron_3a44145b87ad_20260818_085014] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-103_0:140373489874624 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:50:14,858 INFO [cron_3a44145b87ad_20260818_085014] run_agent: OpenAI client closed (request_error_cleanup, shared=False, tcp_force_closed=1) thread=ThreadPoolExecutor-103_0:140373489874624 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:50:14,859 WARNING [cron_3a44145b87ad_20260818_085014] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=ThreadPoolExecutor-103_0:140373489874624 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-18 08:50:14,859 INFO [cron_3a44145b87ad_20260818_085014] root: Rate-limit backoff level 0: cooldown 60 s (1.0 min, backoff#1)
+2026-08-18 08:50:14,859 WARNING [cron_3a44145b87ad_20260818_085014] agent.chat_completion_helpers: Fallback skip: chain entry opencode-zen/deepseek-v4-flash-free resolves to the same backend as the current one (https://opencode.ai/zen/v1)
+2026-08-18 08:50:14,859 INFO [cron_3a44145b87ad_20260818_085014] root: Rate-limit backoff level 1: cooldown 120 s (2.0 min, backoff#2)
+2026-08-18 08:50:14,869 INFO [cron_3a44145b87ad_20260818_085014] agent.chat_completion_helpers: Fallback nemotron-3-ultra-free: reasoning_config resolved: None
+2026-08-18 08:50:14,870 INFO [cron_3a44145b87ad_20260818_085014] agent.chat_completion_helpers: Fallback activated: deepseek-v4-flash-free → nemotron-3-ultra-free (opencode-zen)
+2026-08-18 08:50:14,879 INFO [cron_3a44145b87ad_20260818_085014] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-103_0:140373489874624 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:50:17,620 INFO [cron_3a44145b87ad_20260818_085014] agent.conversation_loop: API call #1: model=nemotron-3-ultra-free provider=opencode-zen in=15371 out=94 total=15465 latency=2.7s cache=12624/15371 (82%)
+2026-08-18 08:50:17,713 INFO [cron_3a44145b87ad_20260818_085014] agent.tool_executor: tool terminal completed (0.09s, 105 chars)
+2026-08-18 08:50:18,643 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #1: model=nemotron-3-ultra-free provider=opencode-zen in=101714 out=116 total=101830 latency=5.5s cache=96784/101714 (95%)
+2026-08-18 08:50:18,653 INFO [20260818_074952_04ef3f0b] agent.tool_executor: tool cronjob completed (0.01s, 238 chars)
+2026-08-18 08:50:18,660 INFO [20260818_074952_04ef3f0b] agent.tool_executor: tool cronjob completed (0.01s, 218 chars)
+2026-08-18 08:50:19,169 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=300264->279592 rss_anon_kib=265140->244468 threads=26 duration_ms=103.9
+2026-08-18 08:50:22,339 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #2: model=nemotron-3-ultra-free provider=opencode-zen in=101988 out=107 total=102095 latency=3.7s cache=96784/101988 (95%)
+2026-08-18 08:50:22,420 INFO agent.auxiliary_client: Auxiliary approval: using opencode-zen (deepseek-v4-flash-free) at https://opencode.ai/zen/v1/
+2026-08-18 08:50:22,916 INFO agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=429), rotating
+2026-08-18 08:50:22,916 INFO agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-18 08:50:22,916 INFO agent.auxiliary_client: Auxiliary approval: rate limit on auto (Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}), trying fallback
+2026-08-18 08:50:22,930 INFO agent.auxiliary_client: Auxiliary approval: rate limit on auto — main fallback chain to fallback_providers[3](groq) (openai/gpt-oss-120b)
+2026-08-18 08:50:23,853 INFO [20260818_074952_04ef3f0b] agent.tool_executor: tool terminal completed (1.51s, 244 chars)
+2026-08-18 08:50:30,830 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #3: model=nemotron-3-ultra-free provider=opencode-zen in=102107 out=253 total=102360 latency=7.0s cache=100992/102107 (99%)
+2026-08-18 08:50:30,835 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=3/500 budget=3/500 tool_turns=55 last_msg_role=assistant response_len=577 session=20260818_074952_04ef3f0b
+2026-08-18 08:50:30,841 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=18.3s api_calls=3 response=577 chars
+2026-08-18 08:50:30,851 INFO gateway.platforms.base: [Telegram] Sending response (577 chars) to 7699507804
+2026-08-18 08:50:40,034 INFO [cron_3a44145b87ad_20260818_085014] agent.conversation_loop: API call #2: model=nemotron-3-ultra-free provider=opencode-zen in=15532 out=73 total=15605 latency=22.3s cache=12624/15532 (81%)
+2026-08-18 08:50:40,092 INFO [cron_3a44145b87ad_20260818_085014] agent.tool_executor: tool terminal completed (0.06s, 483 chars)
+2026-08-18 08:50:43,602 INFO [cron_3a44145b87ad_20260818_085014] agent.conversation_loop: API call #3: model=nemotron-3-ultra-free provider=opencode-zen in=15774 out=90 total=15864 latency=3.5s cache=12624/15774 (80%)
+2026-08-18 08:50:43,662 INFO [cron_3a44145b87ad_20260818_085014] agent.tool_executor: tool terminal completed (0.06s, 483 chars)
+2026-08-18 08:50:48,101 INFO [cron_3a44145b87ad_20260818_085014] agent.conversation_loop: API call #4: model=nemotron-3-ultra-free provider=opencode-zen in=16033 out=65 total=16098 latency=4.4s cache=12624/16033 (79%)
+2026-08-18 08:50:48,142 WARNING [cron_3a44145b87ad_20260818_085014] agent.tool_executor: Tool read_file returned error (0.04s): {"content": "", "total_lines": 0, "file_size": 0, "truncated": false, "is_binary": false, "is_image": false, "error": "File not found: /home/runner/gateway_monitor.sh"}
+2026-08-18 08:50:50,519 INFO [cron_3a44145b87ad_20260818_085014] agent.conversation_loop: API call #5: model=nemotron-3-ultra-free provider=opencode-zen in=16169 out=56 total=16225 latency=2.4s cache=12624/16169 (78%)
+2026-08-18 08:50:50,578 WARNING [cron_3a44145b87ad_20260818_085014] agent.tool_executor: Tool terminal returned error (0.06s): {"output": "", "exit_code": 1, "error": null, "exit_code_meaning": "No matches found (not an error)"}
+2026-08-18 08:50:54,413 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #12: model=nemotron-3-ultra-free provider=opencode-zen in=113213 out=1038 total=114251 latency=46.3s cache=100992/113213 (89%)
+2026-08-18 08:50:54,424 WARNING [20260818_074952_04ef3f0b] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Description is 65 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript
+2026-08-18 08:51:04,126 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (40 chars)
+2026-08-18 08:51:04,130 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='bagaimana kondisi cronjob lain?apa aktif' reply_to_id=133 reply_to_text=''
+2026-08-18 08:51:04,179 INFO [20260818_074952_04ef3f0b] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:51:04,185 WARNING [20260818_074952_04ef3f0b] agent.relay_runtime: Skipping Relay instrumentation for concurrent Hermes turn 20260818_074952_04ef3f0b:20260818_074952_04ef3f0b:d20caab6 in session 20260818_074952_04ef3f0b
+2026-08-18 08:51:04,186 INFO [20260818_074952_04ef3f0b] agent.turn_context: conversation turn: session=20260818_074952_04ef3f0b model=deepseek-v4-flash-free provider=opencode-zen platform=telegram history=131 msg='bagaimana kondisi cronjob lain?apa aktif'
+2026-08-18 08:51:04,215 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-299 (<lambda>):140373271766720 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:51:04,865 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-18 08:51:04,875 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-299 (<lambda>):140373271766720 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:51:04,876 WARNING [20260818_074952_04ef3f0b] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-18 08:51:04,876 INFO [20260818_074952_04ef3f0b] root: Rate-limit backoff level 0: cooldown 60 s (1.0 min, backoff#1)
+2026-08-18 08:51:04,876 WARNING [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback skip: chain entry opencode-zen/deepseek-v4-flash-free resolves to the same backend as the current one (https://opencode.ai/zen/v1)
+2026-08-18 08:51:04,876 INFO [20260818_074952_04ef3f0b] root: Rate-limit backoff level 1: cooldown 120 s (2.0 min, backoff#2)
+2026-08-18 08:51:04,886 INFO [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback nemotron-3-ultra-free: reasoning_config resolved: None
+2026-08-18 08:51:04,886 INFO [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback activated: deepseek-v4-flash-free → nemotron-3-ultra-free (opencode-zen)
+2026-08-18 08:51:04,904 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-300 (<lambda>):140373271766720 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:51:05,996 INFO [cron_3a44145b87ad_20260818_085014] agent.conversation_loop: API call #6: model=nemotron-3-ultra-free provider=opencode-zen in=16273 out=71 total=16344 latency=15.4s cache=12624/16273 (78%)
+2026-08-18 08:51:06,348 INFO [cron_3a44145b87ad_20260818_085014] agent.tool_executor: tool search_files completed (0.35s, 18 chars)
+2026-08-18 08:51:08,394 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #1: model=nemotron-3-ultra-free provider=opencode-zen in=102349 out=60 total=102409 latency=3.5s cache=100992/102349 (99%)
+2026-08-18 08:51:08,400 INFO [20260818_074952_04ef3f0b] agent.tool_executor: tool cronjob completed (0.00s, 2420 chars)
+2026-08-18 08:51:08,525 INFO [cron_3a44145b87ad_20260818_085014] agent.conversation_loop: API call #7: model=nemotron-3-ultra-free provider=opencode-zen in=16367 out=71 total=16438 latency=2.2s cache=12624/16367 (77%)
+2026-08-18 08:51:08,583 WARNING [cron_3a44145b87ad_20260818_085014] agent.tool_executor: Tool terminal returned error (0.05s): {"output": "", "exit_code": 1, "error": null}
+2026-08-18 08:51:11,516 INFO [cron_3a44145b87ad_20260818_085014] agent.conversation_loop: API call #8: model=nemotron-3-ultra-free provider=opencode-zen in=16470 out=59 total=16529 latency=2.9s cache=12624/16470 (77%)
+2026-08-18 08:51:11,592 WARNING [cron_3a44145b87ad_20260818_085014] agent.tool_executor: Tool terminal returned error (0.07s): {"output": "/usr/bin/bash: line 4: /home/runner/gateway_monitor.sh: No such file or directory", "exit_code": 127, "error": null}
+
+[Tool loop warning: same_tool_failure_warning; count=3; terminal has f
+2026-08-18 08:51:14,524 WARNING cron.scheduler: Job '3a44145b87ad': fire claim ownership lost; interrupting stale run
+2026-08-18 08:51:14,575 INFO run_agent: OpenAI client aborted (interrupt_abort, shared=False, tcp_force_closed=1, deferred_close=stranger_thread) thread=cron-seq_0:140373875746496 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:51:14,575 ERROR cron.scheduler: Job 'Hermes Gateway Monitor (5 menit)' failed: RuntimeError: Cron job 'Hermes Gateway Monitor (5 menit)' lost its durable fire claim ownership
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/cron/scheduler.py", line 5677, in run_job
+    _abort_if_fire_claim_lost()
+  File "/home/runner/.hermes/hermes-agent/cron/scheduler.py", line 5620, in _abort_if_fire_claim_lost
+    raise RuntimeError(
+RuntimeError: Cron job 'Hermes Gateway Monitor (5 menit)' lost its durable fire claim ownership
+2026-08-18 08:51:14,580 INFO [cron_3a44145b87ad_20260818_085014] run_agent: OpenAI client closed (request_error_cleanup, shared=False, tcp_force_closed=0) thread=ThreadPoolExecutor-103_0:140373489874624 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:51:14,584 INFO [cron_3a44145b87ad_20260818_085014] agent.conversation_loop: Turn ended: reason=interrupted_during_api_call model=nemotron-3-ultra-free api_calls=9/500 budget=9/500 tool_turns=8 last_msg_role=assistant response_len=65 session=cron_3a44145b87ad_20260818_085014
+2026-08-18 08:51:14,595 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-cleanup-3a44145b87ad:140373288548032 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:51:14,706 INFO hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=300368->282276 rss_anon_kib=265244->247152 threads=22 duration_ms=109.2
+2026-08-18 08:51:22,593 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #13: model=nemotron-3-ultra-free provider=opencode-zen in=114418 out=1116 total=115534 latency=28.2s cache=109408/114418 (96%)
+2026-08-18 08:51:22,622 INFO [20260818_074952_04ef3f0b] agent.tool_executor: tool skill_manage completed (0.03s, 1038 chars)
+2026-08-18 08:51:32,921 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #14: model=nemotron-3-ultra-free provider=opencode-zen in=115715 out=114 total=115829 latency=10.3s cache=109408/115715 (95%)
+2026-08-18 08:51:32,934 WARNING [20260818_074952_04ef3f0b] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Refusing background curator patch for skill 'hermes-gateway-resilience': the current SKILL.md content has not been loaded in this review turn. Call skill_view(name) for SK
+2026-08-18 08:51:34,749 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #2: model=nemotron-3-ultra-free provider=opencode-zen in=103252 out=1248 total=104500 latency=26.3s cache=100992/103252 (98%)
+2026-08-18 08:51:34,756 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=2/500 budget=2/500 tool_turns=56 last_msg_role=assistant response_len=1950 session=20260818_074952_04ef3f0b
+2026-08-18 08:51:34,782 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=bg-review:140373254985408 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:51:34,785 WARNING agent.relay_runtime: Skipping Relay instrumentation for concurrent Hermes turn 20260818_074952_04ef3f0b:2a2f791e-3a49-487d-9e3c-c95e56d417b8:048ade1b in session 20260818_074952_04ef3f0b
+2026-08-18 08:51:34,785 INFO [20260818_074952_04ef3f0b] agent.turn_context: conversation turn: session=20260818_074952_04ef3f0b model=nemotron-3-ultra-free provider=opencode-zen platform=telegram history=135 msg='Review the conversation above and consider saving to memory if appropriate.  Foc...'
+2026-08-18 08:51:34,800 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=30.7s api_calls=2 response=1950 chars
+2026-08-18 08:51:34,807 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-314 (<lambda>):140373607311040 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:51:34,840 INFO gateway.platforms.base: [Telegram] Sending response (1950 chars) to 7699507804
+2026-08-18 08:51:41,148 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #15: model=nemotron-3-ultra-free provider=opencode-zen in=115880 out=76 total=115956 latency=8.2s cache=113616/115880 (98%)
+2026-08-18 08:51:41,192 INFO [20260818_074952_04ef3f0b] agent.tool_executor: tool skill_view completed (0.04s, 4484 chars)
+2026-08-18 08:51:41,193 WARNING [20260818_074952_04ef3f0b] agent.conversation_loop: Turn ended with pending tool result (agent may appear stuck). Turn ended: reason=unknown model=nemotron-3-ultra-free api_calls=16/16 budget=16/16 tool_turns=68 last_msg_role=tool response_len=0 session=20260818_074952_04ef3f0b last_tool=skill_view
+2026-08-18 08:51:41,201 INFO [20260818_074952_04ef3f0b] run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=bg-review:140373624092352 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:51:41,201 INFO [20260818_074952_04ef3f0b] run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=0) thread=bg-review:140373624092352 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:51:41,320 INFO [20260818_074952_04ef3f0b] hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=289396->282316 rss_anon_kib=254272->247192 threads=19 duration_ms=118.7
+2026-08-18 08:51:41,322 INFO [20260818_074952_04ef3f0b] agent.background_review: Background review complete: thread=bg-review calls=15 in=172201 out=13652 cache_read=1455968 result=skill
+2026-08-18 08:51:49,292 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #1: model=nemotron-3-ultra-free provider=opencode-zen in=104187 out=420 total=104607 latency=14.5s cache=100992/104187 (97%)
+2026-08-18 08:51:49,293 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=1/16 budget=1/16 tool_turns=56 last_msg_role=assistant response_len=300 session=20260818_074952_04ef3f0b
+2026-08-18 08:51:49,297 INFO [20260818_074952_04ef3f0b] run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=bg-review:140373254985408 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:51:49,297 INFO [20260818_074952_04ef3f0b] run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=0) thread=bg-review:140373254985408 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:51:49,401 INFO [20260818_074952_04ef3f0b] hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=282472->280100 rss_anon_kib=247348->244976 threads=17 duration_ms=103.3
+2026-08-18 08:51:49,402 INFO [20260818_074952_04ef3f0b] agent.background_review: Background review complete: thread=bg-review calls=1 in=3195 out=420 cache_read=100992 result=none
