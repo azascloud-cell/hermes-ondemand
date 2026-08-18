@@ -6709,3 +6709,41 @@ openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: In
 2026-08-18 11:06:50,144 WARNING [20260818_105728_e90ffc44] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
 2026-08-18 11:06:50,144 WARNING [20260818_105728_e90ffc44] agent.conversation_loop: Retrying API call in 2.868854062341047s (attempt 1/3) thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
 2026-08-18 11:06:53,781 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 11:07:40,866 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4038, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 641, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 11:07:40,873 WARNING [20260818_105728_e90ffc44] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 11:07:40,873 WARNING [20260818_105728_e90ffc44] agent.conversation_loop: Retrying API call in 2.235586986091503s (attempt 1/3) thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 11:07:45,108 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4038, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 641, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 11:07:45,113 WARNING [20260818_105728_e90ffc44] agent.conversation_loop: API call failed (attempt 2/3) error_type=APIError thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 11:07:45,113 WARNING [20260818_105728_e90ffc44] agent.conversation_loop: Retrying API call in 5.296528483665852s (attempt 2/3) thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
