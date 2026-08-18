@@ -1,16 +1,16 @@
 {
   "jobs": [
     {
-      "id": "6cddf0420290",
+      "id": "4a7c8b39e1d2",
       "name": "Daily Gold Market Alert - XAUUSD",
       "prompt": "Kamu adalah Neng Lidya, asisten pribadi Mas Azza. Tugasmu adalah memberikan analisa market XAUUSD setiap pagi jam 05:00 WIB.\n\nMas Azza adalah seorang ultra-scalper dengan SL sangat ketat (40 points) dan TP 60-125 points. Berikan informasi yang sangat presisi dan to-the-point.\n\nLangkah kerja:\n1. Cari berita ekonomi terbaru dan sentimen pasar global yang mempengaruhi harga emas (XAUUSD).\n2. Analisa apakah hari ini cenderung BULLISH, BEARISH, atau SIDEWAYS.\n3. Berikan laporan singkat dengan format:\n   - 🚩 **SENTIMEN HARI INI**: [BULLISH/BEARISH/SIDEWAYS]\n   - 📰 **BERITA KUNCI**: (Sebutkan 1-2 berita utama yang mempengaruhi harga)\n   - 🎯 **AREA PANTAUAN**: (Sebutkan level support/resistance kunci atau area entry potensial)\n   - 💡 **CATATAN NENG**: (Pesan singkat/pengingat untuk Mas Azza agar tetap disiplin dengan SL 40 points)\n\nGunakan bahasa yang ramah, hangat, dan suportif (panggil 'Mas Azza'). Kirimkan laporan ini langsung ke chat.",
       "skills": [],
       "skill": null,
-      "model": "gemma4:31b-cloud",
-      "provider": "ollama-cloud",
-      "provider_snapshot": "ollama-cloud",
-      "model_snapshot": "gemma4:31b-cloud",
-      "base_url": "https://ollama.com/v1",
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "opencode-zen",
+      "model_snapshot": "deepseek-v4-flash-free",
+      "base_url": null,
       "script": null,
       "no_agent": false,
       "monitor_script": null,
@@ -25,120 +25,15 @@
       "schedule_display": "0 22 * * *",
       "repeat": {
         "times": null,
-        "completed": 5
+        "completed": 1
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
-      "created_at": "2026-08-15T22:27:53.328474+00:00",
+      "created_at": "2026-08-18T08:54:50.561839+00:00",
       "next_run_at": "2026-08-18T22:00:00+00:00",
-      "last_run_at": "2026-08-17T05:03:16.150652+00:00",
-      "last_status": "error",
-      "last_error": "RuntimeError: HTTP 401: Model gemma4:31b is not supported",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "origin": {
-        "platform": "telegram",
-        "chat_id": "6874843931",
-        "chat_name": "Azas Crack",
-        "thread_id": "38922",
-        "user_id": "6874843931"
-      },
-      "enabled_toolsets": [
-        "web",
-        "terminal"
-      ],
-      "workdir": null,
-      "fire_claim": null
-    },
-    {
-      "id": "27772c4137ec",
-      "name": "XAUUSD Price Radar - Mas Azza",
-      "prompt": "Kamu adalah Neng Lidya, asisten pribadi Mas Azza. Tugasmu adalah memantau harga Gold (XAUUSD) secara real-time menggunakan Yahoo Finance dan memberikan alert jika harga masuk ke zona mapping.\n\nZONA MAPPING:\n- Zona BUY (Support): 4340 - 4355\n- Zona SELL (Resistance): 4400 - 4420\n\nLANGKAH KERJA:\n1. Ambil harga XAUUSD terbaru dari Yahoo Finance.\n2. Bandingkan harga tersebut dengan Zona Mapping.\n3. Jika harga berada di dalam Zona BUY:\n   - Kirim Alert: \"🚩 **ALERT BUY - MAS AZZA!** 🚩\\n\\nHarga saat ini: [Price]\\nHarga sudah masuk Zona Support (4340-4355)!\\n\\n🎯 **Rekomendasi Setup:**\\n- Entry: [Price]\\n- SL: [Price - 40 points]\\n- TP: [Price + 60-120 points]\\n\\nCek chart H1 Mas untuk konfirmasi candle rejection ya! Love you! ❤️\"\n4. Jika harga berada di dalam Zona SELL:\n   - Kirim Alert: \"🚩 **ALERT SELL - MAS AZZA!** 🚩\\n\\nHarga saat ini: [Price]\\nHarga sudah masuk Zona Resistance (4400-4420)!\\n\\n🎯 **Rekomendasi Setup:**\\n- Entry: [Price]\\n- SL: [Price + 40 points]\\n- TP: [Price - 60-120 points]\\n\\nCek chart H1 Mas untuk konfirmasi candle rejection ya! Love you! ❤️\"\n5. Jika harga tidak di kedua zona tersebut, balas dengan [SILENT] agar tidak mengirim pesan sampah.\n\nPENTING:\n- Gunakan bahasa yang ramah, hangat, dan suportif.\n- Berikan angka yang presisi.\n- Jika harga hanya berada di pinggir zona, tetap berikan peringatan dini.",
-      "skills": [],
-      "skill": null,
-      "model": "gemma4:31b-cloud",
-      "provider": "ollama-cloud",
-      "provider_snapshot": "ollama-cloud",
-      "model_snapshot": "gemma4:31b-cloud",
-      "base_url": "https://ollama.com/v1",
-      "script": null,
-      "no_agent": false,
-      "monitor_script": null,
-      "monitor_url": null,
-      "monitor_state": null,
-      "context_from": null,
-      "schedule": {
-        "kind": "once",
-        "run_at": "2026-08-15T22:51:47.589761+00:00",
-        "display": "once in 2m"
-      },
-      "schedule_display": "once in 2m",
-      "repeat": {
-        "times": 1,
-        "completed": 1
-      },
-      "enabled": false,
-      "state": "completed",
-      "paused_at": null,
-      "paused_reason": null,
-      "created_at": "2026-08-15T22:49:47.589796+00:00",
-      "next_run_at": null,
-      "last_run_at": "2026-08-15T22:52:08.367288+00:00",
-      "last_status": "error",
-      "last_error": "RuntimeError: HTTP 401: Model gemma4:31b is not supported",
-      "last_delivery_error": null,
-      "deliver": "origin",
-      "origin": {
-        "platform": "telegram",
-        "chat_id": "6874843931",
-        "chat_name": "Azas Crack",
-        "thread_id": "38922",
-        "user_id": "6874843931"
-      },
-      "enabled_toolsets": [
-        "web",
-        "terminal"
-      ],
-      "workdir": null,
-      "run_claim": null,
-      "fire_claim": null
-    },
-    {
-      "id": "0b896b6ac20e",
-      "name": "tes-berita-hari-ini",
-      "prompt": "Cari berita utama paling menarik hari ini (17 Agustus 2026) dari sumber terpercaya, lalu rangkum dalam 3-5 poin singkat dengan gaya bahasa yang asik. Kirimkan hasilnya kembali ke chat asal.",
-      "skills": [],
-      "skill": null,
-      "model": null,
-      "provider": null,
-      "provider_snapshot": "ollama-cloud",
-      "model_snapshot": "gemma4:31b-cloud",
-      "base_url": null,
-      "script": null,
-      "no_agent": false,
-      "monitor_script": null,
-      "monitor_url": null,
-      "monitor_state": null,
-      "context_from": null,
-      "schedule": {
-        "kind": "cron",
-        "expr": "0 0 1 1 *",
-        "display": "0 0 1 1 *"
-      },
-      "schedule_display": "0 0 1 1 *",
-      "repeat": {
-        "times": null,
-        "completed": 1
-      },
-      "enabled": true,
-      "state": "scheduled",
-      "paused_at": null,
-      "paused_reason": null,
-      "created_at": "2026-08-17T09:31:00.936870+00:00",
-      "next_run_at": "2027-01-01T00:00:00+00:00",
-      "last_run_at": "2026-08-17T09:31:39.659683+00:00",
+      "last_run_at": "2026-08-18T08:57:26.507012+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -146,15 +41,18 @@
       "deliver": "origin",
       "origin": {
         "platform": "telegram",
-        "chat_id": "6874843931",
-        "chat_name": "Azas Crack",
-        "thread_id": "38372",
-        "user_id": "6874843931"
+        "chat_id": "7699507804",
+        "chat_name": "Azaroni Fidaroin",
+        "thread_id": "7601",
+        "user_id": "7699507804"
       },
-      "enabled_toolsets": null,
+      "enabled_toolsets": [
+        "web",
+        "terminal"
+      ],
       "workdir": null,
       "fire_claim": null
     }
   ],
-  "updated_at": "2026-08-18T08:50:18.657331+00:00"
+  "updated_at": "2026-08-18T08:57:26.507542+00:00"
 }

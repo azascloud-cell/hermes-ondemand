@@ -2466,3 +2466,42 @@
 2026-08-18 08:51:04,130 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='bagaimana kondisi cronjob lain?apa aktif' reply_to_id=133 reply_to_text=''
 2026-08-18 08:51:34,800 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=30.7s api_calls=2 response=1950 chars
 2026-08-18 08:51:34,840 INFO gateway.platforms.base: [Telegram] Sending response (1950 chars) to 7699507804
+2026-08-18 08:53:28,396 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (39 chars)
+2026-08-18 08:53:28,400 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='fix gold alert, hapus 2 cronjob sisanya' reply_to_id=133 reply_to_text=''
+2026-08-18 08:53:46,660 ERROR hermes_plugins.telegram_platform.adapter: [Telegram] Failed to get Telegram chat info for 6874843931: Chat not found
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/plugins/platforms/telegram/adapter.py", line 8274, in get_chat_info
+    chat = await self._bot.get_chat(normalize_telegram_chat_id(chat_id))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 920, in get_chat
+    result = await super().get_chat(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 5105, in get_chat
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: Chat not found
+2026-08-18 08:53:47,350 ERROR hermes_plugins.telegram_platform.adapter: [Telegram] Failed to send Telegram message: Chat not found
+2026-08-18 08:53:48,521 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=20.1s api_calls=3 response=360 chars
+2026-08-18 08:53:48,529 INFO gateway.platforms.base: [Telegram] Sending response (360 chars) to 7699507804
+2026-08-18 08:53:49,475 INFO gateway.run: Watch pattern notification — injecting for telegram chat=7699507804 thread=7601
+2026-08-18 08:53:49,478 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[ASYNC DELEGATION COMPLETE — deleg_c5ed3a25] A background subagent you dispatche' reply_to_id=None reply_to_text=''
+2026-08-18 08:55:16,822 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=87.3s api_calls=6 response=1201 chars
+2026-08-18 08:55:16,832 INFO gateway.platforms.base: [Telegram] Sending response (1201 chars) to 7699507804
+2026-08-18 08:57:27,624 INFO gateway.run: Watch pattern notification — injecting for telegram chat=7699507804 thread=7601
+2026-08-18 08:57:27,628 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[ASYNC DELEGATION COMPLETE — deleg_709882ae] A background subagent you dispatche' reply_to_id=None reply_to_text=''
+2026-08-18 08:58:06,085 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=38.5s api_calls=2 response=1813 chars
+2026-08-18 08:58:06,094 INFO gateway.platforms.base: [Telegram] Sending response (1813 chars) to 7699507804

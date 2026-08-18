@@ -6085,3 +6085,150 @@ RuntimeError: Cron job 'Hermes Gateway Monitor (5 menit)' lost its durable fire 
 2026-08-18 08:51:32,934 WARNING [20260818_074952_04ef3f0b] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Refusing background curator patch for skill 'hermes-gateway-resilience': the current SKILL.md content has not been loaded in this review turn. Call skill_view(name) for SK
 2026-08-18 08:51:34,785 WARNING agent.relay_runtime: Skipping Relay instrumentation for concurrent Hermes turn 20260818_074952_04ef3f0b:2a2f791e-3a49-487d-9e3c-c95e56d417b8:048ade1b in session 20260818_074952_04ef3f0b
 2026-08-18 08:51:41,193 WARNING [20260818_074952_04ef3f0b] agent.conversation_loop: Turn ended with pending tool result (agent may appear stuck). Turn ended: reason=unknown model=nemotron-3-ultra-free api_calls=16/16 budget=16/16 tool_turns=68 last_msg_role=tool response_len=0 session=20260818_074952_04ef3f0b last_tool=skill_view
+2026-08-18 08:53:28,902 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-18 08:53:28,912 WARNING [20260818_074952_04ef3f0b] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-18 08:53:28,912 WARNING [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback skip: chain entry opencode-zen/deepseek-v4-flash-free resolves to the same backend as the current one (https://opencode.ai/zen/v1)
+2026-08-18 08:53:33,919 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-18 08:53:34,300 WARNING [cron_6cddf0420290_20260818_085333] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=ThreadPoolExecutor-122_0:140373590529728 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud summary=HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: b978fce8-016c-451c-8e2c-24b7985ad4a1)
+2026-08-18 08:53:34,589 WARNING [cron_6cddf0420290_20260818_085333] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=ThreadPoolExecutor-122_0:140373590529728 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-18 08:53:35,226 WARNING [cron_6cddf0420290_20260818_085333] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=ThreadPoolExecutor-122_0:140373590529728 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=north-mini-code-free summary=HTTP 401: Model north-mini-code-free is not supported
+2026-08-18 08:53:36,460 WARNING [cron_6cddf0420290_20260818_085333] agent.tool_executor: Tool terminal returned error (0.09s): {"output": "/usr/bin/bash: line 3: cd: /home/runner/gmail_warming: No such file or directory", "exit_code": 126, "error": null, "hint": "Exit 126: the file was found but is not executable — `chmod +x`
+2026-08-18 08:53:37,315 WARNING [cron_6cddf0420290_20260818_085333] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=ThreadPoolExecutor-122_0:140373590529728 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b summary=HTTP 429: Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5963, Requested 3377. Please try again in 10.05s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings
+2026-08-18 08:53:37,654 WARNING [cron_6cddf0420290_20260818_085333] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=ThreadPoolExecutor-122_0:140373590529728 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud summary=HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 067d173f-a43b-46ca-92f8-11b818d2d552)
+2026-08-18 08:53:37,654 WARNING [cron_6cddf0420290_20260818_085333] agent.conversation_loop: Retrying API call in 2.6668940877801806s (attempt 1/3) thread=ThreadPoolExecutor-122_0:140373590529728 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud policy=default error=Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 067d173f-a43b-46ca-92f8-11b818d2d552)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-18 08:53:40,723 WARNING [cron_6cddf0420290_20260818_085333] agent.conversation_loop: API call failed (attempt 2/3) error_type=RateLimitError thread=ThreadPoolExecutor-122_0:140373590529728 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud summary=HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 2ebf3b99-b4f0-4f30-8854-a6a239bf438d)
+2026-08-18 08:53:40,723 WARNING [cron_6cddf0420290_20260818_085333] agent.conversation_loop: Retrying API call in 4.859129923244038s (attempt 2/3) thread=ThreadPoolExecutor-122_0:140373590529728 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud policy=default error=Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 2ebf3b99-b4f0-4f30-8854-a6a239bf438d)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-18 08:53:45,974 WARNING [cron_6cddf0420290_20260818_085333] agent.conversation_loop: API call failed (attempt 3/3) error_type=RateLimitError thread=ThreadPoolExecutor-122_0:140373590529728 provider=ollama-cloud base_url=https://ollama.com/v1/ model=gemma4:31b-cloud summary=HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 25e947f7-be4a-43f7-bc50-96c5561390f4)
+2026-08-18 08:53:45,976 ERROR [cron_6cddf0420290_20260818_085333] agent.conversation_loop: API call failed after 3 retries. HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 25e947f7-be4a-43f7-bc50-96c5561390f4) | provider=ollama-cloud model=gemma4:31b-cloud msgs=6 tokens=~2,265
+2026-08-18 08:53:45,987 ERROR cron.scheduler: Job 'Daily Gold Market Alert - XAUUSD' failed: RuntimeError: HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 25e947f7-be4a-43f7-bc50-96c5561390f4)
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/cron/scheduler.py", line 5751, in run_job
+    raise RuntimeError(_err_text)
+RuntimeError: HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 25e947f7-be4a-43f7-bc50-96c5561390f4)
+2026-08-18 08:53:46,660 ERROR hermes_plugins.telegram_platform.adapter: [Telegram] Failed to get Telegram chat info for 6874843931: Chat not found
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/plugins/platforms/telegram/adapter.py", line 8274, in get_chat_info
+    chat = await self._bot.get_chat(normalize_telegram_chat_id(chat_id))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 920, in get_chat
+    result = await super().get_chat(
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 5105, in get_chat
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 703, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/ext/_extbot.py", line 369, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/_bot.py", line 732, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 198, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
+    raise exception
+telegram.error.BadRequest: Chat not found
+2026-08-18 08:53:47,350 ERROR hermes_plugins.telegram_platform.adapter: [Telegram] Failed to send Telegram message: Chat not found
+2026-08-18 08:53:47,350 WARNING cron.scheduler: Job '6cddf0420290': live adapter delivery to telegram:6874843931 failed: Chat not found, falling back to standalone
+2026-08-18 08:53:48,304 ERROR cron.scheduler: Job '6cddf0420290': delivery error: Telegram send failed: Chat not found (target telegram:6874843931)
+2026-08-18 08:53:50,338 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-18 08:53:50,348 WARNING [20260818_074952_04ef3f0b] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-18 08:53:50,349 WARNING [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback skip: chain entry opencode-zen/deepseek-v4-flash-free resolves to the same backend as the current one (https://opencode.ai/zen/v1)
+2026-08-18 08:54:09,448 WARNING [20260818_074952_04ef3f0b] agent.tool_executor: Tool cronjob returned error (0.00s): {"error": "No updates provided.", "success": false}
+2026-08-18 08:54:14,042 WARNING [20260818_074952_04ef3f0b] agent.tool_executor: Tool cronjob returned error (0.00s): {"error": "No updates provided.", "success": false}
+
+[Tool loop warning: repeated_exact_failure_warning; count=2; cronjob has failed 2 times with identical arguments. This looks like a loop; inspect t
+2026-08-18 08:55:00,007 WARNING [cron_4a7c8b39e1d2_20260818_085459] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=ThreadPoolExecutor-133_0:140373590529728 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-18 08:55:00,007 WARNING [cron_4a7c8b39e1d2_20260818_085459] agent.chat_completion_helpers: Fallback skip: chain entry opencode-zen/deepseek-v4-flash-free resolves to the same backend as the current one (https://opencode.ai/zen/v1)
+2026-08-18 08:55:08,634 WARNING [cron_4a7c8b39e1d2_20260818_085459] agent.tool_executor: Tool terminal returned error (0.09s): {"output": "/usr/bin/bash: line 3: cd: /home/runner/gmail_warming: No such file or directory", "exit_code": 126, "error": null, "hint": "Exit 126: the file was found but is not executable — `chmod +x`
+2026-08-18 08:55:08,731 WARNING [cron_4a7c8b39e1d2_20260818_085459] agent.tool_executor: Tool terminal returned error (0.09s): {"output": "/usr/bin/bash: line 3: cd: /home/runner/gmail_warming: No such file or directory", "exit_code": 126, "error": null, "hint": "Exit 126: the file was found but is not executable — `chmod +x`
+2026-08-18 08:55:08,816 WARNING [cron_4a7c8b39e1d2_20260818_085459] agent.tool_executor: Tool terminal returned error (0.08s): {"output": "/usr/bin/bash: line 3: cd: /home/runner/gmail_warming: No such file or directory", "exit_code": 126, "error": null, "hint": "Exit 126: the file was found but is not executable — `chmod +x`
+2026-08-18 08:55:19,039 WARNING [cron_4a7c8b39e1d2_20260818_085459] agent.tool_executor: Tool terminal returned error (0.05s): {"output": "/usr/bin/bash: line 3: cd: /home/runner/gmail_warming: No such file or directory", "exit_code": 126, "error": null, "hint": "Exit 126: the file was found but is not executable — `chmod +x`
+2026-08-18 08:55:25,081 WARNING [cron_4a7c8b39e1d2_20260818_085459] agent.tool_executor: Tool terminal returned error (0.05s): {"output": "/usr/bin/bash: line 3: cd: /home/runner/gmail_warming: No such file or directory", "exit_code": 126, "error": null, "hint": "Exit 126: the file was found but is not executable — `chmod +x`
+2026-08-18 08:57:28,602 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-18 08:57:28,611 WARNING [20260818_074952_04ef3f0b] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-18 08:57:28,611 WARNING [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback skip: chain entry opencode-zen/deepseek-v4-flash-free resolves to the same backend as the current one (https://opencode.ai/zen/v1)
