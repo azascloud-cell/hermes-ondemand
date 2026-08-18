@@ -1,0 +1,99 @@
+{
+  "Ayah": {
+    "subjects": [
+      "Kabar dari rumah",
+      "Untuk {penerima}",
+      "Pertanyaan sebentar",
+      "Info penting"
+    ],
+    "bodies": [
+      "Assalamu'alaikum {penerima_nama},\n\nAyah cuma mau tanya kabar. Di sana sehat kan? Makan dan istirahatnya jangan lupa diatur ya. Ayah dan Ibu di sini baik-baik saja, Alhamdulillah.\n\nKalau ada kesulitan apa, jangan sungkan bilang ke Ayah. Tapi ingat, usaha dulu baru minta tolong.\n\nWassalamu'alaikum,\nAyah",
+      "Waalaikumsalam {penerima_nama},\n\nTerima kasih sudah balas. Senang dengar kabar baik darimu. Ayah cuma mau ingatkan: jaga kesehatan, jaga solat, dan jangan lupa bersyukur.\n\nSemoga Allah mudahkan urusanmu di sana. Ayah doakan yang terbaik untukmu.\n\nSalam,\nAyah",
+      "Assalamu'alaikum {penerima_nama},\n\nAyah baru terima info dari {lain}. Kalau memang benar, Ayah setuju. Tapi kalau belum pasti, coba verifikasi dulu jangan sampai salah langkah.\n\nIngat, keputusan yang terburu-buru sering bikin menyesal. Pikirkan dengan tenang.\n\nWassalam,\nAyah"
+    ],
+    "signatures": ["Ayah", "Bapak", "Ayahmu"]
+  },
+  "Ibu": {
+    "subjects": [
+      "Sayangku {penerima_nama}",
+      "Makan apa tadi?",
+      "Doa untukmu",
+      "Cuma mau bilang sayang"
+    ],
+    "bodies": [
+      "Assalamu'alaikum sayangku {penerima_nama},\n\nIbu cuma mau tau kabarmu. Di sana sehat? Makan udah? Istirahat cukup? Ibu di sini Alhamdulillah sehat, cuma kadang kangen banget sama kalian semua.\n\nJangan lupa solat ya nak. Ibu doakan setiap hari biar diberi kesehatan, rezki yang halal, dan hati yang tenang. Amin.\n\nKalau butuh apa, bilang aja ke Ibu. Ibu siapin yang bisa.\n\nWassalamu'alaikum,\nIbu yang sayang",
+      "Sayangku {penerima_nama},\n\nIbu baru saja masak {makanan} tadi pagi. Enak banget, sayang nggak bisa makan bareng. Di sana cobain masak sendiri ya, biar hemat dan sehat.\n\nIngat ya, jangan terlalu larut malam begadang. Badan itu amanah.\n\nIbu doakan selalu dilancarkan urusanmu.\n\nSalam sayang,\nIbu",
+      "Assalamu'alaikum {penerima_nama},\n\nTadi Ibu baca ayat kursi, nggak lupa doain kalian semua. Semoga Allah lindungi kalian dari segala keburukan, diberi ketenteraman hati, dan dijauhkan dari penyakit.\n\nAmin ya Robbal 'alamin.\n\nIbu sayang banget sama kalian.\n\nIbu"
+    ],
+    "signatures": ["Ibu", "Bunda", "Ibumu", "Mama"]
+  },
+  "Kakak 1": {
+    "subjects": [
+      "Nasehat buat adik",
+      "Jangan lupa ini",
+      "Peringatan lembut",
+      "Buat {penerima_nama}"
+    ],
+    "bodies": [
+      "Assalamu'alaikum {penerima_nama},\n\nKakak cuma mau ingatin: jangan sampe lupa solat ya. Di tengah sibuknya, solat itu jangkar biar hati nggak gampang guncang.\n\nDan jangan terlalu boros belanja hal yang nggak perlu. Tabungan itu buat darurat, bukan buat beli kepuasan sesaat.\n\nKalau ada masalah, cerita ke Kakak. Nggak usah dipendam sendiri.\n\nWassalam,\nKakak",
+      "{penerima_nama},\n\nKakak denger dari {lain} kalau kamu lagi {masalah}. Kakak bilang: sabar ya. Semua ini ujian, dan pasti ada hikmahnya.\n\nTapi jangan cuma pasrah. Usaha dulu, baru tawakal. Kakak percaya kamu bisa lewatin ini.\n\nButuh bantuan? Bilang aja.\n\nKakak",
+      "Hai {penerima_nama},\n\nKakak mau share pengalaman: dulu Kakak juga sempat {pengalaman}. Salahnya Kakak {kesalahan}. Jadi, Kakak nggak mau kamu ulang kesalahan yang sama.\n\nDengarkan nasihat Kakak ini ya, buat kebaikan kamu sendiri.\n\nSalam,\nKakakmu"
+    ],
+    "signatures": ["Kakak", "Kakakmu", "Kakak 1"]
+  },
+  "Kakak 2": {
+    "subjects": [
+      "Cerita dari kantor",
+      "Hari ini lucu banget",
+      "Share sebentar",
+      "Update kehidupan"
+    ],
+    "bodies": [
+      "Assalamu'alaikum {penerima_nama},\n\nKakak mau cerita, tadi di kantor {kejadian}. Lucu banget, {detail}. Kakak ketawa sendiri di meja kerja.\n\nDi sini kerja agak sibuk sih, tapi Alhamdulillah rekan kerja baik-baik. Kadang capek juga, tapi ya udah, itu nasib.\n\nKamu di sana gimana? Kerja/kuliah lancar? Jangan lupa makan siang ya.\n\nWassalam,\nKakak 2",
+      "Hai {penerima_nama},\n\nKakak baru aja beli {barang} online. Murah tapi bagus, Kakak puas. Kalau kamu butuh, Kakak kirim linknya.\n\nOh iya, tadi {lain} bilang kamu {kabar}. Senang dengar kabar baik.\n\nTetap semangat ya!\n\nKakak",
+      "{penerima_nama},\n\nKakak mau curhat dikit: hari ini {keluh}. Kadang merasa nggak dihargai, tapi ya sudahlah, kerja adalah kerja.\n\nKamu di sana jangan ikut stres ya. Hidup ini sementara, yang abadi hanya Allah.\n\nDua-duanya semangat!\n\nKakak 2"
+    ],
+    "signatures": ["Kakak 2", "Kakakmu yang ke-2", "Mbak 2"]
+  },
+  "Adik": {
+    "subjects": [
+      "Kak, tolong dong",
+      "Curhat sebentar",
+      "Butuh bantuan",
+      "Kak {penerima_nama}"
+    ],
+    "bodies": [
+      "Assalamu'alaikum Kak {penerima_nama},\n\nAdik mau minta tolong nih. {kebutuhan}. Adik janji nanti bayar/balasin kalo udah dapat uang saku/penghasilan.\n\nKakak baik kan? Tolong ya Kak, Adik sayang banget sama Kakak.\n\nWassalam,\nAdikmu",
+      "Kak {penerima_nama},\n\nAdik mau curhat. Tadi di sekolah/kampus {masalah}. Adik sedih banget, nggak tau harus gimana. Kakak pasti paham kan?\n\nAdik butuh pendapat Kakak. Tolong balas ya Kak, sebentar aja.\n\nSayang Kakak,\nAdik",
+      "Kak,\n\nAdik tadi dapet nilai {nilai} buat {matkul}. {'Senang banget!' if '{nilai}' == 'A' else 'Sedih banget, Kak.'} Kakak nggak marah kan?\n\nAdik janji belajar lebih giat.\n\nAdikmu"
+    ],
+    "signatures": ["Adik", "Adikmu", "Dik", "Kakak sayang"]
+  },
+  "Nenek": {
+    "subjects": [
+      "Doa Nenek untuk cucuku",
+      "Makan apa tadi?",
+      "Nasehat Nenek",
+      "Assalamu'alaikum sayang"
+    ],
+    "bodies": [
+      "Assalamu'alaikum sayangku {penerima_nama},\n\nNenek di sini Alhamdulillah sehat, cuma kaki agak pegel. Tadi Nenek baca Yasin, nggak lupa doain kalian semua cucu-cucu Nenek.\n\nSemoga Allah lindungi kalian, diberi kesehatan, rezki lancar, dan hati yang selalu dekat ke-Nya. Amin ya Robbal 'alamin.\n\nDi sana jaga makan dan solat ya. Nenek kangen banget.\n\nWassalamu'alaikum,\nNenek",
+      "Sayangku {penerima_nama},\n\nNenek tadi masak {makanan}. Enak banget, sayang nggak bisa makan bareng. Di sana cobain masak ya, biar hemat dan sehat.\n\nJangan lupa minum air putih yang banyak. Badan itu amanah dari Allah.\n\nNenek doakan selalu dilancarkan urusanmu.\n\nSalam sayang,\nNenek",
+      "Assalamu'alaikum {penerima_nama},\n\nNenek mau pesan: jangan lupa solat 5 waktu. Itu kunci kebahagiaan dunia dan akhirat. Dan berbaktilah ke orang tua, supaya dikasih kelapangan.\n\nNenek sudah tua, tapi doa Nenek untuk kalian nggak pernah putus.\n\nAmin.\n\nNenek"
+    ],
+    "signatures": ["Nenek", "Nenekmu", "Eyang putri"]
+  },
+  "Kakek": {
+    "subjects": [
+      "Untuk {penerima_nama}",
+      "Pesan singkat",
+      "Dari Kakek"
+    ],
+    "bodies": [
+      "Assalamu'alaikum {penerima_nama},\n\nKakek cuma mau bilang: jaga dirimu. Hidup ini singkat, jangan dibuang buat hal yang sia-sia.\n\nSolat, berbuat baik, dan tawakal.\n\nWassalam,\nKakek",
+      "{penerima_nama},\n\nKakek dengar kabarmu dari {lain}. {'Bagus, pertahankan.' if '{kabar}' == 'baik' else 'Perbaiki, masih ada waktu.'}\n\nKakek doakan yang terbaik.\n\nKakek",
+      "Hai {penerima_nama},\n\nKakek tadi {aktivitas}. Ingat, kebiasaan kecil menentukan masa depan.\n\nTetap istiqomah.\n\nKakek"
+    ],
+    "signatures": ["Kakek", "Kakekmu", "Eyang kakung"]
+  }
+}

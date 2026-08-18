@@ -1,0 +1,13 @@
+# Format: email password
+# Contoh:
+# contoh1@gmail.com hehe1122
+# contoh2@gmail.com sgsg1122
+
+# Masukkan email real di sini (satu per baris):
+# email1@gmail.com app_password1
+# email2@gmail.com app_password2
+# email3@gmail.com app_password3
+# ... dst (max 10 akun)
+
+# PENTING: Gunakan App Password Gmail (bukan password utama) jika 2FA aktif.
+# Cara bikin App Password: https://myaccount.google.com/apppasswords

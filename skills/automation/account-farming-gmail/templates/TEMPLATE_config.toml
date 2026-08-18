@@ -1,0 +1,26 @@
+# Himalaya config template per account
+# Simpan sebagai: accounts/{email_suffix}/config.toml
+# Lalu jalankan: himalaya -c accounts/{email_suffix}/config.toml [command]
+
+[account]
+# Gmail IMAP/SMTP settings
+backend = "imap"
+imap_host = "imap.gmail.com"
+imap_port = 993
+imap_username = "{email}"
+imap_password = "{app_password}"
+
+smtp_host = "smtp.gmail.com"
+smtp_port = 465
+smtp_username = "{email}"
+smtp_password = "{app_password}"
+
+# Use SSL/TLS
+imap_ssl = true
+smtp_ssl = true
+
+# Optional: custom folders
+# sent_folder = "[Gmail]/Sent Mail"
+# drafts_folder = "[Gmail]/Drafts"
+# trash_folder = "[Gmail]/Trash"
+# spam_folder = "[Gmail]/Spam"

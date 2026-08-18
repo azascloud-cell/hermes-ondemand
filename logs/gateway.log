@@ -2436,3 +2436,12 @@
 2026-08-18 08:12:15,880 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
 2026-08-18 08:23:22,773 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=760.4s api_calls=15 response=2504 chars
 2026-08-18 08:23:22,815 INFO gateway.platforms.base: [Telegram] Sending response (2504 chars) to 7699507804
+2026-08-18 08:27:54,983 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 08:28:16,335 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (50 chars)
+2026-08-18 08:28:16,339 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='tapi sesi kamu 5jam 50mnt lalu trigger keep aliv e' reply_to_id=133 reply_to_text=''
+2026-08-18 08:28:33,487 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=17.1s api_calls=1 response=795 chars
+2026-08-18 08:28:33,495 INFO gateway.platforms.base: [Telegram] Sending response (795 chars) to 7699507804
+2026-08-18 08:28:56,837 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (1 chars)
+2026-08-18 08:28:56,840 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='2' reply_to_id=133 reply_to_text=''
+2026-08-18 08:31:52,101 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=175.3s api_calls=16 response=2744 chars
+2026-08-18 08:31:52,136 INFO gateway.platforms.base: [Telegram] Sending response (2744 chars) to 7699507804
