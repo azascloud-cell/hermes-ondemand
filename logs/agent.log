@@ -15310,3 +15310,17 @@ telegram.error.TimedOut: Timed out
 2026-08-18 03:13:33,276 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247848->247044 rss_anon_kib=212804->212000 threads=13 duration_ms=119.1
 2026-08-18 03:14:33,377 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247784->247000 rss_anon_kib=212740->211956 threads=13 duration_ms=100.6
 2026-08-18 03:14:58,317 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 03:15:33,480 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247840->246996 rss_anon_kib=212796->211952 threads=13 duration_ms=102.2
+2026-08-18 03:16:25,710 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 03:16:27,883 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling heartbeat: 1 update(s) queued but not consumed (stuck probe 1/2)
+2026-08-18 03:16:28,173 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 03:16:33,591 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=261600->247180 rss_anon_kib=226556->212104 threads=13 duration_ms=104.9
+2026-08-18 03:17:33,694 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=254436->247000 rss_anon_kib=219392->211956 threads=13 duration_ms=102.1
+2026-08-18 03:17:54,653 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 03:17:56,777 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 03:18:33,808 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247840->247152 rss_anon_kib=212796->212076 threads=13 duration_ms=113.2
+2026-08-18 03:19:04,671 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 03:19:05,108 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 03:19:24,657 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 03:19:26,854 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 03:19:33,921 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247848->247124 rss_anon_kib=212804->212080 threads=13 duration_ms=112.2
