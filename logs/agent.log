@@ -19406,3 +19406,59 @@ openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: In
 2026-08-18 11:56:38,509 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=308528->304012 rss_anon_kib=273404->268888 threads=16 duration_ms=105.2
 2026-08-18 11:57:38,613 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=336928->303952 rss_anon_kib=301804->268828 threads=16 duration_ms=102.5
 2026-08-18 11:58:38,714 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=318620->304076 rss_anon_kib=283496->268952 threads=16 duration_ms=101.3
+2026-08-18 11:59:21,521 WARNING tools.skills_tool: Skill security warning for 'security/godmode': skill content contains patterns that may indicate prompt injection
+2026-08-18 11:59:21,530 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[IMPORTANT: The user has invoked the "godmode" skill, indicating they want you t' reply_to_id=367 reply_to_text=''
+2026-08-18 11:59:21,578 INFO [20260818_105728_e90ffc44] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 11:59:21,584 INFO [20260818_115417_1191d25b] agent.turn_context: conversation turn: session=20260818_115417_1191d25b model=deepseek-v4-flash-free provider=opencode-zen platform=telegram history=0 msg='[IMPORTANT: The user has invoked the "godmode" skill, indicating they want you t...'
+2026-08-18 11:59:21,611 INFO agent.auxiliary_client: Auxiliary title_generation: using opencode-zen (deepseek-v4-flash-free) at https://opencode.ai/zen/v1/
+2026-08-18 11:59:21,616 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-540 (<lambda>):140373489874624 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 11:59:22,467 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-18 11:59:22,473 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-540 (<lambda>):140373489874624 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 11:59:22,477 WARNING [20260818_115417_1191d25b] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-18 11:59:22,478 INFO [20260818_115417_1191d25b] root: Rate-limit backoff level 0: cooldown 60 s (1.0 min, backoff#1)
+2026-08-18 11:59:22,478 WARNING [20260818_115417_1191d25b] agent.chat_completion_helpers: Fallback skip: chain entry opencode-zen/deepseek-v4-flash-free resolves to the same backend as the current one (https://opencode.ai/zen/v1)
+2026-08-18 11:59:22,478 INFO [20260818_115417_1191d25b] root: Rate-limit backoff level 1: cooldown 120 s (2.0 min, backoff#2)
+2026-08-18 11:59:22,488 INFO [20260818_115417_1191d25b] agent.chat_completion_helpers: Fallback nemotron-3-ultra-free: reasoning_config resolved: None
+2026-08-18 11:59:22,488 INFO [20260818_115417_1191d25b] agent.chat_completion_helpers: Fallback activated: deepseek-v4-flash-free → nemotron-3-ultra-free (opencode-zen)
+2026-08-18 11:59:22,499 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-541 (<lambda>):140373489874624 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 11:59:23,717 INFO agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=429), rotating
+2026-08-18 11:59:23,717 INFO agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-18 11:59:23,717 INFO agent.auxiliary_client: Auxiliary title_generation: rate limit on auto (Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}), trying fallback
+2026-08-18 11:59:23,732 INFO agent.auxiliary_client: Auxiliary title_generation: rate limit on auto — main fallback chain to fallback_providers[3](groq) (openai/gpt-oss-120b)
+2026-08-18 11:59:24,870 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7847 -> 'Enable godmode feature'
+2026-08-18 11:59:37,603 INFO [20260818_115417_1191d25b] agent.conversation_loop: API call #1: model=nemotron-3-ultra-free provider=opencode-zen in=26224 out=531 total=26755 latency=15.1s
+2026-08-18 11:59:37,926 INFO [20260818_115417_1191d25b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1114 session=20260818_115417_1191d25b
+2026-08-18 11:59:37,959 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=16.4s api_calls=1 response=1114 chars
+2026-08-18 11:59:37,968 INFO gateway.platforms.base: [Telegram] Sending response (1114 chars) to 7699507804
+2026-08-18 11:59:38,825 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=311692->305528 rss_anon_kib=276568->270404 threads=17 duration_ms=109.8
+2026-08-18 12:00:38,942 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=307332->304260 rss_anon_kib=272208->269136 threads=16 duration_ms=103.8
+2026-08-18 12:01:39,043 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=305112->304372 rss_anon_kib=269988->269248 threads=16 duration_ms=100.6
+2026-08-18 12:02:39,151 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=307308->304248 rss_anon_kib=272184->269124 threads=16 duration_ms=107.0
+2026-08-18 12:03:39,271 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=338452->304244 rss_anon_kib=303328->269120 threads=16 duration_ms=119.5

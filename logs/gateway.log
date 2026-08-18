@@ -2553,3 +2553,7 @@ telegram.error.BadRequest: Chat not found
 2026-08-18 11:48:53,839 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 11:49:05,681 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 11:54:17,389 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:7847 → 1 (session_reset)
+2026-08-18 11:59:21,530 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[IMPORTANT: The user has invoked the "godmode" skill, indicating they want you t' reply_to_id=367 reply_to_text=''
+2026-08-18 11:59:24,870 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7847 -> 'Enable godmode feature'
+2026-08-18 11:59:37,959 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=16.4s api_calls=1 response=1114 chars
+2026-08-18 11:59:37,968 INFO gateway.platforms.base: [Telegram] Sending response (1114 chars) to 7699507804
