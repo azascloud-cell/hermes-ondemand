@@ -2018,3 +2018,11 @@
 2026-08-18 01:02:27,621 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=1.3s api_calls=1 response=212 chars
 2026-08-18 01:02:27,628 INFO gateway.platforms.base: [Telegram] Sending response (212 chars) to 7699507804
 2026-08-18 01:02:55,780 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 01:05:06,612 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804 (14 chars)
+2026-08-18 01:05:06,615 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='-1004310936137' reply_to_id=None reply_to_text=''
+2026-08-18 01:05:12,672 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=6.1s api_calls=2 response=266 chars
+2026-08-18 01:05:12,679 INFO gateway.platforms.base: [Telegram] Sending response (266 chars) to 7699507804
+2026-08-18 01:09:01,014 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804 (42 chars)
+2026-08-18 01:09:01,018 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='apa kamu sudah terhubung ke cronjob kita ?' reply_to_id=None reply_to_text=''
+2026-08-18 01:09:06,860 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=5.8s api_calls=2 response=954 chars
+2026-08-18 01:09:06,868 INFO gateway.platforms.base: [Telegram] Sending response (954 chars) to 7699507804
