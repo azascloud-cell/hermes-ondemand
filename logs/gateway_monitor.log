@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/hermes", line 10, in <module>
+    from hermes_cli.main import main
+  File "/home/runner/.hermes/hermes-agent/hermes_cli/main.py", line 696, in <module>
+    from hermes_cli.config import get_hermes_home
+  File "/home/runner/.hermes/hermes-agent/hermes_cli/config.py", line 330, in <module>
+    import yaml
+ModuleNotFoundError: No module named 'yaml'
