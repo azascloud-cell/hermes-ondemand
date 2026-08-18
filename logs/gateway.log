@@ -2594,3 +2594,7 @@ telegram.error.BadRequest: Chat not found
 2026-08-18 13:50:36,880 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
 2026-08-18 14:06:28,621 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 14:16:01,699 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 14:25:10,933 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7847 (21 chars)
+2026-08-18 14:25:11,014 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Apa itu godmode neng?' reply_to_id=367 reply_to_text=''
+2026-08-18 14:25:26,230 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=15.2s api_calls=1 response=2170 chars
+2026-08-18 14:25:26,245 INFO gateway.platforms.base: [Telegram] Sending response (2170 chars) to 7699507804
