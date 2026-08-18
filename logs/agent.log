@@ -20149,3 +20149,79 @@ openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: In
 2026-08-18 16:09:43,951 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257132->243432 rss_anon_kib=221548->207848 threads=16 duration_ms=87.9
 2026-08-18 16:10:08,979 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #10: model=nemotron-3-ultra-free provider=opencode-zen in=90061 out=1800 total=91861 latency=79.6s cache=71536/90061 (79%)
 2026-08-18 16:10:08,989 WARNING [20260818_155118_f22c970d] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Description is 88 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript
+2026-08-18 16:10:44,041 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246448->243628 rss_anon_kib=210864->208044 threads=16 duration_ms=89.6
+2026-08-18 16:11:26,857 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #11: model=nemotron-3-ultra-free provider=opencode-zen in=91938 out=1796 total=93734 latency=77.9s cache=88368/91938 (96%)
+2026-08-18 16:11:26,867 WARNING [20260818_155118_f22c970d] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Description is 88 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript
+2026-08-18 16:11:29,363 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4038, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 641, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 16:11:29,367 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-164 (<lambda>):140301263955648 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 16:11:29,369 WARNING [20260818_155118_f22c970d] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=bg-review:140301062629056 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 16:11:29,369 WARNING [20260818_155118_f22c970d] agent.conversation_loop: Retrying API call in 2.572159127297809s (attempt 1/3) thread=bg-review:140301062629056 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 16:11:31,982 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-165 (<lambda>):140301263955648 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 16:11:44,135 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247120->243580 rss_anon_kib=211536->207996 threads=16 duration_ms=93.3
+2026-08-18 16:12:21,911 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #12: model=nemotron-3-ultra-free provider=opencode-zen in=93815 out=1793 total=95608 latency=55.0s cache=88368/93815 (94%)
+2026-08-18 16:12:21,919 WARNING [20260818_155118_f22c970d] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Description is 71 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript
+2026-08-18 16:12:44,213 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246692->243956 rss_anon_kib=211108->208372 threads=16 duration_ms=77.2
+2026-08-18 16:13:21,531 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #13: model=nemotron-3-ultra-free provider=opencode-zen in=95750 out=1924 total=97674 latency=59.6s cache=84160/95750 (88%)
+2026-08-18 16:13:21,540 WARNING [20260818_155118_f22c970d] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Description is 67 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript
+2026-08-18 16:13:22,723 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4038, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 641, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 16:13:22,725 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-167 (<lambda>):140301263955648 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 16:13:22,729 WARNING [20260818_155118_f22c970d] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=bg-review:140301062629056 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 16:13:22,729 WARNING [20260818_155118_f22c970d] agent.conversation_loop: Retrying API call in 2.851370150262706s (attempt 1/3) thread=bg-review:140301062629056 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 16:13:25,742 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-168 (<lambda>):140301263955648 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 16:13:27,660 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4038, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 641, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 16:13:27,663 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-168 (<lambda>):140301263955648 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 16:13:27,665 WARNING [20260818_155118_f22c970d] agent.conversation_loop: API call failed (attempt 2/3) error_type=APIError thread=bg-review:140301062629056 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 16:13:27,665 WARNING [20260818_155118_f22c970d] agent.conversation_loop: Retrying API call in 4.325189865451546s (attempt 2/3) thread=bg-review:140301062629056 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 16:13:32,080 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-169 (<lambda>):140301263955648 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 16:13:44,300 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248408->243704 rss_anon_kib=212824->208120 threads=16 duration_ms=86.7
+2026-08-18 16:14:32,676 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #14: model=nemotron-3-ultra-free provider=opencode-zen in=97684 out=1787 total=99471 latency=71.1s cache=92576/97684 (95%)
+2026-08-18 16:14:32,959 WARNING [20260818_155118_f22c970d] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Description is 67 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript
+2026-08-18 16:14:44,387 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=260784->245656 rss_anon_kib=225200->210072 threads=16 duration_ms=79.6
