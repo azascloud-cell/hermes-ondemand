@@ -2190,3 +2190,7 @@
 2026-08-18 06:14:09,051 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ini apa neng? ⚠️ Hermes error: 2026-08-18 05:59:54,180 WARNING hermes_plugins.te' reply_to_id=47 reply_to_text=''
 2026-08-18 06:14:12,672 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=3.6s api_calls=1 response=883 chars
 2026-08-18 06:14:12,681 INFO gateway.platforms.base: [Telegram] Sending response (883 chars) to 7699507804
+2026-08-18 06:17:13,624 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7388 (91 chars)
+2026-08-18 06:17:13,628 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='neng,kalau kamu terhubung ke hp aku pakai shizuku bisa nggak dan melakukan sesua' reply_to_id=47 reply_to_text=''
+2026-08-18 06:17:23,316 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.7s api_calls=1 response=2106 chars
+2026-08-18 06:17:23,325 INFO gateway.platforms.base: [Telegram] Sending response (2106 chars) to 7699507804
