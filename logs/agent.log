@@ -19394,3 +19394,9 @@ openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: In
 2026-08-18 11:47:37,545 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=304624->304040 rss_anon_kib=269500->268916 threads=16 duration_ms=112.5
 2026-08-18 11:48:37,664 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=304584->304004 rss_anon_kib=269460->268880 threads=16 duration_ms=117.5
 2026-08-18 11:48:53,839 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 11:49:05,681 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 11:49:37,769 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=304612->304120 rss_anon_kib=269488->268964 threads=16 duration_ms=105.0
+2026-08-18 11:50:37,879 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=314540->304068 rss_anon_kib=279416->268944 threads=16 duration_ms=102.4
+2026-08-18 11:51:37,985 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=335008->304064 rss_anon_kib=299884->268940 threads=16 duration_ms=105.2
+2026-08-18 11:52:38,087 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=315800->304196 rss_anon_kib=280676->269072 threads=16 duration_ms=101.2
+2026-08-18 11:53:38,192 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=304708->304064 rss_anon_kib=269584->268940 threads=16 duration_ms=104.7

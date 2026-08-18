@@ -2551,3 +2551,4 @@ telegram.error.BadRequest: Chat not found
 2026-08-18 11:08:40,910 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=113.1s api_calls=2 response=2729 chars
 2026-08-18 11:08:40,919 INFO gateway.platforms.base: [Telegram] Sending response (2729 chars) to 7699507804
 2026-08-18 11:48:53,839 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 11:49:05,681 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
