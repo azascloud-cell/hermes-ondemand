@@ -2026,3 +2026,13 @@
 2026-08-18 01:09:01,018 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='apa kamu sudah terhubung ke cronjob kita ?' reply_to_id=None reply_to_text=''
 2026-08-18 01:09:06,860 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=5.8s api_calls=2 response=954 chars
 2026-08-18 01:09:06,868 INFO gateway.platforms.base: [Telegram] Sending response (954 chars) to 7699507804
+2026-08-18 01:10:19,399 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804 (22 chars)
+2026-08-18 01:10:19,403 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='hapus cronjob noomor 3' reply_to_id=None reply_to_text=''
+2026-08-18 01:10:24,457 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=5.1s api_calls=2 response=218 chars
+2026-08-18 01:10:24,465 INFO gateway.platforms.base: [Telegram] Sending response (218 chars) to 7699507804
+2026-08-18 01:11:45,913 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: Bad Gateway
+2026-08-18 01:11:45,914 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: Bad Gateway
+2026-08-18 01:12:05,916 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] updater.stop() timed out during network-error reconnect (likely CLOSE-WAIT socket); forcing drain and restart without clean stop
+2026-08-18 01:12:26,140 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling reconnect failed: Timed out
+2026-08-18 01:12:26,141 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 2/10), reconnecting in 10s. Error: Timed out
+2026-08-18 01:12:46,887 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 2); health pending getUpdates progress
