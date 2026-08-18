@@ -15367,3 +15367,8 @@ telegram.error.TimedOut: Timed out
 2026-08-18 03:43:36,618 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
 2026-08-18 03:44:36,732 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=249544->245056 rss_anon_kib=214500->210012 threads=13 duration_ms=116.0
 2026-08-18 03:45:36,845 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245804->244992 rss_anon_kib=210760->209948 threads=13 duration_ms=111.4
+2026-08-18 03:46:36,956 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246708->244972 rss_anon_kib=211664->209928 threads=13 duration_ms=104.3
+2026-08-18 03:47:37,060 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246040->245072 rss_anon_kib=210996->210028 threads=13 duration_ms=103.6
+2026-08-18 03:48:37,166 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=259008->244948 rss_anon_kib=223964->209904 threads=13 duration_ms=105.5
+2026-08-18 03:49:37,272 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=253996->245116 rss_anon_kib=218952->210040 threads=13 duration_ms=104.7
+2026-08-18 03:50:37,381 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245816->244952 rss_anon_kib=210772->209908 threads=13 duration_ms=108.4
