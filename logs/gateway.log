@@ -2528,3 +2528,7 @@ telegram.error.BadRequest: Chat not found
 2026-08-18 09:08:30,433 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[ASYNC DELEGATION COMPLETE — deleg_d213cb62] A background subagent you dispatche' reply_to_id=None reply_to_text=''
 2026-08-18 09:09:21,380 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=50.9s api_calls=2 response=1849 chars
 2026-08-18 09:09:21,388 INFO gateway.platforms.base: [Telegram] Sending response (1849 chars) to 7699507804
+2026-08-18 09:23:27,468 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (78 chars)
+2026-08-18 09:23:27,472 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='yang cronjob pengingat buat member azzavisionAI itu yang mana ya?apa terhapus?' reply_to_id=133 reply_to_text=''
+2026-08-18 09:24:19,026 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=51.6s api_calls=2 response=1336 chars
+2026-08-18 09:24:19,036 INFO gateway.platforms.base: [Telegram] Sending response (1336 chars) to 7699507804
