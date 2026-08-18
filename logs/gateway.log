@@ -2526,3 +2526,5 @@ telegram.error.BadRequest: Chat not found
 2026-08-18 09:06:23,253 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 09:08:30,429 INFO gateway.run: Watch pattern notification — injecting for telegram chat=7699507804 thread=7601
 2026-08-18 09:08:30,433 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[ASYNC DELEGATION COMPLETE — deleg_d213cb62] A background subagent you dispatche' reply_to_id=None reply_to_text=''
+2026-08-18 09:09:21,380 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=50.9s api_calls=2 response=1849 chars
+2026-08-18 09:09:21,388 INFO gateway.platforms.base: [Telegram] Sending response (1849 chars) to 7699507804
