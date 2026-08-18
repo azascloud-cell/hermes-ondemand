@@ -2127,3 +2127,10 @@
 2026-08-18 02:28:35,403 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='bagaimanakalau aku ini seorang yang pecandu film dewasa,tetapi merasa suka dia,t' reply_to_id=52 reply_to_text=''
 2026-08-18 02:28:46,800 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=11.4s api_calls=1 response=4011 chars
 2026-08-18 02:28:46,812 INFO gateway.platforms.base: [Telegram] Sending response (4011 chars) to 7699507804
+2026-08-18 02:34:26,271 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:7449 → 1 (session_reset)
+2026-08-18 02:34:58,131 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 02:35:25,703 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7449 (69 chars)
+2026-08-18 02:35:25,707 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='buatlah cerpen yang diambil dari kisah nyata,seru dan bisa memotivasi' reply_to_id=80 reply_to_text=''
+2026-08-18 02:35:26,656 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7449 -> 'Buat cerpen motivasi kisah nyata'
+2026-08-18 02:35:34,893 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.2s api_calls=1 response=3772 chars
+2026-08-18 02:35:34,903 INFO gateway.platforms.base: [Telegram] Sending response (3772 chars) to 7699507804
