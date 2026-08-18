@@ -19918,3 +19918,95 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-18 15:54:19,067 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (3.46s, 3822 chars)
 2026-08-18 15:54:27,587 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #16: model=nemotron-3-ultra-free provider=opencode-zen in=27928 out=111 total=28039 latency=8.5s cache=25248/27928 (90%)
 2026-08-18 15:54:29,042 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (1.45s, 1046 chars)
+2026-08-18 15:54:34,799 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #17: model=nemotron-3-ultra-free provider=opencode-zen in=28357 out=71 total=28428 latency=5.8s cache=21040/28357 (74%)
+2026-08-18 15:54:39,449 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (4.65s, 7342 chars)
+2026-08-18 15:54:42,347 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236500->232812 rss_anon_kib=200916->197228 threads=18 duration_ms=105.5
+2026-08-18 15:54:45,689 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #18: model=nemotron-3-ultra-free provider=opencode-zen in=30424 out=117 total=30541 latency=6.2s cache=25248/30424 (83%)
+2026-08-18 15:54:49,950 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (4.25s, 6151 chars)
+2026-08-18 15:54:55,337 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #19: model=nemotron-3-ultra-free provider=opencode-zen in=31966 out=74 total=32040 latency=5.4s cache=25248/31966 (79%)
+2026-08-18 15:54:56,115 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (0.76s, 307 chars)
+2026-08-18 15:55:01,099 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #20: model=nemotron-3-ultra-free provider=opencode-zen in=32126 out=109 total=32235 latency=5.0s cache=29456/32126 (92%)
+2026-08-18 15:55:03,945 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (2.84s, 415 chars)
+2026-08-18 15:55:09,748 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #21: model=nemotron-3-ultra-free provider=opencode-zen in=32348 out=81 total=32429 latency=5.7s cache=29456/32348 (91%)
+2026-08-18 15:55:13,398 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (3.65s, 12369 chars)
+2026-08-18 15:55:17,421 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #22: model=nemotron-3-ultra-free provider=opencode-zen in=35779 out=107 total=35886 latency=3.9s cache=25248/35779 (71%)
+2026-08-18 15:55:20,369 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (2.88s, 8360 chars)
+2026-08-18 15:55:21,996 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4038, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 641, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 15:55:21,998 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-77 (<lambda>):140301062629056 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 15:55:22,000 WARNING [20260818_155118_f22c970d] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=hermes-gateway_0:140301280736960 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 15:55:22,002 WARNING [20260818_155118_f22c970d] agent.conversation_loop: Retrying API call in 2.198052868762049s (attempt 1/3) thread=hermes-gateway_0:140301280736960 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 15:55:24,212 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-78 (<lambda>):140301062629056 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 15:55:28,846 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #23: model=nemotron-3-ultra-free provider=opencode-zen in=37883 out=103 total=37986 latency=8.5s cache=29456/37883 (78%)
+2026-08-18 15:55:37,793 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (8.94s, 686 chars)
+2026-08-18 15:55:41,451 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #24: model=nemotron-3-ultra-free provider=opencode-zen in=38183 out=76 total=38259 latency=3.7s cache=37872/38183 (99%)
+2026-08-18 15:55:42,421 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236376->234060 rss_anon_kib=200792->198476 threads=20 duration_ms=72.6
+2026-08-18 15:55:43,913 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (2.45s, 500 chars)
+2026-08-18 15:56:04,422 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #25: model=nemotron-3-ultra-free provider=opencode-zen in=38384 out=74 total=38458 latency=20.5s cache=33664/38384 (88%)
+2026-08-18 15:56:06,524 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (2.10s, 200 chars)
+2026-08-18 15:56:10,748 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #26: model=nemotron-3-ultra-free provider=opencode-zen in=38515 out=84 total=38599 latency=4.2s cache=37872/38515 (98%)
+2026-08-18 15:56:10,981 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (0.23s, 327 chars)
+2026-08-18 15:56:14,889 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #27: model=nemotron-3-ultra-free provider=opencode-zen in=38684 out=76 total=38760 latency=3.9s cache=37872/38684 (98%)
+2026-08-18 15:56:31,163 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (16.27s, 764 chars)
+2026-08-18 15:56:34,040 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #28: model=nemotron-3-ultra-free provider=opencode-zen in=39242 out=106 total=39348 latency=2.8s cache=37872/39242 (97%)
+2026-08-18 15:56:34,284 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (0.24s, 307 chars)
+2026-08-18 15:56:39,467 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #29: model=nemotron-3-ultra-free provider=opencode-zen in=39402 out=78 total=39480 latency=5.2s cache=37872/39402 (96%)
+2026-08-18 15:56:39,713 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (0.23s, 311 chars)
+2026-08-18 15:56:42,507 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=254688->233300 rss_anon_kib=219104->197716 threads=18 duration_ms=86.5
+2026-08-18 15:56:45,555 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #30: model=nemotron-3-ultra-free provider=opencode-zen in=39565 out=68 total=39633 latency=5.8s cache=37872/39565 (96%)
+2026-08-18 15:56:45,789 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (0.23s, 307 chars)
+2026-08-18 15:56:50,521 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #31: model=nemotron-3-ultra-free provider=opencode-zen in=39728 out=101 total=39829 latency=4.7s cache=37872/39728 (95%)
+2026-08-18 15:56:55,570 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (5.05s, 332 chars)
+2026-08-18 15:57:00,721 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #32: model=nemotron-3-ultra-free provider=opencode-zen in=39916 out=78 total=39994 latency=5.1s cache=37872/39916 (95%)
+2026-08-18 15:57:01,963 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (1.24s, 297 chars)
+2026-08-18 15:57:05,017 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #33: model=nemotron-3-ultra-free provider=opencode-zen in=40149 out=93 total=40242 latency=3.1s cache=29456/40149 (73%)
+2026-08-18 15:57:08,750 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (3.73s, 7502 chars)
+2026-08-18 15:57:15,531 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #34: model=nemotron-3-ultra-free provider=opencode-zen in=42173 out=111 total=42284 latency=6.8s cache=21040/42173 (50%)
+2026-08-18 15:57:34,399 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (18.86s, 5123 chars)
+2026-08-18 15:57:40,113 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #35: model=nemotron-3-ultra-free provider=opencode-zen in=43451 out=138 total=43589 latency=5.7s cache=42080/43451 (97%)
+2026-08-18 15:57:42,602 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=237928->234868 rss_anon_kib=202344->199284 threads=20 duration_ms=93.6
+2026-08-18 15:57:43,848 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (3.44s, 6646 chars)
+2026-08-18 15:57:51,038 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #36: model=nemotron-3-ultra-free provider=opencode-zen in=45609 out=80 total=45689 latency=7.1s cache=42080/45609 (92%)
+2026-08-18 15:57:54,488 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (3.45s, 6591 chars)
+2026-08-18 15:57:58,354 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #37: model=nemotron-3-ultra-free provider=opencode-zen in=47731 out=88 total=47819 latency=3.8s cache=42080/47731 (88%)
+2026-08-18 15:58:05,037 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (6.68s, 7578 chars)
+2026-08-18 15:58:10,858 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #38: model=nemotron-3-ultra-free provider=opencode-zen in=52155 out=161 total=52316 latency=5.8s cache=37872/52155 (73%)
+2026-08-18 15:58:16,707 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (5.84s, 7645 chars)
+2026-08-18 15:58:30,655 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #39: model=nemotron-3-ultra-free provider=opencode-zen in=56359 out=102 total=56461 latency=13.9s cache=50496/56359 (90%)
+2026-08-18 15:58:34,703 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (4.04s, 6586 chars)
+2026-08-18 15:58:38,624 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #40: model=nemotron-3-ultra-free provider=opencode-zen in=58475 out=68 total=58543 latency=3.9s cache=37872/58475 (65%)
+2026-08-18 15:58:39,324 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (0.70s, 6586 chars)
+2026-08-18 15:58:42,696 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236776->234564 rss_anon_kib=201192->198980 threads=18 duration_ms=94.4
+2026-08-18 15:58:42,697 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #41: model=nemotron-3-ultra-free provider=opencode-zen in=60591 out=75 total=60666 latency=3.4s cache=54704/60591 (90%)
+2026-08-18 15:58:42,935 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (0.23s, 307 chars)
+2026-08-18 15:58:49,118 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #42: model=nemotron-3-ultra-free provider=opencode-zen in=60748 out=80 total=60828 latency=6.2s cache=58912/60748 (97%)
+2026-08-18 15:58:49,440 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (0.32s, 303 chars)
+2026-08-18 15:58:52,397 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #43: model=nemotron-3-ultra-free provider=opencode-zen in=60905 out=72 total=60977 latency=3.0s cache=58912/60905 (97%)
+2026-08-18 15:59:07,913 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (15.51s, 125 chars)
+2026-08-18 15:59:10,810 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #44: model=nemotron-3-ultra-free provider=opencode-zen in=61012 out=65 total=61077 latency=2.9s cache=54704/61012 (90%)
+2026-08-18 15:59:11,166 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (0.29s, 311 chars)
+2026-08-18 15:59:17,963 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #45: model=nemotron-3-ultra-free provider=opencode-zen in=61172 out=82 total=61254 latency=6.8s
+2026-08-18 15:59:19,897 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (1.93s, 212 chars)
+2026-08-18 15:59:23,950 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #46: model=nemotron-3-ultra-free provider=opencode-zen in=61317 out=91 total=61408 latency=4.0s cache=58912/61317 (96%)
+2026-08-18 15:59:24,227 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (0.26s, 303 chars)
+2026-08-18 15:59:28,651 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #47: model=nemotron-3-ultra-free provider=opencode-zen in=61474 out=88 total=61562 latency=4.3s cache=37872/61474 (62%)
+2026-08-18 15:59:28,885 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (0.23s, 305 chars)
+2026-08-18 15:59:34,712 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #48: model=nemotron-3-ultra-free provider=opencode-zen in=61631 out=118 total=61749 latency=5.8s cache=58912/61631 (96%)
+2026-08-18 15:59:36,773 INFO [20260818_155118_f22c970d] agent.tool_executor: tool terminal completed (1.97s, 576 chars)
+2026-08-18 15:59:43,010 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=238768->236392 rss_anon_kib=203184->200808 threads=18 duration_ms=118.0
+2026-08-18 15:59:45,041 INFO [20260818_155118_f22c970d] agent.conversation_loop: API call #49: model=nemotron-3-ultra-free provider=opencode-zen in=61913 out=110 total=62023 latency=8.2s cache=58912/61913 (95%)
