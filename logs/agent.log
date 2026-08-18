@@ -15340,3 +15340,15 @@ telegram.error.TimedOut: Timed out
 2026-08-18 03:27:34,798 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264208->247012 rss_anon_kib=229164->211968 threads=13 duration_ms=104.3
 2026-08-18 03:28:34,912 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251536->247168 rss_anon_kib=216492->212092 threads=13 duration_ms=113.5
 2026-08-18 03:29:35,022 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247808->247048 rss_anon_kib=212764->212004 threads=13 duration_ms=110.0
+2026-08-18 03:30:35,135 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247852->247044 rss_anon_kib=212808->212000 threads=13 duration_ms=112.1
+2026-08-18 03:31:35,257 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248600->247188 rss_anon_kib=213556->212112 threads=13 duration_ms=111.1
+2026-08-18 03:32:30,552 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 03:32:35,370 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=261800->247004 rss_anon_kib=226756->211960 threads=13 duration_ms=112.0
+2026-08-18 03:33:35,483 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=253972->247160 rss_anon_kib=218928->212084 threads=13 duration_ms=113.0
+2026-08-18 03:33:35,485 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:7393 (idle=3889s)
+2026-08-18 03:33:35,485 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:7:139820204549824 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-18 03:33:35,485 INFO run_agent: OpenAI client closed (cache_evict, shared=False, tcp_force_closed=0) thread=agent-cache-idle-agent:main:telegram:dm:7:139820204549824 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-18 03:33:35,486 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-18 03:33:58,322 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 03:34:00,927 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 03:34:35,596 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247880->246600 rss_anon_kib=212836->211556 threads=13 duration_ms=112.6
