@@ -6815,3 +6815,4 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-18 14:25:12,944 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
 2026-08-18 14:25:12,944 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
 2026-08-18 14:25:12,953 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-18 14:32:28,589 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
