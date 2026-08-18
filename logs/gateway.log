@@ -2450,3 +2450,9 @@
 2026-08-18 08:37:25,749 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='boleh' reply_to_id=133 reply_to_text=''
 2026-08-18 08:41:10,618 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=224.9s api_calls=22 response=1860 chars
 2026-08-18 08:41:10,663 INFO gateway.platforms.base: [Telegram] Sending response (1860 chars) to 7699507804
+2026-08-18 08:45:15,954 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (123 chars)
+2026-08-18 08:45:15,959 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='tidak bisakah pakai password biasa bukan app password karena ini sifatnya sement' reply_to_id=133 reply_to_text=''
+2026-08-18 08:45:45,170 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=29.2s api_calls=1 response=2544 chars
+2026-08-18 08:45:45,180 INFO gateway.platforms.base: [Telegram] Sending response (2544 chars) to 7699507804
+2026-08-18 08:47:49,890 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (52 chars)
+2026-08-18 08:47:49,897 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='tapi email anak setahuku belum bisa buat app passord' reply_to_id=133 reply_to_text=''
