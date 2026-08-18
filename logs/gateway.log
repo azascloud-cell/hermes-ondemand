@@ -2134,3 +2134,15 @@
 2026-08-18 02:35:26,656 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7449 -> 'Buat cerpen motivasi kisah nyata'
 2026-08-18 02:35:34,893 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.2s api_calls=1 response=3772 chars
 2026-08-18 02:35:34,903 INFO gateway.platforms.base: [Telegram] Sending response (3772 chars) to 7699507804
+2026-08-18 02:40:14,006 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7449 (29 chars)
+2026-08-18 02:40:14,010 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='bice ng lidya bagus bener dah' reply_to_id=80 reply_to_text=''
+2026-08-18 02:40:17,596 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=3.6s api_calls=1 response=448 chars
+2026-08-18 02:40:17,603 INFO gateway.platforms.base: [Telegram] Sending response (448 chars) to 7699507804
+2026-08-18 02:41:05,489 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7449 (45 chars)
+2026-08-18 02:41:05,492 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='ya,hasil profit $6 kemarin jadi loss sekarang' reply_to_id=80 reply_to_text=''
+2026-08-18 02:41:09,339 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=3.8s api_calls=1 response=1489 chars
+2026-08-18 02:41:09,347 INFO gateway.platforms.base: [Telegram] Sending response (1489 chars) to 7699507804
+2026-08-18 02:43:30,073 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:7388 (idle=3716s)
+2026-08-18 02:43:30,074 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-18 02:43:45,534 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 02:44:04,756 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
