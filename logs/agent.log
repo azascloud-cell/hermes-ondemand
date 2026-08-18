@@ -16387,3 +16387,11 @@ openai.NotFoundError: Error code: 404 - {'error': {'message': 'The model `llama-
 2026-08-18 07:30:57,238 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232400->230456 rss_anon_kib=197032->195088 threads=11 duration_ms=104.3
 2026-08-18 07:31:21,678 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 07:31:57,340 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=231208->230424 rss_anon_kib=195840->195056 threads=11 duration_ms=101.9
+2026-08-18 07:32:25,345 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 07:32:57,422 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=230972->230420 rss_anon_kib=195604->195052 threads=11 duration_ms=81.4
+2026-08-18 07:33:57,520 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=234124->230420 rss_anon_kib=198756->195052 threads=11 duration_ms=96.9
+2026-08-18 07:34:57,604 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=249328->230464 rss_anon_kib=213960->195096 threads=12 duration_ms=83.9
+2026-08-18 07:35:21,697 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 07:35:57,703 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232420->230516 rss_anon_kib=197052->195148 threads=12 duration_ms=91.8
+2026-08-18 07:36:22,012 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 07:36:57,785 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=231292->230472 rss_anon_kib=195924->195104 threads=12 duration_ms=81.3
