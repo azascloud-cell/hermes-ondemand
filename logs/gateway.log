@@ -2221,3 +2221,4 @@
 2026-08-18 06:29:54,576 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 06:37:18,370 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 06:51:04,331 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 07:00:38,939 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:7601 → 1 (session_reset)
