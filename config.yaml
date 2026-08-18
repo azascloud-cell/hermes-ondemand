@@ -1,11 +1,22 @@
 model:
-  provider: opencode-zen
-  default: deepseek-v4-flash-free
-  base_url: https://opencode.ai/zen/v1
+  provider: "opencode-zen"
+  default: "deepseek-v4-flash-free"
+  base_url: "https://opencode.ai/zen/v1"
+fallback_providers:
+  - provider: "opencode-zen"
+    model: "deepseek-v4-flash-free"
+  - provider: "opencode-zen"
+    model: "nemotron-3-ultra-free"
+  - provider: "opencode-zen"
+    model: "north-mini-code-free"
+  - provider: "groq"
+    model: "openai/gpt-oss-120b"
+  - provider: "ollama-cloud"
+    model: "gemma4:31b-cloud"
 providers:
   opencode-zen:
-    api: https://opencode.ai/zen/v1
-    api_key: ${OPENCODE_ZEN_API_KEY}
+    api: "https://opencode.ai/zen/v1"
+    api_key: "${OPENCODE_ZEN_API_KEY}"
     models:
       deepseek-v4-flash-free:
         context_length: 1000000
@@ -14,8 +25,8 @@ providers:
       north-mini-code-free:
         context_length: 1000000
   groq:
-    api: https://api.groq.com/openai/v1
-    api_key: ${GROQ_API_KEY}
+    api: "https://api.groq.com/openai/v1"
+    api_key: "${GROQ_API_KEY}"
     models:
       openai/gpt-oss-120b:
         context_length: 131072
@@ -23,28 +34,9 @@ providers:
         context_length: 131072
       qwen/qwen3.6-27b:
         context_length: 131072
-fallback_providers:
-  - provider: opencode-zen
-    model: deepseek-v4-flash-free
-  - provider: opencode-zen
-    model: nemotron-3-ultra-free
-  - provider: opencode-zen
-    model: north-mini-code-free
-  - provider: groq
-    model: openai/gpt-oss-120b
 memory:
   memory_enabled: true
   user_profile_enabled: true
-  write_approval: false
   memory_char_limit: 5000
   user_char_limit: 4000
-_config_version: 37
-platforms:
-  telegram:
-    enabled: true
-    home_channel:
-      platform: telegram
-      chat_id: '7699507804'
-      name: Azaroni Fidaroin
-      thread_id: '7717'
-      user_id: '7699507804'
+  write_approval: false
