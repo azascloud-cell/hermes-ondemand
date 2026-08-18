@@ -2434,3 +2434,5 @@
 2026-08-18 08:10:42,371 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='1. list email belum siap,masih mau bikin 2. 2-10an mungkin 3. round robin dengan' reply_to_id=133 reply_to_text=''
 2026-08-18 08:12:15,877 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
 2026-08-18 08:12:15,880 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-08-18 08:23:22,773 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=760.4s api_calls=15 response=2504 chars
+2026-08-18 08:23:22,815 INFO gateway.platforms.base: [Telegram] Sending response (2504 chars) to 7699507804
