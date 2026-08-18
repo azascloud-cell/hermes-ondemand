@@ -2617,3 +2617,7 @@ telegram.error.BadRequest: Chat not found
 2026-08-18 15:31:39,315 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
 2026-08-18 15:46:40,312 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:7827 (idle=3831s)
 2026-08-18 15:46:40,313 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-18 15:51:14,325 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling heartbeat: 1 update(s) queued but not consumed (stuck probe 1/2)
+2026-08-18 15:51:18,125 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:7910 → 1 (session_reset)
+2026-08-18 15:52:12,146 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7910 (114 chars)
+2026-08-18 15:52:12,295 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Carikan aku panel nokos gratis bahkan membayar tiap otp yang masuk seperti Ivasm' reply_to_id=401 reply_to_text=''
