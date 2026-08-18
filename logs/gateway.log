@@ -2515,3 +2515,14 @@ telegram.error.BadRequest: Chat not found
 2026-08-18 09:01:50,721 INFO gateway.platforms.base: [Telegram] Sending response (109 chars) to 7699507804
 2026-08-18 09:01:55,911 INFO gateway.run: Watch pattern notification — injecting for telegram chat=7699507804 thread=7601
 2026-08-18 09:01:55,918 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[ASYNC DELEGATION COMPLETE — deleg_b181b2ff] A background subagent you dispatche' reply_to_id=None reply_to_text=''
+2026-08-18 09:04:04,072 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=128.2s api_calls=9 response=20 chars
+2026-08-18 09:04:04,121 INFO gateway.platforms.base: [Telegram] Sending response (20 chars) to 7699507804
+2026-08-18 09:04:13,995 INFO gateway.run: Watch pattern notification — injecting for telegram chat=7699507804 thread=7601
+2026-08-18 09:04:13,998 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[ASYNC DELEGATION COMPLETE — deleg_42057c8d] A background subagent you dispatche' reply_to_id=None reply_to_text=''
+2026-08-18 09:05:16,244 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=62.2s api_calls=6 response=449 chars
+2026-08-18 09:05:16,253 INFO gateway.platforms.base: Skipping bare file path in reply (no file on disk): /.hermes/config.yaml
+2026-08-18 09:05:16,255 WARNING gateway.platforms.base: Skipping unsafe local file path: /home/runner/.hermes/config.yaml
+2026-08-18 09:05:16,255 INFO gateway.platforms.base: [Telegram] Sending response (407 chars) to 7699507804
+2026-08-18 09:06:23,253 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 09:08:30,429 INFO gateway.run: Watch pattern notification — injecting for telegram chat=7699507804 thread=7601
+2026-08-18 09:08:30,433 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[ASYNC DELEGATION COMPLETE — deleg_d213cb62] A background subagent you dispatche' reply_to_id=None reply_to_text=''

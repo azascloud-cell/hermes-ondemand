@@ -1,4 +1,58 @@
 {
-  "jobs": [],
-  "updated_at": "2026-08-18T09:02:54.130310+00:00"
+  "jobs": [
+    {
+      "id": "d40f4356873b",
+      "name": "Daily Gold Market Alert - XAUUSD",
+      "prompt": "Kamu adalah Neng Lidya, asisten pribadi Mas Azza. Tugasmu adalah memberikan analisa market XAUUSD setiap pagi jam 05:00 WIB.\n\nMas Azza adalah seorang ultra-scalper dengan SL sangat ketat (40 points) dan TP 60-125 points. Berikan informasi yang sangat presisi dan to-the-point.\n\nLANGKAH WAJIB (HARUS URUT):\n1. **FETCH HARGA LIVE DULU** — Gunakan web search untuk mencari \"XAUUSD price today\" atau \"Gold price August 2026\". AMBIL harga Bid/Ask TERBARU dari sumber terpercaya (TradingView, Investing.com, ForexFactory, broker forex). JANGAN gunakan harga dari training data / tebakan.\n2. Cari berita ekonomi terbaru dan sentimen pasar global yang mempengaruhi harga emas (XAUUSD) HARI INI.\n3. Analisa apakah hari ini cenderung BULLISH, BEARISH, atau SIDEWAYS berdasarkan HARGA LIVE yang sudah didapat.\n4. Berikan laporan singkat dengan format:\n   - 🚩 **SENTIMEN HARI INI**: [BULLISH/BEARISH/SIDEWAYS]\n   - 💰 **HARGA LIVE**: $XXXX.XX (Bid: $XXXX.XX / Ask: $XXXX.XX) — [Sumber: nama situs]\n   - 📰 **BERITA KUNCI**: (Sebutkan 1-2 berita utama yang mempengaruhi harga HARI INI)\n   - 🎯 **AREA PANTAUAN**: (Level support/resistance berdasarkan HARGA LIVE, bukan tebakan)\n   - 💡 **CATATAN NENG**: (Pesan singkat/pengingat untuk Mas Azza agar tetap disiplin dengan SL 40 points)\n\nGunakan bahasa yang ramah, hangat, dan suportif (panggil 'Mas Azza'). Kirimkan laporan ini langsung ke chat.\n\nKRITIS: Jika tidak bisa mendapatkan harga live, tulis \"❌ GAGAL AMBIL HARGA LIVE\" dan HENTIKAN analisa. Jangan pernah nebak harga.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "opencode-zen",
+      "model_snapshot": "deepseek-v4-flash-free",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 22 * * *",
+        "display": "0 22 * * *"
+      },
+      "schedule_display": "0 22 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 2
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-18T09:03:56.011186+00:00",
+      "next_run_at": "2026-08-18T22:00:00+00:00",
+      "last_run_at": "2026-08-18T09:08:29.601265+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "failure_streak": 0,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "7699507804",
+        "chat_name": "Azaroni Fidaroin",
+        "thread_id": "7601",
+        "user_id": "7699507804"
+      },
+      "enabled_toolsets": [
+        "web",
+        "terminal"
+      ],
+      "workdir": null,
+      "fire_claim": null
+    }
+  ],
+  "updated_at": "2026-08-18T09:08:29.601816+00:00"
 }
