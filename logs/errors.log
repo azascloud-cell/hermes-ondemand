@@ -4619,3 +4619,8 @@ Traceback (most recent call last):
   File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/telegram/request/_baserequest.py", line 375, in _request_wrapper
     raise exception
 telegram.error.InvalidToken: ***
+2026-08-18 00:00:34,856 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=3853, started_at=2026-08-17T21:11:29.899997+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-17T23:54:54.884609+00:00 last_mem={'rss_kib': 233992, 'mem_total_kib': 16373452, 'mem_available_kib': 15082304, 'swap_used_kib': 0} suspected_oom=False
+2026-08-18 00:00:34,951 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-18 00:00:35,128 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-18 00:00:51,254 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 7699507804 in chat 7699507804
+2026-08-18 00:01:06,780 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 7699507804 in chat 7699507804
