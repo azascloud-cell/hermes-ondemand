@@ -1,8 +1,18 @@
 model:
-  provider: groq
-  default: openai/gpt-oss-120b
-  base_url: https://api.groq.com/openai/v1
+  provider: opencode-zen
+  default: deepseek-v4-flash-free
+  base_url: https://opencode.ai/zen/v1
 providers:
+  opencode-zen:
+    api: https://opencode.ai/zen/v1
+    api_key: ${OPENCODE_ZEN_API_KEY}
+    models:
+      deepseek-v4-flash-free:
+        context_length: 1000000
+      nemotron-3-ultra-free:
+        context_length: 1000000
+      north-mini-code-free:
+        context_length: 1000000
   groq:
     api: https://api.groq.com/openai/v1
     api_key: ${GROQ_API_KEY}
@@ -14,12 +24,14 @@ providers:
       qwen/qwen3.6-27b:
         context_length: 131072
 fallback_providers:
+  - provider: opencode-zen
+    model: deepseek-v4-flash-free
+  - provider: opencode-zen
+    model: nemotron-3-ultra-free
+  - provider: opencode-zen
+    model: north-mini-code-free
   - provider: groq
     model: openai/gpt-oss-120b
-  - provider: groq
-    model: openai/gpt-oss-20b
-  - provider: groq
-    model: qwen/qwen3.6-27b
   - provider: ollama-cloud
     model: gemma4:31b-cloud
 memory:
@@ -36,7 +48,7 @@ platforms:
       platform: telegram
       chat_id: '7699507804'
       name: Azaroni Fidaroin
-      thread_id: '7697'
+      thread_id: '7717'
       user_id: '7699507804'
 
 # ── Security ──────────────────────────────────────────────────────────

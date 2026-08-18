@@ -16883,3 +16883,172 @@ openai.APIStatusError: Error code: 413 - {'error': {'message': 'Request too larg
 2026-08-18 07:56:56,915 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=230004->229424 rss_anon_kib=194904->194324 threads=12 duration_ms=128.3
 2026-08-18 07:57:57,043 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=230732->228984 rss_anon_kib=195632->193884 threads=13 duration_ms=121.0
 2026-08-18 07:58:57,175 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=229880->228976 rss_anon_kib=194780->193876 threads=13 duration_ms=131.1
+2026-08-18 08:00:58,373 INFO hermes_cli.main: Checkout changed since last launch (unknown -> git:refs/heads/main:e624e9fde561e1add9388384012b295fde669ade): cleared 43 stale __pycache__ directories
+2026-08-18 08:00:59,791 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-08-18 08:00:59,794 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-08-18 08:00:59,796 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-08-18 08:00:59,855 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-08-18 08:00:59,856 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-08-18 08:00:59,860 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-08-18 08:00:59,862 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-08-18 08:00:59,865 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-08-18 08:00:59,868 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-08-18 08:00:59,868 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-08-18 08:00:59,872 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-08-18 08:00:59,883 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-08-18 08:00:59,887 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-08-18 08:00:59,890 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-08-18 08:00:59,894 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-08-18 08:00:59,896 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-08-18 08:00:59,898 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-08-18 08:00:59,907 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-08-18 08:00:59,909 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-08-18 08:00:59,911 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-08-18 08:00:59,913 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-08-18 08:00:59,916 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-08-18 08:00:59,933 INFO hermes_cli.plugins: Plugin discovery complete: 55 found, 48 enabled
+2026-08-18 08:01:01,136 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-08-18 08:01:01,160 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=4070, started_at=2026-08-18T07:48:42.547070+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-18T07:58:54.816811+00:00 last_mem={'rss_kib': 229640, 'mem_total_kib': 16373448, 'mem_available_kib': 15116248, 'swap_used_kib': 0} suspected_oom=False
+2026-08-18 08:01:01,200 INFO gateway.run: Starting Hermes Gateway...
+2026-08-18 08:01:01,200 INFO gateway.run: Session storage: /home/runner/.hermes/sessions
+2026-08-18 08:01:01,209 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-18 08:01:01,209 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-18 08:01:01,249 INFO gateway.run: Connecting to telegram...
+2026-08-18 08:01:01,252 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-18 08:01:01,430 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-18 08:01:01,431 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-18 08:01:01,442 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-18 08:01:01,844 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-18 08:01:01,845 INFO telegram.ext.Application: Application started
+2026-08-18 08:01:02,057 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-08-18 08:01:02,289 INFO tools.tirith_security: tirith installed to /home/runner/.hermes/bin/tirith (SHA-256 only)
+2026-08-18 08:01:12,528 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-18 08:01:12,532 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-18 08:01:12,825 INFO gateway.run: ✓ telegram connected
+2026-08-18 08:01:12,868 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-18 08:01:12,879 INFO gateway.run: Channel directory built: 18 target(s)
+2026-08-18 08:01:13,480 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-18 08:01:13,833 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-18 08:01:13,887 INFO gateway.run: Press Ctrl+C to stop
+2026-08-18 08:01:13,892 INFO cron.scheduler_provider: In-process cron scheduler started (interval=60s)
+2026-08-18 08:01:13,899 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/runner/.hermes/kanban/.dispatcher.lock)
+2026-08-18 08:01:13,900 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-18 08:01:13,901 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-08-18 08:01:13,951 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=156420->145332 rss_anon_kib=130876->119788 threads=9 duration_ms=45.9
+2026-08-18 08:01:14,264 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-18 08:01:14,264 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 94 hidden (over 60 limit). Use /commands for full list.
+2026-08-18 08:01:18,901 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-18 08:01:46,841 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (10 chars)
+2026-08-18 08:01:46,888 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='bagaimana?' reply_to_id=133 reply_to_text=''
+2026-08-18 08:01:48,053 INFO run_agent: Loaded environment variables from /home/runner/.hermes/.env
+2026-08-18 08:01:49,794 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:01:49,795 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 08:01:49,797 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 08:01:49,798 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-18 08:01:49,799 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-18 08:01:49,939 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 08:01:49,961 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 08:01:49,964 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 08:01:49,965 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 08:01:49,966 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 08:01:49,969 INFO tools.lazy_deps: Lazy-installing edge-tts==7.2.7 for feature 'tts.edge'
+2026-08-18 08:01:50,110 INFO tools.lazy_deps: Lazy install complete for feature 'tts.edge'
+2026-08-18 08:01:50,125 WARNING agent.auxiliary_client: Auxiliary client: PAID lane engaged for auxiliary task — OpenRouter fallback model 'google/gemini-3.6-flash' is not a :free SKU and may incur real spend. Set auxiliary.free_only: true to restrict auxiliary fallbacks to free models, or auxiliary.openrouter_model to a :free model.
+2026-08-18 08:01:50,126 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 08:02:50.
+2026-08-18 08:01:50,130 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-18 08:01:50,130 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 08:02:50.
+2026-08-18 08:01:50,130 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-18 08:01:50,132 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 08:02:50.
+2026-08-18 08:01:50,134 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-18 08:01:50,135 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 08:02:50.
+2026-08-18 08:01:50,135 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-18 08:01:50,135 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 08:01:50,146 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-18 08:01:50,224 INFO [20260818_074952_04ef3f0b] agent.turn_context: conversation turn: session=20260818_074952_04ef3f0b model=deepseek-v4-flash-free provider=opencode-zen platform=telegram history=0 msg='bagaimana?'
+2026-08-18 08:01:51,126 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider opencode-zen (deepseek-v4-flash-free)
+2026-08-18 08:01:51,126 INFO agent.auxiliary_client: Auxiliary title_generation: using opencode-zen (deepseek-v4-flash-free) at https://opencode.ai/zen/v1/
+2026-08-18 08:01:51,200 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-15 (<lambda>):140374144181952 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:01:51,508 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
+2026-08-18 08:01:52,150 WARNING agent.title_generator: Title generation failed: Error code: 400 - {'error': {'param': None, 'type': 'invalid_request_error', 'code': 'invalid_request_error', 'message': 'Error from provider (Console): Upstream request failed: [invalid_request_error] This response_format type is unavailable now'}}
+2026-08-18 08:01:54,077 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #1: model=deepseek-v4-flash-free provider=opencode-zen in=18333 out=162 total=18495 latency=3.0s
+2026-08-18 08:01:54,252 INFO [20260818_074952_04ef3f0b] agent.tool_executor: tool session_search completed (0.01s, 923 chars)
+2026-08-18 08:01:56,760 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #2: model=deepseek-v4-flash-free provider=opencode-zen in=18852 out=161 total=19013 latency=2.5s cache=18432/18852 (98%)
+2026-08-18 08:01:56,774 INFO [20260818_074952_04ef3f0b] agent.tool_executor: tool session_search completed (0.01s, 20120 chars)
+2026-08-18 08:02:08,371 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #3: model=deepseek-v4-flash-free provider=opencode-zen in=25111 out=1054 total=26165 latency=11.6s cache=18944/25111 (75%)
+2026-08-18 08:02:08,377 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=deepseek-v4-flash-free api_calls=3/500 budget=3/500 tool_turns=2 last_msg_role=assistant response_len=534 session=20260818_074952_04ef3f0b
+2026-08-18 08:02:08,405 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=21.5s api_calls=3 response=534 chars
+2026-08-18 08:02:08,420 INFO gateway.platforms.base: [Telegram] Sending response (534 chars) to 7699507804
+2026-08-18 08:02:14,052 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=259268->228568 rss_anon_kib=224144->193444 threads=12 duration_ms=101.2
+2026-08-18 08:03:14,153 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=229084->228564 rss_anon_kib=193960->193440 threads=11 duration_ms=100.5
+2026-08-18 08:03:15,322 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (139 chars)
+2026-08-18 08:03:15,326 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='example nih ya buat kamu list bukan email sungguhan  contoh1@gmail.com hehe1122 ' reply_to_id=133 reply_to_text=''
+2026-08-18 08:03:15,384 INFO [20260818_074952_04ef3f0b] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:03:15,385 WARNING [20260818_074952_04ef3f0b] tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 08:03:15,386 WARNING [20260818_074952_04ef3f0b] tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 08:03:15,387 WARNING [20260818_074952_04ef3f0b] tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-18 08:03:15,388 WARNING [20260818_074952_04ef3f0b] tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-18 08:03:15,390 WARNING [20260818_074952_04ef3f0b] tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 08:03:15,391 WARNING [20260818_074952_04ef3f0b] tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 08:03:15,394 WARNING [20260818_074952_04ef3f0b] tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 08:03:15,395 WARNING [20260818_074952_04ef3f0b] tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 08:03:15,396 WARNING [20260818_074952_04ef3f0b] tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 08:03:15,399 WARNING [20260818_074952_04ef3f0b] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 08:04:15.
+2026-08-18 08:03:15,401 WARNING [20260818_074952_04ef3f0b] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-18 08:03:15,401 WARNING [20260818_074952_04ef3f0b] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 08:04:15.
+2026-08-18 08:03:15,401 WARNING [20260818_074952_04ef3f0b] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-18 08:03:15,404 WARNING [20260818_074952_04ef3f0b] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 08:04:15.
+2026-08-18 08:03:15,406 WARNING [20260818_074952_04ef3f0b] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-18 08:03:15,406 WARNING [20260818_074952_04ef3f0b] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 08:04:15.
+2026-08-18 08:03:15,406 WARNING [20260818_074952_04ef3f0b] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-18 08:03:15,406 WARNING [20260818_074952_04ef3f0b] tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 08:03:15,417 WARNING [20260818_074952_04ef3f0b] tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-18 08:03:15,429 INFO [20260818_074952_04ef3f0b] agent.turn_context: conversation turn: session=20260818_074952_04ef3f0b model=deepseek-v4-flash-free provider=opencode-zen platform=telegram history=6 msg='example nih ya buat kamu list bukan email sungguhan  contoh1@gmail.com hehe1122 ...'
+2026-08-18 08:03:15,446 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-18 (<lambda>):140374290986688 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:03:21,858 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #1: model=deepseek-v4-flash-free provider=opencode-zen in=26263 out=561 total=26824 latency=6.4s
+2026-08-18 08:03:21,937 INFO agent.tool_executor: tool skill_view completed (0.08s, 3091 chars)
+2026-08-18 08:03:21,941 INFO agent.tool_executor: tool skill_view completed (0.08s, 3274 chars)
+2026-08-18 08:03:22,649 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-18 08:03:22,663 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-19 (<lambda>):140374160963264 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:03:22,665 WARNING [20260818_074952_04ef3f0b] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-18 08:03:22,665 INFO [20260818_074952_04ef3f0b] root: Rate-limit backoff level 0: cooldown 60 s (1.0 min, backoff#1)
+2026-08-18 08:03:22,668 WARNING [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback skip: chain entry opencode-zen/deepseek-v4-flash-free resolves to the same backend as the current one (https://opencode.ai/zen/v1)
+2026-08-18 08:03:22,668 INFO [20260818_074952_04ef3f0b] root: Rate-limit backoff level 1: cooldown 120 s (2.0 min, backoff#2)
+2026-08-18 08:03:22,677 INFO [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback nemotron-3-ultra-free: reasoning_config resolved: None
+2026-08-18 08:03:22,678 INFO [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback activated: deepseek-v4-flash-free → nemotron-3-ultra-free (opencode-zen)
+2026-08-18 08:03:22,691 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-20 (<lambda>):140374160963264 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:04:14,253 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=237160->233544 rss_anon_kib=202036->198420 threads=14 duration_ms=98.9
+2026-08-18 08:04:14,604 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #2: model=nemotron-3-ultra-free provider=opencode-zen in=28922 out=962 total=29884 latency=51.9s
+2026-08-18 08:04:14,610 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=2/500 budget=2/500 tool_turns=3 last_msg_role=assistant response_len=1928 session=20260818_074952_04ef3f0b
+2026-08-18 08:04:14,655 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=59.3s api_calls=2 response=1928 chars
+2026-08-18 08:04:14,664 INFO gateway.platforms.base: [Telegram] Sending response (1928 chars) to 7699507804
+2026-08-18 08:05:14,386 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236576->231492 rss_anon_kib=201452->196368 threads=11 duration_ms=120.5
+2026-08-18 08:06:10,982 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 08:06:11,308 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 08:06:14,516 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=250792->231836 rss_anon_kib=215668->196680 threads=11 duration_ms=129.1
