@@ -2539,3 +2539,7 @@ telegram.error.BadRequest: Chat not found
 2026-08-18 10:54:12,752 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='gak usah' reply_to_id=133 reply_to_text=''
 2026-08-18 10:54:28,574 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=15.8s api_calls=1 response=433 chars
 2026-08-18 10:54:28,624 INFO gateway.platforms.base: [Telegram] Sending response (433 chars) to 7699507804
+2026-08-18 10:57:28,872 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:7827 → 1 (session_reset)
+2026-08-18 11:01:25,646 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7827 (265 chars)
+2026-08-18 11:01:25,649 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='menurutmu,buat strategi cuan gmail modal nokos rp150-500 pakai akun  orang tua u' reply_to_id=351 reply_to_text=''
+2026-08-18 11:01:28,569 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7827 -> 'Strategi cuan gmail modal nokos'

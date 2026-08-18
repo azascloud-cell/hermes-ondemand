@@ -125,6 +125,10 @@
       1787040056950408915,
       9073
     ],
+    "devops/hermes-gateway-monitoring/SKILL.md": [
+      1787044142850133318,
+      4085
+    ],
     "social-media/DESCRIPTION.md": [
       1787040056971314013,
       151
@@ -180,6 +184,10 @@
     "autonomous-ai-agents/codex/SKILL.md": [
       1787040056930906676,
       5738
+    ],
+    "autonomous-ai-agents/hermes-gateway-resilience/SKILL.md": [
+      1787043082607919964,
+      3359
     ],
     "autonomous-ai-agents/opencode/SKILL.md": [
       1787040056931408690,
@@ -720,6 +728,21 @@
       }
     },
     {
+      "skill_name": "hermes-gateway-resilience",
+      "category": "autonomous-ai-agents",
+      "frontmatter_name": "hermes-gateway-resilience",
+      "description": "Auto-restart Hermes Gateway in hosted compute via cron.",
+      "platforms": [
+        "linux"
+      ],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
       "skill_name": "merge-reconciler",
       "category": "autonomous-ai-agents",
       "frontmatter_name": "merge-reconciler",
@@ -1017,6 +1040,21 @@
         "linux",
         "macos",
         "windows"
+      ],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "hermes-gateway-monitoring",
+      "category": "devops",
+      "frontmatter_name": "hermes-gateway-monitoring",
+      "description": "Auto-restart Hermes Gateway on hosted compute via cronjob.",
+      "platforms": [
+        "linux"
       ],
       "conditions": {
         "fallback_for_toolsets": [],

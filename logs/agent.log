@@ -19166,3 +19166,63 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-18 10:55:14,032 INFO [20260818_074952_04ef3f0b] hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=306444->304556 rss_anon_kib=271320->269432 threads=17 duration_ms=103.1
 2026-08-18 10:55:14,034 INFO [20260818_074952_04ef3f0b] agent.background_review: Background review complete: thread=bg-review calls=3 in=133507 out=1319 cache_read=252480 result=memory
 2026-08-18 10:56:31,953 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=327748->302732 rss_anon_kib=292624->267608 threads=16 duration_ms=106.6
+2026-08-18 10:57:28,872 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:7827 → 1 (session_reset)
+2026-08-18 10:57:32,057 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=329032->304296 rss_anon_kib=293908->269172 threads=16 duration_ms=103.6
+2026-08-18 10:58:32,162 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=308916->304420 rss_anon_kib=273792->269296 threads=16 duration_ms=103.8
+2026-08-18 10:59:32,266 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=304960->304356 rss_anon_kib=269836->269232 threads=16 duration_ms=103.7
+2026-08-18 11:00:32,384 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=305756->304444 rss_anon_kib=270632->269320 threads=16 duration_ms=106.6
+2026-08-18 11:01:25,646 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7827 (265 chars)
+2026-08-18 11:01:25,649 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='menurutmu,buat strategi cuan gmail modal nokos rp150-500 pakai akun  orang tua u' reply_to_id=351 reply_to_text=''
+2026-08-18 11:01:25,690 INFO [20260818_074952_04ef3f0b] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 11:01:25,695 INFO [20260818_105728_e90ffc44] agent.turn_context: conversation turn: session=20260818_105728_e90ffc44 model=deepseek-v4-flash-free provider=opencode-zen platform=telegram history=0 msg='menurutmu,buat strategi cuan gmail modal nokos rp150-500 pakai akun  orang tua u...'
+2026-08-18 11:01:25,738 INFO agent.auxiliary_client: Auxiliary title_generation: using opencode-zen (deepseek-v4-flash-free) at https://opencode.ai/zen/v1/
+2026-08-18 11:01:25,746 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-525 (<lambda>):140373590529728 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 11:01:26,749 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-18 11:01:26,760 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-525 (<lambda>):140373590529728 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 11:01:26,761 WARNING [20260818_105728_e90ffc44] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-18 11:01:26,762 INFO [20260818_105728_e90ffc44] root: Rate-limit backoff level 0: cooldown 60 s (1.0 min, backoff#1)
+2026-08-18 11:01:26,762 WARNING [20260818_105728_e90ffc44] agent.chat_completion_helpers: Fallback skip: chain entry opencode-zen/deepseek-v4-flash-free resolves to the same backend as the current one (https://opencode.ai/zen/v1)
+2026-08-18 11:01:26,762 INFO [20260818_105728_e90ffc44] root: Rate-limit backoff level 1: cooldown 120 s (2.0 min, backoff#2)
+2026-08-18 11:01:26,772 INFO [20260818_105728_e90ffc44] agent.chat_completion_helpers: Fallback nemotron-3-ultra-free: reasoning_config resolved: None
+2026-08-18 11:01:26,773 INFO [20260818_105728_e90ffc44] agent.chat_completion_helpers: Fallback activated: deepseek-v4-flash-free → nemotron-3-ultra-free (opencode-zen)
+2026-08-18 11:01:26,783 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-526 (<lambda>):140373590529728 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 11:01:27,661 INFO agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=429), rotating
+2026-08-18 11:01:27,661 INFO agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-18 11:01:27,661 INFO agent.auxiliary_client: Auxiliary title_generation: rate limit on auto (Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}), trying fallback
+2026-08-18 11:01:27,675 INFO agent.auxiliary_client: Auxiliary title_generation: rate limit on auto — main fallback chain to fallback_providers[3](groq) (openai/gpt-oss-120b)
+2026-08-18 11:01:28,569 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7827 -> 'Strategi cuan gmail modal nokos'
+2026-08-18 11:01:32,492 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=309596->306292 rss_anon_kib=274472->271168 threads=19 duration_ms=106.9
+2026-08-18 11:02:19,173 INFO [20260818_105728_e90ffc44] agent.conversation_loop: API call #1: model=nemotron-3-ultra-free provider=opencode-zen in=20561 out=1328 total=21889 latency=52.4s
+2026-08-18 11:02:19,691 INFO agent.auxiliary_client: Auxiliary approval: using opencode-zen (deepseek-v4-flash-free) at https://opencode.ai/zen/v1/
+2026-08-18 11:02:21,436 INFO agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=429), rotating
+2026-08-18 11:02:21,436 INFO agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-18 11:02:21,436 INFO agent.auxiliary_client: Auxiliary approval: rate limit on auto (Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}), trying fallback
+2026-08-18 11:02:21,457 INFO agent.auxiliary_client: Auxiliary approval: rate limit on auto — main fallback chain to fallback_providers[3](groq) (openai/gpt-oss-120b)
+2026-08-18 11:02:21,986 INFO [20260818_105728_e90ffc44] agent.tool_executor: tool execute_code completed (2.31s, 1183 chars)
