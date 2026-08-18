@@ -6598,3 +6598,4 @@ openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: In
 2026-08-18 09:23:43,625 WARNING [20260818_074952_04ef3f0b] agent.conversation_loop: Retrying API call in 5.126855971553228s (attempt 2/3) thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
 2026-08-18 09:36:53,100 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 10:06:53,411 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 10:36:53,512 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
