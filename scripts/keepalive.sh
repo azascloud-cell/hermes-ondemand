@@ -68,19 +68,31 @@ TELEGRAM_ALLOWED_USERS=${TELEGRAM_ALLOWED_USERS}
 EOF
   cat > "$HOME/.hermes/config.yaml" <<EOF
 model:
-  provider: "groq"
-  default: "openai/gpt-oss-120b"
-  base_url: "https://api.groq.com/openai/v1"
+  provider: "opencode-zen"
+  default: "deepseek-v4-flash-free"
+  base_url: "https://opencode.ai/zen/v1"
 fallback_providers:
+  - provider: "opencode-zen"
+    model: "deepseek-v4-flash-free"
+  - provider: "opencode-zen"
+    model: "nemotron-3-ultra-free"
+  - provider: "opencode-zen"
+    model: "north-mini-code-free"
   - provider: "groq"
     model: "openai/gpt-oss-120b"
-  - provider: "groq"
-    model: "openai/gpt-oss-20b"
-  - provider: "groq"
-    model: "qwen/qwen3.6-27b"
   - provider: "ollama-cloud"
     model: "gemma4:31b-cloud"
 providers:
+  opencode-zen:
+    api: "https://opencode.ai/zen/v1"
+    api_key: "\${OPENCODE_ZEN_API_KEY}"
+    models:
+      deepseek-v4-flash-free:
+        context_length: 1000000
+      nemotron-3-ultra-free:
+        context_length: 1000000
+      north-mini-code-free:
+        context_length: 1000000
   groq:
     api: "https://api.groq.com/openai/v1"
     api_key: "\${GROQ_API_KEY}"
@@ -123,10 +135,17 @@ import json, os, sqlite3, time
 db = os.path.expanduser("~/.hermes/state.db")
 BAD_PROVIDERS = {"opencode", "opencode-zen", "opencode-go"}
 DEPRECATED = {"llama-3.3-70b-versatile", "llama-3.3-70b-specdec", "llama-3.1-8b-instant", "llama-3.1-70b-versatile"}
+NEW_DEFAULT = "deepseek-v4-flash-free"
+NEW_PROVIDER = "opencode-zen"
 def is_bad(mo):
     if not isinstance(mo, dict):
         return False
-    return (mo.get("provider") in BAD_PROVIDERS) or (mo.get("model") in DEPRECATED)
+    prov = mo.get("provider")
+    mdl = mo.get("model") or ""
+    # opencode/openccode-zen paid models (401) + deprecated groq models. Allow *-free.
+    if mdl.endswith("-free"):
+        return False
+    return (prov in BAD_PROVIDERS) or (mdl in DEPRECATED)
 con = sqlite3.connect(db)
 cur = con.cursor()
 # scrub gateway_routing entry_json model_override
@@ -151,9 +170,9 @@ for sid, model, mcfg in cur.fetchall():
     except Exception:
         cfg = {}
     if is_bad(cfg) or (model in DEPRECATED):
-        cfg = {"provider": None}
+        cfg = {"provider": NEW_PROVIDER}
         cur.execute("UPDATE sessions SET model=?, model_config=? WHERE id=?",
-                    ("gemma4:31b-cloud", json.dumps(cfg), sid))
+                    (NEW_DEFAULT, json.dumps(cfg), sid))
         print("cleared session model:", sid)
 # archive sessions that ballooned (413 payload too large / compression failures)
 # so they never rehydrate with an oversized context that exceeds provider TPM limits.
