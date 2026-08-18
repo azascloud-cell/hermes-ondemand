@@ -4769,3 +4769,4 @@ telegram.error.TimedOut: Timed out
 2026-08-18 01:39:41,987 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
 2026-08-18 01:39:41,988 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
 2026-08-18 01:39:42,080 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-18 01:46:56,692 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
