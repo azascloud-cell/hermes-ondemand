@@ -15358,3 +15358,12 @@ telegram.error.TimedOut: Timed out
 2026-08-18 03:38:36,049 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264204->246312 rss_anon_kib=229160->211268 threads=13 duration_ms=113.4
 2026-08-18 03:39:36,156 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247132->246344 rss_anon_kib=212088->211300 threads=13 duration_ms=107.2
 2026-08-18 03:40:36,274 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247084->246308 rss_anon_kib=212040->211264 threads=13 duration_ms=116.8
+2026-08-18 03:41:36,397 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247968->246300 rss_anon_kib=212924->211256 threads=13 duration_ms=115.9
+2026-08-18 03:42:36,508 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247388->246400 rss_anon_kib=212344->211356 threads=13 duration_ms=111.1
+2026-08-18 03:43:36,616 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=265404->246436 rss_anon_kib=230360->211360 threads=13 duration_ms=106.8
+2026-08-18 03:43:36,617 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:7449 (idle=3747s)
+2026-08-18 03:43:36,618 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:7:139820204549824 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-18 03:43:36,618 INFO run_agent: OpenAI client closed (cache_evict, shared=False, tcp_force_closed=0) thread=agent-cache-idle-agent:main:telegram:dm:7:139820204549824 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-18 03:43:36,618 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-18 03:44:36,732 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=249544->245056 rss_anon_kib=214500->210012 threads=13 duration_ms=116.0
+2026-08-18 03:45:36,845 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245804->244992 rss_anon_kib=210760->209948 threads=13 duration_ms=111.4
