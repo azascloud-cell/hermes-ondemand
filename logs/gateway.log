@@ -2123,3 +2123,7 @@
 2026-08-18 02:21:19,304 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='tapi,bagaimana jika aku minim tentang agama,tapi kalau dasar insyaallah bisa' reply_to_id=52 reply_to_text=''
 2026-08-18 02:21:25,618 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=6.3s api_calls=1 response=3263 chars
 2026-08-18 02:21:25,627 INFO gateway.platforms.base: [Telegram] Sending response (3263 chars) to 7699507804
+2026-08-18 02:28:35,399 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7393 (120 chars)
+2026-08-18 02:28:35,403 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='bagaimanakalau aku ini seorang yang pecandu film dewasa,tetapi merasa suka dia,t' reply_to_id=52 reply_to_text=''
+2026-08-18 02:28:46,800 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=11.4s api_calls=1 response=4011 chars
+2026-08-18 02:28:46,812 INFO gateway.platforms.base: [Telegram] Sending response (4011 chars) to 7699507804

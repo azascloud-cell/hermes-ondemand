@@ -15215,3 +15215,15 @@ telegram.error.TimedOut: Timed out
 2026-08-18 02:21:27,587 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247704->244620 rss_anon_kib=212660->209576 threads=14 duration_ms=115.7
 2026-08-18 02:22:27,706 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245580->244436 rss_anon_kib=210536->209392 threads=13 duration_ms=118.1
 2026-08-18 02:23:27,826 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=258376->244432 rss_anon_kib=223332->209388 threads=13 duration_ms=118.7
+2026-08-18 02:24:27,944 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=250296->244548 rss_anon_kib=215252->209504 threads=13 duration_ms=118.1
+2026-08-18 02:25:28,059 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245304->244468 rss_anon_kib=210260->209424 threads=13 duration_ms=113.9
+2026-08-18 02:26:28,179 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246148->244592 rss_anon_kib=211104->209548 threads=13 duration_ms=112.8
+2026-08-18 02:27:28,281 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245592->244600 rss_anon_kib=210548->209556 threads=13 duration_ms=100.6
+2026-08-18 02:28:28,400 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248944->244480 rss_anon_kib=213900->209436 threads=13 duration_ms=118.6
+2026-08-18 02:28:35,399 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7393 (120 chars)
+2026-08-18 02:28:35,403 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='bagaimanakalau aku ini seorang yang pecandu film dewasa,tetapi merasa suka dia,t' reply_to_id=52 reply_to_text=''
+2026-08-18 02:28:35,430 INFO [20260818_021712_6b93bb34] agent.turn_context: conversation turn: session=20260818_021712_6b93bb34 model=gemma4:31b-cloud provider=ollama-cloud platform=telegram history=4 msg='bagaimanakalau aku ini seorang yang pecandu film dewasa,tetapi merasa suka dia,t...'
+2026-08-18 02:28:46,643 INFO [20260818_021712_6b93bb34] agent.conversation_loop: API call #3: model=gemma4:31b-cloud provider=ollama-cloud in=20219 out=979 total=21198 latency=11.2s
+2026-08-18 02:28:46,780 INFO [20260818_021712_6b93bb34] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=4011 session=20260818_021712_6b93bb34
+2026-08-18 02:28:46,800 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=11.4s api_calls=1 response=4011 chars
+2026-08-18 02:28:46,812 INFO gateway.platforms.base: [Telegram] Sending response (4011 chars) to 7699507804
