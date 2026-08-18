@@ -60,9 +60,9 @@ jobs:
           EOF
           cat > ~/.hermes/config.yaml <<EOF
           model:
-            provider: "groq"
-            default: "openai/gpt-oss-120b"
-            base_url: "https://api.groq.com/openai/v1"
+            provider: "opencode-zen"
+            default: "deepseek-v4-flash-free"
+            base_url: "https://opencode.ai/zen/v1"
           EOF
 
       - name: Pin python-telegram-bot 22.6 (fix Any cannot be instantiated)
