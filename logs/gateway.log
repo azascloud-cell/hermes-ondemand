@@ -2347,3 +2347,48 @@
 2026-08-18 07:41:32,710 INFO gateway.run: Skipping transcript persistence for context-overflow failure in session 20260818_070038_00588589 to prevent session growth loop.
 2026-08-18 07:41:32,710 INFO gateway.run: Auto-resetting session 20260818_070038_00588589 after compression exhaustion.
 2026-08-18 07:41:32,731 INFO gateway.platforms.base: [Telegram] Sending response (215 chars) to 7699507804
+2026-08-18 07:48:42,546 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=4025, started_at=2026-08-18T07:40:29.427668+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-18T07:45:40.856459+00:00 last_mem={'rss_kib': 229488, 'mem_total_kib': 16373452, 'mem_available_kib': 14956372, 'swap_used_kib': 0} suspected_oom=False
+2026-08-18 07:48:42,586 INFO gateway.run: Starting Hermes Gateway...
+2026-08-18 07:48:42,587 INFO gateway.run: Session storage: /home/runner/.hermes/sessions
+2026-08-18 07:48:42,596 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-18 07:48:42,596 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-18 07:48:42,636 INFO gateway.run: Connecting to telegram...
+2026-08-18 07:48:42,639 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-18 07:48:42,871 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-18 07:48:42,871 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-18 07:48:42,882 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-18 07:48:43,246 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-18 07:48:54,408 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-18 07:48:54,418 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-18 07:48:54,710 INFO gateway.run: ✓ telegram connected
+2026-08-18 07:48:54,756 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-18 07:48:54,766 INFO gateway.run: Channel directory built: 16 target(s)
+2026-08-18 07:48:55,301 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-18 07:48:55,630 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-18 07:48:55,775 INFO gateway.run: Press Ctrl+C to stop
+2026-08-18 07:48:55,783 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/runner/.hermes/kanban/.dispatcher.lock)
+2026-08-18 07:48:55,788 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-08-18 07:48:55,789 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-18 07:48:55,927 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-18 07:48:55,927 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 94 hidden (over 60 limit). Use /commands for full list.
+2026-08-18 07:49:00,788 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-18 07:49:47,614 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (1 chars)
+2026-08-18 07:49:47,663 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='P' reply_to_id=133 reply_to_text=''
+2026-08-18 07:49:52,453 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=4.8s api_calls=1 response=57 chars
+2026-08-18 07:49:52,455 INFO gateway.run: Skipping transcript persistence for context-overflow failure in session 20260818_074132_403e2bec to prevent session growth loop.
+2026-08-18 07:49:52,455 INFO gateway.run: Auto-resetting session 20260818_074132_403e2bec after compression exhaustion.
+2026-08-18 07:49:52,471 INFO gateway.platforms.base: [Telegram] Sending response (215 chars) to 7699507804
+2026-08-18 07:50:28,357 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:7697 → 1 (session_reset)
+2026-08-18 07:50:35,994 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7697 (3 chars)
+2026-08-18 07:50:35,998 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Hey' reply_to_id=223 reply_to_text=''
+2026-08-18 07:50:37,755 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=1.8s api_calls=1 response=57 chars
+2026-08-18 07:50:37,756 INFO gateway.run: Skipping transcript persistence for context-overflow failure in session 20260818_075028_66795344 to prevent session growth loop.
+2026-08-18 07:50:37,756 INFO gateway.run: Auto-resetting session 20260818_075028_66795344 after compression exhaustion.
+2026-08-18 07:50:37,768 INFO gateway.platforms.base: [Telegram] Sending response (215 chars) to 7699507804
+2026-08-18 07:50:39,867 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
+2026-08-18 07:52:35,709 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7707 (3 chars)
+2026-08-18 07:52:35,713 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Hey' reply_to_id=233 reply_to_text=''
+2026-08-18 07:52:36,280 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=0.6s api_calls=1 response=57 chars
+2026-08-18 07:52:36,281 INFO gateway.run: Skipping transcript persistence for context-overflow failure in session 20260818_075230_49c2a3f3 to prevent session growth loop.
+2026-08-18 07:52:36,281 INFO gateway.run: Auto-resetting session 20260818_075230_49c2a3f3 after compression exhaustion.
+2026-08-18 07:52:36,292 INFO gateway.platforms.base: [Telegram] Sending response (215 chars) to 7699507804

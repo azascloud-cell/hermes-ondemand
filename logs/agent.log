@@ -16597,3 +16597,283 @@ openai.APIStatusError: Error code: 413 - {'error': {'message': 'Request too larg
 2026-08-18 07:42:42,210 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=247196->228464 rss_anon_kib=212164->193432 threads=12 duration_ms=138.8
 2026-08-18 07:43:42,341 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=240940->228952 rss_anon_kib=205908->193920 threads=12 duration_ms=129.0
 2026-08-18 07:44:42,487 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=230576->228936 rss_anon_kib=195544->193904 threads=12 duration_ms=132.3
+2026-08-18 07:48:39,676 INFO hermes_cli.main: Checkout changed since last launch (unknown -> git:refs/heads/main:e624e9fde561e1add9388384012b295fde669ade): cleared 43 stale __pycache__ directories
+2026-08-18 07:48:41,131 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-08-18 07:48:41,133 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-08-18 07:48:41,135 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-08-18 07:48:41,197 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-08-18 07:48:41,199 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-08-18 07:48:41,203 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-08-18 07:48:41,205 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-08-18 07:48:41,208 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-08-18 07:48:41,210 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-08-18 07:48:41,211 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-08-18 07:48:41,215 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-08-18 07:48:41,225 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-08-18 07:48:41,229 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-08-18 07:48:41,233 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-08-18 07:48:41,237 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-08-18 07:48:41,240 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-08-18 07:48:41,241 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-08-18 07:48:41,251 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-08-18 07:48:41,253 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-08-18 07:48:41,255 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-08-18 07:48:41,257 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-08-18 07:48:41,260 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-08-18 07:48:41,277 INFO hermes_cli.plugins: Plugin discovery complete: 55 found, 48 enabled
+2026-08-18 07:48:42,517 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-08-18 07:48:42,546 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=4025, started_at=2026-08-18T07:40:29.427668+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-18T07:45:40.856459+00:00 last_mem={'rss_kib': 229488, 'mem_total_kib': 16373452, 'mem_available_kib': 14956372, 'swap_used_kib': 0} suspected_oom=False
+2026-08-18 07:48:42,586 INFO gateway.run: Starting Hermes Gateway...
+2026-08-18 07:48:42,587 INFO gateway.run: Session storage: /home/runner/.hermes/sessions
+2026-08-18 07:48:42,596 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-18 07:48:42,596 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-18 07:48:42,636 INFO gateway.run: Connecting to telegram...
+2026-08-18 07:48:42,639 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-18 07:48:42,871 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-18 07:48:42,871 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-18 07:48:42,882 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-18 07:48:43,246 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-18 07:48:43,246 INFO telegram.ext.Application: Application started
+2026-08-18 07:48:43,594 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-08-18 07:48:43,850 INFO tools.tirith_security: tirith installed to /home/runner/.hermes/bin/tirith (SHA-256 only)
+2026-08-18 07:48:54,408 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-18 07:48:54,418 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-18 07:48:54,710 INFO gateway.run: ✓ telegram connected
+2026-08-18 07:48:54,756 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-18 07:48:54,766 INFO gateway.run: Channel directory built: 16 target(s)
+2026-08-18 07:48:55,301 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-18 07:48:55,630 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-18 07:48:55,775 INFO gateway.run: Press Ctrl+C to stop
+2026-08-18 07:48:55,780 INFO cron.scheduler_provider: In-process cron scheduler started (interval=60s)
+2026-08-18 07:48:55,783 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/runner/.hermes/kanban/.dispatcher.lock)
+2026-08-18 07:48:55,788 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-08-18 07:48:55,789 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-18 07:48:55,857 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=156196->145264 rss_anon_kib=130804->119872 threads=9 duration_ms=63.7
+2026-08-18 07:48:55,927 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-18 07:48:55,927 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 94 hidden (over 60 limit). Use /commands for full list.
+2026-08-18 07:49:00,788 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-18 07:49:47,614 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (1 chars)
+2026-08-18 07:49:47,663 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='P' reply_to_id=133 reply_to_text=''
+2026-08-18 07:49:48,746 INFO run_agent: Loaded environment variables from /home/runner/.hermes/.env
+2026-08-18 07:49:50,611 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:139788770342592 provider=custom base_url=https://api.groq.com/openai/v1 model=openai/gpt-oss-120b
+2026-08-18 07:49:50,613 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 07:49:50,614 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 07:49:50,615 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-18 07:49:50,616 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-18 07:49:50,771 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 07:49:50,794 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 07:49:50,798 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 07:49:50,798 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 07:49:50,799 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 07:49:50,802 INFO tools.lazy_deps: Lazy-installing edge-tts==7.2.7 for feature 'tts.edge'
+2026-08-18 07:49:50,993 INFO tools.lazy_deps: Lazy install complete for feature 'tts.edge'
+2026-08-18 07:49:51,009 WARNING agent.auxiliary_client: Auxiliary client: PAID lane engaged for auxiliary task — OpenRouter fallback model 'google/gemini-3.6-flash' is not a :free SKU and may incur real spend. Set auxiliary.free_only: true to restrict auxiliary fallbacks to free models, or auxiliary.openrouter_model to a :free model.
+2026-08-18 07:49:51,010 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:50:51.
+2026-08-18 07:49:51,014 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-18 07:49:51,014 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:50:51.
+2026-08-18 07:49:51,014 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-18 07:49:51,016 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:50:51.
+2026-08-18 07:49:51,017 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-18 07:49:51,018 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:50:51.
+2026-08-18 07:49:51,018 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-18 07:49:51,018 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 07:49:51,027 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-18 07:49:51,264 INFO [20260818_074132_403e2bec] agent.turn_context: conversation turn: session=20260818_074132_403e2bec model=openai/gpt-oss-120b provider=custom platform=telegram history=0 msg='P'
+2026-08-18 07:49:51,813 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider custom (openai/gpt-oss-120b)
+2026-08-18 07:49:51,814 INFO agent.auxiliary_client: Auxiliary title_generation: using custom (openai/gpt-oss-120b) at https://api.groq.com/openai/v1/
+2026-08-18 07:49:51,888 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-15 (<lambda>):139788602562240 provider=custom base_url=https://api.groq.com/openai/v1 model=openai/gpt-oss-120b
+2026-08-18 07:49:52,373 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 82280, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 82280, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-18 07:49:52,384 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-15 (<lambda>):139788602562240 provider=custom base_url=https://api.groq.com/openai/v1 model=openai/gpt-oss-120b
+2026-08-18 07:49:52,388 WARNING [20260818_074132_403e2bec] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIStatusError thread=hermes-gateway_0:139788770342592 provider=custom base_url=https://api.groq.com/openai/v1 model=openai/gpt-oss-120b summary=HTTP 413: Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 82280, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/
+2026-08-18 07:49:52,399 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider custom (openai/gpt-oss-120b)
+2026-08-18 07:49:52,399 INFO agent.conversation_compression: context compression started: session=20260818_074132_403e2bec messages=1 tokens=~19,263 model=openai/gpt-oss-120b focus=None
+2026-08-18 07:49:52,404 INFO agent.conversation_compression: Compression made no progress (session=20260818_074132_403e2bec) — skipping boundary rewrite.
+2026-08-18 07:49:52,404 INFO agent.conversation_compression: context compression attempt telemetry: {"attempt_id":"f75eb3347f8549d5903d2925a9464553","aux_call_duration_ms":null,"aux_model":"","aux_output_reservation":null,"aux_prompt_tokens":null,"aux_provider":"","chunk_count":0,"chunking":false,"commit_status":"aborted","current_estimated_tokens":19263,"effective_aux_context":null,"effective_threshold":98304,"event":"compression_attempt","failure_class":"no_progress","fallback_used":false,"fit_margin":null,"main_context_limit":131072,"main_model":"openai/gpt-oss-120b","main_provider":"custom","middle_window_tokens":null,"prellm_skip_count":0,"protected_head_tokens":null,"protected_tail_tokens":null,"session_id":"20260818_074132_403e2bec","split_status":"aborted","total_duration_ms":13,"trigger_source":"auto"}
+2026-08-18 07:49:52,407 ERROR [20260818_074132_403e2bec] agent.conversation_loop: 413 payload too large. Cannot compress further.
+2026-08-18 07:49:52,453 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=4.8s api_calls=1 response=57 chars
+2026-08-18 07:49:52,455 INFO gateway.run: Skipping transcript persistence for context-overflow failure in session 20260818_074132_403e2bec to prevent session growth loop.
+2026-08-18 07:49:52,455 INFO gateway.run: Auto-resetting session 20260818_074132_403e2bec after compression exhaustion.
+2026-08-18 07:49:52,460 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-evict-agent:main:telegram:dm:7:139789273650880 provider=custom base_url=https://api.groq.com/openai/v1 model=openai/gpt-oss-120b
+2026-08-18 07:49:52,471 INFO gateway.platforms.base: [Telegram] Sending response (215 chars) to 7699507804
+2026-08-18 07:49:55,991 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256352->222432 rss_anon_kib=221316->187396 threads=12 duration_ms=132.7
+2026-08-18 07:50:28,357 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:7697 → 1 (session_reset)
+2026-08-18 07:50:35,994 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7697 (3 chars)
+2026-08-18 07:50:35,998 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Hey' reply_to_id=223 reply_to_text=''
+2026-08-18 07:50:37,379 INFO [20260818_074132_403e2bec] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:139788770342592 provider=custom base_url=https://api.groq.com/openai/v1 model=openai/gpt-oss-120b
+2026-08-18 07:50:37,385 INFO [20260818_075028_66795344] agent.turn_context: conversation turn: session=20260818_075028_66795344 model=openai/gpt-oss-120b provider=custom platform=telegram history=0 msg='Hey'
+2026-08-18 07:50:37,397 INFO agent.auxiliary_client: Auxiliary title_generation: using custom (openai/gpt-oss-120b) at https://api.groq.com/openai/v1/
+2026-08-18 07:50:37,410 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-16 (<lambda>):139788367689408 provider=custom base_url=https://api.groq.com/openai/v1 model=openai/gpt-oss-120b
+2026-08-18 07:50:37,689 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 82280, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 82280, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-18 07:50:37,695 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-16 (<lambda>):139788367689408 provider=custom base_url=https://api.groq.com/openai/v1 model=openai/gpt-oss-120b
+2026-08-18 07:50:37,699 WARNING [20260818_075028_66795344] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIStatusError thread=hermes-gateway_0:139788770342592 provider=custom base_url=https://api.groq.com/openai/v1 model=openai/gpt-oss-120b summary=HTTP 413: Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 82280, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/
+2026-08-18 07:50:37,709 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider custom (openai/gpt-oss-120b)
+2026-08-18 07:50:37,710 INFO agent.conversation_compression: context compression started: session=20260818_075028_66795344 messages=1 tokens=~19,264 model=openai/gpt-oss-120b focus=None
+2026-08-18 07:50:37,713 INFO agent.conversation_compression: Compression made no progress (session=20260818_075028_66795344) — skipping boundary rewrite.
+2026-08-18 07:50:37,713 INFO agent.conversation_compression: context compression attempt telemetry: {"attempt_id":"2d569a31e42543de87fc2ab4e36c7bf9","aux_call_duration_ms":null,"aux_model":"","aux_output_reservation":null,"aux_prompt_tokens":null,"aux_provider":"","chunk_count":0,"chunking":false,"commit_status":"aborted","current_estimated_tokens":19264,"effective_aux_context":null,"effective_threshold":98304,"event":"compression_attempt","failure_class":"no_progress","fallback_used":false,"fit_margin":null,"main_context_limit":131072,"main_model":"openai/gpt-oss-120b","main_provider":"custom","middle_window_tokens":null,"prellm_skip_count":0,"protected_head_tokens":null,"protected_tail_tokens":null,"session_id":"20260818_075028_66795344","split_status":"aborted","total_duration_ms":12,"trigger_source":"auto"}
+2026-08-18 07:50:37,716 ERROR [20260818_075028_66795344] agent.conversation_loop: 413 payload too large. Cannot compress further.
+2026-08-18 07:50:37,755 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=1.8s api_calls=1 response=57 chars
+2026-08-18 07:50:37,756 INFO gateway.run: Skipping transcript persistence for context-overflow failure in session 20260818_075028_66795344 to prevent session growth loop.
+2026-08-18 07:50:37,756 INFO gateway.run: Auto-resetting session 20260818_075028_66795344 after compression exhaustion.
+2026-08-18 07:50:37,761 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-evict-agent:main:telegram:dm:7:139788753561280 provider=custom base_url=https://api.groq.com/openai/v1 model=openai/gpt-oss-120b
+2026-08-18 07:50:37,768 INFO gateway.platforms.base: [Telegram] Sending response (215 chars) to 7699507804
+2026-08-18 07:50:39,867 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
+2026-08-18 07:50:56,124 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245244->223728 rss_anon_kib=210208->188692 threads=12 duration_ms=129.5
+2026-08-18 07:51:56,248 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=224732->224056 rss_anon_kib=189696->189020 threads=12 duration_ms=121.7
+2026-08-18 07:52:35,709 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7707 (3 chars)
+2026-08-18 07:52:35,713 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Hey' reply_to_id=233 reply_to_text=''
+2026-08-18 07:52:35,751 INFO [20260818_075028_66795344] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:139788770342592 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-18 07:52:35,752 WARNING [20260818_075028_66795344] tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 07:52:35,753 WARNING [20260818_075028_66795344] tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 07:52:35,754 WARNING [20260818_075028_66795344] tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-18 07:52:35,755 WARNING [20260818_075028_66795344] tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-18 07:52:35,757 WARNING [20260818_075028_66795344] tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 07:52:35,757 WARNING [20260818_075028_66795344] tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 07:52:35,760 WARNING [20260818_075028_66795344] tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 07:52:35,761 WARNING [20260818_075028_66795344] tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 07:52:35,762 WARNING [20260818_075028_66795344] tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 07:52:35,765 WARNING [20260818_075028_66795344] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:53:35.
+2026-08-18 07:52:35,767 WARNING [20260818_075028_66795344] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-18 07:52:35,767 WARNING [20260818_075028_66795344] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:53:35.
+2026-08-18 07:52:35,767 WARNING [20260818_075028_66795344] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-18 07:52:35,769 WARNING [20260818_075028_66795344] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:53:35.
+2026-08-18 07:52:35,771 WARNING [20260818_075028_66795344] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-18 07:52:35,771 WARNING [20260818_075028_66795344] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:53:35.
+2026-08-18 07:52:35,771 WARNING [20260818_075028_66795344] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-18 07:52:35,771 WARNING [20260818_075028_66795344] tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 07:52:35,780 WARNING [20260818_075028_66795344] tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-18 07:52:35,794 INFO [20260818_075230_49c2a3f3] agent.turn_context: conversation turn: session=20260818_075230_49c2a3f3 model=deepseek-v4-flash provider=opencode platform=telegram history=0 msg='[Note: model was just switched from openai/gpt-oss-120b to deepseek-v4-flash via...'
+2026-08-18 07:52:35,816 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-17 (<lambda>):139788350908096 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-18 07:52:35,822 INFO agent.auxiliary_client: Auxiliary title_generation: main provider unavailable on opencode — main fallback chain to fallback_providers[3](ollama-cloud) (gemma4:31b-cloud)
+2026-08-18 07:52:35,823 INFO agent.auxiliary_client: Auxiliary title_generation: using ollama-cloud (gemma4:31b-cloud) at https://ollama.com/v1/
+2026-08-18 07:52:35,994 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}
+2026-08-18 07:52:36,003 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-17 (<lambda>):139788350908096 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash
+2026-08-18 07:52:36,005 WARNING [20260818_075230_49c2a3f3] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=hermes-gateway_0:139788770342592 provider=opencode base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash summary=HTTP 401: No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing
+2026-08-18 07:52:36,019 INFO [20260818_075230_49c2a3f3] agent.chat_completion_helpers: Fallback openai/gpt-oss-120b: reasoning_config resolved: None
+2026-08-18 07:52:36,019 INFO [20260818_075230_49c2a3f3] agent.chat_completion_helpers: Fallback activated: deepseek-v4-flash → openai/gpt-oss-120b (groq)
+2026-08-18 07:52:36,030 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-18 (<lambda>):139788350908096 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b
+2026-08-18 07:52:36,084 WARNING agent.auxiliary_client: Auxiliary: marking auto unhealthy for 600s (payment / credit error). Subsequent auxiliary calls will skip it until 08:02:36.
+2026-08-18 07:52:36,085 INFO agent.auxiliary_client: Auxiliary title_generation: payment error on auto (Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: d8bff498-9807-4b67-9312-86e262245198)', 'type': 'api_error', 'param': None, 'code': None}}), trying fallback
+2026-08-18 07:52:36,095 INFO agent.auxiliary_client: Auxiliary title_generation: payment error on auto — main fallback chain to fallback_providers[3](ollama-cloud) (gemma4:31b-cloud)
+2026-08-18 07:52:36,215 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 16240, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 16240, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-18 07:52:36,218 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-18 (<lambda>):139788350908096 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b
+2026-08-18 07:52:36,225 WARNING [20260818_075230_49c2a3f3] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIStatusError thread=hermes-gateway_0:139788770342592 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b summary=HTTP 413: Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 16240, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/
+2026-08-18 07:52:36,237 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider groq (openai/gpt-oss-120b)
+2026-08-18 07:52:36,238 INFO agent.conversation_compression: context compression started: session=20260818_075230_49c2a3f3 messages=1 tokens=~18,648 model=openai/gpt-oss-120b focus=None
+2026-08-18 07:52:36,243 INFO agent.conversation_compression: Compression made no progress (session=20260818_075230_49c2a3f3) — skipping boundary rewrite.
+2026-08-18 07:52:36,243 INFO agent.conversation_compression: context compression attempt telemetry: {"attempt_id":"e41b3e5f3ace4f549b9b6d270f29d5cd","aux_call_duration_ms":null,"aux_model":"","aux_output_reservation":null,"aux_prompt_tokens":null,"aux_provider":"","chunk_count":0,"chunking":false,"commit_status":"aborted","current_estimated_tokens":18648,"effective_aux_context":null,"effective_threshold":98304,"event":"compression_attempt","failure_class":"no_progress","fallback_used":false,"fit_margin":null,"main_context_limit":131072,"main_model":"openai/gpt-oss-120b","main_provider":"groq","middle_window_tokens":null,"prellm_skip_count":0,"protected_head_tokens":null,"protected_tail_tokens":null,"session_id":"20260818_075230_49c2a3f3","split_status":"aborted","total_duration_ms":16,"trigger_source":"auto"}
+2026-08-18 07:52:36,246 ERROR [20260818_075230_49c2a3f3] agent.conversation_loop: 413 payload too large. Cannot compress further.
+2026-08-18 07:52:36,280 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=0.6s api_calls=1 response=57 chars
+2026-08-18 07:52:36,281 INFO gateway.run: Skipping transcript persistence for context-overflow failure in session 20260818_075230_49c2a3f3 to prevent session growth loop.
+2026-08-18 07:52:36,281 INFO gateway.run: Auto-resetting session 20260818_075230_49c2a3f3 after compression exhaustion.
+2026-08-18 07:52:36,285 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-evict-agent:main:telegram:dm:7:139788619343552 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b
+2026-08-18 07:52:36,292 INFO gateway.platforms.base: [Telegram] Sending response (215 chars) to 7699507804
+2026-08-18 07:52:36,418 WARNING agent.title_generator: Title generation failed: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 15432eec-0304-4fe6-b4cc-03f97446f625)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-18 07:52:56,386 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=239656->230144 rss_anon_kib=204556->195044 threads=12 duration_ms=128.5
