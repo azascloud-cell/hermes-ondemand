@@ -65,6 +65,18 @@ jobs:
             base_url: "https://opencode.ai/zen/v1"
           EOF
 
+      - name: Install himalaya (CLI email tool for Hermes)
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          mkdir -p ~/.local/bin
+          if ! command -v himalaya >/dev/null 2>&1; then
+            curl -sSL https://raw.githubusercontent.com/pimalaya/himalaya/master/install.sh \
+              | PREFIX="$HOME/.local" sh || true
+          fi
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          export PATH="$HOME/.local/bin:$PATH"
+          himalaya --version || echo "himalaya install failed"
+
       - name: Pin python-telegram-bot 22.6 (fix Any cannot be instantiated)
         run: |
           export PATH="$HOME/.local/bin:$PATH"
