@@ -17172,3 +17172,58 @@ openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: In
 2026-08-18 08:16:30,872 WARNING [20260818_074952_04ef3f0b] agent.tool_executor: Tool write_file returned error (0.00s): {"bytes_written": 0, "dirs_created": false, "error": "Refusing to write '/home/runner/gmail_warming/accounts/TEMPLATE_config.toml': candidate content fails .toml syntax validation (TOMLDecodeError: In
 2026-08-18 08:16:40,639 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #7: model=nemotron-3-ultra-free provider=opencode-zen in=37713 out=286 total=37999 latency=9.8s cache=33664/37713 (89%)
 2026-08-18 08:16:40,747 INFO [20260818_074952_04ef3f0b] agent.tool_executor: tool write_file completed (0.10s, 259 chars)
+2026-08-18 08:17:15,884 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=238004->235256 rss_anon_kib=202880->200132 threads=17 duration_ms=99.1
+2026-08-18 08:18:15,990 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235932->235220 rss_anon_kib=200808->200096 threads=17 duration_ms=105.5
+2026-08-18 08:18:43,459 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [504] Upstream idle timeout exceeded
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4038, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 641, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [504] Upstream idle timeout exceeded
+2026-08-18 08:18:43,461 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-50 (<lambda>):140374290986688 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:18:43,466 WARNING [20260818_074952_04ef3f0b] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free summary=Streaming response failed: [504] Upstream idle timeout exceeded
+2026-08-18 08:18:43,466 WARNING [20260818_074952_04ef3f0b] agent.conversation_loop: Retrying API call in 2.966849037924264s (attempt 1/3) thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free policy=default error=Streaming response failed: [504] Upstream idle timeout exceeded
+2026-08-18 08:18:46,479 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-51 (<lambda>):140374290986688 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:19:16,088 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=250248->235128 rss_anon_kib=215124->200004 threads=17 duration_ms=98.0
+2026-08-18 08:19:47,846 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #8: model=nemotron-3-ultra-free provider=opencode-zen in=38067 out=2750 total=40817 latency=187.1s cache=37872/38067 (99%)
+2026-08-18 08:19:47,927 INFO [20260818_074952_04ef3f0b] agent.tool_executor: tool write_file completed (0.08s, 258 chars)
+2026-08-18 08:20:16,200 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244084->234844 rss_anon_kib=208960->199720 threads=18 duration_ms=102.2
+2026-08-18 08:21:00,662 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #9: model=nemotron-3-ultra-free provider=opencode-zen in=40892 out=2594 total=43486 latency=72.7s cache=33664/40892 (82%)
+2026-08-18 08:21:00,749 INFO [20260818_074952_04ef3f0b] agent.tool_executor: tool write_file completed (0.08s, 238 chars)
+2026-08-18 08:21:01,506 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4038, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 641, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 08:21:01,509 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-65 (<lambda>):140374290986688 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:21:01,510 WARNING [20260818_074952_04ef3f0b] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 08:21:01,512 WARNING [20260818_074952_04ef3f0b] agent.conversation_loop: Retrying API call in 2.106523771484844s (attempt 1/3) thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-18 08:21:03,724 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-66 (<lambda>):140374290986688 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:21:16,298 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=238308->235452 rss_anon_kib=203184->200328 threads=18 duration_ms=97.5
+2026-08-18 08:21:37,290 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #10: model=nemotron-3-ultra-free provider=opencode-zen in=43523 out=63 total=43586 latency=36.5s cache=37872/43523 (87%)
+2026-08-18 08:21:37,560 INFO [20260818_074952_04ef3f0b] agent.tool_executor: tool terminal completed (0.09s, 45 chars)
+2026-08-18 08:21:46,253 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #11: model=nemotron-3-ultra-free provider=opencode-zen in=43594 out=144 total=43738 latency=8.7s cache=37872/43594 (87%)
+2026-08-18 08:21:46,276 INFO [20260818_074952_04ef3f0b] agent.tool_executor: tool cronjob completed (0.02s, 1053 chars)
