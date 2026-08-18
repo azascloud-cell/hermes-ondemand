@@ -20680,3 +20680,9 @@ openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: In
 2026-08-18 22:03:01,551 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-cleanup-d40f4356873b:140187313104576 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
 2026-08-18 22:03:01,552 INFO run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=1) thread=cron-cleanup-d40f4356873b:140187313104576 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
 2026-08-18 22:03:01,671 INFO hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=231184->223312 rss_anon_kib=195652->187780 threads=16 duration_ms=118.5
+2026-08-18 22:04:38,149 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=225920->222492 rss_anon_kib=190388->186928 threads=14 duration_ms=144.2
+2026-08-18 22:05:38,258 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=223180->222372 rss_anon_kib=187648->186840 threads=14 duration_ms=108.3
+2026-08-18 22:06:38,392 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236100->222324 rss_anon_kib=200568->186792 threads=14 duration_ms=133.4
+2026-08-18 22:06:59,411 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
+2026-08-18 22:07:38,534 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=233600->222440 rss_anon_kib=198068->186908 threads=14 duration_ms=141.9
+2026-08-18 22:08:38,653 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=223168->222476 rss_anon_kib=187636->186912 threads=14 duration_ms=118.0
