@@ -2206,3 +2206,16 @@
 2026-08-18 06:23:59,389 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='rate limit provider ai kamu (hermes) maksudku' reply_to_id=47 reply_to_text=''
 2026-08-18 06:24:12,769 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=13.4s api_calls=1 response=2345 chars
 2026-08-18 06:24:12,778 INFO gateway.platforms.base: [Telegram] Sending response (2345 chars) to 7699507804
+2026-08-18 06:26:01,851 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7388 (65 chars)
+2026-08-18 06:26:01,855 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='kalau bikin script sandflower land yang otomatis tanam jual beli?' reply_to_id=47 reply_to_text=''
+2026-08-18 06:26:13,984 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=12.1s api_calls=1 response=3291 chars
+2026-08-18 06:26:13,993 INFO gateway.platforms.base: [Telegram] Sending response (3291 chars) to 7699507804
+2026-08-18 06:27:18,223 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7388 (20 chars)
+2026-08-18 06:27:18,227 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='kalau pakai cachyos?' reply_to_id=47 reply_to_text=''
+2026-08-18 06:27:26,778 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.6s api_calls=1 response=2691 chars
+2026-08-18 06:27:26,787 INFO gateway.platforms.base: [Telegram] Sending response (2691 chars) to 7699507804
+2026-08-18 06:28:23,956 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7388 (12 chars)
+2026-08-18 06:28:23,960 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='gak usah deh' reply_to_id=47 reply_to_text=''
+2026-08-18 06:28:30,139 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=6.2s api_calls=1 response=495 chars
+2026-08-18 06:28:30,147 INFO gateway.platforms.base: [Telegram] Sending response (495 chars) to 7699507804
+2026-08-18 06:29:54,576 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137

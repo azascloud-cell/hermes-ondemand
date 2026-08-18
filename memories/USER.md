@@ -11,3 +11,7 @@ Interest: Building WhatsApp Status Downloader bots using Baileys.
 User runs 'AZZAVISION AI' trading channel; prefers 'Neng Lidya' as 'Human Touch Analyst' providing analysis, psych support, and Islamic reminders (salam, prayer alerts for Pasuruan) in the community.
 §
 Participates in 'Omah Nonton Dizi' Turkish drama quizzes.
+§
+User uses CachyOS (Arch-based) on PC and is an advanced Linux enthusiast.
+§
+User is interested in automating Sunflower Land (planting, selling, buying) using a 'human-like' approach to avoid bans, leveraging Shizuku or ADB via CachyOS.
