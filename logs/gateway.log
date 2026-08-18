@@ -2532,3 +2532,4 @@ telegram.error.BadRequest: Chat not found
 2026-08-18 09:23:27,472 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='yang cronjob pengingat buat member azzavisionAI itu yang mana ya?apa terhapus?' reply_to_id=133 reply_to_text=''
 2026-08-18 09:24:19,026 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=51.6s api_calls=2 response=1336 chars
 2026-08-18 09:24:19,036 INFO gateway.platforms.base: [Telegram] Sending response (1336 chars) to 7699507804
+2026-08-18 09:36:53,100 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
