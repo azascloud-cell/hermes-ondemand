@@ -155,6 +155,16 @@ for sid, model, mcfg in cur.fetchall():
         cur.execute("UPDATE sessions SET model=?, model_config=? WHERE id=?",
                     ("gemma4:31b-cloud", json.dumps(cfg), sid))
         print("cleared session model:", sid)
+# archive sessions that ballooned (413 payload too large / compression failures)
+# so they never rehydrate with an oversized context that exceeds provider TPM limits.
+cur.execute("""UPDATE sessions SET archived=1, hidden=1, ended_at=?, end_reason='reset_413_oversize',
+               input_tokens=0, output_tokens=0, message_count=0,
+               compression_failure_cooldown_until=NULL, compression_failure_error=NULL,
+               compression_fallback_streak=0, compression_ineffective_count=0
+               WHERE archived=0 AND hidden=0
+                 AND (compression_failure_error IS NOT NULL OR compression_ineffective_count > 2)""",
+            (time.time(),))
+print("archived oversized sessions:", cur.rowcount)
 con.commit()
 con.close()
 # scrub legacy sessions.json mirror (gateway_routing echo) if present
