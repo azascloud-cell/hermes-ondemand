@@ -2623,3 +2623,4 @@ telegram.error.BadRequest: Chat not found
 2026-08-18 15:52:12,295 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Carikan aku panel nokos gratis bahkan membayar tiap otp yang masuk seperti Ivasm' reply_to_id=401 reply_to_text=''
 2026-08-18 16:03:34,739 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=682.4s api_calls=58 response=4300 chars
 2026-08-18 16:03:34,770 INFO gateway.platforms.base: [Telegram] Sending response (4300 chars) to 7699507804
+2026-08-18 17:00:01,666 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
