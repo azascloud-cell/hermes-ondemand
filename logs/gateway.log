@@ -2312,3 +2312,4 @@
 2026-08-18 07:24:34,937 INFO gateway.run: Transient agent failure in session 20260818_070038_00588589 — persisting user message so conversation context is preserved on retry.
 2026-08-18 07:24:34,946 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 7699507804
 2026-08-18 07:25:05,304 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 07:31:21,678 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
