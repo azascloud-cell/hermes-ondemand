@@ -2222,3 +2222,18 @@
 2026-08-18 06:37:18,370 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 06:51:04,331 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 07:00:38,939 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:7601 → 1 (session_reset)
+2026-08-18 07:00:56,937 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (149 chars)
+2026-08-18 07:00:56,941 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='coba cek email,aktif apa kenon neng asadsalsariang59170@gmail.com asadkiranaceri' reply_to_id=133 reply_to_text=''
+2026-08-18 07:01:04,206 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7601 -> 'Cek status aktif email'
+2026-08-18 07:01:17,976 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=21.0s api_calls=3 response=500 chars
+2026-08-18 07:01:17,992 INFO gateway.platforms.base: [Telegram] Sending response (500 chars) to 7699507804
+2026-08-18 07:02:06,288 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (43 chars)
+2026-08-18 07:02:06,292 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='sebelumnya kamu bisa cek tanpa app password' reply_to_id=133 reply_to_text=''
+2026-08-18 07:02:14,263 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.0s api_calls=1 response=661 chars
+2026-08-18 07:02:14,270 INFO gateway.platforms.base: [Telegram] Sending response (661 chars) to 7699507804
+2026-08-18 07:03:26,691 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (92 chars)
+2026-08-18 07:03:26,696 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='kalau pw dari 4 email ini sama "hehe1122" tapi udah ku setor ke penampung cuma y' reply_to_id=133 reply_to_text=''
+2026-08-18 07:04:04,132 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 1 approval(s) for session agent:main:telegram:dm:7699507804:7601 (choice=deny, user=Azaroni)
+2026-08-18 07:04:07,630 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (21 chars)
+2026-08-18 07:04:13,028 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=46.3s api_calls=3 response=861 chars
+2026-08-18 07:04:13,037 INFO gateway.platforms.base: [Telegram] Sending response (861 chars) to 7699507804
