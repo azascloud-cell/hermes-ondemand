@@ -2112,3 +2112,10 @@
 2026-08-18 02:08:19,499 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 02:08:19,986 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 02:12:44,195 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 02:16:14,439 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 02:17:12,800 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:7393 → 1 (session_reset)
+2026-08-18 02:18:04,298 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7393 (120 chars)
+2026-08-18 02:18:04,302 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='neng,cara yang benar menyukai dan ingin memiliki seorang wanita bagimana di usia' reply_to_id=52 reply_to_text=''
+2026-08-18 02:18:06,006 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7393 -> 'Cara mendekati wanita usia 18 tahun'
+2026-08-18 02:18:12,479 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.2s api_calls=1 response=3332 chars
+2026-08-18 02:18:12,490 INFO gateway.platforms.base: [Telegram] Sending response (3332 chars) to 7699507804

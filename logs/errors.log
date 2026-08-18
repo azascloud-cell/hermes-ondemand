@@ -4775,3 +4775,14 @@ telegram.error.TimedOut: Timed out
 2026-08-18 02:08:19,499 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 02:08:19,986 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 02:12:44,195 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 02:16:14,439 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 02:18:04,343 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,344 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,345 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,346 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,522 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,523 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,526 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,527 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,528 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,640 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn

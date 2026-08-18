@@ -15173,3 +15173,33 @@ telegram.error.TimedOut: Timed out
 2026-08-18 02:11:26,392 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245088->243620 rss_anon_kib=210044->208544 threads=13 duration_ms=114.7
 2026-08-18 02:12:26,512 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244552->243492 rss_anon_kib=209508->208448 threads=13 duration_ms=119.4
 2026-08-18 02:12:44,195 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 02:13:26,629 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=262292->243592 rss_anon_kib=227248->208516 threads=13 duration_ms=115.6
+2026-08-18 02:14:26,737 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245432->243560 rss_anon_kib=210388->208516 threads=13 duration_ms=107.9
+2026-08-18 02:15:26,857 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244304->243560 rss_anon_kib=209260->208516 threads=13 duration_ms=119.6
+2026-08-18 02:16:14,439 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 02:16:26,964 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245164->243644 rss_anon_kib=210120->208600 threads=13 duration_ms=100.1
+2026-08-18 02:17:12,800 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:7393 → 1 (session_reset)
+2026-08-18 02:17:27,078 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244756->243568 rss_anon_kib=209712->208524 threads=13 duration_ms=112.6
+2026-08-18 02:18:04,298 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7393 (120 chars)
+2026-08-18 02:18:04,302 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='neng,cara yang benar menyukai dan ingin memiliki seorang wanita bagimana di usia' reply_to_id=52 reply_to_text=''
+2026-08-18 02:18:04,342 INFO [20260818_013857_99e8aea4] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:139820613490368 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-18 02:18:04,343 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,344 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,345 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,346 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,522 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,523 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,526 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,527 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,528 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,630 INFO [20260818_013857_99e8aea4] agent.auxiliary_client: Vision auto-detect: using main provider ollama-cloud (gemma4:31b-cloud)
+2026-08-18 02:18:04,640 WARNING [20260818_013857_99e8aea4] tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-18 02:18:04,655 INFO [20260818_021712_6b93bb34] agent.turn_context: conversation turn: session=20260818_021712_6b93bb34 model=gemma4:31b-cloud provider=ollama-cloud platform=telegram history=0 msg='neng,cara yang benar menyukai dan ingin memiliki seorang wanita bagimana di usia...'
+2026-08-18 02:18:04,670 INFO agent.auxiliary_client: Auxiliary title_generation: using ollama-cloud (gemma4:31b-cloud) at https://ollama.com/v1/
+2026-08-18 02:18:04,797 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-22 (<lambda>):139820026291904 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-18 02:18:06,006 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7393 -> 'Cara mendekati wanita usia 18 tahun'
+2026-08-18 02:18:12,454 INFO [20260818_021712_6b93bb34] agent.conversation_loop: API call #1: model=gemma4:31b-cloud provider=ollama-cloud in=18503 out=857 total=19360 latency=7.8s
+2026-08-18 02:18:12,459 INFO [20260818_021712_6b93bb34] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=3332 session=20260818_021712_6b93bb34
+2026-08-18 02:18:12,479 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.2s api_calls=1 response=3332 chars
+2026-08-18 02:18:12,490 INFO gateway.platforms.base: [Telegram] Sending response (3332 chars) to 7699507804
+2026-08-18 02:18:27,221 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=260620->244468 rss_anon_kib=225576->209424 threads=14 duration_ms=142.1
