@@ -1,11 +1,16 @@
 model:
-  provider: ollama-cloud
-  default: gemma4:31b-cloud
-  base_url: https://ollama.com/v1
+  provider: "ollama-cloud"
+  default: "gemma4:31b-cloud"
+  base_url: "https://ollama.com/v1"
+fallback_providers:
+  - provider: "ollama-cloud"
+    model: "gemma4:31b-cloud"
+  - provider: "groq"
+    model: "llama-3.3-70b-versatile"
 providers:
   groq:
-    api: https://api.groq.com/openai/v1
-    api_key: ${GROQ_API_KEY}
+    api: "https://api.groq.com/openai/v1"
+    api_key: "${GROQ_API_KEY}"
     models:
       llama-3.3-70b-versatile:
         context_length: 131072
@@ -17,27 +22,9 @@ providers:
         context_length: 131072
       moonshotai/kimi-k2-instruct:
         context_length: 131072
-fallback_providers:
-  - provider: ollama-cloud
-    model: gemma4:31b-cloud
-  - provider: groq
-    model: llama-3.3-70b-versatile
 memory:
   memory_enabled: true
   user_profile_enabled: true
-  write_approval: false
   memory_char_limit: 5000
   user_char_limit: 4000
-_config_version: 37
-platforms:
-  telegram:
-    enabled: true
-    home_channel:
-      platform: telegram
-      chat_id: '7699507804'
-      name: Azaroni Fidaroin
-      thread_id: '7393'
-      user_id: '7699507804'
-onboarding:
-  seen:
-    busy_input_prompt: true
+  write_approval: false
