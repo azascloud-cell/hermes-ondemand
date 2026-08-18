@@ -19701,3 +19701,15 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-18 14:25:26,245 INFO gateway.platforms.base: [Telegram] Sending response (2170 chars) to 7699507804
 2026-08-18 14:25:33,836 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=255372->221428 rss_anon_kib=219788->185844 threads=13 duration_ms=77.0
 2026-08-18 14:26:33,927 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=222368->221400 rss_anon_kib=186784->185816 threads=12 duration_ms=89.9
+2026-08-18 14:27:34,002 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244196->222272 rss_anon_kib=208612->186688 threads=12 duration_ms=75.0
+2026-08-18 14:28:34,076 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=222992->222260 rss_anon_kib=187408->186676 threads=12 duration_ms=73.3
+2026-08-18 14:29:34,208 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=223776->222300 rss_anon_kib=188192->186716 threads=12 duration_ms=78.3
+2026-08-18 14:29:53,277 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7847 (71 chars)
+2026-08-18 14:29:53,282 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Kalau membuat ai agent yang di jailbreak biar tanpa limit,termasuk gak?' reply_to_id=367 reply_to_text=''
+2026-08-18 14:29:53,344 INFO [20260818_115417_1191d25b] agent.turn_context: conversation turn: session=20260818_115417_1191d25b model=deepseek-v4-flash-free provider=opencode-zen platform=telegram history=4 msg='Kalau membuat ai agent yang di jailbreak biar tanpa limit,termasuk gak?'
+2026-08-18 14:30:07,489 INFO [20260818_115417_1191d25b] agent.conversation_loop: API call #2: model=deepseek-v4-flash-free provider=opencode-zen in=26108 out=1362 total=27470 latency=14.1s cache=25984/26108 (100%)
+2026-08-18 14:30:07,513 INFO [20260818_115417_1191d25b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=deepseek-v4-flash-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=2091 session=20260818_115417_1191d25b
+2026-08-18 14:30:07,543 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=14.3s api_calls=1 response=2091 chars
+2026-08-18 14:30:07,559 INFO gateway.platforms.base: [Telegram] Sending response (2091 chars) to 7699507804
+2026-08-18 14:30:34,315 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=225888->223064 rss_anon_kib=190304->187480 threads=13 duration_ms=106.5
+2026-08-18 14:31:34,396 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=223760->223020 rss_anon_kib=188176->187436 threads=12 duration_ms=80.4

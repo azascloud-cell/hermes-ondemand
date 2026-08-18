@@ -2598,3 +2598,7 @@ telegram.error.BadRequest: Chat not found
 2026-08-18 14:25:11,014 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Apa itu godmode neng?' reply_to_id=367 reply_to_text=''
 2026-08-18 14:25:26,230 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=15.2s api_calls=1 response=2170 chars
 2026-08-18 14:25:26,245 INFO gateway.platforms.base: [Telegram] Sending response (2170 chars) to 7699507804
+2026-08-18 14:29:53,277 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7847 (71 chars)
+2026-08-18 14:29:53,282 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Kalau membuat ai agent yang di jailbreak biar tanpa limit,termasuk gak?' reply_to_id=367 reply_to_text=''
+2026-08-18 14:30:07,543 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=14.3s api_calls=1 response=2091 chars
+2026-08-18 14:30:07,559 INFO gateway.platforms.base: [Telegram] Sending response (2091 chars) to 7699507804
