@@ -15165,3 +15165,11 @@ telegram.error.TimedOut: Timed out
 2026-08-18 02:05:25,674 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244236->243460 rss_anon_kib=209192->208416 threads=13 duration_ms=120.2
 2026-08-18 02:06:25,792 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245128->243464 rss_anon_kib=210084->208420 threads=13 duration_ms=111.4
 2026-08-18 02:07:25,913 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245044->243476 rss_anon_kib=210000->208432 threads=13 duration_ms=120.3
+2026-08-18 02:08:19,499 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 02:08:19,986 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 02:08:26,033 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=263028->243548 rss_anon_kib=227984->208504 threads=13 duration_ms=118.6
+2026-08-18 02:09:26,152 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244296->243484 rss_anon_kib=209252->208440 threads=13 duration_ms=118.1
+2026-08-18 02:10:26,270 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244292->243528 rss_anon_kib=209248->208484 threads=13 duration_ms=118.2
+2026-08-18 02:11:26,392 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245088->243620 rss_anon_kib=210044->208544 threads=13 duration_ms=114.7
+2026-08-18 02:12:26,512 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244552->243492 rss_anon_kib=209508->208448 threads=13 duration_ms=119.4
+2026-08-18 02:12:44,195 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
