@@ -2249,3 +2249,17 @@
 2026-08-18 07:09:14,567 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='apa dari login pw tadi kamu bisa ubah dan set tgl lahir dari 1997-2005?intinya 1' reply_to_id=133 reply_to_text=''
 2026-08-18 07:09:18,720 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=4.2s api_calls=1 response=1518 chars
 2026-08-18 07:09:18,728 INFO gateway.platforms.base: [Telegram] Sending response (1518 chars) to 7699507804
+2026-08-18 07:12:03,844 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (102 chars)
+2026-08-18 07:12:03,848 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='kamu warming akun anak,buat cronjob,saat udah 12 jam beritahu aku email berhasil' reply_to_id=133 reply_to_text=''
+2026-08-18 07:12:19,834 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=16.0s api_calls=4 response=587 chars
+2026-08-18 07:12:19,843 INFO gateway.platforms.base: [Telegram] Sending response (587 chars) to 7699507804
+2026-08-18 07:12:59,940 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (34 chars)
+2026-08-18 07:12:59,944 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='hey hey jangan sentuh 4 email tadi' reply_to_id=133 reply_to_text=''
+2026-08-18 07:13:05,275 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=5.3s api_calls=2 response=328 chars
+2026-08-18 07:13:05,284 INFO gateway.platforms.base: [Telegram] Sending response (328 chars) to 7699507804
+2026-08-18 07:15:00,966 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (204 chars)
+2026-08-18 07:15:00,970 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='aku mau tiap kali aku kirim email, kamu tambahkan ke list email warmernya gitu,l' reply_to_id=133 reply_to_text=''
+2026-08-18 07:15:05,927 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=5.0s api_calls=1 response=1237 chars
+2026-08-18 07:15:05,937 INFO gateway.platforms.base: [Telegram] Sending response (1237 chars) to 7699507804
+2026-08-18 07:16:18,854 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (23 chars)
+2026-08-18 07:16:18,860 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='apa perlu stor pw juga?' reply_to_id=133 reply_to_text=''
