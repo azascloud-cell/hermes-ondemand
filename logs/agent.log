@@ -17052,3 +17052,57 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-18 08:06:10,982 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 08:06:11,308 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 08:06:14,516 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=250792->231836 rss_anon_kib=215668->196680 threads=11 duration_ms=129.1
+2026-08-18 08:06:21,716 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 08:06:22,152 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 08:07:14,611 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232336->231904 rss_anon_kib=197212->196748 threads=11 duration_ms=94.5
+2026-08-18 08:08:14,704 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232248->231904 rss_anon_kib=197124->196748 threads=11 duration_ms=92.7
+2026-08-18 08:09:14,811 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232336->231872 rss_anon_kib=197212->196748 threads=11 duration_ms=106.6
+2026-08-18 08:10:14,919 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=233136->231580 rss_anon_kib=198012->196456 threads=11 duration_ms=100.1
+2026-08-18 08:10:42,367 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (213 chars)
+2026-08-18 08:10:42,371 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='1. list email belum siap,masih mau bikin 2. 2-10an mungkin 3. round robin dengan' reply_to_id=133 reply_to_text=''
+2026-08-18 08:10:42,416 INFO [20260818_074952_04ef3f0b] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:10:42,422 INFO [20260818_074952_04ef3f0b] agent.turn_context: conversation turn: session=20260818_074952_04ef3f0b model=deepseek-v4-flash-free provider=opencode-zen platform=telegram history=11 msg='1. list email belum siap,masih mau bikin 2. 2-10an mungkin 3. round robin dengan...'
+2026-08-18 08:10:42,437 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-21 (<lambda>):140374864549568 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:10:42,748 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4709, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-18 08:10:42,750 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-21 (<lambda>):140374864549568 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 08:10:42,755 WARNING [20260818_074952_04ef3f0b] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140374530053824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-18 08:10:42,755 INFO [20260818_074952_04ef3f0b] root: Rate-limit backoff level 0: cooldown 60 s (1.0 min, backoff#1)
+2026-08-18 08:10:42,755 WARNING [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback skip: chain entry opencode-zen/deepseek-v4-flash-free resolves to the same backend as the current one (https://opencode.ai/zen/v1)
+2026-08-18 08:10:42,755 INFO [20260818_074952_04ef3f0b] root: Rate-limit backoff level 1: cooldown 120 s (2.0 min, backoff#2)
+2026-08-18 08:10:42,769 INFO [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback nemotron-3-ultra-free: reasoning_config resolved: None
+2026-08-18 08:10:42,769 INFO [20260818_074952_04ef3f0b] agent.chat_completion_helpers: Fallback activated: deepseek-v4-flash-free → nemotron-3-ultra-free (opencode-zen)
+2026-08-18 08:10:42,781 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-22 (<lambda>):140374864549568 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 08:10:51,603 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #1: model=nemotron-3-ultra-free provider=opencode-zen in=29651 out=180 total=29831 latency=8.8s
+2026-08-18 08:10:51,802 INFO tools.terminal_tool: Creating new local environment for task default...
+2026-08-18 08:10:52,053 INFO tools.environments.base: Session snapshot created (session=a9982bedead4, cwd=/home/runner)
+2026-08-18 08:10:52,053 INFO tools.terminal_tool: local environment ready for task default
+2026-08-18 08:10:52,143 WARNING [20260818_074952_04ef3f0b] agent.tool_executor: Tool terminal returned error (0.34s): {"output": "/usr/bin/bash: line 4: himalaya: command not found", "exit_code": 127, "error": null, "hint": "`himalaya` is not installed or not on PATH. Verify with `which himalaya`; install it or use a
+2026-08-18 08:10:54,829 INFO [20260818_074952_04ef3f0b] agent.conversation_loop: API call #2: model=nemotron-3-ultra-free provider=opencode-zen in=29771 out=49 total=29820 latency=2.7s
+2026-08-18 08:11:15,096 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=254468->234616 rss_anon_kib=219344->199492 threads=18 duration_ms=176.0
