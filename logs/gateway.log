@@ -2008,3 +2008,13 @@
 2026-08-18 00:09:22,111 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='👋 selamat pagi,maaf baru gantikan kamu ke bot baru' reply_to_id=None reply_to_text=''
 2026-08-18 00:09:29,275 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=7.2s api_calls=1 response=365 chars
 2026-08-18 00:09:29,289 INFO gateway.platforms.base: [Telegram] Sending response (365 chars) to 7699507804
+2026-08-18 01:02:03,588 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 01:02:07,449 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804 (64 chars)
+2026-08-18 01:02:07,453 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='coba neng sapa member channel tes karena aku pakai telegram baru' reply_to_id=None reply_to_text=''
+2026-08-18 01:02:11,293 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=3.8s api_calls=1 response=1152 chars
+2026-08-18 01:02:11,300 INFO gateway.platforms.base: [Telegram] Sending response (1152 chars) to 7699507804
+2026-08-18 01:02:26,346 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804 (2 chars)
+2026-08-18 01:02:26,349 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='ok' reply_to_id=None reply_to_text=''
+2026-08-18 01:02:27,621 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=1.3s api_calls=1 response=212 chars
+2026-08-18 01:02:27,628 INFO gateway.platforms.base: [Telegram] Sending response (212 chars) to 7699507804
+2026-08-18 01:02:55,780 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137

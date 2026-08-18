@@ -4637,3 +4637,5 @@ telegram.error.InvalidToken: ***
 2026-08-18 00:09:25,671 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
 2026-08-18 00:09:25,672 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
 2026-08-18 00:09:25,977 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-18 01:02:03,588 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 01:02:55,780 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137

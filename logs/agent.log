@@ -14751,3 +14751,24 @@ telegram.error.InvalidToken: ***
 2026-08-18 00:57:01,142 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=222048->221424 rss_anon_kib=186992->186368 threads=12 duration_ms=117.8
 2026-08-18 00:58:01,266 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=229056->221532 rss_anon_kib=194000->186476 threads=12 duration_ms=116.3
 2026-08-18 00:59:01,384 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=234556->221620 rss_anon_kib=199500->186532 threads=12 duration_ms=117.6
+2026-08-18 01:00:01,502 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=222096->221444 rss_anon_kib=187040->186388 threads=12 duration_ms=117.5
+2026-08-18 01:01:01,619 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=222128->221452 rss_anon_kib=187072->186396 threads=12 duration_ms=116.8
+2026-08-18 01:02:01,736 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=222124->221448 rss_anon_kib=187068->186392 threads=12 duration_ms=116.4
+2026-08-18 01:02:03,588 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 01:02:07,449 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804 (64 chars)
+2026-08-18 01:02:07,453 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='coba neng sapa member channel tes karena aku pakai telegram baru' reply_to_id=None reply_to_text=''
+2026-08-18 01:02:07,470 INFO [20260818_000858_3e5e8509] agent.turn_context: conversation turn: session=20260818_000858_3e5e8509 model=gemma4:31b-cloud provider=ollama-cloud platform=telegram history=2 msg='coba neng sapa member channel tes karena aku pakai telegram baru'
+2026-08-18 01:02:11,131 INFO [20260818_000858_3e5e8509] agent.conversation_loop: API call #2: model=gemma4:31b-cloud provider=ollama-cloud in=18537 out=285 total=18822 latency=3.7s
+2026-08-18 01:02:11,261 INFO [20260818_000858_3e5e8509] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1152 session=20260818_000858_3e5e8509
+2026-08-18 01:02:11,293 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=3.8s api_calls=1 response=1152 chars
+2026-08-18 01:02:11,300 INFO gateway.platforms.base: [Telegram] Sending response (1152 chars) to 7699507804
+2026-08-18 01:02:26,346 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804 (2 chars)
+2026-08-18 01:02:26,349 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='ok' reply_to_id=None reply_to_text=''
+2026-08-18 01:02:26,371 INFO [20260818_000858_3e5e8509] agent.turn_context: conversation turn: session=20260818_000858_3e5e8509 model=gemma4:31b-cloud provider=ollama-cloud platform=telegram history=4 msg='ok'
+2026-08-18 01:02:27,611 INFO [20260818_000858_3e5e8509] agent.conversation_loop: API call #3: model=gemma4:31b-cloud provider=ollama-cloud in=18832 out=59 total=18891 latency=1.2s
+2026-08-18 01:02:27,614 INFO [20260818_000858_3e5e8509] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b-cloud api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=212 session=20260818_000858_3e5e8509
+2026-08-18 01:02:27,621 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=1.3s api_calls=1 response=212 chars
+2026-08-18 01:02:27,628 INFO gateway.platforms.base: [Telegram] Sending response (212 chars) to 7699507804
+2026-08-18 01:02:55,780 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-18 01:03:01,864 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=231384->222472 rss_anon_kib=196328->187384 threads=12 duration_ms=120.1
+2026-08-18 01:04:01,982 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235104->222404 rss_anon_kib=200048->187348 threads=12 duration_ms=117.3
