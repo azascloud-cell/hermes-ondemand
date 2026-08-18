@@ -68,28 +68,28 @@ TELEGRAM_ALLOWED_USERS=${TELEGRAM_ALLOWED_USERS}
 EOF
   cat > "$HOME/.hermes/config.yaml" <<EOF
 model:
-  provider: "ollama-cloud"
-  default: "gemma4:31b-cloud"
-  base_url: "https://ollama.com/v1"
+  provider: "groq"
+  default: "openai/gpt-oss-120b"
+  base_url: "https://api.groq.com/openai/v1"
 fallback_providers:
+  - provider: "groq"
+    model: "openai/gpt-oss-120b"
+  - provider: "groq"
+    model: "openai/gpt-oss-20b"
+  - provider: "groq"
+    model: "qwen/qwen3.6-27b"
   - provider: "ollama-cloud"
     model: "gemma4:31b-cloud"
-  - provider: "groq"
-    model: "llama-3.3-70b-versatile"
 providers:
   groq:
     api: "https://api.groq.com/openai/v1"
     api_key: "\${GROQ_API_KEY}"
     models:
-      llama-3.3-70b-versatile:
-        context_length: 131072
-      llama-3.1-8b-instant:
-        context_length: 131072
-      qwen/qwen3-32b:
-        context_length: 131072
       openai/gpt-oss-120b:
         context_length: 131072
-      moonshotai/kimi-k2-instruct:
+      openai/gpt-oss-20b:
+        context_length: 131072
+      qwen/qwen3.6-27b:
         context_length: 131072
 memory:
   memory_enabled: true
@@ -121,7 +121,12 @@ main() {
     python3 - <<'PY' || true
 import json, os, sqlite3, time
 db = os.path.expanduser("~/.hermes/state.db")
-BAD = {"opencode", "opencode-zen", "opencode-go"}
+BAD_PROVIDERS = {"opencode", "opencode-zen", "opencode-go"}
+DEPRECATED = {"llama-3.3-70b-versatile", "llama-3.3-70b-specdec", "llama-3.1-8b-instant", "llama-3.1-70b-versatile"}
+def is_bad(mo):
+    if not isinstance(mo, dict):
+        return False
+    return (mo.get("provider") in BAD_PROVIDERS) or (mo.get("model") in DEPRECATED)
 con = sqlite3.connect(db)
 cur = con.cursor()
 # scrub gateway_routing entry_json model_override
@@ -133,19 +138,19 @@ for rowid, scope, skey, entry in rows:
     except Exception:
         continue
     mo = obj.get("model_override")
-    if isinstance(mo, dict) and mo.get("provider") in BAD:
+    if is_bad(mo):
         obj["model_override"] = None
         cur.execute("UPDATE gateway_routing SET entry_json=?, updated_at=? WHERE rowid=?",
                     (json.dumps(obj), time.time(), rowid))
         print("cleared routing override:", skey)
-# scrub sessions.model / model_config pointing at bad providers
+# scrub sessions.model / model_config pointing at bad providers or deprecated models
 cur.execute("SELECT id, model, model_config FROM sessions")
 for sid, model, mcfg in cur.fetchall():
     try:
         cfg = json.loads(mcfg) if mcfg else {}
     except Exception:
         cfg = {}
-    if cfg.get("provider") in BAD:
+    if is_bad(cfg) or (model in DEPRECATED):
         cfg = {"provider": None}
         cur.execute("UPDATE sessions SET model=?, model_config=? WHERE id=?",
                     ("gemma4:31b-cloud", json.dumps(cfg), sid))

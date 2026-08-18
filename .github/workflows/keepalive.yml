@@ -60,9 +60,9 @@ jobs:
           EOF
           cat > ~/.hermes/config.yaml <<EOF
           model:
-            provider: "ollama-cloud"
-            default: "gemma4:31b-cloud"
-            base_url: "https://ollama.com/v1"
+            provider: "groq"
+            default: "openai/gpt-oss-120b"
+            base_url: "https://api.groq.com/openai/v1"
           EOF
 
       - name: Pin python-telegram-bot 22.6 (fix Any cannot be instantiated)
