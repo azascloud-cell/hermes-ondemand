@@ -2263,3 +2263,15 @@
 2026-08-18 07:15:05,937 INFO gateway.platforms.base: [Telegram] Sending response (1237 chars) to 7699507804
 2026-08-18 07:16:18,854 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (23 chars)
 2026-08-18 07:16:18,860 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='apa perlu stor pw juga?' reply_to_id=133 reply_to_text=''
+2026-08-18 07:16:27,001 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.1s api_calls=1 response=1095 chars
+2026-08-18 07:16:27,023 INFO gateway.platforms.base: [Telegram] Sending response (1095 chars) to 7699507804
+2026-08-18 07:18:02,737 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (106 chars)
+2026-08-18 07:18:02,742 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='example nih ya buat kamu list bukan email sungguhan  contoh1@gmail.com hehe1122 ' reply_to_id=133 reply_to_text=''
+2026-08-18 07:18:03,385 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=0.6s api_calls=1 response=93 chars
+2026-08-18 07:18:03,386 INFO gateway.run: Transient agent failure in session 20260818_070038_00588589 — persisting user message so conversation context is preserved on retry.
+2026-08-18 07:18:03,394 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 7699507804
+2026-08-18 07:18:56,616 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (9 chars)
+2026-08-18 07:18:56,621 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='bagaimana' reply_to_id=133 reply_to_text=''
+2026-08-18 07:18:57,604 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=1.0s api_calls=1 response=93 chars
+2026-08-18 07:18:57,604 INFO gateway.run: Transient agent failure in session 20260818_070038_00588589 — persisting user message so conversation context is preserved on retry.
+2026-08-18 07:18:57,611 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 7699507804

@@ -437,6 +437,10 @@
       1787016725398078237,
       2601
     ],
+    "automation/gmail-account-management/SKILL.md": [
+      1787036866597066004,
+      2352
+    ],
     "automation/whatsapp-bot-automation/SKILL.md": [
       1787016725398689891,
       1412
@@ -582,6 +586,21 @@
       "frontmatter_name": "gmail-account-farming",
       "description": "Use when creating bulk Gmail accounts. Avoids robot checks.",
       "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "gmail-account-management",
+      "category": "automation",
+      "frontmatter_name": "gmail-account-management",
+      "description": "Use when verifying or warming bulk Gmail accounts.",
+      "platforms": [
+        "linux"
+      ],
       "conditions": {
         "fallback_for_toolsets": [],
         "requires_toolsets": [],
