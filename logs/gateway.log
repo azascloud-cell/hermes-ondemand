@@ -2543,3 +2543,8 @@ telegram.error.BadRequest: Chat not found
 2026-08-18 11:01:25,646 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7827 (265 chars)
 2026-08-18 11:01:25,649 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='menurutmu,buat strategi cuan gmail modal nokos rp150-500 pakai akun  orang tua u' reply_to_id=351 reply_to_text=''
 2026-08-18 11:01:28,569 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7827 -> 'Strategi cuan gmail modal nokos'
+2026-08-18 11:03:27,521 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=121.9s api_calls=2 response=3643 chars
+2026-08-18 11:03:27,532 INFO gateway.platforms.base: [Telegram] Sending response (3643 chars) to 7699507804
+2026-08-18 11:06:47,803 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7827 (114 chars)
+2026-08-18 11:06:47,807 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='kamu salah harga,nokosnya cuma 150p-500p,1 parent bikin 2-3 akun. per-akun rp.4,' reply_to_id=351 reply_to_text=''
+2026-08-18 11:06:53,781 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
