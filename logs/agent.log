@@ -20637,3 +20637,46 @@ openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: In
 2026-08-18 21:56:37,522 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=162896->148524 rss_anon_kib=136944->122572 threads=11 duration_ms=65.1
 2026-08-18 21:57:37,568 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=149376->148520 rss_anon_kib=123424->122568 threads=11 duration_ms=45.9
 2026-08-18 21:58:37,614 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=149332->148520 rss_anon_kib=123380->122568 threads=11 duration_ms=45.1
+2026-08-18 21:59:37,662 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=150624->148492 rss_anon_kib=124672->122540 threads=11 duration_ms=43.1
+2026-08-18 22:00:37,710 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=149348->148452 rss_anon_kib=123396->122500 threads=11 duration_ms=46.9
+2026-08-18 22:00:37,985 INFO run_agent: Loaded environment variables from /home/runner/.hermes/.env
+2026-08-18 22:00:38,668 INFO cron.scheduler: Running job 'Daily Gold Market Alert - XAUUSD' (ID: d40f4356873b)
+2026-08-18 22:00:38,668 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-18 22:00:38,824 INFO cron.scheduler: Job 'd40f4356873b': loaded credential pool for provider opencode-zen with 1 entries
+2026-08-18 22:00:39,263 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=cron-parallel_0:140187430540992 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 22:00:39,269 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-18 22:00:39,437 INFO [cron_d40f4356873b_20260818_220038] agent.turn_context: conversation turn: session=cron_d40f4356873b_20260818_220038 model=deepseek-v4-flash-free provider=opencode-zen platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-08-18 22:00:41,564 INFO [cron_d40f4356873b_20260818_220038] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-1_0:140187313104576 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 22:00:59,244 INFO [cron_d40f4356873b_20260818_220038] agent.conversation_loop: API call #1: model=deepseek-v4-flash-free provider=opencode-zen in=3281 out=563 total=3844 latency=17.7s
+2026-08-18 22:00:59,373 INFO tools.terminal_tool: Creating new local environment for task default...
+2026-08-18 22:00:59,751 INFO tools.environments.base: Session snapshot created (session=e76fc423ca24, cwd=/home/runner)
+2026-08-18 22:00:59,751 INFO tools.terminal_tool: local environment ready for task default
+2026-08-18 22:01:00,140 INFO [cron_d40f4356873b_20260818_220038] agent.tool_executor: tool terminal completed (0.77s, 167 chars)
+2026-08-18 22:01:00,972 INFO [cron_d40f4356873b_20260818_220038] agent.tool_executor: tool terminal completed (0.83s, 271 chars)
+2026-08-18 22:01:12,578 INFO [cron_d40f4356873b_20260818_220038] agent.conversation_loop: API call #2: model=deepseek-v4-flash-free provider=opencode-zen in=4014 out=669 total=4683 latency=11.6s cache=3328/4014 (83%)
+2026-08-18 22:01:13,432 INFO [cron_d40f4356873b_20260818_220038] agent.tool_executor: tool terminal completed (0.82s, 1324 chars)
+2026-08-18 22:01:13,645 INFO [cron_d40f4356873b_20260818_220038] agent.tool_executor: tool terminal completed (0.21s, 1695 chars)
+2026-08-18 22:01:14,537 INFO [cron_d40f4356873b_20260818_220038] agent.tool_executor: tool terminal completed (0.89s, 1973 chars)
+2026-08-18 22:01:37,823 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=263096->222364 rss_anon_kib=227564->186832 threads=19 duration_ms=112.7
+2026-08-18 22:01:41,581 INFO [cron_d40f4356873b_20260818_220038] agent.conversation_loop: API call #3: model=deepseek-v4-flash-free provider=opencode-zen in=6442 out=2550 total=8992 latency=27.0s cache=4608/6442 (72%)
+2026-08-18 22:01:41,703 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider opencode-zen (deepseek-v4-flash-free)
+2026-08-18 22:01:41,704 INFO agent.auxiliary_client: Auxiliary approval: using opencode-zen (deepseek-v4-flash-free) at https://opencode.ai/zen/v1/
+2026-08-18 22:01:42,896 INFO [cron_d40f4356873b_20260818_220038] agent.tool_executor: tool terminal completed (1.29s, 662 chars)
+2026-08-18 22:01:43,064 INFO agent.auxiliary_client: Auxiliary approval: using opencode-zen (deepseek-v4-flash-free) at https://opencode.ai/zen/v1/
+2026-08-18 22:01:45,051 INFO [cron_d40f4356873b_20260818_220038] agent.tool_executor: tool terminal completed (2.12s, 2242 chars)
+2026-08-18 22:01:45,286 INFO [cron_d40f4356873b_20260818_220038] run_agent: OpenAI client closed (request_error_cleanup, shared=False, tcp_force_closed=1) thread=ThreadPoolExecutor-1_0:140187313104576 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-18 22:01:45,287 WARNING [cron_d40f4356873b_20260818_220038] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=ThreadPoolExecutor-1_0:140187313104576 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-18 22:01:45,287 INFO [cron_d40f4356873b_20260818_220038] root: Rate-limit backoff level 0: cooldown 60 s (1.0 min, backoff#1)
+2026-08-18 22:01:45,289 WARNING [cron_d40f4356873b_20260818_220038] agent.chat_completion_helpers: Fallback skip: chain entry opencode-zen/deepseek-v4-flash-free resolves to the same backend as the current one (https://opencode.ai/zen/v1)
+2026-08-18 22:01:45,289 INFO [cron_d40f4356873b_20260818_220038] root: Rate-limit backoff level 1: cooldown 120 s (2.0 min, backoff#2)
+2026-08-18 22:01:45,294 INFO [cron_d40f4356873b_20260818_220038] agent.chat_completion_helpers: Fallback nemotron-3-ultra-free: reasoning_config resolved: None
+2026-08-18 22:01:45,295 INFO [cron_d40f4356873b_20260818_220038] agent.chat_completion_helpers: Fallback activated: deepseek-v4-flash-free → nemotron-3-ultra-free (opencode-zen)
+2026-08-18 22:01:45,299 INFO [cron_d40f4356873b_20260818_220038] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-1_0:140187313104576 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 22:02:37,940 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=231044->224480 rss_anon_kib=195512->188948 threads=18 duration_ms=116.0
+2026-08-18 22:02:59,824 INFO [cron_d40f4356873b_20260818_220038] agent.conversation_loop: API call #4: model=nemotron-3-ultra-free provider=opencode-zen in=7921 out=846 total=8767 latency=74.5s
+2026-08-18 22:02:59,831 INFO [cron_d40f4356873b_20260818_220038] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=4/500 budget=4/500 tool_turns=3 last_msg_role=assistant response_len=1193 session=cron_d40f4356873b_20260818_220038
+2026-08-18 22:02:59,944 INFO cron.scheduler: Job 'Daily Gold Market Alert - XAUUSD' completed successfully
+2026-08-18 22:03:01,550 INFO cron.scheduler: Job 'd40f4356873b': delivered to telegram:7699507804 via live adapter
+2026-08-18 22:03:01,551 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-cleanup-d40f4356873b:140187313104576 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 22:03:01,552 INFO run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=1) thread=cron-cleanup-d40f4356873b:140187313104576 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-18 22:03:01,671 INFO hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=231184->223312 rss_anon_kib=195652->187780 threads=16 duration_ms=118.5
