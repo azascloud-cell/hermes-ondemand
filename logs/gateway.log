@@ -2839,3 +2839,4 @@ telegram.error.BadRequest: Chat not found
 2026-08-19 14:19:26,453 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-19 14:22:08,105 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:7982 (idle=3670s)
 2026-08-19 14:22:08,106 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-19 15:01:29,554 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
