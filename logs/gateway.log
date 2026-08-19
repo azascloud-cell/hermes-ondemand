@@ -2915,3 +2915,4 @@ telegram.error.BadRequest: Chat not found
 2026-08-19 21:01:46,159 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
 2026-08-19 21:01:46,159 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 97 hidden (over 60 limit). Use /commands for full list.
 2026-08-19 21:01:51,102 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-19 21:16:57,942 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
