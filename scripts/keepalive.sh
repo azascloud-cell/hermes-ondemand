@@ -68,47 +68,17 @@ TELEGRAM_ALLOWED_USERS=${TELEGRAM_ALLOWED_USERS}
 EOF
   cat > "$HOME/.hermes/config.yaml" <<EOF
 model:
-  provider: "opencode-zen"
-  default: "deepseek-v4-flash-free"
-  base_url: "https://opencode.ai/zen/v1"
-fallback_providers:
-  - provider: "opencode-zen"
-    model: "deepseek-v4-flash-free"
-  - provider: "opencode-zen"
-    model: "nemotron-3-ultra-free"
-  - provider: "opencode-zen"
-    model: "north-mini-code-free"
-  - provider: "groq"
-    model: "openai/gpt-oss-120b"
-  - provider: "ollama-cloud"
-    model: "gemma4:31b-cloud"
+  provider: "ollama-cloud"
+  default: "gemma4:31b-cloud"
 providers:
-  opencode-zen:
-    api: "https://opencode.ai/zen/v1"
-    api_key: "\${OPENCODE_ZEN_API_KEY}"
-    models:
-      deepseek-v4-flash-free:
-        context_length: 1000000
-      nemotron-3-ultra-free:
-        context_length: 1000000
-      north-mini-code-free:
-        context_length: 1000000
   groq:
-    api: "https://api.groq.com/openai/v1"
+    base_url: "https://api.groq.com/openai/v1"
     api_key: "\${GROQ_API_KEY}"
-    models:
-      openai/gpt-oss-120b:
-        context_length: 131072
-      openai/gpt-oss-20b:
-        context_length: 131072
-      qwen/qwen3.6-27b:
-        context_length: 131072
 memory:
   memory_enabled: true
   user_profile_enabled: true
   memory_char_limit: 5000
   user_char_limit: 4000
-  write_approval: false
 EOF
 }
 
@@ -135,8 +105,8 @@ import json, os, sqlite3, time
 db = os.path.expanduser("~/.hermes/state.db")
 BAD_PROVIDERS = {"opencode", "opencode-zen", "opencode-go"}
 DEPRECATED = {"llama-3.3-70b-versatile", "llama-3.3-70b-specdec", "llama-3.1-8b-instant", "llama-3.1-70b-versatile"}
-NEW_DEFAULT = "deepseek-v4-flash-free"
-NEW_PROVIDER = "opencode-zen"
+NEW_DEFAULT = "gemma4:31b-cloud"
+NEW_PROVIDER = "ollama-cloud"
 def is_bad(mo):
     if not isinstance(mo, dict):
         return False

@@ -3,11 +3,16 @@ name: Hermes On-Demand
 on:
   repository_dispatch:
     types: [hermes-on-demand]
+  workflow_dispatch:
+
+concurrency:
+  group: hermes-gateway
+  cancel-in-progress: false
 
 jobs:
   hermes:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 356
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -15,7 +20,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
 
       - name: Configure git auth (avoid anonymous-clone 429 rate limit)
         env:
@@ -25,15 +30,20 @@ jobs:
 
       - name: Install Hermes Agent
         run: |
-          curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
-          export PATH="$HOME/.local/bin:$PATH"
-          hermes --version || hermes setup --help || true
+          curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash -s -- --skip-setup --skip-browser --skip-computer-use
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          echo "$HOME/.hermes/bin" >> "$GITHUB_PATH"
+          echo "installed; checking:"
+          ls -la "$HOME/.hermes/bin" 2>/dev/null || true
+          ls -la "$HOME/.local/bin" 2>/dev/null || true
 
       - name: Configure Hermes (Ollama Cloud + Groq fallback)
         env:
           OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
           OLLAMA_CLOUD_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_ALLOWED_USERS: ${{ secrets.TELEGRAM_ALLOWED_USERS }}
         run: |
           export PATH="$HOME/.local/bin:$PATH"
           mkdir -p ~/.hermes
@@ -41,6 +51,8 @@ jobs:
           OLLAMA_API_KEY=${OLLAMA_API_KEY}
           OLLAMA_CLOUD_API_KEY=${OLLAMA_CLOUD_API_KEY}
           GROQ_API_KEY=${GROQ_API_KEY}
+          TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+          TELEGRAM_ALLOWED_USERS=${TELEGRAM_ALLOWED_USERS}
           EOF
           cat > ~/.hermes/config.yaml <<EOF
           model:
@@ -57,57 +69,82 @@ jobs:
             user_char_limit: 4000
           EOF
 
-      - name: Run Hermes on question
-        id: hermes
-        env:
-          QUESTION: ${{ github.event.client_payload.question }}
+      - name: Install himalaya (CLI email tool for Hermes)
         run: |
           export PATH="$HOME/.local/bin:$PATH"
-          # Save answer
-          hermes chat -q "$QUESTION" > answer.txt 2>&1 || true
-          echo "Answer length: $(wc -c < answer.txt)"
-          # Export as base64-safe content for the reply step
-          python - <<'PY'
-          import base64, json
-          with open("answer.txt", "r", errors="replace") as f:
-              content = f.read()
-          with open("answer_b64.txt", "w") as f:
-              f.write(base64.b64encode(content.encode("utf-8")).decode())
-          PY
+          mkdir -p ~/.local/bin
+          if ! command -v himalaya >/dev/null 2>&1; then
+            curl -sSL https://raw.githubusercontent.com/pimalaya/himalaya/master/install.sh \
+              | PREFIX="$HOME/.local" sh || true
+          fi
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+          export PATH="$HOME/.local/bin:$PATH"
+          himalaya --version || echo "himalaya install failed"
 
-      - name: Reply to Telegram
+      - name: Pin python-telegram-bot 22.6 (fix Any cannot be instantiated)
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          UV="$HOME/.hermes/bin/uv"
+          VENV_PY="$(ls -d $HOME/.hermes/hermes-agent/venv/bin/python 2>/dev/null || echo '')"
+          echo "uv: $UV | venv python: $VENV_PY"
+          if [ -n "$VENV_PY" ] && [ -x "$UV" ]; then
+            "$UV" pip install --python "$VENV_PY" --reinstall "python-telegram-bot[webhooks]==22.6"
+            echo "=== pinned PTB version ==="
+            "$UV" pip list --python "$VENV_PY" | grep -i python-telegram
+            "$VENV_PY" -c "import python_telegram_bot as p; print('PTB import ok:', p.__version__)" || true
+          else
+            echo "venv or uv not found; cannot pin"
+            exit 1
+          fi
+
+      - name: Patch Telegram TypeHandler restoration (fix Any cannot be instantiated)
+        run: |
+          export PATH="$HOME/.local/bin:$PATH"
+          ADAPTER="$HOME/.hermes/hermes-agent/plugins/platforms/telegram/adapter.py"
+          echo "patching: $ADAPTER"
+          python3 - <<'PY'
+          import os, pathlib
+          p = pathlib.Path(os.environ["HOME"]) / ".hermes/hermes-agent/plugins/platforms/telegram/adapter.py"
+          src = p.read_text()
+          if "TypeHandler as _TH" in src:
+              print("already patched")
+              raise SystemExit(0)
+          old = "            MessageHandler as _MH,\n            ContextTypes as _CT, filters as _filters,\n        )"
+          new = "            MessageHandler as _MH,\n            ContextTypes as _CT, TypeHandler as _TH, filters as _filters,\n        )"
+          if old not in src:
+              print("pattern not found; aborting")
+              raise SystemExit(1)
+          src = src.replace(old, new)
+          old2 = "    TelegramMessageHandler = _MH\n    ContextTypes = _CT\n    filters = _filters"
+          new2 = "    TelegramMessageHandler = _MH\n    TypeHandler = _TH\n    ContextTypes = _CT\n    filters = _filters"
+          if old2 not in src:
+              print("restoration pattern not found; aborting")
+              raise SystemExit(1)
+          src = src.replace(old2, new2)
+          old3 = "    global CommandHandler, CallbackQueryHandler, TelegramMessageHandler\n    global ContextTypes, filters, ParseMode, ChatType, HTTPXRequest"
+          new3 = "    global CommandHandler, CallbackQueryHandler, TelegramMessageHandler, TypeHandler\n    global ContextTypes, filters, ParseMode, ChatType, HTTPXRequest"
+          if old3 in src:
+              src = src.replace(old3, new3)
+          p.write_text(src)
+          print("patched TypeHandler restoration")
+          PY
+          grep -n "TypeHandler as _TH\|TypeHandler = _TH" "$ADAPTER" | head
+
+      - name: Run Keep-Alive Gateway
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          CHAT_ID: ${{ github.event.client_payload.chat_id }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TELEGRAM_ALLOWED_USERS: ${{ secrets.TELEGRAM_ALLOWED_USERS }}
+          OLLAMA_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+          OLLAMA_CLOUD_API_KEY: ${{ secrets.OLLAMA_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          GH_REPO: ${{ github.repository }}
+          GH_REF: ${{ github.ref_name }}
+          RUN_MINUTES: "350"
+          KEEPALIVE_WORKFLOW: "hermes.yml"
+          DATA_BRANCH: "data"
+          BACKUP_EVERY_SEC: "300"
         run: |
-          python - <<'PY'
-          import os, base64, urllib.request, urllib.parse, json
-          token = os.environ["TELEGRAM_BOT_TOKEN"]
-          chat_id = os.environ.get("CHAT_ID", "").strip()
-          # Skip silently when no valid chat id was supplied (e.g. test dispatch).
-          if not chat_id or chat_id == "0":
-              print("No valid chat_id; skipping reply")
-              raise SystemExit(0)
-          with open("answer_b64.txt") as f:
-              text = base64.b64decode(f.read()).decode("utf-8", "replace")
-          # Telegram caps messages at 4096 chars; trim
-          text = text[:4000]
-          url = f"https://api.telegram.org/bot{token}/sendMessage"
-          payload = urllib.parse.urlencode({"chat_id": chat_id, "text": text}).encode()
-          req = urllib.request.Request(url, data=payload)
-          try:
-              resp = urllib.request.urlopen(req)
-              print("Sent:", resp.status)
-          except Exception as e:
-              print("Failed to send:", e)
-              # Reply failure is non-fatal: the answer already exists in logs/artifacts.
-              raise SystemExit(0)
-          PY
-
-      - name: Upload answer artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: hermes-answer
-          path: answer.txt
-          if-no-files-found: warn
+          chmod +x scripts/keepalive.sh scripts/persist.sh scripts/selfheal.sh
+          ./scripts/keepalive.sh
