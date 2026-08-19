@@ -1,0 +1,17 @@
+# Standard zip exclusion patterns for Pterodactyl bot packages
+# Usage: zip -r bot.zip bot/ -x $(cat references/zip-excludes.txt | tr '\n' ' ')
+
+*/__pycache__/*
+*/*.pyc
+*/.git*
+*/venv/*
+*/logs/*
+*/accounts.json
+*/akun_*.csv
+*/akun_*.json
+*/.env
+*/.env.*
+*/*.key
+*/*.pem
+*/*.crt
+*/secrets/*

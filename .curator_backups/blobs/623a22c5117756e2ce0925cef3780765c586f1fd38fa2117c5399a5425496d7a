@@ -1,0 +1,67 @@
+{
+  "_comment": "Minimal egg template for Pterodactyl bot. Replace BOT_NAME, DESCRIPTION, AUTHOR.",
+  "meta": {
+    "version": "PTDL_v2",
+    "update_url": null
+  },
+  "exported_at": "2026-01-01T00:00:00+00:00",
+  "name": "BOT_NAME",
+  "author": "AUTHOR",
+  "description": "DESCRIPTION. Startup default: ./startup.sh auto",
+  "features": null,
+  "docker_images": {
+    "ghcr.io/pterodactyl-images/python:3.11": "Python 3.11"
+  },
+  "file_denylist": [],
+  "startup": "{{STARTUP_CMD}}",
+  "config": {
+    "files": {},
+    "startup": {
+      "done": "Monitoring BOT_NAME dimulai"
+    },
+    "stop": "^C",
+    "logs": {
+      "custom": true,
+      "location": "logs/app.log"
+    }
+  },
+  "scripts": {
+    "installation": {
+      "script": "#!/bin/bash\n# Installer: Python 3.11 + dependency dari requirements.txt\nset -e\napt-get update -y\necho 'Langkah 1: buat virtualenv...'\npython3 -m venv /mnt/server/venv\nsource /mnt/server/venv/bin/activate\npip install --upgrade pip\nif [ -f /mnt/server/requirements.txt ]; then\n  echo 'Langkah 2: install requirements...'\n  pip install -r /mnt/server/requirements.txt\nfi\nchmod +x /mnt/server/startup.sh\necho 'Instalasi selesai.'",
+      "container": "python:3.11-slim",
+      "entrypoint": "bash"
+    }
+  },
+  "variables": [
+    {
+      "name": "Perintah Startup",
+      "description": "Mode bot saat server start. auto = monitor terus-menerus, check = cek sekali lalu berhenti, list = lihat daftar akun, stats = statistik.",
+      "env_variable": "STARTUP_CMD",
+      "default_value": "./startup.sh auto",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": "required|string|max:50",
+      "field_type": "text"
+    },
+    {
+      "name": "Token Bot Telegram",
+      "description": "Opsional. Token dari @BotFather untuk notifikasi perubahan status akun.",
+      "env_variable": "TG_BOT_TOKEN",
+      "default_value": "",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": "nullable|string|max:64",
+      "field_type": "text"
+    },
+    {
+      "name": "Chat ID Telegram",
+      "description": "Opsional. Chat ID tujuan notifikasi (bisa ambil dari @userinfobot).",
+      "env_variable": "TG_CHAT_ID",
+      "default_value": "",
+      "user_viewable": true,
+      "user_editable": true,
+      "rules": "nullable|string|max:32",
+      "field_type": "text"
+    }
+  ]
+}
