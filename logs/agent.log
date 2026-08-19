@@ -20975,3 +20975,225 @@ openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: In
 2026-08-19 00:31:57,912 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=259808->257640 rss_anon_kib=224276->222108 threads=19 duration_ms=109.8
 2026-08-19 00:32:03,672 INFO [20260819_001529_29b08c3f] agent.conversation_loop: API call #7: model=nemotron-3-ultra-free provider=opencode-zen in=40455 out=67 total=40522 latency=61.3s cache=37872/40455 (94%)
 2026-08-19 00:32:08,472 INFO [20260819_001529_29b08c3f] agent.tool_executor: tool terminal completed (4.80s, 683 chars)
+2026-08-19 00:32:58,029 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=259828->257716 rss_anon_kib=224296->222184 threads=19 duration_ms=117.3
+2026-08-19 00:33:22,598 INFO [20260819_001529_29b08c3f] agent.conversation_loop: API call #8: model=nemotron-3-ultra-free provider=opencode-zen in=40727 out=62 total=40789 latency=74.1s cache=37872/40727 (93%)
+2026-08-19 00:33:22,736 INFO [20260819_001529_29b08c3f] agent.tool_executor: tool terminal completed (0.14s, 122 chars)
+2026-08-19 00:33:58,147 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=259844->257804 rss_anon_kib=224312->222272 threads=19 duration_ms=117.1
+2026-08-19 00:34:25,829 INFO [20260819_001529_29b08c3f] agent.conversation_loop: API call #9: model=nemotron-3-ultra-free provider=opencode-zen in=40821 out=117 total=40938 latency=63.1s cache=37872/40821 (93%)
+2026-08-19 00:34:25,953 INFO [20260819_001529_29b08c3f] agent.tool_executor: tool terminal completed (0.12s, 1126 chars)
+2026-08-19 00:34:58,285 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=271092->258412 rss_anon_kib=235560->222880 threads=19 duration_ms=130.7
+2026-08-19 00:35:22,526 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4717, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4038, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 641, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-19 00:35:22,527 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-134 (<lambda>):140187094996672 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-19 00:35:22,556 WARNING [20260819_001529_29b08c3f] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=hermes-gateway_0:140187447322304 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-19 00:35:22,556 WARNING [20260819_001529_29b08c3f] agent.conversation_loop: Retrying API call in 2.9642903490470482s (attempt 1/3) thread=hermes-gateway_0:140187447322304 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-19 00:35:25,565 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-135 (<lambda>):140187094996672 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-19 00:35:58,401 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=272180->258224 rss_anon_kib=236648->222692 threads=19 duration_ms=115.9
+2026-08-19 00:36:18,796 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4717, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4038, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 641, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-19 00:36:18,797 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-135 (<lambda>):140187094996672 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-19 00:36:18,799 WARNING [20260819_001529_29b08c3f] agent.conversation_loop: API call failed (attempt 2/3) error_type=APIError thread=hermes-gateway_0:140187447322304 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-19 00:36:18,800 WARNING [20260819_001529_29b08c3f] agent.conversation_loop: Retrying API call in 4.517930910639104s (attempt 2/3) thread=hermes-gateway_0:140187447322304 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-19 00:36:23,408 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-136 (<lambda>):140187094996672 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-19 00:36:58,551 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=260632->258488 rss_anon_kib=225100->222956 threads=19 duration_ms=149.0
+2026-08-19 00:37:18,635 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4717, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4038, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 641, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-19 00:37:18,636 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-136 (<lambda>):140187094996672 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-19 00:37:18,638 WARNING [20260819_001529_29b08c3f] agent.conversation_loop: API call failed (attempt 3/3) error_type=APIError thread=hermes-gateway_0:140187447322304 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Internal server error
+2026-08-19 00:37:18,644 INFO [20260819_001529_29b08c3f] agent.chat_completion_helpers: Fallback north-mini-code-free: reasoning_config resolved: None
+2026-08-19 00:37:18,645 INFO [20260819_001529_29b08c3f] agent.chat_completion_helpers: Fallback activated: nemotron-3-ultra-free → north-mini-code-free (opencode-zen)
+2026-08-19 00:37:18,652 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-137 (<lambda>):140187094996672 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=north-mini-code-free
+2026-08-19 00:37:18,762 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model north-mini-code-free is not supported'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4717, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'type': 'error', 'error': {'type': 'ModelError', 'message': 'Model north-mini-code-free is not supported'}}
+2026-08-19 00:37:18,770 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-137 (<lambda>):140187094996672 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=north-mini-code-free
+2026-08-19 00:37:18,833 INFO [20260819_001529_29b08c3f] agent.credential_pool: credential pool: marking OPENCODE_ZEN_API_KEY exhausted (status=401), rotating
+2026-08-19 00:37:18,833 INFO [20260819_001529_29b08c3f] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-19 00:37:18,833 WARNING [20260819_001529_29b08c3f] agent.conversation_loop: API call failed (attempt 1/3) error_type=AuthenticationError thread=hermes-gateway_0:140187447322304 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=north-mini-code-free summary=HTTP 401: Model north-mini-code-free is not supported
+2026-08-19 00:37:18,839 INFO [20260819_001529_29b08c3f] agent.chat_completion_helpers: Fallback to groq/openai/gpt-oss-120b: clearing primary credential pool (pool_provider=opencode-zen) to prevent cross-provider contamination
+2026-08-19 00:37:18,841 INFO [20260819_001529_29b08c3f] agent.chat_completion_helpers: Fallback openai/gpt-oss-120b: reasoning_config resolved: None
+2026-08-19 00:37:18,841 INFO [20260819_001529_29b08c3f] agent.chat_completion_helpers: Fallback activated: north-mini-code-free → openai/gpt-oss-120b (groq)
+2026-08-19 00:37:18,848 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-138 (<lambda>):140187094996672 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b
+2026-08-19 00:37:19,042 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 37257, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4717, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 37257, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-19 00:37:19,046 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-138 (<lambda>):140187094996672 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b
+2026-08-19 00:37:19,048 WARNING [20260819_001529_29b08c3f] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIStatusError thread=hermes-gateway_0:140187447322304 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b summary=HTTP 413: Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 37257, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/
+2026-08-19 00:37:19,057 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider groq (openai/gpt-oss-120b)
+2026-08-19 00:37:19,058 INFO agent.conversation_compression: context compression started: session=20260819_001529_29b08c3f messages=31 tokens=~38,089 model=openai/gpt-oss-120b focus=None
+2026-08-19 00:37:19,072 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider groq (openai/gpt-oss-120b)
+2026-08-19 00:37:19,072 INFO agent.auxiliary_client: Auxiliary compression: using groq (openai/gpt-oss-120b) at https://api.groq.com/openai/v1/
+2026-08-19 00:37:23,635 INFO agent.conversation_compression: context compression done: session=20260819_001529_29b08c3f messages=31->24 rough_tokens=~67,229 awaiting_real_usage=true
+2026-08-19 00:37:23,635 INFO agent.conversation_compression: context compression attempt telemetry: {"attempt_id":"ce7251faffbb4376b454a4fd85894b32","chunk_count":0,"chunking":false,"commit_status":"committed","event":"compression_attempt","fallback_used":false,"session_id":"20260819_001529_29b08c3f","split_status":"in_place_committed","total_duration_ms":4583}
+2026-08-19 00:37:25,647 INFO [20260819_001529_29b08c3f] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260819_001529_29b08c3f)
+2026-08-19 00:37:25,654 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-139 (<lambda>):140186491016896 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b
+2026-08-19 00:37:25,756 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 18359, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4717, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 18359, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-19 00:37:25,759 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-139 (<lambda>):140186491016896 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b
+2026-08-19 00:37:25,761 WARNING [20260819_001529_29b08c3f] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIStatusError thread=hermes-gateway_0:140187447322304 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b summary=HTTP 413: Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 18359, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/
+2026-08-19 00:37:25,765 INFO agent.conversation_compression: context compression started: session=20260819_001529_29b08c3f messages=23 tokens=~23,269 model=openai/gpt-oss-120b focus=None
+2026-08-19 00:37:25,773 INFO agent.auxiliary_client: Auxiliary compression: using groq (openai/gpt-oss-120b) at https://api.groq.com/openai/v1/
+2026-08-19 00:37:31,067 INFO agent.conversation_compression: context compression done: session=20260819_001529_29b08c3f messages=23->12 rough_tokens=~22,384 awaiting_real_usage=true
+2026-08-19 00:37:31,067 INFO agent.conversation_compression: context compression attempt telemetry: {"attempt_id":"be2239722d8a4008a6e2f09ce62ce3c4","chunk_count":0,"chunking":false,"commit_status":"committed","event":"compression_attempt","fallback_used":false,"session_id":"20260819_001529_29b08c3f","split_status":"in_place_committed","total_duration_ms":5301}
+2026-08-19 00:37:33,079 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-140 (<lambda>):140186491016896 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b
+2026-08-19 00:37:33,167 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 19493, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4717, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 413 - {'error': {'message': 'Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 19493, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-08-19 00:37:33,172 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-140 (<lambda>):140186491016896 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b
+2026-08-19 00:37:33,173 WARNING [20260819_001529_29b08c3f] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIStatusError thread=hermes-gateway_0:140187447322304 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b summary=HTTP 413: Request too large for model `openai/gpt-oss-120b` in organization `org_01kw26qtckehv9rtrp5rt7q8jy` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Requested 19493, please reduce your message size and try again. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/
+2026-08-19 00:37:33,175 INFO agent.conversation_compression: context compression started: session=20260819_001529_29b08c3f messages=12 tokens=~22,131 model=openai/gpt-oss-120b focus=None
+2026-08-19 00:37:33,178 INFO agent.conversation_compression: Compression made no progress (session=20260819_001529_29b08c3f) — skipping boundary rewrite.
+2026-08-19 00:37:33,178 INFO agent.conversation_compression: context compression attempt telemetry: {"attempt_id":"1706de0fc4a346a9ab38c836dcc5a682","aux_call_duration_ms":null,"aux_model":"","aux_output_reservation":null,"aux_prompt_tokens":null,"aux_provider":"","chunk_count":0,"chunking":false,"commit_status":"aborted","current_estimated_tokens":22131,"effective_aux_context":null,"effective_threshold":98304,"event":"compression_attempt","failure_class":"no_progress","fallback_used":false,"fit_margin":null,"main_context_limit":131072,"main_model":"openai/gpt-oss-120b","main_provider":"groq","middle_window_tokens":0,"prellm_skip_count":0,"protected_head_tokens":0,"protected_tail_tokens":1215,"session_id":"20260819_001529_29b08c3f","split_status":"aborted","total_duration_ms":3,"trigger_source":"auto"}
+2026-08-19 00:37:33,181 ERROR [20260819_001529_29b08c3f] agent.conversation_loop: 413 payload too large. Cannot compress further.
+2026-08-19 00:37:33,190 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=1284.4s api_calls=10 response=57 chars
+2026-08-19 00:37:33,192 INFO gateway.run: Skipping transcript persistence for context-overflow failure in session 20260819_001529_29b08c3f to prevent session growth loop.
+2026-08-19 00:37:33,192 INFO gateway.run: Auto-resetting session 20260819_001529_29b08c3f after compression exhaustion.
+2026-08-19 00:37:33,196 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-evict-agent:main:telegram:dm:7:140187313104576 provider=groq base_url=https://api.groq.com/openai/v1/ model=openai/gpt-oss-120b
+2026-08-19 00:37:33,203 INFO gateway.platforms.base: [Telegram] Sending response (215 chars) to 7699507804
+2026-08-19 00:37:58,707 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=266548->258496 rss_anon_kib=231016->222964 threads=17 duration_ms=155.0
