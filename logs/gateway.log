@@ -2730,3 +2730,14 @@ telegram.error.BadRequest: Chat not found
 2026-08-19 07:04:51,889 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Variabel startup untuk bot token dan chat id gak ada,bisa aku pakai .env saja ne' reply_to_id=452 reply_to_text=''
 2026-08-19 07:05:00,865 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.0s api_calls=1 response=1236 chars
 2026-08-19 07:05:00,896 INFO gateway.platforms.base: [Telegram] Sending response (1222 chars) to 7699507804
+2026-08-19 07:07:04,965 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (95 chars)
+2026-08-19 07:07:04,984 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bukannya startup biasanya set file py bukan sh?karena panel pasti otomatis insta' reply_to_id=452 reply_to_text=''
+2026-08-19 07:07:24,859 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=19.9s api_calls=1 response=1501 chars
+2026-08-19 07:07:24,870 INFO gateway.platforms.base: [Telegram] Sending response (1501 chars) to 7699507804
+2026-08-19 07:08:46,886 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (27 chars)
+2026-08-19 07:08:46,890 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Aku biasa pakai main.py sih' reply_to_id=452 reply_to_text=''
+2026-08-19 07:09:49,592 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=62.7s api_calls=4 response=581 chars
+2026-08-19 07:09:49,653 INFO gateway.platforms.base: [Telegram] Sending response (529 chars) to 7699507804
+2026-08-19 07:09:49,994 INFO gateway.platforms.base: [Telegram] Delivering 1 non-image MEDIA attachment(s)
+2026-08-19 07:10:35,432 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (22 chars)
+2026-08-19 07:10:35,436 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Aku mau yang versi env' reply_to_id=452 reply_to_text=''
