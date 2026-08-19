@@ -2741,3 +2741,10 @@ telegram.error.BadRequest: Chat not found
 2026-08-19 07:09:49,994 INFO gateway.platforms.base: [Telegram] Delivering 1 non-image MEDIA attachment(s)
 2026-08-19 07:10:35,432 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (22 chars)
 2026-08-19 07:10:35,436 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Aku mau yang versi env' reply_to_id=452 reply_to_text=''
+2026-08-19 07:11:49,473 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=74.0s api_calls=8 response=690 chars
+2026-08-19 07:11:49,608 INFO gateway.platforms.base: [Telegram] Sending response (624 chars) to 7699507804
+2026-08-19 07:11:50,263 INFO gateway.platforms.base: [Telegram] Delivering 1 non-image MEDIA attachment(s)
+2026-08-19 07:12:46,441 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (82 chars)
+2026-08-19 07:12:46,445 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Alur pemakaian nya bagaimana? Cukup add akun ke telegram kan? Atau mesti ke pane' reply_to_id=452 reply_to_text=''
+2026-08-19 07:13:04,425 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=18.0s api_calls=1 response=2237 chars
+2026-08-19 07:13:04,491 INFO gateway.platforms.base: [Telegram] Sending response (2237 chars) to 7699507804
