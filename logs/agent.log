@@ -23556,3 +23556,12 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) ha
 2026-08-19 14:19:26,453 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-19 14:20:08,949 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=281416->280236 rss_anon_kib=246084->244904 threads=13 duration_ms=100.2
 2026-08-19 14:21:09,053 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280876->280180 rss_anon_kib=245544->244848 threads=13 duration_ms=103.3
+2026-08-19 14:22:08,105 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:7982 (idle=3670s)
+2026-08-19 14:22:08,105 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:7:140556992767680 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-19 14:22:08,106 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-19 14:22:09,156 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280832->280120 rss_anon_kib=245500->244788 threads=13 duration_ms=102.5
+2026-08-19 14:23:09,260 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=282480->280132 rss_anon_kib=247148->244800 threads=13 duration_ms=103.1
+2026-08-19 14:24:09,361 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=294884->280204 rss_anon_kib=259552->244872 threads=13 duration_ms=100.4
+2026-08-19 14:25:09,471 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=293636->280196 rss_anon_kib=258304->244832 threads=13 duration_ms=101.8
+2026-08-19 14:26:09,573 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280676->280016 rss_anon_kib=245344->244684 threads=13 duration_ms=101.5
+2026-08-19 14:27:09,675 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280668->280020 rss_anon_kib=245336->244688 threads=13 duration_ms=101.4
