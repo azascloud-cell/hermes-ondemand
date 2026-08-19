@@ -2836,3 +2836,4 @@ telegram.error.BadRequest: Chat not found
 2026-08-19 13:20:58,138 INFO gateway.run: Transient agent failure in session 20260819_003733_b5bb1ca1 — persisting user message so conversation context is preserved on retry.
 2026-08-19 13:20:58,145 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 7699507804
 2026-08-19 13:37:26,301 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-19 14:19:26,453 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137

@@ -23550,3 +23550,9 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) ha
 2026-08-19 14:14:08,327 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280912->280296 rss_anon_kib=245580->244964 threads=13 duration_ms=100.6
 2026-08-19 14:15:08,436 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=282224->280228 rss_anon_kib=246892->244896 threads=13 duration_ms=98.6
 2026-08-19 14:16:08,536 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280880->280176 rss_anon_kib=245548->244844 threads=13 duration_ms=99.3
+2026-08-19 14:17:08,636 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280968->280256 rss_anon_kib=245636->244924 threads=13 duration_ms=100.1
+2026-08-19 14:18:08,739 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=296528->280196 rss_anon_kib=261196->244864 threads=13 duration_ms=102.4
+2026-08-19 14:19:08,841 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=292388->280340 rss_anon_kib=257056->244976 threads=13 duration_ms=100.8
+2026-08-19 14:19:26,453 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-19 14:20:08,949 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=281416->280236 rss_anon_kib=246084->244904 threads=13 duration_ms=100.2
+2026-08-19 14:21:09,053 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280876->280180 rss_anon_kib=245544->244848 threads=13 duration_ms=103.3
