@@ -22942,3 +22942,186 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) ha
 2026-08-19 09:08:37,446 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=240204->235308 rss_anon_kib=205172->200276 threads=12 duration_ms=107.9
 2026-08-19 09:09:37,564 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236908->235344 rss_anon_kib=201876->200312 threads=12 duration_ms=109.6
 2026-08-19 09:10:37,672 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235944->235324 rss_anon_kib=200912->200292 threads=12 duration_ms=107.3
+2026-08-19 09:15:23,754 INFO hermes_cli.main: Checkout changed since last launch (unknown -> git:refs/heads/main:43e67f1f0e93705b397b6eeec91d058762466647): cleared 43 stale __pycache__ directories
+2026-08-19 09:15:25,148 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-08-19 09:15:25,150 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-08-19 09:15:25,152 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-08-19 09:15:25,207 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-08-19 09:15:25,208 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-08-19 09:15:25,212 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-08-19 09:15:25,214 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-08-19 09:15:25,217 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-08-19 09:15:25,220 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-08-19 09:15:25,220 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-08-19 09:15:25,225 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-08-19 09:15:25,235 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-08-19 09:15:25,239 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-08-19 09:15:25,242 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-08-19 09:15:25,246 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-08-19 09:15:25,248 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-08-19 09:15:25,250 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-08-19 09:15:25,259 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-08-19 09:15:25,261 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-08-19 09:15:25,263 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-08-19 09:15:25,264 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-08-19 09:15:25,267 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-08-19 09:15:25,284 INFO hermes_cli.plugins: Plugin discovery complete: 55 found, 48 enabled
+2026-08-19 09:15:26,469 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-08-19 09:15:26,493 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=4000, started_at=2026-08-19T09:00:23.388760+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-19T09:10:35.484154+00:00 last_mem={'rss_kib': 235868, 'mem_total_kib': 16373452, 'mem_available_kib': 15107716, 'swap_used_kib': 0} suspected_oom=False
+2026-08-19 09:15:26,533 INFO gateway.run: Starting Hermes Gateway...
+2026-08-19 09:15:26,534 INFO gateway.run: Session storage: /home/runner/.hermes/sessions
+2026-08-19 09:15:26,542 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-19 09:15:26,542 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-19 09:15:26,580 INFO gateway.run: Connecting to telegram...
+2026-08-19 09:15:26,582 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-19 09:15:26,764 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-19 09:15:26,764 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-19 09:15:26,776 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-19 09:15:27,130 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-19 09:15:27,131 INFO telegram.ext.Application: Application started
+2026-08-19 09:15:27,163 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-08-19 09:15:27,401 INFO tools.tirith_security: tirith installed to /home/runner/.hermes/bin/tirith (SHA-256 only)
+2026-08-19 09:15:37,724 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-19 09:15:37,732 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-19 09:15:38,015 INFO gateway.run: ✓ telegram connected
+2026-08-19 09:15:38,060 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-19 09:15:38,072 INFO gateway.run: Channel directory built: 22 target(s)
+2026-08-19 09:15:38,598 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-19 09:15:38,899 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-19 09:15:39,080 INFO gateway.run: Press Ctrl+C to stop
+2026-08-19 09:15:39,085 INFO cron.scheduler_provider: In-process cron scheduler started (interval=60s)
+2026-08-19 09:15:39,087 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/runner/.hermes/kanban/.dispatcher.lock)
+2026-08-19 09:15:39,090 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-08-19 09:15:39,100 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-19 09:15:39,154 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=157440->146220 rss_anon_kib=131568->120348 threads=9 duration_ms=52.0
+2026-08-19 09:15:39,193 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-19 09:15:39,193 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 97 hidden (over 60 limit). Use /commands for full list.
+2026-08-19 09:15:44,091 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-19 09:15:52,649 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (1 chars)
+2026-08-19 09:15:52,695 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='P' reply_to_id=556 reply_to_text='🟢 Hermes online (keep-alive start)'
+2026-08-19 09:15:52,784 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:7699507804:7982: model=gemma4:31b provider=ollama-cloud
+2026-08-19 09:15:52,824 INFO run_agent: Loaded environment variables from /home/runner/.hermes/.env
+2026-08-19 09:15:54,661 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140557435270848 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-19 09:15:54,662 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-19 09:15:54,663 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-19 09:15:54,663 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-19 09:15:54,664 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-19 09:15:54,670 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-19 09:15:54,690 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-19 09:15:54,693 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-19 09:15:54,693 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-19 09:15:54,694 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-19 09:15:54,696 INFO tools.lazy_deps: Lazy-installing edge-tts==7.2.7 for feature 'tts.edge'
+2026-08-19 09:15:54,853 INFO tools.lazy_deps: Lazy install complete for feature 'tts.edge'
+2026-08-19 09:15:54,868 INFO agent.auxiliary_client: Vision auto-detect: using main provider ollama-cloud (gemma4:31b-cloud)
+2026-08-19 09:15:54,877 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-19 09:15:54,957 INFO [20260819_003733_b5bb1ca1] agent.turn_context: conversation turn: session=20260819_003733_b5bb1ca1 model=gemma4:31b provider=ollama-cloud platform=telegram history=140 msg='[Replying to: "🟢 Hermes online (keep-alive start)"]  P'
+2026-08-19 09:15:54,979 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260819_003733_b5bb1ca1)
+2026-08-19 09:15:55,230 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-15 (<lambda>):140556831291072 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-19 09:15:56,066 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 8ec8170a-affe-4ec0-8cca-09694535d5e1)', 'type': 'api_error', 'param': None, 'code': None}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4717, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 8ec8170a-affe-4ec0-8cca-09694535d5e1)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-19 09:15:56,080 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-15 (<lambda>):140556831291072 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-19 09:15:56,081 WARNING [20260819_003733_b5bb1ca1] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140557435270848 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b summary=HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 8ec8170a-affe-4ec0-8cca-09694535d5e1)
+2026-08-19 09:15:56,082 WARNING [20260819_003733_b5bb1ca1] agent.conversation_loop: Retrying API call in 2.3646449023841023s (attempt 1/3) thread=hermes-gateway_0:140557435270848 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b policy=default error=Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 8ec8170a-affe-4ec0-8cca-09694535d5e1)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-19 09:15:58,497 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-16 (<lambda>):140556831291072 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-19 09:15:58,994 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 19c9feb2-1525-48e1-8836-e28a1ff296f5)', 'type': 'api_error', 'param': None, 'code': None}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4717, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 19c9feb2-1525-48e1-8836-e28a1ff296f5)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-19 09:15:59,002 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-16 (<lambda>):140556831291072 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-19 09:15:59,007 INFO [20260819_003733_b5bb1ca1] agent.credential_pool: credential pool: marking OLLAMA_API_KEY exhausted (status=429), rotating
+2026-08-19 09:15:59,007 INFO [20260819_003733_b5bb1ca1] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-19 09:15:59,007 WARNING [20260819_003733_b5bb1ca1] agent.conversation_loop: API call failed (attempt 2/3) error_type=RateLimitError thread=hermes-gateway_0:140557435270848 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b summary=HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 19c9feb2-1525-48e1-8836-e28a1ff296f5)
+2026-08-19 09:15:59,008 WARNING [20260819_003733_b5bb1ca1] agent.conversation_loop: Retrying API call in 4.666311162335523s (attempt 2/3) thread=hermes-gateway_0:140557435270848 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b policy=default error=Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 19c9feb2-1525-48e1-8836-e28a1ff296f5)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-19 09:16:03,825 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-17 (<lambda>):140557126989504 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-19 09:16:04,382 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: b657d3ec-40c5-4fc3-8e95-0bf2d4859ce9)', 'type': 'api_error', 'param': None, 'code': None}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4717, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: b657d3ec-40c5-4fc3-8e95-0bf2d4859ce9)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-19 09:16:04,390 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-17 (<lambda>):140557126989504 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-19 09:16:04,391 INFO [20260819_003733_b5bb1ca1] run_agent: Credential already exhausted (last_status=exhausted) — rotating immediately instead of retrying
+2026-08-19 09:16:04,393 INFO [20260819_003733_b5bb1ca1] agent.credential_pool: credential pool: marking OLLAMA_API_KEY exhausted (status=429), rotating
+2026-08-19 09:16:04,394 WARNING [20260819_003733_b5bb1ca1] agent.conversation_loop: API call failed (attempt 3/3) error_type=RateLimitError thread=hermes-gateway_0:140557435270848 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b summary=HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: b657d3ec-40c5-4fc3-8e95-0bf2d4859ce9)
+2026-08-19 09:16:04,398 ERROR [20260819_003733_b5bb1ca1] agent.conversation_loop: API call failed after 3 retries. HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: b657d3ec-40c5-4fc3-8e95-0bf2d4859ce9) | provider=ollama-cloud model=gemma4:31b msgs=141 tokens=~94,858
+2026-08-19 09:16:04,744 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=12.0s api_calls=1 response=192 chars
+2026-08-19 09:16:04,747 INFO gateway.run: Transient agent failure in session 20260819_003733_b5bb1ca1 — persisting user message so conversation context is preserved on retry.
+2026-08-19 09:16:04,754 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 7699507804
+2026-08-19 09:16:39,257 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280580->233072 rss_anon_kib=245320->197812 threads=12 duration_ms=102.2
+2026-08-19 09:17:39,351 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=255488->233592 rss_anon_kib=220228->198332 threads=12 duration_ms=93.9
+2026-08-19 09:18:39,442 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=234804->234204 rss_anon_kib=199544->198944 threads=13 duration_ms=90.0
+2026-08-19 09:19:39,545 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236432->234404 rss_anon_kib=201172->199144 threads=13 duration_ms=91.5
+2026-08-19 09:20:39,660 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235180->234392 rss_anon_kib=199920->199132 threads=13 duration_ms=113.8
