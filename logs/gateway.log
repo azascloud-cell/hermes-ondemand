@@ -2750,3 +2750,6 @@ telegram.error.BadRequest: Chat not found
 2026-08-19 07:13:04,491 INFO gateway.platforms.base: [Telegram] Sending response (2237 chars) to 7699507804
 2026-08-19 07:18:13,084 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (262 chars)
 2026-08-19 07:18:13,092 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Aku gak mau ribet buka tutup ke dashboard panel,aku mau akun bisa tambah,import,' reply_to_id=452 reply_to_text=''
+2026-08-19 07:25:22,183 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=429.1s api_calls=19 response=1801 chars
+2026-08-19 07:25:22,277 INFO gateway.platforms.base: [Telegram] Sending response (1749 chars) to 7699507804
+2026-08-19 07:25:23,203 INFO gateway.platforms.base: [Telegram] Delivering 1 non-image MEDIA attachment(s)

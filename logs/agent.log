@@ -22678,3 +22678,73 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-19 07:21:49,371 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool patch completed (0.18s, 3220 chars)
 2026-08-19 07:22:08,420 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #10: model=nemotron-3-ultra-free provider=opencode-zen in=126375 out=56 total=126431 latency=19.0s cache=116640/126375 (92%)
 2026-08-19 07:22:08,519 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool read_file completed (0.08s, 5627 chars)
+2026-08-19 07:22:31,219 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=291412->286500 rss_anon_kib=255572->250660 threads=20 duration_ms=102.7
+2026-08-19 07:23:17,028 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #11: model=nemotron-3-ultra-free provider=opencode-zen in=128457 out=2360 total=130817 latency=68.5s cache=120960/128457 (94%)
+2026-08-19 07:23:17,509 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool write_file completed (0.26s, 273 chars)
+2026-08-19 07:23:20,963 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #12: model=nemotron-3-ultra-free provider=opencode-zen in=130894 out=315 total=131209 latency=3.4s cache=116640/130894 (89%)
+2026-08-19 07:23:21,523 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool patch completed (0.40s, 509 chars)
+2026-08-19 07:23:24,258 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #13: model=nemotron-3-ultra-free provider=opencode-zen in=131369 out=69 total=131438 latency=2.7s cache=125280/131369 (95%)
+2026-08-19 07:23:24,493 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool terminal completed (0.15s, 105 chars)
+2026-08-19 07:23:31,336 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=292248->288228 rss_anon_kib=256408->252388 threads=20 duration_ms=115.9
+2026-08-19 07:23:54,493 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #14: model=nemotron-3-ultra-free provider=opencode-zen in=131479 out=66 total=131545 latency=30.0s
+2026-08-19 07:23:58,545 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool terminal completed (4.05s, 768 chars)
+2026-08-19 07:24:00,842 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #15: model=nemotron-3-ultra-free provider=opencode-zen in=131775 out=70 total=131845 latency=2.3s cache=125280/131775 (95%)
+2026-08-19 07:24:01,457 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool terminal completed (0.61s, 228 chars)
+2026-08-19 07:24:31,456 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=294056->292072 rss_anon_kib=258216->256232 threads=19 duration_ms=119.8
+2026-08-19 07:24:57,769 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #16: model=nemotron-3-ultra-free provider=opencode-zen in=131931 out=211 total=132142 latency=56.3s cache=125280/131931 (95%)
+2026-08-19 07:24:57,984 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool todo completed (0.00s, 716 chars)
+2026-08-19 07:25:01,359 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #17: model=nemotron-3-ultra-free provider=opencode-zen in=132357 out=138 total=132495 latency=3.4s cache=125280/132357 (95%)
+2026-08-19 07:25:01,551 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool terminal completed (0.19s, 2640 chars)
+2026-08-19 07:25:02,772 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4717, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4038, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 641, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-19 07:25:02,776 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-345 (<lambda>):139766020437696 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-19 07:25:02,778 WARNING [20260819_003733_b5bb1ca1] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=hermes-gateway_0:139766725072576 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-19 07:25:02,779 WARNING [20260819_003733_b5bb1ca1] agent.conversation_loop: Retrying API call in 2.1022476165672113s (attempt 1/3) thread=hermes-gateway_0:139766725072576 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-19 07:25:04,993 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-346 (<lambda>):139766020437696 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-19 07:25:08,185 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #18: model=nemotron-3-ultra-free provider=opencode-zen in=133597 out=62 total=133659 latency=6.6s cache=125280/133597 (94%)
+2026-08-19 07:25:08,313 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool terminal completed (0.08s, 93 chars)
+2026-08-19 07:25:22,091 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #19: model=nemotron-3-ultra-free provider=opencode-zen in=133685 out=597 total=134282 latency=13.8s cache=125280/133685 (94%)
+2026-08-19 07:25:22,141 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=19/500 budget=19/500 tool_turns=59 last_msg_role=assistant response_len=1801 session=20260819_003733_b5bb1ca1
+2026-08-19 07:25:22,165 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=bg-review:139766020437696 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-19 07:25:22,169 INFO [20260819_003733_b5bb1ca1] agent.turn_context: conversation turn: session=20260819_003733_b5bb1ca1 model=nemotron-3-ultra-free provider=opencode-zen platform=telegram history=139 msg='Review the conversation above and update two things:  **Memory**: who the user i...'
+2026-08-19 07:25:22,183 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=429.1s api_calls=19 response=1801 chars
+2026-08-19 07:25:22,191 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-349 (<lambda>):139765886219968 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-19 07:25:22,277 INFO gateway.platforms.base: [Telegram] Sending response (1749 chars) to 7699507804
+2026-08-19 07:25:23,203 INFO gateway.platforms.base: [Telegram] Delivering 1 non-image MEDIA attachment(s)
+2026-08-19 07:25:31,662 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=304196->295716 rss_anon_kib=268356->259876 threads=19 duration_ms=110.2
+2026-08-19 07:25:32,755 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #1: model=nemotron-3-ultra-free provider=opencode-zen in=135551 out=1062 total=136613 latency=10.6s cache=125280/135551 (92%)
+2026-08-19 07:25:32,801 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool memory completed (0.04s, 211 chars)
+2026-08-19 07:26:15,287 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #2: model=nemotron-3-ultra-free provider=opencode-zen in=135911 out=104 total=136015 latency=42.5s cache=125280/135911 (92%)
+2026-08-19 07:26:15,314 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool skills_list completed (0.03s, 419 chars)
+2026-08-19 07:26:17,984 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #3: model=nemotron-3-ultra-free provider=opencode-zen in=136073 out=71 total=136144 latency=2.7s cache=129600/136073 (95%)
+2026-08-19 07:26:18,027 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool skill_view completed (0.04s, 4940 chars)
+2026-08-19 07:26:23,377 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #4: model=nemotron-3-ultra-free provider=opencode-zen in=137570 out=462 total=138032 latency=5.3s cache=129600/137570 (94%)
+2026-08-19 07:26:23,386 WARNING [20260819_003733_b5bb1ca1] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Refusing background curator patch for skill 'pterodactyl-bot-deployment': the current SKILL.md content has not been loaded in this review turn. Call skill_view(name) for S
+2026-08-19 07:26:31,762 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=325220->295828 rss_anon_kib=289380->259988 threads=18 duration_ms=100.0
+2026-08-19 07:26:31,775 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #5: model=nemotron-3-ultra-free provider=opencode-zen in=138034 out=70 total=138104 latency=8.4s cache=129600/138034 (94%)
+2026-08-19 07:26:31,798 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool skill_view completed (0.02s, 4351 chars)
+2026-08-19 07:26:37,333 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #6: model=nemotron-3-ultra-free provider=opencode-zen in=139378 out=397 total=139775 latency=5.5s cache=129600/139378 (93%)
+2026-08-19 07:26:37,343 WARNING [20260819_003733_b5bb1ca1] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Refusing background curator patch for skill 'pterodactyl-bot-deployment': the current SKILL.md content has not been loaded in this review turn. Call skill_view(name) for S
+2026-08-19 07:26:47,786 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #7: model=nemotron-3-ultra-free provider=opencode-zen in=139891 out=1041 total=140932 latency=10.4s cache=133920/139891 (96%)
+2026-08-19 07:26:47,801 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool skill_manage completed (0.01s, 238 chars)
+2026-08-19 07:26:51,843 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #8: model=nemotron-3-ultra-free provider=opencode-zen in=140943 out=240 total=141183 latency=4.0s cache=129600/140943 (92%)
+2026-08-19 07:26:51,852 WARNING [20260819_003733_b5bb1ca1] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Refusing background curator patch for skill 'pterodactyl-bot-deployment': the current SKILL.md content has not been loaded in this review turn. Call skill_view(name) for S
+2026-08-19 07:26:55,378 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #9: model=nemotron-3-ultra-free provider=opencode-zen in=141254 out=93 total=141347 latency=3.5s cache=133920/141254 (95%)
+2026-08-19 07:26:55,382 INFO [20260819_003733_b5bb1ca1] agent.tool_executor: tool skill_view completed (0.00s, 379 chars)
+2026-08-19 07:27:19,308 INFO [20260819_003733_b5bb1ca1] agent.conversation_loop: API call #10: model=nemotron-3-ultra-free provider=opencode-zen in=141410 out=1319 total=142729 latency=23.9s cache=133920/141410 (95%)
+2026-08-19 07:27:19,318 WARNING [20260819_003733_b5bb1ca1] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Refusing background curator edit for skill 'pterodactyl-bot-deployment': the current SKILL.md content has not been loaded in this review turn. Call skill_view(name) for SK
