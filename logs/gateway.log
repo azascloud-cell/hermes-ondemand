@@ -2678,3 +2678,6 @@ telegram.error.BadRequest: Chat not found
 2026-08-19 00:37:33,192 INFO gateway.run: Skipping transcript persistence for context-overflow failure in session 20260819_001529_29b08c3f to prevent session growth loop.
 2026-08-19 00:37:33,192 INFO gateway.run: Auto-resetting session 20260819_001529_29b08c3f after compression exhaustion.
 2026-08-19 00:37:33,203 INFO gateway.platforms.base: [Telegram] Sending response (215 chars) to 7699507804
+2026-08-19 01:00:10,243 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-19 01:02:23,024 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-19 01:02:23,280 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
