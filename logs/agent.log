@@ -20814,3 +20814,40 @@ openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: In
 2026-08-19 00:09:55,003 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=224200->222524 rss_anon_kib=188668->186992 threads=14 duration_ms=112.1
 2026-08-19 00:10:55,117 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=223568->222520 rss_anon_kib=188036->186988 threads=14 duration_ms=113.4
 2026-08-19 00:11:55,240 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=229752->222512 rss_anon_kib=194220->186980 threads=14 duration_ms=122.7
+2026-08-19 00:12:55,378 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=239892->222512 rss_anon_kib=204360->186980 threads=14 duration_ms=136.9
+2026-08-19 00:13:55,515 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=223344->222516 rss_anon_kib=187812->186984 threads=14 duration_ms=136.4
+2026-08-19 00:14:55,662 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=224568->222468 rss_anon_kib=189036->186936 threads=14 duration_ms=141.9
+2026-08-19 00:15:29,627 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:7982 → 1 (session_reset)
+2026-08-19 00:15:55,840 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=224416->222532 rss_anon_kib=188884->187000 threads=15 duration_ms=176.2
+2026-08-19 00:16:08,739 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (76 chars)
+2026-08-19 00:16:08,745 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='buatkan aku fle zip pterodactyl bot manage akun parent yang masih sehat neng' reply_to_id=452 reply_to_text=''
+2026-08-19 00:16:09,723 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140187447322304 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-19 00:16:09,724 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-19 00:16:09,725 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-19 00:16:09,725 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-19 00:16:09,725 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-19 00:16:09,730 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-19 00:16:09,745 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-19 00:16:09,747 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-19 00:16:09,747 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-19 00:16:09,748 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-19 00:16:09,749 INFO tools.lazy_deps: Lazy-installing edge-tts==7.2.7 for feature 'tts.edge'
+2026-08-19 00:16:09,928 INFO tools.lazy_deps: Lazy install complete for feature 'tts.edge'
+2026-08-19 00:16:09,939 WARNING agent.auxiliary_client: Auxiliary client: PAID lane engaged for auxiliary task — OpenRouter fallback model 'google/gemini-3.6-flash' is not a :free SKU and may incur real spend. Set auxiliary.free_only: true to restrict auxiliary fallbacks to free models, or auxiliary.openrouter_model to a :free model.
+2026-08-19 00:16:09,940 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 00:17:09.
+2026-08-19 00:16:09,944 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-19 00:16:09,944 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 00:17:09.
+2026-08-19 00:16:09,944 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-19 00:16:09,945 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 00:17:09.
+2026-08-19 00:16:09,947 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-19 00:16:09,947 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 00:17:09.
+2026-08-19 00:16:09,947 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-19 00:16:09,947 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-19 00:16:09,956 WARNING tools.registry: check_fn check_web_api_key returned False; dependent tools will be unavailable this turn
+2026-08-19 00:16:10,125 INFO [20260819_001529_29b08c3f] agent.turn_context: conversation turn: session=20260819_001529_29b08c3f model=deepseek-v4-flash-free provider=opencode-zen platform=telegram history=0 msg='buatkan aku fle zip pterodactyl bot manage akun parent yang masih sehat neng'
+2026-08-19 00:16:10,194 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-35 (<lambda>):140187094996672 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-19 00:16:10,197 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider opencode-zen (deepseek-v4-flash-free)
+2026-08-19 00:16:10,197 INFO agent.auxiliary_client: Auxiliary title_generation: using opencode-zen (deepseek-v4-flash-free) at https://opencode.ai/zen/v1/
+2026-08-19 00:16:14,900 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
+2026-08-19 00:16:20,094 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7982 -> 'Buat zip bot Pterodactyl kelola parent sehat'
+2026-08-19 00:16:55,950 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=254620->248312 rss_anon_kib=219088->212780 threads=18 duration_ms=109.6

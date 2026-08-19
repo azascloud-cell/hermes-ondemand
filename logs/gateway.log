@@ -2669,3 +2669,8 @@ telegram.error.BadRequest: Chat not found
 2026-08-18 23:34:05,482 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-18 23:34:05,702 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-19 00:05:12,543 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-19 00:15:29,627 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:7982 → 1 (session_reset)
+2026-08-19 00:16:08,739 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (76 chars)
+2026-08-19 00:16:08,745 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='buatkan aku fle zip pterodactyl bot manage akun parent yang masih sehat neng' reply_to_id=452 reply_to_text=''
+2026-08-19 00:16:14,900 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
+2026-08-19 00:16:20,094 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7982 -> 'Buat zip bot Pterodactyl kelola parent sehat'
