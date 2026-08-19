@@ -24357,3 +24357,9 @@ RuntimeError: [drift_skip] Skipped to prevent unintended spend: global inference
 2026-08-19 23:18:53,964 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=227228->210320 rss_anon_kib=201072->184164 threads=12 duration_ms=57.9
 2026-08-19 23:19:54,026 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=221416->210312 rss_anon_kib=195260->184156 threads=12 duration_ms=61.9
 2026-08-19 23:20:54,097 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=212524->210324 rss_anon_kib=186368->184168 threads=12 duration_ms=59.8
+2026-08-19 23:21:54,157 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=211124->210324 rss_anon_kib=184968->184168 threads=12 duration_ms=59.6
+2026-08-19 23:22:54,219 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=210960->210316 rss_anon_kib=184804->184160 threads=12 duration_ms=62.0
+2026-08-19 23:23:54,280 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=210972->210316 rss_anon_kib=184816->184160 threads=12 duration_ms=60.0
+2026-08-19 23:24:10,251 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-19 23:24:54,340 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=229780->210316 rss_anon_kib=203624->184160 threads=12 duration_ms=59.8
+2026-08-19 23:25:54,435 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=219332->210312 rss_anon_kib=193176->184156 threads=12 duration_ms=61.4
