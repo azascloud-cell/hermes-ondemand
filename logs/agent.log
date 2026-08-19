@@ -24313,3 +24313,9 @@ RuntimeError: [drift_skip] Skipped to prevent unintended spend: global inference
 2026-08-19 22:36:51,332 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=197392->196516 rss_anon_kib=171300->170424 threads=12 duration_ms=57.8
 2026-08-19 22:37:51,390 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=197124->196512 rss_anon_kib=171032->170420 threads=12 duration_ms=57.5
 2026-08-19 22:38:51,448 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=197168->196528 rss_anon_kib=171076->170436 threads=12 duration_ms=57.2
+2026-08-19 22:39:51,505 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=200700->196528 rss_anon_kib=174608->170436 threads=12 duration_ms=56.6
+2026-08-19 22:40:51,618 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=215968->196728 rss_anon_kib=189876->170636 threads=12 duration_ms=56.4
+2026-08-19 22:41:51,677 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=197592->196712 rss_anon_kib=171500->170620 threads=12 duration_ms=57.8
+2026-08-19 22:42:51,735 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=197372->196712 rss_anon_kib=171280->170620 threads=12 duration_ms=58.0
+2026-08-19 22:43:51,793 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=197340->196712 rss_anon_kib=171248->170620 threads=12 duration_ms=57.1
+2026-08-19 22:44:51,858 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=197364->196712 rss_anon_kib=171272->170620 threads=12 duration_ms=63.8
