@@ -2830,3 +2830,8 @@ telegram.error.BadRequest: Chat not found
 2026-08-19 12:35:07,238 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-19 12:36:07,684 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-19 12:36:08,000 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-19 13:20:49,372 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (3 chars)
+2026-08-19 13:20:49,376 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Hey' reply_to_id=452 reply_to_text=''
+2026-08-19 13:20:58,137 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.8s api_calls=1 response=192 chars
+2026-08-19 13:20:58,138 INFO gateway.run: Transient agent failure in session 20260819_003733_b5bb1ca1 — persisting user message so conversation context is preserved on retry.
+2026-08-19 13:20:58,145 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 7699507804
