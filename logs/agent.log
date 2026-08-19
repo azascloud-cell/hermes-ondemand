@@ -20851,3 +20851,10 @@ openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: In
 2026-08-19 00:16:14,900 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
 2026-08-19 00:16:20,094 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7982 -> 'Buat zip bot Pterodactyl kelola parent sehat'
 2026-08-19 00:16:55,950 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=254620->248312 rss_anon_kib=219088->212780 threads=18 duration_ms=109.6
+2026-08-19 00:17:56,072 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=265164->249840 rss_anon_kib=229632->214308 threads=18 duration_ms=121.3
+2026-08-19 00:18:56,208 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=263720->251056 rss_anon_kib=228188->215524 threads=18 duration_ms=135.0
+2026-08-19 00:19:56,334 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=253472->251088 rss_anon_kib=217940->215556 threads=18 duration_ms=120.1
+2026-08-19 00:20:19,835 INFO [20260819_001529_29b08c3f] agent.conversation_loop: API call #1: model=deepseek-v4-flash-free provider=opencode-zen in=18969 out=13699 total=32668 latency=249.6s
+2026-08-19 00:20:19,836 INFO [20260819_001529_29b08c3f] agent.conversation_loop: Thinking-only response (no visible content) — prefilling to continue (1/2)
+2026-08-19 00:20:56,452 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=253064->250960 rss_anon_kib=217532->215428 threads=18 duration_ms=117.8
+2026-08-19 00:21:56,563 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251956->250968 rss_anon_kib=216424->215436 threads=18 duration_ms=110.5
