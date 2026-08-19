@@ -8423,3 +8423,4 @@ Traceback (most recent call last):
     raise RuntimeError(
 RuntimeError: [drift_skip] Skipped to prevent unintended spend: global inference config drifted since this job was created (provider 'opencode-zen' -> 'ollama-cloud'; model 'deepseek-v4-flash-free' -> 'gemma4:31b-cloud'), and this job is unpinned. No inference call was made. To run on the new config, on the host running Hermes pin it explicitly: `hermes cron edit d40f4356873b --provider <provider> --model <model>` (or pin the original values to keep them). This alert is sent once; the job stays skipped until the config is pinned or restored. See #44585.
 2026-08-19 22:12:50,149 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-19 22:36:22,058 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
