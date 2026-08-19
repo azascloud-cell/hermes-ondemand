@@ -20858,3 +20858,67 @@ openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: In
 2026-08-19 00:20:19,836 INFO [20260819_001529_29b08c3f] agent.conversation_loop: Thinking-only response (no visible content) — prefilling to continue (1/2)
 2026-08-19 00:20:56,452 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=253064->250960 rss_anon_kib=217532->215428 threads=18 duration_ms=117.8
 2026-08-19 00:21:56,563 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251956->250968 rss_anon_kib=216424->215436 threads=18 duration_ms=110.5
+2026-08-19 00:22:56,678 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=254704->251012 rss_anon_kib=219172->215480 threads=18 duration_ms=114.0
+2026-08-19 00:23:56,795 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=267220->251036 rss_anon_kib=231688->215504 threads=18 duration_ms=116.8
+2026-08-19 00:24:57,021 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=260256->251484 rss_anon_kib=224724->215952 threads=18 duration_ms=118.8
+2026-08-19 00:25:32,819 INFO [20260819_001529_29b08c3f] agent.conversation_loop: API call #2: model=deepseek-v4-flash-free provider=opencode-zen in=18969 out=22765 total=41734 latency=313.0s cache=18944/18969 (100%)
+2026-08-19 00:25:32,982 INFO agent.tool_executor: tool session_search completed (0.01s, 151 chars)
+2026-08-19 00:25:32,984 INFO agent.tool_executor: tool session_search completed (0.01s, 19184 chars)
+2026-08-19 00:25:32,987 INFO tools.terminal_tool: Creating new local environment for task default...
+2026-08-19 00:25:33,150 INFO tools.environments.base: Session snapshot created (session=0e79ca05edcd, cwd=/home/runner)
+2026-08-19 00:25:33,150 INFO tools.terminal_tool: local environment ready for task default
+2026-08-19 00:25:33,280 INFO [20260819_001529_29b08c3f] agent.tool_executor: tool terminal completed (0.29s, 47 chars)
+2026-08-19 00:25:57,143 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257104->253400 rss_anon_kib=221572->217868 threads=19 duration_ms=121.9
+2026-08-19 00:26:29,016 INFO [20260819_001529_29b08c3f] agent.conversation_loop: API call #3: model=deepseek-v4-flash-free provider=opencode-zen in=48788 out=7741 total=56529 latency=55.7s cache=41472/48788 (85%)
+2026-08-19 00:26:29,137 INFO agent.tool_executor: tool write_file completed (0.11s, 260 chars)
+2026-08-19 00:26:29,140 INFO agent.tool_executor: tool write_file completed (0.11s, 258 chars)
+2026-08-19 00:26:29,146 INFO agent.tool_executor: tool write_file completed (0.12s, 262 chars)
+2026-08-19 00:26:29,147 INFO agent.tool_executor: tool write_file completed (0.12s, 263 chars)
+2026-08-19 00:26:29,148 INFO agent.tool_executor: tool write_file completed (0.13s, 264 chars)
+2026-08-19 00:26:29,149 INFO agent.tool_executor: tool write_file completed (0.13s, 264 chars)
+2026-08-19 00:26:29,156 INFO agent.tool_executor: tool write_file completed (0.13s, 241 chars)
+2026-08-19 00:26:55,138 INFO [20260819_001529_29b08c3f] agent.conversation_loop: API call #4: model=deepseek-v4-flash-free provider=opencode-zen in=57159 out=3187 total=60346 latency=26.0s cache=48896/57159 (86%)
+2026-08-19 00:26:55,482 INFO agent.tool_executor: tool write_file completed (0.34s, 274 chars)
+2026-08-19 00:26:55,545 INFO agent.tool_executor: tool write_file completed (0.40s, 286 chars)
+2026-08-19 00:26:55,589 INFO agent.tool_executor: tool write_file completed (0.44s, 273 chars)
+2026-08-19 00:26:55,591 INFO agent.tool_executor: tool write_file completed (0.45s, 293 chars)
+2026-08-19 00:26:55,594 INFO agent.tool_executor: tool write_file completed (0.45s, 271 chars)
+2026-08-19 00:26:55,597 INFO agent.tool_executor: tool write_file completed (0.45s, 247 chars)
+2026-08-19 00:26:55,599 INFO agent.tool_executor: tool write_file completed (0.46s, 292 chars)
+2026-08-19 00:26:56,194 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+Traceback (most recent call last):
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4717, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3989, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/relay_llm.py", line 477, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3926, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'FreeUsageLimitError', 'message': 'Error from provider (Console): Rate limit exceeded. Please try again later.'}}
+2026-08-19 00:26:56,202 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-121 (<lambda>):140186491016896 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-19 00:26:56,203 WARNING [20260819_001529_29b08c3f] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_0:140187447322304 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 429: Error from provider (Console): Rate limit exceeded. Please try again later.
+2026-08-19 00:26:56,203 INFO [20260819_001529_29b08c3f] root: Rate-limit backoff level 0: cooldown 60 s (1.0 min, backoff#1)
+2026-08-19 00:26:56,203 WARNING [20260819_001529_29b08c3f] agent.chat_completion_helpers: Fallback skip: chain entry opencode-zen/deepseek-v4-flash-free resolves to the same backend as the current one (https://opencode.ai/zen/v1)
+2026-08-19 00:26:56,203 INFO [20260819_001529_29b08c3f] root: Rate-limit backoff level 1: cooldown 120 s (2.0 min, backoff#2)
+2026-08-19 00:26:56,208 INFO [20260819_001529_29b08c3f] agent.chat_completion_helpers: Fallback nemotron-3-ultra-free: reasoning_config resolved: None
+2026-08-19 00:26:56,208 INFO [20260819_001529_29b08c3f] agent.chat_completion_helpers: Fallback activated: deepseek-v4-flash-free → nemotron-3-ultra-free (opencode-zen)
+2026-08-19 00:26:56,215 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-122 (<lambda>):140186491016896 provider=opencode-zen base_url=https://opencode.ai/zen/v1/ model=nemotron-3-ultra-free
+2026-08-19 00:26:57,258 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=261124->256684 rss_anon_kib=225592->221152 threads=20 duration_ms=114.0
