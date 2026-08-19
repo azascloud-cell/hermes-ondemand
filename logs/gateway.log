@@ -2708,3 +2708,6 @@ telegram.error.BadRequest: Chat not found
 2026-08-19 01:41:15,863 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
 2026-08-19 05:08:06,790 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-19 05:08:07,105 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-19 06:48:11,208 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (20 chars)
+2026-08-19 06:48:11,319 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tinggal apanya neng?' reply_to_id=465 reply_to_text='Kode inti beres ✅ Sekarang file pendukung: config, egg Pterodactyl, startup scri'
+2026-08-19 06:48:16,262 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7982 -> 'Daftar tugas yang tersisa'
