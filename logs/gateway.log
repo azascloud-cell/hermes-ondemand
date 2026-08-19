@@ -2720,3 +2720,13 @@ telegram.error.BadRequest: Chat not found
 2026-08-19 06:57:01,798 INFO gateway.platforms.base: [Telegram] Delivering 1 non-image MEDIA attachment(s)
 2026-08-19 07:01:12,961 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (57 chars)
 2026-08-19 07:01:12,969 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Kalau pakai panel gratis ram 125mb disk 500mb bisa jalan?' reply_to_id=452 reply_to_text=''
+2026-08-19 07:02:24,090 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=71.1s api_calls=1 response=1555 chars
+2026-08-19 07:02:24,651 INFO gateway.platforms.base: [Telegram] Sending response (1555 chars) to 7699507804
+2026-08-19 07:03:26,052 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (46 chars)
+2026-08-19 07:03:26,056 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Gak usah,aku akan pakai ini dan sewa panel 1gb' reply_to_id=452 reply_to_text=''
+2026-08-19 07:03:49,186 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=23.1s api_calls=1 response=814 chars
+2026-08-19 07:03:49,196 INFO gateway.platforms.base: [Telegram] Sending response (814 chars) to 7699507804
+2026-08-19 07:04:51,885 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (83 chars)
+2026-08-19 07:04:51,889 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Variabel startup untuk bot token dan chat id gak ada,bisa aku pakai .env saja ne' reply_to_id=452 reply_to_text=''
+2026-08-19 07:05:00,865 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.0s api_calls=1 response=1236 chars
+2026-08-19 07:05:00,896 INFO gateway.platforms.base: [Telegram] Sending response (1222 chars) to 7699507804
