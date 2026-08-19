@@ -17,6 +17,12 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Configure git auth (avoid anonymous-clone 429 rate limit)
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          git config --global url."https://x-access-token:${GITHUB_TOKEN}@github.com/".insteadOf "https://github.com/"
+
       - name: Install Hermes Agent
         run: |
           curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash
