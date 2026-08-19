@@ -102,19 +102,15 @@ main() {
     python3 - <<'PY' || true
 import json, os, sqlite3, time
 db = os.path.expanduser("~/.hermes/state.db")
-BAD_PROVIDERS = {"opencode", "opencode-zen", "opencode-go"}
-DEPRECATED = {"llama-3.3-70b-versatile", "llama-3.3-70b-specdec", "llama-3.1-8b-instant", "llama-3.1-70b-versatile"}
 NEW_DEFAULT = "gemma4:31b-cloud"
 NEW_PROVIDER = "ollama-cloud"
 def is_bad(mo):
     if not isinstance(mo, dict):
-        return False
-    prov = mo.get("provider")
-    mdl = mo.get("model") or ""
-    # opencode/openccode-zen paid models (401) + deprecated groq models. Allow *-free.
-    if mdl.endswith("-free"):
-        return False
-    return (prov in BAD_PROVIDERS) or (mdl in DEPRECATED)
+        return True
+    # Force everything back to the single configured provider. Persisted
+    # overrides (opencode-zen, opencode-go, paid models, deprecated groq ids)
+    # all reference providers we no longer configure, so reset them all.
+    return mo.get("provider") != NEW_PROVIDER
 con = sqlite3.connect(db)
 cur = con.cursor()
 # scrub gateway_routing entry_json model_override
@@ -138,7 +134,7 @@ for sid, model, mcfg in cur.fetchall():
         cfg = json.loads(mcfg) if mcfg else {}
     except Exception:
         cfg = {}
-    if is_bad(cfg) or (model in DEPRECATED):
+    if is_bad(cfg) or (model != NEW_DEFAULT):
         cfg = {"provider": NEW_PROVIDER}
         cur.execute("UPDATE sessions SET model=?, model_config=? WHERE id=?",
                     (NEW_DEFAULT, json.dumps(cfg), sid))
@@ -166,7 +162,7 @@ if os.path.exists(sj):
             if not isinstance(obj, dict):
                 continue
             mo = obj.get("model_override")
-            if isinstance(mo, dict) and mo.get("provider") in BAD:
+            if isinstance(mo, dict) and mo.get("provider") != NEW_PROVIDER:
                 obj["model_override"] = None
                 changed = True
         if changed:
