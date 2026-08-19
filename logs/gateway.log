@@ -2711,3 +2711,5 @@ telegram.error.BadRequest: Chat not found
 2026-08-19 06:48:11,208 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7982 (20 chars)
 2026-08-19 06:48:11,319 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tinggal apanya neng?' reply_to_id=465 reply_to_text='Kode inti beres ✅ Sekarang file pendukung: config, egg Pterodactyl, startup scri'
 2026-08-19 06:48:16,262 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Renamed DM topic in chat 7699507804 thread_id=7982 -> 'Daftar tugas yang tersisa'
+2026-08-19 06:53:38,547 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=327.2s api_calls=28 response=1157 chars
+2026-08-19 06:53:38,615 INFO gateway.platforms.base: [Telegram] Sending response (1157 chars) to 7699507804
