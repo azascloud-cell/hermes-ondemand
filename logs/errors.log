@@ -68,3 +68,6 @@
 2026-08-20 05:00:45,001 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
 2026-08-20 05:00:52,196 WARNING gateway.run: Primary provider auth failed: No usable credentials found for provider 'opencode-zen'. Set OPENCODE_ZEN_API_KEY. — trying fallback
 2026-08-20 05:17:42,260 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 05:33:06,807 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 05:33:07,040 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 05:33:09,691 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
