@@ -297,3 +297,4 @@
 2026-08-20 04:42:15,252 WARNING gateway.run: Primary provider auth failed: No usable credentials found for provider 'opencode-zen'. Set OPENCODE_ZEN_API_KEY. — trying fallback
 2026-08-20 04:42:15,255 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=0.9s api_calls=0 response=117 chars
 2026-08-20 04:42:15,265 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 7699507804
+2026-08-20 04:47:42,105 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
