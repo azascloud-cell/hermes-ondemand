@@ -519,3 +519,4 @@
 2026-08-20 11:21:47,752 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Cara manual legal aja kalo bisa,selama gak kenon' reply_to_id=817 reply_to_text=''
 2026-08-20 11:22:19,322 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=31.6s api_calls=1 response=3593 chars
 2026-08-20 11:22:19,345 INFO gateway.platforms.base: [Telegram] Sending response (3593 chars) to 7699507804
+2026-08-20 11:40:17,701 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
