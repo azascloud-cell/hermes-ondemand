@@ -534,3 +534,11 @@
 2026-08-20 12:17:54,795 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Aku baru create asadtonojaya28434@gmail.com  Ingatkan aku 1jam tiap kali aku STO' reply_to_id=817 reply_to_text=''
 2026-08-20 12:18:21,398 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=26.6s api_calls=1 response=3046 chars
 2026-08-20 12:18:21,432 INFO gateway.platforms.base: [Telegram] Sending response (3046 chars) to 7699507804
+2026-08-20 12:20:52,076 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (103 chars)
+2026-08-20 12:20:52,087 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ini bot tokennya,kamu bisa buat bot online langsung kan? 8823781988:AAGyAqPVneKb' reply_to_id=817 reply_to_text=''
+2026-08-20 12:21:21,334 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=29.2s api_calls=1 response=4095 chars
+2026-08-20 12:21:21,372 INFO gateway.platforms.base: [Telegram] Sending response (4009 chars) to 7699507804
+2026-08-20 12:23:51,003 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (683 chars)
+2026-08-20 12:23:51,010 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Sekalian bot bisa list email yang akan dibuat dan saat sudah dibuat,email di ✅ d' reply_to_id=817 reply_to_text=''
+2026-08-20 12:24:46,432 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=55.4s api_calls=1 response=8353 chars
+2026-08-20 12:24:46,456 INFO gateway.platforms.base: [Telegram] Sending response (8256 chars) to 7699507804
