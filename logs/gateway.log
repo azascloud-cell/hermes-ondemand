@@ -398,3 +398,9 @@
 2026-08-20 09:18:19,322 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='ya,tidak ada preferensi khusus' reply_to_id=714 reply_to_text=''
 2026-08-20 09:18:24,084 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=4.8s api_calls=1 response=313 chars
 2026-08-20 09:18:24,101 INFO gateway.platforms.base: [Telegram] Sending response (313 chars) to 7699507804
+2026-08-20 09:21:10,593 INFO gateway.run: User opted out of destructive slash confirm (session=agent:main:telegram:dm:7699507804:8448)
+2026-08-20 09:21:10,594 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:8448 → 1 (session_reset)
+2026-08-20 09:22:01,782 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8448 (10 chars)
+2026-08-20 09:22:01,790 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='neg lidya!' reply_to_id=773 reply_to_text=''
+2026-08-20 09:22:09,517 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=7.7s api_calls=1 response=193 chars
+2026-08-20 09:22:09,537 INFO gateway.platforms.base: [Telegram] Sending response (193 chars) to 7699507804

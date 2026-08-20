@@ -99,3 +99,21 @@
 2026-08-20 09:12:40,332 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:13:40.
 2026-08-20 09:12:40,332 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
 2026-08-20 09:12:40,332 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 09:22:03,040 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 09:22:03,044 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 09:22:03,045 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-20 09:22:03,046 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-20 09:22:03,048 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 09:22:03,049 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 09:22:03,051 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 09:22:03,052 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-20 09:22:03,053 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-20 09:22:03,057 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:23:03.
+2026-08-20 09:22:03,059 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-20 09:22:03,059 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:23:03.
+2026-08-20 09:22:03,059 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-20 09:22:03,061 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:23:03.
+2026-08-20 09:22:03,063 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-20 09:22:03,063 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:23:03.
+2026-08-20 09:22:03,063 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-20 09:22:03,063 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
