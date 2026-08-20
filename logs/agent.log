@@ -664,3 +664,9 @@
 2026-08-20 05:13:52,669 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=158328->157708 rss_anon_kib=136396->135776 threads=11 duration_ms=70.5
 2026-08-20 05:14:52,759 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=158592->157764 rss_anon_kib=136644->135816 threads=11 duration_ms=77.7
 2026-08-20 05:15:52,829 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=158380->157784 rss_anon_kib=136432->135804 threads=11 duration_ms=69.7
+2026-08-20 05:16:52,917 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=158388->157712 rss_anon_kib=136440->135764 threads=11 duration_ms=86.6
+2026-08-20 05:17:42,260 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 05:17:52,979 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=158492->157756 rss_anon_kib=136508->135772 threads=11 duration_ms=61.8
+2026-08-20 05:18:53,042 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=158360->157756 rss_anon_kib=136376->135772 threads=11 duration_ms=61.5
+2026-08-20 05:19:53,112 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=158628->157820 rss_anon_kib=136644->135836 threads=11 duration_ms=61.9
+2026-08-20 05:20:53,171 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=158432->157824 rss_anon_kib=136448->135840 threads=11 duration_ms=58.1
