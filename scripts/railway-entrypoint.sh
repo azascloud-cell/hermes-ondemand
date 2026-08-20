@@ -306,6 +306,10 @@ main() {
     # Reset stale model overrides
     reset_model_overrides
     
+    # Initial baseline backup — guarantees a restore point exists even if the
+    # container is killed (OOM/trial expiry) before the first periodic backup.
+    backup_data 2>&1 | tail -2 || true
+    
     # Run selected mode
     case "$MODE" in
         gateway)
