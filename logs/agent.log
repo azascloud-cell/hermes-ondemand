@@ -1082,3 +1082,49 @@
 2026-08-20 09:22:09,537 INFO gateway.platforms.base: [Telegram] Sending response (193 chars) to 7699507804
 2026-08-20 09:22:13,518 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=237624->236520 rss_anon_kib=201616->200512 threads=13 duration_ms=129.3
 2026-08-20 09:23:13,617 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236992->236504 rss_anon_kib=200984->200496 threads=12 duration_ms=98.7
+2026-08-20 09:24:13,738 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=237020->236492 rss_anon_kib=201012->200484 threads=12 duration_ms=119.5
+2026-08-20 09:24:27,979 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8448 (153 chars)
+2026-08-20 09:24:27,985 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='maaf typo,maksudku neng lidya. kamu kan admin di channel/grup azzavisionAI,apa y' reply_to_id=773 reply_to_text=''
+2026-08-20 09:24:28,034 INFO [20260820_092110_fe9f54a9] agent.turn_context: conversation turn: session=20260820_092110_fe9f54a9 model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=2 msg='maaf typo,maksudku neng lidya. kamu kan admin di channel/grup azzavisionAI,apa y...'
+2026-08-20 09:24:40,657 INFO [20260820_092110_fe9f54a9] agent.conversation_loop: API call #2: model=laguna-s-2.1-free provider=opencode-zen in=17950 out=344 total=18294 latency=12.6s cache=1248/17950 (7%)
+2026-08-20 09:24:41,243 INFO [20260820_092110_fe9f54a9] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1026 session=20260820_092110_fe9f54a9
+2026-08-20 09:24:41,275 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=13.3s api_calls=1 response=1026 chars
+2026-08-20 09:24:41,294 INFO gateway.platforms.base: [Telegram] Sending response (1026 chars) to 7699507804
+2026-08-20 09:25:13,874 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235500->233816 rss_anon_kib=202608->200808 threads=12 duration_ms=122.2
+2026-08-20 09:26:13,988 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=234336->233776 rss_anon_kib=201328->200768 threads=12 duration_ms=113.5
+2026-08-20 09:27:00,138 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user image-document at /home/hermes/.hermes/cache/images/img_bde7b42d7738.png
+2026-08-20 09:27:00,940 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:7699507804:8448:photo-burst with 1 image(s)
+2026-08-20 09:27:00,947 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='kurang lebih' reply_to_id=773 reply_to_text=''
+2026-08-20 09:27:00,971 INFO gateway.run: Image routing: text (mode=text). Pre-analyzing 1 image(s) via vision_analyze.
+2026-08-20 09:27:00,977 INFO tools.vision_tools: Analyzing image: /home/hermes/.hermes/cache/images/img_bde7b42d7738.png
+2026-08-20 09:27:00,977 INFO tools.vision_tools: User prompt: Concisely describe this image in 2-4 sentences (~200 Chinese characters or ~150 English words). Cove
+2026-08-20 09:27:00,985 INFO tools.vision_tools: Image ready (283.9 KB)
+2026-08-20 09:27:00,985 INFO tools.vision_tools: Converting image to base64...
+2026-08-20 09:27:00,987 INFO tools.vision_tools: Image converted to base64 (378.5 KB)
+2026-08-20 09:27:00,987 INFO tools.vision_tools: Processing image with vision model...
+2026-08-20 09:27:00,990 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:28:00.
+2026-08-20 09:27:00,992 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-20 09:27:00,992 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:28:00.
+2026-08-20 09:27:00,993 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-20 09:27:00,993 ERROR tools.vision_tools: Error analyzing image: No LLM provider configured for task=vision provider=auto. Run: hermes setup
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/tools/vision_tools.py", line 1511, in vision_analyze_tool
+    response = await async_call_llm(**call_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/auxiliary_client.py", line 3270, in wrapped
+    return await callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/auxiliary_client.py", line 10120, in async_call_llm
+    return await _async_call_llm_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/auxiliary_client.py", line 10192, in _async_call_llm_impl
+    raise RuntimeError(
+RuntimeError: No LLM provider configured for task=vision provider=auto. Run: hermes setup
+2026-08-20 09:27:01,027 INFO [20260820_092110_fe9f54a9] agent.turn_context: conversation turn: session=20260820_092110_fe9f54a9 model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=4 msg="[The user sent an image but I couldn't quite see it this time (>_<) You can try ..."
+2026-08-20 09:27:10,612 INFO [20260820_092110_fe9f54a9] agent.conversation_loop: API call #3: model=laguna-s-2.1-free provider=opencode-zen in=18367 out=209 total=18576 latency=9.6s cache=1248/18367 (7%)
+2026-08-20 09:27:10,620 INFO [20260820_092110_fe9f54a9] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=629 session=20260820_092110_fe9f54a9
+2026-08-20 09:27:10,654 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.7s api_calls=1 response=629 chars
+2026-08-20 09:27:10,672 INFO gateway.platforms.base: [Telegram] Sending response (629 chars) to 7699507804
+2026-08-20 09:27:14,109 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=238748->235632 rss_anon_kib=205712->202596 threads=14 duration_ms=120.0
+2026-08-20 09:28:14,232 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236160->235596 rss_anon_kib=203124->202560 threads=13 duration_ms=122.9
+2026-08-20 09:29:14,340 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236072->235580 rss_anon_kib=203052->202560 threads=13 duration_ms=106.8

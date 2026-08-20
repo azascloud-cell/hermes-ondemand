@@ -404,3 +404,13 @@
 2026-08-20 09:22:01,790 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='neg lidya!' reply_to_id=773 reply_to_text=''
 2026-08-20 09:22:09,517 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=7.7s api_calls=1 response=193 chars
 2026-08-20 09:22:09,537 INFO gateway.platforms.base: [Telegram] Sending response (193 chars) to 7699507804
+2026-08-20 09:24:27,979 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8448 (153 chars)
+2026-08-20 09:24:27,985 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='maaf typo,maksudku neng lidya. kamu kan admin di channel/grup azzavisionAI,apa y' reply_to_id=773 reply_to_text=''
+2026-08-20 09:24:41,275 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=13.3s api_calls=1 response=1026 chars
+2026-08-20 09:24:41,294 INFO gateway.platforms.base: [Telegram] Sending response (1026 chars) to 7699507804
+2026-08-20 09:27:00,138 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user image-document at /home/hermes/.hermes/cache/images/img_bde7b42d7738.png
+2026-08-20 09:27:00,940 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:7699507804:8448:photo-burst with 1 image(s)
+2026-08-20 09:27:00,947 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='kurang lebih' reply_to_id=773 reply_to_text=''
+2026-08-20 09:27:00,971 INFO gateway.run: Image routing: text (mode=text). Pre-analyzing 1 image(s) via vision_analyze.
+2026-08-20 09:27:10,654 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.7s api_calls=1 response=629 chars
+2026-08-20 09:27:10,672 INFO gateway.platforms.base: [Telegram] Sending response (629 chars) to 7699507804

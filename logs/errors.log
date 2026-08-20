@@ -117,3 +117,21 @@
 2026-08-20 09:22:03,063 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:23:03.
 2026-08-20 09:22:03,063 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
 2026-08-20 09:22:03,063 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 09:27:00,990 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:28:00.
+2026-08-20 09:27:00,992 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-20 09:27:00,992 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:28:00.
+2026-08-20 09:27:00,993 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-20 09:27:00,993 ERROR tools.vision_tools: Error analyzing image: No LLM provider configured for task=vision provider=auto. Run: hermes setup
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/tools/vision_tools.py", line 1511, in vision_analyze_tool
+    response = await async_call_llm(**call_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/auxiliary_client.py", line 3270, in wrapped
+    return await callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/auxiliary_client.py", line 10120, in async_call_llm
+    return await _async_call_llm_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/auxiliary_client.py", line 10192, in _async_call_llm_impl
+    raise RuntimeError(
+RuntimeError: No LLM provider configured for task=vision provider=auto. Run: hermes setup
