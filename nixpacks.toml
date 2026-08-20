@@ -1,0 +1,29 @@
+# Nixpacks configuration for Railway
+# Alternative to Dockerfile - Railway will auto-detect this
+
+[phases.setup]
+nixPkgs = ["python312", "git", "curl", "sqlite"]
+
+[phases.install]
+cmds = [
+  "curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash -s -- --skip-setup --skip-browser --skip-computer-use",
+  "export PATH=\"$HOME/.local/bin:$HOME/.hermes/bin:$PATH\"",
+  "UV=\"$HOME/.hermes/bin/uv\"",
+  "VENV_PY=\"$(ls -d $HOME/.hermes/hermes-agent/venv/bin/python 2>/dev/null || echo '')\"",
+  "if [ -n \"$VENV_PY\" ] && [ -x \"$UV\" ]; then \"$UV\" pip install --python \"$VENV_PY\" --reinstall \"python-telegram-bot[webhooks]==22.6\"; fi",
+  "python3 scripts/patch-typehandler.py",
+  "pip install --no-cache-dir -r listener/requirements.txt 2>/dev/null || pip install --no-cache-dir requests",
+  "chmod +x scripts/*.sh"
+]
+
+[phases.build]
+cmds = []
+
+[start]
+cmd = "scripts/railway-entrypoint.sh"
+
+[variables]
+# These will be overridden by Railway environment variables
+MODE = "gateway"
+DATA_BRANCH = "railway-data"
+BACKUP_EVERY_SEC = "300"
