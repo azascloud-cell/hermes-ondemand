@@ -457,3 +457,5 @@
 2026-08-20 09:51:56,495 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='tes lagi' reply_to_id=714 reply_to_text=''
 2026-08-20 09:52:29,423 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=32.9s api_calls=3 response=639 chars
 2026-08-20 09:52:29,442 INFO gateway.platforms.base: [Telegram] Sending response (639 chars) to 7699507804
+2026-08-20 10:08:21,629 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 10:11:09,577 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
