@@ -616,3 +616,15 @@
 2026-08-20 13:17:03,559 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='ya,aku mau 24jam pythonanywhere' reply_to_id=817 reply_to_text=''
 2026-08-20 13:17:24,062 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=20.5s api_calls=1 response=2669 chars
 2026-08-20 13:17:24,111 INFO gateway.platforms.base: [Telegram] Sending response (2669 chars) to 7699507804
+2026-08-20 13:27:55,039 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (37 chars)
+2026-08-20 13:27:55,047 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='aku mau jalankan di panel pterodactyl' reply_to_id=817 reply_to_text=''
+2026-08-20 13:28:12,129 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=17.1s api_calls=1 response=2121 chars
+2026-08-20 13:28:12,149 INFO gateway.platforms.base: [Telegram] Sending response (2121 chars) to 7699507804
+2026-08-20 13:29:15,938 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (20 chars)
+2026-08-20 13:29:15,946 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='kirimkan zipnya saja' reply_to_id=817 reply_to_text=''
+2026-08-20 13:29:51,379 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=35.4s api_calls=1 response=5070 chars
+2026-08-20 13:29:51,400 INFO gateway.platforms.base: [Telegram] Sending response (5055 chars) to 7699507804
+2026-08-20 13:29:51,577 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] MarkdownV2 parse failed, falling back to plain text: Can't parse entities: can't find end of pre entity at byte offset 1431
+2026-08-20 13:29:52,332 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] MarkdownV2 parse failed, falling back to plain text: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+2026-08-20 13:31:08,325 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (29 chars)
+2026-08-20 13:31:08,333 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='kirim saja fle zipnya ke sini' reply_to_id=817 reply_to_text=''
