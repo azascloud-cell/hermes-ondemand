@@ -687,3 +687,4 @@
 2026-08-20 19:37:22,464 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-20 20:07:52,324 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-20 21:28:26,675 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 22:04:50,507 INFO gateway.delivery: Cron output preserved for chunking adapter (4340 chars) — full output saved to /home/hermes/.hermes/cron/output/7c65859d777f_20260820_220450.txt
