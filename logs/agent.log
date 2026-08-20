@@ -887,3 +887,11 @@
 2026-08-20 08:47:08,412 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151320->150956 rss_anon_kib=137100->136736 threads=11 duration_ms=74.9
 2026-08-20 08:48:08,478 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151564->150948 rss_anon_kib=137344->136728 threads=11 duration_ms=65.7
 2026-08-20 08:49:08,548 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151492->150952 rss_anon_kib=137272->136732 threads=11 duration_ms=68.7
+2026-08-20 08:50:08,626 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151616->150976 rss_anon_kib=137396->136756 threads=11 duration_ms=69.9
+2026-08-20 08:51:08,698 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151436->150952 rss_anon_kib=137216->136732 threads=11 duration_ms=71.0
+2026-08-20 08:52:08,783 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151340->150952 rss_anon_kib=137120->136732 threads=11 duration_ms=83.9
+2026-08-20 08:53:08,856 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151380->150952 rss_anon_kib=137160->136732 threads=11 duration_ms=72.7
+2026-08-20 08:54:08,931 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151436->150956 rss_anon_kib=137216->136736 threads=11 duration_ms=74.1
+2026-08-20 08:55:09,026 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151636->150988 rss_anon_kib=137416->136768 threads=11 duration_ms=85.9
+2026-08-20 08:56:09,111 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151564->150956 rss_anon_kib=137344->136736 threads=11 duration_ms=84.6
+2026-08-20 08:57:09,189 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151448->150964 rss_anon_kib=137228->136744 threads=11 duration_ms=77.0
