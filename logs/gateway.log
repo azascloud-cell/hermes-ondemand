@@ -487,3 +487,11 @@
 2026-08-20 11:01:15,901 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Neng,aku mau setor akun Gmail parent dan kamu setupkan akun anak,aku tinggal mas' reply_to_id=817 reply_to_text=''
 2026-08-20 11:01:47,377 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=31.5s api_calls=1 response=1521 chars
 2026-08-20 11:01:47,398 INFO gateway.platforms.base: [Telegram] Sending response (1521 chars) to 7699507804
+2026-08-20 11:05:58,723 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (101 chars)
+2026-08-20 11:05:58,732 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ini mau aku buat job untuk disetorkan ke penampung akun,per akun rate 4,300 jadi' reply_to_id=817 reply_to_text=''
+2026-08-20 11:06:11,743 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=13.0s api_calls=1 response=1388 chars
+2026-08-20 11:06:11,761 INFO gateway.platforms.base: [Telegram] Sending response (1388 chars) to 7699507804
+2026-08-20 11:07:50,768 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (32 chars)
+2026-08-20 11:07:50,776 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Rp.4300/Gmail akun milik sendiri' reply_to_id=817 reply_to_text=''
+2026-08-20 11:08:02,800 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=12.0s api_calls=1 response=906 chars
+2026-08-20 11:08:02,820 INFO gateway.platforms.base: [Telegram] Sending response (906 chars) to 7699507804

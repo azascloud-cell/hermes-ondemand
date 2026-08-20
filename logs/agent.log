@@ -1851,3 +1851,21 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 11:02:19,715 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257568->256528 rss_anon_kib=228384->227344 threads=15 duration_ms=124.5
 2026-08-20 11:03:19,848 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257308->256528 rss_anon_kib=228124->227344 threads=15 duration_ms=119.1
 2026-08-20 11:04:19,971 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256984->256528 rss_anon_kib=227800->227344 threads=15 duration_ms=121.8
+2026-08-20 11:05:20,100 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257044->256536 rss_anon_kib=227860->227352 threads=15 duration_ms=128.5
+2026-08-20 11:05:58,723 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (101 chars)
+2026-08-20 11:05:58,732 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ini mau aku buat job untuk disetorkan ke penampung akun,per akun rate 4,300 jadi' reply_to_id=817 reply_to_text=''
+2026-08-20 11:05:58,762 INFO [20260820_110020_5dfd118d] agent.turn_context: conversation turn: session=20260820_110020_5dfd118d model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=2 msg='Ini mau aku buat job untuk disetorkan ke penampung akun,per akun rate 4,300 jadi...'
+2026-08-20 11:06:11,682 INFO [20260820_110020_5dfd118d] agent.conversation_loop: API call #2: model=laguna-s-2.1-free provider=opencode-zen in=18574 out=492 total=19066 latency=12.9s cache=1248/18574 (7%)
+2026-08-20 11:06:11,693 INFO [20260820_110020_5dfd118d] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1388 session=20260820_110020_5dfd118d
+2026-08-20 11:06:11,743 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=13.0s api_calls=1 response=1388 chars
+2026-08-20 11:06:11,761 INFO gateway.platforms.base: [Telegram] Sending response (1388 chars) to 7699507804
+2026-08-20 11:06:20,226 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=258084->257004 rss_anon_kib=228900->227820 threads=16 duration_ms=125.1
+2026-08-20 11:07:20,364 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256832->256428 rss_anon_kib=228216->227812 threads=15 duration_ms=137.0
+2026-08-20 11:07:50,768 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (32 chars)
+2026-08-20 11:07:50,776 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Rp.4300/Gmail akun milik sendiri' reply_to_id=817 reply_to_text=''
+2026-08-20 11:07:50,814 INFO [20260820_110020_5dfd118d] agent.turn_context: conversation turn: session=20260820_110020_5dfd118d model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=4 msg='Rp.4300/Gmail akun milik sendiri'
+2026-08-20 11:08:02,174 INFO [20260820_110020_5dfd118d] agent.conversation_loop: API call #3: model=laguna-s-2.1-free provider=opencode-zen in=19091 out=322 total=19413 latency=11.3s cache=1248/19091 (7%)
+2026-08-20 11:08:02,770 INFO [20260820_110020_5dfd118d] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=906 session=20260820_110020_5dfd118d
+2026-08-20 11:08:02,800 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=12.0s api_calls=1 response=906 chars
+2026-08-20 11:08:02,820 INFO gateway.platforms.base: [Telegram] Sending response (906 chars) to 7699507804
+2026-08-20 11:08:20,509 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=258604->256524 rss_anon_kib=229984->227904 threads=16 duration_ms=130.0
