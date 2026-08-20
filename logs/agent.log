@@ -902,3 +902,148 @@
 2026-08-20 09:02:09,604 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151380->150952 rss_anon_kib=137156->136728 threads=11 duration_ms=79.7
 2026-08-20 09:03:09,691 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151420->150884 rss_anon_kib=137268->136732 threads=11 duration_ms=86.2
 2026-08-20 09:04:09,768 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151384->150888 rss_anon_kib=137232->136736 threads=11 duration_ms=76.6
+2026-08-20 09:10:55,127 INFO hermes_cli.main: Checkout changed since last launch (unknown -> git:refs/heads/main:b4f978d983b24ad4ba5ced5bf2c528bcf1c1fb0c): cleared 43 stale __pycache__ directories
+2026-08-20 09:10:56,832 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-08-20 09:10:56,837 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-08-20 09:10:56,841 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-08-20 09:10:56,915 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-08-20 09:10:56,919 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-08-20 09:10:56,926 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-08-20 09:10:56,930 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-08-20 09:10:56,936 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-08-20 09:10:56,947 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-08-20 09:10:56,947 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-08-20 09:10:56,954 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-08-20 09:10:56,976 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-08-20 09:10:56,983 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-08-20 09:10:56,990 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-08-20 09:10:56,998 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-08-20 09:10:57,003 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-08-20 09:10:57,008 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-08-20 09:10:57,020 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-08-20 09:10:57,026 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-08-20 09:10:57,030 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-08-20 09:10:57,035 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-08-20 09:10:57,043 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-08-20 09:10:57,067 INFO hermes_cli.plugins: Plugin discovery complete: 54 found, 48 enabled
+2026-08-20 09:10:58,624 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-08-20 09:10:58,658 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=105, started_at=2026-08-20T05:00:44.727904+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-20T09:03:52.975409+00:00 last_mem={'rss_kib': 151372, 'mem_total_kib': 263923416, 'mem_available_kib': 70023968, 'swap_used_kib': 0} suspected_oom=False
+2026-08-20 09:10:58,708 INFO gateway.run: Starting Hermes Gateway...
+2026-08-20 09:10:58,709 INFO gateway.run: Session storage: /home/hermes/.hermes/sessions
+2026-08-20 09:10:58,712 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-20 09:10:58,713 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-20 09:10:58,781 INFO gateway.run: Connecting to telegram...
+2026-08-20 09:10:58,792 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-20 09:10:58,838 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-08-20 09:10:59,049 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-20 09:10:59,049 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-20 09:10:59,061 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-20 09:10:59,239 INFO tools.tirith_security: tirith installed to /home/hermes/.hermes/bin/tirith (SHA-256 only)
+2026-08-20 09:10:59,719 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-20 09:10:59,720 INFO telegram.ext.Application: Application started
+2026-08-20 09:11:10,747 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-20 09:11:10,754 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-20 09:11:11,108 INFO gateway.run: ✓ telegram connected
+2026-08-20 09:11:11,159 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-20 09:11:11,171 INFO gateway.run: Channel directory built: 4 target(s)
+2026-08-20 09:11:11,835 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-20 09:11:12,180 INFO gateway.run: Press Ctrl+C to stop
+2026-08-20 09:11:12,186 INFO cron.scheduler_provider: In-process cron scheduler started (interval=60s)
+2026-08-20 09:11:12,189 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/hermes/.hermes/kanban/.dispatcher.lock)
+2026-08-20 09:11:12,192 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-08-20 09:11:12,197 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-20 09:11:12,206 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-20 09:11:12,267 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=157172->147236 rss_anon_kib=131352->121416 threads=9 duration_ms=58.6
+2026-08-20 09:11:12,538 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-20 09:11:12,538 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 79 hidden (over 60 limit). Use /commands for full list.
+2026-08-20 09:11:17,192 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-20 09:12:12,336 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=153076->149136 rss_anon_kib=127256->123316 threads=10 duration_ms=68.7
+2026-08-20 09:12:25,365 INFO gateway.platforms.base: [Telegram] Sending response (6193 chars) to 7699507804
+2026-08-20 09:12:38,460 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (3 chars)
+2026-08-20 09:12:38,471 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='hey' reply_to_id=714 reply_to_text=''
+2026-08-20 09:12:38,558 INFO run_agent: Loaded environment variables from /home/hermes/.hermes/.env
+2026-08-20 09:12:39,990 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140697685456576 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-20 09:12:39,992 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 09:12:39,993 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 09:12:39,994 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-20 09:12:39,995 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-20 09:12:40,049 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 09:12:40,075 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 09:12:40,077 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 09:12:40,078 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-20 09:12:40,079 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-20 09:12:40,082 INFO tools.lazy_deps: Lazy-installing edge-tts==7.2.7 for feature 'tts.edge'
+2026-08-20 09:12:40,305 INFO tools.lazy_deps: Lazy install complete for feature 'tts.edge'
+2026-08-20 09:12:40,322 WARNING agent.auxiliary_client: Auxiliary client: PAID lane engaged for auxiliary task — OpenRouter fallback model 'google/gemini-3.6-flash' is not a :free SKU and may incur real spend. Set auxiliary.free_only: true to restrict auxiliary fallbacks to free models, or auxiliary.openrouter_model to a :free model.
+2026-08-20 09:12:40,324 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:13:40.
+2026-08-20 09:12:40,327 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-20 09:12:40,328 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:13:40.
+2026-08-20 09:12:40,328 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-20 09:12:40,329 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:13:40.
+2026-08-20 09:12:40,331 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-20 09:12:40,332 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 09:13:40.
+2026-08-20 09:12:40,332 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-20 09:12:40,332 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 09:12:40,503 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=0 msg='hey'
+2026-08-20 09:12:42,269 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider opencode-zen (laguna-s-2.1-free)
+2026-08-20 09:12:42,269 INFO agent.auxiliary_client: Auxiliary title_generation: using opencode-zen (laguna-s-2.1-free) at https://opencode.ai/zen/v1/
+2026-08-20 09:12:42,358 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-15 (<lambda>):140696904767168 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-20 09:12:46,076 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #1: model=laguna-s-2.1-free provider=opencode-zen in=17817 out=11 total=17828 latency=3.8s cache=1248/17817 (7%)
+2026-08-20 09:12:46,087 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=36 session=20260820_040244_a288a94b
+2026-08-20 09:12:46,108 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=7.6s api_calls=1 response=36 chars
+2026-08-20 09:12:46,128 INFO gateway.platforms.base: [Telegram] Sending response (36 chars) to 7699507804
+2026-08-20 09:13:09,254 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (26 chars)
+2026-08-20 09:13:09,261 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='hallo kamu kenal mas azza?' reply_to_id=714 reply_to_text=''
+2026-08-20 09:13:09,287 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=2 msg='hallo kamu kenal mas azza?'
+2026-08-20 09:13:12,448 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=259212->224444 rss_anon_kib=223356->188588 threads=15 duration_ms=111.4
+2026-08-20 09:13:15,390 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #2: model=laguna-s-2.1-free provider=opencode-zen in=17848 out=58 total=17906 latency=6.1s cache=1248/17848 (7%)
+2026-08-20 09:13:15,398 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=180 session=20260820_040244_a288a94b
+2026-08-20 09:13:15,423 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=6.2s api_calls=1 response=180 chars
+2026-08-20 09:13:15,440 INFO gateway.platforms.base: [Telegram] Sending response (180 chars) to 7699507804
+2026-08-20 09:14:12,562 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=225164->224064 rss_anon_kib=189308->188208 threads=11 duration_ms=113.1
+2026-08-20 09:14:17,381 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (76 chars)
+2026-08-20 09:14:17,390 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='oke,mulai sekarang kamu adalah neng lidya,dan aku bisa kamu panggil mas azza' reply_to_id=714 reply_to_text=''
+2026-08-20 09:14:17,420 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=4 msg='oke,mulai sekarang kamu adalah neng lidya,dan aku bisa kamu panggil mas azza'
+2026-08-20 09:14:21,130 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #3: model=laguna-s-2.1-free provider=opencode-zen in=17944 out=69 total=18013 latency=3.7s cache=17888/17944 (100%)
+2026-08-20 09:14:21,141 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=205 session=20260820_040244_a288a94b
+2026-08-20 09:14:21,192 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=3.8s api_calls=1 response=205 chars
+2026-08-20 09:14:21,209 INFO gateway.platforms.base: [Telegram] Sending response (205 chars) to 7699507804
+2026-08-20 09:15:08,612 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (68 chars)
+2026-08-20 09:15:08,620 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='kok gitu? kamu adalah neng lidya,asisten pribadi ai digital mas azza' reply_to_id=714 reply_to_text=''
+2026-08-20 09:15:08,648 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=6 msg='kok gitu? kamu adalah neng lidya,asisten pribadi ai digital mas azza'
+2026-08-20 09:15:12,686 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=226604->224924 rss_anon_kib=190748->189068 threads=14 duration_ms=106.5
+2026-08-20 09:15:15,037 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #4: model=laguna-s-2.1-free provider=opencode-zen in=18047 out=56 total=18103 latency=6.4s cache=1248/18047 (7%)
+2026-08-20 09:15:15,047 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=158 session=20260820_040244_a288a94b
+2026-08-20 09:15:15,057 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=6.4s api_calls=1 response=158 chars
+2026-08-20 09:15:15,075 INFO gateway.platforms.base: [Telegram] Sending response (158 chars) to 7699507804
+2026-08-20 09:16:12,793 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=225632->224840 rss_anon_kib=189744->188984 threads=11 duration_ms=106.2
+2026-08-20 09:16:19,588 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (87 chars)
+2026-08-20 09:16:19,596 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='nah gitu dong,mulai sekarang bisa kamu buat cronjob berita terbaru tiap pagi jam' reply_to_id=714 reply_to_text=''
+2026-08-20 09:16:19,625 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=8 msg='nah gitu dong,mulai sekarang bisa kamu buat cronjob berita terbaru tiap pagi jam...'
+2026-08-20 09:16:25,087 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #5: model=laguna-s-2.1-free provider=opencode-zen in=18145 out=161 total=18306 latency=5.5s cache=17824/18145 (98%)
+2026-08-20 09:16:25,097 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=603 session=20260820_040244_a288a94b
+2026-08-20 09:16:25,119 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=5.5s api_calls=1 response=603 chars
+2026-08-20 09:16:25,137 INFO gateway.platforms.base: [Telegram] Sending response (603 chars) to 7699507804
+2026-08-20 09:16:55,553 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (31 chars)
+2026-08-20 09:16:55,560 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='pakai lah bahasa indonesia saja' reply_to_id=714 reply_to_text=''
+2026-08-20 09:16:55,593 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=10 msg='pakai lah bahasa indonesia saja'
+2026-08-20 09:17:00,920 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #6: model=laguna-s-2.1-free provider=opencode-zen in=18326 out=187 total=18513 latency=5.3s cache=18304/18326 (100%)
+2026-08-20 09:17:00,929 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=573 session=20260820_040244_a288a94b
+2026-08-20 09:17:00,983 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=5.4s api_calls=1 response=573 chars
+2026-08-20 09:17:01,002 INFO gateway.platforms.base: [Telegram] Sending response (573 chars) to 7699507804
+2026-08-20 09:17:12,907 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=226768->225164 rss_anon_kib=190912->189308 threads=12 duration_ms=112.7
+2026-08-20 09:17:42,170 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (30 chars)
+2026-08-20 09:17:42,177 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='ckup kirim di topic thread ini' reply_to_id=714 reply_to_text=''
+2026-08-20 09:17:42,207 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=12 msg='ckup kirim di topic thread ini'
+2026-08-20 09:17:52,022 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #7: model=laguna-s-2.1-free provider=opencode-zen in=18533 out=132 total=18665 latency=9.8s cache=800/18533 (4%)
+2026-08-20 09:17:52,633 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=422 session=20260820_040244_a288a94b
+2026-08-20 09:17:52,651 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=10.5s api_calls=1 response=422 chars
+2026-08-20 09:17:52,669 INFO gateway.platforms.base: [Telegram] Sending response (422 chars) to 7699507804
+2026-08-20 09:18:13,023 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=226808->225336 rss_anon_kib=191064->189560 threads=13 duration_ms=115.5
+2026-08-20 09:18:19,315 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (30 chars)
+2026-08-20 09:18:19,322 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='ya,tidak ada preferensi khusus' reply_to_id=714 reply_to_text=''
+2026-08-20 09:18:19,351 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=14 msg='ya,tidak ada preferensi khusus'
+2026-08-20 09:18:24,025 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #8: model=laguna-s-2.1-free provider=opencode-zen in=18686 out=99 total=18785 latency=4.7s cache=1248/18686 (7%)
+2026-08-20 09:18:24,034 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=313 session=20260820_040244_a288a94b
+2026-08-20 09:18:24,084 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=4.8s api_calls=1 response=313 chars
+2026-08-20 09:18:24,101 INFO gateway.platforms.base: [Telegram] Sending response (313 chars) to 7699507804
