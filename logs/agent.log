@@ -1,0 +1,80 @@
+2026-08-20 03:21:15,239 INFO hermes_cli.main: Checkout changed since last launch (unknown -> git:refs/heads/main:258410a184e507485ec7eb0c366ad1ce64a328a7): cleared 43 stale __pycache__ directories
+2026-08-20 03:21:16,368 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-08-20 03:21:16,371 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-08-20 03:21:16,373 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-08-20 03:21:16,444 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-08-20 03:21:16,446 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-08-20 03:21:16,451 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-08-20 03:21:16,453 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-08-20 03:21:16,456 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-08-20 03:21:16,462 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-08-20 03:21:16,462 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-08-20 03:21:16,469 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-08-20 03:21:16,483 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-08-20 03:21:16,487 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-08-20 03:21:16,491 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-08-20 03:21:16,495 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-08-20 03:21:16,497 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-08-20 03:21:16,500 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-08-20 03:21:16,507 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-08-20 03:21:16,509 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-08-20 03:21:16,510 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-08-20 03:21:16,512 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-08-20 03:21:16,515 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-08-20 03:21:16,530 INFO hermes_cli.plugins: Plugin discovery complete: 54 found, 48 enabled
+2026-08-20 03:21:17,672 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-08-20 03:21:17,729 INFO gateway.run: Starting Hermes Gateway...
+2026-08-20 03:21:17,730 INFO gateway.run: Session storage: /home/hermes/.hermes/sessions
+2026-08-20 03:21:17,733 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-20 03:21:17,734 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-20 03:21:17,763 INFO gateway.run: Connecting to telegram...
+2026-08-20 03:21:17,766 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-20 03:21:17,917 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-20 03:21:17,918 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-20 03:21:17,926 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-20 03:21:17,942 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-20 03:21:17,942 INFO telegram.ext.Application: Application started
+2026-08-20 03:21:18,532 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-08-20 03:21:18,729 INFO tools.tirith_security: tirith installed to /home/hermes/.hermes/bin/tirith (SHA-256 only)
+2026-08-20 03:21:27,977 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-20 03:21:27,981 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-20 03:21:28,213 INFO gateway.run: ✓ telegram connected
+2026-08-20 03:21:28,246 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-20 03:21:28,258 INFO gateway.run: Channel directory built: 0 target(s)
+2026-08-20 03:21:28,436 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-20 03:21:28,614 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-20 03:21:28,801 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-20 03:21:28,801 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 79 hidden (over 60 limit). Use /commands for full list.
+2026-08-20 03:21:29,267 INFO gateway.run: Press Ctrl+C to stop
+2026-08-20 03:21:29,272 INFO cron.scheduler_provider: In-process cron scheduler started (interval=60s)
+2026-08-20 03:21:29,279 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/hermes/.hermes/kanban/.dispatcher.lock)
+2026-08-20 03:21:29,279 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-08-20 03:21:29,289 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-20 03:21:29,382 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=154908->144752 rss_anon_kib=129360->119236 threads=9 duration_ms=91.2
+2026-08-20 03:21:34,280 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-20 03:21:38,254 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:7601 (1 chars)
+2026-08-20 03:21:38,312 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='p' reply_to_id=133 reply_to_text=''
+2026-08-20 03:21:38,994 INFO run_agent: Loaded environment variables from /home/hermes/.hermes/.env
+2026-08-20 03:21:39,866 WARNING gateway.run: Primary provider auth failed: No usable credentials found for provider 'ollama-cloud'. Set OLLAMA_API_KEY. — trying fallback
+2026-08-20 03:21:39,872 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=1.6s api_calls=0 response=111 chars
+2026-08-20 03:21:39,884 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 7699507804
+2026-08-20 03:21:40,188 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (1/5) — previous session still held open on Telegram's servers. Waiting 20s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-20 03:22:01,213 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 1/5; health pending getUpdates progress
+2026-08-20 03:22:23,339 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (1/5) — previous session still held open on Telegram's servers. Waiting 20s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-20 03:22:29,520 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=208380->192112 rss_anon_kib=182788->166520 threads=10 duration_ms=137.2
+2026-08-20 03:22:44,362 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 1/5; health pending getUpdates progress
+2026-08-20 03:22:57,166 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
+2026-08-20 03:23:06,467 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (1/5) — previous session still held open on Telegram's servers. Waiting 20s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-20 03:23:27,486 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 1/5; health pending getUpdates progress
+2026-08-20 03:23:29,641 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=191708->191024 rss_anon_kib=167728->167004 threads=10 duration_ms=120.3
+2026-08-20 03:23:49,592 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (1/5) — previous session still held open on Telegram's servers. Waiting 20s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-20 03:24:10,614 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 1/5; health pending getUpdates progress
+2026-08-20 03:24:29,754 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=192896->191704 rss_anon_kib=168940->167748 threads=11 duration_ms=112.6
+2026-08-20 03:24:32,655 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (1/5) — previous session still held open on Telegram's servers. Waiting 20s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-20 03:24:53,674 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 1/5; health pending getUpdates progress
+2026-08-20 03:25:15,817 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (1/5) — previous session still held open on Telegram's servers. Waiting 20s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-20 03:25:29,884 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=192508->192096 rss_anon_kib=168520->168108 threads=11 duration_ms=119.4
+2026-08-20 03:25:36,839 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 1/5; health pending getUpdates progress
+2026-08-20 03:25:58,895 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (1/5) — previous session still held open on Telegram's servers. Waiting 20s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-20 03:26:19,917 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 1/5; health pending getUpdates progress
+2026-08-20 03:26:30,864 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=192564->192124 rss_anon_kib=168592->168152 threads=11 duration_ms=979.8
