@@ -2055,3 +2055,8 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 12:29:53,571 INFO [20260820_110020_5dfd118d] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=2772 session=20260820_110020_5dfd118d
 2026-08-20 12:29:53,613 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=22.0s api_calls=1 response=2772 chars
 2026-08-20 12:29:53,634 INFO gateway.platforms.base: [Telegram] Sending response (2772 chars) to 7699507804
+2026-08-20 12:30:34,295 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257740->256288 rss_anon_kib=229316->227864 threads=16 duration_ms=139.1
+2026-08-20 12:31:34,411 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256996->256260 rss_anon_kib=228572->227836 threads=16 duration_ms=114.9
+2026-08-20 12:32:34,543 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256956->256272 rss_anon_kib=228532->227848 threads=16 duration_ms=131.5
+2026-08-20 12:33:34,682 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257048->256268 rss_anon_kib=228624->227844 threads=16 duration_ms=125.5
+2026-08-20 12:34:34,807 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256992->256276 rss_anon_kib=228568->227852 threads=16 duration_ms=123.6
