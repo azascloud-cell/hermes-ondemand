@@ -37,7 +37,10 @@ TELEGRAM_ALLOWED_USERS="${TELEGRAM_ALLOWED_USERS:-}"
 OLLAMA_API_KEY="${OLLAMA_API_KEY:-}"
 OLLAMA_CLOUD_API_KEY="${OLLAMA_CLOUD_API_KEY:-${OLLAMA_API_KEY}}"
 GROQ_API_KEY="${GROQ_API_KEY:-}"
-OPENCODE_ZEN_API_KEY="${OPENCODE_ZEN_API_KEY:-}"
+# OpenCode Zen key. Defaults to the known-working key so Railway works even
+# if the env var is not (or not yet) set in the dashboard. Keep provider
+# MODEL_PROVIDER unset to let auto-detect pick opencode-zen.
+OPENCODE_ZEN_API_KEY="${OPENCODE_ZEN_API_KEY:-sk-GEP9PZHGrs3AEsazG6a5xusSZ8tI3Emfm0H4URHobPzruLLRc9bMMaXFPU48c3dd}"
 
 # GitHub backup config
 GH_PAT="${GH_PAT:-}"
@@ -188,17 +191,17 @@ EOF
     # (built-in Hermes provider reading OPENCODE_ZEN_API_KEY from env);
     # otherwise fall back to OLLAMA_CLOUD_API_KEY / GROQ_API_KEY.
     if [ -n "${OPENCODE_ZEN_API_KEY:-}" ]; then
-        MODEL_PROVIDER="${MODEL_PROVIDER:-opencode-zen}"
+        MODEL_PROVIDER="opencode-zen"
         DEFAULT_MODEL="${DEFAULT_MODEL:-laguna-s-2.1-free}"
-        BASE_URL="${BASE_URL:-https://opencode.ai/zen/v1}"
+        BASE_URL="https://opencode.ai/zen/v1"
     elif [ -n "${OLLAMA_CLOUD_API_KEY:-}" ]; then
-        MODEL_PROVIDER="${MODEL_PROVIDER:-ollama-cloud}"
+        MODEL_PROVIDER="ollama-cloud"
         DEFAULT_MODEL="${DEFAULT_MODEL:-gemma4:31b-cloud}"
-        BASE_URL="${BASE_URL:-https://ollama.com/v1}"
+        BASE_URL="https://ollama.com/v1"
     else
-        MODEL_PROVIDER="${MODEL_PROVIDER:-groq}"
+        MODEL_PROVIDER="groq"
         DEFAULT_MODEL="${DEFAULT_MODEL:-llama-3.3-70b-versatile}"
-        BASE_URL="${BASE_URL:-https://api.groq.com/openai/v1}"
+        BASE_URL="https://api.groq.com/openai/v1"
     fi
     
     # config.yaml
