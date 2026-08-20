@@ -135,3 +135,13 @@ Traceback (most recent call last):
   File "/home/hermes/.hermes/hermes-agent/agent/auxiliary_client.py", line 10192, in _async_call_llm_impl
     raise RuntimeError(
 RuntimeError: No LLM provider configured for task=vision provider=auto. Run: hermes setup
+2026-08-20 09:32:53,889 WARNING [20260820_040244_a288a94b] agent.tool_executor: Tool web_extract returned error (1.59s): {
+  "results": [
+    {
+      "url": "https://www.detik.com/terbaru",
+      "title": "",
+      "content": "",
+      "error": "Keyless Exa extract failed: Error fetching URL(s): https://www.detik.com/te
+2026-08-20 09:33:25,805 WARNING [20260820_040244_a288a94b] agent.tool_executor: Tool skill_manage returned error (0.02s): {"success": false, "error": "SKILL.md must start with YAML frontmatter (---). See existing skills for format."}
+2026-08-20 09:33:45,020 WARNING [20260820_040244_a288a94b] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Description is 205 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descrip
+2026-08-20 09:34:00,126 WARNING [20260820_040244_a288a94b] agent.tool_executor: Tool skill_manage returned error (0.19s): {"success": false, "error": "Description is 93 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript

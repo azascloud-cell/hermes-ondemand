@@ -1128,3 +1128,35 @@ RuntimeError: No LLM provider configured for task=vision provider=auto. Run: her
 2026-08-20 09:27:14,109 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=238748->235632 rss_anon_kib=205712->202596 threads=14 duration_ms=120.0
 2026-08-20 09:28:14,232 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236160->235596 rss_anon_kib=203124->202560 threads=13 duration_ms=122.9
 2026-08-20 09:29:14,340 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236072->235580 rss_anon_kib=203052->202560 threads=13 duration_ms=106.8
+2026-08-20 09:30:14,465 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236460->235628 rss_anon_kib=203440->202608 threads=13 duration_ms=109.2
+2026-08-20 09:31:14,578 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236200->235592 rss_anon_kib=203180->202572 threads=13 duration_ms=113.1
+2026-08-20 09:32:14,687 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236076->235592 rss_anon_kib=203056->202572 threads=13 duration_ms=107.5
+2026-08-20 09:32:46,390 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (66 chars)
+2026-08-20 09:32:46,433 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='sudah belum? coba kirim satu info berita hari ini buat contoh saja' reply_to_id=714 reply_to_text=''
+2026-08-20 09:32:46,537 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=16 msg='sudah belum? coba kirim satu info berita hari ini buat contoh saja'
+2026-08-20 09:32:51,687 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #9: model=laguna-s-2.1-free provider=opencode-zen in=18819 out=78 total=18897 latency=5.1s cache=1248/18819 (7%)
+2026-08-20 09:32:52,311 INFO tools.web_tools: Extracting content from 1 URL(s)
+2026-08-20 09:32:52,323 INFO tools.web_tools: Web extract via exa: 1 URL(s)
+2026-08-20 09:32:52,325 INFO plugins.web.exa.provider: Exa keyless extract: 1 URL(s)
+2026-08-20 09:32:53,887 INFO tools.web_tools: Extracted content from 1 pages
+2026-08-20 09:32:53,889 WARNING [20260820_040244_a288a94b] agent.tool_executor: Tool web_extract returned error (1.59s): {
+  "results": [
+    {
+      "url": "https://www.detik.com/terbaru",
+      "title": "",
+      "content": "",
+      "error": "Keyless Exa extract failed: Error fetching URL(s): https://www.detik.com/te
+2026-08-20 09:33:00,951 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #10: model=laguna-s-2.1-free provider=opencode-zen in=19087 out=170 total=19257 latency=7.1s cache=1248/19087 (7%)
+2026-08-20 09:33:00,965 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=2/500 budget=2/500 tool_turns=1 last_msg_role=assistant response_len=514 session=20260820_040244_a288a94b
+2026-08-20 09:33:00,987 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=bg-review:140696671479488 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-20 09:33:00,995 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=20 msg='Review the conversation above and update the skill library. Be ACTIVE — most ses...'
+2026-08-20 09:33:01,007 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-28 (<lambda>):140696904767168 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-20 09:33:01,018 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=14.6s api_calls=2 response=514 chars
+2026-08-20 09:33:01,040 INFO gateway.platforms.base: [Telegram] Sending response (514 chars) to 7699507804
+2026-08-20 09:33:14,806 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=243692->239880 rss_anon_kib=210596->206784 threads=16 duration_ms=119.1
+2026-08-20 09:33:25,785 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #1: model=laguna-s-2.1-free provider=opencode-zen in=20863 out=983 total=21846 latency=24.8s cache=18848/20863 (90%)
+2026-08-20 09:33:25,805 WARNING [20260820_040244_a288a94b] agent.tool_executor: Tool skill_manage returned error (0.02s): {"success": false, "error": "SKILL.md must start with YAML frontmatter (---). See existing skills for format."}
+2026-08-20 09:33:45,008 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #2: model=laguna-s-2.1-free provider=opencode-zen in=21885 out=766 total=22651 latency=19.2s cache=1248/21885 (6%)
+2026-08-20 09:33:45,020 WARNING [20260820_040244_a288a94b] agent.tool_executor: Tool skill_manage returned error (0.01s): {"success": false, "error": "Description is 205 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descrip
+2026-08-20 09:33:59,932 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #3: model=laguna-s-2.1-free provider=opencode-zen in=22731 out=730 total=23461 latency=14.9s cache=22624/22731 (100%)
+2026-08-20 09:34:00,126 WARNING [20260820_040244_a288a94b] agent.tool_executor: Tool skill_manage returned error (0.19s): {"success": false, "error": "Description is 93 chars — new skills must fit the 60-char system-prompt budget (one sentence, trigger first, ends with a period). The skill index truncates longer descript
