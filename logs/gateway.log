@@ -495,3 +495,8 @@
 2026-08-20 11:07:50,776 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Rp.4300/Gmail akun milik sendiri' reply_to_id=817 reply_to_text=''
 2026-08-20 11:08:02,800 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=12.0s api_calls=1 response=906 chars
 2026-08-20 11:08:02,820 INFO gateway.platforms.base: [Telegram] Sending response (906 chars) to 7699507804
+2026-08-20 11:09:41,260 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (74 chars)
+2026-08-20 11:09:41,267 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bukan otomatisasi,tapi freelance bikin akun gmail pakai metode family link' reply_to_id=817 reply_to_text=''
+2026-08-20 11:10:22,096 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=40.8s api_calls=2 response=1468 chars
+2026-08-20 11:10:22,133 INFO gateway.platforms.base: [Telegram] Sending response (1468 chars) to 7699507804
+2026-08-20 11:13:22,419 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137

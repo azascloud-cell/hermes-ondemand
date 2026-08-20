@@ -1869,3 +1869,18 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 11:08:02,800 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=12.0s api_calls=1 response=906 chars
 2026-08-20 11:08:02,820 INFO gateway.platforms.base: [Telegram] Sending response (906 chars) to 7699507804
 2026-08-20 11:08:20,509 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=258604->256524 rss_anon_kib=229984->227904 threads=16 duration_ms=130.0
+2026-08-20 11:09:20,671 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257096->256488 rss_anon_kib=228476->227868 threads=15 duration_ms=161.6
+2026-08-20 11:09:41,260 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (74 chars)
+2026-08-20 11:09:41,267 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bukan otomatisasi,tapi freelance bikin akun gmail pakai metode family link' reply_to_id=817 reply_to_text=''
+2026-08-20 11:09:41,306 INFO [20260820_110020_5dfd118d] agent.turn_context: conversation turn: session=20260820_110020_5dfd118d model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=6 msg='Bukan otomatisasi,tapi freelance bikin akun gmail pakai metode family link'
+2026-08-20 11:10:08,398 INFO [20260820_110020_5dfd118d] agent.conversation_loop: API call #4: model=laguna-s-2.1-free provider=opencode-zen in=19443 out=953 total=20396 latency=27.1s cache=1248/19443 (6%)
+2026-08-20 11:10:08,400 INFO [20260820_110020_5dfd118d] agent.conversation_loop: Thinking-only response (no visible content) — prefilling to continue (1/2)
+2026-08-20 11:10:20,831 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=258860->256808 rss_anon_kib=230240->228188 threads=19 duration_ms=159.4
+2026-08-20 11:10:22,020 INFO [20260820_110020_5dfd118d] agent.conversation_loop: API call #5: model=laguna-s-2.1-free provider=opencode-zen in=19443 out=509 total=19952 latency=13.6s cache=1248/19443 (6%)
+2026-08-20 11:10:22,040 INFO [20260820_110020_5dfd118d] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=2/500 budget=2/500 tool_turns=0 last_msg_role=assistant response_len=1468 session=20260820_110020_5dfd118d
+2026-08-20 11:10:22,096 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=40.8s api_calls=2 response=1468 chars
+2026-08-20 11:10:22,133 INFO gateway.platforms.base: [Telegram] Sending response (1468 chars) to 7699507804
+2026-08-20 11:11:20,961 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257440->256564 rss_anon_kib=228820->227944 threads=15 duration_ms=129.6
+2026-08-20 11:12:21,097 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257096->256572 rss_anon_kib=228476->227952 threads=15 duration_ms=135.2
+2026-08-20 11:13:21,258 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257396->256572 rss_anon_kib=228776->227952 threads=15 duration_ms=143.1
+2026-08-20 11:13:22,419 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
