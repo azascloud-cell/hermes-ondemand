@@ -1450,3 +1450,10 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) ha
 2026-08-20 09:52:29,442 INFO gateway.platforms.base: [Telegram] Sending response (639 chars) to 7699507804
 2026-08-20 09:53:08,547 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=236416->232664 rss_anon_kib=200812->197060 threads=12 duration_ms=104.4
 2026-08-20 09:54:09,864 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=233028->232472 rss_anon_kib=197636->197048 threads=12 duration_ms=1316.0
+2026-08-20 09:55:09,984 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232984->232472 rss_anon_kib=197560->197048 threads=12 duration_ms=118.7
+2026-08-20 09:56:10,110 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232900->232444 rss_anon_kib=197508->197052 threads=12 duration_ms=125.5
+2026-08-20 09:57:10,228 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=232956->232452 rss_anon_kib=197564->197060 threads=12 duration_ms=117.0
+2026-08-20 09:58:10,346 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=233148->232396 rss_anon_kib=197796->197044 threads=12 duration_ms=109.1
+2026-08-20 09:59:10,508 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=229184->228616 rss_anon_kib=197608->197040 threads=12 duration_ms=161.4
+2026-08-20 10:00:10,649 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=227888->227384 rss_anon_kib=197544->197040 threads=12 duration_ms=139.8
+2026-08-20 10:01:10,776 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=227768->227312 rss_anon_kib=197496->197040 threads=12 duration_ms=126.7
