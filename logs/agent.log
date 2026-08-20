@@ -2968,3 +2968,10 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 22:01:18,177 INFO tools.web_tools: Extracting content from 4 URL(s)
 2026-08-20 22:01:18,230 INFO tools.web_tools: Web extract via parallel: 4 URL(s)
 2026-08-20 22:01:18,231 INFO plugins.web.parallel.provider: Parallel keyless extract: 4 URL(s)
+2026-08-20 22:01:35,453 INFO tools.web_tools: Extracted content from 4 pages
+2026-08-20 22:01:35,453 INFO tools.web_tools: https://www.bbc.com/indonesia/articles/cn7d7rv0klko (516 chars, whole)
+2026-08-20 22:01:35,453 INFO tools.web_tools: https://news.detik.com/internasional/d-8626427/trump-umumkan-operasi-ekonomi-sasar-iran-ancam-sanksi-ke-negara-pendukuh (2281 chars, whole)
+2026-08-20 22:01:35,453 INFO tools.web_tools: https://regional.kompas.com/read/2026/08/20/062000378/jaringan-penyelundupan-timah-dibongkar-tni-al-amankan-757-ton-barang-bukti (7051 chars, whole)
+2026-08-20 22:01:35,453 INFO tools.web_tools: https://www.liputan6.com/news/read/8273941/gangguan-krl-pagi-ini-ternyata-dipicu-2-insiden-maut (7533 chars, whole)
+2026-08-20 22:01:35,456 INFO [cron_7c65859d777f_20260820_220002] agent.tool_executor: tool web_extract completed (17.28s, 18705 chars)
+2026-08-20 22:02:03,121 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=287016->283856 rss_anon_kib=272004->268844 threads=22 duration_ms=125.2
