@@ -2899,3 +2899,72 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 21:44:00,798 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=254836->254172 rss_anon_kib=238744->238080 threads=17 duration_ms=142.8
 2026-08-20 21:45:00,928 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=255220->253980 rss_anon_kib=239128->237888 threads=17 duration_ms=120.4
 2026-08-20 21:46:01,059 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=254852->254000 rss_anon_kib=238760->237908 threads=17 duration_ms=130.8
+2026-08-20 21:47:01,181 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=254800->253996 rss_anon_kib=238708->237904 threads=17 duration_ms=120.4
+2026-08-20 21:48:01,298 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=254828->253996 rss_anon_kib=238736->237904 threads=17 duration_ms=116.6
+2026-08-20 21:49:01,427 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=254840->253972 rss_anon_kib=238748->237880 threads=17 duration_ms=128.0
+2026-08-20 21:50:01,561 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=255152->254008 rss_anon_kib=239060->237916 threads=17 duration_ms=116.8
+2026-08-20 21:51:01,682 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=253120->252316 rss_anon_kib=238752->237948 threads=17 duration_ms=119.3
+2026-08-20 21:52:01,803 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=252968->252104 rss_anon_kib=238784->237920 threads=17 duration_ms=120.9
+2026-08-20 21:53:01,930 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=252964->252116 rss_anon_kib=238780->237932 threads=17 duration_ms=119.8
+2026-08-20 21:54:02,068 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=252968->252096 rss_anon_kib=238784->237912 threads=17 duration_ms=136.6
+2026-08-20 21:55:02,197 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=253372->252120 rss_anon_kib=239188->237936 threads=17 duration_ms=120.4
+2026-08-20 21:56:02,321 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=252916->252092 rss_anon_kib=238732->237908 threads=17 duration_ms=123.5
+2026-08-20 21:57:02,432 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=252952->252092 rss_anon_kib=238768->237908 threads=17 duration_ms=110.4
+2026-08-20 21:58:02,578 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=252956->252116 rss_anon_kib=238772->237932 threads=17 duration_ms=144.9
+2026-08-20 21:59:02,716 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=252908->252120 rss_anon_kib=238724->237936 threads=17 duration_ms=137.9
+2026-08-20 22:00:02,861 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=253424->252208 rss_anon_kib=239204->237956 threads=17 duration_ms=133.1
+2026-08-20 22:00:02,904 INFO cron.scheduler: Running job 'Ringkasan Berita Pagi Mas Azza' (ID: 7c65859d777f)
+2026-08-20 22:00:02,904 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-20 22:00:02,914 INFO cron.scheduler: Job '7c65859d777f': loaded credential pool for provider opencode-zen with 1 entries
+2026-08-20 22:00:02,942 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=cron-parallel_0:140507564992192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-20 22:00:02,943 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 22:00:02,962 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 22:00:02,963 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-20 22:00:02,964 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-20 22:00:02,967 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 22:00:02,969 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 22:00:02,972 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 22:00:02,972 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-20 22:00:02,973 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-20 22:00:02,986 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:01:02.
+2026-08-20 22:00:02,988 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-20 22:00:02,989 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:01:02.
+2026-08-20 22:00:02,989 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-20 22:00:02,991 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:01:02.
+2026-08-20 22:00:02,993 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-20 22:00:02,993 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 22:01:02.
+2026-08-20 22:00:02,993 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-20 22:00:02,993 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 22:00:03,016 INFO [cron_7c65859d777f_20260820_220002] agent.turn_context: conversation turn: session=cron_7c65859d777f_20260820_220002 model=laguna-s-2.1-free provider=opencode-zen platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-08-20 22:00:03,047 INFO [cron_7c65859d777f_20260820_220002] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-24_0:140507853854400 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-20 22:00:12,126 INFO [cron_7c65859d777f_20260820_220002] agent.conversation_loop: API call #1: model=laguna-s-2.1-free provider=opencode-zen in=14191 out=386 total=14577 latency=9.1s cache=928/14191 (7%)
+2026-08-20 22:00:12,825 INFO tools.web_tools: Web search via parallel: 'berita terbaru hari ini site:kompas.com' (limit: 8)
+2026-08-20 22:00:12,827 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru hari ini site:kompas.com' (limit=8)
+2026-08-20 22:00:12,839 INFO tools.web_tools: Web search via parallel: 'berita terkini site:detik.com' (limit: 8)
+2026-08-20 22:00:12,840 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terkini site:detik.com' (limit=8)
+2026-08-20 22:00:12,841 INFO tools.web_tools: Web search via parallel: 'berita terbaru site:liputan6.com' (limit: 8)
+2026-08-20 22:00:12,843 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru site:liputan6.com' (limit=8)
+2026-08-20 22:00:12,847 INFO tools.web_tools: Web search via parallel: 'berita hari ini site:bbc.com/indonesia' (limit: 8)
+2026-08-20 22:00:12,850 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita hari ini site:bbc.com/indonesia' (limit=8)
+2026-08-20 22:00:14,276 INFO agent.tool_executor: tool web_search completed (1.48s, 13794 chars)
+2026-08-20 22:00:14,638 INFO agent.tool_executor: tool web_search completed (1.84s, 22204 chars)
+2026-08-20 22:00:14,733 INFO agent.tool_executor: tool web_search completed (1.94s, 17022 chars)
+2026-08-20 22:00:15,017 INFO agent.tool_executor: tool web_search completed (2.22s, 23162 chars)
+2026-08-20 22:00:40,788 INFO [cron_7c65859d777f_20260820_220002] agent.conversation_loop: API call #2: model=laguna-s-2.1-free provider=opencode-zen in=44118 out=1368 total=45486 latency=25.7s cache=480/44118 (1%)
+2026-08-20 22:00:40,825 INFO tools.web_tools: Web search via parallel: 'bbc.com/indonesia berita Indonesia terkini artikel' (limit: 8)
+2026-08-20 22:00:40,828 INFO plugins.web.parallel.provider: Parallel keyless search: 'bbc.com/indonesia berita Indonesia terkini artikel' (limit=8)
+2026-08-20 22:00:40,833 INFO tools.web_tools: Web search via parallel: 'kompas.com berita NTT gempa bencana kompas.com/news' (limit: 8)
+2026-08-20 22:00:40,834 INFO plugins.web.parallel.provider: Parallel keyless search: 'kompas.com berita NTT gempa bencana kompas.com/news' (limit=8)
+2026-08-20 22:00:40,839 INFO tools.web_tools: Web search via parallel: 'berita HUT 17 Agustus 2026 Prabowo Kemerdekaan site:detik.com' (limit: 8)
+2026-08-20 22:00:40,840 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita HUT 17 Agustus 2026 Prabowo Kemerdekaan site:detik.com' (limit=8)
+2026-08-20 22:00:40,845 INFO tools.web_tools: Web search via parallel: 'liputan6.com berita terbaru hari ini' (limit: 8)
+2026-08-20 22:00:40,847 INFO plugins.web.parallel.provider: Parallel keyless search: 'liputan6.com berita terbaru hari ini' (limit=8)
+2026-08-20 22:00:42,275 INFO agent.tool_executor: tool web_search completed (1.48s, 15182 chars)
+2026-08-20 22:00:42,325 INFO agent.tool_executor: tool web_search completed (1.53s, 22757 chars)
+2026-08-20 22:00:42,331 INFO agent.tool_executor: tool web_search completed (1.53s, 20734 chars)
+2026-08-20 22:00:42,661 INFO agent.tool_executor: tool web_search completed (1.86s, 21821 chars)
+2026-08-20 22:01:02,995 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=289712->283660 rss_anon_kib=274712->268660 threads=23 duration_ms=133.5
+2026-08-20 22:01:18,164 INFO [cron_7c65859d777f_20260820_220002] agent.conversation_loop: API call #3: model=laguna-s-2.1-free provider=opencode-zen in=76892 out=1696 total=78588 latency=35.5s cache=44096/76892 (57%)
+2026-08-20 22:01:18,177 INFO tools.web_tools: Extracting content from 4 URL(s)
+2026-08-20 22:01:18,230 INFO tools.web_tools: Web extract via parallel: 4 URL(s)
+2026-08-20 22:01:18,231 INFO plugins.web.parallel.provider: Parallel keyless extract: 4 URL(s)
