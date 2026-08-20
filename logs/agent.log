@@ -2678,3 +2678,7 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 18:09:27,197 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=255492->254388 rss_anon_kib=239400->238296 threads=17 duration_ms=127.2
 2026-08-20 18:10:27,338 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=255240->254380 rss_anon_kib=239148->238288 threads=17 duration_ms=141.1
 2026-08-20 18:11:27,468 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=255236->254380 rss_anon_kib=239144->238288 threads=17 duration_ms=128.5
+2026-08-20 18:12:27,594 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=255204->254360 rss_anon_kib=239112->238268 threads=17 duration_ms=125.6
+2026-08-20 18:13:27,716 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=255236->254352 rss_anon_kib=239144->238260 threads=17 duration_ms=121.6
+2026-08-20 18:14:27,848 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=255520->254376 rss_anon_kib=239428->238284 threads=17 duration_ms=122.1
+2026-08-20 18:15:28,008 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=255116->254356 rss_anon_kib=239024->238264 threads=17 duration_ms=158.9
