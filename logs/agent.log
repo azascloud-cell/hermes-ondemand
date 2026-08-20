@@ -2360,3 +2360,22 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 13:42:50,799 INFO [20260820_110020_5dfd118d] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=4 last_msg_role=assistant response_len=856 session=20260820_110020_5dfd118d
 2026-08-20 13:42:50,841 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.2s api_calls=1 response=856 chars
 2026-08-20 13:42:50,861 INFO gateway.platforms.base: [Telegram] Sending response (856 chars) to 7699507804
+2026-08-20 13:43:47,258 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=263516->262104 rss_anon_kib=237548->236136 threads=17 duration_ms=141.1
+2026-08-20 13:44:47,397 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=262860->262104 rss_anon_kib=236892->236136 threads=17 duration_ms=137.6
+2026-08-20 13:44:48,142 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (26 chars)
+2026-08-20 13:44:48,149 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='ram kecil 125mb disk 500mb' reply_to_id=817 reply_to_text=''
+2026-08-20 13:44:48,182 INFO [20260820_110020_5dfd118d] agent.turn_context: conversation turn: session=20260820_110020_5dfd118d model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=82 msg='ram kecil 125mb disk 500mb'
+2026-08-20 13:45:06,611 INFO [20260820_110020_5dfd118d] agent.conversation_loop: API call #43: model=laguna-s-2.1-free provider=opencode-zen in=48078 out=711 total=48789 latency=18.4s cache=1248/48078 (3%)
+2026-08-20 13:45:08,286 INFO [20260820_110020_5dfd118d] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=4 last_msg_role=assistant response_len=2106 session=20260820_110020_5dfd118d
+2026-08-20 13:45:08,340 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=20.2s api_calls=1 response=2106 chars
+2026-08-20 13:45:08,360 INFO gateway.platforms.base: [Telegram] Sending response (2106 chars) to 7699507804
+2026-08-20 13:45:47,549 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=265232->263376 rss_anon_kib=239264->237408 threads=17 duration_ms=152.1
+2026-08-20 13:45:53,112 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (15 chars)
+2026-08-20 13:45:53,119 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='"ringankan bot"' reply_to_id=817 reply_to_text=''
+2026-08-20 13:45:53,151 INFO [20260820_110020_5dfd118d] agent.turn_context: conversation turn: session=20260820_110020_5dfd118d model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=84 msg='"ringankan bot"'
+2026-08-20 13:46:10,235 INFO [20260820_110020_5dfd118d] agent.conversation_loop: API call #44: model=laguna-s-2.1-free provider=opencode-zen in=48804 out=917 total=49721 latency=17.1s cache=48768/48804 (100%)
+2026-08-20 13:46:10,250 INFO [20260820_110020_5dfd118d] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=4 last_msg_role=assistant response_len=3037 session=20260820_110020_5dfd118d
+2026-08-20 13:46:10,280 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=17.2s api_calls=1 response=3037 chars
+2026-08-20 13:46:10,302 INFO gateway.platforms.base: [Telegram] Sending response (3024 chars) to 7699507804
+2026-08-20 13:46:47,696 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=266048->263716 rss_anon_kib=240080->237748 threads=17 duration_ms=145.4
+2026-08-20 13:47:47,846 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264348->263716 rss_anon_kib=238380->237748 threads=17 duration_ms=149.3
