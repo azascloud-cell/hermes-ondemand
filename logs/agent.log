@@ -364,3 +364,70 @@
 2026-08-20 04:13:41,569 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=181696->181468 rss_anon_kib=158752->157948 threads=11 duration_ms=108.1
 2026-08-20 04:14:41,673 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=182336->181544 rss_anon_kib=158816->158024 threads=11 duration_ms=94.7
 2026-08-20 04:15:41,779 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=182352->181580 rss_anon_kib=158832->158060 threads=11 duration_ms=105.4
+2026-08-20 04:17:14,043 INFO hermes_cli.main: Checkout changed since last launch (unknown -> git:refs/heads/main:258410a184e507485ec7eb0c366ad1ce64a328a7): cleared 43 stale __pycache__ directories
+2026-08-20 04:17:15,312 INFO hermes_cli.plugins: Plugin 'browser-browser-use' registered browser provider: browser-use
+2026-08-20 04:17:15,315 INFO hermes_cli.plugins: Plugin 'browser-browserbase' registered browser provider: browserbase
+2026-08-20 04:17:15,317 INFO hermes_cli.plugins: Plugin 'browser-firecrawl' registered browser provider: firecrawl
+2026-08-20 04:17:15,371 INFO hermes_cli.plugins: Plugin 'deepinfra' registered image_gen provider: deepinfra
+2026-08-20 04:17:15,373 INFO hermes_cli.plugins: Plugin 'fal' registered image_gen provider: fal
+2026-08-20 04:17:15,378 INFO hermes_cli.plugins: Plugin 'krea' registered image_gen provider: krea
+2026-08-20 04:17:15,380 INFO hermes_cli.plugins: Plugin 'openai' registered image_gen provider: openai
+2026-08-20 04:17:15,383 INFO hermes_cli.plugins: Plugin 'openai-codex' registered image_gen provider: openai-codex
+2026-08-20 04:17:15,389 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: openrouter
+2026-08-20 04:17:15,389 INFO hermes_cli.plugins: Plugin 'openrouter' registered image_gen provider: nous
+2026-08-20 04:17:15,393 INFO hermes_cli.plugins: Plugin 'xai' registered image_gen provider: xai
+2026-08-20 04:17:15,406 INFO hermes_cli.plugins: Plugin 'deepinfra' registered video_gen provider: deepinfra
+2026-08-20 04:17:15,410 INFO hermes_cli.plugins: Plugin 'fal' registered video_gen provider: fal
+2026-08-20 04:17:15,413 INFO hermes_cli.plugins: Plugin 'xai' registered video_gen provider: xai
+2026-08-20 04:17:15,419 INFO hermes_cli.plugins: Plugin 'web-brave-free' registered web provider: brave-free
+2026-08-20 04:17:15,421 INFO hermes_cli.plugins: Plugin 'web-ddgs' registered web provider: ddgs
+2026-08-20 04:17:15,424 INFO hermes_cli.plugins: Plugin 'web-exa' registered web provider: exa
+2026-08-20 04:17:15,432 INFO hermes_cli.plugins: Plugin 'web-firecrawl' registered web provider: firecrawl
+2026-08-20 04:17:15,435 INFO hermes_cli.plugins: Plugin 'web-parallel' registered web provider: parallel
+2026-08-20 04:17:15,437 INFO hermes_cli.plugins: Plugin 'web-searxng' registered web provider: searxng
+2026-08-20 04:17:15,439 INFO hermes_cli.plugins: Plugin 'web-tavily' registered web provider: tavily
+2026-08-20 04:17:15,442 INFO hermes_cli.plugins: Plugin 'web-xai' registered web provider: xai
+2026-08-20 04:17:15,456 INFO hermes_cli.plugins: Plugin discovery complete: 54 found, 48 enabled
+2026-08-20 04:17:16,644 INFO tools.tirith_security: tirith not found — downloading latest release for x86_64-unknown-linux-gnu...
+2026-08-20 04:17:16,663 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=108, started_at=2026-08-20T04:10:32.677139+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-20T04:15:40.130348+00:00 last_mem={'rss_kib': 182208, 'mem_total_kib': 338368136, 'mem_available_kib': 208982384, 'swap_used_kib': 249620} suspected_oom=False
+2026-08-20 04:17:16,698 INFO gateway.run: Starting Hermes Gateway...
+2026-08-20 04:17:16,699 INFO gateway.run: Session storage: /home/hermes/.hermes/sessions
+2026-08-20 04:17:16,702 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-20 04:17:16,703 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-20 04:17:16,736 INFO gateway.run: Connecting to telegram...
+2026-08-20 04:17:16,739 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-20 04:17:16,881 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-20 04:17:16,881 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-20 04:17:16,889 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-20 04:17:16,899 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-20 04:17:16,899 INFO telegram.ext.Application: Application started
+2026-08-20 04:17:17,170 INFO tools.tirith_security: cosign not on PATH — installing tirith with SHA-256 verification only (install cosign for full supply chain verification)
+2026-08-20 04:17:17,376 INFO tools.tirith_security: tirith installed to /home/hermes/.hermes/bin/tirith (SHA-256 only)
+2026-08-20 04:17:26,932 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-20 04:17:26,938 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-20 04:17:27,260 INFO gateway.run: ✓ telegram connected
+2026-08-20 04:17:27,315 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-20 04:17:27,331 INFO gateway.run: Channel directory built: 4 target(s)
+2026-08-20 04:17:27,510 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-20 04:17:27,916 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-20 04:17:28,114 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-20 04:17:28,114 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 79 hidden (over 60 limit). Use /commands for full list.
+2026-08-20 04:17:28,338 INFO gateway.run: Press Ctrl+C to stop
+2026-08-20 04:17:28,344 INFO cron.scheduler_provider: In-process cron scheduler started (interval=60s)
+2026-08-20 04:17:28,348 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/hermes/.hermes/kanban/.dispatcher.lock)
+2026-08-20 04:17:28,349 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-08-20 04:17:28,362 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-20 04:17:28,465 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=153256->143196 rss_anon_kib=129744->119732 threads=9 duration_ms=98.9
+2026-08-20 04:17:33,350 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-20 04:17:41,528 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 04:18:08,725 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (1 chars)
+2026-08-20 04:18:08,765 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='p' reply_to_id=714 reply_to_text=''
+2026-08-20 04:18:08,822 INFO run_agent: Loaded environment variables from /home/hermes/.hermes/.env
+2026-08-20 04:18:09,133 WARNING gateway.run: Primary provider auth failed: No usable credentials found for provider 'opencode-zen'. Set OPENCODE_ZEN_API_KEY. — trying fallback
+2026-08-20 04:18:09,138 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=0.4s api_calls=0 response=117 chars
+2026-08-20 04:18:09,148 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 7699507804
+2026-08-20 04:18:28,551 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=169280->157352 rss_anon_kib=146444->134516 threads=10 duration_ms=85.3
+2026-08-20 04:19:28,634 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=156768->156236 rss_anon_kib=135060->134528 threads=10 duration_ms=82.6
+2026-08-20 04:20:28,712 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=156716->156132 rss_anon_kib=135104->134520 threads=10 duration_ms=76.4
+2026-08-20 04:21:28,820 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=156588->155980 rss_anon_kib=135228->134604 threads=10 duration_ms=98.4
+2026-08-20 04:22:29,548 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=156708->156092 rss_anon_kib=135192->134576 threads=10 duration_ms=714.1
