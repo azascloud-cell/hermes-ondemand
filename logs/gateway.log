@@ -530,3 +530,7 @@
 2026-08-20 12:01:12,098 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-20 12:06:12,115 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-20 12:10:42,822 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 12:17:54,788 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (121 chars)
+2026-08-20 12:17:54,795 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Aku baru create asadtonojaya28434@gmail.com  Ingatkan aku 1jam tiap kali aku STO' reply_to_id=817 reply_to_text=''
+2026-08-20 12:18:21,398 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=26.6s api_calls=1 response=3046 chars
+2026-08-20 12:18:21,432 INFO gateway.platforms.base: [Telegram] Sending response (3046 chars) to 7699507804
