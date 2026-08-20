@@ -2439,3 +2439,15 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 14:43:55,241 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264460->263384 rss_anon_kib=238884->237808 threads=17 duration_ms=129.6
 2026-08-20 14:44:55,368 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264288->263360 rss_anon_kib=238712->237784 threads=17 duration_ms=126.7
 2026-08-20 14:45:55,519 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264224->263364 rss_anon_kib=238648->237788 threads=17 duration_ms=149.8
+2026-08-20 14:46:55,652 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264196->263364 rss_anon_kib=238620->237788 threads=17 duration_ms=131.8
+2026-08-20 14:47:55,776 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264228->263364 rss_anon_kib=238652->237788 threads=17 duration_ms=123.9
+2026-08-20 14:48:55,919 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264384->263248 rss_anon_kib=238808->237672 threads=17 duration_ms=127.7
+2026-08-20 14:49:56,042 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264120->263240 rss_anon_kib=238544->237664 threads=17 duration_ms=122.8
+2026-08-20 14:50:53,101 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8497 (idle=3883s)
+2026-08-20 14:50:53,102 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:7:140507548206784 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-20 14:50:53,102 INFO run_agent: OpenAI client closed (cache_evict, shared=False, tcp_force_closed=0) thread=agent-cache-idle-agent:main:telegram:dm:7:140507548206784 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-20 14:50:53,103 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-20 14:50:56,177 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=264104->262472 rss_anon_kib=238528->236896 threads=17 duration_ms=133.9
+2026-08-20 14:51:56,312 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=263380->262440 rss_anon_kib=237804->236864 threads=17 duration_ms=134.1
+2026-08-20 14:52:56,431 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=263184->262440 rss_anon_kib=237608->236864 threads=17 duration_ms=118.7
+2026-08-20 14:53:56,569 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=263632->262440 rss_anon_kib=238056->236864 threads=17 duration_ms=127.1
