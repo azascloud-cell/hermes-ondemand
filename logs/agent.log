@@ -3091,3 +3091,11 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 23:24:15,775 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283752->282872 rss_anon_kib=268556->267676 threads=18 duration_ms=155.5
 2026-08-20 23:24:37,558 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-20 23:25:15,913 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=284024->282872 rss_anon_kib=268828->267676 threads=18 duration_ms=126.9
+2026-08-20 23:26:16,051 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283764->282868 rss_anon_kib=268568->267672 threads=18 duration_ms=137.5
+2026-08-20 23:27:16,179 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283772->282872 rss_anon_kib=268576->267676 threads=18 duration_ms=126.9
+2026-08-20 23:28:16,324 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283704->282872 rss_anon_kib=268508->267676 threads=18 duration_ms=144.8
+2026-08-20 23:29:16,449 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283760->282868 rss_anon_kib=268564->267672 threads=18 duration_ms=123.8
+2026-08-20 23:30:16,616 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=284212->282884 rss_anon_kib=269016->267688 threads=18 duration_ms=155.1
+2026-08-20 23:31:16,739 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283712->282876 rss_anon_kib=268516->267680 threads=18 duration_ms=122.8
+2026-08-20 23:32:16,869 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283760->282868 rss_anon_kib=268564->267672 threads=18 duration_ms=129.4
+2026-08-20 23:33:16,992 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283688->282876 rss_anon_kib=268492->267680 threads=18 duration_ms=122.7
