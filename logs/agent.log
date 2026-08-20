@@ -1804,3 +1804,9 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 10:49:30,253 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=2/500 budget=2/500 tool_turns=7 last_msg_role=assistant response_len=3075 session=20260820_040244_a288a94b
 2026-08-20 10:49:30,271 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=30.3s api_calls=2 response=3075 chars
 2026-08-20 10:49:30,289 INFO gateway.platforms.base: [Telegram] Sending response (3075 chars) to 7699507804
+2026-08-20 10:50:18,149 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=248884->244244 rss_anon_kib=219980->215340 threads=15 duration_ms=117.1
+2026-08-20 10:51:18,278 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244680->244240 rss_anon_kib=215776->215336 threads=15 duration_ms=127.5
+2026-08-20 10:52:18,408 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244640->244240 rss_anon_kib=215736->215336 threads=15 duration_ms=129.9
+2026-08-20 10:53:18,549 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245056->244240 rss_anon_kib=216152->215336 threads=15 duration_ms=123.7
+2026-08-20 10:54:14,420 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
+2026-08-20 10:54:18,682 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244804->244236 rss_anon_kib=215900->215332 threads=15 duration_ms=132.9
