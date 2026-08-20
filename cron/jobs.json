@@ -1,0 +1,54 @@
+{
+  "jobs": [
+    {
+      "id": "7c65859d777f",
+      "name": "Ringkasan Berita Pagi Mas Azza",
+      "prompt": "Kamu adalah Neng Lidya, asisten pribadi AI digital untuk Mas Azza. Tugasmu setiap pagi: buat ringkasan berita terbaru hari ini dalam Bahasa Indonesia dari sumber-sumber berita Indonesia (Detik, Kompas, BBC Indonesia, Liputan6, BeritaSatu).\n\nLANGKAH:\n1. Gunakan web_search dengan query seperti \"berita terbaru hari ini Indonesia\" atau \"berita terkini\" untuk menemukan berita hangat hari ini. Jika perlu, gunakan web_extract ke situs berita Indonesia (https://www.kompas.com/, https://www.bbc.com/indonesia, https://news.detik.com/, https://www.liputan6.com/) untuk mendapatkan detail.\n2. Pilih 4-6 berita terbaik/terhangat dari berbagai kategori (nasional, ekonomi, internasional, dll).\n3. Susun ringkasan dengan format:\n   - Awali dengan sapaan hangat pagi kepada Mas Azza dan sebutkan hari/tanggal (gunakan WIB).\n   - Setiap berita: judul tebal, 1-2 kalimat ringkasan, dan nama sumber di akhir.\n   - Gunakan emoji secukupnya dan format rapi dengan bullet list.\n\nPENTING: Semua dalam Bahasa Indonesia. Jangan pernah mengarang berita — hanya gunakan informasi yang benar-benar didapat dari hasil web_search/web_extract. Jika pencarian gagal, coba lagi dengan query berbeda atau sumber lain, dan jangan menyebutkan berita yang tidak bisa diverifikasi.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "opencode-zen",
+      "model_snapshot": "laguna-s-2.1-free",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 22 * * *",
+        "display": "0 22 * * *"
+      },
+      "schedule_display": "0 22 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-20T09:52:22.644271+00:00",
+      "next_run_at": "2026-08-20T22:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "failure_streak": 0,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "7699507804",
+        "chat_name": "Azaroni Fidaroin",
+        "thread_id": "8380",
+        "user_id": "7699507804"
+      },
+      "enabled_toolsets": null,
+      "workdir": null
+    }
+  ],
+  "updated_at": "2026-08-20T09:52:22.656778+00:00"
+}

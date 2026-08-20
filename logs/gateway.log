@@ -423,3 +423,37 @@
 2026-08-20 09:43:10,008 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='bagaimana?' reply_to_id=714 reply_to_text=''
 2026-08-20 09:43:13,308 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=3.3s api_calls=1 response=94 chars
 2026-08-20 09:43:13,341 INFO gateway.platforms.base: [Telegram] Sending response (94 chars) to 7699507804
+2026-08-20 09:48:55,090 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=105, started_at=2026-08-20T09:10:58.658636+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-20T09:43:41.548836+00:00 last_mem={'rss_kib': 241956, 'mem_total_kib': 263923404, 'mem_available_kib': 77989732, 'swap_used_kib': 0} suspected_oom=False
+2026-08-20 09:48:55,127 INFO gateway.run: Starting Hermes Gateway...
+2026-08-20 09:48:55,127 INFO gateway.run: Session storage: /home/hermes/.hermes/sessions
+2026-08-20 09:48:55,130 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-20 09:48:55,130 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-20 09:48:55,167 INFO gateway.run: Connecting to telegram...
+2026-08-20 09:48:55,171 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-20 09:48:55,342 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-20 09:48:55,343 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-20 09:48:55,351 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-20 09:48:55,849 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-20 09:49:06,677 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-20 09:49:06,684 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-20 09:49:06,976 INFO gateway.run: ✓ telegram connected
+2026-08-20 09:49:07,020 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-20 09:49:07,034 INFO gateway.run: Channel directory built: 5 target(s)
+2026-08-20 09:49:07,679 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-20 09:49:08,020 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-20 09:49:08,042 INFO gateway.run: Press Ctrl+C to stop
+2026-08-20 09:49:08,053 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/hermes/.hermes/kanban/.dispatcher.lock)
+2026-08-20 09:49:08,053 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-08-20 09:49:08,063 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-20 09:49:08,360 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-20 09:49:08,360 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 80 hidden (over 60 limit). Use /commands for full list.
+2026-08-20 09:49:13,054 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-20 09:50:46,616 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (17 chars)
+2026-08-20 09:50:46,629 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='hey,coba tes lagi' reply_to_id=714 reply_to_text=''
+2026-08-20 09:50:59,394 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=12.8s api_calls=1 response=192 chars
+2026-08-20 09:50:59,396 INFO gateway.run: Transient agent failure in session 20260820_040244_a288a94b — persisting user message so conversation context is preserved on retry.
+2026-08-20 09:50:59,412 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 7699507804
+2026-08-20 09:51:56,487 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (8 chars)
+2026-08-20 09:51:56,495 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='tes lagi' reply_to_id=714 reply_to_text=''
+2026-08-20 09:52:29,423 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=32.9s api_calls=3 response=639 chars
+2026-08-20 09:52:29,442 INFO gateway.platforms.base: [Telegram] Sending response (639 chars) to 7699507804
