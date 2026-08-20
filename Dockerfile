@@ -24,11 +24,18 @@ ENV UV_LINK_MODE=copy
 # Stage 2: Runtime
 FROM python:3.12-slim AS runtime
 
-# Install runtime dependencies
+# Install runtime dependencies.
+# NOTE: build-essential + python3-dev + libatomic1 are REQUIRED — the Hermes
+# installer compiles native modules (better-sqlite3 etc.) and ships Node 26
+# which needs libatomic.so.1. Without these the install fails.
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
     git \
+    rsync \
     libsqlite3-0 \
+    libatomic1 \
+    build-essential \
+    python3-dev \
     ca-certificates \
     && rm -rf /var/lib/apt/lists/*
 
