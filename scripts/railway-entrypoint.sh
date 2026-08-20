@@ -118,11 +118,18 @@ backup_data() {
         git checkout -q -b "$DATA_BRANCH" || true
         copy_in "$HERMES_HOME" "$WORK"
         git add -A
+        # --allow-empty guarantees a ref exists so the first push never fails
+        # with "src refspec ... does not match any".
         git -c user.name="hermes-railway-backup" -c user.email="hermes-railway@users.noreply.github.com" \
-            commit -q -m "hermes railway backup $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            commit -q --allow-empty -m "hermes railway backup $(date -u +%Y-%m-%dT%H:%M:%SZ)"
         git remote add origin "https://x-access-token:${GH_PAT}@github.com/${GH_REPO}.git"
-        git push -q -u origin "$DATA_BRANCH" || error "backup: initial push failed"
-        success "Created $DATA_BRANCH branch with initial backup"
+        if ! git push -q -u origin "$DATA_BRANCH" 2>/tmp/push-err.log; then
+            # Mask any token that may leak into git's error output.
+            sed -i "s/${GH_PAT}/***/g" /tmp/push-err.log 2>/dev/null || true
+            error "backup: initial push failed: $(tail -1 /tmp/push-err.log)"
+        else
+            success "Created $DATA_BRANCH branch with initial backup"
+        fi
     fi
 }
 
