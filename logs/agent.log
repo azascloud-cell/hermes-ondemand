@@ -25312,3 +25312,11 @@ telegram.error.InvalidToken: ***
 2026-08-20 04:22:08,020 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=239736->238940 rss_anon_kib=204768->203972 threads=14 duration_ms=122.3
 2026-08-20 04:23:08,144 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=239876->238936 rss_anon_kib=204908->203968 threads=14 duration_ms=123.6
 2026-08-20 04:24:08,263 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=263520->238932 rss_anon_kib=228552->203964 threads=14 duration_ms=111.9
+2026-08-20 04:25:08,383 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245760->238928 rss_anon_kib=210792->203960 threads=14 duration_ms=119.2
+2026-08-20 04:26:08,503 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=239804->238924 rss_anon_kib=204836->203956 threads=14 duration_ms=119.2
+2026-08-20 04:26:10,509 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8304 (idle=3807s)
+2026-08-20 04:26:10,509 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:7:140224575305408 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b-cloud
+2026-08-20 04:26:10,510 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-20 04:27:08,630 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=239800->238704 rss_anon_kib=204832->203736 threads=14 duration_ms=126.6
+2026-08-20 04:28:08,748 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=239492->238704 rss_anon_kib=204524->203736 threads=14 duration_ms=117.1
+2026-08-20 04:29:08,873 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=263660->238712 rss_anon_kib=228692->203744 threads=14 duration_ms=117.2
