@@ -481,3 +481,9 @@
 2026-08-20 10:48:59,980 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[ASYNC DELEGATION COMPLETE — deleg_10a6204d] A background subagent you dispatche' reply_to_id=None reply_to_text=''
 2026-08-20 10:49:30,271 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=30.3s api_calls=2 response=3075 chars
 2026-08-20 10:49:30,289 INFO gateway.platforms.base: [Telegram] Sending response (3075 chars) to 7699507804
+2026-08-20 11:00:20,651 INFO gateway.run: User opted out of destructive slash confirm (session=agent:main:telegram:dm:7699507804:8497)
+2026-08-20 11:00:20,651 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:8497 → 1 (session_reset)
+2026-08-20 11:01:15,894 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (136 chars)
+2026-08-20 11:01:15,901 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Neng,aku mau setor akun Gmail parent dan kamu setupkan akun anak,aku tinggal mas' reply_to_id=817 reply_to_text=''
+2026-08-20 11:01:47,377 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=31.5s api_calls=1 response=1521 chars
+2026-08-20 11:01:47,398 INFO gateway.platforms.base: [Telegram] Sending response (1521 chars) to 7699507804

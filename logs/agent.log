@@ -1814,3 +1814,40 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 10:56:18,943 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244748->244236 rss_anon_kib=215844->215332 threads=15 duration_ms=121.4
 2026-08-20 10:57:19,065 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244748->244232 rss_anon_kib=215844->215328 threads=15 duration_ms=120.8
 2026-08-20 10:58:19,217 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245012->244240 rss_anon_kib=216108->215336 threads=15 duration_ms=142.3
+2026-08-20 10:59:19,328 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244692->244200 rss_anon_kib=215824->215332 threads=15 duration_ms=110.3
+2026-08-20 11:00:19,442 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=244768->244212 rss_anon_kib=215900->215344 threads=15 duration_ms=113.2
+2026-08-20 11:00:20,651 INFO gateway.run: User opted out of destructive slash confirm (session=agent:main:telegram:dm:7699507804:8497)
+2026-08-20 11:00:20,651 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:8497 → 1 (session_reset)
+2026-08-20 11:01:15,894 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (136 chars)
+2026-08-20 11:01:15,901 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Neng,aku mau setor akun Gmail parent dan kamu setupkan akun anak,aku tinggal mas' reply_to_id=817 reply_to_text=''
+2026-08-20 11:01:17,328 INFO [20260820_040244_a288a94b] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_1:140508056233664 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-20 11:01:17,329 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 11:01:17,330 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 11:01:17,331 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-20 11:01:17,331 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-20 11:01:17,333 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 11:01:17,334 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 11:01:17,336 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 11:01:17,337 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-20 11:01:17,338 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-20 11:01:17,343 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 11:02:17.
+2026-08-20 11:01:17,345 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-20 11:01:17,345 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 11:02:17.
+2026-08-20 11:01:17,345 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-20 11:01:17,347 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 11:02:17.
+2026-08-20 11:01:17,349 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-20 11:01:17,349 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 11:02:17.
+2026-08-20 11:01:17,349 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-20 11:01:17,349 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 11:01:17,373 INFO [20260820_110020_5dfd118d] agent.turn_context: conversation turn: session=20260820_110020_5dfd118d model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=0 msg='Neng,aku mau setor akun Gmail parent dan kamu setupkan akun anak,aku tinggal mas...'
+2026-08-20 11:01:17,397 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-51 (<lambda>):140506969405120 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-20 11:01:17,407 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider opencode-zen (laguna-s-2.1-free)
+2026-08-20 11:01:17,408 INFO agent.auxiliary_client: Auxiliary title_generation: using opencode-zen (laguna-s-2.1-free) at https://opencode.ai/zen/v1/
+2026-08-20 11:01:19,590 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=286024->256720 rss_anon_kib=256840->227536 threads=18 duration_ms=146.7
+2026-08-20 11:01:47,310 INFO [20260820_110020_5dfd118d] agent.conversation_loop: API call #1: model=laguna-s-2.1-free provider=opencode-zen in=18009 out=1322 total=19331 latency=29.9s cache=1248/18009 (7%)
+2026-08-20 11:01:47,321 INFO [20260820_110020_5dfd118d] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1521 session=20260820_110020_5dfd118d
+2026-08-20 11:01:47,377 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=31.5s api_calls=1 response=1521 chars
+2026-08-20 11:01:47,398 INFO gateway.platforms.base: [Telegram] Sending response (1521 chars) to 7699507804
+2026-08-20 11:02:19,715 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257568->256528 rss_anon_kib=228384->227344 threads=15 duration_ms=124.5
+2026-08-20 11:03:19,848 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257308->256528 rss_anon_kib=228124->227344 threads=15 duration_ms=119.1
+2026-08-20 11:04:19,971 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256984->256528 rss_anon_kib=227800->227344 threads=15 duration_ms=121.8
