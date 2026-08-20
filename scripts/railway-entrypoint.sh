@@ -32,6 +32,7 @@ RAILWAY_ENVIRONMENT="${RAILWAY_ENVIRONMENT:-production}"
 
 # Required secrets (set in Railway dashboard)
 TELEGRAM_BOT_TOKEN="${TELEGRAM_BOT_TOKEN:-}"
+TELEGRAM_CHAT_ID="${TELEGRAM_CHAT_ID:-}"
 TELEGRAM_ALLOWED_USERS="${TELEGRAM_ALLOWED_USERS:-}"
 OLLAMA_API_KEY="${OLLAMA_API_KEY:-}"
 OLLAMA_CLOUD_API_KEY="${OLLAMA_CLOUD_API_KEY:-${OLLAMA_API_KEY}}"
@@ -61,11 +62,22 @@ urlencode() {
     printf '%s' "$s"
 }
 
+# Normalize GH_REPO to "owner/name" — accepts "owner/name", a full
+# "https://github.com/owner/name" URL, and optional ".git" suffix.
+normalize_repo() {
+    local r="${1#https://github.com/}"
+    r="${r#http://github.com/}"
+    r="${r#git@github.com:}"
+    r="${r%.git}"
+    printf '%s' "$r"
+}
+
 # Build a git remote URL using an auth token, URL-encoded for safety.
-auth_url() {  # $1=repo "owner/name"
-    local enc
+auth_url() {  # $1=repo (any common format)
+    local enc repo
     enc="$(urlencode "$GH_PAT")"
-    printf 'https://x-access-token:%s@github.com/%s.git' "$enc" "$1"
+    repo="$(normalize_repo "$1")"
+    printf 'https://x-access-token:%s@github.com/%s.git' "$enc" "$repo"
 }
 
 # Exclude heavy tooling/code that we reinstall fresh every run
