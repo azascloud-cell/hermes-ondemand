@@ -1617,3 +1617,81 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 10:38:47,510 INFO agent.agent_runtime_helpers: switch_model: reasoning_config resolved for nemotron-3-ultra-free: None
 2026-08-20 10:38:47,510 INFO agent.agent_runtime_helpers: Model switched in-place: deepseek-v4-flash-free (opencode-zen) -> nemotron-3-ultra-free (opencode-zen)
 2026-08-20 10:38:47,525 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-evict-agent:main:telegram:dm:7:140507853854400 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-20 10:38:57,706 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (3 chars)
+2026-08-20 10:38:57,713 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Hey' reply_to_id=714 reply_to_text=''
+2026-08-20 10:38:57,722 INFO hermes_state: Repaired 1 message-alternation violation(s) while restoring session 20260820_040244_a288a94b — durable transcript kept them, see repair_message_sequence
+2026-08-20 10:38:57,766 INFO [20260820_040244_a288a94b] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_1:140508056233664 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-20 10:38:57,773 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=nemotron-3-ultra-free provider=opencode-zen platform=telegram history=34 msg='[Note: model was just switched from deepseek-v4-flash-free to nemotron-3-ultra-f...'
+2026-08-20 10:38:57,773 WARNING [20260820_040244_a288a94b] agent.conversation_loop: Stored system prompt for session 20260820_040244_a288a94b is null; rebuilding from scratch this turn. Prefix cache will miss until the rebuild persists. Investigate the previous turn's update_system_prompt write path.
+2026-08-20 10:38:57,788 INFO [20260820_040244_a288a94b] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260820_040244_a288a94b)
+2026-08-20 10:38:57,800 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-26 (<lambda>):140507879028416 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-20 10:39:13,988 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #1: model=nemotron-3-ultra-free provider=opencode-zen in=36577 out=740 total=37317 latency=16.2s
+2026-08-20 10:39:14,008 INFO [20260820_040244_a288a94b] agent.tool_executor: tool cronjob completed (0.01s, 678 chars)
+2026-08-20 10:39:16,729 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235388->233060 rss_anon_kib=205368->203040 threads=17 duration_ms=135.7
+2026-08-20 10:39:18,728 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #2: model=nemotron-3-ultra-free provider=opencode-zen in=37427 out=238 total=37665 latency=4.7s cache=30240/37427 (81%)
+2026-08-20 10:39:18,743 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=2/500 budget=2/500 tool_turns=5 last_msg_role=assistant response_len=496 session=20260820_040244_a288a94b
+2026-08-20 10:39:18,794 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=21.1s api_calls=2 response=496 chars
+2026-08-20 10:39:18,813 INFO gateway.platforms.base: [Telegram] Sending response (496 chars) to 7699507804
+2026-08-20 10:39:56,435 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (9 chars)
+2026-08-20 10:39:56,442 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Coba sini' reply_to_id=714 reply_to_text=''
+2026-08-20 10:39:56,452 INFO hermes_state: Repaired 2 message-alternation violation(s) while restoring session 20260820_040244_a288a94b — durable transcript kept them, see repair_message_sequence
+2026-08-20 10:39:56,479 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=nemotron-3-ultra-free provider=opencode-zen platform=telegram history=37 msg='Coba sini'
+2026-08-20 10:40:16,863 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=235680->233184 rss_anon_kib=205820->203304 threads=16 duration_ms=132.5
+2026-08-20 10:41:10,894 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #3: model=nemotron-3-ultra-free provider=opencode-zen in=37572 out=82 total=37654 latency=74.4s cache=30240/37572 (80%)
+2026-08-20 10:41:11,497 INFO tools.async_delegation: Dispatched async delegation deleg_10a6204d (session_key=agent:...80): Manual run of cron job 'Ringkasan Berita Pagi Mas Azza' (7c65859d777f)
+2026-08-20 10:41:11,502 INFO [20260820_040244_a288a94b] agent.tool_executor: tool cronjob completed (0.02s, 977 chars)
+2026-08-20 10:41:11,564 INFO cron.scheduler: Running job 'Ringkasan Berita Pagi Mas Azza' (ID: 7c65859d777f)
+2026-08-20 10:41:11,564 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-20 10:41:11,588 INFO cron.scheduler: Job '7c65859d777f': loaded credential pool for provider opencode-zen with 1 entries
+2026-08-20 10:41:11,613 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=async-delegate_0:140507556599488 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-20 10:41:11,614 WARNING tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 10:41:11,616 WARNING tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 10:41:11,617 WARNING tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-20 10:41:11,618 WARNING tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-20 10:41:11,620 WARNING tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 10:41:11,620 WARNING tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 10:41:11,622 WARNING tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 10:41:11,623 WARNING tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-20 10:41:11,624 WARNING tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-20 10:41:11,628 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:42:11.
+2026-08-20 10:41:11,630 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-20 10:41:11,631 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:42:11.
+2026-08-20 10:41:11,631 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-20 10:41:11,633 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:42:11.
+2026-08-20 10:41:11,635 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-20 10:41:11,636 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 10:42:11.
+2026-08-20 10:41:11,636 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-20 10:41:11,636 WARNING tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-20 10:41:11,664 INFO [cron_7c65859d777f_20260820_104111] agent.turn_context: conversation turn: session=cron_7c65859d777f_20260820_104111 model=laguna-s-2.1-free provider=opencode-zen platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-08-20 10:41:11,696 INFO [cron_7c65859d777f_20260820_104111] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-6_0:140507548206784 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-20 10:41:16,996 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=238876->236464 rss_anon_kib=209012->206600 threads=22 duration_ms=133.2
+2026-08-20 10:41:17,968 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #4: model=nemotron-3-ultra-free provider=opencode-zen in=37967 out=75 total=38042 latency=6.5s
+2026-08-20 10:41:17,979 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=2/500 budget=2/500 tool_turns=6 last_msg_role=assistant response_len=154 session=20260820_040244_a288a94b
+2026-08-20 10:41:18,003 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=81.6s api_calls=2 response=154 chars
+2026-08-20 10:41:18,023 INFO gateway.platforms.base: [Telegram] Sending response (154 chars) to 7699507804
+2026-08-20 10:41:20,711 INFO [cron_7c65859d777f_20260820_104111] agent.conversation_loop: API call #1: model=laguna-s-2.1-free provider=opencode-zen in=14115 out=269 total=14384 latency=9.0s cache=928/14115 (7%)
+2026-08-20 10:41:20,755 INFO tools.web_tools: Web search via parallel: 'berita terbaru site:liputan6.com' (limit: 5)
+2026-08-20 10:41:20,760 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru site:liputan6.com' (limit=5)
+2026-08-20 10:41:20,761 INFO tools.web_tools: Web search via parallel: 'berita terkini site:detik.com' (limit: 5)
+2026-08-20 10:41:20,762 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terkini site:detik.com' (limit=5)
+2026-08-20 10:41:20,769 INFO tools.web_tools: Web search via parallel: 'berita hari ini site:bbc.com/indonesia' (limit: 5)
+2026-08-20 10:41:20,771 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita hari ini site:bbc.com/indonesia' (limit=5)
+2026-08-20 10:41:20,772 INFO tools.web_tools: Web search via parallel: 'berita terbaru hari ini site:kompas.com' (limit: 5)
+2026-08-20 10:41:20,773 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru hari ini site:kompas.com' (limit=5)
+2026-08-20 10:41:22,084 INFO agent.tool_executor: tool web_search completed (1.36s, 7008 chars)
+2026-08-20 10:41:22,123 INFO agent.tool_executor: tool web_search completed (1.40s, 11871 chars)
+2026-08-20 10:41:22,182 INFO agent.tool_executor: tool web_search completed (1.46s, 9396 chars)
+2026-08-20 10:41:22,307 INFO agent.tool_executor: tool web_search completed (1.58s, 5401 chars)
+2026-08-20 10:41:41,613 INFO [cron_7c65859d777f_20260820_104111] agent.conversation_loop: API call #2: model=laguna-s-2.1-free provider=opencode-zen in=27598 out=852 total=28450 latency=19.3s cache=480/27598 (2%)
+2026-08-20 10:41:41,663 INFO tools.web_tools: Web search via parallel: 'gempa NTT 2026 site:detik.com' (limit: 5)
+2026-08-20 10:41:41,669 INFO tools.web_tools: Web search via parallel: 'berita terbaru hari ini 2026 site:bbc.com/indonesia' (limit: 5)
+2026-08-20 10:41:41,670 INFO plugins.web.parallel.provider: Parallel keyless search: 'gempa NTT 2026 site:detik.com' (limit=5)
+2026-08-20 10:41:41,674 INFO tools.web_tools: Web search via parallel: 'gempa Flores NTT BMKG site:kompas.com' (limit: 5)
+2026-08-20 10:41:41,678 INFO plugins.web.parallel.provider: Parallel keyless search: 'gempa Flores NTT BMKG site:kompas.com' (limit=5)
+2026-08-20 10:41:41,680 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru hari ini 2026 site:bbc.com/indonesia' (limit=5)
+2026-08-20 10:41:41,686 INFO tools.web_tools: Web search via parallel: 'kabar terbaru site:liputan6.com' (limit: 5)
+2026-08-20 10:41:41,687 INFO plugins.web.parallel.provider: Parallel keyless search: 'kabar terbaru site:liputan6.com' (limit=5)
+2026-08-20 10:41:42,866 INFO agent.tool_executor: tool web_search completed (1.23s, 10576 chars)
+2026-08-20 10:41:43,016 INFO agent.tool_executor: tool web_search completed (1.38s, 26610 chars)
+2026-08-20 10:41:43,127 INFO agent.tool_executor: tool web_search completed (1.49s, 21454 chars)
+2026-08-20 10:41:43,163 INFO agent.tool_executor: tool web_search completed (1.52s, 5006 chars)
