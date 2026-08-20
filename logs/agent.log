@@ -217,3 +217,9 @@
 2026-08-20 03:50:09,754 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=0.0s api_calls=0 response=117 chars
 2026-08-20 03:50:09,766 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 7699507804
 2026-08-20 03:51:04,083 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=172216->170856 rss_anon_kib=158824->157428 threads=11 duration_ms=133.1
+2026-08-20 03:52:04,206 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=171380->170980 rss_anon_kib=157808->157408 threads=11 duration_ms=122.9
+2026-08-20 03:53:04,323 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=169852->169564 rss_anon_kib=157764->157392 threads=11 duration_ms=116.1
+2026-08-20 03:54:04,441 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=169904->169628 rss_anon_kib=157672->157396 threads=11 duration_ms=117.7
+2026-08-20 03:55:04,562 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=169556->169188 rss_anon_kib=157768->157400 threads=11 duration_ms=120.5
+2026-08-20 03:56:04,684 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=169972->169576 rss_anon_kib=157812->157416 threads=11 duration_ms=110.5
+2026-08-20 03:57:04,792 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=168300->168164 rss_anon_kib=157748->157412 threads=11 duration_ms=107.6
