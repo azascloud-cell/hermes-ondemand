@@ -231,6 +231,12 @@ EOF
     # Export the resolved provider/model so the python reset step below
     # (reset_model_overrides) uses the SAME values as config.yaml.
     export MODEL_PROVIDER DEFAULT_MODEL BASE_URL
+    
+    # Diagnostic: print exactly what is configured (keys masked) so a failing
+    # deploy shows the real provider/base_url/model + whether a key exists.
+    mask() { local v="$1"; [ -n "$v" ] && echo "SET" || echo "EMPTY"; }
+    log "DIAG: provider=$MODEL_PROVIDER model=$DEFAULT_MODEL base_url=$BASE_URL"
+    log "DIAG: OPENCODE_ZEN_API_KEY=$(mask "$OPENCODE_ZEN_API_KEY") OLLAMA_CLOUD_API_KEY=$(mask "$OLLAMA_CLOUD_API_KEY") GROQ_API_KEY=$(mask "$GROQ_API_KEY")"
 }
 
 # Reset stale model overrides in state.db
