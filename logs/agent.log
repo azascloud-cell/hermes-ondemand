@@ -1884,3 +1884,28 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 11:12:21,097 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257096->256572 rss_anon_kib=228476->227952 threads=15 duration_ms=135.2
 2026-08-20 11:13:21,258 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257396->256572 rss_anon_kib=228776->227952 threads=15 duration_ms=143.1
 2026-08-20 11:13:22,419 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 11:13:45,079 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (317 chars)
+2026-08-20 11:13:45,087 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Gini,aku jelaskan neng lidya ya!  Setelah akun anak jadi,parent Gmail mengubah i' reply_to_id=817 reply_to_text=''
+2026-08-20 11:13:45,127 INFO [20260820_110020_5dfd118d] agent.turn_context: conversation turn: session=20260820_110020_5dfd118d model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=8 msg='Gini,aku jelaskan neng lidya ya!  Setelah akun anak jadi,parent Gmail mengubah i...'
+2026-08-20 11:13:58,280 INFO [20260820_110020_5dfd118d] agent.conversation_loop: API call #6: model=laguna-s-2.1-free provider=opencode-zen in=20065 out=544 total=20609 latency=13.1s cache=1248/20065 (6%)
+2026-08-20 11:13:58,885 INFO [20260820_110020_5dfd118d] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1564 session=20260820_110020_5dfd118d
+2026-08-20 11:13:58,925 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=13.8s api_calls=1 response=1564 chars
+2026-08-20 11:13:58,942 INFO gateway.platforms.base: [Telegram] Sending response (1564 chars) to 7699507804
+2026-08-20 11:14:21,379 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=258280->256648 rss_anon_kib=229660->228028 threads=16 duration_ms=120.1
+2026-08-20 11:15:21,500 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257136->256616 rss_anon_kib=228516->227996 threads=15 duration_ms=120.5
+2026-08-20 11:15:34,999 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 7699507804
+2026-08-20 11:16:21,630 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=258800->256640 rss_anon_kib=230180->228020 threads=15 duration_ms=129.0
+2026-08-20 11:16:38,393 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (63 chars)
+2026-08-20 11:16:38,400 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bagaimana neng Lidya yang pintar,cerdik,dan agak licik bwahaha!' reply_to_id=817 reply_to_text=''
+2026-08-20 11:16:38,437 INFO [20260820_110020_5dfd118d] agent.turn_context: conversation turn: session=20260820_110020_5dfd118d model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=10 msg='Bagaimana neng Lidya yang pintar,cerdik,dan agak licik bwahaha!'
+2026-08-20 11:16:58,000 INFO [20260820_110020_5dfd118d] agent.conversation_loop: API call #7: model=laguna-s-2.1-free provider=opencode-zen in=20643 out=713 total=21356 latency=19.6s cache=1248/20643 (6%)
+2026-08-20 11:16:58,012 INFO [20260820_110020_5dfd118d] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=2094 session=20260820_110020_5dfd118d
+2026-08-20 11:16:58,025 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=19.6s api_calls=1 response=2094 chars
+2026-08-20 11:16:58,043 INFO gateway.platforms.base: [Telegram] Sending response (2094 chars) to 7699507804
+2026-08-20 11:17:21,742 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=258448->256684 rss_anon_kib=229828->228064 threads=16 duration_ms=111.3
+2026-08-20 11:18:21,881 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257588->256656 rss_anon_kib=228968->228036 threads=15 duration_ms=123.0
+2026-08-20 11:19:04,525 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 11:19:04,749 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 11:19:17,640 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (111 chars)
+2026-08-20 11:19:17,660 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tapi,banyak orang profit 100rb/hari dari buat email,cuma 25 email,sedangkan aku ' reply_to_id=817 reply_to_text=''
+2026-08-20 11:19:17,698 INFO [20260820_110020_5dfd118d] agent.turn_context: conversation turn: session=20260820_110020_5dfd118d model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=12 msg='Tapi,banyak orang profit 100rb/hari dari buat email,cuma 25 email,sedangkan aku ...'
