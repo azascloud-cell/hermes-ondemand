@@ -418,3 +418,4 @@
 2026-08-20 09:32:46,433 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='sudah belum? coba kirim satu info berita hari ini buat contoh saja' reply_to_id=714 reply_to_text=''
 2026-08-20 09:33:01,018 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=14.6s api_calls=2 response=514 chars
 2026-08-20 09:33:01,040 INFO gateway.platforms.base: [Telegram] Sending response (514 chars) to 7699507804
+2026-08-20 09:38:21,585 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137

@@ -1,18 +1,18 @@
 {
-  "updated_at": "2026-08-20T09:30:14.351319",
+  "updated_at": "2026-08-20T09:35:14.929855",
   "platforms": {
     "telegram": [
-      {
-        "id": "7699507804:8448",
-        "name": "Azaroni Fidaroin / topic 8448",
-        "type": "dm",
-        "thread_id": "8448"
-      },
       {
         "id": "7699507804:8380",
         "name": "Azaroni Fidaroin / topic 8380",
         "type": "dm",
         "thread_id": "8380"
+      },
+      {
+        "id": "7699507804:8448",
+        "name": "Azaroni Fidaroin / topic 8448",
+        "type": "dm",
+        "thread_id": "8448"
       },
       {
         "id": "7699507804:8309",

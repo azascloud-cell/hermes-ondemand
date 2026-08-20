@@ -1,0 +1,65 @@
+---
+name: content-cron-delivery
+description: >-
+  Use when scheduling recurring content delivery via cronjobs.
+---
+
+# Content Cron Delivery
+
+Use when scheduling recurring content delivery (news briefings, updates) via cronjobs with platform-specific targeting.
+
+## Quick Summary
+
+This skill covers setting up automated content delivery using Hermes cronjobs, particularly for news aggregation and delivery to specific platform targets like Telegram threads.
+
+## Setup Steps
+
+1. **Identify Content Source**: Determine the primary content source(s). Common defaults include:
+   - Indonesian news: Detik.com, Kompas, BBC News Indonesia
+   - International news: BBC, CNN, Reuters
+   - Custom sources: RSS feeds, APIs, search results
+
+2. **Configure Delivery Target**: Specify where content should be delivered:
+   - For Telegram threads: Use platform-specific format (e.g., `telegram:-1001234567890:17585`)
+   - For chat context: Use `"origin"` to deliver back to the current chat/thread
+   - For local storage: Use `"local"` to save to files only
+
+3. **Set Schedule**: Define the cron schedule:
+   - Daily at 5 AM WIB: Convert to appropriate timezone format
+   - Standard cron syntax: `0 5 * * *` (adjust for UTC conversion)
+   - Alternative formats: `'30m'`, `'every 2h'`
+
+4. **Create Cronjob**: Use the cronjob tool with:
+   ```bash
+   hermes cronjob create --schedule="0 5 * * *" --deliver="origin" --prompt="Fetch latest news and deliver summary"
+   ```
+
+## Common Patterns
+
+### Telegram Thread Delivery
+When delivering to a specific Telegram topic/thread, ensure the deliver parameter includes the thread ID:
+- Format: `telegram:-1001234567890:17585`
+- The thread ID is critical for proper routing
+
+### Default Sources
+When no specific sources are provided, common defaults include:
+- Regional news sites (localized to user's region)
+- General aggregation services
+- Search engine queries for top recent results
+
+## Pitfalls & Considerations
+
+1. **Timezone Handling**: WIB (UTC+7) must be converted properly when setting cron schedules. Midnight in WIB is 17:00 UTC the previous day.
+
+2. **Content Extraction Reliability**: Some content sources may require API keys or special access methods. Always test extraction before relying on it for automated delivery.
+
+3. **Delivery Targeting**: Thread/topic IDs are essential for proper platform routing. Without them, messages may go to the general chat instead of the intended topic.
+
+4. **Source Fallback**: If primary content sources fail, have backup sources ready or configure retry logic.
+
+## Verification
+
+After setting up a cronjob:
+1. Verify the schedule with `hermes cronjob list`
+2. Test the extraction/prompt manually before relying on automation
+3. Confirm delivery targeting by checking that messages appear in the correct thread/channel
