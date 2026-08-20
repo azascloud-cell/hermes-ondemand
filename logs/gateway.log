@@ -460,3 +460,12 @@
 2026-08-20 10:08:21,629 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-20 10:11:09,577 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-20 10:30:03,958 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 10:35:53,202 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (37 chars)
+2026-08-20 10:35:53,210 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bisa tambahkan link tiap berita neng!' reply_to_id=714 reply_to_text=''
+2026-08-20 10:36:08,062 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=14.9s api_calls=2 response=415 chars
+2026-08-20 10:36:08,079 INFO gateway.platforms.base: [Telegram] Sending response (415 chars) to 7699507804
+2026-08-20 10:37:29,875 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (25 chars)
+2026-08-20 10:37:29,884 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Kok linknya 404 not found' reply_to_id=714 reply_to_text=''
+2026-08-20 10:37:40,563 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=10.7s api_calls=1 response=118 chars
+2026-08-20 10:37:40,564 INFO gateway.run: Transient agent failure in session 20260820_040244_a288a94b — persisting user message so conversation context is preserved on retry.
+2026-08-20 10:37:40,583 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 7699507804
