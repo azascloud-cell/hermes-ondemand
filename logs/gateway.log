@@ -628,3 +628,15 @@
 2026-08-20 13:29:52,332 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] MarkdownV2 parse failed, falling back to plain text: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
 2026-08-20 13:31:08,325 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (29 chars)
 2026-08-20 13:31:08,333 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='kirim saja fle zipnya ke sini' reply_to_id=817 reply_to_text=''
+2026-08-20 13:32:53,098 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 1 approval(s) for session agent:main:telegram:dm:7699507804:8497 (choice=once, user=Azaroni)
+2026-08-20 13:33:23,600 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=135.3s api_calls=5 response=947 chars
+2026-08-20 13:33:23,623 INFO gateway.platforms.base: [Telegram] Sending response (947 chars) to 7699507804
+2026-08-20 13:33:23,808 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] MarkdownV2 parse failed, falling back to plain text: Can't parse entities: character '.' is reserved and must be escaped with the preceding '\'
+2026-08-20 13:35:59,953 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (31 chars)
+2026-08-20 13:35:59,962 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='buatkan isi dari requirment.txt' reply_to_id=817 reply_to_text=''
+2026-08-20 13:36:07,497 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=7.5s api_calls=1 response=781 chars
+2026-08-20 13:36:07,521 INFO gateway.platforms.base: [Telegram] Sending response (781 chars) to 7699507804
+2026-08-20 13:37:32,507 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (17 chars)
+2026-08-20 13:37:32,515 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='satrt.sh nya juga' reply_to_id=817 reply_to_text=''
+2026-08-20 13:37:40,806 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.3s api_calls=1 response=1141 chars
+2026-08-20 13:37:40,826 INFO gateway.platforms.base: [Telegram] Sending response (1141 chars) to 7699507804
