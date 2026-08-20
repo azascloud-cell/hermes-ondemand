@@ -1968,3 +1968,11 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 11:56:30,028 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256988->256224 rss_anon_kib=228476->227712 threads=16 duration_ms=113.5
 2026-08-20 11:57:30,159 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256824->256224 rss_anon_kib=228312->227712 threads=16 duration_ms=130.3
 2026-08-20 11:58:30,283 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257412->256248 rss_anon_kib=228900->227736 threads=16 duration_ms=113.7
+2026-08-20 11:59:30,417 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256976->256236 rss_anon_kib=228464->227724 threads=16 duration_ms=133.2
+2026-08-20 12:00:30,569 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256812->256216 rss_anon_kib=228316->227720 threads=16 duration_ms=150.7
+2026-08-20 12:01:08,118 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 12:01:08,372 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 12:01:12,098 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-20 12:01:30,707 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256896->256212 rss_anon_kib=228400->227716 threads=16 duration_ms=137.9
+2026-08-20 12:02:30,832 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=256900->256216 rss_anon_kib=228404->227720 threads=16 duration_ms=124.1
+2026-08-20 12:03:30,980 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257248->256252 rss_anon_kib=228752->227756 threads=16 duration_ms=136.6
