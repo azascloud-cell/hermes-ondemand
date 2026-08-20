@@ -25,7 +25,7 @@
       "schedule_display": "0 22 * * *",
       "repeat": {
         "times": null,
-        "completed": 0
+        "completed": 1
       },
       "enabled": true,
       "state": "scheduled",
@@ -33,8 +33,8 @@
       "paused_reason": null,
       "created_at": "2026-08-20T09:52:22.644271+00:00",
       "next_run_at": "2026-08-20T22:00:00+00:00",
-      "last_run_at": null,
-      "last_status": null,
+      "last_run_at": "2026-08-20T10:48:59.273854+00:00",
+      "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
       "failure_streak": 0,
@@ -48,11 +48,8 @@
       },
       "enabled_toolsets": null,
       "workdir": null,
-      "fire_claim": {
-        "at": "2026-08-20T10:41:11.501133+00:00",
-        "by": "853a4577bdf4:105:e6639b542b354cc2853ff7a93ad77781"
-      }
+      "fire_claim": null
     }
   ],
-  "updated_at": "2026-08-20T10:41:11.503471+00:00"
+  "updated_at": "2026-08-20T10:48:59.274428+00:00"
 }

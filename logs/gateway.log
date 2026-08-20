@@ -477,3 +477,7 @@
 2026-08-20 10:39:56,442 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Coba sini' reply_to_id=714 reply_to_text=''
 2026-08-20 10:41:18,003 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=81.6s api_calls=2 response=154 chars
 2026-08-20 10:41:18,023 INFO gateway.platforms.base: [Telegram] Sending response (154 chars) to 7699507804
+2026-08-20 10:48:59,963 INFO gateway.run: Watch pattern notification — injecting for telegram chat=7699507804 thread=8380
+2026-08-20 10:48:59,980 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[ASYNC DELEGATION COMPLETE — deleg_10a6204d] A background subagent you dispatche' reply_to_id=None reply_to_text=''
+2026-08-20 10:49:30,271 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=30.3s api_calls=2 response=3075 chars
+2026-08-20 10:49:30,289 INFO gateway.platforms.base: [Telegram] Sending response (3075 chars) to 7699507804

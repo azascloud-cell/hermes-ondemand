@@ -1695,3 +1695,112 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 10:41:43,016 INFO agent.tool_executor: tool web_search completed (1.38s, 26610 chars)
 2026-08-20 10:41:43,127 INFO agent.tool_executor: tool web_search completed (1.49s, 21454 chars)
 2026-08-20 10:41:43,163 INFO agent.tool_executor: tool web_search completed (1.52s, 5006 chars)
+2026-08-20 10:42:17,145 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=243184->240380 rss_anon_kib=213432->210676 threads=18 duration_ms=147.5
+2026-08-20 10:42:36,478 INFO [cron_7c65859d777f_20260820_104111] agent.conversation_loop: API call #3: model=laguna-s-2.1-free provider=opencode-zen in=56551 out=2239 total=58790 latency=53.3s cache=480/56551 (1%)
+2026-08-20 10:42:36,490 INFO tools.web_tools: Extracting content from 5 URL(s)
+2026-08-20 10:42:36,555 INFO tools.web_tools: Web extract via parallel: 5 URL(s)
+2026-08-20 10:42:36,556 INFO plugins.web.parallel.provider: Parallel keyless extract: 5 URL(s)
+2026-08-20 10:42:39,728 INFO tools.web_tools: Extracted content from 5 pages
+2026-08-20 10:42:39,728 INFO tools.web_tools: https://www.liputan6.com/global/read/8271621/pencurian-karya-seni-bernilai-rp-145-triliun-gegerkan-italia (3165 chars, whole)
+2026-08-20 10:42:39,728 INFO tools.web_tools: https://www.liputan6.com/news/read/8271782/update-gempa-ntt-korban-meninggal-68-orang (1036 chars, whole)
+2026-08-20 10:42:39,728 INFO tools.web_tools: https://regional.kompas.com/read/2026/08/19/064644078/bmkg-catat-2403-gempa-susulan-di-ntt-warga-flores-masih-mengungsi-di-tenda (1524 chars, whole)
+2026-08-20 10:42:39,728 INFO tools.web_tools: https://news.detik.com/berita/d-8625108/syekh-ahmad-al-misry-diduga-cabuli-5-santri-modus-janjikan-sekolah-di-mesir (584 chars, whole)
+2026-08-20 10:42:39,728 INFO tools.web_tools: https://nasional.kompas.com/read/2026/08/20/12323781/menkes-banyak-penyintas-gempa-ntt-alami-patah-tulang (1021 chars, whole)
+2026-08-20 10:42:39,731 INFO [cron_7c65859d777f_20260820_104111] agent.tool_executor: tool web_extract completed (3.24s, 8797 chars)
+2026-08-20 10:42:53,239 INFO [cron_7c65859d777f_20260820_104111] agent.conversation_loop: API call #4: model=laguna-s-2.1-free provider=opencode-zen in=62382 out=636 total=63018 latency=13.5s cache=27584/62382 (44%)
+2026-08-20 10:42:53,257 INFO tools.web_tools: Extracting content from 4 URL(s)
+2026-08-20 10:42:53,262 INFO tools.web_tools: Web search via parallel: 'berita terbaru indonesia 2026 site:bbc.com/indonesia' (limit: 5)
+2026-08-20 10:42:53,263 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru indonesia 2026 site:bbc.com/indonesia' (limit=5)
+2026-08-20 10:42:53,276 INFO tools.web_tools: Web extract via parallel: 4 URL(s)
+2026-08-20 10:42:53,278 INFO plugins.web.parallel.provider: Parallel keyless extract: 4 URL(s)
+2026-08-20 10:42:54,754 INFO agent.tool_executor: tool web_search completed (1.50s, 4548 chars)
+2026-08-20 10:43:01,100 INFO tools.web_tools: Extracted content from 4 pages
+2026-08-20 10:43:01,100 INFO tools.web_tools: https://news.detik.com/berita/d-8625073/pelajar-tewas-akibat-jalan-licin-pedagog-tepi-jl-kramat-jati-akan-ditata (4362 chars, whole)
+2026-08-20 10:43:01,103 INFO tools.web_tools: https://www.liputan6.com/news/read/8271596/hut-ke-81-ri-kpk-kirim-pesan-untuk-korban-gempa-ntt (truncated 6223 -> 5145 chars)
+2026-08-20 10:43:01,103 INFO tools.web_tools: https://news.okezone.com/read/2026/08/20/340/3237226/breaking-news-gempa-besar-m5-7-kembali-guncang-flores-ntt (4498 chars, whole)
+2026-08-20 10:43:01,103 INFO tools.web_tools: https://news.detik.com/berita/d-8625042/bareskrim-tetapkan-eks-pelatih-panjat-tebing-jadi-tersangka-pelecehan-atlet (3280 chars, whole)
+2026-08-20 10:43:01,105 INFO agent.tool_executor: tool web_extract completed (7.85s, 18631 chars)
+2026-08-20 10:43:17,301 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245672->242984 rss_anon_kib=216036->213348 threads=19 duration_ms=129.9
+2026-08-20 10:43:37,478 INFO [cron_7c65859d777f_20260820_104111] agent.conversation_loop: API call #5: model=laguna-s-2.1-free provider=opencode-zen in=72421 out=2106 total=74527 latency=36.4s cache=63008/72421 (87%)
+2026-08-20 10:43:37,552 INFO tools.web_tools: Extracting content from 2 URL(s)
+2026-08-20 10:43:37,559 INFO tools.web_tools: Web search via parallel: 'berita BRI hack data 2026 site:detik.com OR site:liputan6.com' (limit: 5)
+2026-08-20 10:43:37,560 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita BRI hack data 2026 site:detik.com OR site:liputan6.com' (limit=5)
+2026-08-20 10:43:37,567 INFO tools.web_tools: Web extract via parallel: 2 URL(s)
+2026-08-20 10:43:37,569 INFO plugins.web.parallel.provider: Parallel keyless extract: 2 URL(s)
+2026-08-20 10:43:38,682 INFO tools.web_tools: Extracted content from 2 pages
+2026-08-20 10:43:38,682 INFO tools.web_tools: https://www.bbc.com/indonesia (504 chars, whole)
+2026-08-20 10:43:38,682 INFO tools.web_tools: https://www.liputan6.com/news/read/8271782/pramono-ajak-warga-jaga-jakarta-tetap-kondusif (2897 chars, whole)
+2026-08-20 10:43:38,683 INFO agent.tool_executor: tool web_extract completed (1.14s, 3855 chars)
+2026-08-20 10:43:39,018 INFO agent.tool_executor: tool web_search completed (1.47s, 21395 chars)
+2026-08-20 10:43:47,182 INFO [cron_7c65859d777f_20260820_104111] agent.conversation_loop: API call #6: model=laguna-s-2.1-free provider=opencode-zen in=84117 out=266 total=84383 latency=8.1s cache=63008/84117 (75%)
+2026-08-20 10:43:47,205 INFO tools.web_tools: Web search via parallel: 'ntt gempa site:bbc.com/indonesia' (limit: 5)
+2026-08-20 10:43:47,206 INFO plugins.web.parallel.provider: Parallel keyless search: 'ntt gempa site:bbc.com/indonesia' (limit=5)
+2026-08-20 10:43:47,210 INFO tools.web_tools: Web search via parallel: 'berita hari ini 2026 site:beritasatu.com' (limit: 5)
+2026-08-20 10:43:47,212 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita hari ini 2026 site:beritasatu.com' (limit=5)
+2026-08-20 10:43:48,597 INFO agent.tool_executor: tool web_search completed (1.41s, 3256 chars)
+2026-08-20 10:43:48,628 INFO agent.tool_executor: tool web_search completed (1.44s, 14963 chars)
+2026-08-20 10:44:09,054 INFO [cron_7c65859d777f_20260820_104111] agent.conversation_loop: API call #7: model=laguna-s-2.1-free provider=opencode-zen in=92676 out=560 total=93236 latency=20.4s cache=928/92676 (1%)
+2026-08-20 10:44:09,068 INFO tools.web_tools: Extracting content from 3 URL(s)
+2026-08-20 10:44:09,090 INFO tools.web_tools: Web extract via parallel: 3 URL(s)
+2026-08-20 10:44:09,092 INFO plugins.web.parallel.provider: Parallel keyless extract: 3 URL(s)
+2026-08-20 10:44:17,451 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246020->245344 rss_anon_kib=216416->215740 threads=20 duration_ms=148.7
+2026-08-20 10:44:32,820 INFO tools.web_tools: Extracted content from 3 pages
+2026-08-20 10:44:32,820 INFO tools.web_tools: https://www.bbc.com/indonesia/articles/c20eyvkxlr2o (300 chars, whole)
+2026-08-20 10:44:32,820 INFO tools.web_tools: https://www.beritasatu.com/nasional/3009832/politik-hukum-prabowo-minta-tni-polri-dan-jaksa-introspeksi-diri (5833 chars, whole)
+2026-08-20 10:44:32,820 INFO tools.web_tools: https://www.beritasatu.com/nasional/3009817/turuti-permintaan-as-israel-hentikan-operasi-militer-di-lebanon (89 chars, whole)
+2026-08-20 10:44:32,822 WARNING [cron_7c65859d777f_20260820_104111] agent.tool_executor: Tool web_extract returned error (23.76s): {
+  "results": [
+    {
+      "url": "https://www.bbc.com/indonesia/articles/c20eyvkxlr2o",
+      "title": "Gempa magnitudo 7,7 guncang NTT - BBC News Indonesia",
+      "content": "# Gempa magnitudo 7,
+2026-08-20 10:45:07,214 INFO [cron_7c65859d777f_20260820_104111] agent.conversation_loop: API call #8: model=laguna-s-2.1-free provider=opencode-zen in=96066 out=2061 total=98127 latency=34.4s cache=84352/96066 (88%)
+2026-08-20 10:45:07,230 INFO tools.web_tools: Extracting content from 4 URL(s)
+2026-08-20 10:45:07,249 INFO tools.web_tools: Web extract via parallel: 4 URL(s)
+2026-08-20 10:45:07,250 INFO plugins.web.parallel.provider: Parallel keyless extract: 4 URL(s)
+2026-08-20 10:45:17,591 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=245948->245364 rss_anon_kib=216532->215920 threads=20 duration_ms=139.4
+2026-08-20 10:45:17,773 INFO tools.web_tools: Extracted content from 4 pages
+2026-08-20 10:45:17,773 INFO tools.web_tools: https://www.beritasatu.com/nasional/3020507/trump-ingin-bertemu-kim-jong-un-sebelum-2026-berakhir (89 chars, whole)
+2026-08-20 10:45:17,774 INFO tools.web_tools: https://www.beritasatu.com/nasional/3020544/update-korban-gempa-ntt72-orang-meninggal-900-luka-luka (89 chars, whole)
+2026-08-20 10:45:17,774 INFO tools.web_tools: https://berita.liputan6.com/politik/read/8273974/dpr-minta-jaringan-meterai-palsu-disikat-habis (3466 chars, whole)
+2026-08-20 10:45:17,774 INFO tools.web_tools: https://www.beritasatu.com/nasional/3020486/kuasa-hukum-febrie-bantah-minta-uang-dan-emas-74-kg-dikembalikan (1405 chars, whole)
+2026-08-20 10:45:17,776 WARNING [cron_7c65859d777f_20260820_104111] agent.tool_executor: Tool web_extract returned error (10.55s): {
+  "results": [
+    {
+      "url": "https://www.beritasatu.com/nasional/3020507/trump-ingin-bertemu-kim-jong-un-sebelum-2026-berakhir",
+      "title": "Halaman Tidak Ditemukan",
+      "content": "# H
+2026-08-20 10:45:56,103 INFO [cron_7c65859d777f_20260820_104111] agent.conversation_loop: API call #9: model=laguna-s-2.1-free provider=opencode-zen in=100509 out=2048 total=102557 latency=38.3s cache=84352/100509 (84%)
+2026-08-20 10:45:56,120 INFO tools.web_tools: Extracting content from 3 URL(s)
+2026-08-20 10:45:56,143 INFO tools.web_tools: Web extract via parallel: 3 URL(s)
+2026-08-20 10:45:56,145 INFO plugins.web.parallel.provider: Parallel keyless extract: 3 URL(s)
+2026-08-20 10:46:05,744 INFO tools.web_tools: Extracted content from 3 pages
+2026-08-20 10:46:05,744 INFO tools.web_tools: https://www.beritasatu.com/nusantara/3020544/update-korban-gempa-ntt72-orang-meninggal-900-luka-luka (1875 chars, whole)
+2026-08-20 10:46:05,744 INFO tools.web_tools: https://www.beritasatu.com/internasional/3020507/trump-ingin-bertemu-kim-jong-un-sebelum-2026-berakhir (1689 chars, whole)
+2026-08-20 10:46:05,745 INFO tools.web_tools: https://www.liputan6.com/news/read/8273634/gempa-magnitudo-57-kembali-guncang-ntt (truncated 14239 -> 4396 chars)
+2026-08-20 10:46:05,747 INFO [cron_7c65859d777f_20260820_104111] agent.tool_executor: tool web_extract completed (9.63s, 8873 chars)
+2026-08-20 10:46:17,729 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246740->246068 rss_anon_kib=217848->217176 threads=19 duration_ms=137.8
+2026-08-20 10:47:17,857 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=246588->246068 rss_anon_kib=217692->217172 threads=18 duration_ms=127.2
+2026-08-20 10:48:13,335 INFO [cron_7c65859d777f_20260820_104111] agent.conversation_loop: API call #10: model=laguna-s-2.1-free provider=opencode-zen in=106201 out=6740 total=112941 latency=127.6s cache=56544/106201 (53%)
+2026-08-20 10:48:13,948 INFO tools.terminal_tool: Creating new local environment for task default...
+2026-08-20 10:48:13,995 INFO tools.environments.base: Session snapshot created (session=36d49654ddb4, cwd=/home/hermes)
+2026-08-20 10:48:13,995 INFO tools.terminal_tool: local environment ready for task default
+2026-08-20 10:48:14,237 INFO [cron_7c65859d777f_20260820_104111] agent.tool_executor: tool terminal completed (0.29s, 80 chars)
+2026-08-20 10:48:18,031 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=251268->246064 rss_anon_kib=222372->217168 threads=20 duration_ms=125.9
+2026-08-20 10:48:57,434 INFO [cron_7c65859d777f_20260820_104111] agent.conversation_loop: API call #11: model=laguna-s-2.1-free provider=opencode-zen in=112989 out=2222 total=115211 latency=43.2s cache=106176/112989 (94%)
+2026-08-20 10:48:57,455 INFO [cron_7c65859d777f_20260820_104111] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=11/500 budget=11/500 tool_turns=10 last_msg_role=assistant response_len=3737 session=cron_7c65859d777f_20260820_104111
+2026-08-20 10:48:57,461 INFO cron.scheduler: Job 'Ringkasan Berita Pagi Mas Azza' completed successfully
+2026-08-20 10:48:59,116 INFO cron.scheduler: Job '7c65859d777f': delivered to telegram:7699507804 via live adapter
+2026-08-20 10:48:59,118 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-cleanup-7c65859d777f:140507548206784 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-20 10:48:59,119 INFO run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=1) thread=cron-cleanup-7c65859d777f:140507548206784 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-20 10:48:59,240 INFO hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=250768->245268 rss_anon_kib=221864->216364 threads=17 duration_ms=120.2
+2026-08-20 10:48:59,963 INFO gateway.run: Watch pattern notification — injecting for telegram chat=7699507804 thread=8380
+2026-08-20 10:48:59,980 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[ASYNC DELEGATION COMPLETE — deleg_10a6204d] A background subagent you dispatche' reply_to_id=None reply_to_text=''
+2026-08-20 10:48:59,992 INFO hermes_state: Repaired 2 message-alternation violation(s) while restoring session 20260820_040244_a288a94b — durable transcript kept them, see repair_message_sequence
+2026-08-20 10:49:00,030 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=nemotron-3-ultra-free provider=opencode-zen platform=telegram history=41 msg='[ASYNC DELEGATION COMPLETE — deleg_10a6204d] A background subagent you dispatche...'
+2026-08-20 10:49:04,638 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #5: model=nemotron-3-ultra-free provider=opencode-zen in=38941 out=99 total=39040 latency=4.6s
+2026-08-20 10:49:04,734 INFO [20260820_040244_a288a94b] agent.tool_executor: tool read_file completed (0.09s, 6422 chars)
+2026-08-20 10:49:30,244 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #6: model=nemotron-3-ultra-free provider=opencode-zen in=41345 out=1543 total=42888 latency=25.5s cache=34560/41345 (84%)
+2026-08-20 10:49:30,253 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=2/500 budget=2/500 tool_turns=7 last_msg_role=assistant response_len=3075 session=20260820_040244_a288a94b
+2026-08-20 10:49:30,271 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=30.3s api_calls=2 response=3075 chars
+2026-08-20 10:49:30,289 INFO gateway.platforms.base: [Telegram] Sending response (3075 chars) to 7699507804
