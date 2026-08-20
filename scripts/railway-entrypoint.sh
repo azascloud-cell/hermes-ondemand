@@ -51,6 +51,23 @@ MODE="${MODE:-gateway}"
 WORK="/tmp/hermes-railway-data"
 HERMES_HOME="${HERMES_HOME:-$HOME/.hermes}"
 
+# URL-encode a credential component so special characters in GH_PAT never
+# break the clone/push URL (and never leak raw into git output).
+urlencode() {
+    local s="${1// /%20}"
+    s="${s//\#/%23}"; s="${s//\&/%26}"; s="${s//\?/%3F}"
+    s="${s//\//%2F}"; s="${s//\+/%2B}"; s="${s//\@/%40}"
+    s="${s//\:/%3A}"; s="${s//\=/%3D}"
+    printf '%s' "$s"
+}
+
+# Build a git remote URL using an auth token, URL-encoded for safety.
+auth_url() {  # $1=repo "owner/name"
+    local enc
+    enc="$(urlencode "$GH_PAT")"
+    printf 'https://x-access-token:%s@github.com/%s.git' "$enc" "$1"
+}
+
 # Exclude heavy tooling/code that we reinstall fresh every run
 EXCLUDES="hermes-agent bin node uv uvx uv-cache __pycache__ .cache venv .git .env"
 
@@ -83,7 +100,7 @@ restore_data() {
     log "Restoring ~/.hermes data from GitHub branch '$DATA_BRANCH'..."
     rm -rf "$WORK"; mkdir -p "$WORK"
     
-    if git clone -q -b "$DATA_BRANCH" "https://x-access-token:${GH_PAT}@github.com/${GH_REPO}.git" "$WORK" 2>/dev/null; then
+    if git clone -q -b "$DATA_BRANCH" "$(auth_url "$GH_REPO")" "$WORK" 2>/dev/null; then
         copy_in "$WORK" "$HERMES_HOME"
         success "Data restored from $DATA_BRANCH"
     else
@@ -100,15 +117,19 @@ backup_data() {
     cd /tmp
     rm -rf "$WORK"; mkdir -p "$WORK"
     
-    if git clone -q -b "$DATA_BRANCH" "https://x-access-token:${GH_PAT}@github.com/${GH_REPO}.git" "$WORK" 2>/dev/null; then
+    if git clone -q -b "$DATA_BRANCH" "$(auth_url "$GH_REPO")" "$WORK" 2>/dev/null; then
         copy_in "$HERMES_HOME" "$WORK"
         cd "$WORK"
         git add -A
         if ! git diff --cached --quiet; then
             git -c user.name="hermes-railway-backup" -c user.email="hermes-railway@users.noreply.github.com" \
                 commit -q -m "hermes railway backup $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-            git push -q origin "$DATA_BRANCH" || error "backup: push failed"
-            success "Backup pushed to $DATA_BRANCH"
+            if ! git push -q origin "$DATA_BRANCH" 2>/tmp/push-err.log; then
+                sed -i "s/${GH_PAT}/***/g" /tmp/push-err.log 2>/dev/null || true
+                error "backup: push failed: $(tail -1 /tmp/push-err.log)"
+            else
+                success "Backup pushed to $DATA_BRANCH"
+            fi
         else
             log "Backup: no changes"
         fi
@@ -122,7 +143,7 @@ backup_data() {
         # with "src refspec ... does not match any".
         git -c user.name="hermes-railway-backup" -c user.email="hermes-railway@users.noreply.github.com" \
             commit -q --allow-empty -m "hermes railway backup $(date -u +%Y-%m-%dT%H:%M:%SZ)"
-        git remote add origin "https://x-access-token:${GH_PAT}@github.com/${GH_REPO}.git"
+        git remote add origin "$(auth_url "$GH_REPO")"
         if ! git push -q -u origin "$DATA_BRANCH" 2>/tmp/push-err.log; then
             # Mask any token that may leak into git's error output.
             sed -i "s/${GH_PAT}/***/g" /tmp/push-err.log 2>/dev/null || true
