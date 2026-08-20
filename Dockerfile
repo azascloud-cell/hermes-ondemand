@@ -54,8 +54,43 @@ USER hermes
 ENV PATH="/home/hermes/.local/bin:/home/hermes/.hermes/bin:${PATH}"
 ENV HOME="/home/hermes"
 
-# Install Hermes Agent
-RUN curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh | bash -s -- --skip-setup --skip-browser --skip-computer-use
+# Optional GitHub token to avoid anonymous-clone rate limits (429).
+# Pass as a build secret: railway add --secrets GH_PAT=... (Docker ARG)
+ARG GH_PAT=""
+
+# Pre-clone the Hermes Agent repo (with retry) so install.sh only has to
+# update instead of doing a fresh anonymous clone — GitHub rate-limits
+# anonymous clones on shared Railway IPs (HTTP 429) and fails the build.
+RUN set -eux; \
+    retry() { \
+        local n=1; \
+        until "$@"; do \
+            if [ "$n" -ge 6 ]; then return 1; fi; \
+            echo "retry $n/6 failed ($*); waiting ${n}0s..."; \
+            sleep "${n}0"; \
+            n=$((n + 1)); \
+        done; \
+    }; \
+    if [ -n "$GH_PAT" ]; then \
+        URL="https://x-access-token:${GH_PAT}@github.com/NousResearch/hermes-agent.git"; \
+    else \
+        URL="https://github.com/NousResearch/hermes-agent.git"; \
+    fi; \
+    retry git clone --branch main --depth 1 "$URL" "$HOME/.hermes/hermes-agent" \
+        || git clone --branch main "$URL" "$HOME/.hermes/hermes-agent"; \
+    ls -la "$HOME/.hermes/hermes-agent"
+
+# Install Hermes Agent (existing checkout -> fast update, no anonymous clone).
+# Retried because the "update" still hits GitHub (fetch) which can 429.
+RUN set -eux; \
+    curl -fsSL https://raw.githubusercontent.com/NousResearch/hermes-agent/main/scripts/install.sh -o /tmp/hermes-install.sh; \
+    n=1; \
+    until bash /tmp/hermes-install.sh --skip-setup --skip-browser --skip-computer-use; do \
+        if [ "$n" -ge 4 ]; then exit 1; fi; \
+        echo "hermes install attempt $n/4 failed; waiting ${n}0s..."; \
+        sleep "${n}0"; \
+        n=$((n + 1)); \
+    done
 
 # Pin python-telegram-bot version (fixes "Any cannot be instantiated" error)
 ENV UV="/home/hermes/.hermes/bin/uv"
