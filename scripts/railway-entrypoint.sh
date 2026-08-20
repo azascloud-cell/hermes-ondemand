@@ -81,7 +81,9 @@ auth_url() {  # $1=repo (any common format)
 }
 
 # Exclude heavy tooling/code that we reinstall fresh every run
-EXCLUDES="hermes-agent bin node uv uvx uv-cache __pycache__ .cache venv .git .env"
+# config.yaml is excluded because it embeds API keys (generated fresh every
+# run from Railway env vars); never back it up to GitHub.
+EXCLUDES="hermes-agent bin node uv uvx uv-cache __pycache__ .cache venv .git .env config.yaml"
 
 copy_in() {  # $1=src $2=dst
     mkdir -p "$2"
@@ -187,6 +189,9 @@ EOF
     BASE_URL="${BASE_URL:-https://ollama.com/v1}"
     
     # config.yaml
+    # NOTE: api_key values are written directly (not as ${ENV} refs) because
+    # Hermes does not reliably expand env references inside config.yaml. The
+    # real secret values come from Railway env vars.
     cat > "$HERMES_HOME/config.yaml" <<EOF
 model:
   provider: "${MODEL_PROVIDER}"
@@ -194,10 +199,13 @@ model:
 providers:
   groq:
     base_url: "https://api.groq.com/openai/v1"
-    api_key: "\${GROQ_API_KEY}"
+    api_key: "${GROQ_API_KEY}"
   opencode-zen:
     base_url: "https://opencode.ai/zen/v1"
-    api_key: "\${OPENCODE_ZEN_API_KEY}"
+    api_key: "${OPENCODE_ZEN_API_KEY}"
+  ollama-cloud:
+    base_url: "https://ollama.com/v1"
+    api_key: "${OLLAMA_CLOUD_API_KEY}"
 memory:
   memory_enabled: true
   user_profile_enabled: true
