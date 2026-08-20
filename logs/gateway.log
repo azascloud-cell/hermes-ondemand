@@ -3050,3 +3050,5 @@ telegram.error.BadRequest: Chat not found
 2026-08-20 03:43:13,001 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 1/5; health pending getUpdates progress
 2026-08-20 04:26:10,509 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8304 (idle=3807s)
 2026-08-20 04:26:10,510 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-20 04:41:12,257 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8309 (idle=3769s)
+2026-08-20 04:41:12,258 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
