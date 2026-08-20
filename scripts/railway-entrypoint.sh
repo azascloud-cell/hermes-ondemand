@@ -183,10 +183,23 @@ TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
 TELEGRAM_ALLOWED_USERS=${TELEGRAM_ALLOWED_USERS}
 EOF
 
-    # Determine provider from env
-    MODEL_PROVIDER="${MODEL_PROVIDER:-ollama-cloud}"
-    DEFAULT_MODEL="${DEFAULT_MODEL:-gemma4:31b-cloud}"
-    BASE_URL="${BASE_URL:-https://ollama.com/v1}"
+    # Determine provider from env.
+    # Auto-detect: if OPENCODE_ZEN_API_KEY is set, prefer opencode-zen
+    # (built-in Hermes provider reading OPENCODE_ZEN_API_KEY from env);
+    # otherwise fall back to OLLAMA_CLOUD_API_KEY / GROQ_API_KEY.
+    if [ -n "${OPENCODE_ZEN_API_KEY:-}" ]; then
+        MODEL_PROVIDER="${MODEL_PROVIDER:-opencode-zen}"
+        DEFAULT_MODEL="${DEFAULT_MODEL:-laguna-s-2.1-free}"
+        BASE_URL="${BASE_URL:-https://opencode.ai/zen/v1}"
+    elif [ -n "${OLLAMA_CLOUD_API_KEY:-}" ]; then
+        MODEL_PROVIDER="${MODEL_PROVIDER:-ollama-cloud}"
+        DEFAULT_MODEL="${DEFAULT_MODEL:-gemma4:31b-cloud}"
+        BASE_URL="${BASE_URL:-https://ollama.com/v1}"
+    else
+        MODEL_PROVIDER="${MODEL_PROVIDER:-groq}"
+        DEFAULT_MODEL="${DEFAULT_MODEL:-llama-3.3-70b-versatile}"
+        BASE_URL="${BASE_URL:-https://api.groq.com/openai/v1}"
+    fi
     
     # config.yaml
     # NOTE: api_key values are written directly (not as ${ENV} refs) because
@@ -196,6 +209,7 @@ EOF
 model:
   provider: "${MODEL_PROVIDER}"
   default: "${DEFAULT_MODEL}"
+  base_url: "${BASE_URL}"
 providers:
   groq:
     base_url: "https://api.groq.com/openai/v1"
@@ -213,6 +227,10 @@ memory:
   user_char_limit: 4000
 EOF
     success "Config written"
+    
+    # Export the resolved provider/model so the python reset step below
+    # (reset_model_overrides) uses the SAME values as config.yaml.
+    export MODEL_PROVIDER DEFAULT_MODEL BASE_URL
 }
 
 # Reset stale model overrides in state.db
