@@ -2199,3 +2199,29 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-20 13:10:25,479 INFO gateway.platforms.base: [Telegram] Sending response (1221 chars) to 7699507804
 2026-08-20 13:10:40,621 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=260276->257572 rss_anon_kib=232912->230208 threads=17 duration_ms=113.8
 2026-08-20 13:11:42,461 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=258172->257436 rss_anon_kib=230960->230224 threads=16 duration_ms=1807.0
+2026-08-20 13:12:07,823 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (1287 chars)
+2026-08-20 13:12:07,833 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='masih sama  (env1) 13:09 ~ $ python bot_timer.py Traceback (most recent call las' reply_to_id=817 reply_to_text=''
+2026-08-20 13:12:07,864 INFO [20260820_110020_5dfd118d] agent.turn_context: conversation turn: session=20260820_110020_5dfd118d model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=50 msg='masih sama  (env1) 13:09 ~ $ python bot_timer.py Traceback (most recent call las...'
+2026-08-20 13:12:15,611 INFO [20260820_110020_5dfd118d] agent.conversation_loop: API call #27: model=laguna-s-2.1-free provider=opencode-zen in=39857 out=421 total=40278 latency=7.7s cache=38976/39857 (98%)
+2026-08-20 13:12:15,624 INFO [20260820_110020_5dfd118d] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1264 session=20260820_110020_5dfd118d
+2026-08-20 13:12:15,679 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=7.8s api_calls=1 response=1264 chars
+2026-08-20 13:12:15,701 INFO gateway.platforms.base: [Telegram] Sending response (1221 chars) to 7699507804
+2026-08-20 13:12:42,621 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=259672->257892 rss_anon_kib=232452->230672 threads=17 duration_ms=158.7
+2026-08-20 13:13:42,755 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=258144->257028 rss_anon_kib=231788->230672 threads=16 duration_ms=119.7
+2026-08-20 13:14:42,873 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=257812->257024 rss_anon_kib=231456->230668 threads=16 duration_ms=117.6
+2026-08-20 13:15:30,555 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (18 chars)
+2026-08-20 13:15:30,562 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='kalau sudah jalan?' reply_to_id=817 reply_to_text=''
+2026-08-20 13:15:30,591 INFO [20260820_110020_5dfd118d] agent.turn_context: conversation turn: session=20260820_110020_5dfd118d model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=52 msg='kalau sudah jalan?'
+2026-08-20 13:15:36,540 INFO [20260820_110020_5dfd118d] agent.conversation_loop: API call #28: model=laguna-s-2.1-free provider=opencode-zen in=40261 out=161 total=40422 latency=5.9s cache=1248/40261 (3%)
+2026-08-20 13:15:37,238 INFO [20260820_110020_5dfd118d] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=477 session=20260820_110020_5dfd118d
+2026-08-20 13:15:37,288 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=6.7s api_calls=1 response=477 chars
+2026-08-20 13:15:37,305 INFO gateway.platforms.base: [Telegram] Sending response (477 chars) to 7699507804
+2026-08-20 13:15:43,015 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=259740->258048 rss_anon_kib=233384->231692 threads=17 duration_ms=141.0
+2026-08-20 13:16:01,210 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8497 (24 chars)
+2026-08-20 13:16:01,218 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='apa sudah 24jam permanen' reply_to_id=817 reply_to_text=''
+2026-08-20 13:16:01,250 INFO [20260820_110020_5dfd118d] agent.turn_context: conversation turn: session=20260820_110020_5dfd118d model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=54 msg='apa sudah 24jam permanen'
+2026-08-20 13:16:15,386 INFO [20260820_110020_5dfd118d] agent.conversation_loop: API call #29: model=laguna-s-2.1-free provider=opencode-zen in=40441 out=376 total=40817 latency=14.1s cache=40096/40441 (99%)
+2026-08-20 13:16:15,396 INFO [20260820_110020_5dfd118d] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=1103 session=20260820_110020_5dfd118d
+2026-08-20 13:16:15,415 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=14.2s api_calls=1 response=1103 chars
+2026-08-20 13:16:15,434 INFO gateway.platforms.base: [Telegram] Sending response (1103 chars) to 7699507804
+2026-08-20 13:16:43,146 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=260284->258656 rss_anon_kib=233928->232316 threads=17 duration_ms=130.4
