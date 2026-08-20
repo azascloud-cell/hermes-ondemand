@@ -884,3 +884,6 @@
 2026-08-20 08:44:08,176 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151428->150940 rss_anon_kib=137208->136720 threads=11 duration_ms=75.5
 2026-08-20 08:45:08,263 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151620->150972 rss_anon_kib=137400->136752 threads=11 duration_ms=76.3
 2026-08-20 08:46:08,336 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151620->150960 rss_anon_kib=137400->136740 threads=11 duration_ms=73.0
+2026-08-20 08:47:08,412 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151320->150956 rss_anon_kib=137100->136736 threads=11 duration_ms=74.9
+2026-08-20 08:48:08,478 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151564->150948 rss_anon_kib=137344->136728 threads=11 duration_ms=65.7
+2026-08-20 08:49:08,548 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=151492->150952 rss_anon_kib=137272->136732 threads=11 duration_ms=68.7
