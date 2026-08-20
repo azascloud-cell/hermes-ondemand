@@ -90,3 +90,44 @@
 2026-08-20 03:41:03,974 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (1/5) — previous session still held open on Telegram's servers. Waiting 20s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
 2026-08-20 03:41:24,993 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after conflict retry 1/5; health pending getUpdates progress
 2026-08-20 03:41:47,143 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling conflict (1/5) — previous session still held open on Telegram's servers. Waiting 20s for it to expire. Error: Conflict: terminated by other getUpdates request; make sure that only one bot instance is running
+2026-08-20 03:46:48,057 WARNING gateway.lifecycle_ledger: Previous gateway life (pid=129, started_at=2026-08-20T03:21:17.693424+00:00) exited UNCLEANLY (no exit path ran — SIGKILL / OOM / VM death). last_heartbeat_at=2026-08-20T03:41:58.375546+00:00 last_mem={'rss_kib': 191016, 'mem_total_kib': 338368128, 'mem_available_kib': 125476712, 'swap_used_kib': 930260} suspected_oom=False
+2026-08-20 03:46:48,089 INFO gateway.run: Starting Hermes Gateway...
+2026-08-20 03:46:48,090 INFO gateway.run: Session storage: /home/hermes/.hermes/sessions
+2026-08-20 03:46:48,092 INFO gateway.run: Agent budget: max_iterations=500 (agent.max_turns from config.yaml, or HERMES_MAX_ITERATIONS from .env, or default 500)
+2026-08-20 03:46:48,093 INFO gateway.run: Secret redaction: ENABLED (tool output, logs, and chat responses are scrubbed before delivery)
+2026-08-20 03:46:48,124 INFO gateway.run: Connecting to telegram...
+2026-08-20 03:46:48,129 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Discovering Telegram API fallback IPs via DNS-over-HTTPS…
+2026-08-20 03:46:48,302 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Auto-discovered Telegram fallback IPs: 149.154.166.110
+2026-08-20 03:46:48,302 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram fallback IPs active: 149.154.166.110
+2026-08-20 03:46:48,312 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Connecting to Telegram (attempt 1/8)…
+2026-08-20 03:46:52,035 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-20 03:47:02,062 INFO plugins.platforms.telegram.telegram_network: [Telegram] Using sticky IPv4 Telegram API path 149.154.166.110 (dual-stack hostname tried last — #87015)
+2026-08-20 03:47:02,070 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Connected to Telegram (polling mode)
+2026-08-20 03:47:02,392 INFO gateway.run: ✓ telegram connected
+2026-08-20 03:47:02,435 INFO gateway.run: Gateway running with 1 platform(s)
+2026-08-20 03:47:02,450 INFO gateway.run: Channel directory built: 3 target(s)
+2026-08-20 03:47:02,619 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeDefault (60 cmds)
+2026-08-20 03:47:02,797 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllPrivateChats (60 cmds)
+2026-08-20 03:47:02,974 INFO hermes_plugins.telegram_platform.adapter: [Telegram] set_my_commands OK for scope BotCommandScopeAllGroupChats (60 cmds)
+2026-08-20 03:47:02,974 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram menu: 60 commands registered, 79 hidden (over 60 limit). Use /commands for full list.
+2026-08-20 03:47:03,463 INFO gateway.run: Press Ctrl+C to stop
+2026-08-20 03:47:03,475 INFO gateway.run: kanban dispatcher: holding singleton dispatcher lock (/home/hermes/.hermes/kanban/.dispatcher.lock)
+2026-08-20 03:47:03,478 INFO gateway.run: kanban dispatcher: kanban.max_in_progress unset; using memory-derived default max_in_progress=8 (set kanban.max_in_progress in config.yaml to override)
+2026-08-20 03:47:03,488 INFO gateway.run: Gateway housekeeping started (interval=60s)
+2026-08-20 03:47:08,504 INFO gateway.run: kanban dispatcher: embedded in gateway (interval=60.0s)
+2026-08-20 03:47:17,688 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8309 (3 chars)
+2026-08-20 03:47:17,698 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='hey' reply_to_id=646 reply_to_text=''
+2026-08-20 03:47:18,112 INFO gateway.run: Rehydrated persisted /model override for session=agent:main:telegram:dm:7699507804:8309: model=nemotron-3-ultra-free provider=opencode-zen
+2026-08-20 03:47:18,114 WARNING gateway.run: Primary provider auth failed: No usable credentials found for provider 'opencode-zen'. Set OPENCODE_ZEN_API_KEY. — trying fallback
+2026-08-20 03:47:18,118 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=0.4s api_calls=0 response=117 chars
+2026-08-20 03:47:18,133 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 7699507804
+2026-08-20 03:49:43,370 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8309 (1 chars)
+2026-08-20 03:49:43,379 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='p' reply_to_id=646 reply_to_text=''
+2026-08-20 03:49:43,393 WARNING gateway.run: Primary provider auth failed: No usable credentials found for provider 'opencode-zen'. Set OPENCODE_ZEN_API_KEY. — trying fallback
+2026-08-20 03:49:43,396 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=0.0s api_calls=0 response=117 chars
+2026-08-20 03:49:43,404 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 7699507804
+2026-08-20 03:50:09,728 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8309 (3 chars)
+2026-08-20 03:50:09,733 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='hey' reply_to_id=646 reply_to_text=''
+2026-08-20 03:50:09,751 WARNING gateway.run: Primary provider auth failed: No usable credentials found for provider 'opencode-zen'. Set OPENCODE_ZEN_API_KEY. — trying fallback
+2026-08-20 03:50:09,754 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=0.0s api_calls=0 response=117 chars
+2026-08-20 03:50:09,766 INFO gateway.platforms.base: [Telegram] Sending response (114 chars) to 7699507804
