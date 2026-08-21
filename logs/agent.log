@@ -3455,3 +3455,11 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-21 05:11:11,465 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=284164->282856 rss_anon_kib=273100->271792 threads=18 duration_ms=144.6
 2026-08-21 05:12:11,600 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283736->282920 rss_anon_kib=272672->271856 threads=18 duration_ms=133.7
 2026-08-21 05:13:11,721 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283720->282848 rss_anon_kib=272656->271784 threads=18 duration_ms=120.6
+2026-08-21 05:14:11,846 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283676->282852 rss_anon_kib=272612->271788 threads=18 duration_ms=123.8
+2026-08-21 05:15:11,984 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283720->282848 rss_anon_kib=272656->271784 threads=18 duration_ms=137.1
+2026-08-21 05:16:12,138 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=284100->282956 rss_anon_kib=273036->271892 threads=18 duration_ms=141.9
+2026-08-21 05:17:12,276 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283640->282848 rss_anon_kib=272576->271784 threads=18 duration_ms=137.6
+2026-08-21 05:18:07,331 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-21 05:18:07,649 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-21 05:18:12,425 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283716->282884 rss_anon_kib=272652->271820 threads=18 duration_ms=148.0
+2026-08-21 05:19:12,565 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283720->283036 rss_anon_kib=272656->271940 threads=18 duration_ms=139.4
