@@ -3747,3 +3747,9 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-21 09:52:06,682 INFO gateway.run: Image cache cleanup: removed 1 stale file(s)
 2026-08-21 09:52:06,840 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280932->279964 rss_anon_kib=272964->271996 threads=18 duration_ms=154.1
 2026-08-21 09:53:07,012 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280676->279968 rss_anon_kib=272708->272000 threads=18 duration_ms=171.3
+2026-08-21 09:54:07,154 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280724->279976 rss_anon_kib=272756->272008 threads=18 duration_ms=141.2
+2026-08-21 09:55:07,316 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280676->279964 rss_anon_kib=272708->271996 threads=18 duration_ms=161.0
+2026-08-21 09:56:07,465 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280804->280012 rss_anon_kib=272836->272044 threads=18 duration_ms=148.7
+2026-08-21 09:57:07,617 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=281052->279968 rss_anon_kib=273084->272000 threads=18 duration_ms=141.9
+2026-08-21 09:58:03,458 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-21 09:58:07,784 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280684->279968 rss_anon_kib=272716->272000 threads=18 duration_ms=166.4
