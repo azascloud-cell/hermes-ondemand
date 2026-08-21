@@ -4120,3 +4120,46 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-21 15:44:10,576 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280516->279628 rss_anon_kib=272792->271904 threads=18 duration_ms=135.4
 2026-08-21 15:45:10,721 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280512->279692 rss_anon_kib=272788->271968 threads=18 duration_ms=143.9
 2026-08-21 15:46:10,858 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280508->279644 rss_anon_kib=272784->271920 threads=18 duration_ms=135.8
+2026-08-21 15:47:10,988 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280508->279632 rss_anon_kib=272784->271908 threads=18 duration_ms=130.1
+2026-08-21 15:48:11,129 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280652->279572 rss_anon_kib=272928->271848 threads=18 duration_ms=130.7
+2026-08-21 15:49:11,283 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280400->279580 rss_anon_kib=272676->271856 threads=18 duration_ms=153.8
+2026-08-21 15:50:11,439 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=280308->279572 rss_anon_kib=272584->271848 threads=18 duration_ms=154.7
+2026-08-21 15:50:25,976 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:8739 → 1 (session_reset)
+2026-08-21 15:50:26,013 INFO gateway.platforms.base: [Telegram] Sending response (233 chars) to 7699507804
+2026-08-21 15:50:30,658 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
+2026-08-21 15:51:10,644 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8739 (69 chars)
+2026-08-21 15:51:10,654 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Katanya Gmail masuk berita TransTV ya,apa kamu bisa kasihkan linknya!' reply_to_id=915 reply_to_text=''
+2026-08-21 15:51:10,719 INFO [20260820_110020_5dfd118d] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-21 15:51:10,721 WARNING [20260820_110020_5dfd118d] tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-21 15:51:10,722 WARNING [20260820_110020_5dfd118d] tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-21 15:51:10,723 WARNING [20260820_110020_5dfd118d] tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-21 15:51:10,724 WARNING [20260820_110020_5dfd118d] tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-21 15:51:10,728 WARNING [20260820_110020_5dfd118d] tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-21 15:51:10,728 WARNING [20260820_110020_5dfd118d] tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-21 15:51:10,731 WARNING [20260820_110020_5dfd118d] tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-21 15:51:10,732 WARNING [20260820_110020_5dfd118d] tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-21 15:51:10,733 WARNING [20260820_110020_5dfd118d] tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-21 15:51:10,739 WARNING [20260820_110020_5dfd118d] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 15:52:10.
+2026-08-21 15:51:10,741 WARNING [20260820_110020_5dfd118d] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-21 15:51:10,742 WARNING [20260820_110020_5dfd118d] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 15:52:10.
+2026-08-21 15:51:10,742 WARNING [20260820_110020_5dfd118d] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-21 15:51:10,743 WARNING [20260820_110020_5dfd118d] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 15:52:10.
+2026-08-21 15:51:10,745 WARNING [20260820_110020_5dfd118d] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-21 15:51:10,745 WARNING [20260820_110020_5dfd118d] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 15:52:10.
+2026-08-21 15:51:10,745 WARNING [20260820_110020_5dfd118d] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-21 15:51:10,745 WARNING [20260820_110020_5dfd118d] tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-21 15:51:10,839 INFO [20260821_155025_6209ccbe] agent.turn_context: conversation turn: session=20260821_155025_6209ccbe model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=0 msg='Katanya Gmail masuk berita TransTV ya,apa kamu bisa kasihkan linknya!'
+2026-08-21 15:51:10,868 INFO agent.auxiliary_client: Auxiliary title_generation: using opencode-zen (laguna-s-2.1-free) at https://opencode.ai/zen/v1/
+2026-08-21 15:51:10,882 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-136 (<lambda>):140507548206784 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-21 15:51:11,614 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=287540->285752 rss_anon_kib=274560->272772 threads=23 duration_ms=174.5
+2026-08-21 15:51:22,514 INFO [20260821_155025_6209ccbe] agent.conversation_loop: API call #1: model=laguna-s-2.1-free provider=opencode-zen in=18121 out=363 total=18484 latency=11.6s cache=1248/18121 (7%)
+2026-08-21 15:51:22,543 INFO tools.web_tools: Web search via parallel: 'TransTV newsletter subscription email signup form link' (limit: 8)
+2026-08-21 15:51:22,545 INFO plugins.web.parallel.provider: Parallel keyless search: 'TransTV newsletter subscription email signup form link' (limit=8)
+2026-08-21 15:51:22,548 INFO tools.web_tools: Web search via parallel: 'TransTV berita langganan email newsletter subscribe Gmail' (limit: 8)
+2026-08-21 15:51:22,550 INFO plugins.web.parallel.provider: Parallel keyless search: 'TransTV berita langganan email newsletter subscribe Gmail' (limit=8)
+2026-08-21 15:51:23,968 INFO agent.tool_executor: tool web_search completed (1.44s, 15118 chars)
+2026-08-21 15:51:24,197 INFO agent.tool_executor: tool web_search completed (1.67s, 13186 chars)
+2026-08-21 15:51:29,949 INFO [20260821_155025_6209ccbe] agent.conversation_loop: API call #2: model=laguna-s-2.1-free provider=opencode-zen in=25391 out=146 total=25537 latency=5.7s cache=1248/25391 (5%)
+2026-08-21 15:51:29,962 INFO [20260821_155025_6209ccbe] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=2/500 budget=2/500 tool_turns=1 last_msg_role=assistant response_len=442 session=20260821_155025_6209ccbe
+2026-08-21 15:51:30,003 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=19.3s api_calls=2 response=442 chars
+2026-08-21 15:51:30,033 INFO gateway.platforms.base: [Telegram] Sending response (442 chars) to 7699507804

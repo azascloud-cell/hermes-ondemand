@@ -743,3 +743,10 @@
 2026-08-21 15:26:06,120 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-21 15:26:06,568 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-21 15:39:42,065 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-21 15:50:25,976 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:8739 → 1 (session_reset)
+2026-08-21 15:50:26,013 INFO gateway.platforms.base: [Telegram] Sending response (233 chars) to 7699507804
+2026-08-21 15:50:30,658 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
+2026-08-21 15:51:10,644 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8739 (69 chars)
+2026-08-21 15:51:10,654 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Katanya Gmail masuk berita TransTV ya,apa kamu bisa kasihkan linknya!' reply_to_id=915 reply_to_text=''
+2026-08-21 15:51:30,003 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=19.3s api_calls=2 response=442 chars
+2026-08-21 15:51:30,033 INFO gateway.platforms.base: [Telegram] Sending response (442 chars) to 7699507804
