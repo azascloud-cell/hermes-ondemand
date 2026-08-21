@@ -3148,3 +3148,10 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-21 00:19:24,394 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283748->282892 rss_anon_kib=268552->267696 threads=18 duration_ms=136.5
 2026-08-21 00:20:24,531 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=284104->282896 rss_anon_kib=268908->267700 threads=18 duration_ms=127.1
 2026-08-21 00:21:24,658 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283724->282896 rss_anon_kib=268528->267700 threads=18 duration_ms=126.3
+2026-08-21 00:22:24,788 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283752->282888 rss_anon_kib=268556->267692 threads=18 duration_ms=129.2
+2026-08-21 00:23:24,911 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283744->282888 rss_anon_kib=268548->267692 threads=18 duration_ms=122.2
+2026-08-21 00:24:25,035 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283716->282888 rss_anon_kib=268520->267692 threads=18 duration_ms=123.2
+2026-08-21 00:24:38,114 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-21 00:25:25,184 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=284208->282896 rss_anon_kib=269012->267700 threads=18 duration_ms=138.3
+2026-08-21 00:26:25,349 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283760->282888 rss_anon_kib=268564->267692 threads=18 duration_ms=164.5
+2026-08-21 00:27:25,481 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283720->282888 rss_anon_kib=268524->267692 threads=18 duration_ms=131.3
