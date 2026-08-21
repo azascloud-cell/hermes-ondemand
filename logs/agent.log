@@ -4163,3 +4163,16 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-21 15:51:29,962 INFO [20260821_155025_6209ccbe] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=2/500 budget=2/500 tool_turns=1 last_msg_role=assistant response_len=442 session=20260821_155025_6209ccbe
 2026-08-21 15:51:30,003 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=19.3s api_calls=2 response=442 chars
 2026-08-21 15:51:30,033 INFO gateway.platforms.base: [Telegram] Sending response (442 chars) to 7699507804
+2026-08-21 15:52:11,760 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=299560->293252 rss_anon_kib=285436->279128 threads=18 duration_ms=145.0
+2026-08-21 15:52:18,880 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8739 (65 chars)
+2026-08-21 15:52:18,887 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Katanya masuk TransTV karena penggunaan akun untuk pencucian uang' reply_to_id=915 reply_to_text=''
+2026-08-21 15:52:18,921 INFO [20260821_155025_6209ccbe] agent.turn_context: conversation turn: session=20260821_155025_6209ccbe model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=5 msg='Katanya masuk TransTV karena penggunaan akun untuk pencucian uang'
+2026-08-21 15:52:29,568 INFO [20260821_155025_6209ccbe] agent.conversation_loop: API call #3: model=laguna-s-2.1-free provider=opencode-zen in=25569 out=388 total=25957 latency=10.6s cache=1248/25569 (5%)
+2026-08-21 15:52:29,578 INFO [20260821_155025_6209ccbe] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=1 last_msg_role=assistant response_len=1109 session=20260821_155025_6209ccbe
+2026-08-21 15:52:29,614 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=10.7s api_calls=1 response=1109 chars
+2026-08-21 15:52:29,633 INFO gateway.platforms.base: [Telegram] Sending response (1109 chars) to 7699507804
+2026-08-21 15:52:46,934 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-21 15:53:11,919 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=295532->293292 rss_anon_kib=281408->279168 threads=18 duration_ms=138.3
+2026-08-21 15:54:12,104 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=294116->293292 rss_anon_kib=279992->279168 threads=18 duration_ms=183.6
+2026-08-21 15:55:12,241 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=294152->293296 rss_anon_kib=280028->279172 threads=18 duration_ms=137.2
+2026-08-21 15:56:12,370 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=294212->293304 rss_anon_kib=280088->279180 threads=18 duration_ms=128.4
