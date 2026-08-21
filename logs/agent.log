@@ -4237,3 +4237,14 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-21 16:52:25,553 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=294136->293424 rss_anon_kib=280012->279300 threads=18 duration_ms=144.4
 2026-08-21 16:53:25,720 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=294540->293428 rss_anon_kib=280416->279304 threads=18 duration_ms=153.5
 2026-08-21 16:54:25,874 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=294104->293428 rss_anon_kib=279980->279304 threads=18 duration_ms=154.0
+2026-08-21 16:55:13,091 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8739 (idle=3764s)
+2026-08-21 16:55:13,092 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:7:140507539814080 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-21 16:55:13,092 INFO run_agent: OpenAI client closed (cache_evict, shared=False, tcp_force_closed=0) thread=agent-cache-idle-agent:main:telegram:dm:7:140507539814080 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-21 16:55:13,093 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-21 16:55:26,030 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=294140->291844 rss_anon_kib=280016->277720 threads=18 duration_ms=154.5
+2026-08-21 16:56:26,209 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=292676->291844 rss_anon_kib=278552->277720 threads=18 duration_ms=178.5
+2026-08-21 16:57:26,347 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=292556->291844 rss_anon_kib=278432->277720 threads=18 duration_ms=137.2
+2026-08-21 16:58:26,545 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=293008->291840 rss_anon_kib=278884->277716 threads=18 duration_ms=188.1
+2026-08-21 16:59:26,711 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=292556->291840 rss_anon_kib=278432->277716 threads=18 duration_ms=165.0
+2026-08-21 17:00:00,798 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-21 17:00:01,056 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
