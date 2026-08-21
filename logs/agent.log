@@ -3419,3 +3419,8 @@ openai.RateLimitError: Error code: 429 - {'type': 'error', 'error': {'type': 'Fr
 2026-08-21 04:36:06,803 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=284012->282840 rss_anon_kib=272948->271776 threads=18 duration_ms=111.2
 2026-08-21 04:36:40,091 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-21 04:37:06,924 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283728->282848 rss_anon_kib=272664->271784 threads=18 duration_ms=119.8
+2026-08-21 04:38:07,034 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283688->282844 rss_anon_kib=272624->271780 threads=18 duration_ms=109.8
+2026-08-21 04:39:07,170 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283728->282892 rss_anon_kib=272664->271828 threads=18 duration_ms=134.3
+2026-08-21 04:40:07,300 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283720->282844 rss_anon_kib=272656->271780 threads=18 duration_ms=129.3
+2026-08-21 04:41:07,447 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=284004->282856 rss_anon_kib=272940->271792 threads=18 duration_ms=138.4
+2026-08-21 04:42:07,583 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=283728->282844 rss_anon_kib=272664->271780 threads=18 duration_ms=134.9
