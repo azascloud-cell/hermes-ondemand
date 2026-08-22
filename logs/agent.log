@@ -5453,3 +5453,8 @@ RuntimeError: HTTP 500: Internal server error
 2026-08-22 08:04:07,284 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=332120->331424 rss_anon_kib=323404->322676 threads=18 duration_ms=144.1
 2026-08-22 08:05:07,433 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=332000->331424 rss_anon_kib=323284->322676 threads=18 duration_ms=148.1
 2026-08-22 08:06:07,580 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=332420->331348 rss_anon_kib=323704->322632 threads=18 duration_ms=136.8
+2026-08-22 08:07:07,780 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=332048->331348 rss_anon_kib=323332->322632 threads=18 duration_ms=199.1
+2026-08-22 08:08:07,900 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=332004->331424 rss_anon_kib=323288->322676 threads=18 duration_ms=120.2
+2026-08-22 08:09:08,058 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=332040->331344 rss_anon_kib=323324->322628 threads=18 duration_ms=156.6
+2026-08-22 08:10:08,194 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=332124->331348 rss_anon_kib=323408->322632 threads=18 duration_ms=135.2
+2026-08-22 08:11:08,365 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=332388->331348 rss_anon_kib=323672->322632 threads=18 duration_ms=161.3
