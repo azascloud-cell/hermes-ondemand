@@ -602,3 +602,9 @@ Traceback (most recent call last):
     raise RuntimeError(_err_text)
 RuntimeError: HTTP 500: Internal server error
 2026-08-22 01:00:26,076 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-22 02:27:38,649 WARNING [cron_7c65859d777f_20260822_022526] agent.tool_executor: Tool web_extract returned error (0.76s): {
+  "results": [
+    {
+      "url": "https://www.bbc.com/indonesia",
+      "title": "Berita - BBC News Indonesia",
+      "content": "# BBC News , Indonesia - Berita\n## Berita pilihan\n* [Gempa NTT ha

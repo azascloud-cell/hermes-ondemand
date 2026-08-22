@@ -775,3 +775,7 @@
 2026-08-21 21:40:33,593 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-21 21:53:33,208 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-22 01:00:26,076 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-22 02:25:14,141 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (16 chars)
+2026-08-22 02:25:14,148 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ini kenapa neng?' reply_to_id=925 reply_to_text='Cronjob Response: Ringkasan Berita Pagi Mas Azza (job_id: 7c65859d777f) --------'
+2026-08-22 02:25:30,666 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=16.5s api_calls=3 response=87 chars
+2026-08-22 02:25:30,683 INFO gateway.platforms.base: [Telegram] Sending response (87 chars) to 7699507804

@@ -48,8 +48,11 @@
       },
       "enabled_toolsets": null,
       "workdir": null,
-      "fire_claim": null
+      "fire_claim": {
+        "at": "2026-08-22T02:28:26.455626+00:00",
+        "by": "853a4577bdf4:105:0a631c44dde64c6ea06ee91494b806fe"
+      }
     }
   ],
-  "updated_at": "2026-08-21T22:13:59.760379+00:00"
+  "updated_at": "2026-08-22T02:28:26.456063+00:00"
 }

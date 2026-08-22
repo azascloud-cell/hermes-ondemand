@@ -4968,3 +4968,127 @@ RuntimeError: HTTP 500: Internal server error
 2026-08-22 02:21:08,410 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=333324->332576 rss_anon_kib=318540->317792 threads=18 duration_ms=131.8
 2026-08-22 02:22:08,539 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=333276->332628 rss_anon_kib=318492->317844 threads=18 duration_ms=128.0
 2026-08-22 02:23:10,055 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=333236->332624 rss_anon_kib=318452->317840 threads=18 duration_ms=1500.3
+2026-08-22 02:24:10,172 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=333360->332732 rss_anon_kib=318576->317916 threads=18 duration_ms=116.1
+2026-08-22 02:25:10,309 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=333680->332580 rss_anon_kib=318896->317796 threads=18 duration_ms=128.5
+2026-08-22 02:25:14,141 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (16 chars)
+2026-08-22 02:25:14,148 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ini kenapa neng?' reply_to_id=925 reply_to_text='Cronjob Response: Ringkasan Berita Pagi Mas Azza (job_id: 7c65859d777f) --------'
+2026-08-22 02:25:14,158 INFO hermes_state: Repaired 2 message-alternation violation(s) while restoring session 20260820_040244_a288a94b — durable transcript kept them, see repair_message_sequence
+2026-08-22 02:25:14,194 INFO [20260821_155025_6209ccbe] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-22 02:25:14,203 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=nemotron-3-ultra-free provider=opencode-zen platform=telegram history=45 msg='[Replying to: "Cronjob Response: Ringkasan Berita Pagi Mas Azza (job_id: 7c65859...'
+2026-08-22 02:25:14,223 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-157 (<lambda>):140507548206784 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-22 02:25:21,832 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #1: model=nemotron-3-ultra-free provider=opencode-zen in=42670 out=235 total=42905 latency=7.6s
+2026-08-22 02:25:22,555 INFO [20260820_040244_a288a94b] agent.tool_executor: tool cronjob completed (0.00s, 778 chars)
+2026-08-22 02:25:26,351 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #2: model=nemotron-3-ultra-free provider=opencode-zen in=43048 out=151 total=43199 latency=3.8s cache=34560/43048 (80%)
+2026-08-22 02:25:26,375 INFO tools.async_delegation: Dispatched async delegation deleg_08375171 (session_key=agent:...80): Manual run of cron job 'Ringkasan Berita Pagi Mas Azza' (7c65859d777f)
+2026-08-22 02:25:26,380 INFO [20260820_040244_a288a94b] agent.tool_executor: tool cronjob completed (0.02s, 1010 chars)
+2026-08-22 02:25:26,426 INFO cron.scheduler: Running job 'Ringkasan Berita Pagi Mas Azza' (ID: 7c65859d777f)
+2026-08-22 02:25:26,427 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-22 02:25:26,437 INFO cron.scheduler: Job '7c65859d777f': loaded credential pool for provider opencode-zen with 1 entries
+2026-08-22 02:25:26,464 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=async-delegate_0:140507556599488 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-22 02:25:26,471 INFO [cron_7c65859d777f_20260822_022526] agent.turn_context: conversation turn: session=cron_7c65859d777f_20260822_022526 model=laguna-s-2.1-free provider=opencode-zen platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-08-22 02:25:26,494 INFO [cron_7c65859d777f_20260822_022526] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-50_0:140507521980096 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-22 02:25:30,636 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #3: model=nemotron-3-ultra-free provider=opencode-zen in=43517 out=48 total=43565 latency=4.2s cache=34560/43517 (79%)
+2026-08-22 02:25:30,646 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=3/500 budget=3/500 tool_turns=9 last_msg_role=assistant response_len=87 session=20260820_040244_a288a94b
+2026-08-22 02:25:30,666 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=16.5s api_calls=3 response=87 chars
+2026-08-22 02:25:30,683 INFO gateway.platforms.base: [Telegram] Sending response (87 chars) to 7699507804
+2026-08-22 02:25:36,680 INFO [cron_7c65859d777f_20260822_022526] agent.conversation_loop: API call #1: model=laguna-s-2.1-free provider=opencode-zen in=14191 out=427 total=14618 latency=10.2s cache=512/14191 (4%)
+2026-08-22 02:25:36,739 INFO tools.web_tools: Web search via parallel: 'berita terbaru hari ini site:kompas.com' (limit: 8)
+2026-08-22 02:25:36,742 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru hari ini site:kompas.com' (limit=8)
+2026-08-22 02:25:36,749 INFO tools.web_tools: Web search via parallel: 'berita terkini site:detik.com' (limit: 8)
+2026-08-22 02:25:36,751 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terkini site:detik.com' (limit=8)
+2026-08-22 02:25:36,757 INFO tools.web_tools: Web search via parallel: 'berita hari ini site:beritasatu.com' (limit: 8)
+2026-08-22 02:25:36,762 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita hari ini site:beritasatu.com' (limit=8)
+2026-08-22 02:25:36,770 INFO tools.web_tools: Web search via parallel: 'berita terkini site:liputan6.com' (limit: 8)
+2026-08-22 02:25:36,772 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terkini site:liputan6.com' (limit=8)
+2026-08-22 02:25:36,773 INFO tools.web_tools: Web search via parallel: 'berita hari ini site:bbc.com/indonesia' (limit: 8)
+2026-08-22 02:25:36,775 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita hari ini site:bbc.com/indonesia' (limit=8)
+2026-08-22 02:25:38,159 INFO agent.tool_executor: tool web_search completed (1.47s, 15005 chars)
+2026-08-22 02:25:38,194 INFO agent.tool_executor: tool web_search completed (1.50s, 9665 chars)
+2026-08-22 02:25:38,288 INFO agent.tool_executor: tool web_search completed (1.59s, 2802 chars)
+2026-08-22 02:25:38,304 INFO agent.tool_executor: tool web_search completed (1.61s, 23410 chars)
+2026-08-22 02:25:38,647 INFO agent.tool_executor: tool web_search completed (1.96s, 25531 chars)
+2026-08-22 02:26:10,445 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=343712->336652 rss_anon_kib=328760->321700 threads=22 duration_ms=135.4
+2026-08-22 02:26:26,249 INFO [cron_7c65859d777f_20260822_022526] agent.conversation_loop: API call #2: model=laguna-s-2.1-free provider=opencode-zen in=44748 out=2771 total=47519 latency=47.6s cache=928/44748 (2%)
+2026-08-22 02:26:26,278 INFO tools.web_tools: Extracting content from 2 URL(s)
+2026-08-22 02:26:26,279 INFO tools.web_tools: Extracting content from 4 URL(s)
+2026-08-22 02:26:26,287 INFO tools.web_tools: Web search via parallel: 'berita terbaru kompas.com nasional' (limit: 8)
+2026-08-22 02:26:26,289 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru kompas.com nasional' (limit=8)
+2026-08-22 02:26:26,294 INFO tools.web_tools: Web search via parallel: 'site:bbc.com/indonesia 2026 - di Indonesia' (limit: 5)
+2026-08-22 02:26:26,296 INFO plugins.web.parallel.provider: Parallel keyless search: 'site:bbc.com/indonesia 2026 - di Indonesia' (limit=5)
+2026-08-22 02:26:26,316 INFO tools.web_tools: Web extract via parallel: 4 URL(s)
+2026-08-22 02:26:26,318 INFO plugins.web.parallel.provider: Parallel keyless extract: 4 URL(s)
+2026-08-22 02:26:26,338 INFO tools.web_tools: Web extract via parallel: 2 URL(s)
+2026-08-22 02:26:26,340 INFO plugins.web.parallel.provider: Parallel keyless extract: 2 URL(s)
+2026-08-22 02:26:27,778 INFO agent.tool_executor: tool web_search completed (1.51s, 19551 chars)
+2026-08-22 02:26:27,950 INFO agent.tool_executor: tool web_search completed (1.69s, 3737 chars)
+2026-08-22 02:26:28,624 INFO tools.web_tools: Extracted content from 4 pages
+2026-08-22 02:26:28,625 INFO tools.web_tools: https://news.detik.com/internasional/d-8626398/100-orang-tewas-akibat-longsor-di-tambang-emas-ilegal-afrika-tengah (2031 chars, whole)
+2026-08-22 02:26:28,625 INFO tools.web_tools: https://news.detik.com/internasional/d-8626427/trump-umumkan-operasi-ekonomi-sasar-iran-ancam-sanksi-ke-negara-pendukung (2497 chars, whole)
+2026-08-22 02:26:28,625 INFO tools.web_tools: https://news.detik.com/berita/d-8626409/ruteng-manggarai-ntt-diguncang-puluhan-gempa-pagi-ini-terbesar-m-5-6 (1234 chars, whole)
+2026-08-22 02:26:28,625 INFO tools.web_tools: https://nasional.kompas.com/read/2026/08/21/17354211/bnpb-sebanyak-44946-rumah-warga-rusak-akibat-gempa-m-77-di-ntt (4161 chars, whole)
+2026-08-22 02:26:28,627 INFO agent.tool_executor: tool web_extract completed (2.36s, 11204 chars)
+2026-08-22 02:26:49,621 INFO tools.web_tools: Extracted content from 2 pages
+2026-08-22 02:26:49,622 INFO tools.web_tools: https://money.kompas.com/read/2026/08/20/134500226/airlangga-ungkap-1800-ton-emas-masih-di-bawah-bantal (13301 chars, whole)
+2026-08-22 02:26:49,622 INFO tools.web_tools: https://www.kompas.com/tren/read/2026/08/20/134500965/bertahan-dengan-ikan-burung-dan-air-hujan-wni-selamat-usai-26-hari (6244 chars, whole)
+2026-08-22 02:26:49,623 INFO agent.tool_executor: tool web_extract completed (23.36s, 20438 chars)
+2026-08-22 02:27:06,669 INFO [cron_7c65859d777f_20260822_022526] agent.conversation_loop: API call #3: model=laguna-s-2.1-free provider=opencode-zen in=70390 out=824 total=71214 latency=17.0s cache=512/70390 (1%)
+2026-08-22 02:27:06,693 INFO tools.web_tools: Extracting content from 2 URL(s)
+2026-08-22 02:27:06,709 INFO tools.web_tools: Web search via parallel: 'site:bbc.com/indonesia berita' (limit: 6)
+2026-08-22 02:27:06,711 INFO plugins.web.parallel.provider: Parallel keyless search: 'site:bbc.com/indonesia berita' (limit=6)
+2026-08-22 02:27:06,715 INFO tools.web_tools: Web search via parallel: 'berita terbaru site:liputan6.com 2026' (limit: 6)
+2026-08-22 02:27:06,717 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru site:liputan6.com 2026' (limit=6)
+2026-08-22 02:27:06,723 INFO tools.web_tools: Web extract via parallel: 2 URL(s)
+2026-08-22 02:27:06,724 INFO plugins.web.parallel.provider: Parallel keyless extract: 2 URL(s)
+2026-08-22 02:27:07,862 INFO agent.tool_executor: tool web_search completed (1.18s, 13989 chars)
+2026-08-22 02:27:08,190 INFO tools.web_tools: Extracted content from 2 pages
+2026-08-22 02:27:08,191 INFO tools.web_tools: https://nasional.kompas.com/read/2026/08/21/08353071/breaking-news-ott-kpk-tangkap-rektor-unsoed-akhmad-sodiq (9602 chars, whole)
+2026-08-22 02:27:08,191 INFO tools.web_tools: https://nasional.kompas.com/read/2026/08/21/12202591/menhan-dong-jun-indonesia-dan-china-akan-gagalkan-niat-jahat-kekuatan-asing (9024 chars, whole)
+2026-08-22 02:27:08,192 INFO agent.tool_executor: tool web_extract completed (1.51s, 19432 chars)
+2026-08-22 02:27:08,290 INFO agent.tool_executor: tool web_search completed (1.61s, 10860 chars)
+2026-08-22 02:27:10,580 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=343876->339464 rss_anon_kib=328924->324512 threads=23 duration_ms=134.9
+2026-08-22 02:27:35,702 INFO [cron_7c65859d777f_20260822_022526] agent.conversation_loop: API call #4: model=laguna-s-2.1-free provider=opencode-zen in=89273 out=1136 total=90409 latency=27.4s cache=47488/89273 (53%)
+2026-08-22 02:27:35,719 INFO tools.web_tools: Extracting content from 3 URL(s)
+2026-08-22 02:27:35,719 INFO tools.web_tools: Extracting content from 1 URL(s)
+2026-08-22 02:27:35,720 INFO tools.web_tools: Extracting content from 1 URL(s)
+2026-08-22 02:27:35,727 INFO tools.web_tools: Web extract via parallel: 1 URL(s)
+2026-08-22 02:27:35,730 INFO plugins.web.parallel.provider: Parallel keyless extract: 1 URL(s)
+2026-08-22 02:27:35,746 INFO tools.web_tools: Web extract via parallel: 3 URL(s)
+2026-08-22 02:27:35,747 INFO plugins.web.parallel.provider: Parallel keyless extract: 3 URL(s)
+2026-08-22 02:27:35,752 INFO tools.web_tools: Web extract via parallel: 1 URL(s)
+2026-08-22 02:27:35,753 INFO plugins.web.parallel.provider: Parallel keyless extract: 1 URL(s)
+2026-08-22 02:27:36,443 INFO tools.web_tools: Extracted content from 1 pages
+2026-08-22 02:27:36,444 INFO tools.web_tools: https://news.detik.com/internasional/d-8626427/trump-umumkan-operasi-ekonomi-sasar-iran-ancam-sanksi-ke-negara-pendukung (319 chars, whole)
+2026-08-22 02:27:36,445 INFO agent.tool_executor: tool web_extract completed (0.73s, 626 chars)
+2026-08-22 02:27:36,471 INFO tools.web_tools: Extracted content from 1 pages
+2026-08-22 02:27:36,471 INFO tools.web_tools: https://www.bbc.com/indonesia (259 chars, whole)
+2026-08-22 02:27:36,472 INFO agent.tool_executor: tool web_extract failed (0.76s): {
+  "results": [
+    {
+      "url": "https://www.bbc.com/indonesia",
+      "title": "Berita - BBC News Indonesia",
+      "content": "# BBC News , Indonesia - Berita\n## Berita pilihan\n* [Gempa NTT ha
+2026-08-22 02:27:38,633 INFO tools.web_tools: Extracted content from 3 pages
+2026-08-22 02:27:38,635 INFO tools.web_tools: https://berita.liputan6.com/regional/read/8273662/malam-hut-ri-napi-di-sukabumi-kabur-dari-pondok-asimilasi (5815 chars, whole)
+2026-08-22 02:27:38,635 INFO tools.web_tools: https://berita.liputan6.com/peristiwa/read/8273666/kpk-sita-total-aset-rp-150-miliar-di-kasus-pemerasan-silmy-karim (6286 chars, whole)
+2026-08-22 02:27:38,635 INFO tools.web_tools: https://berita.liputan6.com/regional/read/8273651/3-hari-hilang-wisatawan-asal-jakarta-ditemukan-tak-bernyawa (6159 chars, whole)
+2026-08-22 02:27:38,636 INFO agent.tool_executor: tool web_extract completed (2.92s, 19466 chars)
+2026-08-22 02:27:38,649 WARNING [cron_7c65859d777f_20260822_022526] agent.tool_executor: Tool web_extract returned error (0.76s): {
+  "results": [
+    {
+      "url": "https://www.bbc.com/indonesia",
+      "title": "Berita - BBC News Indonesia",
+      "content": "# BBC News , Indonesia - Berita\n## Berita pilihan\n* [Gempa NTT ha
+2026-08-22 02:28:10,707 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=343564->339584 rss_anon_kib=328612->324632 threads=22 duration_ms=126.1
+2026-08-22 02:28:14,663 INFO [cron_7c65859d777f_20260822_022526] agent.conversation_loop: API call #5: model=laguna-s-2.1-free provider=opencode-zen in=98797 out=1619 total=100416 latency=36.0s cache=14304/98797 (14%)
+2026-08-22 02:28:14,679 INFO tools.web_tools: Extracting content from 1 URL(s)
+2026-08-22 02:28:14,680 INFO tools.web_tools: Extracting content from 1 URL(s)
+2026-08-22 02:28:14,688 INFO tools.web_tools: Web extract via parallel: 1 URL(s)
+2026-08-22 02:28:14,689 INFO plugins.web.parallel.provider: Parallel keyless extract: 1 URL(s)
+2026-08-22 02:28:14,697 INFO tools.web_tools: Web extract via parallel: 1 URL(s)
+2026-08-22 02:28:14,699 INFO plugins.web.parallel.provider: Parallel keyless extract: 1 URL(s)
+2026-08-22 02:28:15,841 INFO tools.web_tools: Extracted content from 1 pages
+2026-08-22 02:28:15,843 INFO tools.web_tools: https://www.bbc.com/indonesia/articles/cz055yl2z4jo (486 chars, whole)
+2026-08-22 02:28:15,845 INFO agent.tool_executor: tool web_extract completed (1.17s, 733 chars)
+2026-08-22 02:28:15,865 INFO tools.web_tools: Extracted content from 1 pages
+2026-08-22 02:28:15,866 INFO tools.web_tools: https://nasional.kompas.com/read/2026/08/21/12484111/usai-bantah-ott-di-kabupaten-bogor-kpk-terbitkan-sprindik-umum (10685 chars, whole)
+2026-08-22 02:28:15,866 INFO agent.tool_executor: tool web_extract completed (1.19s, 11097 chars)
