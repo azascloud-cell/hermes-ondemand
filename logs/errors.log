@@ -601,3 +601,4 @@ Traceback (most recent call last):
   File "/home/hermes/.hermes/hermes-agent/cron/scheduler.py", line 5751, in run_job
     raise RuntimeError(_err_text)
 RuntimeError: HTTP 500: Internal server error
+2026-08-22 01:00:26,076 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
