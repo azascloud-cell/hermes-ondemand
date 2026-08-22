@@ -608,3 +608,4 @@ RuntimeError: HTTP 500: Internal server error
       "url": "https://www.bbc.com/indonesia",
       "title": "Berita - BBC News Indonesia",
       "content": "# BBC News , Indonesia - Berita\n## Berita pilihan\n* [Gempa NTT ha
+2026-08-22 17:00:01,468 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
