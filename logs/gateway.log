@@ -779,3 +779,7 @@
 2026-08-22 02:25:14,148 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ini kenapa neng?' reply_to_id=925 reply_to_text='Cronjob Response: Ringkasan Berita Pagi Mas Azza (job_id: 7c65859d777f) --------'
 2026-08-22 02:25:30,666 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=16.5s api_calls=3 response=87 chars
 2026-08-22 02:25:30,683 INFO gateway.platforms.base: [Telegram] Sending response (87 chars) to 7699507804
+2026-08-22 02:28:56,277 INFO gateway.run: Watch pattern notification — injecting for telegram chat=7699507804 thread=8380
+2026-08-22 02:28:56,285 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[ASYNC DELEGATION COMPLETE — deleg_08375171] A background subagent you dispatche' reply_to_id=None reply_to_text=''
+2026-08-22 02:29:16,975 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=20.7s api_calls=2 response=2953 chars
+2026-08-22 02:29:16,994 INFO gateway.platforms.base: [Telegram] Sending response (2953 chars) to 7699507804
