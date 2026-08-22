@@ -6280,3 +6280,15 @@ RuntimeError: HTTP 500: Internal server error
 2026-08-22 21:52:33,531 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=331172->330464 rss_anon_kib=323340->322632 threads=18 duration_ms=117.9
 2026-08-22 21:53:33,677 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=331560->330488 rss_anon_kib=323728->322656 threads=18 duration_ms=132.8
 2026-08-22 21:54:33,797 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=331180->330472 rss_anon_kib=323348->322640 threads=18 duration_ms=119.5
+2026-08-22 21:55:33,919 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=331128->330472 rss_anon_kib=323296->322640 threads=18 duration_ms=120.9
+2026-08-22 21:56:34,036 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=331172->330480 rss_anon_kib=323340->322648 threads=18 duration_ms=116.5
+2026-08-22 21:57:34,154 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=331220->330472 rss_anon_kib=323388->322640 threads=18 duration_ms=117.1
+2026-08-22 21:58:34,287 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=331600->330476 rss_anon_kib=323768->322644 threads=18 duration_ms=119.9
+2026-08-22 21:59:34,406 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=331172->330480 rss_anon_kib=323340->322648 threads=18 duration_ms=118.7
+2026-08-22 22:00:36,156 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=331168->330496 rss_anon_kib=323336->322664 threads=18 duration_ms=1749.4
+2026-08-22 22:00:36,654 INFO cron.scheduler: Running job 'Ringkasan Berita Pagi Mas Azza' (ID: 7c65859d777f)
+2026-08-22 22:00:36,656 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-22 22:00:36,756 INFO cron.scheduler: Job '7c65859d777f': loaded credential pool for provider opencode-zen with 1 entries
+2026-08-22 22:00:37,256 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=cron-parallel_0:140507564992192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-22 22:00:37,655 INFO [cron_7c65859d777f_20260822_220036] agent.turn_context: conversation turn: session=cron_7c65859d777f_20260822_220036 model=laguna-s-2.1-free provider=opencode-zen platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-08-22 22:00:37,697 INFO [cron_7c65859d777f_20260822_220036] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-58_0:140506951575232 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
