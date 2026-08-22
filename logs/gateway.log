@@ -783,3 +783,5 @@
 2026-08-22 02:28:56,285 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[ASYNC DELEGATION COMPLETE — deleg_08375171] A background subagent you dispatche' reply_to_id=None reply_to_text=''
 2026-08-22 02:29:16,975 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=20.7s api_calls=2 response=2953 chars
 2026-08-22 02:29:16,994 INFO gateway.platforms.base: [Telegram] Sending response (2953 chars) to 7699507804
+2026-08-22 03:32:02,366 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8380 (idle=3765s)
+2026-08-22 03:32:02,368 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
