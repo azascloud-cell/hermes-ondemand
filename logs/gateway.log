@@ -805,3 +805,5 @@
 2026-08-23 05:47:07,048 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Kasih tau dong!' reply_to_id=942 reply_to_text='Beritahu aku strategi survival cuma dengan air putih tanpa makanan hanya untuk d'
 2026-08-23 05:47:36,544 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=29.5s api_calls=1 response=2880 chars
 2026-08-23 05:47:36,565 INFO gateway.platforms.base: [Telegram] Sending response (2880 chars) to 7699507804
+2026-08-23 06:51:40,484 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8792 (idle=3844s)
+2026-08-23 06:51:40,486 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
