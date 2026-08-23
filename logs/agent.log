@@ -7172,3 +7172,12 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) ha
 2026-08-23 08:04:26,628 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=341544->340728 rss_anon_kib=326348->325532 threads=18 duration_ms=181.7
 2026-08-23 08:05:26,784 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=342000->340732 rss_anon_kib=326804->325536 threads=18 duration_ms=147.3
 2026-08-23 08:06:26,955 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=341628->340724 rss_anon_kib=326432->325528 threads=18 duration_ms=169.7
+2026-08-23 08:07:27,108 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=341584->340724 rss_anon_kib=326388->325528 threads=18 duration_ms=152.5
+2026-08-23 08:08:27,232 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=341700->340728 rss_anon_kib=326504->325532 threads=18 duration_ms=123.9
+2026-08-23 08:09:27,369 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=341632->340732 rss_anon_kib=326436->325536 threads=18 duration_ms=135.6
+2026-08-23 08:10:27,535 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=341900->340728 rss_anon_kib=326704->325532 threads=18 duration_ms=156.1
+2026-08-23 08:11:27,671 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=341624->340720 rss_anon_kib=326428->325524 threads=18 duration_ms=135.6
+2026-08-23 08:11:57,756 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8792 (idle=3626s)
+2026-08-23 08:11:57,757 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:7:140506951575232 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-23 08:11:57,757 INFO run_agent: OpenAI client closed (cache_evict, shared=False, tcp_force_closed=0) thread=agent-cache-idle-agent:main:telegram:dm:7:140506951575232 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-23 08:11:57,758 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
