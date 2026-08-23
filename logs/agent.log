@@ -7110,3 +7110,13 @@ openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) ha
 2026-08-23 07:09:01,565 INFO [20260823_054238_35ebf6e5] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260823_054238_35ebf6e5)
 2026-08-23 07:09:01,579 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-188 (<lambda>):140506951575232 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
 2026-08-23 07:09:13,540 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=342708->340760 rss_anon_kib=327512->325564 threads=21 duration_ms=1620.1
+2026-08-23 07:10:13,693 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=342436->340804 rss_anon_kib=327240->325608 threads=21 duration_ms=137.5
+2026-08-23 07:10:20,182 WARNING agent.chat_completion_helpers: Stream ended with no finish_reason after delivering text with no tool calls; treating as a mid-stream drop.
+2026-08-23 07:11:13,836 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=342748->340792 rss_anon_kib=327552->325596 threads=21 duration_ms=142.4
+2026-08-23 07:11:31,409 INFO [20260823_054238_35ebf6e5] agent.conversation_loop: API call #1: model=nemotron-3-ultra-free provider=opencode-zen in=22564 out=577 total=23141 latency=71.2s cache=12960/22564 (57%)
+2026-08-23 07:11:32,095 INFO [20260823_054238_35ebf6e5] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=2/500 budget=2/500 tool_turns=0 last_msg_role=assistant response_len=5283 session=20260823_054238_35ebf6e5
+2026-08-23 07:11:32,120 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=150.6s api_calls=2 response=5283 chars
+2026-08-23 07:11:32,143 INFO gateway.platforms.base: [Telegram] Sending response (5283 chars) to 7699507804
+2026-08-23 07:12:13,970 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=342776->340764 rss_anon_kib=327580->325568 threads=18 duration_ms=133.9
+2026-08-23 07:13:14,105 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=341584->340764 rss_anon_kib=326388->325568 threads=18 duration_ms=133.6
+2026-08-23 07:14:15,061 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=341672->340760 rss_anon_kib=326476->325564 threads=18 duration_ms=954.9
