@@ -787,3 +787,7 @@
 2026-08-22 03:32:02,368 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
 2026-08-22 17:00:01,468 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-23 01:00:01,475 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-23 05:42:38,764 INFO gateway.run: Invalidated run generation for agent:main:telegram:dm:7699507804:8792 → 1 (session_reset)
+2026-08-23 05:42:38,792 INFO gateway.platforms.base: [Telegram] Sending response (231 chars) to 7699507804
+2026-08-23 05:43:21,642 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
+2026-08-23 05:43:36,551 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
