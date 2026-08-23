@@ -6826,3 +6826,197 @@ RuntimeError: HTTP 500: Internal server error
 2026-08-23 05:43:21,642 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
 2026-08-23 05:43:36,551 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
 2026-08-23 05:43:56,539 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=340924->339728 rss_anon_kib=326116->324920 threads=18 duration_ms=135.0
+2026-08-23 05:44:56,697 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=340680->339704 rss_anon_kib=325872->324896 threads=18 duration_ms=143.6
+2026-08-23 05:45:22,470 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8792 (186 chars)
+2026-08-23 05:45:22,481 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Beritahu aku strategi survival cuma dengan air putih tanpa makanan hanya untuk d' reply_to_id=933 reply_to_text=''
+2026-08-23 05:45:22,531 INFO [20260820_040244_a288a94b] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-23 05:45:22,533 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-23 05:45:22,535 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-23 05:45:22,536 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-23 05:45:22,538 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-23 05:45:22,543 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-23 05:45:22,543 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-23 05:45:22,548 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-23 05:45:22,549 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-23 05:45:22,550 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-23 05:45:22,556 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 05:46:22.
+2026-08-23 05:45:22,559 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-23 05:45:22,559 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 05:46:22.
+2026-08-23 05:45:22,559 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-23 05:45:22,562 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 05:46:22.
+2026-08-23 05:45:22,565 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-23 05:45:22,565 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 05:46:22.
+2026-08-23 05:45:22,565 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-23 05:45:22,565 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-23 05:45:22,591 INFO [20260823_054238_35ebf6e5] agent.turn_context: conversation turn: session=20260823_054238_35ebf6e5 model=deepseek-v4-flash-free provider=opencode-zen platform=telegram history=0 msg='[Note: model was just switched from laguna-s-2.1-free to deepseek-v4-flash-free ...'
+2026-08-23 05:45:22,625 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider opencode-zen (deepseek-v4-flash-free)
+2026-08-23 05:45:22,626 INFO agent.auxiliary_client: Auxiliary title_generation: using opencode-zen (deepseek-v4-flash-free) at https://opencode.ai/zen/v1/
+2026-08-23 05:45:22,628 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-183 (<lambda>):140507548206784 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-23 05:45:23,329 WARNING agent.title_generator: Title generation failed: Error code: 400 - {'error': {'type': 'server_error', 'message': 'Error from provider (Console): Upstream request failed: Model is unavailable.'}}
+2026-08-23 05:45:23,641 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 400 - {'error': {'type': 'server_error', 'message': 'Error from provider (Console): Upstream request failed: Model is unavailable.'}}
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3993, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 478, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3930, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.BadRequestError: Error code: 400 - {'error': {'type': 'server_error', 'message': 'Error from provider (Console): Upstream request failed: Model is unavailable.'}}
+2026-08-23 05:45:23,671 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-183 (<lambda>):140507548206784 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free
+2026-08-23 05:45:23,672 WARNING [20260823_054238_35ebf6e5] agent.conversation_loop: API call failed (attempt 1/3) error_type=BadRequestError thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=deepseek-v4-flash-free summary=HTTP 400: Error from provider (Console): Upstream request failed: Model is unavailable.
+2026-08-23 05:45:23,751 ERROR [20260823_054238_35ebf6e5] agent.conversation_loop: Non-retryable client error: Error code: 400 - {'error': {'type': 'server_error', 'message': 'Error from provider (Console): Upstream request failed: Model is unavailable.'}}
+2026-08-23 05:45:23,779 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=1.3s api_calls=1 response=87 chars
+2026-08-23 05:45:23,781 INFO gateway.run: Transient agent failure in session 20260823_054238_35ebf6e5 — persisting user message so conversation context is preserved on retry.
+2026-08-23 05:45:23,807 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 7699507804
+2026-08-23 05:45:56,847 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=346920->341736 rss_anon_kib=331724->326540 threads=18 duration_ms=149.4
+2026-08-23 05:45:58,048 INFO run_agent: OpenAI client created (switch_model, shared=True) thread=MainThread:140508814255936 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-23 05:45:58,052 INFO agent.agent_runtime_helpers: switch_model: reasoning_config resolved for gemma4:31b: None
+2026-08-23 05:45:58,052 INFO agent.agent_runtime_helpers: Model switched in-place: deepseek-v4-flash-free (opencode-zen) -> gemma4:31b (ollama-cloud)
+2026-08-23 05:45:58,068 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-evict-agent:main:telegram:dm:7:140507573384896 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-23 05:46:05,372 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8792 (3 chars)
+2026-08-23 05:46:05,380 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='!!!' reply_to_id=942 reply_to_text='Beritahu aku strategi survival cuma dengan air putih tanpa makanan hanya untuk d'
+2026-08-23 05:46:05,426 INFO [20260821_155025_6209ccbe] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_1:140508056233664 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-23 05:46:05,433 INFO [20260823_054238_35ebf6e5] agent.turn_context: conversation turn: session=20260823_054238_35ebf6e5 model=gemma4:31b provider=ollama-cloud platform=telegram history=1 msg='[Note: model was just switched from deepseek-v4-flash-free to gemma4:31b via Oll...'
+2026-08-23 05:46:05,433 WARNING [20260823_054238_35ebf6e5] agent.conversation_loop: Stored system prompt for session 20260823_054238_35ebf6e5 is null; rebuilding from scratch this turn. Prefix cache will miss until the rebuild persists. Investigate the previous turn's update_system_prompt write path.
+2026-08-23 05:46:05,450 INFO [20260823_054238_35ebf6e5] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260823_054238_35ebf6e5)
+2026-08-23 05:46:05,723 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-184 (<lambda>):140507548206784 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-23 05:46:06,184 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: f5a8f34e-9105-4f32-8eb3-277a1223a82f)', 'type': 'api_error', 'param': None, 'code': None}}
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3993, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 478, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3930, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: f5a8f34e-9105-4f32-8eb3-277a1223a82f)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-23 05:46:06,195 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-184 (<lambda>):140507548206784 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-23 05:46:06,196 WARNING [20260823_054238_35ebf6e5] agent.conversation_loop: API call failed (attempt 1/3) error_type=RateLimitError thread=hermes-gateway_1:140508056233664 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b summary=HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: f5a8f34e-9105-4f32-8eb3-277a1223a82f)
+2026-08-23 05:46:06,197 WARNING [20260823_054238_35ebf6e5] agent.conversation_loop: Retrying API call in 2.344232806075488s (attempt 1/3) thread=hermes-gateway_1:140508056233664 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b policy=default error=Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: f5a8f34e-9105-4f32-8eb3-277a1223a82f)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-23 05:46:08,607 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-185 (<lambda>):140507548206784 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-23 05:46:09,132 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: ae18f023-413d-4f69-bacf-d6d96b0be073)', 'type': 'api_error', 'param': None, 'code': None}}
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3993, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 478, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3930, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: ae18f023-413d-4f69-bacf-d6d96b0be073)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-23 05:46:09,138 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-185 (<lambda>):140507548206784 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-23 05:46:09,147 INFO [20260823_054238_35ebf6e5] agent.credential_pool: credential pool: marking OLLAMA_API_KEY exhausted (status=429), rotating
+2026-08-23 05:46:09,148 INFO [20260823_054238_35ebf6e5] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-23 05:46:09,148 WARNING [20260823_054238_35ebf6e5] agent.conversation_loop: API call failed (attempt 2/3) error_type=RateLimitError thread=hermes-gateway_1:140508056233664 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b summary=HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: ae18f023-413d-4f69-bacf-d6d96b0be073)
+2026-08-23 05:46:09,149 WARNING [20260823_054238_35ebf6e5] agent.conversation_loop: Retrying API call in 5.197487305037541s (attempt 2/3) thread=hermes-gateway_1:140508056233664 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b policy=default error=Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: ae18f023-413d-4f69-bacf-d6d96b0be073)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-23 05:46:14,361 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-186 (<lambda>):140507548206784 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-23 05:46:15,569 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 88c28afd-7a58-4440-a62e-aa0ca7c5bf6e)', 'type': 'api_error', 'param': None, 'code': None}}
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3993, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 478, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3930, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 88c28afd-7a58-4440-a62e-aa0ca7c5bf6e)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-23 05:46:15,579 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-186 (<lambda>):140507548206784 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-23 05:46:15,579 INFO [20260823_054238_35ebf6e5] run_agent: Credential already exhausted (last_status=exhausted) — rotating immediately instead of retrying
+2026-08-23 05:46:15,585 INFO [20260823_054238_35ebf6e5] agent.credential_pool: credential pool: marking OLLAMA_API_KEY exhausted (status=429), rotating
+2026-08-23 05:46:15,585 WARNING [20260823_054238_35ebf6e5] agent.conversation_loop: API call failed (attempt 3/3) error_type=RateLimitError thread=hermes-gateway_1:140508056233664 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b summary=HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 88c28afd-7a58-4440-a62e-aa0ca7c5bf6e)
+2026-08-23 05:46:15,589 ERROR [20260823_054238_35ebf6e5] agent.conversation_loop: API call failed after 3 retries. HTTP 429: you (zarofyd) have reached your weekly usage limit, upgrade for higher limits: https://ollama.com/upgrade (ref: 88c28afd-7a58-4440-a62e-aa0ca7c5bf6e) | provider=ollama-cloud model=gemma4:31b msgs=2 tokens=~5,209
+2026-08-23 05:46:15,694 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=10.3s api_calls=1 response=192 chars
+2026-08-23 05:46:15,694 INFO gateway.run: Transient agent failure in session 20260823_054238_35ebf6e5 — persisting user message so conversation context is preserved on retry.
+2026-08-23 05:46:15,713 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 7699507804
+2026-08-23 05:46:56,140 INFO run_agent: OpenAI client created (switch_model, shared=True) thread=MainThread:140508814255936 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-23 05:46:56,143 INFO agent.agent_runtime_helpers: switch_model: reasoning_config resolved for nemotron-3-ultra-free: None
+2026-08-23 05:46:56,144 INFO agent.agent_runtime_helpers: Model switched in-place: gemma4:31b (ollama-cloud) -> nemotron-3-ultra-free (opencode-zen)
+2026-08-23 05:46:56,160 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-evict-agent:main:telegram:dm:7:140507573384896 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-23 05:46:56,985 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=345052->340660 rss_anon_kib=329856->325464 threads=18 duration_ms=137.0
+2026-08-23 05:47:07,040 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8792 (15 chars)
+2026-08-23 05:47:07,048 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Kasih tau dong!' reply_to_id=942 reply_to_text='Beritahu aku strategi survival cuma dengan air putih tanpa makanan hanya untuk d'
+2026-08-23 05:47:07,090 INFO [20260823_054238_35ebf6e5] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_1:140508056233664 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-23 05:47:07,097 INFO [20260823_054238_35ebf6e5] agent.turn_context: conversation turn: session=20260823_054238_35ebf6e5 model=nemotron-3-ultra-free provider=opencode-zen platform=telegram history=2 msg='[Note: model was just switched from gemma4:31b to nemotron-3-ultra-free via Open...'
+2026-08-23 05:47:07,097 WARNING [20260823_054238_35ebf6e5] agent.conversation_loop: Stored system prompt for session 20260823_054238_35ebf6e5 is null; rebuilding from scratch this turn. Prefix cache will miss until the rebuild persists. Investigate the previous turn's update_system_prompt write path.
+2026-08-23 05:47:07,110 INFO [20260823_054238_35ebf6e5] agent.conversation_loop: Repaired 2 message-alternation violations before request (session=20260823_054238_35ebf6e5)
+2026-08-23 05:47:07,121 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-187 (<lambda>):140507548206784 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-23 05:47:35,829 INFO [20260823_054238_35ebf6e5] agent.conversation_loop: API call #1: model=nemotron-3-ultra-free provider=opencode-zen in=20079 out=1169 total=21248 latency=28.7s
+2026-08-23 05:47:36,513 INFO [20260823_054238_35ebf6e5] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=nemotron-3-ultra-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=2880 session=20260823_054238_35ebf6e5
+2026-08-23 05:47:36,544 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=29.5s api_calls=1 response=2880 chars
+2026-08-23 05:47:36,565 INFO gateway.platforms.base: [Telegram] Sending response (2880 chars) to 7699507804
+2026-08-23 05:47:57,143 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=343456->341652 rss_anon_kib=328260->326456 threads=19 duration_ms=157.2
+2026-08-23 05:48:57,290 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=342088->341580 rss_anon_kib=326892->326384 threads=18 duration_ms=146.9
+2026-08-23 05:49:58,854 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=342460->341576 rss_anon_kib=327264->326380 threads=18 duration_ms=1298.5

@@ -306,7 +306,7 @@
     "session_key": "agent:main:telegram:dm:7699507804:8792",
     "session_id": "20260823_054238_35ebf6e5",
     "created_at": "2026-08-23T05:42:38.778407",
-    "updated_at": "2026-08-23T05:43:11.300915",
+    "updated_at": "2026-08-23T05:46:56.148375",
     "display_name": "Azaroni Fidaroin",
     "platform": "telegram",
     "chat_type": "dm",
@@ -332,7 +332,7 @@
     "reset_had_activity": false,
     "prev_session_id": null,
     "model_override": {
-      "model": "deepseek-v4-flash-free",
+      "model": "nemotron-3-ultra-free",
       "provider": "opencode-zen",
       "base_url": "https://opencode.ai/zen/v1"
     },

@@ -791,3 +791,17 @@
 2026-08-23 05:42:38,792 INFO gateway.platforms.base: [Telegram] Sending response (231 chars) to 7699507804
 2026-08-23 05:43:21,642 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
 2026-08-23 05:43:36,551 INFO gateway.platforms.base: [Telegram] Sending response (122 chars) to 7699507804
+2026-08-23 05:45:22,470 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8792 (186 chars)
+2026-08-23 05:45:22,481 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Beritahu aku strategi survival cuma dengan air putih tanpa makanan hanya untuk d' reply_to_id=933 reply_to_text=''
+2026-08-23 05:45:23,779 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=1.3s api_calls=1 response=87 chars
+2026-08-23 05:45:23,781 INFO gateway.run: Transient agent failure in session 20260823_054238_35ebf6e5 — persisting user message so conversation context is preserved on retry.
+2026-08-23 05:45:23,807 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 7699507804
+2026-08-23 05:46:05,372 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8792 (3 chars)
+2026-08-23 05:46:05,380 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='!!!' reply_to_id=942 reply_to_text='Beritahu aku strategi survival cuma dengan air putih tanpa makanan hanya untuk d'
+2026-08-23 05:46:15,694 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=10.3s api_calls=1 response=192 chars
+2026-08-23 05:46:15,694 INFO gateway.run: Transient agent failure in session 20260823_054238_35ebf6e5 — persisting user message so conversation context is preserved on retry.
+2026-08-23 05:46:15,713 INFO gateway.platforms.base: [Telegram] Sending response (84 chars) to 7699507804
+2026-08-23 05:47:07,040 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8792 (15 chars)
+2026-08-23 05:47:07,048 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Kasih tau dong!' reply_to_id=942 reply_to_text='Beritahu aku strategi survival cuma dengan air putih tanpa makanan hanya untuk d'
+2026-08-23 05:47:36,544 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=29.5s api_calls=1 response=2880 chars
+2026-08-23 05:47:36,565 INFO gateway.platforms.base: [Telegram] Sending response (2880 chars) to 7699507804
