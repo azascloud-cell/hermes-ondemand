@@ -807,3 +807,5 @@
 2026-08-23 05:47:36,565 INFO gateway.platforms.base: [Telegram] Sending response (2880 chars) to 7699507804
 2026-08-23 06:51:40,484 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8792 (idle=3844s)
 2026-08-23 06:51:40,486 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-23 07:09:01,481 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8792 (227 chars)
+2026-08-23 07:09:01,490 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Neng lidya,aku mau nanya!  Karakteristik cewek yang jatuh cinta tapi belum bisa ' reply_to_id=933 reply_to_text=''
