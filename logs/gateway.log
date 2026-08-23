@@ -813,3 +813,4 @@
 2026-08-23 07:11:32,143 INFO gateway.platforms.base: [Telegram] Sending response (5283 chars) to 7699507804
 2026-08-23 08:11:57,756 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8792 (idle=3626s)
 2026-08-23 08:11:57,758 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-23 17:00:01,071 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
