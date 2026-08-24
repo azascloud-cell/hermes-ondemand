@@ -9337,3 +9337,11 @@ RuntimeError: No LLM provider configured for task=vision provider=auto. Run: her
 2026-08-24 09:58:52,633 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359516->358668 rss_anon_kib=347904->347056 threads=19 duration_ms=140.2
 2026-08-24 09:59:52,792 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=360036->358652 rss_anon_kib=348424->347040 threads=19 duration_ms=147.7
 2026-08-24 10:00:54,457 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359528->358656 rss_anon_kib=347916->347044 threads=19 duration_ms=1602.0
+2026-08-24 10:01:54,618 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359492->358652 rss_anon_kib=347880->347040 threads=19 duration_ms=160.0
+2026-08-24 10:02:54,767 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359404->358652 rss_anon_kib=347792->347040 threads=19 duration_ms=148.6
+2026-08-24 10:03:54,933 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359560->358656 rss_anon_kib=347948->347044 threads=19 duration_ms=165.4
+2026-08-24 10:04:38,657 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-24 10:04:55,113 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359952->358656 rss_anon_kib=348340->347044 threads=19 duration_ms=165.4
+2026-08-24 10:05:08,712 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-24 10:05:08,943 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-24 10:05:55,283 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359528->358656 rss_anon_kib=347916->347044 threads=19 duration_ms=169.3
