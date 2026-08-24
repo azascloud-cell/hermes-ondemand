@@ -859,3 +859,20 @@
 2026-08-24 02:19:30,254 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=26.9s api_calls=2 response=576 chars
 2026-08-24 02:19:30,277 INFO gateway.platforms.base: [Telegram] Sending response (576 chars) to 7699507804
 2026-08-24 02:20:49,956 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_4bef247b8e94.jpg
+2026-08-24 02:20:50,758 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:7699507804:8845:photo-burst with 1 image(s)
+2026-08-24 02:20:50,766 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Aku mau kamu cari dan buat kata-kata pada gambar ini' reply_to_id=956 reply_to_text=''
+2026-08-24 02:20:50,791 INFO gateway.run: Image routing: text (mode=text). Pre-analyzing 1 image(s) via vision_analyze.
+2026-08-24 02:21:14,308 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=23.5s api_calls=4 response=770 chars
+2026-08-24 02:21:14,330 INFO gateway.platforms.base: [Telegram] Sending response (770 chars) to 7699507804
+2026-08-24 02:23:25,487 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8845 (257 chars)
+2026-08-24 02:23:25,494 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tuhanku Yang Maha romantis ketika langkahku menjauh darimu engkau diam-diam mena' reply_to_id=956 reply_to_text=''
+2026-08-24 02:23:36,762 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=11.3s api_calls=1 response=843 chars
+2026-08-24 02:23:36,783 INFO gateway.platforms.base: [Telegram] Sending response (843 chars) to 7699507804
+2026-08-24 02:24:49,873 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8845 (56 chars)
+2026-08-24 02:24:49,882 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Aku pilih opsi 2,topiknya beda-beda tiap sesi cronjobnya' reply_to_id=956 reply_to_text=''
+2026-08-24 02:25:01,045 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=11.2s api_calls=1 response=937 chars
+2026-08-24 02:25:01,062 INFO gateway.platforms.base: [Telegram] Sending response (937 chars) to 7699507804
+2026-08-24 02:25:34,552 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8845 (10 chars)
+2026-08-24 02:25:34,561 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bikin baru' reply_to_id=956 reply_to_text=''
+2026-08-24 02:25:44,766 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=10.2s api_calls=1 response=670 chars
+2026-08-24 02:25:44,786 INFO gateway.platforms.base: [Telegram] Sending response (670 chars) to 7699507804

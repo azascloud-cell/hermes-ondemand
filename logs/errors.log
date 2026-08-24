@@ -1060,3 +1060,23 @@ telegram.error.TimedOut: Timed out
 2026-08-24 02:00:05,138 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-24 02:01:07,611 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-24 02:01:08,116 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-24 02:20:50,818 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 02:21:50.
+2026-08-24 02:20:50,820 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-24 02:20:50,820 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 02:21:50.
+2026-08-24 02:20:50,820 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-24 02:20:50,820 ERROR tools.vision_tools: Error analyzing image: No LLM provider configured for task=vision provider=auto. Run: hermes setup
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/tools/vision_tools.py", line 1511, in vision_analyze_tool
+    response = await async_call_llm(**call_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/auxiliary_client.py", line 3270, in wrapped
+    return await callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/auxiliary_client.py", line 10120, in async_call_llm
+    return await _async_call_llm_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/auxiliary_client.py", line 10192, in _async_call_llm_impl
+    raise RuntimeError(
+RuntimeError: No LLM provider configured for task=vision provider=auto. Run: hermes setup
+2026-08-24 02:20:54,966 WARNING [20260824_021903_e45b09a3] agent.tool_executor: Tool read_file returned error (0.03s): {"error": "Cannot read binary file '/home/hermes/.hermes/cache/images/img_4bef247b8e94.jpg' (.jpg). Use vision_analyze for images, or terminal to inspect binary files."}
+2026-08-24 02:21:00,367 WARNING [20260824_021903_e45b09a3] agent.tool_executor: Tool execute_code returned error (1.26s): {"status": "error", "output": "\n--- stderr ---\nTraceback (most recent call last):\n  File \"/tmp/hermes_sandbox_2xmjxybc/script.py\", line 1, in <module>\n    from hermes_tools import vision_analyze
