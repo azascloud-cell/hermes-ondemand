@@ -10462,3 +10462,7 @@ telegram.error.TimedOut: Timed out
 2026-08-24 22:07:23,336 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-cleanup-7c65859d777f:140506951575232 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
 2026-08-24 22:07:23,336 INFO run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=1) thread=cron-cleanup-7c65859d777f:140506951575232 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
 2026-08-24 22:07:23,449 INFO hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=362608->358824 rss_anon_kib=350892->347108 threads=21 duration_ms=111.9
+2026-08-24 22:09:09,663 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=360068->357620 rss_anon_kib=348360->345912 threads=19 duration_ms=115.4
+2026-08-24 22:10:09,797 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=358504->357620 rss_anon_kib=346796->345912 threads=19 duration_ms=133.1
+2026-08-24 22:11:09,919 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=358460->357616 rss_anon_kib=346752->345908 threads=19 duration_ms=120.6
+2026-08-24 22:12:10,068 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=358932->357632 rss_anon_kib=347224->345924 threads=19 duration_ms=138.3
