@@ -9281,3 +9281,7 @@ RuntimeError: No LLM provider configured for task=vision provider=auto. Run: her
 2026-08-24 09:02:43,537 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359492->358644 rss_anon_kib=347880->347032 threads=19 duration_ms=182.0
 2026-08-24 09:03:43,715 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359420->358652 rss_anon_kib=347808->347040 threads=19 duration_ms=176.9
 2026-08-24 09:04:44,185 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=360020->358652 rss_anon_kib=348408->347040 threads=19 duration_ms=417.6
+2026-08-24 09:05:44,336 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359488->358652 rss_anon_kib=347876->347040 threads=19 duration_ms=149.4
+2026-08-24 09:06:44,482 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359528->358656 rss_anon_kib=347916->347044 threads=19 duration_ms=145.8
+2026-08-24 09:07:44,626 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359520->358660 rss_anon_kib=347908->347048 threads=19 duration_ms=143.0
+2026-08-24 09:08:44,777 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359516->358656 rss_anon_kib=347904->347044 threads=19 duration_ms=150.0
