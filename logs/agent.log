@@ -9524,3 +9524,9 @@ RuntimeError: No LLM provider configured for task=vision provider=auto. Run: her
 2026-08-24 12:40:25,955 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=360156->358840 rss_anon_kib=348544->347228 threads=19 duration_ms=126.0
 2026-08-24 12:41:26,085 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359736->358848 rss_anon_kib=348124->347236 threads=19 duration_ms=130.0
 2026-08-24 12:42:27,357 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359684->358856 rss_anon_kib=348072->347244 threads=19 duration_ms=1271.2
+2026-08-24 12:43:27,505 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359748->358856 rss_anon_kib=348136->347244 threads=19 duration_ms=146.7
+2026-08-24 12:44:03,956 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-24 12:44:04,324 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-24 12:44:27,646 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359644->358856 rss_anon_kib=348032->347244 threads=19 duration_ms=140.7
+2026-08-24 12:45:27,797 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=360040->358868 rss_anon_kib=348428->347256 threads=19 duration_ms=140.6
+2026-08-24 12:46:27,941 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359740->358856 rss_anon_kib=348128->347244 threads=19 duration_ms=144.0
