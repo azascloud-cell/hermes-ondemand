@@ -876,3 +876,20 @@
 2026-08-24 02:25:34,561 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bikin baru' reply_to_id=956 reply_to_text=''
 2026-08-24 02:25:44,766 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=10.2s api_calls=1 response=670 chars
 2026-08-24 02:25:44,786 INFO gateway.platforms.base: [Telegram] Sending response (670 chars) to 7699507804
+2026-08-24 02:28:02,497 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8845 (28 chars)
+2026-08-24 02:28:02,505 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Kirim ke grup -1004370127673' reply_to_id=956 reply_to_text=''
+2026-08-24 02:28:09,086 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=6.6s api_calls=1 response=404 chars
+2026-08-24 02:28:09,112 INFO gateway.platforms.base: [Telegram] Sending response (404 chars) to 7699507804
+2026-08-24 02:28:37,118 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8845 (28 chars)
+2026-08-24 02:28:37,126 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Aku setuju kok dengan jamnya' reply_to_id=956 reply_to_text=''
+2026-08-24 02:28:59,938 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=22.8s api_calls=2 response=621 chars
+2026-08-24 02:28:59,957 INFO gateway.platforms.base: [Telegram] Sending response (621 chars) to 7699507804
+2026-08-24 02:29:37,623 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-24 02:29:48,827 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8845 (84 chars)
+2026-08-24 02:29:48,835 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bukan aku kirim gambar,cukup kamu bikin quotes aja, ngapain repot-repot kirim ga' reply_to_id=956 reply_to_text=''
+2026-08-24 02:29:58,240 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.4s api_calls=1 response=823 chars
+2026-08-24 02:29:58,258 INFO gateway.platforms.base: [Telegram] Sending response (823 chars) to 7699507804
+2026-08-24 02:30:40,796 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8845 (1 chars)
+2026-08-24 02:30:40,803 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='2' reply_to_id=956 reply_to_text=''
+2026-08-24 02:31:06,657 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=25.9s api_calls=3 response=689 chars
+2026-08-24 02:31:06,761 INFO gateway.platforms.base: [Telegram] Sending response (689 chars) to 7699507804

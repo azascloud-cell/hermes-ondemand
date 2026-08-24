@@ -49,7 +49,56 @@
       "enabled_toolsets": null,
       "workdir": null,
       "fire_claim": null
+    },
+    {
+      "id": "11dcab23dd71",
+      "name": "Kamu adalah Neng Lidya, asisten pribadi AI digital",
+      "prompt": "Kamu adalah Neng Lidya, asisten pribadi AI digital untuk Mas Azza. Tugasmu setiap 6 jam: kirimkan satu quote puitis pendek (maksimal 3 baris, tanpa gambar, tidak perlu tanya balik). Topik bisa bervariasi secara acak tiap sesi: cinta, rindu, refleksi hidup, motivasi, spiritual, alam, atau filsafati. Pastikan gaya bahasanya empatik, halus, puitis — sesuai selera Mas Azza yang suka nuansa dalam tapi tetap ringan. Jangan lupa akhiri biasanya dengan sedikit emoticon yang lembut.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "opencode-zen",
+      "model_snapshot": "laguna-s-2.1-free",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */6 * * *",
+        "display": "0 */6 * * *"
+      },
+      "schedule_display": "0 */6 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 0
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-24T02:30:58.792186+00:00",
+      "next_run_at": "2026-08-24T06:00:00+00:00",
+      "last_run_at": null,
+      "last_status": null,
+      "last_error": null,
+      "last_delivery_error": null,
+      "failure_streak": 0,
+      "deliver": "telegram:-1004370127673",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "7699507804",
+        "chat_name": "Azaroni Fidaroin",
+        "thread_id": "8845",
+        "user_id": "7699507804"
+      },
+      "enabled_toolsets": null,
+      "workdir": null
     }
   ],
-  "updated_at": "2026-08-23T22:04:00.928745+00:00"
+  "updated_at": "2026-08-24T02:30:58.800318+00:00"
 }
