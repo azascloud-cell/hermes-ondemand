@@ -10426,3 +10426,39 @@ telegram.error.TimedOut: Timed out
 2026-08-24 22:02:16,866 INFO tools.web_tools: https://www.bbc.com/indonesia/articles/ce85mmz83qjo (247 chars, whole)
 2026-08-24 22:02:16,866 INFO tools.web_tools: https://news.detik.com/berita/d-8630909/polisi-terluka-saat-penggerebekan-pabrik-duit-palsu-di-tangsel (2948 chars, whole)
 2026-08-24 22:02:16,868 INFO agent.tool_executor: tool web_extract completed (19.95s, 11975 chars)
+2026-08-24 22:02:49,985 INFO [cron_7c65859d777f_20260824_220020] agent.conversation_loop: API call #6: model=laguna-s-2.1-free provider=opencode-zen in=79828 out=1599 total=81427 latency=33.1s cache=61888/79828 (78%)
+2026-08-24 22:02:49,999 INFO tools.web_tools: Extracting content from 3 URL(s)
+2026-08-24 22:02:50,021 INFO tools.web_tools: Web extract via parallel: 3 URL(s)
+2026-08-24 22:02:50,022 INFO plugins.web.parallel.provider: Parallel keyless extract: 3 URL(s)
+2026-08-24 22:03:02,620 INFO tools.web_tools: Extracted content from 3 pages
+2026-08-24 22:03:02,621 INFO tools.web_tools: https://www.beritasatu.com/nasional/2919036/mahasiswa-tewas-di-yogya-dpr-ingatkan-polisi-demo-bukan-perang (13922 chars, whole)
+2026-08-24 22:03:02,621 INFO tools.web_tools: https://www.beritasatu.com/nasional/2919029/ini-daftar-penumpang-helikopter-estindo-air-yang-hilang-kontak (91 chars, whole)
+2026-08-24 22:03:02,621 INFO tools.web_tools: https://www.bbc.com/indonesia/articles/ce85mmz83qjo (374 chars, whole)
+2026-08-24 22:03:02,623 INFO [cron_7c65859d777f_20260824_220020] agent.tool_executor: tool web_extract completed (12.63s, 15318 chars)
+2026-08-24 22:03:09,031 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=365292->361788 rss_anon_kib=353576->350072 threads=24 duration_ms=121.2
+2026-08-24 22:04:09,140 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=362712->361768 rss_anon_kib=350996->350052 threads=23 duration_ms=108.5
+2026-08-24 22:04:33,917 INFO [cron_7c65859d777f_20260824_220020] agent.conversation_loop: API call #7: model=laguna-s-2.1-free provider=opencode-zen in=87360 out=4358 total=91718 latency=91.3s cache=61888/87360 (71%)
+2026-08-24 22:04:33,930 INFO tools.web_tools: Extracting content from 3 URL(s)
+2026-08-24 22:04:34,003 INFO tools.web_tools: Web extract via parallel: 3 URL(s)
+2026-08-24 22:04:34,004 INFO plugins.web.parallel.provider: Parallel keyless extract: 3 URL(s)
+2026-08-24 22:04:43,661 INFO tools.web_tools: Extracted content from 3 pages
+2026-08-24 22:04:43,662 INFO tools.web_tools: https://www.beritasatu.com/nasional/3021648/sekolah-terdampak-gempa-ntt-jadi-prioritas-bantuan-rp-860-juta-cair (6373 chars, whole)
+2026-08-24 22:04:43,662 INFO tools.web_tools: https://www.beritasatu.com/nasional/3021652/amnesty-soroti-krisis-kesehatan-akibat-karhutla-sumatera-kalimantan (6353 chars, whole)
+2026-08-24 22:04:43,662 INFO tools.web_tools: https://nasional.kompas.com/read/2026/08/24/21220791/prananda-prabowo-serahkan-rp-545-juta-untuk-korban-gempa-ntt-dari-soekarno (6389 chars, whole)
+2026-08-24 22:04:43,665 INFO [cron_7c65859d777f_20260824_220020] agent.tool_executor: tool web_extract completed (9.74s, 20270 chars)
+2026-08-24 22:05:09,270 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=364564->361572 rss_anon_kib=352848->349856 threads=23 duration_ms=129.3
+2026-08-24 22:06:09,404 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=362488->361592 rss_anon_kib=350772->349876 threads=23 duration_ms=133.7
+2026-08-24 22:06:12,404 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
+2026-08-24 22:06:31,467 INFO [cron_7c65859d777f_20260824_220020] agent.conversation_loop: API call #8: model=laguna-s-2.1-free provider=opencode-zen in=100152 out=5571 total=105723 latency=107.8s cache=91712/100152 (92%)
+2026-08-24 22:06:32,088 INFO [cron_7c65859d777f_20260824_220020] agent.tool_executor: tool todo completed (0.00s, 505 chars)
+2026-08-24 22:06:43,953 INFO [cron_7c65859d777f_20260824_220020] agent.conversation_loop: API call #9: model=laguna-s-2.1-free provider=opencode-zen in=105907 out=415 total=106322 latency=11.9s cache=105696/105907 (100%)
+2026-08-24 22:06:43,966 INFO [cron_7c65859d777f_20260824_220020] agent.tool_executor: tool todo completed (0.00s, 503 chars)
+2026-08-24 22:07:09,547 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=364664->361432 rss_anon_kib=352948->349716 threads=24 duration_ms=125.7
+2026-08-24 22:07:21,153 INFO [cron_7c65859d777f_20260824_220020] agent.conversation_loop: API call #10: model=laguna-s-2.1-free provider=opencode-zen in=106505 out=1553 total=108058 latency=37.2s cache=106304/106505 (100%)
+2026-08-24 22:07:21,170 INFO [cron_7c65859d777f_20260824_220020] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=10/500 budget=10/500 tool_turns=9 last_msg_role=assistant response_len=3944 session=cron_7c65859d777f_20260824_220020
+2026-08-24 22:07:21,176 INFO cron.scheduler: Job 'Ringkasan Berita Pagi Mas Azza' completed successfully
+2026-08-24 22:07:22,073 INFO gateway.delivery: Cron output preserved for chunking adapter (4137 chars) — full output saved to /home/hermes/.hermes/cron/output/7c65859d777f_20260824_220722.txt
+2026-08-24 22:07:23,333 INFO cron.scheduler: Job '7c65859d777f': delivered to telegram:7699507804 via live adapter
+2026-08-24 22:07:23,336 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-cleanup-7c65859d777f:140506951575232 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-24 22:07:23,336 INFO run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=1) thread=cron-cleanup-7c65859d777f:140506951575232 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-24 22:07:23,449 INFO hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=362608->358824 rss_anon_kib=350892->347108 threads=21 duration_ms=111.9
