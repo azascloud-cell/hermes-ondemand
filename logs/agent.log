@@ -9460,3 +9460,21 @@ RuntimeError: No LLM provider configured for task=vision provider=auto. Run: her
 2026-08-24 11:53:17,168 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359620->358708 rss_anon_kib=348008->347096 threads=19 duration_ms=152.9
 2026-08-24 11:54:17,313 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359576->358704 rss_anon_kib=347964->347092 threads=19 duration_ms=144.6
 2026-08-24 11:55:17,462 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359976->358700 rss_anon_kib=348364->347088 threads=19 duration_ms=137.6
+2026-08-24 11:56:17,637 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359580->358704 rss_anon_kib=347968->347092 threads=19 duration_ms=173.7
+2026-08-24 11:57:17,778 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359584->358708 rss_anon_kib=347972->347096 threads=19 duration_ms=140.1
+2026-08-24 11:58:17,938 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359576->358704 rss_anon_kib=347964->347092 threads=19 duration_ms=159.9
+2026-08-24 11:59:18,111 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359576->358696 rss_anon_kib=347964->347084 threads=19 duration_ms=171.6
+2026-08-24 12:00:09,790 INFO cron.scheduler: Running job 'Kamu adalah Neng Lidya, asisten pribadi AI digital' (ID: 11dcab23dd71)
+2026-08-24 12:00:09,790 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-24 12:00:09,808 INFO cron.scheduler: Job '11dcab23dd71': loaded credential pool for provider opencode-zen with 1 entries
+2026-08-24 12:00:09,842 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=cron-parallel_0:140507564992192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-24 12:00:09,849 INFO [cron_11dcab23dd71_20260824_120009] agent.turn_context: conversation turn: session=cron_11dcab23dd71_20260824_120009 model=laguna-s-2.1-free provider=opencode-zen platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-08-24 12:00:09,882 INFO [cron_11dcab23dd71_20260824_120009] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-86_0:140507548206784 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-24 12:00:16,658 INFO [cron_11dcab23dd71_20260824_120009] agent.conversation_loop: API call #1: model=laguna-s-2.1-free provider=opencode-zen in=13825 out=211 total=14036 latency=6.8s cache=480/13825 (3%)
+2026-08-24 12:00:17,283 INFO [cron_11dcab23dd71_20260824_120009] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=240 session=cron_11dcab23dd71_20260824_120009
+2026-08-24 12:00:17,290 INFO cron.scheduler: Job 'Kamu adalah Neng Lidya, asisten pribadi AI digital' completed successfully
+2026-08-24 12:00:17,328 WARNING cron.scheduler: Job '11dcab23dd71': origin has thread_id=8845 but delivery target lost it (deliver=telegram:-1004370127673, target={'platform': 'telegram', 'chat_id': '-1004370127673', 'thread_id': None})
+2026-08-24 12:00:18,319 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363480->360248 rss_anon_kib=351868->348636 threads=20 duration_ms=197.5
+2026-08-24 12:00:18,423 INFO cron.scheduler: Job '11dcab23dd71': delivered to telegram:-1004370127673 via live adapter
+2026-08-24 12:00:18,425 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-cleanup-11dcab23dd71:140507548206784 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-24 12:00:18,426 INFO run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=1) thread=cron-cleanup-11dcab23dd71:140507548206784 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
