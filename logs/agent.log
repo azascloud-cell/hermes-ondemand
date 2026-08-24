@@ -10361,3 +10361,68 @@ telegram.error.TimedOut: Timed out
 2026-08-24 21:55:07,940 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359644->358768 rss_anon_kib=348072->347196 threads=19 duration_ms=137.7
 2026-08-24 21:56:08,084 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359600->358772 rss_anon_kib=348028->347200 threads=19 duration_ms=144.0
 2026-08-24 21:57:08,219 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=360088->358792 rss_anon_kib=348516->347220 threads=19 duration_ms=124.7
+2026-08-24 21:58:08,332 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359652->358780 rss_anon_kib=348080->347208 threads=19 duration_ms=112.5
+2026-08-24 21:59:08,476 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359592->358772 rss_anon_kib=348020->347200 threads=19 duration_ms=142.9
+2026-08-24 22:00:08,628 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359644->358772 rss_anon_kib=348072->347200 threads=19 duration_ms=151.6
+2026-08-24 22:00:20,233 INFO cron.scheduler: Running job 'Ringkasan Berita Pagi Mas Azza' (ID: 7c65859d777f)
+2026-08-24 22:00:20,233 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-24 22:00:20,243 INFO cron.scheduler: Job '7c65859d777f': loaded credential pool for provider opencode-zen with 1 entries
+2026-08-24 22:00:20,268 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=cron-parallel_0:140507564992192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-24 22:00:20,273 INFO [cron_7c65859d777f_20260824_220020] agent.turn_context: conversation turn: session=cron_7c65859d777f_20260824_220020 model=laguna-s-2.1-free provider=opencode-zen platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-08-24 22:00:20,297 INFO [cron_7c65859d777f_20260824_220020] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-90_0:140506951575232 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-24 22:00:30,567 INFO [cron_7c65859d777f_20260824_220020] agent.conversation_loop: API call #1: model=laguna-s-2.1-free provider=opencode-zen in=14191 out=343 total=14534 latency=10.3s cache=960/14191 (7%)
+2026-08-24 22:00:31,183 INFO [cron_7c65859d777f_20260824_220020] agent.tool_executor: tool todo completed (0.00s, 499 chars)
+2026-08-24 22:00:38,512 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-24 22:00:39,583 INFO [cron_7c65859d777f_20260824_220020] agent.conversation_loop: API call #2: model=laguna-s-2.1-free provider=opencode-zen in=14718 out=267 total=14985 latency=8.4s cache=480/14718 (3%)
+2026-08-24 22:00:39,594 INFO tools.terminal_tool: Creating new local environment for task default...
+2026-08-24 22:00:39,621 INFO tools.environments.base: Session snapshot created (session=43f63fa4c2fe, cwd=/home/hermes)
+2026-08-24 22:00:39,621 INFO tools.terminal_tool: local environment ready for task default
+2026-08-24 22:00:39,863 INFO [cron_7c65859d777f_20260824_220020] agent.tool_executor: tool terminal completed (0.27s, 112 chars)
+2026-08-24 22:00:39,897 INFO tools.web_tools: Web search via parallel: 'berita terbaru hari ini site:detik.com' (limit: 6)
+2026-08-24 22:00:39,898 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru hari ini site:detik.com' (limit=6)
+2026-08-24 22:00:39,904 INFO tools.web_tools: Web search via parallel: 'berita terkini site:kompas.com' (limit: 6)
+2026-08-24 22:00:39,906 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terkini site:kompas.com' (limit=6)
+2026-08-24 22:00:39,910 INFO tools.web_tools: Web search via parallel: 'berita hari ini site:bbc.com/indonesia' (limit: 6)
+2026-08-24 22:00:39,913 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita hari ini site:bbc.com/indonesia' (limit=6)
+2026-08-24 22:00:39,917 INFO tools.web_tools: Web search via parallel: 'berita terbaru hari ini site:liputan6.com' (limit: 6)
+2026-08-24 22:00:39,919 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru hari ini site:liputan6.com' (limit=6)
+2026-08-24 22:00:41,254 INFO agent.tool_executor: tool web_search completed (1.39s, 11197 chars)
+2026-08-24 22:00:41,289 INFO agent.tool_executor: tool web_search completed (1.42s, 13907 chars)
+2026-08-24 22:00:41,343 INFO agent.tool_executor: tool web_search completed (1.48s, 16210 chars)
+2026-08-24 22:00:41,508 INFO agent.tool_executor: tool web_search completed (1.64s, 17811 chars)
+2026-08-24 22:00:56,833 INFO [cron_7c65859d777f_20260824_220020] agent.conversation_loop: API call #3: model=laguna-s-2.1-free provider=opencode-zen in=38018 out=719 total=38737 latency=15.3s cache=928/38018 (2%)
+2026-08-24 22:00:56,845 INFO [cron_7c65859d777f_20260824_220020] agent.tool_executor: tool todo completed (0.00s, 501 chars)
+2026-08-24 22:01:06,665 INFO [cron_7c65859d777f_20260824_220020] agent.conversation_loop: API call #4: model=laguna-s-2.1-free provider=opencode-zen in=38921 out=419 total=39340 latency=9.8s cache=928/38921 (2%)
+2026-08-24 22:01:06,723 INFO tools.web_tools: Web search via parallel: 'berita hari ini politik site:kompas.com/news' (limit: 5)
+2026-08-24 22:01:06,726 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita hari ini politik site:kompas.com/news' (limit=5)
+2026-08-24 22:01:06,727 INFO tools.web_tools: Web search via parallel: 'hari ini site:liputan6.com/news' (limit: 5)
+2026-08-24 22:01:06,729 INFO tools.web_tools: Web search via parallel: 'Rektor Unsoed OTT KPK site:kompas.com' (limit: 5)
+2026-08-24 22:01:06,731 INFO tools.web_tools: Web search via parallel: 'berita terbaru site:detik.com/indonesia' (limit: 5)
+2026-08-24 22:01:06,735 INFO plugins.web.parallel.provider: Parallel keyless search: 'Rektor Unsoed OTT KPK site:kompas.com' (limit=5)
+2026-08-24 22:01:06,739 INFO plugins.web.parallel.provider: Parallel keyless search: 'hari ini site:liputan6.com/news' (limit=5)
+2026-08-24 22:01:06,740 INFO tools.web_tools: Web search via parallel: 'gempa Flores NTT 100 korban site:bbc.com/indonesia' (limit: 5)
+2026-08-24 22:01:06,741 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru site:detik.com/indonesia' (limit=5)
+2026-08-24 22:01:06,745 INFO plugins.web.parallel.provider: Parallel keyless search: 'gempa Flores NTT 100 korban site:bbc.com/indonesia' (limit=5)
+2026-08-24 22:01:08,134 INFO agent.tool_executor: tool web_search completed (1.46s, 2443 chars)
+2026-08-24 22:01:08,193 INFO agent.tool_executor: tool web_search completed (1.52s, 4926 chars)
+2026-08-24 22:01:08,239 INFO agent.tool_executor: tool web_search completed (1.56s, 4059 chars)
+2026-08-24 22:01:08,272 INFO agent.tool_executor: tool web_search completed (1.60s, 22047 chars)
+2026-08-24 22:01:08,766 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=367444->364788 rss_anon_kib=355728->353072 threads=28 duration_ms=137.3
+2026-08-24 22:01:08,767 INFO agent.tool_executor: tool web_search completed (2.09s, 17471 chars)
+2026-08-24 22:01:56,910 INFO [cron_7c65859d777f_20260824_220020] agent.conversation_loop: API call #5: model=laguna-s-2.1-free provider=opencode-zen in=59585 out=2333 total=61918 latency=48.1s cache=14784/59585 (25%)
+2026-08-24 22:01:56,925 INFO tools.web_tools: Extracting content from 4 URL(s)
+2026-08-24 22:01:56,940 INFO tools.web_tools: Web search via parallel: 'berita terbaru hari ini site:beritasatu.com' (limit: 5)
+2026-08-24 22:01:56,941 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru hari ini site:beritasatu.com' (limit=5)
+2026-08-24 22:01:56,948 INFO tools.web_tools: Web search via parallel: 'liputan6 Prabowo gempa NTT 2026' (limit: 5)
+2026-08-24 22:01:56,950 INFO plugins.web.parallel.provider: Parallel keyless search: 'liputan6 Prabowo gempa NTT 2026' (limit=5)
+2026-08-24 22:01:56,958 INFO tools.web_tools: Web extract via parallel: 4 URL(s)
+2026-08-24 22:01:56,961 INFO plugins.web.parallel.provider: Parallel keyless extract: 4 URL(s)
+2026-08-24 22:01:58,267 INFO agent.tool_executor: tool web_search completed (1.34s, 19724 chars)
+2026-08-24 22:01:58,929 INFO agent.tool_executor: tool web_search completed (2.01s, 11615 chars)
+2026-08-24 22:02:08,909 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=367892->363984 rss_anon_kib=356176->352268 threads=28 duration_ms=123.8
+2026-08-24 22:02:16,864 INFO tools.web_tools: Extracted content from 4 pages
+2026-08-24 22:02:16,866 INFO tools.web_tools: https://nasional.kompas.com/read/2026/08/21/08353071/breaking-news-ott-kpk-tangkap-rektor-unsoed-akhmad-sodiq (5216 chars, whole)
+2026-08-24 22:02:16,866 INFO tools.web_tools: https://news.detik.com/berita/d-8630815/prabowo-hadiri-pernikahan-sesprinya-rizky-irmansyah-di-jcc (2371 chars, whole)
+2026-08-24 22:02:16,866 INFO tools.web_tools: https://www.bbc.com/indonesia/articles/ce85mmz83qjo (247 chars, whole)
+2026-08-24 22:02:16,866 INFO tools.web_tools: https://news.detik.com/berita/d-8630909/polisi-terluka-saat-penggerebekan-pabrik-duit-palsu-di-tangsel (2948 chars, whole)
+2026-08-24 22:02:16,868 INFO agent.tool_executor: tool web_extract completed (19.95s, 11975 chars)
