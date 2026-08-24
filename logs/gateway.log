@@ -899,3 +899,5 @@
 2026-08-24 02:31:54,335 INFO gateway.run: Queued follow-up for session agent:main:telegram:dm:7699507804:8845: final stream delivery not confirmed; sending first response before continuing.
 2026-08-24 02:32:02,043 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=23.9s api_calls=1 response=564 chars
 2026-08-24 02:32:02,062 INFO gateway.platforms.base: [Telegram] Sending response (564 chars) to 7699507804
+2026-08-24 02:39:53,201 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-24 02:41:20,855 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
