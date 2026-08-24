@@ -854,3 +854,8 @@
 2026-08-24 02:00:05,138 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-24 02:01:07,611 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-24 02:01:08,116 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-24 02:19:03,289 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8845 (46 chars)
+2026-08-24 02:19:03,305 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Apa kamu bisa buat kata-kata tiap 6 jam sekali' reply_to_id=956 reply_to_text=''
+2026-08-24 02:19:30,254 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=26.9s api_calls=2 response=576 chars
+2026-08-24 02:19:30,277 INFO gateway.platforms.base: [Telegram] Sending response (576 chars) to 7699507804
+2026-08-24 02:20:49,956 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_4bef247b8e94.jpg
