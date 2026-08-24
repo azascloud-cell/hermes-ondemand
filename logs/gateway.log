@@ -893,3 +893,9 @@
 2026-08-24 02:30:40,803 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='2' reply_to_id=956 reply_to_text=''
 2026-08-24 02:31:06,657 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=25.9s api_calls=3 response=689 chars
 2026-08-24 02:31:06,761 INFO gateway.platforms.base: [Telegram] Sending response (689 chars) to 7699507804
+2026-08-24 02:31:38,117 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8845 (14 chars)
+2026-08-24 02:31:38,123 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tes coba kirim' reply_to_id=956 reply_to_text=''
+2026-08-24 02:31:51,420 INFO gateway.run: Watch pattern notification — injecting for telegram chat=7699507804 thread=8845
+2026-08-24 02:31:54,335 INFO gateway.run: Queued follow-up for session agent:main:telegram:dm:7699507804:8845: final stream delivery not confirmed; sending first response before continuing.
+2026-08-24 02:32:02,043 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=23.9s api_calls=1 response=564 chars
+2026-08-24 02:32:02,062 INFO gateway.platforms.base: [Telegram] Sending response (564 chars) to 7699507804
