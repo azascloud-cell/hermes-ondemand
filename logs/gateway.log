@@ -844,3 +844,7 @@
 2026-08-24 01:13:55,005 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 4/10), reconnecting in 40s. Error: Timed out
 2026-08-24 01:14:35,507 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 4); health pending getUpdates progress
 2026-08-24 01:31:35,298 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-24 01:33:38,365 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: Bad Gateway
+2026-08-24 01:33:38,366 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: Bad Gateway
+2026-08-24 01:33:58,368 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] updater.stop() timed out during network-error reconnect (likely CLOSE-WAIT socket); forcing drain and restart without clean stop
+2026-08-24 01:34:08,360 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress

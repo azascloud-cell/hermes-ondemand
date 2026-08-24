@@ -8618,3 +8618,13 @@ telegram.error.TimedOut: Timed out
 2026-08-24 01:31:22,013 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359100->358248 rss_anon_kib=349052->348200 threads=18 duration_ms=115.9
 2026-08-24 01:31:35,298 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-24 01:32:22,154 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359076->358244 rss_anon_kib=349028->348196 threads=18 duration_ms=139.8
+2026-08-24 01:33:22,302 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359468->358248 rss_anon_kib=349420->348200 threads=18 duration_ms=122.2
+2026-08-24 01:33:38,365 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network _redact_telegram_error_text(error), scheduling reconnect: Bad Gateway
+2026-08-24 01:33:38,366 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 1/10), reconnecting in 5s. Error: Bad Gateway
+2026-08-24 01:33:58,368 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] updater.stop() timed out during network-error reconnect (likely CLOSE-WAIT socket); forcing drain and restart without clean stop
+2026-08-24 01:34:08,360 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 1); health pending getUpdates progress
+2026-08-24 01:34:22,430 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359120->358212 rss_anon_kib=349072->348164 threads=18 duration_ms=127.5
+2026-08-24 01:35:22,550 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359040->358216 rss_anon_kib=348992->348168 threads=18 duration_ms=119.7
+2026-08-24 01:36:22,701 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=358916->358208 rss_anon_kib=348868->348160 threads=18 duration_ms=149.6
+2026-08-24 01:37:22,821 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359068->358216 rss_anon_kib=349020->348168 threads=18 duration_ms=119.8
+2026-08-24 01:38:23,166 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359408->358212 rss_anon_kib=349360->348164 threads=18 duration_ms=290.1
