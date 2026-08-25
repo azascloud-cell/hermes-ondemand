@@ -1083,3 +1083,6 @@
 2026-08-25 11:19:59,251 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=59.7s api_calls=3 response=1085 chars
 2026-08-25 11:19:59,272 INFO gateway.platforms.base: [Telegram] Sending response (1085 chars) to 7699507804
 2026-08-25 11:50:58,921 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-25 12:02:06,497 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-25 12:02:06,856 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-25 12:04:54,725 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
