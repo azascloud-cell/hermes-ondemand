@@ -12093,3 +12093,8 @@ openai.InternalServerError: Error code: 503 - {'error': {'type': 'server_error',
 2026-08-25 21:37:17,740 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=356756->356012 rss_anon_kib=347008->346264 threads=19 duration_ms=118.0
 2026-08-25 21:38:17,858 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=356752->355876 rss_anon_kib=347004->346128 threads=19 duration_ms=118.0
 2026-08-25 21:39:19,265 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=356716->355880 rss_anon_kib=346968->346132 threads=19 duration_ms=1405.9
+2026-08-25 21:40:19,394 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=356776->355872 rss_anon_kib=347028->346124 threads=19 duration_ms=128.6
+2026-08-25 21:41:19,522 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=357320->355920 rss_anon_kib=347572->346172 threads=19 duration_ms=117.5
+2026-08-25 21:42:19,639 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=356720->356040 rss_anon_kib=346972->346260 threads=19 duration_ms=116.7
+2026-08-25 21:43:19,755 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=356756->356000 rss_anon_kib=347008->346252 threads=19 duration_ms=115.6
+2026-08-25 21:44:19,874 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=356744->355964 rss_anon_kib=346996->346216 threads=19 duration_ms=117.7
