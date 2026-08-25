@@ -12108,3 +12108,34 @@ openai.InternalServerError: Error code: 503 - {'error': {'type': 'server_error',
 2026-08-25 21:52:20,925 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=356732->355900 rss_anon_kib=346984->346152 threads=19 duration_ms=112.1
 2026-08-25 21:53:21,048 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=356732->355852 rss_anon_kib=346984->346104 threads=19 duration_ms=122.6
 2026-08-25 21:54:21,190 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=356692->355852 rss_anon_kib=346944->346104 threads=19 duration_ms=141.5
+2026-08-25 21:55:21,304 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=356752->355848 rss_anon_kib=347004->346100 threads=19 duration_ms=113.2
+2026-08-25 21:56:21,439 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=357300->355984 rss_anon_kib=347552->346236 threads=19 duration_ms=124.3
+2026-08-25 21:57:21,555 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=356700->355848 rss_anon_kib=346952->346100 threads=19 duration_ms=114.7
+2026-08-25 21:58:21,662 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=356732->356008 rss_anon_kib=346984->346228 threads=19 duration_ms=107.0
+2026-08-25 21:59:21,774 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=356728->356012 rss_anon_kib=346980->346232 threads=19 duration_ms=111.2
+2026-08-25 21:59:57,219 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-25 22:00:05,929 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-25 22:00:06,188 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-25 22:00:16,560 INFO cron.scheduler: Running job 'Ringkasan Berita Pagi Mas Azza' (ID: 7c65859d777f)
+2026-08-25 22:00:16,561 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-25 22:00:16,572 INFO cron.scheduler: Job '7c65859d777f': loaded credential pool for provider opencode-zen with 1 entries
+2026-08-25 22:00:16,599 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=cron-parallel_0:140507564992192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-25 22:00:16,604 INFO [cron_7c65859d777f_20260825_220016] agent.turn_context: conversation turn: session=cron_7c65859d777f_20260825_220016 model=laguna-s-2.1-free provider=opencode-zen platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-08-25 22:00:16,650 INFO [cron_7c65859d777f_20260825_220016] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-114_0:140506934789824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-25 22:00:23,664 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359376->358212 rss_anon_kib=349628->348464 threads=23 duration_ms=1823.1
+2026-08-25 22:00:25,558 INFO [cron_7c65859d777f_20260825_220016] agent.conversation_loop: API call #1: model=laguna-s-2.1-free provider=opencode-zen in=14191 out=323 total=14514 latency=8.9s cache=928/14191 (7%)
+2026-08-25 22:00:26,565 INFO tools.web_tools: Web search via parallel: 'berita hari ini site:bbc.com/indonesia' (limit: 8)
+2026-08-25 22:00:26,567 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita hari ini site:bbc.com/indonesia' (limit=8)
+2026-08-25 22:00:26,578 INFO tools.web_tools: Web search via parallel: 'berita terbaru hari ini site:kompas.com' (limit: 8)
+2026-08-25 22:00:26,587 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru hari ini site:kompas.com' (limit=8)
+2026-08-25 22:00:26,659 INFO tools.web_tools: Web search via parallel: 'berita terbaru site:liputan6.com' (limit: 8)
+2026-08-25 22:00:26,660 INFO tools.web_tools: Web search via parallel: 'berita hari ini site:beritasatu.com' (limit: 8)
+2026-08-25 22:00:26,664 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru site:liputan6.com' (limit=8)
+2026-08-25 22:00:26,665 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita hari ini site:beritasatu.com' (limit=8)
+2026-08-25 22:00:26,670 INFO tools.web_tools: Web search via parallel: 'berita terkini site:detik.com' (limit: 8)
+2026-08-25 22:00:26,672 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terkini site:detik.com' (limit=8)
+2026-08-25 22:00:28,054 INFO agent.tool_executor: tool web_search completed (1.61s, 22315 chars)
+2026-08-25 22:00:28,157 INFO agent.tool_executor: tool web_search completed (1.70s, 6034 chars)
+2026-08-25 22:00:28,357 INFO agent.tool_executor: tool web_search completed (1.90s, 24366 chars)
+2026-08-25 22:00:28,456 INFO agent.tool_executor: tool web_search completed (2.00s, 22142 chars)
+2026-08-25 22:00:28,560 INFO agent.tool_executor: tool web_search completed (2.12s, 14661 chars)
