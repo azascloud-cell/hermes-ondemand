@@ -12139,3 +12139,80 @@ openai.InternalServerError: Error code: 503 - {'error': {'type': 'server_error',
 2026-08-25 22:00:28,357 INFO agent.tool_executor: tool web_search completed (1.90s, 24366 chars)
 2026-08-25 22:00:28,456 INFO agent.tool_executor: tool web_search completed (2.00s, 22142 chars)
 2026-08-25 22:00:28,560 INFO agent.tool_executor: tool web_search completed (2.12s, 14661 chars)
+2026-08-25 22:00:59,238 INFO [cron_7c65859d777f_20260825_220016] agent.conversation_loop: API call #2: model=laguna-s-2.1-free provider=opencode-zen in=48960 out=1474 total=50434 latency=30.3s cache=928/48960 (2%)
+2026-08-25 22:00:59,256 INFO tools.web_tools: Extracting content from 4 URL(s)
+2026-08-25 22:00:59,261 INFO tools.web_tools: Web search via parallel: 'berita hari ini site:bbc.com/indonesia/topics' (limit: 6)
+2026-08-25 22:00:59,262 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita hari ini site:bbc.com/indonesia/topics' (limit=6)
+2026-08-25 22:00:59,292 INFO tools.web_tools: Web extract via parallel: 4 URL(s)
+2026-08-25 22:00:59,294 INFO plugins.web.parallel.provider: Parallel keyless extract: 4 URL(s)
+2026-08-25 22:00:59,973 INFO agent.tool_executor: tool web_search completed (0.72s, 1477 chars)
+2026-08-25 22:01:13,000 INFO tools.web_tools: Extracted content from 4 pages
+2026-08-25 22:01:13,000 INFO tools.web_tools: https://www.beritasatu.com/internasional/3009277/iran-peringatkan-as-kendali-selat-hormuz-hanya-ada-di-tangan-teheran (1462 chars, whole)
+2026-08-25 22:01:13,000 INFO tools.web_tools: https://www.beritasatu.com/ekonomi/3009339/bahlil-b50-akhiri-impor-solar-dan-perkuat-kedaulatan-energi (4913 chars, whole)
+2026-08-25 22:01:13,000 INFO tools.web_tools: https://nasional.kompas.com/read/2026/08/25/15381221/lpsk-putuskan-beri-perlindungan-ferry-boboho-saksi-kasus-korupsi-febrie (3003 chars, whole)
+2026-08-25 22:01:13,000 INFO tools.web_tools: https://news.detik.com/berita/d-8633437/habiburokhman-ruu-perampasan-aset-dipastikan-rampung-desember-2026 (2447 chars, whole)
+2026-08-25 22:01:13,002 INFO agent.tool_executor: tool web_extract completed (13.75s, 13144 chars)
+2026-08-25 22:01:23,878 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=366508->360836 rss_anon_kib=356216->350532 threads=24 duration_ms=121.6
+2026-08-25 22:01:29,214 INFO [cron_7c65859d777f_20260825_220016] agent.conversation_loop: API call #3: model=laguna-s-2.1-free provider=opencode-zen in=56063 out=782 total=56845 latency=16.2s cache=50432/56063 (90%)
+2026-08-25 22:01:29,238 INFO tools.web_tools: Extracting content from 3 URL(s)
+2026-08-25 22:01:29,244 INFO tools.web_tools: Web search via parallel: 'gempa Flores NTT site:bbc.com/indonesia' (limit: 8)
+2026-08-25 22:01:29,245 INFO plugins.web.parallel.provider: Parallel keyless search: 'gempa Flores NTT site:bbc.com/indonesia' (limit=8)
+2026-08-25 22:01:29,259 INFO tools.web_tools: Web extract via parallel: 3 URL(s)
+2026-08-25 22:01:29,261 INFO plugins.web.parallel.provider: Parallel keyless extract: 3 URL(s)
+2026-08-25 22:01:30,375 INFO tools.web_tools: Extracted content from 3 pages
+2026-08-25 22:01:30,377 INFO tools.web_tools: https://nasional.kompas.com/read/2026/08/25/05171621/calon-kapal-induk-pertama-indonesia-giuseppe-garibaldi-mulai-berlayar-ke (truncated 14646 -> 6122 chars)
+2026-08-25 22:01:30,377 INFO tools.web_tools: https://medan.kompas.com/read/2026/08/25/161638278/sungai-deli-meluap-dan-rendam-803-rumah-warga-di-medan-maimun (838 chars, whole)
+2026-08-25 22:01:30,377 INFO tools.web_tools: https://news.detik.com/berita/d-8631828/kebakaran-kosan-dan-ruko-fotokopi-di-tebet-4-orang-tewas (2197 chars, whole)
+2026-08-25 22:01:30,378 INFO agent.tool_executor: tool web_extract completed (1.15s, 10094 chars)
+2026-08-25 22:01:30,950 INFO agent.tool_executor: tool web_search completed (1.72s, 26333 chars)
+2026-08-25 22:01:38,924 INFO [cron_7c65859d777f_20260825_220016] agent.conversation_loop: API call #4: model=laguna-s-2.1-free provider=opencode-zen in=71921 out=246 total=72167 latency=7.9s cache=928/71921 (1%)
+2026-08-25 22:01:38,938 INFO tools.web_tools: Extracting content from 2 URL(s)
+2026-08-25 22:01:38,939 INFO tools.web_tools: Extracting content from 1 URL(s)
+2026-08-25 22:01:38,947 INFO tools.web_tools: Web extract via parallel: 1 URL(s)
+2026-08-25 22:01:38,949 INFO plugins.web.parallel.provider: Parallel keyless extract: 1 URL(s)
+2026-08-25 22:01:38,956 INFO tools.web_tools: Web extract via parallel: 2 URL(s)
+2026-08-25 22:01:38,958 INFO plugins.web.parallel.provider: Parallel keyless extract: 2 URL(s)
+2026-08-25 22:01:40,060 INFO tools.web_tools: Extracted content from 2 pages
+2026-08-25 22:01:40,060 INFO tools.web_tools: https://www.bbc.com/indonesia/articles/c8d3p5j82jvo (442 chars, whole)
+2026-08-25 22:01:40,060 INFO tools.web_tools: https://www.bbc.com/indonesia/articles/ce85mmz83qjo (446 chars, whole)
+2026-08-25 22:01:40,062 INFO agent.tool_executor: tool web_extract completed (1.13s, 1388 chars)
+2026-08-25 22:01:40,720 INFO tools.web_tools: Extracted content from 1 pages
+2026-08-25 22:01:40,721 INFO tools.web_tools: https://nasional.kompas.com/read/2026/08/25/16150751/kpk-periksa-2-pns-dalami-soal-penerimaan-uang-oknum-bea-cukai (2386 chars, whole)
+2026-08-25 22:01:40,723 INFO agent.tool_executor: tool web_extract completed (1.79s, 2721 chars)
+2026-08-25 22:01:58,010 INFO [cron_7c65859d777f_20260825_220016] agent.conversation_loop: API call #5: model=laguna-s-2.1-free provider=opencode-zen in=74011 out=694 total=74705 latency=17.3s cache=72160/74011 (97%)
+2026-08-25 22:01:58,025 INFO tools.file_tools: Creating new local environment for task default...
+2026-08-25 22:01:58,028 INFO tools.web_tools: Extracting content from 2 URL(s)
+2026-08-25 22:01:58,037 INFO tools.web_tools: Web extract via parallel: 2 URL(s)
+2026-08-25 22:01:58,038 INFO plugins.web.parallel.provider: Parallel keyless extract: 2 URL(s)
+2026-08-25 22:01:58,086 INFO tools.environments.base: Session snapshot created (session=32d53397aaa9, cwd=/home/hermes)
+2026-08-25 22:01:58,086 INFO tools.file_tools: local environment ready for task default
+2026-08-25 22:01:58,174 INFO agent.tool_executor: tool read_file completed (0.15s, 15256 chars)
+2026-08-25 22:01:58,175 INFO agent.tool_executor: tool read_file completed (0.15s, 10800 chars)
+2026-08-25 22:01:59,351 INFO tools.web_tools: Extracted content from 2 pages
+2026-08-25 22:01:59,351 INFO tools.web_tools: https://www.beritasatu.com/ekonomi/3009339/bahlil-b50-akhiri-impor-solar-dan-perkuat-kedaulatan-energi (4489 chars, whole)
+2026-08-25 22:01:59,351 INFO tools.web_tools: https://www.beritasatu.com/internasional/3009277/iran-peringatkan-as-kendali-selat-hormuz-hanya-ada-di-tangan-teheran (1415 chars, whole)
+2026-08-25 22:01:59,353 INFO agent.tool_executor: tool web_extract completed (1.33s, 6582 chars)
+2026-08-25 22:02:24,012 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=368572->362796 rss_anon_kib=357896->352120 threads=24 duration_ms=134.1
+2026-08-25 22:03:24,136 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363656->362812 rss_anon_kib=352980->352136 threads=23 duration_ms=122.5
+2026-08-25 22:03:44,009 INFO [cron_7c65859d777f_20260825_220016] agent.conversation_loop: API call #6: model=laguna-s-2.1-free provider=opencode-zen in=86864 out=5381 total=92245 latency=104.6s cache=73984/86864 (85%)
+2026-08-25 22:03:44,022 INFO tools.web_tools: Extracting content from 1 URL(s)
+2026-08-25 22:03:44,036 INFO tools.web_tools: Web extract via parallel: 1 URL(s)
+2026-08-25 22:03:44,038 INFO plugins.web.parallel.provider: Parallel keyless extract: 1 URL(s)
+2026-08-25 22:03:45,331 INFO tools.web_tools: Extracted content from 1 pages
+2026-08-25 22:03:45,331 INFO tools.web_tools: https://nasional.kompas.com/read/2026/08/25/15381221/lpsk-putuskan-beri-perlindungan-ferry-boboho-saksi-kasus-korupsi-febrie (3617 chars, whole)
+2026-08-25 22:03:45,333 INFO [cron_7c65859d777f_20260825_220016] agent.tool_executor: tool web_extract completed (1.31s, 4015 chars)
+2026-08-25 22:04:24,267 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=366076->362964 rss_anon_kib=355356->352244 threads=23 duration_ms=130.4
+2026-08-25 22:04:26,683 INFO [cron_7c65859d777f_20260825_220016] agent.conversation_loop: API call #7: model=laguna-s-2.1-free provider=opencode-zen in=94048 out=2256 total=96304 latency=41.3s cache=56832/94048 (60%)
+2026-08-25 22:04:26,698 INFO tools.web_tools: Extracting content from 1 URL(s)
+2026-08-25 22:04:26,705 INFO tools.web_tools: Web extract via parallel: 1 URL(s)
+2026-08-25 22:04:26,708 INFO plugins.web.parallel.provider: Parallel keyless extract: 1 URL(s)
+2026-08-25 22:04:27,823 INFO tools.web_tools: Extracted content from 1 pages
+2026-08-25 22:04:27,825 INFO tools.web_tools: https://nasional.kompas.com/read/2026/08/25/15282421/prabowo-resmi-luncurkan-proyek-plts-100-gwp (truncated 16311 -> 3822 chars)
+2026-08-25 22:04:27,827 INFO [cron_7c65859d777f_20260825_220016] agent.tool_executor: tool web_extract completed (1.13s, 4131 chars)
+2026-08-25 22:05:13,534 INFO [cron_7c65859d777f_20260825_220016] agent.conversation_loop: API call #8: model=laguna-s-2.1-free provider=opencode-zen in=98030 out=3019 total=101049 latency=45.7s cache=96288/98030 (98%)
+2026-08-25 22:05:13,544 INFO [cron_7c65859d777f_20260825_220016] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=8/500 budget=8/500 tool_turns=7 last_msg_role=assistant response_len=3547 session=cron_7c65859d777f_20260825_220016
+2026-08-25 22:05:13,549 INFO cron.scheduler: Job 'Ringkasan Berita Pagi Mas Azza' completed successfully
+2026-08-25 22:05:14,981 INFO cron.scheduler: Job '7c65859d777f': delivered to telegram:7699507804 via live adapter
+2026-08-25 22:05:14,983 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-cleanup-7c65859d777f:140506934789824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-25 22:05:14,984 INFO run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=1) thread=cron-cleanup-7c65859d777f:140506934789824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-25 22:05:15,111 INFO hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=366832->361480 rss_anon_kib=356076->350724 threads=21 duration_ms=125.7
