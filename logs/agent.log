@@ -11232,3 +11232,8 @@ telegram.error.TimedOut: Timed out
 2026-08-25 09:22:59,121 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359292->358412 rss_anon_kib=347076->346196 threads=19 duration_ms=146.2
 2026-08-25 09:23:59,282 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359652->358408 rss_anon_kib=347436->346192 threads=19 duration_ms=149.9
 2026-08-25 09:24:59,423 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359240->358412 rss_anon_kib=347024->346196 threads=19 duration_ms=139.5
+2026-08-25 09:25:59,574 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359212->358408 rss_anon_kib=346996->346192 threads=19 duration_ms=150.2
+2026-08-25 09:26:59,729 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359180->358424 rss_anon_kib=346964->346208 threads=19 duration_ms=154.5
+2026-08-25 09:27:59,895 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359280->358412 rss_anon_kib=347064->346196 threads=19 duration_ms=165.8
+2026-08-25 09:29:00,061 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359660->358400 rss_anon_kib=347444->346184 threads=19 duration_ms=155.7
+2026-08-25 09:30:00,246 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=359260->358408 rss_anon_kib=347044->346192 threads=19 duration_ms=183.4
