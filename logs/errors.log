@@ -1777,3 +1777,4 @@ openai.InternalServerError: Error code: 503 - {'error': {'type': 'server_error',
 2026-08-26 05:45:19,141 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-26 05:45:19,487 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-26 05:47:36,393 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-26 06:00:54,387 WARNING cron.scheduler: Job '11dcab23dd71': origin has thread_id=8845 but delivery target lost it (deliver=telegram:-1004370127673, target={'platform': 'telegram', 'chat_id': '-1004370127673', 'thread_id': None})

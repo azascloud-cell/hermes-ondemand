@@ -13012,3 +13012,21 @@ openai.InternalServerError: Error code: 503 - {'error': {'type': 'server_error',
 2026-08-26 05:56:53,864 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363064->362220 rss_anon_kib=351824->350980 threads=19 duration_ms=145.3
 2026-08-26 05:57:54,010 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363736->362224 rss_anon_kib=352496->350984 threads=19 duration_ms=135.4
 2026-08-26 05:58:55,745 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363108->362224 rss_anon_kib=351868->350984 threads=19 duration_ms=1732.7
+2026-08-26 05:59:55,912 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363060->362224 rss_anon_kib=351820->350984 threads=19 duration_ms=166.8
+2026-08-26 06:00:35,407 INFO cron.scheduler: Running job 'Kamu adalah Neng Lidya, asisten pribadi AI digital' (ID: 11dcab23dd71)
+2026-08-26 06:00:35,407 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-26 06:00:35,422 INFO cron.scheduler: Job '11dcab23dd71': loaded credential pool for provider opencode-zen with 1 entries
+2026-08-26 06:00:35,446 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=cron-parallel_0:140507564992192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-26 06:00:35,451 INFO [cron_11dcab23dd71_20260826_060035] agent.turn_context: conversation turn: session=cron_11dcab23dd71_20260826_060035 model=laguna-s-2.1-free provider=opencode-zen platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-08-26 06:00:35,480 INFO [cron_11dcab23dd71_20260826_060035] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-127_0:140506934789824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-26 06:00:53,644 INFO [cron_11dcab23dd71_20260826_060035] agent.conversation_loop: API call #1: model=laguna-s-2.1-free provider=opencode-zen in=13825 out=736 total=14561 latency=18.2s cache=928/13825 (7%)
+2026-08-26 06:00:54,334 INFO [cron_11dcab23dd71_20260826_060035] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=0 last_msg_role=assistant response_len=175 session=cron_11dcab23dd71_20260826_060035
+2026-08-26 06:00:54,339 INFO cron.scheduler: Job 'Kamu adalah Neng Lidya, asisten pribadi AI digital' completed successfully
+2026-08-26 06:00:54,387 WARNING cron.scheduler: Job '11dcab23dd71': origin has thread_id=8845 but delivery target lost it (deliver=telegram:-1004370127673, target={'platform': 'telegram', 'chat_id': '-1004370127673', 'thread_id': None})
+2026-08-26 06:00:55,692 INFO cron.scheduler: Job '11dcab23dd71': delivered to telegram:-1004370127673 via live adapter
+2026-08-26 06:00:55,694 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-cleanup-11dcab23dd71:140506934789824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-26 06:00:55,695 INFO run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=1) thread=cron-cleanup-11dcab23dd71:140506934789824 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-26 06:00:55,826 INFO hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=366292->363288 rss_anon_kib=355052->352048 threads=21 duration_ms=129.9
+2026-08-26 06:01:56,050 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=364456->362312 rss_anon_kib=353216->351072 threads=19 duration_ms=136.2
+2026-08-26 06:02:56,198 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363772->362316 rss_anon_kib=352532->351076 threads=19 duration_ms=133.7
+2026-08-26 06:03:57,041 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363192->362308 rss_anon_kib=351952->351068 threads=19 duration_ms=799.9
