@@ -1843,3 +1843,4 @@ openai.InternalServerError: Error code: 503 - {'error': {'type': 'server_error',
 2026-08-26 06:49:17,860 WARNING [20260826_022539_06790b41] agent.conversation_loop: Retrying API call in 4.294399875222665s (attempt 2/3) thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free policy=default error=Error code: 503 - {'error': {'type': 'server_error', 'message': 'Error from provider (Console): Upstream request failed: Endpoint is unavailable.'}}
 2026-08-26 06:52:16,222 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-26 06:53:43,837 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-26 07:22:41,875 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
