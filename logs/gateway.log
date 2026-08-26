@@ -1182,3 +1182,7 @@
 2026-08-26 02:34:08,493 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=21.2s api_calls=1 response=1653 chars
 2026-08-26 02:34:08,513 INFO gateway.platforms.base: [Telegram] Sending response (1653 chars) to 7699507804
 2026-08-26 02:34:35,606 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-26 02:44:39,892 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8956 (473 chars)
+2026-08-26 02:44:39,900 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='H  alo,    Harap hubungi kami melalui aplikasi kami dengan membuka tautan ini: H' reply_to_id=995 reply_to_text=''
+2026-08-26 02:44:48,534 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.6s api_calls=1 response=1131 chars
+2026-08-26 02:44:48,550 INFO gateway.platforms.base: [Telegram] Sending response (1131 chars) to 7699507804

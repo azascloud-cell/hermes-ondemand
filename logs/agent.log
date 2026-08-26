@@ -12791,3 +12791,15 @@ openai.InternalServerError: Error code: 503 - {'error': {'type': 'server_error',
 2026-08-26 02:40:11,722 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363876->363124 rss_anon_kib=352636->351884 threads=19 duration_ms=116.4
 2026-08-26 02:41:11,844 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363928->363120 rss_anon_kib=352688->351880 threads=19 duration_ms=121.1
 2026-08-26 02:42:11,968 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=364312->362992 rss_anon_kib=353072->351752 threads=19 duration_ms=114.8
+2026-08-26 02:43:12,083 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363812->362980 rss_anon_kib=352572->351740 threads=19 duration_ms=114.5
+2026-08-26 02:44:12,213 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363772->362980 rss_anon_kib=352532->351740 threads=19 duration_ms=129.4
+2026-08-26 02:44:39,892 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8956 (473 chars)
+2026-08-26 02:44:39,900 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='H  alo,    Harap hubungi kami melalui aplikasi kami dengan membuka tautan ini: H' reply_to_id=995 reply_to_text=''
+2026-08-26 02:44:39,930 INFO [20260826_022539_06790b41] agent.turn_context: conversation turn: session=20260826_022539_06790b41 model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=17 msg='H  alo,    Harap hubungi kami melalui aplikasi kami dengan membuka tautan ini: H...'
+2026-08-26 02:44:47,926 INFO [20260826_022539_06790b41] agent.conversation_loop: API call #9: model=laguna-s-2.1-free provider=opencode-zen in=33641 out=370 total=34011 latency=8.0s cache=1248/33641 (4%)
+2026-08-26 02:44:48,525 INFO [20260826_022539_06790b41] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=2 last_msg_role=assistant response_len=1131 session=20260826_022539_06790b41
+2026-08-26 02:44:48,534 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.6s api_calls=1 response=1131 chars
+2026-08-26 02:44:48,550 INFO gateway.platforms.base: [Telegram] Sending response (1131 chars) to 7699507804
+2026-08-26 02:45:12,338 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=365688->363116 rss_anon_kib=354448->351876 threads=20 duration_ms=124.1
+2026-08-26 02:46:12,449 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363900->363104 rss_anon_kib=352660->351864 threads=19 duration_ms=111.1
+2026-08-26 02:47:12,577 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=364556->363116 rss_anon_kib=353316->351876 threads=19 duration_ms=112.3
