@@ -12613,3 +12613,8 @@ telegram.error.TimedOut: Timed out
 2026-08-26 02:15:22,975 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 2); health pending getUpdates progress
 2026-08-26 02:16:08,779 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=361520->360608 rss_anon_kib=350428->349516 threads=19 duration_ms=122.4
 2026-08-26 02:17:08,905 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=361988->360604 rss_anon_kib=350896->349512 threads=19 duration_ms=114.6
+2026-08-26 02:18:09,033 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=361484->360608 rss_anon_kib=350392->349516 threads=19 duration_ms=128.2
+2026-08-26 02:19:09,155 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=361448->360608 rss_anon_kib=350356->349516 threads=19 duration_ms=121.1
+2026-08-26 02:20:09,277 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=361480->360600 rss_anon_kib=350388->349508 threads=19 duration_ms=121.1
+2026-08-26 02:21:09,387 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=361504->360600 rss_anon_kib=350412->349508 threads=19 duration_ms=109.8
+2026-08-26 02:22:09,518 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=361820->360612 rss_anon_kib=350728->349520 threads=19 duration_ms=120.8
