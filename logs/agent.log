@@ -14158,3 +14158,21 @@ openai.InternalServerError: Error code: 503 - {'error': {'type': 'server_error',
 2026-08-26 22:01:56,409 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=368976->363604 rss_anon_kib=358648->353264 threads=23 duration_ms=129.7
 2026-08-26 22:02:52,165 INFO [cron_7c65859d777f_20260826_220045] agent.conversation_loop: API call #3: model=laguna-s-2.1-free provider=opencode-zen in=48982 out=3121 total=52103 latency=63.3s cache=928/48982 (2%)
 2026-08-26 22:02:58,363 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=365244->364248 rss_anon_kib=354840->353844 threads=24 duration_ms=1953.7
+2026-08-26 22:03:05,140 INFO [cron_7c65859d777f_20260826_220045] agent.tool_executor: tool browser_exec completed (12.88s, 568 chars)
+2026-08-26 22:03:05,700 INFO [cron_7c65859d777f_20260826_220045] agent.tool_executor: tool browser_exec completed (0.56s, 328 chars)
+2026-08-26 22:03:33,273 INFO [cron_7c65859d777f_20260826_220045] agent.conversation_loop: API call #4: model=laguna-s-2.1-free provider=opencode-zen in=52558 out=1399 total=53957 latency=27.6s cache=48192/52558 (92%)
+2026-08-26 22:03:33,287 INFO tools.terminal_tool: Creating new local environment for task default...
+2026-08-26 22:03:33,331 INFO tools.environments.base: Session snapshot created (session=9fb789050e98, cwd=/home/hermes)
+2026-08-26 22:03:33,332 INFO tools.terminal_tool: local environment ready for task default
+2026-08-26 22:03:33,540 INFO [cron_7c65859d777f_20260826_220045] agent.tool_executor: tool terminal completed (0.25s, 80 chars)
+2026-08-26 22:03:58,487 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=366884->365836 rss_anon_kib=356388->355340 threads=24 duration_ms=123.2
+2026-08-26 22:04:26,056 INFO [cron_7c65859d777f_20260826_220045] agent.conversation_loop: API call #5: model=laguna-s-2.1-free provider=opencode-zen in=54004 out=3325 total=57329 latency=52.5s cache=52096/54004 (96%)
+2026-08-26 22:04:26,067 INFO [cron_7c65859d777f_20260826_220045] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=5/500 budget=5/500 tool_turns=4 last_msg_role=assistant response_len=3149 session=cron_7c65859d777f_20260826_220045
+2026-08-26 22:04:26,074 INFO cron.scheduler: Job 'Ringkasan Berita Pagi Mas Azza' completed successfully
+2026-08-26 22:04:27,808 INFO cron.scheduler: Job '7c65859d777f': delivered to telegram:7699507804 via live adapter
+2026-08-26 22:04:27,810 INFO run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=cron-cleanup-7c65859d777f:140507519882944 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-26 22:04:27,811 INFO run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=1) thread=cron-cleanup-7c65859d777f:140507519882944 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-26 22:04:27,952 INFO hermes_cli.mem_trim: memory trim: reason=agent close malloc_trim=1 rss_kib=367140->363664 rss_anon_kib=356552->353076 threads=21 duration_ms=140.0
+2026-08-26 22:05:58,621 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=364628->362444 rss_anon_kib=354040->351856 threads=19 duration_ms=132.7
+2026-08-26 22:06:58,754 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363696->362416 rss_anon_kib=353108->351828 threads=19 duration_ms=122.2
+2026-08-26 22:08:00,360 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363252->362408 rss_anon_kib=352664->351820 threads=19 duration_ms=1605.6
