@@ -1156,3 +1156,7 @@
 2026-08-26 02:14:54,349 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling reconnect failed: Timed out
 2026-08-26 02:14:54,349 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram network error (attempt 2/10), reconnecting in 10s. Error: Timed out
 2026-08-26 02:15:22,975 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling restarted after network error (attempt 2); health pending getUpdates progress
+2026-08-26 02:25:39,606 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8956 (45 chars)
+2026-08-26 02:25:39,614 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bantu aku banding nomor WhatsApp +601****9557' reply_to_id=995 reply_to_text=''
+2026-08-26 02:26:19,593 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=40.0s api_calls=3 response=636 chars
+2026-08-26 02:26:19,616 INFO gateway.platforms.base: [Telegram] Sending response (636 chars) to 7699507804
