@@ -12772,3 +12772,17 @@ openai.InternalServerError: Error code: 503 - {'error': {'type': 'server_error',
 2026-08-26 02:32:34,350 INFO [20260826_022539_06790b41] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=2 last_msg_role=assistant response_len=1258 session=20260826_022539_06790b41
 2026-08-26 02:32:34,457 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.5s api_calls=1 response=1258 chars
 2026-08-26 02:32:34,563 INFO gateway.platforms.base: [Telegram] Sending response (1258 chars) to 7699507804
+2026-08-26 02:33:10,861 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=364928->362992 rss_anon_kib=353688->351752 threads=19 duration_ms=115.8
+2026-08-26 02:33:36,741 INFO gateway.platforms.base: [Telegram] Sending response (83 chars) to 7699507804
+2026-08-26 02:33:47,250 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8956 (9 chars)
+2026-08-26 02:33:47,256 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bantu ya!' reply_to_id=995 reply_to_text=''
+2026-08-26 02:33:47,288 INFO [20260826_022539_06790b41] agent.turn_context: conversation turn: session=20260826_022539_06790b41 model=laguna-s-2.1-free provider=opencode-zen platform=telegram history=15 msg='Bantu ya!'
+2026-08-26 02:34:08,455 INFO [20260826_022539_06790b41] agent.conversation_loop: API call #8: model=laguna-s-2.1-free provider=opencode-zen in=32917 out=864 total=33781 latency=21.2s cache=30464/32917 (93%)
+2026-08-26 02:34:08,466 INFO [20260826_022539_06790b41] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=laguna-s-2.1-free api_calls=1/500 budget=1/500 tool_turns=2 last_msg_role=assistant response_len=1653 session=20260826_022539_06790b41
+2026-08-26 02:34:08,493 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=21.2s api_calls=1 response=1653 chars
+2026-08-26 02:34:08,513 INFO gateway.platforms.base: [Telegram] Sending response (1653 chars) to 7699507804
+2026-08-26 02:34:10,980 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=365736->363124 rss_anon_kib=354496->351884 threads=20 duration_ms=118.5
+2026-08-26 02:34:35,606 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-26 02:35:11,095 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363920->363124 rss_anon_kib=352680->351884 threads=19 duration_ms=114.6
+2026-08-26 02:36:11,207 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363944->363128 rss_anon_kib=352704->351888 threads=19 duration_ms=110.4
+2026-08-26 02:37:11,349 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=364508->363128 rss_anon_kib=353268->351888 threads=19 duration_ms=126.3

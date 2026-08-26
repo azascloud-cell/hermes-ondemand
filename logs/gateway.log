@@ -1176,3 +1176,9 @@
 2026-08-26 02:32:24,947 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Aku akan beri Gmail address dan app password,kamu cek balasnya dan kirim ya!' reply_to_id=995 reply_to_text=''
 2026-08-26 02:32:34,457 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.5s api_calls=1 response=1258 chars
 2026-08-26 02:32:34,563 INFO gateway.platforms.base: [Telegram] Sending response (1258 chars) to 7699507804
+2026-08-26 02:33:36,741 INFO gateway.platforms.base: [Telegram] Sending response (83 chars) to 7699507804
+2026-08-26 02:33:47,250 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8956 (9 chars)
+2026-08-26 02:33:47,256 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bantu ya!' reply_to_id=995 reply_to_text=''
+2026-08-26 02:34:08,493 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=21.2s api_calls=1 response=1653 chars
+2026-08-26 02:34:08,513 INFO gateway.platforms.base: [Telegram] Sending response (1653 chars) to 7699507804
+2026-08-26 02:34:35,606 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
