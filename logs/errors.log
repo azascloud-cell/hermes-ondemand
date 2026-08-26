@@ -1881,3 +1881,4 @@ openai.InternalServerError: Error code: 503 - {'error': {'type': 'server_error',
       "title": "",
       "content": "",
       "erro
+2026-08-26 23:15:07,928 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
