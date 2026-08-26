@@ -14118,3 +14118,43 @@ openai.InternalServerError: Error code: 503 - {'error': {'type': 'server_error',
 2026-08-26 21:55:54,147 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=360760->359916 rss_anon_kib=351464->350620 threads=19 duration_ms=119.6
 2026-08-26 21:56:54,270 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=361184->359920 rss_anon_kib=351888->350624 threads=19 duration_ms=113.8
 2026-08-26 21:57:55,867 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=360784->359920 rss_anon_kib=351488->350624 threads=19 duration_ms=1526.6
+2026-08-26 21:58:55,992 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=360760->359916 rss_anon_kib=351464->350620 threads=19 duration_ms=124.8
+2026-08-26 21:59:56,122 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=360792->359920 rss_anon_kib=351496->350624 threads=19 duration_ms=128.4
+2026-08-26 22:00:45,807 INFO cron.scheduler: Running job 'Ringkasan Berita Pagi Mas Azza' (ID: 7c65859d777f)
+2026-08-26 22:00:45,807 INFO cron.scheduler: Prompt: [IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final response will be automatic
+2026-08-26 22:00:45,820 INFO cron.scheduler: Job '7c65859d777f': loaded credential pool for provider opencode-zen with 1 entries
+2026-08-26 22:00:45,849 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=cron-parallel_0:140507564992192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-26 22:00:45,863 INFO [cron_7c65859d777f_20260826_220045] agent.turn_context: conversation turn: session=cron_7c65859d777f_20260826_220045 model=laguna-s-2.1-free provider=opencode-zen platform=cron history=0 msg='[IMPORTANT: You are running as a scheduled cron job. DELIVERY: Your final respon...'
+2026-08-26 22:00:45,894 INFO [cron_7c65859d777f_20260826_220045] run_agent: OpenAI client created (chat_completion_request, shared=False) thread=ThreadPoolExecutor-133_0:140507519882944 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
+2026-08-26 22:00:54,296 INFO [cron_7c65859d777f_20260826_220045] agent.conversation_loop: API call #1: model=laguna-s-2.1-free provider=opencode-zen in=14191 out=317 total=14508 latency=8.4s cache=512/14191 (4%)
+2026-08-26 22:00:54,994 INFO tools.web_tools: Web search via parallel: 'berita terbaru hari ini site:kompas.com' (limit: 8)
+2026-08-26 22:00:54,996 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru hari ini site:kompas.com' (limit=8)
+2026-08-26 22:00:55,001 INFO tools.web_tools: Web search via parallel: 'berita terkini site:detik.com' (limit: 8)
+2026-08-26 22:00:55,005 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terkini site:detik.com' (limit=8)
+2026-08-26 22:00:55,011 INFO tools.web_tools: Web search via parallel: 'berita hari ini site:bbc.com/indonesia' (limit: 8)
+2026-08-26 22:00:55,014 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita hari ini site:bbc.com/indonesia' (limit=8)
+2026-08-26 22:00:55,018 INFO tools.web_tools: Web search via parallel: 'berita hari ini site:beritasatu.com' (limit: 8)
+2026-08-26 22:00:55,020 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita hari ini site:beritasatu.com' (limit=8)
+2026-08-26 22:00:55,023 INFO tools.web_tools: Web search via parallel: 'berita terbaru site:liputan6.com' (limit: 8)
+2026-08-26 22:00:55,024 INFO plugins.web.parallel.provider: Parallel keyless search: 'berita terbaru site:liputan6.com' (limit=8)
+2026-08-26 22:00:56,262 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=367912->366308 rss_anon_kib=357780->356176 threads=32 duration_ms=139.6
+2026-08-26 22:00:56,321 INFO agent.tool_executor: tool web_search completed (1.36s, 20757 chars)
+2026-08-26 22:00:56,547 INFO agent.tool_executor: tool web_search completed (1.60s, 16053 chars)
+2026-08-26 22:00:56,682 INFO agent.tool_executor: tool web_search completed (1.73s, 20636 chars)
+2026-08-26 22:00:56,699 INFO agent.tool_executor: tool web_search completed (1.74s, 21169 chars)
+2026-08-26 22:00:56,812 INFO agent.tool_executor: tool web_search completed (1.86s, 5941 chars)
+2026-08-26 22:01:18,802 INFO [cron_7c65859d777f_20260826_220045] agent.conversation_loop: API call #2: model=laguna-s-2.1-free provider=opencode-zen in=47064 out=1140 total=48204 latency=21.9s cache=928/47064 (2%)
+2026-08-26 22:01:18,819 INFO tools.web_tools: Extracting content from 5 URL(s)
+2026-08-26 22:01:18,852 INFO tools.web_tools: Web extract via parallel: 5 URL(s)
+2026-08-26 22:01:18,853 INFO plugins.web.parallel.provider: Parallel keyless extract: 5 URL(s)
+2026-08-26 22:01:48,899 INFO tools.web_tools: Extracted content from 5 pages
+2026-08-26 22:01:48,902 WARNING [cron_7c65859d777f_20260826_220045] agent.tool_executor: Tool web_extract returned error (30.09s): {
+  "results": [
+    {
+      "url": "https://www.beritasatu.com/internasional/3009305/komando-pusat-as-bombardir-90-target-militer-iran-di-pesisir",
+      "title": "",
+      "content": "",
+      "erro
+2026-08-26 22:01:56,409 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=368976->363604 rss_anon_kib=358648->353264 threads=23 duration_ms=129.7
+2026-08-26 22:02:52,165 INFO [cron_7c65859d777f_20260826_220045] agent.conversation_loop: API call #3: model=laguna-s-2.1-free provider=opencode-zen in=48982 out=3121 total=52103 latency=63.3s cache=928/48982 (2%)
+2026-08-26 22:02:58,363 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=365244->364248 rss_anon_kib=354840->353844 threads=24 duration_ms=1953.7
