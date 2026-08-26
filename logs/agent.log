@@ -13226,3 +13226,8 @@ openai.InternalServerError: Error code: 503 - {'error': {'type': 'server_error',
 2026-08-26 07:54:31,521 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:7:140507519882944 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
 2026-08-26 07:54:31,521 INFO run_agent: OpenAI client closed (cache_evict, shared=False, tcp_force_closed=0) thread=agent-cache-idle-agent:main:telegram:dm:7:140507519882944 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free
 2026-08-26 07:54:31,522 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-26 07:55:21,651 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=364192->363156 rss_anon_kib=353128->352092 threads=19 duration_ms=139.6
+2026-08-26 07:56:21,781 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363924->363156 rss_anon_kib=352860->352092 threads=19 duration_ms=128.4
+2026-08-26 07:57:21,897 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363944->363152 rss_anon_kib=352880->352088 threads=19 duration_ms=115.6
+2026-08-26 07:58:22,030 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=364452->363156 rss_anon_kib=353388->352092 threads=19 duration_ms=122.2
+2026-08-26 07:59:22,172 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363908->363156 rss_anon_kib=352844->352092 threads=19 duration_ms=141.7
