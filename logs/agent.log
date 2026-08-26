@@ -14270,3 +14270,10 @@ openai.InternalServerError: Error code: 503 - {'error': {'type': 'server_error',
 2026-08-26 23:36:15,109 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363312->362440 rss_anon_kib=352728->351856 threads=19 duration_ms=131.0
 2026-08-26 23:37:15,240 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363748->362404 rss_anon_kib=353164->351820 threads=19 duration_ms=120.3
 2026-08-26 23:38:15,362 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363276->362412 rss_anon_kib=352692->351828 threads=19 duration_ms=122.0
+2026-08-26 23:39:15,485 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363280->362400 rss_anon_kib=352696->351816 threads=19 duration_ms=122.2
+2026-08-26 23:40:15,624 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363240->362400 rss_anon_kib=352656->351816 threads=19 duration_ms=138.1
+2026-08-26 23:41:14,316 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-26 23:41:14,684 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-26 23:41:15,753 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363272->362408 rss_anon_kib=352688->351824 threads=19 duration_ms=128.2
+2026-08-26 23:42:15,899 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363840->362400 rss_anon_kib=353256->351816 threads=19 duration_ms=136.0
+2026-08-26 23:43:16,019 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=363236->362396 rss_anon_kib=352652->351812 threads=19 duration_ms=119.4
