@@ -1322,3 +1322,9 @@
 2026-08-27 08:44:39,772 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
 2026-08-27 08:44:47,714 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.0s api_calls=1 response=1762 chars
 2026-08-27 08:44:47,811 INFO gateway.platforms.base: [Telegram] Sending response (1762 chars) to 7699507804
+2026-08-27 08:48:17,003 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_1e439334c7a1.jpg
+2026-08-27 08:48:17,804 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:7699507804:8380:photo-burst with 1 image(s)
+2026-08-27 08:48:17,812 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Lihat ini, kepotong,bikin wallpaper aja kayak gini, apalagi icon packnya nanti 😭' reply_to_id=714 reply_to_text=''
+2026-08-27 08:48:17,836 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-27 08:48:25,142 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=7.3s api_calls=1 response=1990 chars
+2026-08-27 08:48:25,162 INFO gateway.platforms.base: [Telegram] Sending response (1990 chars) to 7699507804
