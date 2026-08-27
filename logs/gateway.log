@@ -1267,3 +1267,7 @@
 2026-08-27 06:07:02,118 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-27 06:18:47,891 INFO gateway.run: curator: curator: snapshot created (2026-08-27T06-18-47Z)
 2026-08-27 06:18:48,442 INFO gateway.run: curator: curator: auto: no changes; llm: skipped (consolidation off)
+2026-08-27 07:15:32,764 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_ab671b282c93.jpg
+2026-08-27 07:15:33,565 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:7699507804:8380:photo-burst with 1 image(s)
+2026-08-27 07:15:33,572 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='siapa dia?' reply_to_id=714 reply_to_text=''
+2026-08-27 07:15:33,596 INFO gateway.run: Image routing: text (mode=text). Pre-analyzing 1 image(s) via vision_analyze.

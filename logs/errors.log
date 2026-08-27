@@ -1909,3 +1909,60 @@ openai.InternalServerError: Error code: 503 - {'error': {'type': 'server_error',
 2026-08-27 06:00:58,870 WARNING [cron_11dcab23dd71_20260827_060054] agent.conversation_loop: Retrying API call in 4.268322536944232s (attempt 2/3) thread=ThreadPoolExecutor-142_0:140507519882944 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=laguna-s-2.1-free policy=default error=Error code: 503 - {'error': {'type': 'server_error', 'message': 'Error from provider (Console): Upstream request failed: Endpoint is unavailable.'}}
 2026-08-27 06:01:27,131 WARNING cron.scheduler: Job '11dcab23dd71': origin has thread_id=8845 but delivery target lost it (deliver=telegram:-1004370127673, target={'platform': 'telegram', 'chat_id': '-1004370127673', 'thread_id': None})
 2026-08-27 06:07:02,118 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 07:15:33,608 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:16:33.
+2026-08-27 07:15:33,611 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-27 07:15:33,612 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:16:33.
+2026-08-27 07:15:33,612 WARNING agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-27 07:15:33,612 ERROR tools.vision_tools: Error analyzing image: No LLM provider configured for task=vision provider=auto. Run: hermes setup
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/tools/vision_tools.py", line 1511, in vision_analyze_tool
+    response = await async_call_llm(**call_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/auxiliary_client.py", line 3270, in wrapped
+    return await callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/auxiliary_client.py", line 10120, in async_call_llm
+    return await _async_call_llm_impl(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/auxiliary_client.py", line 10192, in _async_call_llm_impl
+    raise RuntimeError(
+RuntimeError: No LLM provider configured for task=vision provider=auto. Run: hermes setup
+2026-08-27 07:16:02,173 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4042, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 651, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:16:02,186 WARNING [20260820_040244_a288a94b] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=hermes-gateway_1:140508056233664 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:16:02,187 WARNING [20260820_040244_a288a94b] agent.conversation_loop: Retrying API call in 2.746324989149133s (attempt 1/3) thread=hermes-gateway_1:140508056233664 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:17:11,466 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4042, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 651, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:17:11,472 WARNING [20260820_040244_a288a94b] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=hermes-gateway_1:140508056233664 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:17:11,473 WARNING [20260820_040244_a288a94b] agent.conversation_loop: Retrying API call in 2.4821865948143804s (attempt 1/3) thread=hermes-gateway_1:140508056233664 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:18:54,156 WARNING [20260820_040244_a288a94b] agent.tool_executor: Tool terminal returned error (0.60s): {"output": "/usr/bin/bash: line 4: file: command not found", "exit_code": 127, "error": null, "hint": "`file` is not installed or not on PATH. Verify with `which file`; install it or use an absolute p
