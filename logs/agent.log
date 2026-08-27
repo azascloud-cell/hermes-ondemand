@@ -15492,3 +15492,16 @@ openai.APIStatusError: Error code: 402 - {'error': {'message': 'this model requi
 2026-08-27 11:05:53,174 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=390864->389992 rss_anon_kib=381196->380324 threads=19 duration_ms=137.9
 2026-08-27 11:06:53,297 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=390820->389992 rss_anon_kib=381152->380324 threads=19 duration_ms=122.1
 2026-08-27 11:07:55,343 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=390884->389996 rss_anon_kib=381216->380328 threads=19 duration_ms=2002.7
+2026-08-27 11:08:55,498 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=390776->389988 rss_anon_kib=381112->380324 threads=19 duration_ms=154.3
+2026-08-27 11:09:55,665 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=391560->389992 rss_anon_kib=381896->380328 threads=19 duration_ms=155.5
+2026-08-27 11:10:55,799 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=390856->389996 rss_anon_kib=381192->380332 threads=19 duration_ms=133.9
+2026-08-27 11:11:55,933 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=390852->389992 rss_anon_kib=381188->380328 threads=19 duration_ms=132.6
+2026-08-27 11:12:49,439 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (77 chars)
+2026-08-27 11:12:49,448 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Lock screen nih,masih belum kawaii,mwehehe sama kalo bisa booting animasi sih' reply_to_id=714 reply_to_text=''
+2026-08-27 11:12:49,460 INFO hermes_state: Repaired 4 message-alternation violation(s) while restoring session 20260820_040244_a288a94b — durable transcript kept them, see repair_message_sequence
+2026-08-27 11:12:49,483 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=gemma4:31b provider=ollama-cloud platform=telegram history=104 msg='Lock screen nih,masih belum kawaii,mwehehe sama kalo bisa booting animasi sih'
+2026-08-27 11:12:57,565 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=393500->390348 rss_anon_kib=383836->380684 threads=22 duration_ms=1624.4
+2026-08-27 11:12:58,360 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #3: model=gemma4:31b provider=ollama-cloud in=60089 out=610 total=60699 latency=8.9s
+2026-08-27 11:12:58,957 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=21 last_msg_role=assistant response_len=2308 session=20260820_040244_a288a94b
+2026-08-27 11:12:59,044 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.6s api_calls=1 response=2308 chars
+2026-08-27 11:12:59,255 INFO gateway.platforms.base: [Telegram] Sending response (2308 chars) to 7699507804
