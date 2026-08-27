@@ -1,0 +1,105 @@
+{
+  "jobs": [
+    {
+      "id": "7c65859d777f",
+      "name": "Ringkasan Berita Pagi Mas Azza",
+      "prompt": "Kamu adalah Neng Lidya, asisten pribadi AI digital untuk Mas Azza. Tugasmu setiap pagi: buat ringkasan berita terbaru hari ini dalam Bahasa Indonesia dari sumber-sumber berita Indonesia (Detik, Kompas, BBC Indonesia, Liputan6, BeritaSatu).\n\nLANGKAH:\n1. Gunakan `web_search` dengan query spesifik seperti \"berita terbaru hari ini site:kompas.com\" atau \"berita terkini site:detik.com\" atau \"berita hari ini site:bbc.com/indonesia\" untuk mendapatkan link artikel **langsung** (bukan halaman indeks). Lakukan untuk beberapa sumber.\n2. Dari hasil `web_search`, ambil **URL artikel asli** yang ada di field `url` pada setiap hasil pencarian. Pastikan URL-nya mengarah ke halaman artikel detail (biasanya berisi slug/judul di URL, bukan cuma `/indeks` atau `/terbaru`).\n3. Jika butuh detail lebih, gunakan `web_extract` ke URL artikel tersebut untuk mendapatkan isi lengkapnya.\n4. Pilih 4-6 berita terbaik/terhangat dari berbagai kategori.\n5. Susun ringkasan dengan format:\n   - Awali dengan sapaan hangat pagi ke Mas Azza + hari/tanggal (WIB).\n   - Setiap berita: **judul tebal**, 1-2 kalimat ringkasan, nama sumber, **DAN link artikel asli** dalam format markdown `[🔗 Baca selengkapnya](URL_ARTIKEL_ASLI)`.\n   - Gunakan emoji secukupnya, format rapi bullet list.\n\nPENTING:\n- Semua Bahasa Indonesia.\n- JANGAN mengarang berita/link. Hanya gunakan URL dari hasil `web_search` yang benar-benar mengarah ke artikel.\n- Jika URL dari search mengarah ke halaman indeks, JANGAN pakai — cari artikel lain yang URL-nya jelas halaman detail.\n- Jika pencarian gagal, coba query berbeda (misal tambahkan \"site:...\" atau kata kunci topik).",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "opencode-zen",
+      "model_snapshot": "laguna-s-2.1-free",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 22 * * *",
+        "display": "0 22 * * *"
+      },
+      "schedule_display": "0 22 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 9
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-20T09:52:22.644271+00:00",
+      "next_run_at": "2026-08-27T22:00:00+00:00",
+      "last_run_at": "2026-08-26T22:04:27.959166+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "failure_streak": 0,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "7699507804",
+        "chat_name": "Azaroni Fidaroin",
+        "thread_id": "8380",
+        "user_id": "7699507804"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    },
+    {
+      "id": "11dcab23dd71",
+      "name": "Kamu adalah Neng Lidya, asisten pribadi AI digital",
+      "prompt": "Kamu adalah Neng Lidya, asisten pribadi AI digital untuk Mas Azza. Tugasmu setiap 6 jam: kirimkan satu quote puitis pendek (maksimal 3 baris, tanpa gambar, tidak perlu tanya balik). Topik bisa bervariasi secara acak tiap sesi: cinta, rindu, refleksi hidup, motivasi, spiritual, alam, atau filsafati. Pastikan gaya bahasanya empatik, halus, puitis — sesuai selera Mas Azza yang suka nuansa dalam tapi tetap ringan. Jangan lupa akhiri biasanya dengan sedikit emoticon yang lembut.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "opencode-zen",
+      "model_snapshot": "laguna-s-2.1-free",
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 */6 * * *",
+        "display": "0 */6 * * *"
+      },
+      "schedule_display": "0 */6 * * *",
+      "repeat": {
+        "times": null,
+        "completed": 14
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-24T02:30:58.792186+00:00",
+      "next_run_at": "2026-08-27T12:00:00+00:00",
+      "last_run_at": "2026-08-27T06:01:28.343764+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "failure_streak": 0,
+      "deliver": "telegram:-1004370127673",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "7699507804",
+        "chat_name": "Azaroni Fidaroin",
+        "thread_id": "8845",
+        "user_id": "7699507804"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    }
+  ],
+  "updated_at": "2026-08-27T06:01:28.344343+00:00"
+}
