@@ -15398,3 +15398,32 @@ openai.APIStatusError: Error code: 402 - {'error': {'message': 'this model requi
 2026-08-27 10:14:40,856 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388840->387328 rss_anon_kib=379820->378308 threads=19 duration_ms=119.7
 2026-08-27 10:15:41,017 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388192->387336 rss_anon_kib=379172->378316 threads=19 duration_ms=160.5
 2026-08-27 10:16:41,128 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388152->387324 rss_anon_kib=379132->378304 threads=19 duration_ms=110.5
+2026-08-27 10:17:41,279 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388212->387320 rss_anon_kib=379192->378300 threads=19 duration_ms=150.1
+2026-08-27 10:18:41,428 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388148->387336 rss_anon_kib=379128->378316 threads=19 duration_ms=148.3
+2026-08-27 10:19:41,597 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388856->387336 rss_anon_kib=379836->378316 threads=19 duration_ms=134.6
+2026-08-27 10:20:30,651 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8380 (idle=3724s)
+2026-08-27 10:20:30,651 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-cache-idle-agent:main:telegram:dm:7:140507519882944 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-27 10:20:30,652 INFO run_agent: OpenAI client closed (cache_evict, shared=False, tcp_force_closed=0) thread=agent-cache-idle-agent:main:telegram:dm:7:140507519882944 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-27 10:20:30,653 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-27 10:20:41,745 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388196->386548 rss_anon_kib=379176->377528 threads=19 duration_ms=147.2
+2026-08-27 10:21:30,214 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (74 chars)
+2026-08-27 10:21:30,221 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='aku gabut nih,enaknya ngapain ya habis bikin tema ikeda teresa,neng lidya?' reply_to_id=714 reply_to_text=''
+2026-08-27 10:21:30,233 INFO hermes_state: Repaired 3 message-alternation violation(s) while restoring session 20260820_040244_a288a94b — durable transcript kept them, see repair_message_sequence
+2026-08-27 10:21:30,275 INFO [20260820_040244_a288a94b] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140508602816192 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-27 10:21:30,289 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=gemma4:31b provider=ollama-cloud platform=telegram history=100 msg='aku gabut nih,enaknya ngapain ya habis bikin tema ikeda teresa,neng lidya?'
+2026-08-27 10:21:30,581 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-362 (<lambda>):140506943182528 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-27 10:21:37,973 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=58961 out=542 total=59503 latency=7.7s
+2026-08-27 10:21:38,266 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=21 last_msg_role=assistant response_len=1973 session=20260820_040244_a288a94b
+2026-08-27 10:21:38,295 INFO run_agent: OpenAI client created (agent_init, shared=True) thread=bg-review:140506926397120 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-27 10:21:38,299 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=gemma4:31b provider=ollama-cloud platform=telegram history=102 msg='Review the conversation above and consider saving to memory if appropriate.  Foc...'
+2026-08-27 10:21:38,311 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.1s api_calls=1 response=1973 chars
+2026-08-27 10:21:38,334 INFO gateway.platforms.base: [Telegram] Sending response (1973 chars) to 7699507804
+2026-08-27 10:21:38,562 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-363 (<lambda>):140507519882944 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-27 10:21:40,516 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=59631 out=69 total=59700 latency=2.2s
+2026-08-27 10:21:40,528 INFO [20260820_040244_a288a94b] agent.tool_executor: tool memory completed (0.01s, 209 chars)
+2026-08-27 10:21:41,919 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=393836->388836 rss_anon_kib=384812->379812 threads=22 duration_ms=173.5
+2026-08-27 10:21:44,032 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #2: model=gemma4:31b provider=ollama-cloud in=59782 out=10 total=59792 latency=3.5s
+2026-08-27 10:21:44,033 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=2/16 budget=2/16 tool_turns=22 last_msg_role=assistant response_len=21 session=20260820_040244_a288a94b
+2026-08-27 10:21:44,046 INFO [20260820_040244_a288a94b] run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=bg-review:140506926397120 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-27 10:21:44,046 INFO [20260820_040244_a288a94b] run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=0) thread=bg-review:140506926397120 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-27 10:21:44,048 INFO [20260820_040244_a288a94b] agent.background_review: Background review complete: thread=bg-review calls=2 in=119413 out=79 cache_read=0 result=memory

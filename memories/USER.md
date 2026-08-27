@@ -5,3 +5,5 @@ Mas Azza prefers concise, formatted summaries over raw lists (daily news cronjob
 User's crush is Dewi Maulidya. User likes women with a "soft," "sweet," and "elegant" aesthetic (similar to Japanese idol Ikeda Teresa).
 §
 User enjoys customizing his device with an aesthetic, cohesive theme (wallpapers, matching color palettes, and custom app icons).
+§
+User's romantic interest is Dewi Maulidya. User is attracted to women with a 'soft', 'sweet', and elegant vibe, similar to Japanese idol Ikeda Teresa.

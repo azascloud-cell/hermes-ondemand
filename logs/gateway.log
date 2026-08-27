@@ -1339,3 +1339,9 @@
 2026-08-27 10:08:06,036 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-27 10:08:06,088 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling heartbeat: 1 update(s) queued but not consumed (stuck probe 1/2)
 2026-08-27 10:11:06,328 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 10:20:30,651 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8380 (idle=3724s)
+2026-08-27 10:20:30,653 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-27 10:21:30,214 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (74 chars)
+2026-08-27 10:21:30,221 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='aku gabut nih,enaknya ngapain ya habis bikin tema ikeda teresa,neng lidya?' reply_to_id=714 reply_to_text=''
+2026-08-27 10:21:38,311 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.1s api_calls=1 response=1973 chars
+2026-08-27 10:21:38,334 INFO gateway.platforms.base: [Telegram] Sending response (1973 chars) to 7699507804
