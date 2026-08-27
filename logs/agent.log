@@ -15427,3 +15427,8 @@ openai.APIStatusError: Error code: 402 - {'error': {'message': 'this model requi
 2026-08-27 10:21:44,046 INFO [20260820_040244_a288a94b] run_agent: OpenAI client closed (agent_close, shared=True, tcp_force_closed=0) thread=bg-review:140506926397120 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
 2026-08-27 10:21:44,046 INFO [20260820_040244_a288a94b] run_agent: OpenAI client closed (agent_close, shared=False, tcp_force_closed=0) thread=bg-review:140506926397120 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
 2026-08-27 10:21:44,048 INFO [20260820_040244_a288a94b] agent.background_review: Background review complete: thread=bg-review calls=2 in=119413 out=79 cache_read=0 result=memory
+2026-08-27 10:22:42,039 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=389784->387436 rss_anon_kib=380760->378400 threads=19 duration_ms=119.7
+2026-08-27 10:23:42,163 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388308->387436 rss_anon_kib=379272->378400 threads=19 duration_ms=122.8
+2026-08-27 10:24:42,337 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388968->387440 rss_anon_kib=379932->378404 threads=19 duration_ms=155.2
+2026-08-27 10:25:42,466 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388308->387436 rss_anon_kib=379272->378400 threads=19 duration_ms=128.3
+2026-08-27 10:26:42,614 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388308->387444 rss_anon_kib=379272->378408 threads=19 duration_ms=147.2
