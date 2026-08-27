@@ -15385,3 +15385,11 @@ openai.APIStatusError: Error code: 402 - {'error': {'message': 'this model requi
 2026-08-27 10:04:39,568 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388896->387320 rss_anon_kib=379876->378300 threads=19 duration_ms=138.9
 2026-08-27 10:05:39,696 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388176->387316 rss_anon_kib=379156->378296 threads=19 duration_ms=127.4
 2026-08-27 10:06:39,826 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388184->387320 rss_anon_kib=379164->378300 threads=19 duration_ms=129.4
+2026-08-27 10:07:39,942 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388168->387320 rss_anon_kib=379148->378300 threads=19 duration_ms=114.6
+2026-08-27 10:08:06,036 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 10:08:06,088 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling heartbeat: 1 update(s) queued but not consumed (stuck probe 1/2)
+2026-08-27 10:08:40,070 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388188->387320 rss_anon_kib=379168->378300 threads=19 duration_ms=127.6
+2026-08-27 10:09:40,214 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388880->387320 rss_anon_kib=379860->378300 threads=19 duration_ms=132.4
+2026-08-27 10:10:40,350 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388144->387320 rss_anon_kib=379124->378300 threads=19 duration_ms=135.1
+2026-08-27 10:11:06,328 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 10:11:40,465 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388184->387316 rss_anon_kib=379164->378296 threads=19 duration_ms=113.8
