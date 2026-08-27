@@ -1366,3 +1366,11 @@
 2026-08-27 11:58:17,106 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-27 12:16:13,162 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
 2026-08-27 12:16:13,356 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 12:24:52,552 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (145 chars)
+2026-08-27 12:24:52,560 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tidak adakah game yang seru buat edit,kayak guitar Hero dengan modif lagu,GTA de' reply_to_id=714 reply_to_text=''
+2026-08-27 12:25:02,740 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=10.2s api_calls=1 response=2973 chars
+2026-08-27 12:25:02,759 INFO gateway.platforms.base: [Telegram] Sending response (2973 chars) to 7699507804
+2026-08-27 12:27:23,068 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (36 chars)
+2026-08-27 12:27:23,075 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Visual novel? Bisa kamu beri contoh!' reply_to_id=714 reply_to_text=''
+2026-08-27 12:27:35,109 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=12.0s api_calls=1 response=3005 chars
+2026-08-27 12:27:35,131 INFO gateway.platforms.base: [Telegram] Sending response (3005 chars) to 7699507804
