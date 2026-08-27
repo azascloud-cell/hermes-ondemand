@@ -1272,3 +1272,7 @@
 2026-08-27 07:15:33,572 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='siapa dia?' reply_to_id=714 reply_to_text=''
 2026-08-27 07:15:33,596 INFO gateway.run: Image routing: text (mode=text). Pre-analyzing 1 image(s) via vision_analyze.
 2026-08-27 07:22:05,023 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 1 approval(s) for session agent:main:telegram:dm:7699507804:8380 (choice=always, user=Azaroni)
+2026-08-27 07:24:20,492 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=526.9s api_calls=7 response=334 chars
+2026-08-27 07:24:20,513 INFO gateway.platforms.base: [Telegram] Sending response (334 chars) to 7699507804
+2026-08-27 07:25:37,518 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (66 chars)
+2026-08-27 07:25:37,525 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tidakkah kamu bisa memperbaiki dirimu agar tools vision berfungsi?' reply_to_id=714 reply_to_text=''
