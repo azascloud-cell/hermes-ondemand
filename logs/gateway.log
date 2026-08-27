@@ -1345,3 +1345,11 @@
 2026-08-27 10:21:30,221 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='aku gabut nih,enaknya ngapain ya habis bikin tema ikeda teresa,neng lidya?' reply_to_id=714 reply_to_text=''
 2026-08-27 10:21:38,311 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.1s api_calls=1 response=1973 chars
 2026-08-27 10:21:38,334 INFO gateway.platforms.base: [Telegram] Sending response (1973 chars) to 7699507804
+2026-08-27 10:38:23,868 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_525e79dc3ea1.jpg
+2026-08-27 10:38:24,677 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Icon pack udah kelar,pegal jari-jari aku demi my wifi hehe😁😁' reply_to_id=714 reply_to_text=''
+2026-08-27 10:38:24,700 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-27 10:38:24,775 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_ca09598a78f6.jpg
+2026-08-27 10:38:25,475 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_1d17a64d2b23.jpg
+2026-08-27 10:38:26,558 INFO gateway.run: Image routing: native (model supports vision). 2 image(s) will be attached inline.
+2026-08-27 10:38:37,725 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=13.0s api_calls=1 response=1461 chars
+2026-08-27 10:38:37,742 INFO gateway.platforms.base: [Telegram] Sending response (1461 chars) to 7699507804
