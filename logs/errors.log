@@ -2030,3 +2030,110 @@ Traceback (most recent call last):
 openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
 2026-08-27 07:28:16,847 WARNING [20260820_040244_a288a94b] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
 2026-08-27 07:28:16,848 WARNING [20260820_040244_a288a94b] agent.conversation_loop: Retrying API call in 2.837124460926506s (attempt 1/3) thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:31:14,478 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4042, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 651, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:31:14,490 WARNING [20260820_040244_a288a94b] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:31:14,491 WARNING [20260820_040244_a288a94b] agent.conversation_loop: Retrying API call in 2.591061145148391s (attempt 1/3) thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:31:45,604 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4042, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 651, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:31:45,607 WARNING [20260820_040244_a288a94b] agent.conversation_loop: API call failed (attempt 2/3) error_type=APIError thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:31:45,611 WARNING [20260820_040244_a288a94b] agent.conversation_loop: Retrying API call in 5.757497994984289s (attempt 2/3) thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:32:17,862 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4042, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 651, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:32:17,872 WARNING [20260820_040244_a288a94b] agent.conversation_loop: API call failed (attempt 3/3) error_type=APIError thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:32:17,875 ERROR [20260820_040244_a288a94b] agent.conversation_loop: API call failed after 3 retries. Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded | provider=opencode-zen model=nemotron-3-ultra-free msgs=81 tokens=~33,334
+2026-08-27 07:33:12,008 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,009 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,010 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,011 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,013 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,016 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,019 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,020 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,021 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,027 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:34:12.
+2026-08-27 07:33:12,029 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-27 07:33:12,029 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:34:12.
+2026-08-27 07:33:12,029 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-27 07:33:12,031 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:34:12.
+2026-08-27 07:33:12,034 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-27 07:33:12,034 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:34:12.
+2026-08-27 07:33:12,034 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-27 07:33:12,034 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,058 WARNING [20260820_040244_a288a94b] agent.conversation_loop: Stored system prompt for session 20260820_040244_a288a94b is null; rebuilding from scratch this turn. Prefix cache will miss until the rebuild persists. Investigate the previous turn's update_system_prompt write path.
+2026-08-27 07:33:13,090 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 402 - {'error': {'message': 'this model requires a subscription or extra usage, upgrade for access at https://ollama.com/upgrade or add extra usage at https://ollama.com/settings (ref: 0122e2d3-cb65-408d-a1d9-dc36e1b9362e)', 'type': 'api_error', 'param': None, 'code': None}}
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3993, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 478, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3930, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 402 - {'error': {'message': 'this model requires a subscription or extra usage, upgrade for access at https://ollama.com/upgrade or add extra usage at https://ollama.com/settings (ref: 0122e2d3-cb65-408d-a1d9-dc36e1b9362e)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-27 07:33:13,107 WARNING [20260820_040244_a288a94b] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIStatusError thread=hermes-gateway_0:140508602816192 provider=ollama-cloud base_url=https://ollama.com/v1 model=deepseek-v4-flash:0731 summary=HTTP 402: this model requires a subscription or extra usage, upgrade for access at https://ollama.com/upgrade or add extra usage at https://ollama.com/settings (ref: 0122e2d3-cb65-408d-a1d9-dc36e1b9362e)
+2026-08-27 07:33:13,262 ERROR [20260820_040244_a288a94b] agent.conversation_loop: Non-retryable client error: Error code: 402 - {'error': {'message': 'this model requires a subscription or extra usage, upgrade for access at https://ollama.com/upgrade or add extra usage at https://ollama.com/settings (ref: 0122e2d3-cb65-408d-a1d9-dc36e1b9362e)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-27 07:33:59,010 WARNING [20260820_040244_a288a94b] agent.conversation_loop: Stored system prompt for session 20260820_040244_a288a94b is null; rebuilding from scratch this turn. Prefix cache will miss until the rebuild persists. Investigate the previous turn's update_system_prompt write path.

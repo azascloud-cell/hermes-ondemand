@@ -1276,3 +1276,15 @@
 2026-08-27 07:24:20,513 INFO gateway.platforms.base: [Telegram] Sending response (334 chars) to 7699507804
 2026-08-27 07:25:37,518 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (66 chars)
 2026-08-27 07:25:37,525 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tidakkah kamu bisa memperbaiki dirimu agar tools vision berfungsi?' reply_to_id=714 reply_to_text=''
+2026-08-27 07:32:18,066 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=400.5s api_calls=6 response=124 chars
+2026-08-27 07:32:18,067 INFO gateway.run: Transient agent failure in session 20260820_040244_a288a94b — persisting user message so conversation context is preserved on retry.
+2026-08-27 07:32:18,084 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 7699507804
+2026-08-27 07:33:11,943 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (11 chars)
+2026-08-27 07:33:11,951 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tidak bisa?' reply_to_id=714 reply_to_text=''
+2026-08-27 07:33:13,306 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=1.4s api_calls=1 response=485 chars
+2026-08-27 07:33:13,307 INFO gateway.run: Transient agent failure in session 20260820_040244_a288a94b — persisting user message so conversation context is preserved on retry.
+2026-08-27 07:33:13,325 INFO gateway.platforms.base: [Telegram] Sending response (485 chars) to 7699507804
+2026-08-27 07:33:58,940 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (11 chars)
+2026-08-27 07:33:58,948 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tidak bisa?' reply_to_id=714 reply_to_text=''
+2026-08-27 07:34:05,257 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=6.3s api_calls=1 response=945 chars
+2026-08-27 07:34:05,275 INFO gateway.platforms.base: [Telegram] Sending response (945 chars) to 7699507804

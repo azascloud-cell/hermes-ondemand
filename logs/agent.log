@@ -14977,3 +14977,164 @@ openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Se
 2026-08-27 07:28:19,860 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-340 (<lambda>):140506926397120 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
 2026-08-27 07:28:35,297 INFO tools.terminal_tool: Cleaned up inactive environment for task: default
 2026-08-27 07:29:04,096 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=387492->384392 rss_anon_kib=375592->372460 threads=22 duration_ms=138.8
+2026-08-27 07:29:33,778 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #10: model=nemotron-3-ultra-free provider=opencode-zen in=55055 out=80 total=55135 latency=108.0s cache=43200/55055 (78%)
+2026-08-27 07:29:33,826 INFO [20260820_040244_a288a94b] agent.tool_executor: tool skill_view completed (0.03s, 4549 chars)
+2026-08-27 07:30:04,252 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=387804->384412 rss_anon_kib=375904->372512 threads=22 duration_ms=155.8
+2026-08-27 07:30:04,842 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #11: model=nemotron-3-ultra-free provider=opencode-zen in=56526 out=121 total=56647 latency=31.0s cache=47520/56526 (84%)
+2026-08-27 07:30:04,852 INFO tools.terminal_tool: Creating new local environment for task default...
+2026-08-27 07:30:04,880 INFO tools.environments.base: Session snapshot created (session=db671b7198cf, cwd=/home/hermes)
+2026-08-27 07:30:04,880 INFO tools.terminal_tool: local environment ready for task default
+2026-08-27 07:30:06,106 INFO [20260820_040244_a288a94b] agent.tool_executor: tool terminal completed (1.25s, 171 chars)
+2026-08-27 07:30:46,932 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #12: model=nemotron-3-ultra-free provider=opencode-zen in=56640 out=45 total=56685 latency=40.8s cache=47520/56640 (84%)
+2026-08-27 07:30:47,595 INFO [20260820_040244_a288a94b] agent.tool_executor: tool terminal completed (0.64s, 62 chars)
+2026-08-27 07:31:04,429 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388484->385436 rss_anon_kib=376584->373536 threads=23 duration_ms=175.5
+2026-08-27 07:31:14,478 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4042, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 651, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:31:14,486 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-346 (<lambda>):140506951575232 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-27 07:31:14,490 WARNING [20260820_040244_a288a94b] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:31:14,491 WARNING [20260820_040244_a288a94b] agent.conversation_loop: Retrying API call in 2.591061145148391s (attempt 1/3) thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:31:17,104 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-347 (<lambda>):140506926397120 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-27 07:31:45,604 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4042, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 651, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:31:45,606 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-347 (<lambda>):140506926397120 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-27 07:31:45,607 WARNING [20260820_040244_a288a94b] agent.conversation_loop: API call failed (attempt 2/3) error_type=APIError thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:31:45,611 WARNING [20260820_040244_a288a94b] agent.conversation_loop: Retrying API call in 5.757497994984289s (attempt 2/3) thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:31:51,426 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-348 (<lambda>):140506926397120 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-27 07:32:04,583 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=388112->384728 rss_anon_kib=376212->372828 threads=22 duration_ms=153.3
+2026-08-27 07:32:17,862 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4042, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 651, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:32:17,868 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-348 (<lambda>):140506926397120 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-27 07:32:17,872 WARNING [20260820_040244_a288a94b] agent.conversation_loop: API call failed (attempt 3/3) error_type=APIError thread=hermes-gateway_0:140508602816192 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:32:17,875 ERROR [20260820_040244_a288a94b] agent.conversation_loop: API call failed after 3 retries. Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded | provider=opencode-zen model=nemotron-3-ultra-free msgs=81 tokens=~33,334
+2026-08-27 07:32:18,066 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=400.5s api_calls=6 response=124 chars
+2026-08-27 07:32:18,067 INFO gateway.run: Transient agent failure in session 20260820_040244_a288a94b — persisting user message so conversation context is preserved on retry.
+2026-08-27 07:32:18,084 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 7699507804
+2026-08-27 07:32:57,191 INFO agent.model_metadata: Cached context length deepseek-v4-flash:0731@https://ollama.com/v1 -> 1,048,576 tokens
+2026-08-27 07:32:57,204 INFO run_agent: OpenAI client created (switch_model, shared=True) thread=MainThread:140508814255936 provider=ollama-cloud base_url=https://ollama.com/v1 model=deepseek-v4-flash:0731
+2026-08-27 07:32:57,208 INFO agent.agent_runtime_helpers: switch_model: reasoning_config resolved for deepseek-v4-flash:0731: None
+2026-08-27 07:32:57,208 INFO agent.agent_runtime_helpers: Model switched in-place: nemotron-3-ultra-free (opencode-zen) -> deepseek-v4-flash:0731 (ollama-cloud)
+2026-08-27 07:32:57,222 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-evict-agent:main:telegram:dm:7:140506943182528 provider=ollama-cloud base_url=https://ollama.com/v1 model=deepseek-v4-flash:0731
+2026-08-27 07:33:04,736 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=395948->388620 rss_anon_kib=383748->376420 threads=19 duration_ms=152.4
+2026-08-27 07:33:11,943 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (11 chars)
+2026-08-27 07:33:11,951 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tidak bisa?' reply_to_id=714 reply_to_text=''
+2026-08-27 07:33:11,961 INFO hermes_state: Repaired 2 message-alternation violation(s) while restoring session 20260820_040244_a288a94b — durable transcript kept them, see repair_message_sequence
+2026-08-27 07:33:12,007 INFO [20260820_040244_a288a94b] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_0:140508602816192 provider=ollama-cloud base_url=https://ollama.com/v1 model=deepseek-v4-flash:0731
+2026-08-27 07:33:12,008 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_bfl_requirements returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,009 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_browser_requirements returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,010 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _browser_cdp_check returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,011 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _browser_dialog_check returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,013 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_browser_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,016 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_computer_use_requirements returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,019 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_image_generation_requirements returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,020 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _check_kanban_mode returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,021 WARNING [20260820_040244_a288a94b] tools.registry: check_fn _check_kanban_orchestrator_mode returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,027 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:34:12.
+2026-08-27 07:33:12,029 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-27 07:33:12,029 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:34:12.
+2026-08-27 07:33:12,029 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-27 07:33:12,031 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:34:12.
+2026-08-27 07:33:12,034 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-27 07:33:12,034 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:34:12.
+2026-08-27 07:33:12,034 WARNING [20260820_040244_a288a94b] agent.auxiliary_client: resolve_provider_client: nous requested but Nous Portal not configured (run: hermes auth)
+2026-08-27 07:33:12,034 WARNING [20260820_040244_a288a94b] tools.registry: check_fn check_vision_requirements returned False; dependent tools will be unavailable this turn
+2026-08-27 07:33:12,057 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=deepseek-v4-flash:0731 provider=ollama-cloud platform=telegram history=80 msg='[System note: A new message has arrived. The conversation history contains pendi...'
+2026-08-27 07:33:12,058 WARNING [20260820_040244_a288a94b] agent.conversation_loop: Stored system prompt for session 20260820_040244_a288a94b is null; rebuilding from scratch this turn. Prefix cache will miss until the rebuild persists. Investigate the previous turn's update_system_prompt write path.
+2026-08-27 07:33:12,349 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-349 (<lambda>):140507519882944 provider=ollama-cloud base_url=https://ollama.com/v1 model=deepseek-v4-flash:0731
+2026-08-27 07:33:13,090 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Error code: 402 - {'error': {'message': 'this model requires a subscription or extra usage, upgrade for access at https://ollama.com/upgrade or add extra usage at https://ollama.com/settings (ref: 0122e2d3-cb65-408d-a1d9-dc36e1b9362e)', 'type': 'api_error', 'param': None, 'code': None}}
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3993, in _call_chat_completions
+    relay_llm.stream(
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 395, in stream
+    return ManagedLlmStream(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 478, in __init__
+    raw_stream = stream_factory(request)
+                 ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 3930, in _open_stream
+    return request_client.chat.completions.create(**stream_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_utils/_utils.py", line 286, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1204, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1297, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_base_client.py", line 1070, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.APIStatusError: Error code: 402 - {'error': {'message': 'this model requires a subscription or extra usage, upgrade for access at https://ollama.com/upgrade or add extra usage at https://ollama.com/settings (ref: 0122e2d3-cb65-408d-a1d9-dc36e1b9362e)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-27 07:33:13,097 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=1) thread=Thread-349 (<lambda>):140507519882944 provider=ollama-cloud base_url=https://ollama.com/v1 model=deepseek-v4-flash:0731
+2026-08-27 07:33:13,107 INFO [20260820_040244_a288a94b] agent.credential_pool: credential pool: marking OLLAMA_API_KEY exhausted (status=402), rotating
+2026-08-27 07:33:13,107 INFO [20260820_040244_a288a94b] agent.credential_pool: credential pool: no available entries (all exhausted or empty)
+2026-08-27 07:33:13,107 WARNING [20260820_040244_a288a94b] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIStatusError thread=hermes-gateway_0:140508602816192 provider=ollama-cloud base_url=https://ollama.com/v1 model=deepseek-v4-flash:0731 summary=HTTP 402: this model requires a subscription or extra usage, upgrade for access at https://ollama.com/upgrade or add extra usage at https://ollama.com/settings (ref: 0122e2d3-cb65-408d-a1d9-dc36e1b9362e)
+2026-08-27 07:33:13,262 ERROR [20260820_040244_a288a94b] agent.conversation_loop: Non-retryable client error: Error code: 402 - {'error': {'message': 'this model requires a subscription or extra usage, upgrade for access at https://ollama.com/upgrade or add extra usage at https://ollama.com/settings (ref: 0122e2d3-cb65-408d-a1d9-dc36e1b9362e)', 'type': 'api_error', 'param': None, 'code': None}}
+2026-08-27 07:33:13,306 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=1.4s api_calls=1 response=485 chars
+2026-08-27 07:33:13,307 INFO gateway.run: Transient agent failure in session 20260820_040244_a288a94b — persisting user message so conversation context is preserved on retry.
+2026-08-27 07:33:13,325 INFO gateway.platforms.base: [Telegram] Sending response (485 chars) to 7699507804
+2026-08-27 07:33:50,324 INFO run_agent: OpenAI client created (switch_model, shared=True) thread=MainThread:140508814255936 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-27 07:33:50,327 INFO agent.agent_runtime_helpers: switch_model: reasoning_config resolved for gemma4:31b: None
+2026-08-27 07:33:50,328 INFO agent.agent_runtime_helpers: Model switched in-place: deepseek-v4-flash:0731 (ollama-cloud) -> gemma4:31b (ollama-cloud)
+2026-08-27 07:33:50,348 INFO run_agent: Shared OpenAI client retired (cache_evict, tcp_shutdown=0, fd_release=deferred_to_gc) thread=agent-evict-agent:main:telegram:dm:7:140506943182528 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-27 07:33:58,940 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (11 chars)
+2026-08-27 07:33:58,948 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tidak bisa?' reply_to_id=714 reply_to_text=''
+2026-08-27 07:33:58,957 INFO hermes_state: Repaired 2 message-alternation violation(s) while restoring session 20260820_040244_a288a94b — durable transcript kept them, see repair_message_sequence
+2026-08-27 07:33:59,002 INFO [20260820_040244_a288a94b] run_agent: OpenAI client created (agent_init, shared=True) thread=hermes-gateway_1:140508056233664 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-27 07:33:59,009 INFO [20260820_040244_a288a94b] agent.turn_context: conversation turn: session=20260820_040244_a288a94b model=gemma4:31b provider=ollama-cloud platform=telegram history=81 msg='[Note: model was just switched from deepseek-v4-flash:0731 to gemma4:31b via Oll...'
+2026-08-27 07:33:59,010 WARNING [20260820_040244_a288a94b] agent.conversation_loop: Stored system prompt for session 20260820_040244_a288a94b is null; rebuilding from scratch this turn. Prefix cache will miss until the rebuild persists. Investigate the previous turn's update_system_prompt write path.
+2026-08-27 07:33:59,026 INFO [20260820_040244_a288a94b] agent.conversation_loop: Repaired 1 message-alternation violations before request (session=20260820_040244_a288a94b)
+2026-08-27 07:34:00,039 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-350 (<lambda>):140507519882944 provider=ollama-cloud base_url=https://ollama.com/v1 model=gemma4:31b
+2026-08-27 07:34:04,906 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=397288->390580 rss_anon_kib=385088->378380 threads=22 duration_ms=154.2
+2026-08-27 07:34:04,947 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #1: model=gemma4:31b provider=ollama-cloud in=54939 out=235 total=55174 latency=5.9s
+2026-08-27 07:34:05,235 INFO [20260820_040244_a288a94b] agent.conversation_loop: Turn ended: reason=text_response(finish_reason=stop) model=gemma4:31b api_calls=1/500 budget=1/500 tool_turns=21 last_msg_role=assistant response_len=945 session=20260820_040244_a288a94b
+2026-08-27 07:34:05,257 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=6.3s api_calls=1 response=945 chars
+2026-08-27 07:34:05,275 INFO gateway.platforms.base: [Telegram] Sending response (945 chars) to 7699507804
