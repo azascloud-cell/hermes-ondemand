@@ -1335,3 +1335,4 @@
 2026-08-27 09:18:17,872 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
 2026-08-27 09:18:26,354 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.5s api_calls=1 response=1480 chars
 2026-08-27 09:18:26,374 INFO gateway.platforms.base: [Telegram] Sending response (1480 chars) to 7699507804
+2026-08-27 09:39:00,266 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
