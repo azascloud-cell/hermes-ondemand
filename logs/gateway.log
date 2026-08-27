@@ -1310,3 +1310,9 @@
 2026-08-27 07:43:21,665 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Buat edit ikon pakai shortcut maker,buat wallpaper pakai Canva,lalu pallet warna' reply_to_id=714 reply_to_text=''
 2026-08-27 07:43:28,757 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=7.1s api_calls=1 response=1493 chars
 2026-08-27 07:43:28,776 INFO gateway.platforms.base: [Telegram] Sending response (1493 chars) to 7699507804
+2026-08-27 08:29:13,054 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_2fb98fe57c1f.jpg
+2026-08-27 08:29:13,856 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:7699507804:8380:photo-burst with 1 image(s)
+2026-08-27 08:29:13,865 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Pas aku mau apply ke lick screen,kok gak full ya neng,kasih saran dong!' reply_to_id=714 reply_to_text=''
+2026-08-27 08:29:13,894 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-27 08:29:22,533 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.7s api_calls=1 response=1959 chars
+2026-08-27 08:29:22,551 INFO gateway.platforms.base: [Telegram] Sending response (1959 chars) to 7699507804
