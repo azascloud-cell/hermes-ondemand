@@ -1374,3 +1374,7 @@
 2026-08-27 12:27:23,075 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Visual novel? Bisa kamu beri contoh!' reply_to_id=714 reply_to_text=''
 2026-08-27 12:27:35,109 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=12.0s api_calls=1 response=3005 chars
 2026-08-27 12:27:35,131 INFO gateway.platforms.base: [Telegram] Sending response (3005 chars) to 7699507804
+2026-08-27 12:58:16,142 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (60 chars)
+2026-08-27 12:58:16,148 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='N8n bisa konek ke kamu nggak neng? Lalu,n8n sendiri itu apa?' reply_to_id=714 reply_to_text=''
+2026-08-27 12:58:28,119 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=12.0s api_calls=1 response=2623 chars
+2026-08-27 12:58:28,143 INFO gateway.platforms.base: [Telegram] Sending response (2623 chars) to 7699507804
