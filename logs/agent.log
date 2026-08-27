@@ -14868,3 +14868,52 @@ openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Se
 2026-08-27 07:18:53,444 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #3: model=nemotron-3-ultra-free provider=opencode-zen in=48606 out=105 total=48711 latency=64.8s
 2026-08-27 07:18:54,156 WARNING [20260820_040244_a288a94b] agent.tool_executor: Tool terminal returned error (0.60s): {"output": "/usr/bin/bash: line 4: file: command not found", "exit_code": 127, "error": null, "hint": "`file` is not installed or not on PATH. Verify with `which file`; install it or use an absolute p
 2026-08-27 07:19:00,881 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=386208->383176 rss_anon_kib=374620->371588 threads=23 duration_ms=1123.8
+2026-08-27 07:19:22,362 ERROR agent.chat_completion_helpers: Streaming failed before delivery: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+Traceback (most recent call last):
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4721, in _call
+    result["response"] = _call_chat_completions(stream_attempt_id)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 4042, in _call_chat_completions
+    for chunk in _iter_provider_stream_chunks(
+  File "/home/hermes/.hermes/hermes-agent/agent/chat_completion_helpers.py", line 335, in _iter_provider_stream_chunks
+    yield from stream
+  File "/home/hermes/.hermes/hermes-agent/agent/relay_llm.py", line 651, in __next__
+    chunk = next(self._stream)
+            ^^^^^^^^^^^^^^^^^^
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 49, in __iter__
+    for item in self._iterator:
+  File "/home/hermes/.hermes/hermes-agent/venv/lib/python3.11/site-packages/openai/_streaming.py", line 95, in __stream__
+    raise APIError(
+openai.APIError: Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:19:22,367 INFO run_agent: OpenAI client closed (stream_error_cleanup, shared=False, tcp_force_closed=0) thread=Thread-329 (<lambda>):140506943182528 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-27 07:19:22,370 WARNING [20260820_040244_a288a94b] agent.conversation_loop: API call failed (attempt 1/3) error_type=APIError thread=hermes-gateway_1:140508056233664 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free summary=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:19:22,370 WARNING [20260820_040244_a288a94b] agent.conversation_loop: Retrying API call in 2.9075598009101786s (attempt 1/3) thread=hermes-gateway_1:140508056233664 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free policy=default error=Streaming response failed: [502] Upstream error from Nvidia: Service temporarily overloaded
+2026-08-27 07:19:25,382 INFO run_agent: OpenAI client created (chat_completion_stream_request, shared=False) thread=Thread-330 (<lambda>):140507539814080 provider=opencode-zen base_url=https://opencode.ai/zen/v1 model=nemotron-3-ultra-free
+2026-08-27 07:20:01,026 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=386204->383004 rss_anon_kib=374616->371416 threads=22 duration_ms=144.6
+2026-08-27 07:20:01,814 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #4: model=nemotron-3-ultra-free provider=opencode-zen in=48739 out=344 total=49083 latency=67.6s cache=43200/48739 (89%)
+2026-08-27 07:20:01,898 INFO agent.auxiliary_client: Auxiliary auto-detect: using main provider opencode-zen (nemotron-3-ultra-free)
+2026-08-27 07:20:01,899 INFO agent.auxiliary_client: Auxiliary approval: using opencode-zen (nemotron-3-ultra-free) at https://opencode.ai/zen/v1/
+2026-08-27 07:20:32,271 INFO agent.auxiliary_client: Auxiliary approval: transient transport error (attempt 1/2); retrying same provider after 1.0s before fallback: Request timed out.
+2026-08-27 07:21:01,174 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=384888->383588 rss_anon_kib=373224->371924 threads=23 duration_ms=147.7
+2026-08-27 07:21:03,652 INFO agent.auxiliary_client: Auxiliary approval: transient transport error (attempt 2/2); retrying same provider after 2.0s before fallback: Request timed out.
+2026-08-27 07:21:32,422 INFO agent.auxiliary_client: Auxiliary approval: invalid provider response on auto (Auxiliary approval: LLM returned invalid response (type=ChatCompletion): 'ChatCompletion(id=None, choices=None, created=None, model=None, object=None, service_tier=None, system_fingerprint=None,'. Expected object with .choices[0].message — check provider adapter or custom endpoint compatibility.), trying fallback
+2026-08-27 07:21:32,424 WARNING agent.auxiliary_client: Auxiliary: marking openrouter unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:22:32.
+2026-08-27 07:21:32,426 WARNING agent.auxiliary_client: Auxiliary Nous client unavailable: no Nous authentication found (run: hermes auth).
+2026-08-27 07:21:32,426 WARNING agent.auxiliary_client: Auxiliary: marking nous unhealthy for 60s (payment / credit error). Subsequent auxiliary calls will skip it until 07:22:32.
+2026-08-27 07:21:32,457 INFO agent.auxiliary_client: Auxiliary approval: invalid provider response on auto — falling back to api-key (gemini-3-flash)
+2026-08-27 07:21:33,091 WARNING agent.auxiliary_client: Auxiliary: marking api-key unhealthy for 600s (payment / credit error). Subsequent auxiliary calls will skip it until 07:31:33.
+2026-08-27 07:21:33,092 WARNING agent.auxiliary_client: Auxiliary approval: fallback candidate api-key has a stale/unrefreshable credential (Error code: 401 - {'type': 'error', 'error': {'type': 'CreditsError', 'message': 'No payment method. Add a payment method here: https://opencode.ai/workspace/wrk_01KWY7R8T1C47XGRYA0WHKEYC2/billing'}}) — skipping to next fallback
+2026-08-27 07:21:33,092 INFO agent.auxiliary_client: Auxiliary approval: skipping openrouter (recently returned payment error, retry in 59s)
+2026-08-27 07:21:33,093 INFO agent.auxiliary_client: Auxiliary approval: skipping nous (recently returned payment error, retry in 59s)
+2026-08-27 07:21:33,098 INFO agent.auxiliary_client: Auxiliary approval: skipping api-key (recently returned payment error, retry in 599s)
+2026-08-27 07:21:33,098 WARNING agent.auxiliary_client: Auxiliary approval: stale fallback credential on auto and no fallback available (tried: openrouter (unhealthy), nous (unhealthy), local/custom, api-key (unhealthy))
+2026-08-27 07:21:33,098 WARNING agent.auxiliary_client: Auxiliary approval: invalid provider response on auto and all fallbacks exhausted (fallback_chain + main agent model). Raising original error.
+2026-08-27 07:22:01,332 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=385380->383904 rss_anon_kib=373716->372240 threads=23 duration_ms=157.1
+2026-08-27 07:22:05,023 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 1 approval(s) for session agent:main:telegram:dm:7699507804:8380 (choice=always, user=Azaroni)
+2026-08-27 07:22:05,144 INFO [20260820_040244_a288a94b] agent.tool_executor: tool terminal completed (123.32s, 267 chars)
+2026-08-27 07:22:35,064 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #5: model=nemotron-3-ultra-free provider=opencode-zen in=49117 out=162 total=49279 latency=29.9s cache=43200/49117 (88%)
+2026-08-27 07:22:35,955 INFO [20260820_040244_a288a94b] agent.tool_executor: tool terminal completed (0.25s, 278 chars)
+2026-08-27 07:23:01,483 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=387316->384724 rss_anon_kib=375652->373060 threads=23 duration_ms=149.8
+2026-08-27 07:23:21,541 INFO [20260820_040244_a288a94b] agent.conversation_loop: API call #6: model=nemotron-3-ultra-free provider=opencode-zen in=49408 out=453 total=49861 latency=45.6s cache=43200/49408 (87%)
+2026-08-27 07:23:22,416 INFO [20260820_040244_a288a94b] agent.tool_executor: tool browser_exec completed (0.86s, 291 chars)
+2026-08-27 07:24:03,356 INFO hermes_cli.mem_trim: memory trim: reason=messaging gateway housekeeping malloc_trim=1 rss_kib=386912->383872 rss_anon_kib=375248->372208 threads=22 duration_ms=1694.0
