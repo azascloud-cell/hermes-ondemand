@@ -1359,3 +1359,7 @@
 2026-08-27 11:12:49,448 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Lock screen nih,masih belum kawaii,mwehehe sama kalo bisa booting animasi sih' reply_to_id=714 reply_to_text=''
 2026-08-27 11:12:59,044 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.6s api_calls=1 response=2308 chars
 2026-08-27 11:12:59,255 INFO gateway.platforms.base: [Telegram] Sending response (2308 chars) to 7699507804
+2026-08-27 11:32:10,210 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (50 chars)
+2026-08-27 11:32:10,217 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Emang,kalau live wallpaper itu format filenya apa?' reply_to_id=714 reply_to_text=''
+2026-08-27 11:32:16,913 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=6.7s api_calls=1 response=1985 chars
+2026-08-27 11:32:16,935 INFO gateway.platforms.base: [Telegram] Sending response (1985 chars) to 7699507804
