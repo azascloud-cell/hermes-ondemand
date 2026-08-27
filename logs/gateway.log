@@ -1288,3 +1288,21 @@
 2026-08-27 07:33:58,948 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tidak bisa?' reply_to_id=714 reply_to_text=''
 2026-08-27 07:34:05,257 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=6.3s api_calls=1 response=945 chars
 2026-08-27 07:34:05,275 INFO gateway.platforms.base: [Telegram] Sending response (945 chars) to 7699507804
+2026-08-27 07:34:54,741 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_7d74dd3d59e6.jpg
+2026-08-27 07:34:55,542 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:7699507804:8380:photo-burst with 1 image(s)
+2026-08-27 07:34:55,551 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Nih,aku kirim lagi!' reply_to_id=714 reply_to_text=''
+2026-08-27 07:34:55,583 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-27 07:35:00,792 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=5.2s api_calls=1 response=424 chars
+2026-08-27 07:35:00,810 INFO gateway.platforms.base: [Telegram] Sending response (424 chars) to 7699507804
+2026-08-27 07:35:40,477 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (68 chars)
+2026-08-27 07:35:40,485 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Dia idola artis jepang,yang kebetulan mirip sama cewek yang aku suka' reply_to_id=714 reply_to_text=''
+2026-08-27 07:35:43,645 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=3.2s api_calls=1 response=501 chars
+2026-08-27 07:35:43,662 INFO gateway.platforms.base: [Telegram] Sending response (501 chars) to 7699507804
+2026-08-27 07:36:45,279 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (67 chars)
+2026-08-27 07:36:45,289 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Nama artisnya: Ikeda Teresa Nama cewek yang aku suka: Dewi Maulidya' reply_to_id=714 reply_to_text=''
+2026-08-27 07:36:50,423 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=5.1s api_calls=1 response=792 chars
+2026-08-27 07:36:50,441 INFO gateway.platforms.base: [Telegram] Sending response (792 chars) to 7699507804
+2026-08-27 07:38:00,317 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (91 chars)
+2026-08-27 07:38:00,325 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Aku mau bikin wallpaper sekaligus tema dari beberapa fotonya artis ini,tapi gak ' reply_to_id=714 reply_to_text=''
+2026-08-27 07:38:10,845 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=10.5s api_calls=1 response=2667 chars
+2026-08-27 07:38:10,865 INFO gateway.platforms.base: [Telegram] Sending response (2667 chars) to 7699507804
