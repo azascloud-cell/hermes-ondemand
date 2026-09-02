@@ -1386,3 +1386,525 @@
 2026-08-27 13:02:39,199 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Untuk kamu yang sekarang gak bisa sentuh repo aku ya' reply_to_id=714 reply_to_text=''
 2026-08-27 13:02:50,781 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=11.6s api_calls=1 response=1646 chars
 2026-08-27 13:02:50,807 INFO gateway.platforms.base: [Telegram] Sending response (1646 chars) to 7699507804
+2026-08-27 13:13:40,757 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (394 chars)
+2026-08-27 13:13:40,765 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Kamu itu berjalan pakai data repo https://github.com/azascloud-cell/hermes-ondem' reply_to_id=714 reply_to_text=''
+2026-08-27 13:14:16,567 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=35.8s api_calls=4 response=2095 chars
+2026-08-27 13:14:16,591 INFO gateway.platforms.base: [Telegram] Sending response (2095 chars) to 7699507804
+2026-08-27 13:17:13,856 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (48 chars)
+2026-08-27 13:17:13,863 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='N8n sendiri bisa dipakai di railway juga kan ya?' reply_to_id=714 reply_to_text=''
+2026-08-27 13:17:23,155 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.3s api_calls=1 response=2066 chars
+2026-08-27 13:17:23,175 INFO gateway.platforms.base: [Telegram] Sending response (2066 chars) to 7699507804
+2026-08-27 13:20:10,230 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (167 chars)
+2026-08-27 13:20:10,238 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tapi, pemakaian untuk Hermes dan n8n akan sangat menguras token railway juga kan' reply_to_id=714 reply_to_text=''
+2026-08-27 13:20:21,559 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=11.3s api_calls=1 response=2699 chars
+2026-08-27 13:20:21,760 INFO gateway.platforms.base: [Telegram] Sending response (2699 chars) to 7699507804
+2026-08-27 13:22:48,163 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (97 chars)
+2026-08-27 13:22:48,171 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Aku gak bisa setup Panel Pterodactyl,tapi aku bisa sewa panelnya,apa ini masih b' reply_to_id=714 reply_to_text=''
+2026-08-27 13:22:57,027 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.9s api_calls=1 response=2057 chars
+2026-08-27 13:22:57,049 INFO gateway.platforms.base: [Telegram] Sending response (2057 chars) to 7699507804
+2026-08-27 13:26:33,754 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (60 chars)
+2026-08-27 13:26:33,761 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bisa kamu Carikan repo n8n tinggal instal untuk pterodactyl?' reply_to_id=714 reply_to_text=''
+2026-08-27 13:26:43,569 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.8s api_calls=1 response=2415 chars
+2026-08-27 13:26:43,591 INFO gateway.platforms.base: [Telegram] Sending response (2402 chars) to 7699507804
+2026-08-27 13:28:52,918 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (37 chars)
+2026-08-27 13:28:52,926 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ah, bingung saya,otak ku loading nih,' reply_to_id=714 reply_to_text=''
+2026-08-27 13:29:00,510 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=7.6s api_calls=1 response=1287 chars
+2026-08-27 13:29:00,534 INFO gateway.platforms.base: [Telegram] Sending response (1287 chars) to 7699507804
+2026-08-27 13:54:58,064 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9103 (19 chars)
+2026-08-27 13:54:58,072 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='kamu tahu salsanow?' reply_to_id=1088 reply_to_text=''
+2026-08-27 13:55:18,945 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=20.9s api_calls=1 response=434 chars
+2026-08-27 13:55:18,966 INFO gateway.platforms.base: [Telegram] Sending response (434 chars) to 7699507804
+2026-08-27 14:31:25,161 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8380 (idle=3745s)
+2026-08-27 14:31:25,162 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-27 14:53:32,917 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 14:56:29,800 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:9103 (idle=3671s)
+2026-08-27 14:56:29,802 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-27 16:05:13,028 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 16:16:07,611 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 16:16:07,862 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 16:56:06,901 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 17:00:00,931 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 19:04:39,653 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 22:01:09,768 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 22:01:10,004 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 22:57:14,737 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (20 chars)
+2026-08-27 22:57:14,744 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Beritanya mana neng?' reply_to_id=714 reply_to_text=''
+2026-08-27 22:57:32,003 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=17.3s api_calls=2 response=2438 chars
+2026-08-27 22:57:32,023 INFO gateway.platforms.base: [Telegram] Sending response (2438 chars) to 7699507804
+2026-08-27 23:32:32,792 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 23:49:05,249 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-27 23:58:15,961 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8380 (idle=3644s)
+2026-08-27 23:58:15,963 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-28 00:21:23,740 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 00:49:06,547 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 00:49:06,809 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 00:51:59,990 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 01:00:59,077 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 01:30:30,701 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 02:00:31,283 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 03:36:31,584 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 04:06:31,493 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 04:26:07,956 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 04:26:08,255 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 04:39:31,643 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 05:13:32,339 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 05:19:03,102 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 05:25:21,433 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 05:39:10,020 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 05:39:10,312 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 05:49:28,703 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 07:24:03,771 INFO gateway.run: Image cache cleanup: removed 1 stale file(s)
+2026-08-28 07:24:58,754 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 07:54:58,941 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 08:19:00,495 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 08:24:14,397 INFO gateway.run: Image cache cleanup: removed 1 stale file(s)
+2026-08-28 08:39:27,633 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 08:59:27,641 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 09:19:00,555 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 09:24:25,799 INFO gateway.run: Image cache cleanup: removed 4 stale file(s)
+2026-08-28 09:53:11,625 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 10:14:00,345 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 10:53:06,644 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 10:53:06,909 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 10:53:27,485 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 11:11:23,232 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 11:18:05,123 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 11:24:48,735 INFO gateway.run: Image cache cleanup: removed 3 stale file(s)
+2026-08-28 11:41:12,039 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 11:41:12,367 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 11:57:53,341 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 12:06:57,523 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 13:48:56,186 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 14:06:56,302 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 14:12:22,970 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 14:13:52,956 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 14:40:11,846 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (1740 chars)
+2026-08-28 14:40:11,853 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ini percakapan aku deng neng lidya!  [8/28, 9:04\u202fPM] zarofyd: Kamu kirim aja,yan' reply_to_id=714 reply_to_text=''
+2026-08-28 14:40:23,715 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=11.9s api_calls=1 response=2064 chars
+2026-08-28 14:40:23,734 INFO gateway.platforms.base: [Telegram] Sending response (2064 chars) to 7699507804
+2026-08-28 14:42:25,861 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (23 chars)
+2026-08-28 14:42:25,868 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Toduss itu artinya apa?' reply_to_id=714 reply_to_text=''
+2026-08-28 14:42:34,016 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.1s api_calls=1 response=1413 chars
+2026-08-28 14:42:34,035 INFO gateway.platforms.base: [Telegram] Sending response (1413 chars) to 7699507804
+2026-08-28 14:43:35,374 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (42 chars)
+2026-08-28 14:43:35,380 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Kirain artinya modus dari arti kata Madura' reply_to_id=714 reply_to_text=''
+2026-08-28 14:43:45,533 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=10.2s api_calls=1 response=1314 chars
+2026-08-28 14:43:45,550 INFO gateway.platforms.base: [Telegram] Sending response (1314 chars) to 7699507804
+2026-08-28 15:06:56,478 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 15:16:49,117 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 15:26:07,374 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 15:33:13,554 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 15:33:13,835 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 15:34:04,243 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9141 (98 chars)
+2026-08-28 15:34:04,281 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Kalau aku beli admin panel pterodactyl,bisa nggak kamu buatkan script repo ini j' reply_to_id=1101 reply_to_text=''
+2026-08-28 15:34:40,551 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=36.3s api_calls=2 response=720 chars
+2026-08-28 15:34:40,572 INFO gateway.platforms.base: [Telegram] Sending response (720 chars) to 7699507804
+2026-08-28 15:36:09,264 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9141 (87 chars)
+2026-08-28 15:36:09,271 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='1. Repo Hermes on demand yang pernah kita bahas itulah 2. Mungkin di dalam node ' reply_to_id=1101 reply_to_text=''
+2026-08-28 15:36:21,180 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=11.9s api_calls=1 response=1117 chars
+2026-08-28 15:36:21,197 INFO gateway.platforms.base: [Telegram] Sending response (1117 chars) to 7699507804
+2026-08-28 15:46:18,286 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8380 (idle=3753s)
+2026-08-28 15:46:18,288 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-28 16:36:26,399 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:9141 (idle=3605s)
+2026-08-28 16:36:26,401 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-28 16:56:13,499 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 16:56:13,759 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 17:00:00,602 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 17:00:01,099 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 17:07:44,462 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 18:09:14,839 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 18:39:43,757 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 19:09:44,455 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 19:40:44,338 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 20:24:44,433 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 20:54:44,706 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 20:54:46,166 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 21:07:08,710 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-28 21:07:09,029 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-29 00:44:21,632 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (609 chars)
+2026-08-29 00:44:21,639 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[8/29, 7:30\u202fAM] zarofyd: Aku gak faham Madura,  Toduss iku isin kan? Aku cari"  ' reply_to_id=1100 reply_to_text='Hahaha! Wah, kalau Mas berpikir itu dari bahasa Madura, bisa jadi ada pergeseran'
+2026-08-29 00:44:32,703 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=11.1s api_calls=1 response=2084 chars
+2026-08-29 00:44:32,717 INFO gateway.platforms.base: [Telegram] Sending response (2084 chars) to 7699507804
+2026-08-29 00:45:36,938 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (59 chars)
+2026-08-29 00:45:36,962 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bukan,itu pertanyaan aku ke kamu,neng lidya.  Modus itu apa' reply_to_id=714 reply_to_text=''
+2026-08-29 00:45:42,960 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=6.0s api_calls=1 response=1578 chars
+2026-08-29 00:45:43,357 INFO gateway.platforms.base: [Telegram] Sending response (1578 chars) to 7699507804
+2026-08-29 00:47:34,582 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (47 chars)
+2026-08-29 00:47:34,587 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tapi,modus aku mungkin biar bisa simpan fotonya' reply_to_id=714 reply_to_text=''
+2026-08-29 00:47:42,588 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.0s api_calls=1 response=1174 chars
+2026-08-29 00:47:42,616 INFO gateway.platforms.base: [Telegram] Sending response (1174 chars) to 7699507804
+2026-08-29 01:00:46,335 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-29 01:48:01,433 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8380 (idle=3619s)
+2026-08-29 01:48:01,435 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-29 13:12:38,652 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_0859c49a3168.jpg
+2026-08-29 13:12:39,461 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ini fotonya Dewi Maulidya,tapi bisakah kamu berikan aku penjelasan mengenai cinc' reply_to_id=714 reply_to_text=''
+2026-08-29 13:12:39,467 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_419ab316a960.jpg
+2026-08-29 13:12:39,484 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-29 13:12:40,471 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-29 13:12:51,714 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=12.3s api_calls=1 response=2266 chars
+2026-08-29 13:12:51,730 INFO gateway.platforms.base: [Telegram] Sending response (2266 chars) to 7699507804
+2026-08-29 14:15:11,623 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8380 (idle=3740s)
+2026-08-29 14:15:11,625 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-29 17:00:01,449 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-29 20:36:48,009 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_e5066e245acf.jpg
+2026-08-29 20:36:48,810 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:7699507804:8380:photo-burst with 1 image(s)
+2026-08-29 20:36:48,817 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Aku cuma dapet fotonya sedikit dari ig dan vtnya, bagaimana ini? Apa aku kasih w' reply_to_id=714 reply_to_text=''
+2026-08-29 20:36:48,840 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-29 20:37:01,248 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=12.4s api_calls=1 response=2395 chars
+2026-08-29 20:37:01,267 INFO gateway.platforms.base: [Telegram] Sending response (2395 chars) to 7699507804
+2026-08-29 20:39:54,557 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (76 chars)
+2026-08-29 20:39:54,568 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ah,created with love ini agak berlebihan,aku jadi gak yakin mau tambahin ini' reply_to_id=714 reply_to_text=''
+2026-08-29 20:40:05,202 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=10.6s api_calls=1 response=1438 chars
+2026-08-29 20:40:05,220 INFO gateway.platforms.base: [Telegram] Sending response (1438 chars) to 7699507804
+2026-08-29 20:49:14,384 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_5d160669c344.jpg
+2026-08-29 20:49:15,186 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:7699507804:8380:photo-burst with 1 image(s)
+2026-08-29 20:49:15,193 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='' reply_to_id=714 reply_to_text=''
+2026-08-29 20:49:15,213 INFO gateway.run: Image routing: native (model supports vision). 1 image(s) will be attached inline.
+2026-08-29 20:49:26,869 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=11.7s api_calls=1 response=2141 chars
+2026-08-29 20:49:26,884 INFO gateway.platforms.base: [Telegram] Sending response (2141 chars) to 7699507804
+2026-08-29 21:37:56,230 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9311 (60 chars)
+2026-08-29 21:37:56,238 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Buatkan list rekomendasi surat pendek harian sholat 5 waktu!' reply_to_id=1125 reply_to_text=''
+2026-08-29 21:38:17,260 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=21.0s api_calls=1 response=2476 chars
+2026-08-29 21:38:17,282 INFO gateway.platforms.base: [Telegram] Sending response (2476 chars) to 7699507804
+2026-08-29 21:38:48,467 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9311 (59 chars)
+2026-08-29 21:38:48,473 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg="Maksudnya surat pendek Al-Qur'an yang dibacakan tiap rakaat" reply_to_id=1125 reply_to_text=''
+2026-08-29 21:39:14,113 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=25.6s api_calls=1 response=2486 chars
+2026-08-29 21:39:14,133 INFO gateway.platforms.base: [Telegram] Sending response (2486 chars) to 7699507804
+2026-08-29 21:51:34,445 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8380 (idle=3728s)
+2026-08-29 21:51:34,446 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-29 22:08:15,356 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (54 chars)
+2026-08-29 22:08:15,362 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tanggalnya salah neng, harusnya Minggu 30 Agustus 2026' reply_to_id=1130 reply_to_text='Cronjob Response: Ringkasan Berita Pagi Mas Azza (job_id: 7c65859d777f) --------'
+2026-08-29 22:08:26,721 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=11.4s api_calls=1 response=517 chars
+2026-08-29 22:08:26,738 INFO gateway.platforms.base: [Telegram] Sending response (517 chars) to 7699507804
+2026-08-29 22:41:41,590 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:9311 (idle=3748s)
+2026-08-29 22:41:41,592 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-29 23:11:47,827 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8380 (idle=3801s)
+2026-08-29 23:11:47,829 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-30 01:00:13,433 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-30 07:31:35,925 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9340 (79 chars)
+2026-08-30 07:31:35,932 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Neng!  Carikan job freelance web seo dong,sambil isi waktu luang buat cari cuan' reply_to_id=1133 reply_to_text=''
+2026-08-30 07:31:55,263 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=19.3s api_calls=2 response=123 chars
+2026-08-30 07:31:55,264 INFO gateway.run: Transient agent failure in session 20260830_073135_f06d2cdc — persisting user message so conversation context is preserved on retry.
+2026-08-30 07:31:55,284 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 7699507804
+2026-08-30 07:33:15,041 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9340 (8 chars)
+2026-08-30 07:33:15,048 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ada apa?' reply_to_id=1133 reply_to_text=''
+2026-08-30 07:33:24,540 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.5s api_calls=1 response=1114 chars
+2026-08-30 07:33:24,556 INFO gateway.platforms.base: [Telegram] Sending response (1114 chars) to 7699507804
+2026-08-30 07:58:05,857 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9340 (163 chars)
+2026-08-30 07:58:05,863 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Neng,aku masuk grup developer script panel pterodactyl,yang bisa share script da' reply_to_id=1133 reply_to_text=''
+2026-08-30 07:58:18,657 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=12.8s api_calls=1 response=1302 chars
+2026-08-30 07:58:18,755 INFO gateway.platforms.base: [Telegram] Sending response (1302 chars) to 7699507804
+2026-08-30 08:00:15,231 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9340 (143 chars)
+2026-08-30 08:00:15,237 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ini kayak bikin tampilan dari panelnya ya?  Tapi,aku mau buat script yang jalan,' reply_to_id=1133 reply_to_text=''
+2026-08-30 08:00:34,908 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=19.7s api_calls=1 response=1113 chars
+2026-08-30 08:00:34,923 INFO gateway.platforms.base: [Telegram] Sending response (1113 chars) to 7699507804
+2026-08-30 08:02:20,852 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9340 (62 chars)
+2026-08-30 08:02:20,859 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='🤔 bagus sih,tapi aku mau script yang mungkin banyak orang cari' reply_to_id=1133 reply_to_text=''
+2026-08-30 08:02:31,508 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=10.6s api_calls=1 response=1139 chars
+2026-08-30 08:02:31,527 INFO gateway.platforms.base: [Telegram] Sending response (1139 chars) to 7699507804
+2026-08-30 08:03:44,851 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9340 (24 chars)
+2026-08-30 08:03:44,862 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Developer tools itu apa?' reply_to_id=1133 reply_to_text=''
+2026-08-30 08:04:06,373 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=21.5s api_calls=1 response=1214 chars
+2026-08-30 08:04:06,396 INFO gateway.platforms.base: [Telegram] Sending response (1214 chars) to 7699507804
+2026-08-30 08:06:27,630 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9340 (164 chars)
+2026-08-30 08:06:27,636 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ada gak yang orang rela bayar receh buat bot misal rp.550-1000 untuk tiap layana' reply_to_id=1133 reply_to_text=''
+2026-08-30 08:06:38,099 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=10.5s api_calls=1 response=123 chars
+2026-08-30 08:06:38,099 INFO gateway.run: Transient agent failure in session 20260830_073135_f06d2cdc — persisting user message so conversation context is preserved on retry.
+2026-08-30 08:06:38,114 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 7699507804
+2026-08-30 08:06:53,543 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9340 (3 chars)
+2026-08-30 08:06:53,548 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Try' reply_to_id=1133 reply_to_text=''
+2026-08-30 08:07:12,460 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=18.9s api_calls=1 response=1312 chars
+2026-08-30 08:07:12,479 INFO gateway.platforms.base: [Telegram] Sending response (1312 chars) to 7699507804
+2026-08-30 09:08:34,595 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:9340 (idle=3682s)
+2026-08-30 09:08:34,597 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-30 13:34:02,601 INFO gateway.run: Image cache cleanup: removed 2 stale file(s)
+2026-08-30 16:20:44,262 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_50baf37404fe.jpg
+2026-08-30 16:20:45,064 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:7699507804:9340:photo-burst with 1 image(s)
+2026-08-30 16:20:45,070 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bisakah kamu mengartikan vt ini?' reply_to_id=1133 reply_to_text=''
+2026-08-30 16:20:45,093 INFO gateway.run: Image routing: text (mode=text). Pre-analyzing 1 image(s) via vision_analyze.
+2026-08-30 16:21:07,972 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=22.9s api_calls=2 response=977 chars
+2026-08-30 16:21:07,989 INFO gateway.platforms.base: [Telegram] Sending response (977 chars) to 7699507804
+2026-08-30 17:00:01,385 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-30 17:25:00,110 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:9340 (idle=3832s)
+2026-08-30 17:25:00,112 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-30 21:35:26,603 INFO gateway.run: Image cache cleanup: removed 2 stale file(s)
+2026-08-30 22:01:09,102 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-30 22:01:09,452 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-30 22:05:47,857 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-30 23:04:15,579 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-30 23:34:15,592 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 00:33:16,395 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 01:00:44,561 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 01:31:47,573 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 02:02:11,882 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 02:02:12,221 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 02:26:47,330 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 03:43:59,678 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 04:13:59,737 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 04:36:50,683 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:8380 (14 chars)
+2026-08-31 04:36:50,689 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ada yang salah' reply_to_id=1154 reply_to_text='Cronjob Response: Ringkasan Berita Pagi Mas Azza (job_id: 7c65859d777f) --------'
+2026-08-31 04:37:11,005 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=20.3s api_calls=2 response=4892 chars
+2026-08-31 04:37:11,026 INFO gateway.platforms.base: [Telegram] Sending response (4892 chars) to 7699507804
+2026-08-31 04:42:38,202 INFO gateway.run: Watch pattern notification — injecting for telegram chat=7699507804 thread=8380
+2026-08-31 04:42:38,209 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='[ASYNC DELEGATION COMPLETE — deleg_05539700] A background subagent you dispatche' reply_to_id=None reply_to_text=''
+2026-08-31 04:42:46,956 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=8.7s api_calls=1 response=550 chars
+2026-08-31 04:42:46,970 INFO gateway.platforms.base: [Telegram] Sending response (550 chars) to 7699507804
+2026-08-31 04:44:00,467 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 05:30:30,155 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 05:47:11,206 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:8380 (idle=3864s)
+2026-08-31 05:47:11,208 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-08-31 06:00:30,277 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 06:41:30,841 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 06:54:02,354 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 07:15:19,445 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 07:15:28,828 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 07:22:28,823 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 07:23:07,033 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 07:23:07,615 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 07:23:30,885 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 07:28:58,797 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 07:53:31,168 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 07:54:01,610 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 08:13:29,067 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 09:16:50,919 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 09:36:50,161 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 09:47:20,894 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 10:08:20,189 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 10:17:20,694 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 10:41:53,475 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 10:47:20,817 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 11:17:21,412 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 11:47:21,781 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 12:31:20,356 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 12:41:50,217 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 12:47:03,743 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 13:01:46,456 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 13:10:05,814 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 13:10:06,056 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 13:35:55,933 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 13:41:53,549 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 14:06:25,301 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 14:29:58,440 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 14:32:15,343 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 14:32:15,752 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 15:29:53,315 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 15:56:51,408 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 16:38:53,630 INFO gateway.run: Image cache cleanup: removed 1 stale file(s)
+2026-08-31 17:00:01,539 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 17:28:51,280 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 18:11:51,810 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 18:31:15,270 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 18:42:21,719 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 19:11:10,158 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 19:11:10,412 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 19:12:22,009 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 19:42:51,956 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 20:12:52,155 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 20:17:43,085 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 20:17:43,186 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Telegram polling heartbeat: 1 update(s) queued but not consumed (stuck probe 1/2)
+2026-08-31 20:48:08,250 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 22:17:41,143 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 22:22:38,078 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 22:27:38,756 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 22:57:39,194 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-08-31 23:21:08,149 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 00:10:39,692 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 00:17:40,758 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 00:20:52,206 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 00:20:52,432 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 00:40:39,886 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 01:00:37,928 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 01:01:08,061 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 01:03:08,060 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 01:20:38,261 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 01:25:10,364 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 01:55:40,315 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 02:07:00,364 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 02:09:27,000 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 02:30:58,033 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 02:31:57,031 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 03:05:30,935 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 03:21:58,467 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 04:08:28,751 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 04:38:28,794 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 05:16:29,306 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 05:46:29,286 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 06:47:47,490 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 06:48:11,216 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 06:50:29,828 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 07:20:59,956 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 07:31:12,156 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 07:31:12,547 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 07:51:00,146 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 07:53:29,110 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 08:05:06,896 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 08:05:07,153 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 08:47:24,286 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 09:17:24,615 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 09:47:24,633 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 10:19:54,882 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 10:52:55,232 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 11:22:55,309 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 11:53:26,988 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 11:58:55,506 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 12:02:31,411 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 12:12:13,504 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 12:28:55,869 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 12:36:08,416 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 12:36:08,681 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 12:58:56,121 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 13:28:56,272 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 13:59:16,237 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 15:00:37,304 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 15:41:19,226 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 15:48:20,225 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 16:24:19,134 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 16:54:48,430 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 17:00:00,812 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 17:25:19,366 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 17:48:11,791 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 17:48:12,123 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 17:55:47,389 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 18:26:17,896 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 18:56:18,073 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 19:26:18,104 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 19:33:46,143 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 20:03:47,163 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 20:18:30,254 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (829 chars)
+2026-09-01 20:18:30,263 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ada yang salah dengan repository github action aku ini  Ini linknya https://gith' reply_to_id=1162 reply_to_text=''
+2026-09-01 20:19:04,465 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 1 approval(s) for session agent:main:telegram:dm:7699507804:9616 (choice=session, user=Azaroni)
+2026-09-01 20:24:11,630 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=341.4s api_calls=29 response=123 chars
+2026-09-01 20:24:11,631 INFO gateway.run: Transient agent failure in session 20260901_201830_b0d4ac61 — persisting user message so conversation context is preserved on retry.
+2026-09-01 20:24:11,650 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 7699507804
+2026-09-01 20:29:18,576 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 20:34:45,878 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 21:29:01,991 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:9616 (idle=3891s)
+2026-09-01 21:29:01,993 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-09-01 22:03:57,772 INFO gateway.delivery: Cron output preserved for chunking adapter (4427 chars) — full output saved to /home/hermes/.hermes/cron/output/7c65859d777f_20260901_220357.txt
+2026-09-01 22:34:46,722 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 23:26:17,185 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 23:38:11,793 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-01 23:38:12,080 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 00:00:21,019 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 00:51:47,693 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 01:00:14,894 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 01:43:27,452 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 01:46:05,403 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (10 chars)
+2026-09-02 01:46:05,410 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bagaimana?' reply_to_id=1162 reply_to_text=''
+2026-09-02 01:46:25,419 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=20.0s api_calls=1 response=204 chars
+2026-09-02 01:46:25,437 INFO gateway.platforms.base: [Telegram] Sending response (204 chars) to 7699507804
+2026-09-02 01:46:59,142 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (48 chars)
+2026-09-02 01:46:59,148 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Iya,yang mencatat pnl itu dari sinyal e-book nya' reply_to_id=1162 reply_to_text=''
+2026-09-02 01:47:38,382 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=39.2s api_calls=2 response=3814 chars
+2026-09-02 01:47:38,407 INFO gateway.platforms.base: [Telegram] Sending response (3814 chars) to 7699507804
+2026-09-02 01:52:59,321 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (123 chars)
+2026-09-02 01:52:59,329 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Aku lupa cara set konfigurasi botnya,ini PAT GITHUB-nya tolong bantu fix ya neng' reply_to_id=1162 reply_to_text=''
+2026-09-02 01:53:27,912 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 1 approval(s) for session agent:main:telegram:dm:7699507804:9616 (choice=once, user=Azaroni)
+2026-09-02 01:55:20,902 INFO hermes_plugins.telegram_platform.adapter: Telegram button resolved 1 approval(s) for session agent:main:telegram:dm:7699507804:9616 (choice=session, user=Azaroni)
+2026-09-02 01:55:35,124 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=155.8s api_calls=7 response=123 chars
+2026-09-02 01:55:35,124 INFO gateway.run: Transient agent failure in session 20260901_201830_b0d4ac61 — persisting user message so conversation context is preserved on retry.
+2026-09-02 01:55:35,142 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 7699507804
+2026-09-02 01:55:53,318 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (7 chars)
+2026-09-02 01:55:53,324 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ada apa' reply_to_id=1162 reply_to_text=''
+2026-09-02 01:55:57,630 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=4.3s api_calls=1 response=191 chars
+2026-09-02 01:55:57,663 INFO gateway.platforms.base: [Telegram] Sending response (191 chars) to 7699507804
+2026-09-02 01:56:35,660 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (26 chars)
+2026-09-02 01:56:35,671 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Hubungi aku jika sudah fix' reply_to_id=1162 reply_to_text=''
+2026-09-02 01:56:40,180 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=4.5s api_calls=1 response=227 chars
+2026-09-02 01:56:40,200 INFO gateway.platforms.base: [Telegram] Sending response (227 chars) to 7699507804
+2026-09-02 02:17:27,643 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 02:59:58,268 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 02:59:58,459 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:9616 (idle=3798s)
+2026-09-02 02:59:58,461 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-09-02 03:29:58,037 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 05:17:30,232 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 05:19:28,736 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 05:23:11,184 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 05:23:11,455 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 05:23:26,773 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 05:29:56,775 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 05:32:26,777 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 05:49:29,258 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 06:17:30,123 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 06:19:29,352 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 06:33:26,850 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 06:42:26,855 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 06:49:29,236 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 07:05:38,628 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 07:12:03,122 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 07:36:04,267 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 07:51:10,006 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 07:51:10,319 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 08:10:39,735 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (19 chars)
+2026-09-02 08:10:39,742 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Bagaimana hasilnya?' reply_to_id=1162 reply_to_text=''
+2026-09-02 08:11:01,786 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=22.0s api_calls=1 response=2326 chars
+2026-09-02 08:11:01,806 INFO gateway.platforms.base: [Telegram] Sending response (2326 chars) to 7699507804
+2026-09-02 08:15:13,377 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 08:19:57,918 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (186 chars)
+2026-09-02 08:19:57,926 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Gemini api key = AQ.Ab8RN6KQWszWKN93_s4Mlo0KUWj6tiLpVY7G9fPOo2ONuI7iJQ  Openrout' reply_to_id=1162 reply_to_text=''
+2026-09-02 08:20:08,506 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=10.6s api_calls=1 response=955 chars
+2026-09-02 08:20:08,525 INFO gateway.platforms.base: [Telegram] Sending response (829 chars) to 7699507804
+2026-09-02 08:21:42,717 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (170 chars)
+2026-09-02 08:21:42,728 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ya,boleh sekalian test api key bekerja atau tidak, soalnya aku malas, padahal ap' reply_to_id=1162 reply_to_text=''
+2026-09-02 08:22:59,896 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=77.2s api_calls=4 response=1817 chars
+2026-09-02 08:22:59,917 INFO gateway.platforms.base: [Telegram] Sending response (1817 chars) to 7699507804
+2026-09-02 08:26:12,490 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Cached user photo at /home/hermes/.hermes/cache/images/img_3655e1be177c.jpg
+2026-09-02 08:26:13,292 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing photo batch agent:main:telegram:dm:7699507804:9616:photo-burst with 1 image(s)
+2026-09-02 08:26:13,298 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Tidak ada yang salah dari api key Gemini,Gemini memang baru pakai awalan AQ. Ken' reply_to_id=1162 reply_to_text=''
+2026-09-02 08:26:13,323 INFO gateway.run: Image routing: text (mode=text). Pre-analyzing 1 image(s) via vision_analyze.
+2026-09-02 08:26:28,901 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=15.6s api_calls=1 response=2394 chars
+2026-09-02 08:26:28,957 INFO gateway.platforms.base: [Telegram] Sending response (2390 chars) to 7699507804
+2026-09-02 08:28:40,585 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (1 chars)
+2026-09-02 08:28:40,591 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='A' reply_to_id=1162 reply_to_text=''
+2026-09-02 08:31:39,640 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=179.0s api_calls=11 response=804 chars
+2026-09-02 08:31:39,706 INFO gateway.platforms.base: [Telegram] Sending response (804 chars) to 7699507804
+2026-09-02 08:32:30,411 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (29 chars)
+2026-09-02 08:32:30,420 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Fix workflow dan tes langsung' reply_to_id=1162 reply_to_text=''
+2026-09-02 08:34:28,334 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=117.9s api_calls=9 response=1036 chars
+2026-09-02 08:34:28,354 INFO gateway.platforms.base: [Telegram] Sending response (1036 chars) to 7699507804
+2026-09-02 08:35:20,454 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (2 chars)
+2026-09-02 08:35:20,460 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ya' reply_to_id=1162 reply_to_text=''
+2026-09-02 08:38:11,494 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=171.0s api_calls=8 response=491 chars
+2026-09-02 08:38:11,560 INFO gateway.platforms.base: [Telegram] Sending response (491 chars) to 7699507804
+2026-09-02 08:42:07,699 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (19 chars)
+2026-09-02 08:42:07,708 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Lalu,aku harus apa?' reply_to_id=1162 reply_to_text=''
+2026-09-02 08:42:20,452 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=12.7s api_calls=1 response=1679 chars
+2026-09-02 08:42:20,470 INFO gateway.platforms.base: [Telegram] Sending response (1679 chars) to 7699507804
+2026-09-02 08:45:40,867 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (25 chars)
+2026-09-02 08:45:40,875 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Project id : azzavisionai' reply_to_id=1162 reply_to_text=''
+2026-09-02 08:45:54,996 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=14.1s api_calls=1 response=123 chars
+2026-09-02 08:45:54,997 INFO gateway.run: Transient agent failure in session 20260901_201830_b0d4ac61 — persisting user message so conversation context is preserved on retry.
+2026-09-02 08:45:55,014 INFO gateway.platforms.base: [Telegram] Sending response (120 chars) to 7699507804
+2026-09-02 08:55:33,479 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 08:58:04,359 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 09:05:36,314 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 09:28:05,345 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 09:46:17,224 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:9616 (idle=3623s)
+2026-09-02 09:46:17,226 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-09-02 09:58:34,469 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 10:36:05,706 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 10:57:57,751 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (50 chars)
+2026-09-02 10:57:57,817 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Apakah bot AzzaVisionAI sudah pakai patch terbaru?' reply_to_id=1162 reply_to_text=''
+2026-09-02 10:58:55,239 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=57.4s api_calls=4 response=1482 chars
+2026-09-02 10:58:55,262 INFO gateway.platforms.base: [Telegram] Sending response (1482 chars) to 7699507804
+2026-09-02 11:00:08,114 INFO hermes_plugins.telegram_platform.adapter: [Telegram] Flushing text batch agent:main:telegram:dm:7699507804:9616 (69 chars)
+2026-09-02 11:00:08,122 INFO gateway.run: inbound message: platform=telegram user=Azaroni Fidaroin chat=7699507804 msg='Ya udah deh, cukup groq saja kalau begitu,asal tidak kena SL hit mulu' reply_to_id=1162 reply_to_text=''
+2026-09-02 11:00:17,655 INFO gateway.run: response ready: platform=telegram chat=7699507804 time=9.5s api_calls=1 response=1107 chars
+2026-09-02 11:00:17,675 INFO gateway.platforms.base: [Telegram] Sending response (1107 chars) to 7699507804
+2026-09-02 11:11:10,756 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 11:14:04,755 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 11:16:05,859 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 11:16:06,284 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 11:19:34,985 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 11:49:35,430 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 12:01:46,900 INFO gateway.run: Agent cache idle-TTL evict: session=agent:main:telegram:dm:7699507804:9616 (idle=3689s)
+2026-09-02 12:01:46,901 INFO gateway.run: Agent cache idle sweep: evicted 1 agent(s)
+2026-09-02 12:03:20,485 WARNING plugins.platforms.telegram.telegram_network: [Telegram] Sticky Telegram path 149.154.166.110 failed; re-walking IPv4 literals before the hostname
+2026-09-02 12:03:20,485 WARNING plugins.platforms.telegram.telegram_network: [Telegram] IPv4 Telegram API IP 149.154.166.110 failed: 
+2026-09-02 12:19:35,630 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 12:50:09,692 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 12:53:44,495 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 13:08:15,440 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 13:08:15,868 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 13:24:09,734 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137
+2026-09-02 13:58:39,928 WARNING hermes_plugins.telegram_platform.adapter: [Telegram] Blocked unauthorized user 8873388923 in chat -1004310936137

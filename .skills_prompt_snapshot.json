@@ -153,6 +153,10 @@
       1787219182100988716,
       3966
     ],
+    "productivity/daily-news-briefing/SKILL.md": [
+      1787835815743278569,
+      1971
+    ],
     "productivity/content-cron-delivery/SKILL.md": [
       1787219182100422270,
       3358
@@ -1195,6 +1199,19 @@
       "category": "productivity",
       "frontmatter_name": "content-cron-delivery",
       "description": "Use when scheduling recurring content delivery via cronjobs.",
+      "platforms": [],
+      "conditions": {
+        "fallback_for_toolsets": [],
+        "requires_toolsets": [],
+        "fallback_for_tools": [],
+        "requires_tools": []
+      }
+    },
+    {
+      "skill_name": "daily-news-briefing",
+      "category": "productivity",
+      "frontmatter_name": "daily-news-briefing",
+      "description": "\\\"Use for recurring news summaries. Timing and sources.\\",
       "platforms": [],
       "conditions": {
         "fallback_for_toolsets": [],
